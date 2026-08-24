@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Building Materials | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="js/cart.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<div class="container">
+
+<div class="left">
+
+<i class="fa-solid fa-phone"></i>
+
++27 10 101 0464
+
+</div>
+
+
+<div class="center">
+
+Welcome to BusterBuild Hardware
+
+</div>
+
+
+<div class="right">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-container">
+
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Hardware">
+
+</a>
+
+</div>
+
+
+
+<div class="search">
+
+<input type="text" placeholder="Search products..." onkeyup="searchProducts()">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+
+
+<div class="icons">
+
+
+<a href="account.html">
+
+<i class="fa-solid fa-user"></i>
+
+</a>
+
+
+<a href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</header>
+
+
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container">
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="specials.html">Specials</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<a href="contact.html" class="quote-btn">
+
+Get Quote
+
+</a>
+
+
+</div>
+
+</nav>
+
+
+
+
+<!-- BUILDING MATERIALS HERO -->
+
+<section class="page-banner building-materials-banner">
+
+<div class="overlay"></div>
+
+<div class="banner-text">
+
+<h1>Building Materials</h1>
+
+<p>Quality building materials for every construction project.</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PRODUCTS -->
+
+<section class="products-page">
+
+<div class="container">
+
+
+<div class="product-grid">
+
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card" data-product-code="BB-0032">
+
+<img src="pictures/tools/Afrisam-APC-Bag_2023-3.webp" alt="AfriSam Cement">
+
+<h3>AfriSam All Purpose Cement 42.5N 50kg</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0032</p>
+<p class="price">R109.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('AfriSam All Purpose Cement 42.5N 50kg','109.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card" data-product-code="BB-0033">
+
+<img src="pictures/building-materials/concrete brick.avif" alt="Building Bricks">
+
+<h3>Concrete Building Bricks</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0033</p>
+<p class="price">R4.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Concrete Building Bricks','4.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card" data-product-code="BB-0034">
+
+<img src="pictures/building-materials/concrete blocks.webp" alt="Concrete Blocks">
+
+<h3>Concrete Blocks</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0034</p>
+<p class="price">R19.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Concrete Blocks','19.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card" data-product-code="BB-0035">
+
+<img src="pictures/building-materials/building sand.webp" alt="Building Sand">
+
+<h3>Building Sand 40kg</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0035</p>
+<p class="price">R49.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Building Sand 40kg','49.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card" data-product-code="BB-0036">
+
+<img src="pictures/building-materials/plaster sand.webp" alt="Plaster Sand">
+
+<h3>Plaster Sand 40kg</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0036</p>
+<p class="price">R54.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Plaster Sand 40kg','54.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card" data-product-code="BB-0037">
+
+<img src="pictures/building-materials/building stone.webp" alt="Stone">
+
+<h3>Building Stone 19mm</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0037</p>
+<p class="price">R69.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Building Stone 19mm','69.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="product-card" data-product-code="BB-0038">
+
+<img src="pictures/building-materials/Cement stock bricks.jpg" alt="AfriSam Cement">
+
+<h3>Cement Stock Bricks</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0038</p>
+<p class="price">R3.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Cement Stock Bricks','3.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 8 -->
+
+<div class="product-card" data-product-code="BB-0039">
+
+<img src="pictures/building-materials/maxi brick.jpg" alt="Building Bricks">
+
+<h3>Maxi Bricks</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0039</p>
+<p class="price">R4.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Maxi Bricks','4.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 9 -->
+
+<div class="product-card" data-product-code="BB-0040">
+
+<img src="pictures/building-materials/mini maxi brick.jpg" alt="Concrete Blocks">
+
+<h3>Mini Maxi brick</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0040</p>
+<p class="price">2.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Mini Maxi Brick','2.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 10 -->
+
+<div class="product-card" data-product-code="BB-0035">
+
+<img src="pictures/building-materials/building sand.webp" alt="Building Sand">
+
+<h3>Building Sand 40kg</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0035</p>
+<p class="price">R49.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Building Sand 40kg','49.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-bottom">
+
+<p>
+
+©️ 2026 BusterBuild Hardware. All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+</body>
+
+</html>

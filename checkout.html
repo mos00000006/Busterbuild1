@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secure Checkout | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="js/cart.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header>
+
+<div class="container header-container">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Hardware">
+
+</a>
+
+</div>
+
+<div class="icons">
+
+<a href="cart.html" class="cart-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ===========================
+NAVIGATION
+=========================== -->
+
+<nav>
+
+<div class="container">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="specials.html">Specials</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- ===========================
+CHECKOUT
+=========================== -->
+
+<section class="checkout-page">
+
+<div class="container">
+
+<div class="checkout-title">
+
+<h1>
+
+<i class="fa-solid fa-lock"></i>
+
+Secure Checkout
+
+</h1>
+
+<p>
+
+Complete your details below to place your order.
+
+</p>
+
+</div>
+
+<div class="checkout-wrapper">
+
+<!-- ===========================
+LEFT SIDE
+=========================== -->
+
+<div class="checkout-left">
+
+<div class="checkout-card">
+
+<h2>
+
+<i class="fa-solid fa-user"></i>
+
+Customer Information
+
+</h2>
+
+<form>
+
+<div class="form-group">
+
+<label>Full Name</label>
+
+<input type="text" placeholder="Enter your full name" required>
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input type="email" placeholder="Enter your email address" required>
+
+</div>
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input type="tel" placeholder="+27..." required>
+
+</div>
+
+<div class="form-group">
+
+<label>Delivery Address</label>
+
+<textarea placeholder="House number, street, suburb, city..." required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>Delivery Method</label>
+
+<select id="delivery-method" required>
+
+<option value="">Choose Delivery Method</option>
+
+<option value="Home Delivery">Home Delivery</option>
+
+<option value="Collect In Store">Collect In Store</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Order Notes</label>
+
+<textarea placeholder="Any special instructions? (Optional)"></textarea>
+
+</div>
+
+<div class="checkout-button-wrap">
+
+<button type="button" class="buy-btn" onclick="saveCheckoutDetails()">
+<i class="fa-solid fa-lock"></i>
+<span>Continue to Payment</span>
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- ===========================
+RIGHT SIDE
+=========================== -->
+
+<div class="checkout-right">
+
+<div class="checkout-card order-summary">
+
+<h2>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Order Summary
+
+</h2>
+
+<div id="checkout-items">
+
+<!-- Cart items will appear here automatically -->
+ </div>
+
+<hr>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<strong id="checkout-subtotal">R0.00</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>Delivery</span>
+
+<strong id="checkout-delivery">FREE</strong>
+
+</div>
+
+<div class="summary-row total-row">
+
+<span>Total</span>
+
+<strong id="checkout-total">R0.00</strong>
+
+</div>
+
+<div class="secure-box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<div>
+
+<h4>100% Secure Checkout</h4>
+
+<p>Your personal information is encrypted and protected.</p>
+
+</div>
+
+</div>
+
+<div class="payment-icons">
+
+<i class="fa-brands fa-cc-visa"></i>
+
+<i class="fa-brands fa-cc-mastercard"></i>
+
+<i class="fa-brands fa-google-pay"></i>
+
+<i class="fa-brands fa-apple-pay"></i>
+
+</div>
+
+<p style="text-align:center;color:#666;margin-top:15px;">
+
+Your payment will be completed securely on the next page.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-column">
+
+<h3>BusterBuild Hardware</h3>
+
+<p>
+
+Your trusted hardware store for quality building materials, paint, tools, plumbing, electrical supplies, tiles and sanitary ware.
+
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="specials.html">Specials</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<p><i class="fa-solid fa-phone"></i> +27 10 101 0424</p>
+
+<p><i class="fa-solid fa-envelope"></i> info@busterbuild.co.za</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Business Hours</h3>
+
+<p>Mon - Fri: 08:00 - 17:00</p>
+
+<p>Sat: 08:00 - 14:00</p>
+
+<p>Sun: Closed</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 BusterBuild Hardware. All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+function saveCheckoutDetails(){
+
+    let deliveryMethod = document.getElementById("delivery-method").value;
+
+    let name = document.querySelector('input[placeholder="Enter your full name"]').value;
+
+    let email = document.querySelector('input[placeholder="Enter your email address"]').value;
+
+    let phone = document.querySelector('input[placeholder="+27..."]').value;
+
+    let address = document.querySelector('textarea[placeholder="House number, street, suburb, city..."]').value;
+
+
+    const form = document.querySelector(".checkout-left form");
+    if (form && !form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
+    if(deliveryMethod === ""){
+
+        alert("Please choose a delivery method.");
+
+        return;
+
+    }
+
+
+    localStorage.setItem("deliveryMethod", deliveryMethod);
+
+    localStorage.setItem("customerName", name);
+
+    localStorage.setItem("customerEmail", email);
+
+    localStorage.setItem("customerPhone", phone);
+
+    localStorage.setItem("customerAddress", address);
+
+
+    window.location.href = "payment.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

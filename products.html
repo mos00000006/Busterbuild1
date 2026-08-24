@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="js/cart.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- PAGE HERO -->
+
+<section class="page-banner">
+
+<div class="overlay"></div>
+
+<div class="banner-text">
+
+<h1>Our Products</h1>
+
+<p>
+Everything you need for building, renovations and DIY.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- FILTERS -->
+
+<section class="filters">
+
+<div class="container">
+
+
+<input 
+type="text" 
+id="product-search" 
+placeholder="Search products..."
+onkeyup="filterProducts()">
+
+
+
+<select id="category-filter" onchange="filterProducts()">
+
+<option value="all">
+All Categories
+</option>
+
+<option value="paint">
+Paint
+</option>
+
+<option value="cement">
+Cement
+</option>
+
+<option value="tools">
+Tools
+</option>
+
+<option value="plumbing">
+Plumbing
+</option>
+
+<option value="electrical">
+Electrical
+</option>
+
+<option value="tiles">
+Tiles & Sanitary Ware
+</option>
+
+<option value="power-tools">
+Power Tools
+</option>
+
+<option value="building-materials">
+Building Materials
+</option>
+
+
+</select>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PRODUCTS -->
+
+<section class="products-page">
+
+<div class="container">
+
+
+<div class="product-grid">
+    <!-- PRODUCT 1 -->
+
+<div class="product-card" data-category="cement" data-product-code="BB-0021">
+
+<img src="pictures/tools/Afrisam-APC-Bag_2023-3.webp" alt="Cement">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('AfriSam Cement 42.5N')">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+<h3>
+AfriSam Cement 42.5N
+</h3>
+
+
+<p class="product-code" aria-label="Product code">Code: BB-0021</p>
+<p class="price">
+R119.90
+</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('AfriSam Cement 42.5N','119.90'); return false;">
+
+Add to Cart
+
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card" data-category="paint" data-product-code="BB-0224">
+
+<img src="pictures/products/drip value kote.jpeg" alt="Paint">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('Dulux Acrylic Paint 20L')">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+<h3>
+Dulux Acrylic Paint 20L
+</h3>
+
+
+<p class="product-code" aria-label="Product code">Code: BB-0224</p>
+<p class="price">
+R499.90
+</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Dripp Value Kote Paint 20L','499.90'); return false;">
+
+Add to Cart
+
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card" data-category="power-tools" data-product-code="BB-0126">
+
+<img src="pictures/tools/alco bitumen 5m.webp" alt="Bitumen">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('alco bitumen 5m')">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+<h3>
+Alco Bitumen Flashband 10cm x 2.5m x 1mm
+</h3>
+
+
+<p class="product-code" aria-label="Product code">Code: BB-0126</p>
+<p class="price">
+R99.90
+</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Alco Bitumen Flashband 10cm x 2.5 x 1mm','99.90'); return false;">
+
+Add to Cart
+
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card" data-category="tiles" data-product-code="BB-0024">
+
+<img src="pictures/products/ivory tile.jpeg" alt="Tiles">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('Porcelain Floor Tiles')">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+<h3>
+Ivory Porcelain Floor Tiles
+</h3>
+
+
+<p class="product-code" aria-label="Product code">Code: BB-0024</p>
+<p class="price">
+R129.90/m²
+</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Ivory Porcelain Floor Tiles','129.90'); return false;">
+
+Add to Cart
+
+</a>
+
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+
+<div class="footer-bottom">
+
+
+<p>
+©️ 2026 BusterBuild Hardware. All Rights Reserved.
+</p>
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+
+<script>
+
+
+// ===========================
+// SEARCH + CATEGORY FILTER
+// ===========================
+
+function filterProducts(){
+
+
+    let searchInput = document.getElementById("product-search");
+
+    let categorySelect = document.getElementById("category-filter");
+
+
+    let searchText = searchInput.value.toLowerCase();
+
+    let selectedCategory = categorySelect.value;
+
+
+
+    let products = document.querySelectorAll(".product-card");
+
+
+
+    products.forEach(function(product){
+
+
+        let productName = product.querySelector("h3")
+        .textContent
+        .toLowerCase();
+
+
+
+        let productCategory = product.getAttribute("data-category");
+
+
+
+        let matchesSearch = productName.includes(searchText);
+
+
+
+        let matchesCategory = 
+        selectedCategory === "all" ||
+        productCategory === selectedCategory;
+
+
+
+
+        if(matchesSearch && matchesCategory){
+
+
+            product.style.display = "block";
+
+
+        }else{
+
+
+            product.style.display = "none";
+
+
+        }
+
+
+    });
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plumbing | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="js/cart.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<div class="container">
+
+<div class="left">
+
+<i class="fa-solid fa-phone"></i>
+
++27 10 101 0464
+
+</div>
+
+
+<div class="center">
+
+Welcome to BusterBuild Hardware
+
+</div>
+
+
+<div class="right">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-container">
+
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Hardware">
+
+</a>
+
+</div>
+
+
+
+<div class="search">
+
+<input type="text" placeholder="Search products..." onkeyup="searchProducts()">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+
+
+<div class="icons">
+
+<a href="account.html">
+
+<i class="fa-solid fa-user"></i>
+
+</a>
+
+
+<a href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container">
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="specials.html">Specials</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<a href="contact.html" class="quote-btn">
+
+Get Quote
+
+</a>
+
+
+</div>
+
+</nav>
+
+
+
+
+<!-- PLUMBING HERO -->
+
+<section class="page-banner plumbing-banner">
+
+<div class="overlay"></div>
+
+<div class="banner-text">
+
+<h1>Plumbing</h1>
+
+<p>Quality plumbing products and fittings for every project.</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PRODUCTS -->
+
+<section class="products-page">
+
+<div class="container">
+
+
+<div class="product-grid">
+
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card" data-product-code="BB-0001">
+
+<img src="pictures/plumbing/pvc pipe.webp" alt="PVC Plumbing Pipe">
+
+<h3>PVC Plumbing Pipe</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0001</p>
+<p class="price">R89.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('PVC Plumbing Pipe','89.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card" data-product-code="BB-0002">
+
+<img src="pictures/plumbing/pvc elbow.jpg" alt="PVC Elbow Fitting">
+
+<h3>PVC Elbow Fitting</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0002</p>
+<p class="price">R24.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('PVC Elbow Fitting','24.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card" data-product-code="BB-0003">
+
+<img src="pictures/plumbing/chrome basin tap.jpg" alt="Chrome Basin Tap">
+
+<h3>Chrome Basin Tap</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0003</p>
+<p class="price">R299.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Chrome Basin Tap','299.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card" data-product-code="BB-0004">
+
+<img src="pictures/tools/hose pipe 12mmx15m.webp" alt="Alco Hose Pipe">
+
+<h3>Flexible Water Hose</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0004</p>
+<p class="price">R279.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Alco Hose Pipe','279.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card" data-product-code="BB-0005">
+
+<img src="pictures/plumbing/pvc t joint.webp" alt="PVC T Joint">
+
+<h3>PVC T-Joint Fitting</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0005</p>
+<p class="price">R29.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('PVC T-Joint Fitting','29.90'); return false;">
+
+Add to Cart
+
+</a>
+
+</div>
+
+
+
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card" data-product-code="BB-0006">
+
+<img src="pictures/plumbing/kitchen mixer tap.webp" alt="Kitchen Sink Mixer Tap">
+
+<h3>Aquavit Kitchen Sink Mixer - Chrome</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0006</p>
+<p class="price">R4,699.90</p>
+
+<a href="#" class="buy-btn"
+onclick="addToCart('Aquavit Kitchen Sink Mixer - Chrome','4,699.90'); return false;">
+
+Add to Cart
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+
+<div class="footer-bottom">
+
+<p>
+
+©️ 2026 BusterBuild Hardware. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+</body>
+
+</html>

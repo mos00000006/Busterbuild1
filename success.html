@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Successful | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="payment-page">
+
+<div class="container payment-container">
+
+<div class="payment-card">
+
+<div class="payment-title">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h1>Payment Successful</h1>
+
+<p>Thank you for your order!</p>
+
+</div>
+
+
+<div class="success-message">
+
+<h2>BusterBuild Hardware</h2>
+
+<p>Your payment has been approved.</p>
+
+<p>Your order number is:</p>
+
+<h3 id="order-number"></h3>
+<div id="order-summary"></div>
+<div class="delivery-summary">
+
+<h3>Delivery Method</h3>
+
+<p id="delivery-method-display"></p>
+
+</div>
+
+<p>
+We will process your order and contact you regarding delivery.
+</p>
+
+
+<br>
+
+
+<a href="index.html" class="buy-btn">
+Continue Shopping
+</a>
+
+<br><br>
+
+<a id="whatsapp-order" class="buy-btn" target="_blank">
+Send Order on WhatsApp
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+let orderNumber = "BB" + Math.floor(100000 + Math.random() * 900000);
+
+document.getElementById("order-number").textContent = orderNumber;
+
+
+let order = JSON.parse(localStorage.getItem("lastOrder")) || [];
+
+let summary = document.getElementById("order-summary");
+
+let total = 0;
+
+
+order.forEach(item => {
+
+    let itemTotal = item.price * item.quantity;
+
+    total += itemTotal;
+
+
+    summary.innerHTML += `
+
+    <p>
+    ${item.name} x ${item.quantity}
+    - R${itemTotal.toFixed(2)}
+    </p>
+
+    `;
+
+});
+
+
+const grandTotal = Number(localStorage.getItem("lastOrderTotal")) || total;
+
+summary.innerHTML += `
+
+<hr>
+
+<h3>Order Total: R${grandTotal.toFixed(2)}</h3>
+
+`;
+
+let whatsappMessage = localStorage.getItem("lastOrderWhatsapp") || "New BusterBuild Hardware Order%0A%0A";
+
+document.getElementById("whatsapp-order").href =
+"https://wa.me/27632513656?text=" + whatsappMessage;
+
+let deliveryMethod = localStorage.getItem("deliveryMethod");
+
+if(deliveryMethod){
+
+    document.getElementById("delivery-method-display").textContent = deliveryMethod;
+
+}
+</script>
+
+
+</body>
+
+</html>

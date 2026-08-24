@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="js/cart.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container header-container">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Hardware">
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<section class="payment-page">
+
+<div class="container payment-container">
+
+
+<div class="payment-card">
+
+
+<div class="payment-title">
+
+<i class="fa-solid fa-lock"></i>
+
+<h1>Secure Payment</h1>
+
+<p>Complete your payment below.</p>
+
+</div>
+
+
+
+<form>
+
+
+<div class="payment-details">
+
+    <div class="customer-delivery-box">
+
+<h3>Delivery Details</h3>
+
+<p><strong>Name:</strong> <span id="customer-name"></span></p>
+
+<p><strong>Phone:</strong> <span id="customer-phone"></span></p>
+
+<p><strong>Delivery Method:</strong> <span id="delivery-method-display"></span></p>
+
+<p><strong>Address:</strong> <span id="customer-address"></span></p>
+
+</div>
+
+<label>Cardholder Name</label>
+
+<input type="text" placeholder="John Smith" required>
+
+
+
+<label>Card Number</label>
+
+<input type="text" maxlength="19" placeholder="1234 5678 9012 3456" required>
+
+
+
+<div class="card-row">
+
+
+<div>
+
+<label>Expiry Date</label>
+
+<input type="text" maxlength="5" placeholder="MM/YY" required>
+
+</div>
+
+
+
+<div>
+
+<label>CVV</label>
+
+<input type="password" maxlength="3" placeholder="123" required>
+
+</div>
+
+
+</div>
+
+
+
+
+<label>Billing Address</label>
+
+<input type="text" placeholder="Enter your billing address">
+
+
+
+
+
+<div class="payment-total">
+
+<h3>Total to Pay</h3>
+
+<h2 id="payment-total">R0.00</h2>
+
+</div>
+
+
+
+
+<div class="secure-payment">
+
+<i class="fa-solid fa-lock"></i>
+
+<span>256-bit SSL Secure Payment</span>
+
+</div>
+
+
+
+
+
+<div class="payment-icons">
+
+<i class="fa-brands fa-cc-visa"></i>
+
+<i class="fa-brands fa-cc-mastercard"></i>
+
+<i class="fa-brands fa-google-pay"></i>
+
+<i class="fa-brands fa-apple-pay"></i>
+
+</div>
+
+
+
+
+
+<button type="button" class="buy-btn" onclick="completeOrder()">
+
+<i class="fa-solid fa-credit-card"></i>
+
+Pay Securely
+
+</button>
+
+
+
+</div>
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+<script>
+
+document.getElementById("customer-name").textContent =
+localStorage.getItem("customerName") || "";
+
+document.getElementById("customer-phone").textContent =
+localStorage.getItem("customerPhone") || "";
+
+document.getElementById("delivery-method-display").textContent =
+localStorage.getItem("deliveryMethod") || "";
+
+document.getElementById("customer-address").textContent =
+localStorage.getItem("customerAddress") || "";
+
+</script>
+
+</body>
+
+</html>

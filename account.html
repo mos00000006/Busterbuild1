@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Account | BusterBuild Hardware</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-container">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img
+src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
+alt="BusterBuild Hardware Logo">
+
+</a>
+
+</div>
+
+
+<div class="icons">
+
+<a href="account.html" aria-label="My Account">
+
+<i class="fa-solid fa-user"></i>
+
+</a>
+
+
+<a href="wishlist.html" aria-label="Wishlist">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+
+<a href="cart.html" aria-label="Shopping Cart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container">
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="cement.html">Cement</a>
+</li>
+
+<li>
+<a href="paint.html">Paint</a>
+</li>
+
+<li>
+<a href="tools.html">Tools</a>
+</li>
+
+<li>
+<a href="specials.html">Specials</a>
+</li>
+
+<li>
+<a href="crm.html">CRM Dashboard</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- ACCOUNT PAGE -->
+
+<section class="account-page">
+
+<div class="container">
+
+<div class="account-box">
+
+
+<div class="account-icon">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+<h1>
+My Account
+</h1>
+
+
+<p>
+Login to your BusterBuild account to manage your orders,
+save products and access member pricing.
+</p>
+
+
+<!-- LOGIN FORM -->
+
+<form id="loginForm">
+
+
+<div class="account-field">
+
+<label for="email">
+Email Address
+</label>
+
+<div class="input-wrapper">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Enter your email address"
+required>
+
+</div>
+
+</div>
+
+
+<div class="account-field">
+
+<label for="password">
+Password
+</label>
+
+<div class="input-wrapper">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+id="password"
+name="password"
+placeholder="Enter your password"
+required>
+
+<button
+type="button"
+class="password-toggle"
+id="passwordToggle"
+aria-label="Show password">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+<div class="account-options">
+
+<a href="#">
+Forgot Password?
+</a>
+
+</div>
+
+
+<button
+type="submit"
+class="account-login-btn">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Login
+
+</button>
+
+
+</form>
+
+
+<!-- DIVIDER -->
+
+<div class="account-divider">
+
+<span>OR</span>
+
+</div>
+
+
+<!-- CREATE ACCOUNT -->
+
+<div class="create-account">
+
+<p>
+Don't have an account?
+</p>
+
+<a href="#">
+Create New Account
+</a>
+
+</div>
+
+
+<!-- MEMBER PRICING -->
+
+<div class="price-login-info">
+
+<i class="fa-solid fa-eye-slash"></i>
+
+<div>
+
+<strong>
+Member Pricing
+</strong>
+
+<p>
+Login to your account to view product prices
+and access exclusive member offers.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+<p>
+© 2026 BusterBuild Hardware. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const passwordInput = document.getElementById("password");
+
+const passwordToggle = document.getElementById("passwordToggle");
+
+
+passwordToggle.addEventListener("click", function(){
+
+if(passwordInput.type === "password"){
+
+passwordInput.type = "text";
+
+passwordToggle.innerHTML =
+'<i class="fa-solid fa-eye-slash"></i>';
+
+passwordToggle.setAttribute(
+"aria-label",
+"Hide password"
+);
+
+}else{
+
+passwordInput.type = "password";
+
+passwordToggle.innerHTML =
+'<i class="fa-solid fa-eye"></i>';
+
+passwordToggle.setAttribute(
+"aria-label",
+"Show password"
+);
+
+}
+
+});
+
+
+const loginForm = document.getElementById("loginForm");
+
+
+loginForm.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+
+const email =
+document.getElementById("email").value.trim();
+
+const password =
+document.getElementById("password").value.trim();
+
+
+if(email === "" || password === ""){
+
+alert("Please enter your email address and password.");
+
+return;
+
+}
+
+
+/* Save login status */
+
+localStorage.setItem(
+"busterbuildLoggedIn",
+"true"
+);
+
+
+localStorage.setItem(
+"customerEmail",
+email
+);
+
+
+alert(
+"Login successful! Welcome to BusterBuild Hardware."
+);
+
+
+window.location.href = "index.html";
+
+});
+
+</script>
+
+
+</body>
+
+</html>
