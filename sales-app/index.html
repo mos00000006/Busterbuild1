@@ -108,6 +108,29 @@
           <button id="clear-cart" class="secondary-btn danger" type="button"><i class="fa-solid fa-trash"></i> Clear cart</button>
         </div>
       </section>
+
+      <section id="admin-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Manage sales team</h2></div></div>
+        <div class="admin-hero">
+          <div><span class="eyebrow">TILES &amp; SANITARY WARE</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles &amp; Sanitary Ware Sales App.</p></div>
+          <span class="admin-lock"><i class="fa-solid fa-user-shield"></i></span>
+        </div>
+        <div class="admin-grid">
+          <form id="add-sales-form" class="admin-card">
+            <div class="admin-card-head"><div><small>NEW ACCOUNT</small><strong>Add salesperson</strong></div><i class="fa-solid fa-user-plus"></i></div>
+            <label>Full name<input id="sales-name" type="text" autocomplete="off" required placeholder="Salesperson name"></label>
+            <label>Email address<input id="sales-email" type="email" autocomplete="off" required placeholder="name@busterbuild.co.za"></label>
+            <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
+            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure and cart only.</span></div></div>
+            <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
+            <p id="sales-create-status" class="admin-status" role="status"></p>
+          </form>
+          <div class="admin-card team-card">
+            <div class="admin-card-head"><div><small>ACCESS CONTROL</small><strong>Sales accounts</strong></div><span id="sales-team-count" class="team-count">0</span></div>
+            <div id="sales-team-list" class="sales-team-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales accounts…</div></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <nav class="bottom-nav" aria-label="Sales app navigation">
@@ -147,13 +170,14 @@
   </div>
 
   <div id="account-menu" class="account-menu" hidden>
-    <strong id="menu-email"></strong><span>Tiles &amp; Sanitary Ware Sales</span>
+    <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
+    <button id="manage-sales-btn" class="admin-menu-btn" type="button" hidden><i class="fa-solid fa-users-gear"></i> Manage Sales Team</button>
     <button id="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
   </div>
 
   <div id="toast" class="toast" role="status"></div>
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=20261001-1615"></script>
 </body>
 </html>

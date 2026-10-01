@@ -1,6 +1,7 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js';
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1615';
+import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const $ = (id) => document.getElementById(id);
 const qs = (s, r=document) => r.querySelector(s);
@@ -11,6 +12,9 @@ const esc = (s='') => String(s).replace(/[&<>'"]/g, c=>({'&':'&amp;','<':'&lt;',
 const cfgReady = !Object.values(firebaseConfig).some(v => String(v).includes('PASTE_'));
 
 let auth = null;
+let db = null;
+let firebaseApp = null;
+let currentAccess = null;
 let products = [];
 let filtered = [];
 let currentFilter = 'all';
@@ -25,7 +29,7 @@ function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('sho
 function showLogin(){ $('login-screen').hidden=false; $('app-shell').hidden=true; }
 function showApp(){ $('login-screen').hidden=true; $('app-shell').hidden=false; updateCartUI(); loadCatalogue(); }
 
-if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261001-1615').catch(()=>{}));
 window.addEventListener('beforeinstallprompt', e=>{e.preventDefault();installPrompt=e;$('install-btn').hidden=false;});
 window.addEventListener('appinstalled',()=>{$('install-btn').hidden=true;installPrompt=null;toast('BusterBuild Sales installed');});
 $('install-btn').addEventListener('click', async()=>{
@@ -36,7 +40,7 @@ $('install-btn').addEventListener('click', async()=>{
 
 async function initAuth(){
   if(!cfgReady){ $('firebase-setup').hidden=false; $('login-form').addEventListener('submit',e=>e.preventDefault()); showLogin(); return; }
-  const app=initializeApp(firebaseConfig); auth=getAuth(app);
+  firebaseApp=initializeApp(firebaseConfig); auth=getAuth(firebaseApp); db=getFirestore(firebaseApp);
   $('login-form').addEventListener('submit', async e=>{
     e.preventDefault(); $('login-error').textContent='';
     const btn=qs('button[type="submit"]',$('login-form')); btn.disabled=true; btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Signing in…';
@@ -44,19 +48,95 @@ async function initAuth(){
     catch(err){ $('login-error').textContent=authMessage(err); }
     finally{ btn.disabled=false; btn.innerHTML='<i class="fa-solid fa-right-to-bracket"></i> Sign in'; }
   });
-  onAuthStateChanged(auth,user=>{
-    if(user){
-      $('account-name').textContent=(user.displayName||user.email?.split('@')[0]||'Sales').replace(/[._-]+/g,' ');
-      $('account-email').textContent=user.email||''; $('menu-email').textContent=user.email||''; showApp();
-    } else showLogin();
+  onAuthStateChanged(auth,async user=>{
+    if(!user){ currentAccess=null; showLogin(); return; }
+    try{
+      currentAccess=await resolveAccess(user);
+      if(!currentAccess.allowed){
+        $('login-error').textContent='This account does not have access to the Tiles & Sanitary Ware Sales App.';
+        await signOut(auth); return;
+      }
+      const display=currentAccess.name||user.displayName||user.email?.split('@')[0]||'Sales';
+      $('account-name').textContent=display.replace(/[._-]+/g,' ');
+      $('account-email').textContent=user.email||''; $('menu-email').textContent=user.email||'';
+      const admin=currentAccess.role==='admin';
+      $('manage-sales-btn').hidden=!admin;
+      $('menu-role').textContent=admin?'Sales App Administrator':'Tiles & Sanitary Ware Sales';
+      showApp();
+      if(admin) loadSalesTeam();
+    }catch(err){
+      console.error(err); $('login-error').textContent='Account access could not be verified. Check Firebase/Firestore setup.'; await signOut(auth);
+    }
   });
   $('logout-btn').addEventListener('click',()=>signOut(auth));
+}
+async function resolveAccess(user){
+  const adminEmail=String(salesAppConfig.adminEmail||'').trim().toLowerCase();
+  if(adminEmail && !adminEmail.includes('REPLACE_') && String(user.email||'').toLowerCase()===adminEmail){
+    return {allowed:true,role:'admin',name:user.displayName||'Administrator',active:true};
+  }
+  const snap=await getDoc(doc(db,'salesUsers',user.uid));
+  if(!snap.exists()) return {allowed:false};
+  const profile=snap.data()||{};
+  const allowed=profile.active!==false && profile.role==='sales' && profile.department==='tiles-sanitary';
+  return {...profile,allowed};
 }
 function authMessage(err){ const c=err?.code||''; if(c.includes('invalid-credential')||c.includes('wrong-password')||c.includes('user-not-found'))return 'Incorrect email address or password.'; if(c.includes('too-many-requests'))return 'Too many attempts. Please wait and try again.'; if(c.includes('network'))return 'Network error. Check the phone connection.'; return 'Sign-in failed. Check the account and try again.'; }
 initAuth();
 
 $('account-btn').addEventListener('click',()=>{$('account-menu').hidden=!$('account-menu').hidden;});
 document.addEventListener('click',e=>{if(!$('account-menu').hidden && !e.target.closest('#account-menu') && !e.target.closest('#account-btn'))$('account-menu').hidden=true;});
+
+
+$('manage-sales-btn').addEventListener('click',()=>{ $('account-menu').hidden=true; showView('admin'); loadSalesTeam(); });
+$('add-sales-form').addEventListener('submit',createSalesAccount);
+async function createSalesAccount(e){
+  e.preventDefault();
+  if(currentAccess?.role!=='admin'){toast('Administrator access required');return;}
+  const name=$('sales-name').value.trim(), email=$('sales-email').value.trim().toLowerCase(), password=$('sales-password').value;
+  const status=$('sales-create-status'), btn=$('create-sales-btn');
+  status.textContent=''; status.className='admin-status';
+  if(!name||!email||password.length<6){status.textContent='Enter a name, valid email and password of at least 6 characters.';status.classList.add('error');return;}
+  btn.disabled=true;btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Creating account…';
+  try{
+    const secondaryName='salesCreator';
+    const existing=getApps().find(x=>x.name===secondaryName);
+    const secondary=existing||initializeApp(firebaseConfig,secondaryName);
+    const secondaryAuth=getAuth(secondary);
+    const cred=await createUserWithEmailAndPassword(secondaryAuth,email,password);
+    await updateProfile(cred.user,{displayName:name});
+    await setDoc(doc(db,'salesUsers',cred.user.uid),{
+      name,email,role:'sales',department:'tiles-sanitary',active:true,
+      createdAt:serverTimestamp(),createdBy:auth.currentUser?.uid||'',createdByEmail:auth.currentUser?.email||''
+    });
+    await signOut(secondaryAuth);
+    $('add-sales-form').reset();
+    status.textContent=`${name} can now sign in to the Sales App.`;status.classList.add('success');
+    toast('Sales account created'); await loadSalesTeam();
+  }catch(err){
+    console.error(err); const c=err?.code||'';
+    status.textContent=c.includes('email-already-in-use')?'That email already has a Firebase account.':c.includes('permission-denied')?'Firestore blocked the change. Publish the supplied firestore.rules with your admin email.':c.includes('weak-password')?'Password must be at least 6 characters.':'Account could not be created: '+(err?.message||'Unknown error');
+    status.classList.add('error');
+  }finally{btn.disabled=false;btn.innerHTML='<i class="fa-solid fa-user-plus"></i> Create Sales Account';}
+}
+async function loadSalesTeam(){
+  if(currentAccess?.role!=='admin'||!db)return;
+  const list=$('sales-team-list'); list.innerHTML='<div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales accounts…</div>';
+  try{
+    const snap=await getDocs(collection(db,'salesUsers'));
+    const rows=[]; snap.forEach(d=>rows.push({id:d.id,...d.data()})); rows.sort((a,b)=>String(a.name||a.email).localeCompare(String(b.name||b.email)));
+    $('sales-team-count').textContent=rows.length;
+    if(!rows.length){list.innerHTML='<div class="team-empty"><i class="fa-solid fa-users"></i><strong>No sales accounts yet</strong><span>Add the first salesperson using the form.</span></div>';return;}
+    list.innerHTML='';
+    rows.forEach(row=>{
+      const el=document.createElement('div'); el.className='team-user'+(row.active===false?' inactive':'');
+      el.innerHTML=`<span class="team-avatar"><i class="fa-solid fa-user"></i></span><div class="team-user-copy"><strong>${esc(row.name||'Salesperson')}</strong><span>${esc(row.email||'')}</span><small>${row.active===false?'ACCESS DISABLED':'ACTIVE • TILES & SANITARY'}</small></div><div class="team-actions"><button data-reset type="button" title="Send password reset"><i class="fa-solid fa-key"></i></button><button data-toggle type="button" class="${row.active===false?'enable':''}" title="${row.active===false?'Enable access':'Disable access'}"><i class="fa-solid ${row.active===false?'fa-user-check':'fa-user-slash'}"></i></button></div>`;
+      qs('[data-reset]',el).onclick=async()=>{try{await sendPasswordResetEmail(auth,row.email);toast('Password reset email sent');}catch{toast('Could not send reset email');}};
+      qs('[data-toggle]',el).onclick=async()=>{const next=row.active===false; if(!next&&!confirm(`Disable ${row.name||row.email}'s sales access?`))return; try{await updateDoc(doc(db,'salesUsers',row.id),{active:next,updatedAt:serverTimestamp()});toast(next?'Sales access enabled':'Sales access disabled');loadSalesTeam();}catch(err){console.error(err);toast('Could not update access');}};
+      list.appendChild(el);
+    });
+  }catch(err){console.error(err);list.innerHTML='<div class="team-empty error"><i class="fa-solid fa-triangle-exclamation"></i><strong>Could not load sales accounts</strong><span>Check Firestore rules and your admin email.</span></div>';}
+}
 
 async function fetchJson(url){ const r=await fetch(url+'?v='+Date.now(),{cache:'no-store'}); if(!r.ok)throw new Error(url+' '+r.status); return r.json(); }
 function normalise(p,type){

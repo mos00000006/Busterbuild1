@@ -1,16 +1,73 @@
-const CACHE = 'busterbuild-sales-v1';
-const SHELL = [
-  './', './index.html', './styles.css', './app.js', './firebase-config.js',
-  './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
+const CACHE = 'busterbuild-sales-v3-20261001-1615';
+const STATIC_SHELL = [
+  './styles.css',
+  './manifest.webmanifest',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
   './data/sanitary-products.json'
 ];
-self.addEventListener('install', e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())));
-self.addEventListener('activate', e => e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
-self.addEventListener('fetch', e => {
-  const url = new URL(e.request.url);
-  if (url.pathname.includes('/data/') || url.pathname.endsWith('.json')) {
-    e.respondWith(fetch(e.request).then(r => { const copy=r.clone(); caches.open(CACHE).then(c=>c.put(e.request,copy)); return r; }).catch(()=>caches.match(e.request)));
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE)
+      .then(cache => cache.addAll(STATIC_SHELL))
+      .then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
+});
+
+function networkFirst(request) {
+  return fetch(request, { cache: 'no-store' })
+    .then(response => {
+      if (response && response.ok && request.method === 'GET') {
+        const copy = response.clone();
+        caches.open(CACHE).then(cache => cache.put(request, copy)).catch(() => {});
+      }
+      return response;
+    })
+    .catch(() => caches.match(request));
+}
+
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+  const path = url.pathname;
+
+  // Always fetch the live app/config HTML/JS first so Firebase changes appear immediately.
+  if (
+    request.mode === 'navigate' ||
+    path.endsWith('/sales-app/') ||
+    path.endsWith('/sales-app/index.html') ||
+    path.endsWith('/sales-app/app.js') ||
+    path.endsWith('/sales-app/firebase-config.js') ||
+    path.endsWith('/sales-app/sw.js')
+  ) {
+    event.respondWith(networkFirst(request));
     return;
   }
-  e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(r => { if(e.request.method==='GET' && r.ok){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));} return r; })));
+
+  // Catalogue JSON should also prefer the newest server copy.
+  if (path.includes('/data/') || path.endsWith('.json')) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  event.respondWith(
+    caches.match(request).then(hit => hit || fetch(request).then(response => {
+      if (response && response.ok) {
+        const copy = response.clone();
+        caches.open(CACHE).then(cache => cache.put(request, copy)).catch(() => {});
+      }
+      return response;
+    }))
+  );
 });
