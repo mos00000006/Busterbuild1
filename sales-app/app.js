@@ -1,4 +1,4 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1615';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1640';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
@@ -26,10 +26,27 @@ let toastTimer = null;
 let cart = loadCart();
 
 function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2300); }
-function showLogin(){ $('login-screen').hidden=false; $('app-shell').hidden=true; }
-function showApp(){ $('login-screen').hidden=true; $('app-shell').hidden=false; updateCartUI(); loadCatalogue(); }
+function showLogin(){
+  $('login-screen').hidden=false;
+  $('app-shell').hidden=true;
+  $('account-menu').hidden=true;
+}
+function showApp(){
+  $('firebase-setup').hidden=true;
+  $('login-error').textContent='';
+  $('login-screen').hidden=true;
+  $('app-shell').hidden=false;
+  $('account-menu').hidden=true;
+  updateCartUI();
+  loadCatalogue();
+}
 
-if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261001-1615').catch(()=>{}));
+if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
+  try{
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261001-1640',{updateViaCache:'none'});
+    await reg.update();
+  }catch(e){console.warn('Service worker update skipped',e);}
+});
 window.addEventListener('beforeinstallprompt', e=>{e.preventDefault();installPrompt=e;$('install-btn').hidden=false;});
 window.addEventListener('appinstalled',()=>{$('install-btn').hidden=true;installPrompt=null;toast('BusterBuild Sales installed');});
 $('install-btn').addEventListener('click', async()=>{
@@ -39,7 +56,9 @@ $('install-btn').addEventListener('click', async()=>{
 });
 
 async function initAuth(){
+  $('firebase-setup').hidden=cfgReady;
   if(!cfgReady){ $('firebase-setup').hidden=false; $('login-form').addEventListener('submit',e=>e.preventDefault()); showLogin(); return; }
+  $('firebase-setup').hidden=true;
   firebaseApp=initializeApp(firebaseConfig); auth=getAuth(firebaseApp); db=getFirestore(firebaseApp);
   $('login-form').addEventListener('submit', async e=>{
     e.preventDefault(); $('login-error').textContent='';
@@ -49,7 +68,7 @@ async function initAuth(){
     finally{ btn.disabled=false; btn.innerHTML='<i class="fa-solid fa-right-to-bracket"></i> Sign in'; }
   });
   onAuthStateChanged(auth,async user=>{
-    if(!user){ currentAccess=null; showLogin(); return; }
+    if(!user){ currentAccess=null; $('login-error').textContent=''; showLogin(); return; }
     try{
       currentAccess=await resolveAccess(user);
       if(!currentAccess.allowed){

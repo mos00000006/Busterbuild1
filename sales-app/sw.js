@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-v3-20261001-1615';
+const CACHE = 'busterbuild-sales-v4-20261001-1640';
 const STATIC_SHELL = [
   './styles.css',
   './manifest.webmanifest',
