@@ -20,7 +20,7 @@ concurrency:
 jobs:
   update-catalogue:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -29,6 +29,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Verify V3 updater is actually in the repository
+        shell: bash
+        run: |
+          grep -q '2026-10-01-v3-html-checkpoint' scripts/update_pulse_catalogue.py
+          echo "Confirmed V3 HTML-only checkpoint updater"
+          grep 'BUSTERBUILD_PULSE_SYNC_VERSION' scripts/update_pulse_catalogue.py | head -1
 
       - name: Install catalogue tools
         run: pip install --disable-pip-version-check requests beautifulsoup4
@@ -44,22 +51,25 @@ jobs:
           p = Path('data/pulse-tile-catalogue.json')
           d = json.loads(p.read_text(encoding='utf-8'))
           products = d.get('products', [])
+          print('Updater version:', d.get('updater_version'))
           print('Products:', len(products))
           print('Source mode:', d.get('source_mode'))
           print('Sync complete:', d.get('sync_complete'))
           print('Failed categories:', d.get('failed_categories', []))
+          if d.get('updater_version') != '2026-10-01-v3-html-checkpoint':
+              raise SystemExit('Wrong updater version generated the catalogue')
           if len(products) < 20:
               raise SystemExit('Generated catalogue is unexpectedly small')
           PY
 
-      - name: Save updated catalogue to the website
+      - name: Save updated catalogue and cache to the website
         run: |
           git config user.name "BusterBuild Catalogue Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/pulse-tile-catalogue.json
+          git add data/pulse-tile-catalogue.json data/pulse-product-cache.json
           if git diff --cached --quiet; then
             echo "No catalogue changes."
           else
-            git commit -m "Update tile catalogue"
+            git commit -m "Update static tile catalogue"
             git push
           fi

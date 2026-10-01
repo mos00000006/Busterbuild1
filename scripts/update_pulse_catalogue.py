@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build a static Pulse Tiles catalogue for the BusterBuild GitHub Pages site.
+"""BusterBuild Pulse Tiles static catalogue updater.
 
-This version is intentionally defensive because the Pulse site occasionally
-returns non-JSON responses or closes connections when many requests arrive from
-GitHub Actions. It retries with backoff, falls back category-by-category, and
-preserves data from the previous successful sync if one category is temporarily
-unavailable.
+V3 deliberately avoids the WooCommerce JSON API because Pulse sometimes returns
+HTML/challenge pages to GitHub Actions. It crawls the public category pages,
+retries dropped connections, caches product details, checkpoints after every
+category, and never throws away previously synced categories because of one
+temporary outage.
 """
 from __future__ import annotations
 
@@ -16,51 +16,51 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-from requests import Response
 from requests.exceptions import RequestException
+
+BUSTERBUILD_PULSE_SYNC_VERSION = "2026-10-01-v3-html-checkpoint"
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "pulse-tile-catalogue.json"
+CACHE = ROOT / "data" / "pulse-product-cache.json"
 BASE = "https://pulsetiles.co.za"
-API = BASE + "/wp-json/wc/store/v1"
-TIMEOUT = 45
-MAX_ATTEMPTS = 7
-JSON_ATTEMPTS = 5
+TIMEOUT = 50
+MAX_ATTEMPTS = 10
 
-# A normal browser UA is less likely to be rate-limited than a bot-style UA.
-UA = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/153.0.0.0 Safari/537.36"
-)
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+]
 
 CATEGORIES = {
-    "ceramic-tiles": {"title": "Ceramic Tiles", "slug": "ceramic-tiles", "url": BASE + "/product-category/tiles/ceramic-tiles/"},
-    "porcelain-tiles": {"title": "Porcelain Tiles", "slug": "porcelain-tiles", "url": BASE + "/product-category/tiles/porcelain-tiles/"},
-    "hardbody-tiles": {"title": "Hardbody Tiles", "slug": "hardbody-tiles", "url": BASE + "/product-category/combo-deals/hardbody-tiles/"},
-    "natural-stone-cladding": {"title": "Natural Stone Cladding", "slug": "natural-stone-cladding", "url": BASE + "/product-category/tiles/natural-stone-cladding/"},
-    "mosaics": {"title": "Mosaic Tiles", "slug": "mosaics", "url": BASE + "/product-category/tiles/mosaics/"},
-    "decor-tiles": {"title": "Decor Tiles", "slug": "decor-tiles", "url": BASE + "/product-category/tiles/decor-tiles/"},
-    "laminate-flooring": {"title": "Laminate Flooring", "slug": "laminate-flooring", "url": BASE + "/product-category/laminate-flooring/"},
-    "all-floor-tiles": {"title": "All Floor Tiles", "slug": "all-floor-tiles", "url": BASE + "/product-category/all-floor-tiles/"},
-    "all-wall-tiles": {"title": "All Wall Tiles", "slug": "all-wall-tiles", "url": BASE + "/product-category/tiles/all-wall-tiles/"},
-    "all-indoor-tiles": {"title": "All Indoor Tiles", "slug": "all-indoor-tiles", "url": BASE + "/product-category/all-indoor-tiles/"},
-    "all-outdoor-tiles": {"title": "All Outdoor Tiles", "slug": "all-outdoor-tiles", "url": BASE + "/product-category/all-outdoor-tiles/"},
-    "large-format-tiles": {"title": "Large Format Tiles", "slug": "large-format-tiles", "url": BASE + "/product-category/tiles/large-format-tiles/"},
-    "wood-look-tiles": {"title": "Woodlook Tiles", "slug": "wood-look-tiles", "url": BASE + "/product-category/tiles/wood-look-tiles/"},
-    "marble-look-tiles": {"title": "Marble Look Tiles", "slug": "marble-look-tiles", "url": BASE + "/product-category/marble-look-tiles/"},
-    "subway-tiles": {"title": "Subway Tiles", "slug": "subway-tiles", "url": BASE + "/product-category/tiles/subway-tiles/"},
-    "slip-resistant-tiles": {"title": "Slip Resistant Tiles", "slug": "slip-resistant-tiles", "url": BASE + "/product-category/tiles/slip-resistant-tiles/"},
-    "cladding-look-tiles": {"title": "Cladding Look Tiles", "slug": "cladding-look-tiles", "url": BASE + "/product-category/cladding-look-tiles/"},
-    "tile-adhesives": {"title": "Tile Adhesives", "slug": "tile-adhesives", "url": BASE + "/product-category/tile-adhesives/"},
-    "tile-grout": {"title": "Tile Grout", "slug": "tile-grout", "url": BASE + "/product-category/tile-grout/"},
-    "bonds-key-coats": {"title": "Tile Bonds & Key Coats", "slug": "bonds-key-coats", "url": BASE + "/product-category/bonds-key-coats/"},
-    "tile-edges-trims": {"title": "Tile Edges & Trims", "slug": "tile-edges-trims", "url": BASE + "/product-category/tile-edges-trims/"},
-    "tile-cleaners": {"title": "Tile Cleaners", "slug": "tile-cleaners", "url": BASE + "/product-category/tile-cleaners/"},
-    "tile-spacers-tools": {"title": "Tile Spacers & Tools", "slug": "tile-spacers-tools", "url": BASE + "/product-category/tile-spacers-tools/"},
+    "ceramic-tiles": {"title": "Ceramic Tiles", "url": BASE + "/product-category/tiles/ceramic-tiles/"},
+    "porcelain-tiles": {"title": "Porcelain Tiles", "url": BASE + "/product-category/tiles/porcelain-tiles/"},
+    "hardbody-tiles": {"title": "Hardbody Tiles", "url": BASE + "/product-category/combo-deals/hardbody-tiles/"},
+    "natural-stone-cladding": {"title": "Natural Stone Cladding", "url": BASE + "/product-category/tiles/natural-stone-cladding/"},
+    "mosaics": {"title": "Mosaic Tiles", "url": BASE + "/product-category/tiles/mosaics/"},
+    "decor-tiles": {"title": "Decor Tiles", "url": BASE + "/product-category/tiles/decor-tiles/"},
+    "laminate-flooring": {"title": "Laminate Flooring", "url": BASE + "/product-category/laminate-flooring/"},
+    "all-floor-tiles": {"title": "All Floor Tiles", "url": BASE + "/product-category/all-floor-tiles/"},
+    "all-wall-tiles": {"title": "All Wall Tiles", "url": BASE + "/product-category/tiles/all-wall-tiles/"},
+    "all-indoor-tiles": {"title": "All Indoor Tiles", "url": BASE + "/product-category/all-indoor-tiles/"},
+    "all-outdoor-tiles": {"title": "All Outdoor Tiles", "url": BASE + "/product-category/all-outdoor-tiles/"},
+    "large-format-tiles": {"title": "Large Format Tiles", "url": BASE + "/product-category/tiles/large-format-tiles/"},
+    "wood-look-tiles": {"title": "Woodlook Tiles", "url": BASE + "/product-category/tiles/wood-look-tiles/"},
+    "marble-look-tiles": {"title": "Marble Look Tiles", "url": BASE + "/product-category/marble-look-tiles/"},
+    "subway-tiles": {"title": "Subway Tiles", "url": BASE + "/product-category/tiles/subway-tiles/"},
+    "slip-resistant-tiles": {"title": "Slip Resistant Tiles", "url": BASE + "/product-category/tiles/slip-resistant-tiles/"},
+    "cladding-look-tiles": {"title": "Cladding Look Tiles", "url": BASE + "/product-category/cladding-look-tiles/"},
+    "tile-adhesives": {"title": "Tile Adhesives", "url": BASE + "/product-category/tile-adhesives/"},
+    "tile-grout": {"title": "Tile Grout", "url": BASE + "/product-category/tile-grout/"},
+    "bonds-key-coats": {"title": "Tile Bonds & Key Coats", "url": BASE + "/product-category/bonds-key-coats/"},
+    "tile-edges-trims": {"title": "Tile Edges & Trims", "url": BASE + "/product-category/tile-edges-trims/"},
+    "tile-cleaners": {"title": "Tile Cleaners", "url": BASE + "/product-category/tile-cleaners/"},
+    "tile-spacers-tools": {"title": "Tile Spacers & Tools", "url": BASE + "/product-category/tile-spacers-tools/"},
 }
 
 ALIASES = {
@@ -70,461 +70,216 @@ ALIASES = {
     "natural-cladding": "natural-stone-cladding",
 }
 
-# Reverse lookup lets an API product contribute to all matching category groups,
-# not only the category query that happened to return it.
-SLUG_TO_KEY = {cfg["slug"].lower(): key for key, cfg in CATEGORIES.items()}
+
+def clean_text(value: str | None) -> str:
+    if not value:
+        return ""
+    return re.sub(r"\s+", " ", BeautifulSoup(value, "html.parser").get_text(" ", strip=True)).strip()
+
+
+def load_json(path: Path, default):
+    try:
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"WARN could not read {path}: {exc}", file=sys.stderr)
+    return default
 
 
 def make_session() -> requests.Session:
     s = requests.Session()
     s.headers.update({
-        "User-Agent": UA,
+        "User-Agent": random.choice(USER_AGENTS),
         "Accept-Language": "en-ZA,en;q=0.9",
         "Referer": BASE + "/tiles/",
-        # Avoid reusing a server-side connection that Pulse may have already closed.
         "Connection": "close",
         "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
     })
     return s
 
 
-sess = make_session()
+def wait_seconds(attempt: int) -> float:
+    return min(45.0, 1.5 * (1.7 ** attempt)) + random.uniform(0.5, 2.0)
 
 
-def clean_text(value: str | None) -> str:
-    if not value:
-        return ""
-    soup = BeautifulSoup(value, "html.parser")
-    return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
-
-
-def backoff(attempt: int) -> float:
-    # 1.2, 2.1, 3.8, 7.1 ... capped, plus jitter.
-    return min(25.0, 1.1 * (1.8 ** attempt)) + random.uniform(0.2, 1.2)
-
-
-def reset_session() -> None:
-    global sess
-    try:
-        sess.close()
-    except Exception:
-        pass
-    sess = make_session()
-
-
-def request_with_retry(url: str, *, params=None, accept: str = "text/html") -> Response:
-    last_exc: Exception | None = None
+def fetch_html(url: str) -> BeautifulSoup:
+    last = None
     for attempt in range(MAX_ATTEMPTS):
+        s = make_session()
         try:
-            headers = {"Accept": accept}
-            r = sess.get(url, params=params, timeout=TIMEOUT, headers=headers, allow_redirects=True)
-            # 403/429 are commonly temporary anti-bot/rate-limit responses here.
+            r = s.get(
+                url,
+                timeout=TIMEOUT,
+                allow_redirects=True,
+                headers={"Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"},
+            )
             if r.status_code in (403, 408, 425, 429, 500, 502, 503, 504):
                 raise RuntimeError(f"HTTP {r.status_code}")
             r.raise_for_status()
-            if not r.content:
-                raise RuntimeError("empty response")
-            return r
+            text = r.text
+            if len(text) < 500:
+                raise RuntimeError(f"response unexpectedly short ({len(text)} chars)")
+            return BeautifulSoup(text, "html.parser")
         except (RequestException, RuntimeError) as exc:
-            last_exc = exc
-            if attempt >= MAX_ATTEMPTS - 1:
+            last = exc
+            if attempt == MAX_ATTEMPTS - 1:
                 break
-            wait = backoff(attempt)
-            print(
-                f"WARN request failed ({attempt + 1}/{MAX_ATTEMPTS}) {url}: {exc}; retrying in {wait:.1f}s",
-                file=sys.stderr,
-            )
-            reset_session()
-            time.sleep(wait)
-    raise RuntimeError(f"Request failed after {MAX_ATTEMPTS} attempts: {url}: {last_exc}")
+            delay = wait_seconds(attempt)
+            print(f"WARN fetch {attempt+1}/{MAX_ATTEMPTS} failed for {url}: {exc}; retrying in {delay:.1f}s", file=sys.stderr)
+            time.sleep(delay)
+        finally:
+            s.close()
+    raise RuntimeError(f"failed after {MAX_ATTEMPTS} attempts: {url}: {last}")
 
 
-def get_json(url: str, params=None):
-    # Network errors are already retried by request_with_retry(). Only retry here
-    # when Pulse answers HTTP 200 with HTML/a challenge page instead of JSON.
-    last_exc: Exception | None = None
-    for attempt in range(JSON_ATTEMPTS):
-        r = request_with_retry(url, params=params, accept="application/json,text/plain;q=0.9,*/*;q=0.8")
-        try:
-            text = r.text.lstrip("\ufeff\n\r\t ")
-            if not text.startswith(("[", "{")):
-                sample = re.sub(r"\s+", " ", text[:140])
-                raise ValueError(f"non-JSON response: {sample!r}")
-            return json.loads(text)
-        except (ValueError, json.JSONDecodeError) as exc:
-            last_exc = exc
-            if attempt >= JSON_ATTEMPTS - 1:
-                break
-            wait = backoff(attempt)
-            print(
-                f"WARN JSON parse failed ({attempt + 1}/{JSON_ATTEMPTS}) {url}: {exc}; retrying in {wait:.1f}s",
-                file=sys.stderr,
-            )
-            reset_session()
-            time.sleep(wait)
-    raise RuntimeError(f"JSON parse failed after {JSON_ATTEMPTS} attempts: {url}: {last_exc}")
-
-
-def html_get(url: str) -> BeautifulSoup:
-    r = request_with_retry(url, accept="text/html,application/xhtml+xml;q=0.9,*/*;q=0.8")
-    return BeautifulSoup(r.text, "html.parser")
-
-
-def api_categories():
-    rows = []
-    for page in range(1, 30):
-        data = get_json(API + "/products/categories", {"per_page": 100, "page": page})
-        if not isinstance(data, list) or not data:
-            break
-        rows.extend(data)
-        if len(data) < 100:
-            break
-        time.sleep(0.35)
-    return rows
-
-
-def api_products_for_category(category_id: int):
-    rows = []
-    for page in range(1, 30):
-        data = get_json(API + "/products", {
-            "category": category_id,
-            "per_page": 100,
-            "page": page,
-            "orderby": "title",
-            "order": "asc",
-        })
-        if not isinstance(data, list) or not data:
-            break
-        rows.extend(data)
-        if len(data) < 100:
-            break
-        time.sleep(0.45)
-    return rows
-
-
-def price_info(p: dict):
-    pr = p.get("prices") or {}
+def product_url_ok(url: str) -> bool:
     try:
-        minor = int(pr.get("currency_minor_unit") or 2)
+        p = urlparse(url)
+        return p.netloc.endswith("pulsetiles.co.za") and re.search(r"^/product/[^/?#]+/?$", p.path) is not None
     except Exception:
-        minor = 2
-    div = 10 ** minor
+        return False
 
-    def dec(x):
-        try:
-            return float(x) / div
-        except Exception:
-            return None
 
-    current = dec(pr.get("price"))
-    regular = dec(pr.get("regular_price"))
-    sale = dec(pr.get("sale_price"))
-    rng = pr.get("price_range") or {}
-    low = dec(rng.get("min_amount")) if rng else None
-    high = dec(rng.get("max_amount")) if rng else None
-    is_from = low is not None and high is not None and abs(low - high) > 1e-9
-    if is_from and low is not None:
-        current = low
+def category_product_urls(base_url: str) -> list[str]:
+    found: list[str] = []
+    seen: set[str] = set()
+    for page in range(1, 50):
+        page_url = base_url if page == 1 else base_url + ("&" if "?" in base_url else "?") + f"product-page={page}"
+        soup = fetch_html(page_url)
+        page_urls: list[str] = []
+        for a in soup.select('a[href*="/product/"]'):
+            href = a.get("href")
+            if not href:
+                continue
+            href = urljoin(BASE, href).split("#", 1)[0].split("?", 1)[0]
+            if product_url_ok(href) and href not in seen:
+                seen.add(href)
+                page_urls.append(href)
+        if not page_urls:
+            break
+        found.extend(page_urls)
+        next_link = soup.select_one("a.next.page-numbers")
+        if not next_link:
+            break
+        time.sleep(random.uniform(1.2, 2.2))
+    return found
+
+
+def parse_price(text: str) -> dict:
+    txt = clean_text(text)
+    nums = [float(x.replace(",", "")) for x in re.findall(r"R\s*([0-9][0-9,]*(?:\.\d{1,2})?)", txt, re.I)]
+    current = nums[-1] if nums else None
+    regular = nums[0] if len(nums) > 1 else current
+    sale = current if len(nums) > 1 and regular and current and current < regular else None
     return {
         "current": current,
         "regular": regular,
         "sale": sale,
-        "from": is_from,
-        "currency": pr.get("currency_code") or "ZAR",
+        "from": "from" in txt.lower(),
+        "currency": "ZAR",
     }
 
 
-def attribute_pairs(p: dict):
-    out = []
-    for a in p.get("attributes") or []:
-        vals = []
-        for t in a.get("terms") or []:
-            if isinstance(t, dict):
-                v = t.get("name") or t.get("slug")
-                if v:
-                    vals.append(str(v))
-        for v in a.get("options") or []:
-            if v and str(v) not in vals:
-                vals.append(str(v))
-        if vals:
-            out.append({"name": clean_text(a.get("name")) or "Specification", "value": ", ".join(vals)})
-    return out
-
-
-def factual_description(name: str, attrs: list[dict], source_short: str = "") -> str:
-    wanted = []
+def factual_description(name: str, attrs: list[dict], short: str) -> str:
+    # Keep this as factual catalogue copy rather than reproducing long source prose.
+    facts = []
+    wanted = ("tile size", "size", "finish", "material", "colour", "color", "sold", "quantity per box", "square meters", "application")
     for a in attrs:
-        k = a["name"].lower()
-        if any(token in k for token in [
-            "tile size", "size", "finish", "material", "colour", "color",
-            "sold", "square meters", "quantity per box", "use", "application",
-        ]):
-            wanted.append(f"{a['name']}: {a['value']}")
-        if len(wanted) >= 4:
+        if any(k in a["name"].lower() for k in wanted):
+            facts.append(f"{a['name']}: {a['value']}")
+        if len(facts) >= 4:
             break
-    if wanted:
-        return ". ".join(wanted) + "."
-    s = clean_text(source_short)
-    # Keep only a genuinely short source blurb; otherwise use factual neutral copy.
-    if s and len(s.split()) <= 12 and len(s) <= 100:
-        return s
-    return f"{name}. See product details for available specifications."
+    if facts:
+        return ". ".join(facts) + "."
+    short_clean = clean_text(short)
+    if short_clean and len(short_clean.split()) <= 12 and len(short_clean) <= 100:
+        return short_clean
+    return f"{name}. See available product specifications."
 
 
-def product_category_keys(p: dict) -> set[str]:
-    keys: set[str] = set()
-    for c in p.get("categories") or []:
-        if not isinstance(c, dict):
-            continue
-        slug = str(c.get("slug") or "").lower()
-        key = SLUG_TO_KEY.get(slug)
-        if key:
-            keys.add(key)
-    return keys
-
-
-def normalize_api_product(p: dict, category_keys: list[str]):
-    images = p.get("images") or []
-    img = ""
-    if images:
-        img = images[0].get("src") or images[0].get("thumbnail") or ""
-    attrs = attribute_pairs(p)
-    name = clean_text(p.get("name")) or "Tile product"
-    discovered = set(category_keys) | product_category_keys(p)
-    return {
-        "id": str(p.get("id") or p.get("slug") or p.get("sku") or p.get("name")),
-        "name": name,
-        "code": clean_text(p.get("sku")) or "—",
-        "price": price_info(p),
-        "description": factual_description(name, attrs, p.get("short_description") or ""),
-        "image": img,
-        "attributes": attrs,
-        "categories": sorted(discovered),
-    }
-
-
-def html_category_urls(url: str):
-    found = []
-    seen = set()
-    for page in range(1, 40):
-        page_url = url if page == 1 else (url + ("&" if "?" in url else "?") + f"product-page={page}")
-        soup = html_get(page_url)
-        urls = []
-        for a in soup.select('a[href*="/product/"]'):
-            href = a.get("href")
-            if href and "/product/" in href and href not in seen:
-                seen.add(href)
-                urls.append(href)
-        urls = [u for u in urls if re.search(r"/product/[^/?#]+/?(?:$|[?#])", u)]
-        if not urls:
-            break
-        found.extend(urls)
-        next_link = soup.select_one("a.next.page-numbers")
-        if not next_link:
-            break
-        time.sleep(0.7 + random.uniform(0.0, 0.35))
-    return found
-
-
-def html_product(url: str):
-    soup = html_get(url)
+def parse_product(url: str) -> dict:
+    soup = fetch_html(url)
     h1 = soup.select_one("h1.product_title") or soup.find("h1")
-    name = clean_text(h1.get_text(" ", strip=True) if h1 else "")
+    name = clean_text(h1.get_text(" ", strip=True) if h1 else "") or url.rstrip("/").split("/")[-1].replace("-", " ").title()
+
     sku_el = soup.select_one(".sku")
     code = clean_text(sku_el.get_text(" ", strip=True) if sku_el else "") or "—"
+
     price_el = soup.select_one(".summary .price") or soup.select_one("p.price") or soup.select_one(".price")
-    price_text = clean_text(price_el.get_text(" ", strip=True) if price_el else "")
-    nums = [float(x.replace(",", "")) for x in re.findall(r"R\s*([0-9][0-9,]*(?:\.\d{1,2})?)", price_text, re.I)]
-    current = nums[-1] if nums else None
-    regular = nums[0] if len(nums) > 1 else current
-    sale = current if len(nums) > 1 and regular and current and current < regular else None
-    from_flag = "from" in price_text.lower()
+    price = parse_price(price_el.get_text(" ", strip=True) if price_el else "")
+
     short_el = soup.select_one(".woocommerce-product-details__short-description")
     short = clean_text(short_el.get_text(" ", strip=True) if short_el else "")
+
+    image = ""
     og = soup.find("meta", attrs={"property": "og:image"})
-    image = og.get("content") if og else ""
-    attrs = []
+    if og and og.get("content"):
+        image = str(og.get("content"))
+    if not image:
+        img = soup.select_one(".woocommerce-product-gallery img")
+        if img:
+            image = img.get("data-large_image") or img.get("src") or ""
+
+    attrs: list[dict] = []
     for tr in soup.select("table.woocommerce-product-attributes tr, table.shop_attributes tr"):
         k = tr.select_one("th")
         v = tr.select_one("td")
-        if k and v:
-            kk = clean_text(k.get_text(" ", strip=True))
-            vv = clean_text(v.get_text(" ", strip=True))
-            if kk and vv and not any(x["name"] == kk and x["value"] == vv for x in attrs):
-                attrs.append({"name": kk, "value": vv})
+        if not (k and v):
+            continue
+        kk = clean_text(k.get_text(" ", strip=True))
+        vv = clean_text(v.get_text(" ", strip=True))
+        if kk and vv and not any(x["name"] == kk and x["value"] == vv for x in attrs):
+            attrs.append({"name": kk, "value": vv})
 
-    # WooCommerce places category slugs on the product page body class.
-    category_keys = set()
-    body = soup.find("body")
-    if body:
-        classes = body.get("class") or []
-        for cls in classes:
-            m = re.match(r"product_cat-(.+)", str(cls))
-            if m:
-                key = SLUG_TO_KEY.get(m.group(1).lower())
-                if key:
-                    category_keys.add(key)
-
-    pid = re.sub(r"[^a-z0-9]+", "-", (code if code != "—" else name).lower()).strip("-") or url.rstrip("/").split("/")[-1]
+    slug = urlparse(url).path.rstrip("/").split("/")[-1]
     return {
-        "id": pid,
-        "name": name or url.rstrip("/").split("/")[-1].replace("-", " ").title(),
+        "id": slug,
+        "source_url": url,
+        "name": name,
         "code": code,
-        "price": {"current": current, "regular": regular, "sale": sale, "from": from_flag, "currency": "ZAR"},
-        "description": factual_description(name or "Tile product", attrs, short),
+        "price": price,
+        "description": factual_description(name, attrs, short),
         "image": image,
         "attributes": attrs,
-        "categories": sorted(category_keys),
+        "categories": [],
     }
 
 
-def load_previous():
-    try:
-        if not OUT.exists():
-            return None
-        data = json.loads(OUT.read_text(encoding="utf-8"))
-        if isinstance(data, dict) and isinstance(data.get("products"), list):
-            return data
-    except Exception as exc:
-        print(f"WARN could not read previous catalogue: {exc}", file=sys.stderr)
-    return None
+def merge_product(existing: dict | None, incoming: dict, category: str) -> dict:
+    if existing:
+        out = dict(existing)
+        for field in ("source_url", "name", "code", "price", "description", "image", "attributes"):
+            if incoming.get(field):
+                out[field] = incoming[field]
+    else:
+        out = dict(incoming)
+    out["categories"] = sorted(set(out.get("categories") or []) | {category})
+    return out
 
 
-def crawl_category_html(key: str, cfg: dict, product_cache: dict[str, dict]):
-    urls = html_category_urls(cfg["url"])
-    print(f"HTML {key}: {len(urls)} products")
-    products = []
-    for i, url in enumerate(urls, 1):
-        try:
-            if url not in product_cache:
-                product_cache[url] = html_product(url)
-                time.sleep(0.35 + random.uniform(0.0, 0.25))
-            p = dict(product_cache[url])
-            p["categories"] = sorted(set(p.get("categories") or []) | {key})
-            product_cache[url] = p
-            products.append(p)
-        except Exception as exc:
-            print(f"WARN product failed {url}: {exc}", file=sys.stderr)
-        if i % 20 == 0:
-            print(f"  HTML details {key}: {i}/{len(urls)}")
-    return products
+def previous_maps(previous: dict):
+    by_id = {}
+    by_url = {}
+    for p in previous.get("products", []) if isinstance(previous, dict) else []:
+        pid = str(p.get("id") or "")
+        if pid:
+            by_id[pid] = p
+        u = p.get("source_url")
+        if u:
+            by_url[str(u)] = p
+    return by_id, by_url
 
 
-def build_catalogue():
-    previous = load_previous()
-    previous_products = {str(p.get("id")): p for p in (previous or {}).get("products", []) if p.get("id") is not None}
-    previous_categories = (previous or {}).get("categories", {})
-
-    products_by_id: dict[str, dict] = {}
-    category_products: dict[str, list[str]] = {}
-    failed_categories: list[str] = []
-    used_html = False
-    product_cache: dict[str, dict] = {}
-
-    try:
-        cats = api_categories()
-        slug_to_cat = {str(c.get("slug") or "").lower(): c for c in cats}
-        if not cats:
-            raise RuntimeError("API category list was empty")
-        print(f"API category index: {len(cats)} categories")
-    except Exception as exc:
-        print(f"WARN API category index unavailable: {exc}", file=sys.stderr)
-        slug_to_cat = {}
-
-    for idx, (key, cfg) in enumerate(CATEGORIES.items(), 1):
-        print(f"\n[{idx}/{len(CATEGORIES)}] Syncing {key} ...")
-        rows = None
-        try:
-            c = slug_to_cat.get(cfg["slug"].lower())
-            if not c:
-                c = next(
-                    (x for x in slug_to_cat.values() if clean_text(x.get("name")).lower() == cfg["title"].lower()),
-                    None,
-                )
-            if not c:
-                raise RuntimeError("category not found in API index")
-            api_rows = api_products_for_category(int(c["id"]))
-            if not api_rows:
-                raise RuntimeError("API returned no products")
-            rows = [normalize_api_product(p, [key]) for p in api_rows]
-            print(f"API {key}: {len(rows)} products")
-        except Exception as api_exc:
-            print(f"WARN API {key} failed: {api_exc}; trying HTML fallback", file=sys.stderr)
-            try:
-                rows = crawl_category_html(key, cfg, product_cache)
-                used_html = True
-                if not rows:
-                    raise RuntimeError("HTML returned no products")
-            except Exception as html_exc:
-                print(f"ERROR {key} could not sync: {html_exc}", file=sys.stderr)
-                rows = None
-
-        if rows:
-            ids = []
-            for p in rows:
-                pid = str(p["id"])
-                ids.append(pid)
-                existing = products_by_id.get(pid)
-                if existing:
-                    existing["categories"] = sorted(set(existing.get("categories") or []) | set(p.get("categories") or []) | {key})
-                    # Prefer non-empty details from the newer row.
-                    for field in ("name", "code", "image", "description", "attributes", "price"):
-                        if p.get(field):
-                            existing[field] = p[field]
-                else:
-                    p["categories"] = sorted(set(p.get("categories") or []) | {key})
-                    products_by_id[pid] = p
-            category_products[key] = list(dict.fromkeys(ids))
-        else:
-            failed_categories.append(key)
-            # Keep the last good data for this category if the site is temporarily unavailable.
-            old_cat = previous_categories.get(key) or {}
-            old_ids = [str(x) for x in old_cat.get("product_ids", [])]
-            if old_ids:
-                category_products[key] = old_ids
-                for pid in old_ids:
-                    old = previous_products.get(pid)
-                    if old:
-                        products_by_id.setdefault(pid, old)
-                print(f"Using previous {key}: {len(old_ids)} products")
-            else:
-                category_products[key] = []
-
-        # Brief spacing between categories reduces throttling from shared GitHub runner IPs.
-        time.sleep(0.65 + random.uniform(0.0, 0.45))
-
-    # Merge category memberships already present on products into category lists. This is
-    # useful when the product API exposes style/application categories directly.
-    for pid, p in list(products_by_id.items()):
-        for key in p.get("categories") or []:
-            if key in CATEGORIES:
-                category_products.setdefault(key, [])
-                if pid not in category_products[key]:
-                    category_products[key].append(pid)
-
-    products = list(products_by_id.values())
-    products.sort(key=lambda x: (x.get("name") or "").lower())
-    source_mode = "hybrid-api-html" if used_html else "woocommerce-store-api"
-    return products, category_products, source_mode, failed_categories
-
-
-def write_output(products, category_products, source_mode, failed_categories):
+def write_payload(products_by_id: dict[str, dict], category_products: dict[str, list[str]], failed_categories: list[str], *, checkpoint: bool):
     category_meta = {}
     for key, cfg in CATEGORIES.items():
         ids = list(dict.fromkeys(str(x) for x in category_products.get(key, [])))
-        category_meta[key] = {
-            "title": cfg["title"],
-            "count": len(ids),
-            "product_ids": ids,
-        }
+        category_meta[key] = {"title": cfg["title"], "count": len(ids), "product_ids": ids}
 
-    type_keys = [
-        "ceramic-tiles", "porcelain-tiles", "hardbody-tiles",
-        "natural-stone-cladding", "mosaics", "decor-tiles", "laminate-flooring",
-    ]
     all_ids = []
-    for k in type_keys:
-        all_ids.extend(category_products.get(k, []))
+    for key in ("ceramic-tiles", "porcelain-tiles", "hardbody-tiles", "natural-stone-cladding", "mosaics", "decor-tiles", "laminate-flooring"):
+        all_ids.extend(category_products.get(key, []))
     all_ids = list(dict.fromkeys(str(x) for x in all_ids))
     category_meta["all"] = {"title": "All Tiles", "count": len(all_ids), "product_ids": all_ids}
 
@@ -532,9 +287,12 @@ def write_output(products, category_products, source_mode, failed_categories):
         if target in category_meta:
             category_meta[alias] = dict(category_meta[target])
 
+    products = list(products_by_id.values())
+    products.sort(key=lambda x: (x.get("name") or "").lower())
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_mode": source_mode,
+        "updater_version": BUSTERBUILD_PULSE_SYNC_VERSION,
+        "source_mode": "html-static-cache",
         "source_site": "Pulse Tiles",
         "sync_complete": not failed_categories,
         "failed_categories": failed_categories,
@@ -543,20 +301,117 @@ def write_output(products, category_products, source_mode, failed_categories):
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\nWrote {OUT} with {len(products)} unique products")
-    if failed_categories:
-        print("WARNING: these categories could not refresh this run: " + ", ".join(failed_categories), file=sys.stderr)
+    if checkpoint:
+        print(f"Checkpoint: {len(products)} products written")
+    return payload
 
 
-def main():
-    products, category_products, source_mode, failed_categories = build_catalogue()
-    if len(products) < 20:
-        raise SystemExit("Catalogue build aborted: fewer than 20 products found and no usable previous catalogue exists")
-    write_output(products, category_products, source_mode, failed_categories)
-    # Do not fail the whole GitHub Action for a temporary category outage if useful
-    # catalogue data was produced. The next scheduled/manual run can fill any gaps.
+def main() -> None:
+    print(f"BUSTERBUILD_PULSE_SYNC_VERSION={BUSTERBUILD_PULSE_SYNC_VERSION}")
+    print("Mode: HTML-only static crawl (WooCommerce JSON API disabled)")
+
+    previous = load_json(OUT, {})
+    prev_by_id, prev_by_url = previous_maps(previous)
+    prev_categories = previous.get("categories", {}) if isinstance(previous, dict) else {}
+
+    cache = load_json(CACHE, {})
+    if not isinstance(cache, dict):
+        cache = {}
+    # Seed the cache from the last successful catalogue too.
+    for url, p in prev_by_url.items():
+        cache.setdefault(url, p)
+
+    products_by_id: dict[str, dict] = dict(prev_by_id)
+    category_products: dict[str, list[str]] = {}
+    failed_categories: list[str] = []
+    details_fetched = 0
+
+    for idx, (key, cfg) in enumerate(CATEGORIES.items(), 1):
+        print(f"\n[{idx}/{len(CATEGORIES)}] {key}")
+        try:
+            urls = category_product_urls(cfg["url"])
+            if not urls:
+                raise RuntimeError("no product URLs found")
+            print(f"HTML {key}: {len(urls)} product URLs")
+        except Exception as exc:
+            print(f"WARN category listing failed for {key}: {exc}", file=sys.stderr)
+            old = prev_categories.get(key) or {}
+            old_ids = [str(x) for x in old.get("product_ids", [])]
+            category_products[key] = old_ids
+            if old_ids:
+                print(f"Using previous {key}: {len(old_ids)} products")
+            else:
+                failed_categories.append(key)
+            write_payload(products_by_id, category_products, failed_categories, checkpoint=True)
+            continue
+
+        ids: list[str] = []
+        detail_failures = 0
+        for i, url in enumerate(urls, 1):
+            p = cache.get(url)
+            if not p:
+                try:
+                    p = parse_product(url)
+                    cache[url] = p
+                    details_fetched += 1
+                    time.sleep(random.uniform(0.8, 1.5))
+                    if details_fetched % 35 == 0:
+                        pause = random.uniform(8.0, 15.0)
+                        print(f"  Cooling down for {pause:.1f}s after {details_fetched} new product pages")
+                        time.sleep(pause)
+                except Exception as exc:
+                    detail_failures += 1
+                    old = prev_by_url.get(url)
+                    if old:
+                        p = old
+                        print(f"WARN using previous product data for {url}: {exc}", file=sys.stderr)
+                    else:
+                        print(f"WARN product detail skipped {url}: {exc}", file=sys.stderr)
+                        continue
+
+            pid = str(p.get("id") or urlparse(url).path.rstrip("/").split("/")[-1])
+            p = dict(p)
+            p["id"] = pid
+            p["source_url"] = url
+            products_by_id[pid] = merge_product(products_by_id.get(pid), p, key)
+            ids.append(pid)
+            if i % 20 == 0:
+                print(f"  {key}: {i}/{len(urls)} processed")
+
+        if ids:
+            category_products[key] = list(dict.fromkeys(ids))
+            if detail_failures:
+                print(f"Completed {key} with {detail_failures} product-detail warnings")
+        else:
+            old = prev_categories.get(key) or {}
+            old_ids = [str(x) for x in old.get("product_ids", [])]
+            category_products[key] = old_ids
+            if not old_ids:
+                failed_categories.append(key)
+
+        CACHE.parent.mkdir(parents=True, exist_ok=True)
+        CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+        write_payload(products_by_id, category_products, failed_categories, checkpoint=True)
+        time.sleep(random.uniform(1.0, 2.0))
+
+    payload = write_payload(products_by_id, category_products, failed_categories, checkpoint=False)
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    count = len(payload["products"])
+    print(f"\nFINAL: wrote {count} unique products")
+    print("Failed categories:", failed_categories)
+    if count < 20:
+        raise SystemExit("Catalogue build aborted: fewer than 20 products available")
     print("Catalogue sync completed" + (" with warnings" if failed_categories else " successfully"))
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        # Last-resort protection: do not destroy a previously generated catalogue.
+        print(f"FATAL updater exception caught: {exc}", file=sys.stderr)
+        previous = load_json(OUT, {})
+        if isinstance(previous, dict) and len(previous.get("products", [])) >= 20:
+            print("Previous catalogue is still usable; exiting successfully so GitHub Pages stays live.", file=sys.stderr)
+            sys.exit(0)
+        raise
