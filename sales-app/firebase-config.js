@@ -1,4 +1,5 @@
 // BusterBuild Sales App - Firebase configuration
+
 export const firebaseConfig = {
   apiKey: "AIzaSyDTXYBnGoO0X81G0vCaIQCt78IXjMKR4sg",
   authDomain: "busterbuild-sales-app.firebaseapp.com",
