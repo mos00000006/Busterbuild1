@@ -25,3 +25,14 @@ prices, category membership and factual product specifications.
 IMPORTANT
 If GitHub Actions are disabled for the repository, enable Actions in repository
 Settings -> Actions -> General.
+
+V2 RETRY FIX
+------------
+The updater now retries temporary Pulse connection/JSON failures with backoff,
+falls back one category at a time instead of restarting the entire crawl, and
+keeps the previous successful data for a category if Pulse is temporarily
+unavailable. GitHub Actions timeout is also increased to 60 minutes.
+
+If a manual run shows "Catalogue sync completed with warnings", it still saves
+all successfully refreshed products. Run the workflow again later to fill any
+category listed in failed_categories.

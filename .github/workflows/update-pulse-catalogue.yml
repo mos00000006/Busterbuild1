@@ -13,10 +13,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: pulse-tile-catalogue
+  cancel-in-progress: false
+
 jobs:
   update-catalogue:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -30,7 +34,23 @@ jobs:
         run: pip install --disable-pip-version-check requests beautifulsoup4
 
       - name: Build static tile catalogue
-        run: python scripts/update_pulse_catalogue.py
+        run: python -u scripts/update_pulse_catalogue.py
+
+      - name: Validate generated catalogue
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/pulse-tile-catalogue.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          products = d.get('products', [])
+          print('Products:', len(products))
+          print('Source mode:', d.get('source_mode'))
+          print('Sync complete:', d.get('sync_complete'))
+          print('Failed categories:', d.get('failed_categories', []))
+          if len(products) < 20:
+              raise SystemExit('Generated catalogue is unexpectedly small')
+          PY
 
       - name: Save updated catalogue to the website
         run: |
