@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T12:38:18.304265+00:00",
+  "generated_at": "2026-10-01T12:57:13.359659+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -566,7 +566,14 @@
       "id": "6-pc-bathroom-set-square-black-and-bamboo",
       "categories": [
         "bath-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "2 kg",
+        "Dimensions",
+        "29 × 22 × 29 cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/abstract-river-glazed-polished-porcelainelain-600x1200-combo/",
@@ -594,7 +601,17 @@
       "id": "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/active-onyx-ice-porcelain-combo-matt-600x1200mm/",
@@ -622,7 +639,17 @@
       "id": "active-onyx-ice-porcelain-combo-matt-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/tivona-tabby-basin-and-mixer-combo/",
@@ -657,7 +684,12 @@
       "id": "tivona-tabby-basin-and-mixer-combo",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "Alco Tivona Arc Chrome Basin Mixer 10 year warranty",
+        "Alco Tabby Basin – Counter Top"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/alco-black-shower-panel-combo/",
@@ -688,7 +720,17 @@
       "id": "alco-black-shower-panel-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Combo Includes:Alco Black Shower Panel andÂ Aquavit Diora Black Corner Shower Basket",
+        "Shower Panel Finish: Black",
+        "Shower Panel Functions:Â 3-function system",
+        "Shower Panel Dimensions:Â 1200 mm (H) Ã 220 mm (W)",
+        "Shower Basket Finish:Â Black",
+        "Shower Basket Type:Â Corner-mounted storage basket",
+        "Application:Â Residential bathroom use"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/alcora-blanco-porcelain-combo-600x600mm/",
@@ -718,7 +760,17 @@
       "id": "alcora-blanco-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/anti-sky-porcelain-combo-glossy-600x1200mm/",
@@ -746,7 +798,17 @@
       "id": "anti-sky-porcelain-combo-glossy-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/apple-white-combo-600x1200/",
@@ -774,7 +836,17 @@
       "id": "apple-white-combo-600x1200",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/astor-cloud-combo-600x600mm/",
@@ -802,7 +874,17 @@
       "id": "astor-cloud-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/7644-base-300x600-combo/",
@@ -830,7 +912,17 @@
       "id": "7644-base-300x600-combo",
       "categories": [
         "wall-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 300×600 wall tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo/",
@@ -857,7 +949,12 @@
       "id": "basin-and-mirror-combo",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "Rosso Counter Top Wash Basin",
+        "Nina Mirror 600x450mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/bathroom-solution-combo/",
@@ -889,7 +986,15 @@
       "id": "bathroom-solution-combo",
       "categories": [
         "bath-combos"
-      ]
+      ],
+      "included_items": [
+        "Basin & Pedestal -White",
+        "Bath With Handles – 1500mm",
+        "Irani Toilet Close Couple Set (Top Flush)",
+        "2pc Mechanism Fitting Kit Black",
+        "Plastic Toilet Seat Orchid"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/braga-45922-matt-antislip-floor-tile-450x450-combo/",
@@ -917,7 +1022,17 @@
       "id": "braga-45922-matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/bricola-gris-porcelain-combo-600x600mm/",
@@ -945,7 +1060,17 @@
       "id": "bricola-gris-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/buffer-basin-combo/",
@@ -976,7 +1101,13 @@
       "id": "buffer-basin-combo",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "One Counter Top Wash Basin – Buffer",
+        "One Alco P-Trap 32x40mm",
+        "One Alco Pop Up Waste – Chrome Unslotted 170g"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/ca-cattack-dark-300x600-combo/",
@@ -1004,7 +1135,17 @@
       "id": "ca-cattack-dark-300x600-combo",
       "categories": [
         "wall-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 300×600 wall tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/chloe-bath-and-freestanding-mixer-combo/",
@@ -1037,7 +1178,14 @@
       "id": "chloe-bath-and-freestanding-mixer-combo",
       "categories": [
         "bath-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "37 kg",
+        "Dimensions",
+        "170 × 70 × 58 cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/chrome-tivona-combo-2/",
@@ -1069,7 +1217,13 @@
       "id": "chrome-tivona-combo-2",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "Alco Tivona Arc Basin Mixer – Chrome",
+        "Chrome Slotted Pop Up Waste",
+        "Zibon Basin"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm/",
@@ -1097,7 +1251,17 @@
       "id": "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/clayton-aqua-glossy-glazed-porcelain-600x1200-combo/",
@@ -1125,7 +1289,17 @@
       "id": "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/complete-bathroom-solution-combo/",
@@ -1152,7 +1326,15 @@
       "id": "complete-bathroom-solution-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Corner Entry Showerdoor SQ Grey Glass 900x900x180mm",
+        "One Stainless Steel Showerhead – Black Round 8-inch (20cm)",
+        "One Shower Arm with Rosette 35cm (156g) – Black Round",
+        "One Alco Tivona Arc Black Shower Mixer",
+        "One Ladiora Corner Shower Basket – AquaVit Black"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/complete-shower-solution-combo-2/",
@@ -1183,7 +1365,14 @@
       "id": "complete-shower-solution-combo-2",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Shower Screen – Clear Vista Chrome 1000x2000x6mm",
+        "One AquaVit Chrome Square Showerhead With Arm 200mm",
+        "One Jazz Shower Mixer 5 Year Warranty",
+        "One Shower Trap – Alco Chrome Square 100mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/cordelia-bath-and-freestanding-mixer-combo/",
@@ -1219,7 +1408,14 @@
       "id": "cordelia-bath-and-freestanding-mixer-combo",
       "categories": [
         "bath-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "45 kg",
+        "Dimensions",
+        "170 × 76 × 62 cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/corner-shower-caddy/",
@@ -1250,7 +1446,14 @@
       "id": "corner-shower-caddy",
       "categories": [
         "bath-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "2 kg",
+        "Dimensions",
+        "34 × 15 × 15 cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/cresto-white-rustic-matt-porcelain-combo-600x1200mm/",
@@ -1278,7 +1481,17 @@
       "id": "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toilet-and-basin-with-pedestal/",
@@ -1305,7 +1518,12 @@
       "id": "toilet-and-basin-with-pedestal",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Alco Benito Toilet Closed Couple – Including 2pc Mechanism and Toilet Seat",
+        "Basin with Pedestal Set (White ) – B Grade"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/designer-screen-combo-2/",
@@ -1336,7 +1554,14 @@
       "id": "designer-screen-combo-2",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Aqua Shield Shower Screen – Black Design 900x2000x6mm",
+        "One Alco Shower Caddy – Black",
+        "One Alco Corner Shower Caddy – Black",
+        "One Mirror Frame -Mercury Black 400x400mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-alpine-gris-combo-600x600mm/",
@@ -1364,7 +1589,17 @@
       "id": "dolomiti-alpine-gris-combo-600x600mm",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-autumn-combo-600x600mm/",
@@ -1392,7 +1627,17 @@
       "id": "dolomiti-autumn-combo-600x600mm",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-marengo-combo-600x600mm/",
@@ -1420,7 +1665,17 @@
       "id": "dolomiti-marengo-combo-600x600mm",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-saturio-matt-tile-combo-600x600/",
@@ -1447,7 +1702,12 @@
       "id": "dolomiti-saturio-matt-tile-combo-600x600",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-crema-combo-600x600mm/",
@@ -1475,7 +1735,17 @@
       "id": "dolomiti-terraz-crema-combo-600x600mm",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-dark-gris-matt-600x600-combo/",
@@ -1503,7 +1773,17 @@
       "id": "dolomiti-terraz-dark-gris-matt-600x600-combo",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-gris-combo-600x600m/",
@@ -1531,7 +1811,17 @@
       "id": "dolomiti-terraz-gris-combo-600x600m",
       "categories": [
         "hardbody-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 hardbody tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dune-45446-matt-antislip-floor-tile-450x450-combo/",
@@ -1559,7 +1849,17 @@
       "id": "dune-45446-matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dyna-glossy-glazed-porcelain-600x600-combo/",
@@ -1587,7 +1887,17 @@
       "id": "dyna-glossy-glazed-porcelain-600x600-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dyna-vitrified-polished-porcelain-combo-600x600/",
@@ -1614,7 +1924,12 @@
       "id": "dyna-vitrified-polished-porcelain-combo-600x600",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/dynasty-beige-glossy-glazed-porcelain-combo-600x1200/",
@@ -1641,7 +1956,17 @@
       "id": "dynasty-beige-glossy-glazed-porcelain-combo-600x1200",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/element-white-porcelain-combo-glossy-600x1200mm/",
@@ -1668,7 +1993,17 @@
       "id": "element-white-porcelain-combo-glossy-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Element White Glazed Polished 600×1200",
+        "Alco Bong 1lt",
+        "Alco Light Grey Grout 5kg",
+        "Alco Porcelain 18hr Tile Adhesive 20kg",
+        "Powergripp All Purpose Cleaner 1lt",
+        "Pulse Cleaning Sponge 150x100x70",
+        "Alco Spacers 3mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/element-white-porcelain-combo-matt-600x1200mm/",
@@ -1695,7 +2030,17 @@
       "id": "element-white-porcelain-combo-matt-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Element White Glazed Polished 600×1200",
+        "Alco Bong 1lt",
+        "Alco Light Grey Grout 5kg",
+        "Alco Porcelain 18hr Tile Adhesive 20kg",
+        "Powergripp All Purpose Cleaner 1lt",
+        "Pulse Cleaning Sponge 150x100x70",
+        "Alco Spacers 3mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/eqen-ice-glossy-porcelain-combo-600x1200mm/",
@@ -1723,7 +2068,17 @@
       "id": "eqen-ice-glossy-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/feather-brown-glossy-glazed-porcelain-600x1200-combo/",
@@ -1751,7 +2106,17 @@
       "id": "feather-brown-glossy-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/feather-me-porcelain-combo-600x600mm/",
@@ -1779,7 +2144,17 @@
       "id": "feather-me-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/finest-terrazo-white-glazed-porcelain-600x1200-combo/",
@@ -1806,7 +2181,17 @@
       "id": "finest-terrazo-white-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/galaxy-crema-kt05i-glazed-porcelain-600x600-combo/",
@@ -1834,7 +2219,17 @@
       "id": "galaxy-crema-kt05i-glazed-porcelain-600x600-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo/",
@@ -1862,7 +2257,17 @@
       "id": "genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/grey-shower-panel-combo/",
@@ -1893,7 +2298,13 @@
       "id": "grey-shower-panel-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Alco Shower Panel 3 Function Gun Grey – 1200x1200mm",
+        "Alco Rio Towel Bar Single Chrome",
+        "Alco Rio Soap Holder Chrome"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/havana-white-glazed-polished-porcelain-600x1200-combo/",
@@ -1922,7 +2333,17 @@
       "id": "havana-white-glazed-polished-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/hazel-basin-mixer-combo/",
@@ -1956,7 +2377,16 @@
       "id": "hazel-basin-mixer-combo",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "Product Type: Basin and mixer combo",
+        "Combo Includes: Hazel tabletop basin & Marina basin mixer",
+        "Basin Type: Tabletop basin",
+        "Mixer Type: Basin mixer",
+        "Style: Modern",
+        "Application: Bathroom basin installation"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/heritage-light-grey-porcelain-combo-600x1200mm/",
@@ -1984,7 +2414,17 @@
       "id": "heritage-light-grey-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/heritage-light-grey-porcelain-combo-600x1200mm-2/",
@@ -2012,7 +2452,17 @@
       "id": "heritage-light-grey-porcelain-combo-600x1200mm-2",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/isla-45907-matt-antislip-floor-tile-450x450-combo/",
@@ -2040,7 +2490,17 @@
       "id": "isla-45907-matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/ivory-polished-porcelainelain-600x600-combo/",
@@ -2068,7 +2528,17 @@
       "id": "ivory-polished-porcelainelain-600x600-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "8.64 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/jaunty-alco-wall-hung-toilet-combo/",
@@ -2099,7 +2569,18 @@
       "id": "jaunty-alco-wall-hung-toilet-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Product Type: Wall-hung toilet combo",
+        "Brand: Alco",
+        "Toilet Type: Rimless wall-hung toilet",
+        "Cistern Type: Concealed cistern",
+        "Flush Plate: Round chrome actuator",
+        "Design Benefit: Easy-clean rimless design",
+        "Installation Type: Wall-hung",
+        "Application: Bathroom use"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/jaunty-wall-hung-combo/",
@@ -2126,7 +2607,13 @@
       "id": "jaunty-wall-hung-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "One Wall Hung Toilet – Rimless Jaunty",
+        "One Cobra Concealed Cistern",
+        "One Cobra Cistern – Actuator Plate (Round)"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/kalahari-breeze-450x450-combo/",
@@ -2153,7 +2640,17 @@
       "id": "kalahari-breeze-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "8x boxes of Kalahari Breeze 450x450mm",
+        "1x Alco Bond 1lt",
+        "3x Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1x Alco Dove Grey Grout 5kg",
+        "1x Powergripp All Grip Purpose Cleaner",
+        "1x Pulse Cleaning Sponge 150x100x70",
+        "1x Alco White Spacer 5mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/kalahari-dune-450x450-combo/",
@@ -2180,7 +2677,17 @@
       "id": "kalahari-dune-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "8x boxes of Kalahari Dune 450x450mm",
+        "1x Alco Bond 1lt",
+        "3x Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1x Alco Dove Grey Grout 5kg",
+        "1x Powergripp All Grip Purpose Cleaner",
+        "1x Pulse Cleaning Sponge 150x100x70",
+        "1x Alco White Spacer 5mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/kalahari-grey-450x450-combo/",
@@ -2207,7 +2714,17 @@
       "id": "kalahari-grey-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "8x boxes of Kalahari Grey 450x450mm",
+        "1x Alco Bond 1lt",
+        "3x Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1x Alco Dove Grey Grout 5kg",
+        "1x Powergripp All Grip Purpose Cleaner",
+        "1x Pulse Cleaning Sponge 150x100x70",
+        "1x Alco White Spacer 5mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-ash-matt-400x400-combo/",
@@ -2235,7 +2752,17 @@
       "id": "karoo-ash-matt-400x400-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-autum-combo-400x400mm/",
@@ -2262,7 +2789,17 @@
       "id": "karoo-autum-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-beige-combo-400x400mm/",
@@ -2289,7 +2826,17 @@
       "id": "karoo-beige-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-blanco-matt-400x400-combo/",
@@ -2317,7 +2864,17 @@
       "id": "karoo-blanco-matt-400x400-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-cement-matt-400x400-combo/",
@@ -2345,7 +2902,17 @@
       "id": "karoo-cement-matt-400x400-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-crema-combo-400x400mm/",
@@ -2372,7 +2939,17 @@
       "id": "karoo-crema-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-graphite-combo-400x400mm/",
@@ -2399,7 +2976,17 @@
       "id": "karoo-graphite-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-sand-combo-400x400mm/",
@@ -2426,7 +3013,17 @@
       "id": "karoo-sand-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/karoo-stone-combo-400x400mm/",
@@ -2453,7 +3050,17 @@
       "id": "karoo-stone-combo-400x400mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9.60 Square meters of 400×400 ceramic rustic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Grey Grout 5kg",
+        "1 Bonding Liquid 1lt",
+        "1 All Purpose Cleaner 1lt",
+        "1 Pack of 5mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/kilavi-grey-ceramic-200x300-combo/",
@@ -2474,7 +3081,17 @@
       "id": "kilavi-grey-ceramic-200x300-combo",
       "categories": [
         "wall-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "5.76 m2 Kilavi Grey Ceramic 200×300",
+        "Alco Bond 1lt",
+        "Alco Ceramic 24hr Tile Adhesive 20kg",
+        "Powergripp All Purpose Cleaner 1lt",
+        "Alco White Grout 5kg",
+        "Pulse Cleaning Sponge",
+        "Pulse 5mm Spacers Black"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/legacy-peada-porcelain-combo-600x600mm/",
@@ -2502,7 +3119,17 @@
       "id": "legacy-peada-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-azul-sugar-glazematt-600x600-combo/",
@@ -2530,7 +3157,17 @@
       "id": "luster-azul-sugar-glazematt-600x600-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-carrara-sugar-glazed-combo-600x600/",
@@ -2557,7 +3194,12 @@
       "id": "luster-carrara-sugar-glazed-combo-600x600",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-cloud-sugar-glaze-matt-600x600-combo/",
@@ -2585,7 +3227,17 @@
       "id": "luster-cloud-sugar-glaze-matt-600x600-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-cloud-sugar-glaze-matt-combo-600x600mm/",
@@ -2613,7 +3265,17 @@
       "id": "luster-cloud-sugar-glaze-matt-combo-600x600mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-empredor-sugar-glaze-combo-600x600/",
@@ -2640,7 +3302,12 @@
       "id": "luster-empredor-sugar-glaze-combo-600x600",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-gold-sugar-glaze-matt-600x600-combo/",
@@ -2668,7 +3335,17 @@
       "id": "luster-gold-sugar-glaze-matt-600x600-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-nero-sugar-glaze-matt-600x600-combo/",
@@ -2696,7 +3373,17 @@
       "id": "luster-nero-sugar-glaze-matt-600x600-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-onyx-sugar-glaze-matt-combo-600x600mm/",
@@ -2724,7 +3411,17 @@
       "id": "luster-onyx-sugar-glaze-matt-combo-600x600mm",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/luster-saturia-sugar-glaze-matt-600x600-combo/",
@@ -2751,7 +3448,17 @@
       "id": "luster-saturia-sugar-glaze-matt-600x600-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/matrix-grey-glossy-glazed-porcelain-600x1200-combo/",
@@ -2779,7 +3486,17 @@
       "id": "matrix-grey-glossy-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/meadow-matt-antislip-floor-tile-450x450-combo/",
@@ -2807,7 +3524,17 @@
       "id": "meadow-matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/melbourne-kt017i-glazed-porcelain-600x600-combo/",
@@ -2835,7 +3562,17 @@
       "id": "melbourne-kt017i-glazed-porcelain-600x600-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/modern-toilet-combo/",
@@ -2864,7 +3601,13 @@
       "id": "modern-toilet-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Combo Includes: Alco Top Flush Close Couple Toilet Set & Wash Basin + Belonia Pedestal.",
+        "Top Flush Toilet Close Couple Set Color: White",
+        "Wash Basin & Pedestal Color: White"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/montana-blanco-300x600-combo/",
@@ -2891,7 +3634,17 @@
       "id": "montana-blanco-300x600-combo",
       "categories": [
         "wall-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 300×600 wall tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/mystic-mint-glazed-polished-porcelain-600x1200-combo/",
@@ -2919,7 +3672,17 @@
       "id": "mystic-mint-glazed-polished-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/nexus-glossy-porcelain-combo-600x1200mm/",
@@ -2947,7 +3710,17 @@
       "id": "nexus-glossy-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/onyx-green-glazed-polished-porcelain-600x1200-combo/",
@@ -2975,7 +3748,17 @@
       "id": "onyx-green-glazed-polished-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/palazzo-matt-porcelain-combo-600x1200mm/",
@@ -3003,7 +3786,17 @@
       "id": "palazzo-matt-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/pan-connector-combo/",
@@ -3034,7 +3827,14 @@
       "id": "pan-connector-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "3 kg",
+        "Dimensions",
+        "30 × 20 × 15 cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/polio-basin-mixer-combo/",
@@ -3066,7 +3866,13 @@
       "id": "polio-basin-mixer-combo",
       "categories": [
         "basin-mixer-combos"
-      ]
+      ],
+      "included_items": [
+        "Harmony Basin Mixer – Long Body CP",
+        "Polio Counter Top Basin Silver Black",
+        "Alco Pop Waste Unslotted Chrome"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/pure-view-shower-door-combo/",
@@ -3101,7 +3907,14 @@
       "id": "pure-view-shower-door-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Pure View Clear Shower Door 900x900x1800mm 4mm",
+        "One Alco Chrome Shower Rail Including Hand Shower and Flexi Hose",
+        "One Alco Chrome Round Shower Outlet Bracket",
+        "One Jazz Shower Mixer"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/river-45440-matt-antislip-floor-tile-450x450-combo/",
@@ -3129,7 +3942,17 @@
       "id": "river-45440-matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/rosata-kt09i-glossy-glazed-porcelain-600x600-combo/",
@@ -3157,7 +3980,17 @@
       "id": "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/rotal-porcelain-combo-600x600mm/",
@@ -3185,7 +4018,17 @@
       "id": "rotal-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-beige-330x330-combo/",
@@ -3212,7 +4055,17 @@
       "id": "sahara-beige-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-cloud-330x330-combo/",
@@ -3239,7 +4092,17 @@
       "id": "sahara-cloud-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-grey-330x330-combo/",
@@ -3266,7 +4129,17 @@
       "id": "sahara-grey-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-grigio-330x330-combo/",
@@ -3293,7 +4166,17 @@
       "id": "sahara-grigio-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-gris-combo-600x600mm/",
@@ -3321,7 +4204,17 @@
       "id": "sahara-gris-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-mist-330x330-combo/",
@@ -3348,7 +4241,17 @@
       "id": "sahara-mist-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-nero-porcelain-combo-600x600mm/",
@@ -3376,7 +4279,17 @@
       "id": "sahara-nero-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-rust-330x330-combo-2/",
@@ -3403,7 +4316,17 @@
       "id": "sahara-rust-330x330-combo-2",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-stone-330x330-combo/",
@@ -3430,7 +4353,17 @@
       "id": "sahara-stone-330x330-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-taupe-330x330-combo-2/",
@@ -3457,7 +4390,17 @@
       "id": "sahara-taupe-330x330-combo-2",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.80 Square Meters of Ceramic Matte Tiles",
+        "3 bags of Alco Ceramic 24hr Tile Adhesive 20kg",
+        "1 Alco Bond 1lt",
+        "1 Alco Light Grey Grout 5kg",
+        "1 Powergripp All Purpose Cleaner 1lt",
+        "1 Alco 5mm White Spacer (100pcs/bag)",
+        "1 Pulse Cleaning Sponge 150x100x70"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/san-marino-45441matt-antislip-floor-tile-450x450-combo/",
@@ -3485,7 +4428,17 @@
       "id": "san-marino-45441matt-antislip-floor-tile-450x450-combo",
       "categories": [
         "ceramic-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "9 Square meters of 450×450 outdoor antislip ceramic tiles",
+        "3 bags of 24 hour ceramic adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-arm-head/",
@@ -3519,7 +4472,16 @@
       "id": "shower-arm-head",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Combo Includes: Aquavit Showerhead and Shower Arm S/Steel Round 35cm.",
+        "Showerhead Finish: Chrome",
+        "Showerhead Shape: Round",
+        "Shower Arm Finish: Chrome",
+        "Shower Arm Shape: Round",
+        "Shower Arm Size: 35cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-panel-with-5pc-accessory-set-combo/",
@@ -3550,7 +4512,12 @@
       "id": "shower-panel-with-5pc-accessory-set-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Alco Shower Panel (4 Function) – Chrome 1200x220mm",
+        "One Waltz-Alco Plastic 5pc Bathroom Accessory Set – Chrome"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-rail-combo/",
@@ -3577,7 +4544,15 @@
       "id": "shower-rail-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Alco Shower Rail Set Black 220×80",
+        "One Waltz – Alco Plastic 5 Piece Bathroom Accessory Set – Black",
+        "One Alco Square Soap Basket – Black",
+        "One Alco Corner Shower Caddy – Black",
+        "One 3D 2 Piece Bathroom Mat Set"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-rail-set-with-mirror-cabinet-combo/",
@@ -3608,7 +4583,12 @@
       "id": "shower-rail-set-with-mirror-cabinet-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Alco Shower Rail Set Gun Metal 220x80mm",
+        "One Maahira Mirror Cabinet"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-rail-set-combo/",
@@ -3639,7 +4619,15 @@
       "id": "shower-rail-set-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Alco Shower Rail Set – Black 220x80mm",
+        "One Alco Corner Shower Caddy – Black",
+        "One Alco Square Soap Basket – Black",
+        "One Bathroom Mat 340×610",
+        "One Back-Scrubber With Handle"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-accessories-combo/",
@@ -3669,7 +4657,12 @@
       "id": "shower-screen-accessories-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "24 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/",
@@ -3705,7 +4698,8 @@
       "id": "shower-screen-shower-rail-combo-deal",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-black-combo/",
@@ -3736,7 +4730,13 @@
       "id": "shower-screen-black-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Onyx Vista One Shower Screen – Glass Black Finish 900x2000x6mm",
+        "Alco Shower Caddy Black",
+        "Alco Aspire Square Shower Head Black 100mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm/",
@@ -3763,7 +4763,12 @@
       "id": "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Shower Screen – Clear Vista 1000x2000x6mm Chrome",
+        "One Aquavit Chrome Square Showerhead 200mm With Arm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm/",
@@ -3790,7 +4795,12 @@
       "id": "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Shower Screen – Clear Vista Chrome 1200x1950x6mm",
+        "One Aquavit Chrome Square Showerhead With Arm 200mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo/",
@@ -3817,7 +4827,12 @@
       "id": "shower-screen-plus-shower-head-and-arm-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Shower Screen – Clear Vista 900x200x6mm Clear Glass",
+        "One Aquavit Chrome Square Showerhead 200mm With Arm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-with-shower-head-and-arm-combo/",
@@ -3852,7 +4867,12 @@
       "id": "shower-screen-with-shower-head-and-arm-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Vista Chrome Clear Shower Screen 1200x1950x6mm",
+        "One Alco Square Stainless Steel Shower Head With Arm 15cm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-square-and-rail-set-combo/",
@@ -3879,7 +4899,14 @@
       "id": "shower-square-and-rail-set-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "One Titan Corner Entry Shower Door Black Blocks 900x900x1800 4mm",
+        "One Alco Shower Rail Including Hand Shower and Flexi Hose Chrome",
+        "One Alco Shower Outlet Bracket Chrome Round",
+        "One Jazz Shower Mixer"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/siena-marfil-glossy-porcelain-combo-600x1200mm/",
@@ -3907,7 +4934,17 @@
       "id": "siena-marfil-glossy-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/siena-marfil-matt-porcelain-combo-600x1200mm/",
@@ -3935,7 +4972,17 @@
       "id": "siena-marfil-matt-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sisam-beige-polished-porcelain-combo-600x600/",
@@ -3962,7 +5009,12 @@
       "id": "sisam-beige-polished-porcelain-combo-600x600",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sisam-blue-combo-600x600mm/",
@@ -3990,7 +5042,17 @@
       "id": "sisam-blue-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/spirit-bianco-600x1200-matt-glazed-tile-combo/",
@@ -4017,7 +5079,17 @@
       "id": "spirit-bianco-600x1200-matt-glazed-tile-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Spirit Bianco Glazed Matt 600×1200",
+        "Alco Bong 1lt",
+        "Alco Light Grey Grout 5kg",
+        "Alco Porcelain 18hr Tile Adhesive 20kg",
+        "Powergripp All Purpose Cleaner 1lt",
+        "Pulse Cleaning Sponge 150x100x70",
+        "Alco Spacers 3mm – 100pcs/Bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/staturio-gold-porcelain-combo-600x1200mm/",
@@ -4045,7 +5117,17 @@
       "id": "staturio-gold-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/strat-crema-matt-tile-600x600mm/",
@@ -4072,7 +5154,12 @@
       "id": "strat-crema-matt-tile-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "Weight",
+        "256 kg"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/strat-crema-porcelain-combo-600x600mm/",
@@ -4100,7 +5187,17 @@
       "id": "strat-crema-porcelain-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/terra-alco-wall-hung-toilet-combo/",
@@ -4130,7 +5227,13 @@
       "id": "terra-alco-wall-hung-toilet-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Wall Hung Toilet Terra",
+        "Alco Concealed Cistern",
+        "Alco Concealed Cistern Actuator (Square Chrome)"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/terra-wall-hung-combo-2/",
@@ -4157,7 +5260,13 @@
       "id": "terra-wall-hung-combo-2",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "One Wall Hung Toilet Terra",
+        "One Cobra Concealed Cistern",
+        "One Cobra Cistern – Actuator Plate"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/terrazo-gris-matt-glazed-porcelain-600x1200-combo/",
@@ -4185,7 +5294,17 @@
       "id": "terrazo-gris-matt-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/thunder-grey-glazed-polished-porcelain-600x1200-combo/",
@@ -4213,7 +5332,17 @@
       "id": "thunder-grey-glazed-polished-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toilet-basin-pedestal-caddy/",
@@ -4243,7 +5372,13 @@
       "id": "toilet-basin-pedestal-caddy",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Irani Close Couple Toilet SetÂ (B – Grade)",
+        "Repose Wash Basin with Pedestal",
+        "Bathroom Caddy"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toilet-combo-2/",
@@ -4270,7 +5405,16 @@
       "id": "toilet-combo-2",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "One Toilet Close Couple Set – Irani White Top Flush – B Grade",
+        "One Plastic Toilet Seat Orchid White",
+        "One Mechanism Black 2pc Fitting Kit",
+        "One Repose Wash Basin With Pedestal – B Grade White",
+        "One Maahira Mirror Cabinet",
+        "One Shelf – 3 Tier"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toilet-combo-3/",
@@ -4301,7 +5445,15 @@
       "id": "toilet-combo-3",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "One Toilet Close Couple Set – Irani White Top Flush – B Grade",
+        "One Plastic Toilet Seat Orchid (White)",
+        "One Mechanism Black 2pc Fitting Kit",
+        "One 3D 2 Piece Bathroom Mat set",
+        "One Toilet Brush Set Chrome"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/top-flush-toilet-basin-pedestal-cleaner-combo/",
@@ -4343,7 +5495,15 @@
       "id": "top-flush-toilet-basin-pedestal-cleaner-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Irani Close Couple White Toilet â B Grade",
+        "Repose Wash Basin with Pedestal â B Grade",
+        "PowerGripp Bathroom Cleaner 1lt",
+        "Plastic Toilet Seat Orchid â White",
+        "2 Pc Mechanism Black Fitting Kit"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toilet-combo/",
@@ -4373,7 +5533,15 @@
       "id": "toilet-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Irani Close Couple White Toilet – B Grade",
+        "Repose Wash Basin with Pedestal – B Grade",
+        "Alco Waltz Plastic 5 Piece Bathroom Accessory Set Chrome",
+        "Plastic Toilet Seat Orchid – White",
+        "2 Pc Mechanism Black Fitting Kit"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/top-flush-toilet-basin-pedestal-shelf-combo/",
@@ -4403,7 +5571,15 @@
       "id": "top-flush-toilet-basin-pedestal-shelf-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Irani Closed Couple Toilet Set White (B-Grade)",
+        "Plastic Toilet Seat Orchid White",
+        "2pc Mechanism Fitting Kit Black",
+        "Repose Wash Basin With Pedestal B Grade – White",
+        "Shelf – 3 Tier"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/toscana-grey-rustic-matt-porcelain-combo-600x1200mm/",
@@ -4431,7 +5607,17 @@
       "id": "toscana-grey-rustic-matt-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/tuscany-blue-matt-glazed-porcelain-600x1200-combo/",
@@ -4459,7 +5645,17 @@
       "id": "tuscany-blue-matt-glazed-porcelain-600x1200-combo",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/tuscany-silver-matt-combo-600x1200/",
@@ -4486,7 +5682,17 @@
       "id": "tuscany-silver-matt-combo-600x1200",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/tuscany-silver-porcelain-combo-glossy-600x1200mm/",
@@ -4514,7 +5720,17 @@
       "id": "tuscany-silver-porcelain-combo-glossy-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm/",
@@ -4542,7 +5758,17 @@
       "id": "ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×1200 porcelain tiles",
+        "3 bags of 18 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/velora-floor-tile-combo-600x600mm/",
@@ -4570,7 +5796,17 @@
       "id": "velora-floor-tile-combo-600x600mm",
       "categories": [
         "porcelain-tile-combos"
-      ]
+      ],
+      "included_items": [
+        "10.08 Square meters of 600×600 porcelain tiles",
+        "3 bags of 24 hour porcelain adhesives 20kg",
+        "1 bag of Light Grey Grout 5kg",
+        "1 Bottle of Bonding Liquid 1lt",
+        "1 Bottle of Tile Cleaner 1lt",
+        "1 Pack of 3mm Spacers 100s",
+        "1 Cleaning Sponge"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/wal-hung-black-elegance-combo/",
@@ -4599,7 +5835,18 @@
       "id": "wal-hung-black-elegance-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Product Type: Wall-hung toilet combo",
+        "Brand: Alco",
+        "Toilet Type: Rimless wall-hung toilet",
+        "Cistern Type: Concealed cistern",
+        "Flush Plate: Round chrome actuator",
+        "Design Benefit: Easy-clean rimless design",
+        "Installation Type: Wall-hung",
+        "Application: Bathroom use"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/wall-hung-pool-black-combo/",
@@ -4628,7 +5875,18 @@
       "id": "wall-hung-pool-black-combo",
       "categories": [
         "toilet-combos"
-      ]
+      ],
+      "included_items": [
+        "Product Type: Wall-hung toilet combo",
+        "Brand: Alco",
+        "Toilet Type: Rimless wall-hung toilet",
+        "Cistern Type: Concealed cistern",
+        "Flush Plate: Round chrome actuator",
+        "Design Benefit: Easy-clean rimless design",
+        "Installation Type: Wall-hung",
+        "Application: Bathroom use"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     },
     {
       "source_url": "https://pulsetiles.co.za/product/zen-shower-combo/",
@@ -4659,7 +5917,17 @@
       "id": "zen-shower-combo",
       "categories": [
         "shower-combos"
-      ]
+      ],
+      "included_items": [
+        "Combo Includes: Corner Entry Shower Door, 5 Bathroom Set Piece, Alco Shower Head with Shower Arm & Ss Flange and Powergripp Mould Remover.",
+        "Shower door Finish: Black Line.",
+        "Shower door Dimensions: 900x900x1800mm",
+        "Shower door Thickness: 4mm",
+        "Bathroom Set Finish: Black",
+        "Showerhead & Arm Finish: Chrome",
+        "Mould Remover: 500ml"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v2"
     }
   ]
 }
