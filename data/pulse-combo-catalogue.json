@@ -1,0 +1,4665 @@
+{
+  "generated_at": "2026-10-01T12:38:18.304265+00:00",
+  "updater_version": "2026-10-01-v1-combo-html-checkpoint",
+  "source_mode": "html-static-cache",
+  "source_site": "Pulse Tiles",
+  "sync_complete": false,
+  "failed_categories": [
+    "mosaic-combos",
+    "cladding-combos",
+    "wall-panel-combos"
+  ],
+  "categories": {
+    "porcelain-tile-combos": {
+      "title": "Porcelain Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 55,
+      "product_ids": [
+        "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
+        "active-onyx-ice-porcelain-combo-matt-600x1200mm",
+        "alcora-blanco-porcelain-combo-600x600mm",
+        "anti-sky-porcelain-combo-glossy-600x1200mm",
+        "apple-white-combo-600x1200",
+        "astor-cloud-combo-600x600mm",
+        "bricola-gris-porcelain-combo-600x600mm",
+        "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
+        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
+        "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
+        "dolomiti-saturio-matt-tile-combo-600x600",
+        "dyna-glossy-glazed-porcelain-600x600-combo",
+        "dyna-vitrified-polished-porcelain-combo-600x600",
+        "dynasty-beige-glossy-glazed-porcelain-combo-600x1200",
+        "element-white-porcelain-combo-glossy-600x1200mm",
+        "element-white-porcelain-combo-matt-600x1200mm",
+        "eqen-ice-glossy-porcelain-combo-600x1200mm",
+        "feather-brown-glossy-glazed-porcelain-600x1200-combo",
+        "feather-me-porcelain-combo-600x600mm",
+        "finest-terrazo-white-glazed-porcelain-600x1200-combo",
+        "galaxy-crema-kt05i-glazed-porcelain-600x600-combo",
+        "genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo",
+        "havana-white-glazed-polished-porcelain-600x1200-combo",
+        "heritage-light-grey-porcelain-combo-600x1200mm",
+        "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-polished-porcelainelain-600x600-combo",
+        "legacy-peada-porcelain-combo-600x600mm",
+        "luster-carrara-sugar-glazed-combo-600x600",
+        "luster-empredor-sugar-glaze-combo-600x600",
+        "matrix-grey-glossy-glazed-porcelain-600x1200-combo",
+        "melbourne-kt017i-glazed-porcelain-600x600-combo",
+        "mystic-mint-glazed-polished-porcelain-600x1200-combo",
+        "nexus-glossy-porcelain-combo-600x1200mm",
+        "onyx-green-glazed-polished-porcelain-600x1200-combo",
+        "palazzo-matt-porcelain-combo-600x1200mm",
+        "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
+        "rotal-porcelain-combo-600x600mm",
+        "sahara-gris-combo-600x600mm",
+        "sahara-nero-porcelain-combo-600x600mm",
+        "siena-marfil-glossy-porcelain-combo-600x1200mm",
+        "siena-marfil-matt-porcelain-combo-600x1200mm",
+        "sisam-beige-polished-porcelain-combo-600x600",
+        "sisam-blue-combo-600x600mm",
+        "spirit-bianco-600x1200-matt-glazed-tile-combo",
+        "staturio-gold-porcelain-combo-600x1200mm",
+        "strat-crema-matt-tile-600x600mm",
+        "strat-crema-porcelain-combo-600x600mm",
+        "terrazo-gris-matt-glazed-porcelain-600x1200-combo",
+        "thunder-grey-glazed-polished-porcelain-600x1200-combo",
+        "toscana-grey-rustic-matt-porcelain-combo-600x1200mm",
+        "tuscany-blue-matt-glazed-porcelain-600x1200-combo",
+        "tuscany-silver-matt-combo-600x1200",
+        "tuscany-silver-porcelain-combo-glossy-600x1200mm",
+        "ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm",
+        "velora-floor-tile-combo-600x600mm"
+      ]
+    },
+    "ceramic-tile-combos": {
+      "title": "Ceramic Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 33,
+      "product_ids": [
+        "braga-45922-matt-antislip-floor-tile-450x450-combo",
+        "dune-45446-matt-antislip-floor-tile-450x450-combo",
+        "isla-45907-matt-antislip-floor-tile-450x450-combo",
+        "kalahari-breeze-450x450-combo",
+        "kalahari-dune-450x450-combo",
+        "kalahari-grey-450x450-combo",
+        "karoo-ash-matt-400x400-combo",
+        "karoo-autum-combo-400x400mm",
+        "karoo-beige-combo-400x400mm",
+        "karoo-blanco-matt-400x400-combo",
+        "karoo-cement-matt-400x400-combo",
+        "karoo-crema-combo-400x400mm",
+        "karoo-graphite-combo-400x400mm",
+        "karoo-sand-combo-400x400mm",
+        "karoo-stone-combo-400x400mm",
+        "luster-azul-sugar-glazematt-600x600-combo",
+        "luster-cloud-sugar-glaze-matt-combo-600x600mm",
+        "luster-cloud-sugar-glaze-matt-600x600-combo",
+        "luster-gold-sugar-glaze-matt-600x600-combo",
+        "luster-nero-sugar-glaze-matt-600x600-combo",
+        "luster-onyx-sugar-glaze-matt-combo-600x600mm",
+        "luster-saturia-sugar-glaze-matt-600x600-combo",
+        "meadow-matt-antislip-floor-tile-450x450-combo",
+        "river-45440-matt-antislip-floor-tile-450x450-combo",
+        "sahara-beige-330x330-combo",
+        "sahara-cloud-330x330-combo",
+        "sahara-grey-330x330-combo",
+        "sahara-grigio-330x330-combo",
+        "sahara-mist-330x330-combo",
+        "sahara-rust-330x330-combo-2",
+        "sahara-stone-330x330-combo",
+        "sahara-taupe-330x330-combo-2",
+        "san-marino-45441matt-antislip-floor-tile-450x450-combo"
+      ]
+    },
+    "hardbody-tile-combos": {
+      "title": "Hardbody Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 6,
+      "product_ids": [
+        "dolomiti-alpine-gris-combo-600x600mm",
+        "dolomiti-autumn-combo-600x600mm",
+        "dolomiti-marengo-combo-600x600mm",
+        "dolomiti-terraz-crema-combo-600x600mm",
+        "dolomiti-terraz-dark-gris-matt-600x600-combo",
+        "dolomiti-terraz-gris-combo-600x600m"
+      ]
+    },
+    "wall-tile-combos": {
+      "title": "Wall Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 4,
+      "product_ids": [
+        "7644-base-300x600-combo",
+        "ca-cattack-dark-300x600-combo",
+        "kilavi-grey-ceramic-200x300-combo",
+        "montana-blanco-300x600-combo"
+      ]
+    },
+    "mosaic-combos": {
+      "title": "Mosaic Combos",
+      "group": "Decor Combo Deals",
+      "count": 0,
+      "product_ids": []
+    },
+    "cladding-combos": {
+      "title": "Cladding Combos",
+      "group": "Decor Combo Deals",
+      "count": 0,
+      "product_ids": []
+    },
+    "wall-panel-combos": {
+      "title": "Wall Panel Combos",
+      "group": "Decor Combo Deals",
+      "count": 0,
+      "product_ids": []
+    },
+    "shower-combos": {
+      "title": "Shower Combos",
+      "group": "Bathroom Combos",
+      "count": 20,
+      "product_ids": [
+        "alco-black-shower-panel-combo",
+        "complete-bathroom-solution-combo",
+        "complete-shower-solution-combo-2",
+        "designer-screen-combo-2",
+        "grey-shower-panel-combo",
+        "pure-view-shower-door-combo",
+        "shower-arm-head",
+        "shower-panel-with-5pc-accessory-set-combo",
+        "shower-rail-combo",
+        "shower-rail-set-with-mirror-cabinet-combo",
+        "shower-rail-set-combo",
+        "shower-screen-accessories-combo",
+        "shower-screen-shower-rail-combo-deal",
+        "shower-screen-black-combo",
+        "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo",
+        "shower-screen-with-shower-head-and-arm-combo",
+        "shower-square-and-rail-set-combo",
+        "zen-shower-combo"
+      ]
+    },
+    "toilet-combos": {
+      "title": "Toilet Combos",
+      "group": "Bathroom Combos",
+      "count": 15,
+      "product_ids": [
+        "toilet-and-basin-with-pedestal",
+        "jaunty-alco-wall-hung-toilet-combo",
+        "jaunty-wall-hung-combo",
+        "modern-toilet-combo",
+        "pan-connector-combo",
+        "terra-alco-wall-hung-toilet-combo",
+        "terra-wall-hung-combo-2",
+        "toilet-basin-pedestal-caddy",
+        "toilet-combo-2",
+        "toilet-combo-3",
+        "top-flush-toilet-basin-pedestal-cleaner-combo",
+        "toilet-combo",
+        "top-flush-toilet-basin-pedestal-shelf-combo",
+        "wal-hung-black-elegance-combo",
+        "wall-hung-pool-black-combo"
+      ]
+    },
+    "basin-mixer-combos": {
+      "title": "Basin & Mixer Combos",
+      "group": "Bathroom Combos",
+      "count": 6,
+      "product_ids": [
+        "tivona-tabby-basin-and-mixer-combo",
+        "basin-and-mirror-combo",
+        "buffer-basin-combo",
+        "chrome-tivona-combo-2",
+        "hazel-basin-mixer-combo",
+        "polio-basin-mixer-combo"
+      ]
+    },
+    "bath-combos": {
+      "title": "Bath Combos",
+      "group": "Bathroom Combos",
+      "count": 5,
+      "product_ids": [
+        "6-pc-bathroom-set-square-black-and-bamboo",
+        "bathroom-solution-combo",
+        "chloe-bath-and-freestanding-mixer-combo",
+        "cordelia-bath-and-freestanding-mixer-combo",
+        "corner-shower-caddy"
+      ]
+    },
+    "all": {
+      "title": "All Combo Deals",
+      "group": "All",
+      "count": 144,
+      "product_ids": [
+        "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
+        "active-onyx-ice-porcelain-combo-matt-600x1200mm",
+        "alcora-blanco-porcelain-combo-600x600mm",
+        "anti-sky-porcelain-combo-glossy-600x1200mm",
+        "apple-white-combo-600x1200",
+        "astor-cloud-combo-600x600mm",
+        "bricola-gris-porcelain-combo-600x600mm",
+        "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
+        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
+        "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
+        "dolomiti-saturio-matt-tile-combo-600x600",
+        "dyna-glossy-glazed-porcelain-600x600-combo",
+        "dyna-vitrified-polished-porcelain-combo-600x600",
+        "dynasty-beige-glossy-glazed-porcelain-combo-600x1200",
+        "element-white-porcelain-combo-glossy-600x1200mm",
+        "element-white-porcelain-combo-matt-600x1200mm",
+        "eqen-ice-glossy-porcelain-combo-600x1200mm",
+        "feather-brown-glossy-glazed-porcelain-600x1200-combo",
+        "feather-me-porcelain-combo-600x600mm",
+        "finest-terrazo-white-glazed-porcelain-600x1200-combo",
+        "galaxy-crema-kt05i-glazed-porcelain-600x600-combo",
+        "genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo",
+        "havana-white-glazed-polished-porcelain-600x1200-combo",
+        "heritage-light-grey-porcelain-combo-600x1200mm",
+        "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-polished-porcelainelain-600x600-combo",
+        "legacy-peada-porcelain-combo-600x600mm",
+        "luster-carrara-sugar-glazed-combo-600x600",
+        "luster-empredor-sugar-glaze-combo-600x600",
+        "matrix-grey-glossy-glazed-porcelain-600x1200-combo",
+        "melbourne-kt017i-glazed-porcelain-600x600-combo",
+        "mystic-mint-glazed-polished-porcelain-600x1200-combo",
+        "nexus-glossy-porcelain-combo-600x1200mm",
+        "onyx-green-glazed-polished-porcelain-600x1200-combo",
+        "palazzo-matt-porcelain-combo-600x1200mm",
+        "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
+        "rotal-porcelain-combo-600x600mm",
+        "sahara-gris-combo-600x600mm",
+        "sahara-nero-porcelain-combo-600x600mm",
+        "siena-marfil-glossy-porcelain-combo-600x1200mm",
+        "siena-marfil-matt-porcelain-combo-600x1200mm",
+        "sisam-beige-polished-porcelain-combo-600x600",
+        "sisam-blue-combo-600x600mm",
+        "spirit-bianco-600x1200-matt-glazed-tile-combo",
+        "staturio-gold-porcelain-combo-600x1200mm",
+        "strat-crema-matt-tile-600x600mm",
+        "strat-crema-porcelain-combo-600x600mm",
+        "terrazo-gris-matt-glazed-porcelain-600x1200-combo",
+        "thunder-grey-glazed-polished-porcelain-600x1200-combo",
+        "toscana-grey-rustic-matt-porcelain-combo-600x1200mm",
+        "tuscany-blue-matt-glazed-porcelain-600x1200-combo",
+        "tuscany-silver-matt-combo-600x1200",
+        "tuscany-silver-porcelain-combo-glossy-600x1200mm",
+        "ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm",
+        "velora-floor-tile-combo-600x600mm",
+        "braga-45922-matt-antislip-floor-tile-450x450-combo",
+        "dune-45446-matt-antislip-floor-tile-450x450-combo",
+        "isla-45907-matt-antislip-floor-tile-450x450-combo",
+        "kalahari-breeze-450x450-combo",
+        "kalahari-dune-450x450-combo",
+        "kalahari-grey-450x450-combo",
+        "karoo-ash-matt-400x400-combo",
+        "karoo-autum-combo-400x400mm",
+        "karoo-beige-combo-400x400mm",
+        "karoo-blanco-matt-400x400-combo",
+        "karoo-cement-matt-400x400-combo",
+        "karoo-crema-combo-400x400mm",
+        "karoo-graphite-combo-400x400mm",
+        "karoo-sand-combo-400x400mm",
+        "karoo-stone-combo-400x400mm",
+        "luster-azul-sugar-glazematt-600x600-combo",
+        "luster-cloud-sugar-glaze-matt-combo-600x600mm",
+        "luster-cloud-sugar-glaze-matt-600x600-combo",
+        "luster-gold-sugar-glaze-matt-600x600-combo",
+        "luster-nero-sugar-glaze-matt-600x600-combo",
+        "luster-onyx-sugar-glaze-matt-combo-600x600mm",
+        "luster-saturia-sugar-glaze-matt-600x600-combo",
+        "meadow-matt-antislip-floor-tile-450x450-combo",
+        "river-45440-matt-antislip-floor-tile-450x450-combo",
+        "sahara-beige-330x330-combo",
+        "sahara-cloud-330x330-combo",
+        "sahara-grey-330x330-combo",
+        "sahara-grigio-330x330-combo",
+        "sahara-mist-330x330-combo",
+        "sahara-rust-330x330-combo-2",
+        "sahara-stone-330x330-combo",
+        "sahara-taupe-330x330-combo-2",
+        "san-marino-45441matt-antislip-floor-tile-450x450-combo",
+        "dolomiti-alpine-gris-combo-600x600mm",
+        "dolomiti-autumn-combo-600x600mm",
+        "dolomiti-marengo-combo-600x600mm",
+        "dolomiti-terraz-crema-combo-600x600mm",
+        "dolomiti-terraz-dark-gris-matt-600x600-combo",
+        "dolomiti-terraz-gris-combo-600x600m",
+        "7644-base-300x600-combo",
+        "ca-cattack-dark-300x600-combo",
+        "kilavi-grey-ceramic-200x300-combo",
+        "montana-blanco-300x600-combo",
+        "alco-black-shower-panel-combo",
+        "complete-bathroom-solution-combo",
+        "complete-shower-solution-combo-2",
+        "designer-screen-combo-2",
+        "grey-shower-panel-combo",
+        "pure-view-shower-door-combo",
+        "shower-arm-head",
+        "shower-panel-with-5pc-accessory-set-combo",
+        "shower-rail-combo",
+        "shower-rail-set-with-mirror-cabinet-combo",
+        "shower-rail-set-combo",
+        "shower-screen-accessories-combo",
+        "shower-screen-shower-rail-combo-deal",
+        "shower-screen-black-combo",
+        "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo",
+        "shower-screen-with-shower-head-and-arm-combo",
+        "shower-square-and-rail-set-combo",
+        "zen-shower-combo",
+        "toilet-and-basin-with-pedestal",
+        "jaunty-alco-wall-hung-toilet-combo",
+        "jaunty-wall-hung-combo",
+        "modern-toilet-combo",
+        "pan-connector-combo",
+        "terra-alco-wall-hung-toilet-combo",
+        "terra-wall-hung-combo-2",
+        "toilet-basin-pedestal-caddy",
+        "toilet-combo-2",
+        "toilet-combo-3",
+        "top-flush-toilet-basin-pedestal-cleaner-combo",
+        "toilet-combo",
+        "top-flush-toilet-basin-pedestal-shelf-combo",
+        "wal-hung-black-elegance-combo",
+        "wall-hung-pool-black-combo",
+        "tivona-tabby-basin-and-mixer-combo",
+        "basin-and-mirror-combo",
+        "buffer-basin-combo",
+        "chrome-tivona-combo-2",
+        "hazel-basin-mixer-combo",
+        "polio-basin-mixer-combo",
+        "6-pc-bathroom-set-square-black-and-bamboo",
+        "bathroom-solution-combo",
+        "chloe-bath-and-freestanding-mixer-combo",
+        "cordelia-bath-and-freestanding-mixer-combo",
+        "corner-shower-caddy"
+      ]
+    },
+    "toilet-combo-deals": {
+      "title": "Toilet Combos",
+      "group": "Bathroom Combos",
+      "count": 15,
+      "product_ids": [
+        "toilet-and-basin-with-pedestal",
+        "jaunty-alco-wall-hung-toilet-combo",
+        "jaunty-wall-hung-combo",
+        "modern-toilet-combo",
+        "pan-connector-combo",
+        "terra-alco-wall-hung-toilet-combo",
+        "terra-wall-hung-combo-2",
+        "toilet-basin-pedestal-caddy",
+        "toilet-combo-2",
+        "toilet-combo-3",
+        "top-flush-toilet-basin-pedestal-cleaner-combo",
+        "toilet-combo",
+        "top-flush-toilet-basin-pedestal-shelf-combo",
+        "wal-hung-black-elegance-combo",
+        "wall-hung-pool-black-combo"
+      ]
+    },
+    "basin-combos": {
+      "title": "Basin & Mixer Combos",
+      "group": "Bathroom Combos",
+      "count": 6,
+      "product_ids": [
+        "tivona-tabby-basin-and-mixer-combo",
+        "basin-and-mirror-combo",
+        "buffer-basin-combo",
+        "chrome-tivona-combo-2",
+        "hazel-basin-mixer-combo",
+        "polio-basin-mixer-combo"
+      ]
+    },
+    "porcelain-combos": {
+      "title": "Porcelain Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 55,
+      "product_ids": [
+        "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
+        "active-onyx-ice-porcelain-combo-matt-600x1200mm",
+        "alcora-blanco-porcelain-combo-600x600mm",
+        "anti-sky-porcelain-combo-glossy-600x1200mm",
+        "apple-white-combo-600x1200",
+        "astor-cloud-combo-600x600mm",
+        "bricola-gris-porcelain-combo-600x600mm",
+        "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
+        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
+        "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
+        "dolomiti-saturio-matt-tile-combo-600x600",
+        "dyna-glossy-glazed-porcelain-600x600-combo",
+        "dyna-vitrified-polished-porcelain-combo-600x600",
+        "dynasty-beige-glossy-glazed-porcelain-combo-600x1200",
+        "element-white-porcelain-combo-glossy-600x1200mm",
+        "element-white-porcelain-combo-matt-600x1200mm",
+        "eqen-ice-glossy-porcelain-combo-600x1200mm",
+        "feather-brown-glossy-glazed-porcelain-600x1200-combo",
+        "feather-me-porcelain-combo-600x600mm",
+        "finest-terrazo-white-glazed-porcelain-600x1200-combo",
+        "galaxy-crema-kt05i-glazed-porcelain-600x600-combo",
+        "genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo",
+        "havana-white-glazed-polished-porcelain-600x1200-combo",
+        "heritage-light-grey-porcelain-combo-600x1200mm",
+        "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-polished-porcelainelain-600x600-combo",
+        "legacy-peada-porcelain-combo-600x600mm",
+        "luster-carrara-sugar-glazed-combo-600x600",
+        "luster-empredor-sugar-glaze-combo-600x600",
+        "matrix-grey-glossy-glazed-porcelain-600x1200-combo",
+        "melbourne-kt017i-glazed-porcelain-600x600-combo",
+        "mystic-mint-glazed-polished-porcelain-600x1200-combo",
+        "nexus-glossy-porcelain-combo-600x1200mm",
+        "onyx-green-glazed-polished-porcelain-600x1200-combo",
+        "palazzo-matt-porcelain-combo-600x1200mm",
+        "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
+        "rotal-porcelain-combo-600x600mm",
+        "sahara-gris-combo-600x600mm",
+        "sahara-nero-porcelain-combo-600x600mm",
+        "siena-marfil-glossy-porcelain-combo-600x1200mm",
+        "siena-marfil-matt-porcelain-combo-600x1200mm",
+        "sisam-beige-polished-porcelain-combo-600x600",
+        "sisam-blue-combo-600x600mm",
+        "spirit-bianco-600x1200-matt-glazed-tile-combo",
+        "staturio-gold-porcelain-combo-600x1200mm",
+        "strat-crema-matt-tile-600x600mm",
+        "strat-crema-porcelain-combo-600x600mm",
+        "terrazo-gris-matt-glazed-porcelain-600x1200-combo",
+        "thunder-grey-glazed-polished-porcelain-600x1200-combo",
+        "toscana-grey-rustic-matt-porcelain-combo-600x1200mm",
+        "tuscany-blue-matt-glazed-porcelain-600x1200-combo",
+        "tuscany-silver-matt-combo-600x1200",
+        "tuscany-silver-porcelain-combo-glossy-600x1200mm",
+        "ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm",
+        "velora-floor-tile-combo-600x600mm"
+      ]
+    },
+    "ceramic-combos": {
+      "title": "Ceramic Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 33,
+      "product_ids": [
+        "braga-45922-matt-antislip-floor-tile-450x450-combo",
+        "dune-45446-matt-antislip-floor-tile-450x450-combo",
+        "isla-45907-matt-antislip-floor-tile-450x450-combo",
+        "kalahari-breeze-450x450-combo",
+        "kalahari-dune-450x450-combo",
+        "kalahari-grey-450x450-combo",
+        "karoo-ash-matt-400x400-combo",
+        "karoo-autum-combo-400x400mm",
+        "karoo-beige-combo-400x400mm",
+        "karoo-blanco-matt-400x400-combo",
+        "karoo-cement-matt-400x400-combo",
+        "karoo-crema-combo-400x400mm",
+        "karoo-graphite-combo-400x400mm",
+        "karoo-sand-combo-400x400mm",
+        "karoo-stone-combo-400x400mm",
+        "luster-azul-sugar-glazematt-600x600-combo",
+        "luster-cloud-sugar-glaze-matt-combo-600x600mm",
+        "luster-cloud-sugar-glaze-matt-600x600-combo",
+        "luster-gold-sugar-glaze-matt-600x600-combo",
+        "luster-nero-sugar-glaze-matt-600x600-combo",
+        "luster-onyx-sugar-glaze-matt-combo-600x600mm",
+        "luster-saturia-sugar-glaze-matt-600x600-combo",
+        "meadow-matt-antislip-floor-tile-450x450-combo",
+        "river-45440-matt-antislip-floor-tile-450x450-combo",
+        "sahara-beige-330x330-combo",
+        "sahara-cloud-330x330-combo",
+        "sahara-grey-330x330-combo",
+        "sahara-grigio-330x330-combo",
+        "sahara-mist-330x330-combo",
+        "sahara-rust-330x330-combo-2",
+        "sahara-stone-330x330-combo",
+        "sahara-taupe-330x330-combo-2",
+        "san-marino-45441matt-antislip-floor-tile-450x450-combo"
+      ]
+    },
+    "hardbody-combos": {
+      "title": "Hardbody Tile Combos",
+      "group": "Tile Combo Deals",
+      "count": 6,
+      "product_ids": [
+        "dolomiti-alpine-gris-combo-600x600mm",
+        "dolomiti-autumn-combo-600x600mm",
+        "dolomiti-marengo-combo-600x600mm",
+        "dolomiti-terraz-crema-combo-600x600mm",
+        "dolomiti-terraz-dark-gris-matt-600x600-combo",
+        "dolomiti-terraz-gris-combo-600x600m"
+      ]
+    }
+  },
+  "products": [
+    {
+      "source_url": "https://pulsetiles.co.za/product/6-pc-bathroom-set-square-black-and-bamboo/",
+      "name": "6 PC Bathroom Set Square – Black and Bamboo",
+      "code": "I00831",
+      "price": {
+        "current": 399.9,
+        "regular": 399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Bath Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00831-SET.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00831-SET.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-06.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-05.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-02.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-04.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-03.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00381-01.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "29 × 22 × 29 cm"
+        }
+      ],
+      "id": "6-pc-bathroom-set-square-black-and-bamboo",
+      "categories": [
+        "bath-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/abstract-river-glazed-polished-porcelainelain-600x1200-combo/",
+      "name": "Abstract River Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01140",
+      "price": {
+        "current": 3199.9,
+        "regular": 3199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01140-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01140-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18079.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/active-onyx-ice-porcelain-combo-matt-600x1200mm/",
+      "name": "Active Onyx Ice Porcelain Combo Matt 600Ã1200mm",
+      "code": "Q01411",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01411_ACT.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01411_ACT.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/A18284.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "active-onyx-ice-porcelain-combo-matt-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/tivona-tabby-basin-and-mixer-combo/",
+      "name": "Alco Basin and Mixer Combo",
+      "code": "Q01456",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01456.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01456.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/WEB-11-SIZE-Recovered-30-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04000-Chrome-Basin-Mixer.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04441.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04441-2.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 50 × 20 cm"
+        }
+      ],
+      "id": "tivona-tabby-basin-and-mixer-combo",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/alco-black-shower-panel-combo/",
+      "name": "Alco Black Shower Panel Combo",
+      "code": "Q01327",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/Q01327-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/02/Q01327-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "132 × 28 × 51 cm"
+        }
+      ],
+      "id": "alco-black-shower-panel-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/alcora-blanco-porcelain-combo-600x600mm/",
+      "name": "Alcora Blanco Porcelain Combo 600Ã600mm",
+      "code": "Q01451",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/ALCORA-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/ALCORA-1-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/ALCORA-2-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/A17793-1-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/A17793-lifestyle.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "alcora-blanco-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/anti-sky-porcelain-combo-glossy-600x1200mm/",
+      "name": "Anti Sky Porcelain Combo Glossy 600Ã1200mm",
+      "code": "Q01297",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01297-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01297-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18251-ANTI-SKY.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "anti-sky-porcelain-combo-glossy-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/apple-white-combo-600x1200/",
+      "name": "Apple White Combo 600×1200",
+      "code": "Q01514",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01514.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01514.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/A18328.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "apple-white-combo-600x1200",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/astor-cloud-combo-600x600mm/",
+      "name": "Astor Cloud Combo 600Ã600mm",
+      "code": "Q01409",
+      "price": {
+        "current": 2899.9,
+        "regular": 2899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01218.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01218.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18165-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "astor-cloud-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/7644-base-300x600-combo/",
+      "name": "Base Combo 300X600mm",
+      "code": "Q01103",
+      "price": {
+        "current": 2449.9,
+        "regular": 2449.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Wall Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01103-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01103-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17850.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "20 kg"
+        }
+      ],
+      "id": "7644-base-300x600-combo",
+      "categories": [
+        "wall-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo/",
+      "name": "Basin and Mirror Combo",
+      "code": "Q01418",
+      "price": {
+        "current": 799.9,
+        "regular": 799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q1418-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q1418-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "10 kg"
+        }
+      ],
+      "id": "basin-and-mirror-combo",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/bathroom-solution-combo/",
+      "name": "Bathroom Solution Combo",
+      "code": "Q01457",
+      "price": {
+        "current": 2599.9,
+        "regular": 2599.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Bath Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Untitled-1-03-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Untitled-1-03-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Untitled-1-02-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "75 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "157 × 109 × 52 cm"
+        }
+      ],
+      "id": "bathroom-solution-combo",
+      "categories": [
+        "bath-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/braga-45922-matt-antislip-floor-tile-450x450-combo/",
+      "name": "Braga Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01162",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01162.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01162.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18031.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "braga-45922-matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/bricola-gris-porcelain-combo-600x600mm/",
+      "name": "Bricola Gris Porcelain Combo 600Ã600mm",
+      "code": "Q01465",
+      "price": {
+        "current": 2599.9,
+        "regular": 2599.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01213.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01213.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A17804-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "bricola-gris-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/buffer-basin-combo/",
+      "name": "Buffer Basin Combo",
+      "code": "Q01536",
+      "price": {
+        "current": 699.9,
+        "regular": 999.9,
+        "sale": 699.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01536.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01536.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "9.20 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "44 × 44 × 18 cm"
+        }
+      ],
+      "id": "buffer-basin-combo",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/ca-cattack-dark-300x600-combo/",
+      "name": "Ca-Cattack Dark Combo 300X600mm",
+      "code": "Q01101",
+      "price": {
+        "current": 2449.9,
+        "regular": 2449.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Wall Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01101-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01101-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17846.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "211 kg"
+        }
+      ],
+      "id": "ca-cattack-dark-300x600-combo",
+      "categories": [
+        "wall-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/chloe-bath-and-freestanding-mixer-combo/",
+      "name": "Chloe Bath and Freestanding mixer combo",
+      "code": "Q01060",
+      "price": {
+        "current": 12999.9,
+        "regular": 12999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Bath Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01060-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01060-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b04112.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B03723-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "37 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "170 × 70 × 58 cm"
+        }
+      ],
+      "id": "chloe-bath-and-freestanding-mixer-combo",
+      "categories": [
+        "bath-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/chrome-tivona-combo-2/",
+      "name": "Chrome Tivona Basin and Mixer Combo",
+      "code": "Q01416",
+      "price": {
+        "current": 2599.9,
+        "regular": 2599.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01416-01-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01416-01-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01416-LIFESTYLE.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "12 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 42 × 16 cm"
+        }
+      ],
+      "id": "chrome-tivona-combo-2",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm/",
+      "name": "Classic Jakarta White Matt Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01086",
+      "price": {
+        "current": 3199.9,
+        "regular": 3199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01075-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01075-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A17923-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/clayton-aqua-glossy-glazed-porcelain-600x1200-combo/",
+      "name": "Clayton Aqua Glossy Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01153",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01154-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01154-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18138.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/complete-bathroom-solution-combo/",
+      "name": "Complete Bathroom Solution Combo",
+      "code": "Q01506",
+      "price": {
+        "current": 5499.9,
+        "regular": 5499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01506.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01506.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "34 kg"
+        }
+      ],
+      "id": "complete-bathroom-solution-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/complete-shower-solution-combo-2/",
+      "name": "Complete Shower Solution Combo",
+      "code": "Q01541",
+      "price": {
+        "current": 3999.9,
+        "regular": 4899.9,
+        "sale": 3999.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01541.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01541.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "50 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "203 × 101 × 27 cm"
+        }
+      ],
+      "id": "complete-shower-solution-combo-2",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/cordelia-bath-and-freestanding-mixer-combo/",
+      "name": "Cordelia Bath and Freestanding mixer combo",
+      "code": "Q01400",
+      "price": {
+        "current": 19999.9,
+        "regular": 19999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Bath Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04100-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04100-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04116-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04116-1-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04116-2.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04116-1-2.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B03721-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "45 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "170 × 76 × 62 cm"
+        }
+      ],
+      "id": "cordelia-bath-and-freestanding-mixer-combo",
+      "categories": [
+        "bath-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/corner-shower-caddy/",
+      "name": "Corner Shower Caddy",
+      "code": "I00619",
+      "price": {
+        "current": 349.9,
+        "regular": 349.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Bath Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00619.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/I00619.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "34 × 15 × 15 cm"
+        }
+      ],
+      "id": "corner-shower-caddy",
+      "categories": [
+        "bath-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/cresto-white-rustic-matt-porcelain-combo-600x1200mm/",
+      "name": "Cresto White Rustic Matt Porcelain Combo 600Ã1200mm",
+      "code": "Q01245",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01245.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01245.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18189-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toilet-and-basin-with-pedestal/",
+      "name": "Deluxe Toilet and Basin with Pedestal",
+      "code": "Q01423",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET2-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET2-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "60 kg"
+        }
+      ],
+      "id": "toilet-and-basin-with-pedestal",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/designer-screen-combo-2/",
+      "name": "Designer Screen Combo",
+      "code": "Q01537",
+      "price": {
+        "current": 3499.9,
+        "regular": 3999.9,
+        "sale": 3499.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01537.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01537.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "46.60 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "204 × 92 × 22 cm"
+        }
+      ],
+      "id": "designer-screen-combo-2",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-alpine-gris-combo-600x600mm/",
+      "name": "Dolomiti Alpine Gris Combo 600Ã600mm",
+      "code": "Q01228",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01228.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01228.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17912-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-alpine-gris-combo-600x600mm",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-autumn-combo-600x600mm/",
+      "name": "Dolomiti Autumn Combo 600Ã600mm",
+      "code": "Q01227",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01227.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01227.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17882.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-autumn-combo-600x600mm",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-marengo-combo-600x600mm/",
+      "name": "Dolomiti Marengo Combo 600Ã600mm",
+      "code": "Q01229",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01229.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01229.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17914.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-marengo-combo-600x600mm",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-saturio-matt-tile-combo-600x600/",
+      "name": "Dolomiti Saturio Matt Tile Combo 600×600",
+      "code": "Q01124",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01124-1.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01124-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-saturio-matt-tile-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-crema-combo-600x600mm/",
+      "name": "Dolomiti Terraz Crema Combo 600Ã600mm",
+      "code": "Q01230",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01230.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01230.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17915.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-terraz-crema-combo-600x600mm",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-dark-gris-matt-600x600-combo/",
+      "name": "Dolomiti Terraz Dark Gris Matt Combo 600X600mm",
+      "code": "Q01114",
+      "price": {
+        "current": 2299.9,
+        "regular": 2299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01114-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01114-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17916-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-terraz-dark-gris-matt-600x600-combo",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-terraz-gris-combo-600x600m/",
+      "name": "Dolomiti Terraz Gris Combo 600x600m",
+      "code": "Q01231",
+      "price": {
+        "current": 2349.9,
+        "regular": 2349.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Hardbody Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01231.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01231.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17917.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dolomiti-terraz-gris-combo-600x600m",
+      "categories": [
+        "hardbody-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dune-45446-matt-antislip-floor-tile-450x450-combo/",
+      "name": "Dune Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01159",
+      "price": {
+        "current": 2249.9,
+        "regular": 2249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01159-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01159-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17879.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "dune-45446-matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dyna-glossy-glazed-porcelain-600x600-combo/",
+      "name": "Dyna Glossy Polished Porcelain Combo 600X600mm",
+      "code": "Q01090",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01090-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01090-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17526.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dyna-glossy-glazed-porcelain-600x600-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dyna-vitrified-polished-porcelain-combo-600x600/",
+      "name": "Dyna Vitrified Polished Porcelain Combo 600×600",
+      "code": "Q01490",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01490-1.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01490-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "dyna-vitrified-polished-porcelain-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/dynasty-beige-glossy-glazed-porcelain-combo-600x1200/",
+      "name": "Dynasty Beige Glossy Glazed Porcelain Combo 600×1200",
+      "code": "Q01247",
+      "price": {
+        "current": 3049.9,
+        "regular": 3049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01247.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01247.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "dynasty-beige-glossy-glazed-porcelain-combo-600x1200",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/element-white-porcelain-combo-glossy-600x1200mm/",
+      "name": "Element White Porcelain Combo Glossy 600Ã1200mm",
+      "code": "Q01298",
+      "price": {
+        "current": 3049.9,
+        "regular": 3049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01298-FINAL.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01298-FINAL.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "element-white-porcelain-combo-glossy-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/element-white-porcelain-combo-matt-600x1200mm/",
+      "name": "Element White Porcelain Combo Matt 600Ã1200mm",
+      "code": "Q01412",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01298-ELEMENT-WHITE-TILE-COMBO-26-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01298-ELEMENT-WHITE-TILE-COMBO-26-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "element-white-porcelain-combo-matt-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/eqen-ice-glossy-porcelain-combo-600x1200mm/",
+      "name": "Eqen Ice Glossy Porcelain Combo 600Ã1200mm",
+      "code": "Q01241",
+      "price": {
+        "current": 3049.9,
+        "regular": 3049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01241.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01241.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18185-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "eqen-ice-glossy-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/feather-brown-glossy-glazed-porcelain-600x1200-combo/",
+      "name": "Feather Brown Glossy Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01125",
+      "price": {
+        "current": 3199.9,
+        "regular": 3199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01125-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01125-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18089-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "feather-brown-glossy-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/feather-me-porcelain-combo-600x600mm/",
+      "name": "Feather Me Porcelain Combo 600Ã600mm",
+      "code": "Q01206",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01206.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01206.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17571.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "feather-me-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/finest-terrazo-white-glazed-porcelain-600x1200-combo/",
+      "name": "Finest Terrazo White Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01152",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01152-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01152-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "finest-terrazo-white-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/galaxy-crema-kt05i-glazed-porcelain-600x600-combo/",
+      "name": "Galaxy Crema Glazed Porcelain Combo 600X600mm",
+      "code": "Q01119",
+      "price": {
+        "current": 2049.9,
+        "regular": 2049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/Q01119-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/Q01119-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18059.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "galaxy-crema-kt05i-glazed-porcelain-600x600-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo/",
+      "name": "Genesis Grey Carpe G Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01145",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01145-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01145-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18084.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "genesis-grey-carpe-g-glazed-polished-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/grey-shower-panel-combo/",
+      "name": "Grey Shower Panel Combo",
+      "code": "Q01425",
+      "price": {
+        "current": 2799.9,
+        "regular": 2799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01425-SPA-CIAL-COMBO-01.RWbTfHhc-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01425-SPA-CIAL-COMBO-01.RWbTfHhc-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5.5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "132 × 30 × 51 cm"
+        }
+      ],
+      "id": "grey-shower-panel-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/havana-white-glazed-polished-porcelain-600x1200-combo/",
+      "name": "Havana White Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01141",
+      "price": {
+        "current": 2899.9,
+        "regular": 2899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01141-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01141-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/A18080-1.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/A18080.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "havana-white-glazed-polished-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/hazel-basin-mixer-combo/",
+      "name": "Hazel Basin and Mixer Combo",
+      "code": "Q00690",
+      "price": {
+        "current": 1499.9,
+        "regular": 2399.8,
+        "sale": 1499.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q00690.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q00690.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03551.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01793.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q00690.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "12 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "46 × 44 × 27 cm"
+        }
+      ],
+      "id": "hazel-basin-mixer-combo",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/heritage-light-grey-porcelain-combo-600x1200mm/",
+      "name": "Heritage Light Grey Porcelain Combo 600Ã1200mm",
+      "code": "Q01239",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01239.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01239.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18181.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "heritage-light-grey-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/heritage-light-grey-porcelain-combo-600x1200mm-2/",
+      "name": "Heritage Light Grey Porcelain Combo 600Ã1200mm",
+      "code": "Q01252",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01252.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01252.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18201-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "heritage-light-grey-porcelain-combo-600x1200mm-2",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/isla-45907-matt-antislip-floor-tile-450x450-combo/",
+      "name": "Isla Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01158",
+      "price": {
+        "current": 2249.9,
+        "regular": 2249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01158-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01158-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17529.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "isla-45907-matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/ivory-polished-porcelainelain-600x600-combo/",
+      "name": "Ivory Polished Porcelain Combo 600X600mm",
+      "code": "Q01188",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01146-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01146-1-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17740.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "250 kg"
+        }
+      ],
+      "id": "ivory-polished-porcelainelain-600x600-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/jaunty-alco-wall-hung-toilet-combo/",
+      "name": "Jaunty Alco Wall Hung Toilet Combo",
+      "code": "Q01062",
+      "price": {
+        "current": 6199.9,
+        "regular": 6199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01062.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01062.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03567-1.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03969.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03971.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01062-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "33 kg"
+        }
+      ],
+      "id": "jaunty-alco-wall-hung-toilet-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/jaunty-wall-hung-combo/",
+      "name": "Jaunty Wall Hung Combo",
+      "code": "Q00682",
+      "price": {
+        "current": 6599.9,
+        "regular": 6599.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00682.png",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00682.png"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "32 kg"
+        }
+      ],
+      "id": "jaunty-wall-hung-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/kalahari-breeze-450x450-combo/",
+      "name": "Kalahari Breeze 450×450 Combo",
+      "code": "Q01333",
+      "price": {
+        "current": 1949.9,
+        "regular": 1949.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01333-02.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01333-02.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "172 kg"
+        }
+      ],
+      "id": "kalahari-breeze-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/kalahari-dune-450x450-combo/",
+      "name": "Kalahari Dune 450×450 Combo",
+      "code": "Q01336",
+      "price": {
+        "current": 1949.9,
+        "regular": 1949.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01336-03.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01336-03.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "172 kg"
+        }
+      ],
+      "id": "kalahari-dune-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/kalahari-grey-450x450-combo/",
+      "name": "Kalahari Grey 450×450 Combo",
+      "code": "Q01334",
+      "price": {
+        "current": 1949.9,
+        "regular": 1949.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01334-03.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01334-03.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "172 kg"
+        }
+      ],
+      "id": "kalahari-grey-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-ash-matt-400x400-combo/",
+      "name": "Karoo Ash Matt Combo 400X400mm",
+      "code": "Q01098",
+      "price": {
+        "current": 1799.9,
+        "regular": 1799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01098-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01098-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17664.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-ash-matt-400x400-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-autum-combo-400x400mm/",
+      "name": "Karoo Autum Combo 400X400mm",
+      "code": "Q01262",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01262-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01262-1-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-autum-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-beige-combo-400x400mm/",
+      "name": "Karoo Beige Combo 400X400mm",
+      "code": "Q01260",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01260-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01260-1-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-beige-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-blanco-matt-400x400-combo/",
+      "name": "Karoo Blanco Matt Combo 400X400mm",
+      "code": "Q01097",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01097-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01097-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17663.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-blanco-matt-400x400-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-cement-matt-400x400-combo/",
+      "name": "Karoo Cement Matt Combo 400X400mm",
+      "code": "Q01100",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01100-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01100-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17670.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-cement-matt-400x400-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-crema-combo-400x400mm/",
+      "name": "Karoo Crema Combo 400X400mm",
+      "code": "Q01261",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01261-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01261-1-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-crema-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-graphite-combo-400x400mm/",
+      "name": "Karoo Graphite Combo 400X400mm",
+      "code": "Q01264",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01264-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01264-1-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-graphite-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-sand-combo-400x400mm/",
+      "name": "Karoo Sand Combo 400X400mm",
+      "code": "Q01259",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01259-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01259-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-sand-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/karoo-stone-combo-400x400mm/",
+      "name": "Karoo Stone Combo 400X400mm",
+      "code": "Q01263",
+      "price": {
+        "current": 1799.9,
+        "regular": 1799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01263-1-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01263-1-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "217 kg"
+        }
+      ],
+      "id": "karoo-stone-combo-400x400mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/kilavi-grey-ceramic-200x300-combo/",
+      "name": "Kilavi Grey Ceramic 200×300 Combo",
+      "code": "Q01050",
+      "price": {
+        "current": 1349.9,
+        "regular": 1349.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Wall Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/SHD-NEW-ARRIVALS-07-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/SHD-NEW-ARRIVALS-07-scaled.webp"
+      ],
+      "id": "kilavi-grey-ceramic-200x300-combo",
+      "categories": [
+        "wall-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/legacy-peada-porcelain-combo-600x600mm/",
+      "name": "Legacy Peada Porcelain Combo 600Ã600mm",
+      "code": "Q01224",
+      "price": {
+        "current": 2649.9,
+        "regular": 2649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01224.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01224.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18176-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "legacy-peada-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-azul-sugar-glazematt-600x600-combo/",
+      "name": "Luster Azul Sugar Glazematt Combo 600X600mm",
+      "code": "Q01135",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01135.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01135.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18067.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-azul-sugar-glazematt-600x600-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-carrara-sugar-glazed-combo-600x600/",
+      "name": "Luster Carrara Sugar Glazed Combo 600×600",
+      "code": "Q01233",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01233-1.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01233-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-carrara-sugar-glazed-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-cloud-sugar-glaze-matt-600x600-combo/",
+      "name": "Luster Cloud Sugar Glaze Matt Combo 600X600mm",
+      "code": "Q01137",
+      "price": {
+        "current": 2349.9,
+        "regular": 2349.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01137.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01137.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18122.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-cloud-sugar-glaze-matt-600x600-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-cloud-sugar-glaze-matt-combo-600x600mm/",
+      "name": "Luster Cloud Sugar Glaze Matt Combo 600Ã600mm",
+      "code": "Q01235",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01235.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01235.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18122.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-cloud-sugar-glaze-matt-combo-600x600mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-empredor-sugar-glaze-combo-600x600/",
+      "name": "Luster Empredor Sugar Glaze Combo 600×600",
+      "code": "Q01236",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01236-1.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01236-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-empredor-sugar-glaze-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-gold-sugar-glaze-matt-600x600-combo/",
+      "name": "Luster Gold Sugar Glaze Matt Combo 600X600mm",
+      "code": "Q01130",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01130-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01130-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18061.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-gold-sugar-glaze-matt-600x600-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-nero-sugar-glaze-matt-600x600-combo/",
+      "name": "Luster Nero Sugar Glaze Matt Combo 600X600mm",
+      "code": "Q01134",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01134-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01134-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18066.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-nero-sugar-glaze-matt-600x600-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-onyx-sugar-glaze-matt-combo-600x600mm/",
+      "name": "Luster Onyx Sugar Glaze Matt Combo 600Ã600mm",
+      "code": "Q01234",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01234.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01234.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18160.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-onyx-sugar-glaze-matt-combo-600x600mm",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/luster-saturia-sugar-glaze-matt-600x600-combo/",
+      "name": "Luster Saturia Sugar Glaze Matt Combo 600X600mm",
+      "code": "Q01136",
+      "price": {
+        "current": 2399.9,
+        "regular": 2399.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01136.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01136.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "luster-saturia-sugar-glaze-matt-600x600-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/matrix-grey-glossy-glazed-porcelain-600x1200-combo/",
+      "name": "Matrix Grey Glossy Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01079",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01079-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01079-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17933.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "matrix-grey-glossy-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/meadow-matt-antislip-floor-tile-450x450-combo/",
+      "name": "Meadow Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01156",
+      "price": {
+        "current": 2249.9,
+        "regular": 2249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01156-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01156-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17374.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "meadow-matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/melbourne-kt017i-glazed-porcelain-600x600-combo/",
+      "name": "Melbourne Glazed Porcelain Combo 600X600mm",
+      "code": "Q01118",
+      "price": {
+        "current": 2049.9,
+        "regular": 2049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/QQ01118-MELBOURNE-GLAZED-01.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/QQ01118-MELBOURNE-GLAZED-01.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18058.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "melbourne-kt017i-glazed-porcelain-600x600-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/modern-toilet-combo/",
+      "name": "Modern Toilet Combo",
+      "code": "Q01274",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01274.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01274.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/B03867.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03553-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "51.5 kg"
+        }
+      ],
+      "id": "modern-toilet-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/montana-blanco-300x600-combo/",
+      "name": "Montana Blanco Combo 300X600mm",
+      "code": "Q01096",
+      "price": {
+        "current": 2449.9,
+        "regular": 2449.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Wall Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01096-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01096-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "211 kg"
+        }
+      ],
+      "id": "montana-blanco-300x600-combo",
+      "categories": [
+        "wall-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/mystic-mint-glazed-polished-porcelain-600x1200-combo/",
+      "name": "Mystic Mint Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01150",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01150.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01150.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18097.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "mystic-mint-glazed-polished-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/nexus-glossy-porcelain-combo-600x1200mm/",
+      "name": "Nexus Glossy Porcelain Combo 600Ã1200mm",
+      "code": "Q01244",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01244.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01244.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18200-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "nexus-glossy-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/onyx-green-glazed-polished-porcelain-600x1200-combo/",
+      "name": "Onyx Green Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01148",
+      "price": {
+        "current": 3199.9,
+        "regular": 3199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01148.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01148.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18095.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "onyx-green-glazed-polished-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/palazzo-matt-porcelain-combo-600x1200mm/",
+      "name": "Palazzo Matt Porcelain Combo 600Ã1200mm",
+      "code": "Q01246",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01246.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01246.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18190-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "palazzo-matt-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/pan-connector-combo/",
+      "name": "Pan Connector Combo",
+      "code": "Q01183",
+      "price": {
+        "current": 499.9,
+        "regular": 499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01072.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01072.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 20 × 15 cm"
+        }
+      ],
+      "id": "pan-connector-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/polio-basin-mixer-combo/",
+      "name": "Polio Basin & Mixer Combo",
+      "code": "Q01417",
+      "price": {
+        "current": 3699.9,
+        "regular": 3999.9,
+        "sale": 3699.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01417-01-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01417-01-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01417-LIFESTYLE.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "8.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "42 × 44 × 17 cm"
+        }
+      ],
+      "id": "polio-basin-mixer-combo",
+      "categories": [
+        "basin-mixer-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/pure-view-shower-door-combo/",
+      "name": "Pure View Shower Door Combo",
+      "code": "Q01477",
+      "price": {
+        "current": 2799.9,
+        "regular": 2799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01477.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01477.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "68 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "94 × 185 × 55 cm"
+        },
+        {
+          "name": "Shipping Zone",
+          "value": "KZN"
+        }
+      ],
+      "id": "pure-view-shower-door-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/river-45440-matt-antislip-floor-tile-450x450-combo/",
+      "name": "River Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01161",
+      "price": {
+        "current": 2249.9,
+        "regular": 2249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01161-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01161-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18030.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "river-45440-matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/rosata-kt09i-glossy-glazed-porcelain-600x600-combo/",
+      "name": "Rosata Glossy Glazed Porcelain Combo 600X600mm",
+      "code": "Q01116",
+      "price": {
+        "current": 1949.9,
+        "regular": 1949.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/Q01116-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/Q01116-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18056.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/rotal-porcelain-combo-600x600mm/",
+      "name": "Rotal Porcelain Combo 600Ã600mm",
+      "code": "Q01205",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01205.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01205.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17521.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "rotal-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-beige-330x330-combo/",
+      "name": "Sahara Beige 330×330 Combo",
+      "code": "Q01389",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01389-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01389-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-beige-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-cloud-330x330-combo/",
+      "name": "Sahara Cloud 330×330 Combo",
+      "code": "Q01390",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01390-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01390-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-cloud-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-grey-330x330-combo/",
+      "name": "Sahara Grey 330×330 Combo",
+      "code": "Q01391",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01391-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01391-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-grey-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-grigio-330x330-combo/",
+      "name": "Sahara Grigio 330×330 Combo",
+      "code": "Q01392",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01392-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01392-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-grigio-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-gris-combo-600x600mm/",
+      "name": "Sahara Gris Combo 600Ã600mm",
+      "code": "Q01212",
+      "price": {
+        "current": 2749.9,
+        "regular": 2749.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01212.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01212.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A17798-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "sahara-gris-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-mist-330x330-combo/",
+      "name": "Sahara Mist 330×330 Combo",
+      "code": "Q01393",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01393-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01393-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-mist-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-nero-porcelain-combo-600x600mm/",
+      "name": "Sahara Nero Porcelain Combo 600Ã600mm",
+      "code": "Q01211",
+      "price": {
+        "current": 2649.9,
+        "regular": 2649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01211.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01211.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A17797-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "sahara-nero-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-rust-330x330-combo-2/",
+      "name": "Sahara Rust 330×330 Combo",
+      "code": "Q01394",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01394-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01394-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-rust-330x330-combo-2",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-stone-330x330-combo/",
+      "name": "Sahara Stone 330×330 Combo",
+      "code": "Q01396",
+      "price": {
+        "current": 1549.9,
+        "regular": 1549.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01396-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01396-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-stone-330x330-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-taupe-330x330-combo-2/",
+      "name": "Sahara Taupe 330×330 Combo",
+      "code": "Q01395",
+      "price": {
+        "current": 1649.9,
+        "regular": 1649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01395-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01395-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "198 kg"
+        }
+      ],
+      "id": "sahara-taupe-330x330-combo-2",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/san-marino-45441matt-antislip-floor-tile-450x450-combo/",
+      "name": "San Marino Matt Antislip Outdoor Combo 450X450mm",
+      "code": "Q01157",
+      "price": {
+        "current": 2249.9,
+        "regular": 2249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Ceramic Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01157-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01157-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17513-REAL-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "142 kg"
+        }
+      ],
+      "id": "san-marino-45441matt-antislip-floor-tile-450x450-combo",
+      "categories": [
+        "ceramic-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-arm-head/",
+      "name": "Shower Arm and Head Combo",
+      "code": "Q01011",
+      "price": {
+        "current": 699.9,
+        "regular": 899.9,
+        "sale": 699.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01011.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01011.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03373-shower-head.XebYElYi.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03393.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01011-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "42 × 38 × 5 cm"
+        }
+      ],
+      "id": "shower-arm-head",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-panel-with-5pc-accessory-set-combo/",
+      "name": "Shower Panel With 5pc Accessory Set Combo",
+      "code": "Q01467",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01467.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01467.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "130 × 25 × 52 cm"
+        }
+      ],
+      "id": "shower-panel-with-5pc-accessory-set-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-rail-combo/",
+      "name": "Shower Rail Combo",
+      "code": "Q01495",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01495.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01495.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5 kg"
+        }
+      ],
+      "id": "shower-rail-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-rail-set-with-mirror-cabinet-combo/",
+      "name": "Shower Rail Set With Mirror Cabinet Combo",
+      "code": "Q01470",
+      "price": {
+        "current": 2799.9,
+        "regular": 2799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01470.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01470.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "70 × 30 × 10 cm"
+        }
+      ],
+      "id": "shower-rail-set-with-mirror-cabinet-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-rail-set-combo/",
+      "name": "Shower Rail-Set Combo",
+      "code": "Q01538",
+      "price": {
+        "current": 2499.9,
+        "regular": 2999.9,
+        "sale": 2499.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01538.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01538.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.60 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "67 × 31 × 18 cm"
+        }
+      ],
+      "id": "shower-rail-set-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-accessories-combo/",
+      "name": "Shower Screen & Accessories Combo",
+      "code": "Q01126",
+      "price": {
+        "current": 2499.9,
+        "regular": 2499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/SHOWER-SCREEN-COMBO-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/SHOWER-SCREEN-COMBO-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04133.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/B03739.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "24 kg"
+        }
+      ],
+      "id": "shower-screen-accessories-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/",
+      "name": "Shower Screen + Shower Rail Combo Deal",
+      "code": "Q01203",
+      "price": {
+        "current": 2999.9,
+        "regular": 3699.9,
+        "sale": 2999.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04186-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03739.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04192-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01940.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "38 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "200 × 100 × 20 cm"
+        }
+      ],
+      "id": "shower-screen-shower-rail-combo-deal",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-black-combo/",
+      "name": "Shower Screen Black Combo",
+      "code": "Q01484",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01484.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01484.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "27 kg"
+        },
+        {
+          "name": "Shipping Zone",
+          "value": "KZN"
+        }
+      ],
+      "id": "shower-screen-black-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm/",
+      "name": "Shower Screen Plus Shower Head and Arm Combo 1000x2000x6mm",
+      "code": "Q01501",
+      "price": {
+        "current": 3299.9,
+        "regular": 3299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q1501.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q1501.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "32 kg"
+        }
+      ],
+      "id": "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm/",
+      "name": "Shower Screen Plus Shower Head and Arm Combo 1200x1950x6mm",
+      "code": "Q01500",
+      "price": {
+        "current": 3499.9,
+        "regular": 3499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01500_combo.png",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01500_combo.png"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "36 kg"
+        }
+      ],
+      "id": "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo/",
+      "name": "Shower Screen Plus Shower Head and Arm Combo 900x2000x6mm",
+      "code": "Q01502",
+      "price": {
+        "current": 2899.9,
+        "regular": 3299.9,
+        "sale": 2899.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01502.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01502.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26 kg"
+        }
+      ],
+      "id": "shower-screen-plus-shower-head-and-arm-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-with-shower-head-and-arm-combo/",
+      "name": "Shower Screen With Shower Head and Arm Combo",
+      "code": "Q01480",
+      "price": {
+        "current": 2699.9,
+        "regular": 2699.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01480.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01480.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "56 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "202 × 122 × 18 cm"
+        },
+        {
+          "name": "Shipping Zone",
+          "value": "KZN"
+        }
+      ],
+      "id": "shower-screen-with-shower-head-and-arm-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-square-and-rail-set-combo/",
+      "name": "Shower Square and Rail Set Combo",
+      "code": "Q01478",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01478.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01478.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "33 kg"
+        }
+      ],
+      "id": "shower-square-and-rail-set-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/siena-marfil-glossy-porcelain-combo-600x1200mm/",
+      "name": "Siena Marfil Glossy Porcelain Combo 600Ã1200mm",
+      "code": "Q01240",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01240.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01240.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18182-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "siena-marfil-glossy-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/siena-marfil-matt-porcelain-combo-600x1200mm/",
+      "name": "Siena Marfil Matt Porcelain Combo 600Ã1200mm",
+      "code": "Q01248",
+      "price": {
+        "current": 3349.9,
+        "regular": 3349.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01248.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01248.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18192-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "siena-marfil-matt-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sisam-beige-polished-porcelain-combo-600x600/",
+      "name": "Sisam Beige Polished Porcelain Combo 600×600",
+      "code": "Q01460",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01460-1.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01460-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "sisam-beige-polished-porcelain-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sisam-blue-combo-600x600mm/",
+      "name": "Sisam Blue Combo 600Ã600mm",
+      "code": "Q01208",
+      "price": {
+        "current": 2199.9,
+        "regular": 2199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01208.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01208.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A17649.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "sisam-blue-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/spirit-bianco-600x1200-matt-glazed-tile-combo/",
+      "name": "Spirit Bianco 600×1200 Matt Glazed Tile Combo",
+      "code": "Q01413",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01413-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01413-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "spirit-bianco-600x1200-matt-glazed-tile-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/staturio-gold-porcelain-combo-600x1200mm/",
+      "name": "Staturio Gold Porcelain Combo 600Ã1200mm",
+      "code": "Q01253",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01253.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01253.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18179.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "staturio-gold-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/strat-crema-matt-tile-600x600mm/",
+      "name": "Strat Crema Matt Tile 600x600mm",
+      "code": "Q01452",
+      "price": {
+        "current": 2899.9,
+        "regular": 2899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01452.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01452.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "strat-crema-matt-tile-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/strat-crema-porcelain-combo-600x600mm/",
+      "name": "Strat Crema Porcelain Combo 600Ã600mm",
+      "code": "Q01223",
+      "price": {
+        "current": 2799.9,
+        "regular": 2799.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01223.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01223.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18175-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "strat-crema-porcelain-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/terra-alco-wall-hung-toilet-combo/",
+      "name": "Terra Alco Wall Hung Toilet Combo",
+      "code": "Q01061",
+      "price": {
+        "current": 6599.9,
+        "regular": 6599.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01061.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01061.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03568-3.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03969.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03974.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "39 kg"
+        }
+      ],
+      "id": "terra-alco-wall-hung-toilet-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/terra-wall-hung-combo-2/",
+      "name": "Terra Wall Hung Combo",
+      "code": "Q00680",
+      "price": {
+        "current": 6899.9,
+        "regular": 6899.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00680.png",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00680.png"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "38 kg"
+        }
+      ],
+      "id": "terra-wall-hung-combo-2",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/terrazo-gris-matt-glazed-porcelain-600x1200-combo/",
+      "name": "Terrazo Gris Matt Glazed Porcelain Combo 600X1200mm",
+      "code": "Q01255",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01112-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01112-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18090.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "terrazo-gris-matt-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/thunder-grey-glazed-polished-porcelain-600x1200-combo/",
+      "name": "Thunder Grey Glazed Polished Porcelain Combo 600X1200mm",
+      "code": "Q01147",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01147.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01147.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18094.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "thunder-grey-glazed-polished-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toilet-basin-pedestal-caddy/",
+      "name": "Toilet + Basin and Pedestal + Caddy Combo",
+      "code": "Q01172",
+      "price": {
+        "current": 1199.9,
+        "regular": 1199.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01172.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01172.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01628.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04200.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/I00222-BATHROOM-CADDY-BLACK.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "52 kg"
+        }
+      ],
+      "id": "toilet-basin-pedestal-caddy",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toilet-combo-2/",
+      "name": "Toilet Combo",
+      "code": "Q01494",
+      "price": {
+        "current": 1499.9,
+        "regular": 1499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01494.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01494.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "53 kg"
+        }
+      ],
+      "id": "toilet-combo-2",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toilet-combo-3/",
+      "name": "Toilet Combo",
+      "code": "Q01534",
+      "price": {
+        "current": 899.9,
+        "regular": 1099.9,
+        "sale": 899.9,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01534.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01534.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "49.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "110 × 94 × 57 cm"
+        }
+      ],
+      "id": "toilet-combo-3",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/top-flush-toilet-basin-pedestal-cleaner-combo/",
+      "name": "Top Flush Toilet + Basin & Pedestal + Cleaner combo",
+      "code": "Q01438",
+      "price": {
+        "current": 1099.9,
+        "regular": 1099.9,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01628-2.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04200.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/L00193.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "75 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "126 × 95 × 55 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 20 × 15 cm"
+        }
+      ],
+      "id": "top-flush-toilet-basin-pedestal-cleaner-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toilet-combo/",
+      "name": "Top flush toilet + Basin & Pedestal combo",
+      "code": "Q01355",
+      "price": {
+        "current": 1299.9,
+        "regular": 1299.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01355-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01355-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01628.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04200.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b04133.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "52 kg"
+        }
+      ],
+      "id": "toilet-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/top-flush-toilet-basin-pedestal-shelf-combo/",
+      "name": "Top Flush Toilet Basin and Pedestal + Shelf Combo",
+      "code": "Q01174",
+      "price": {
+        "current": 1099.9,
+        "regular": 1099.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01174.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01174.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01628.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04200.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/I00213.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "62 kg"
+        }
+      ],
+      "id": "top-flush-toilet-basin-pedestal-shelf-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/toscana-grey-rustic-matt-porcelain-combo-600x1200mm/",
+      "name": "Toscana Grey Rustic Matt Porcelain Combo 600Ã1200mm",
+      "code": "Q01242",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01242.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01242.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18186.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "toscana-grey-rustic-matt-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/tuscany-blue-matt-glazed-porcelain-600x1200-combo/",
+      "name": "Tuscany Blue Matt Glazed Porcelain Combo 600X1200m",
+      "code": "Q01085",
+      "price": {
+        "current": 3099.9,
+        "regular": 3099.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01073-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01073-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17919.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "tuscany-blue-matt-glazed-porcelain-600x1200-combo",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/tuscany-silver-matt-combo-600x1200/",
+      "name": "Tuscany Silver Matt Combo 600×1200",
+      "code": "Q01295",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01295-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01295-scaled.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "tuscany-silver-matt-combo-600x1200",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/tuscany-silver-porcelain-combo-glossy-600x1200mm/",
+      "name": "Tuscany Silver Porcelain Combo Glossy 600Ã1200mm",
+      "code": "Q01410",
+      "price": {
+        "current": 3049.9,
+        "regular": 3049.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01295-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01295-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18250-TUSCANY-SILVER.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "tuscany-silver-porcelain-combo-glossy-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm/",
+      "name": "Ultimo Staturio Rustic Matt Porcelain Combo 600Ã1200mm",
+      "code": "Q01250",
+      "price": {
+        "current": 3249.9,
+        "regular": 3249.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01250.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01250.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18198.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "251 kg"
+        }
+      ],
+      "id": "ultimo-staturio-rustic-matt-porcelain-combo-600x1200mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/velora-floor-tile-combo-600x600mm/",
+      "name": "Velora Floor Tile Combo 600Ã600mm",
+      "code": "Q01216",
+      "price": {
+        "current": 2649.9,
+        "regular": 2649.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01216.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2025/12/Q01216.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18163-NEW.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "256 kg"
+        }
+      ],
+      "id": "velora-floor-tile-combo-600x600mm",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/wal-hung-black-elegance-combo/",
+      "name": "Wal Hung Black Elegance Combo",
+      "code": "Q01414",
+      "price": {
+        "current": 6999.9,
+        "regular": 6999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01414-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01414-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03969.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03971.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "33 kg"
+        }
+      ],
+      "id": "wal-hung-black-elegance-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/wall-hung-pool-black-combo/",
+      "name": "Wall Hung Pool Black Combo",
+      "code": "Q01415",
+      "price": {
+        "current": 7499.9,
+        "regular": 7499.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Toilet Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01415-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01415-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03969.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03971.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "33 kg"
+        }
+      ],
+      "id": "wall-hung-pool-black-combo",
+      "categories": [
+        "toilet-combos"
+      ]
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/zen-shower-combo/",
+      "name": "Zen Shower Combo",
+      "code": "Q01311",
+      "price": {
+        "current": 2999.9,
+        "regular": 2999.9,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01311.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01311.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04039.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04134.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03926-1.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/l00194.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "30.2 kg"
+        }
+      ],
+      "id": "zen-shower-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    }
+  ]
+}
