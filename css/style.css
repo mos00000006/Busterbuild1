@@ -57,7 +57,7 @@ body{
 }
 
 .top-bar a:hover{
-    color:#FFC107;
+    color:#f9c32e;
 }
 
 /* ==========================================
@@ -117,7 +117,7 @@ header{
 }
 
 .search input:focus{
-    border-color:#D71920;
+    border-color:#e1a100;
 }
 
 .search button{
@@ -139,7 +139,7 @@ header{
 }
 
 .search button:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -160,7 +160,7 @@ header{
 }
 
 .icons a:hover{
-    color:#D71920;
+    color:#e1a100;
 }
 
 /* ==========================================
@@ -168,7 +168,7 @@ header{
 ========================================== */
 
 nav{
-    background:#D71920;
+    background:#e1a100;
     width:100%;
     overflow:hidden;
 }
@@ -222,7 +222,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#FFC107;
+    color:#f9c32e;
 }
 
 /* Hide Get Quote */
@@ -248,7 +248,7 @@ nav .quote-btn{
 }
 
 .quote-btn{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 }
 
@@ -257,12 +257,12 @@ nav .quote-btn{
 }
 
 .shop-btn{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 }
 
 .shop-btn:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     transform:translateY(-3px);
 }
@@ -344,14 +344,14 @@ nav .quote-btn{
     padding:30px 20px;
     text-decoration:none;
     color:#222;
-    border-top:5px solid #D71920;
+    border-top:5px solid #e1a100;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .category-card:hover{
     transform:translateY(-10px);
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -365,12 +365,12 @@ nav .quote-btn{
 
 .category-card i{
     font-size:55px;
-    color:#D71920;
+    color:#e1a100;
     margin-bottom:20px;
 }
 
 .category-card:hover i{
-    color:#FFC107;
+    color:#f9c32e;
 }
 
 .category-card h3{
@@ -420,7 +420,7 @@ nav .quote-btn{
     position:absolute;
     top:15px;
     left:15px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     padding:6px 12px;
     border-radius:20px;
@@ -437,7 +437,7 @@ nav .quote-btn{
     border:none;
     border-radius:50%;
     background:#fff;
-    color:#D71920;
+    color:#e1a100;
     cursor:pointer;
     font-size:18px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
@@ -445,7 +445,7 @@ nav .quote-btn{
 }
 
 .wishlist-btn:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -458,7 +458,7 @@ nav .quote-btn{
 
 .price{
     margin:0 15px;
-    color:#D71920;
+    color:#e1a100;
     font-size:24px;
     font-weight:700;
 }
@@ -471,7 +471,7 @@ nav .quote-btn{
     align-items:center;
     width:calc(100% - 30px);
     height:52px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     text-decoration:none;
     border:none;
@@ -483,7 +483,7 @@ nav .quote-btn{
 }
 
 .buy-btn:hover{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 }
 
@@ -565,7 +565,7 @@ nav .quote-btn{
 
 .why-card i{
     font-size:50px;
-    color:#D71920;
+    color:#e1a100;
     margin-bottom:20px;
 }
 
@@ -586,7 +586,7 @@ nav .quote-btn{
 
 .special-offers{
     padding:90px 0;
-    background:linear-gradient(135deg,#D71920,#8b1117);
+    background:linear-gradient(135deg,#e1a100,#8b1117);
 }
 
 .offer-content{
@@ -604,7 +604,7 @@ nav .quote-btn{
 
 .offer-tag{
     display:inline-block;
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
     padding:8px 18px;
     border-radius:30px;
@@ -628,7 +628,7 @@ nav .quote-btn{
     align-items:center;
     justify-content:center;
     padding:16px 35px;
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
     text-decoration:none;
     border-radius:10px;
@@ -671,7 +671,7 @@ nav .quote-btn{
 }
 
 .footer-column h3{
-    color:#FFC107;
+    color:#f9c32e;
     font-size:24px;
     margin-bottom:20px;
 }
@@ -697,7 +697,7 @@ nav .quote-btn{
 }
 
 .footer-column ul li a:hover{
-    color:#FFC107;
+    color:#f9c32e;
 }
 
 .footer hr{
@@ -726,14 +726,14 @@ nav .quote-btn{
     justify-content:center;
     align-items:center;
     border-radius:50%;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     text-decoration:none;
     transition:.3s;
 }
 
 .social-icons a:hover{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 }
 
@@ -804,7 +804,7 @@ nav .quote-btn{
 .filters input:focus,
 .filters select:focus{
     outline:none;
-    border-color:#D71920;
+    border-color:#e1a100;
 }
 
 /* ==========================================
@@ -848,7 +848,7 @@ nav .quote-btn{
 }
 
 .product-price{
-    color:#D71920;
+    color:#e1a100;
     font-size:36px;
     font-weight:700;
     margin-bottom:20px;
@@ -906,7 +906,7 @@ nav .quote-btn{
 }
 
 .stars{
-    color:#FFC107;
+    color:#f9c32e;
     font-size:24px;
     margin-bottom:20px;
 }
@@ -918,7 +918,7 @@ nav .quote-btn{
 }
 
 .testimonial-card h4{
-    color:#D71920;
+    color:#e1a100;
     font-size:18px;
 }
 
@@ -951,7 +951,7 @@ nav .quote-btn{
 }
 
 .location-info i{
-    color:#D71920;
+    color:#e1a100;
     width:28px;
 }
 
@@ -960,7 +960,7 @@ nav .quote-btn{
     align-items:center;
     justify-content:center;
     padding:15px 30px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     text-decoration:none;
     border-radius:8px;
@@ -969,7 +969,7 @@ nav .quote-btn{
 }
 
 .direction-btn:hover{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 }
 
@@ -1044,7 +1044,7 @@ nav .quote-btn{
 }
 
 .contact-info i{
-    color:#D71920;
+    color:#e1a100;
     margin-right:10px;
     width:25px;
 }
@@ -1063,7 +1063,7 @@ nav .quote-btn{
 .contact-form input:focus,
 .contact-form textarea:focus{
     outline:none;
-    border-color:#D71920;
+    border-color:#e1a100;
     box-shadow:0 0 8px rgba(215,25,32,.15);
 }
 
@@ -1121,7 +1121,7 @@ nav .quote-btn{
 
 
 .specials-banner h1 i{
-    color:#FFC107;
+    color:#f9c32e;
     margin-right:10px;
 }
 
@@ -1144,7 +1144,7 @@ nav .quote-btn{
 
     padding:15px 32px;
 
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 
     border-radius:10px;
@@ -1159,7 +1159,7 @@ nav .quote-btn{
 
 
 .specials-btn:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -1243,7 +1243,7 @@ nav .quote-btn{
     justify-content:center;
     align-items:center;
     padding:16px 35px;
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
     text-decoration:none;
     border-radius:10px;
@@ -1252,7 +1252,7 @@ nav .quote-btn{
 }
 
 .specials-btn:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -1291,7 +1291,7 @@ nav .quote-btn{
     position:absolute;
     top:15px;
     left:15px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     padding:8px 15px;
     border-radius:30px;
@@ -1318,7 +1318,7 @@ nav .quote-btn{
 }
 
 .special-price{
-    color:#D71920;
+    color:#e1a100;
     font-size:28px;
     font-weight:700;
     margin:10px 0 20px;
@@ -1331,7 +1331,7 @@ nav .quote-btn{
     align-items:center;
     width:100%;
     height:52px;
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
     text-decoration:none;
     border:none;
@@ -1343,7 +1343,7 @@ nav .quote-btn{
 }
 
 .cart-btn:hover{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 /* ===========================
@@ -1352,7 +1352,7 @@ nav .quote-btn{
 
 /* Selection */
 ::selection{
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 }
 
@@ -1366,7 +1366,7 @@ nav .quote-btn{
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#D71920;
+    background:#e1a100;
     border-radius:20px;
 }
 
@@ -1469,7 +1469,7 @@ body{
 @media screen and (max-width:768px){
 
     nav{
-        background:#D71920;
+        background:#e1a100;
         overflow-x:auto;
         white-space:nowrap;
     }
@@ -1657,7 +1657,7 @@ body{
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus{
-    border-color:#D71920;
+    border-color:#e1a100;
 }
 
 .checkout-button-wrap{
@@ -1678,7 +1678,7 @@ body{
 .total-row{
     font-size:28px;
     font-weight:700;
-    color:#D71920;
+    color:#e1a100;
 }
 
 .secure-box{
@@ -1692,7 +1692,7 @@ body{
 }
 
 .secure-box i{
-    color:#D71920;
+    color:#e1a100;
     font-size:30px;
 }
 
@@ -1770,7 +1770,7 @@ body{
     height:38px;
     border:none;
     border-radius:8px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     font-size:20px;
     font-weight:700;
@@ -1794,7 +1794,7 @@ body{
 }
 
 .remove-btn:hover{
-    background:#D71920;
+    background:#e1a100;
 }
 
 #cart-total{
@@ -1866,7 +1866,7 @@ body{
     height:42px;
     border:none;
     border-radius:10px;
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
     font-size:22px;
     cursor:pointer;
@@ -1885,7 +1885,7 @@ body{
 }
 
 .remove-btn:hover{
-    background:#D71920 !important;
+    background:#e1a100 !important;
 }
 /* ===========================
    PAYMENT PAGE
@@ -2118,7 +2118,7 @@ body{
     display:block;
     text-align:center;
     font-size:55px;
-    color:#D71920;
+    color:#e1a100;
     margin-bottom:15px;
 }
 
@@ -2168,7 +2168,7 @@ body{
 }
 
 .account-box input:focus{
-    border-color:#D71920;
+    border-color:#e1a100;
     box-shadow:0 0 0 3px rgba(215,25,32,.08);
 }
 
@@ -2183,7 +2183,7 @@ body{
     border:none;
     border-radius:10px;
 
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 
     font-family:'Poppins',sans-serif;
@@ -2197,7 +2197,7 @@ body{
 
 .account-box button:hover,
 .account-box input[type="submit"]:hover{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
     transform:translateY(-2px);
 }
@@ -2211,7 +2211,7 @@ body{
 
     margin-top:22px;
 
-    color:#D71920;
+    color:#e1a100;
 
     font-size:17px;
     font-weight:600;
@@ -2362,7 +2362,7 @@ body{
 
     border-radius:50%;
 
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 
     font-size:35px;
@@ -2476,7 +2476,7 @@ body{
 }
 
 .input-wrapper input:focus{
-    border-color:#D71920;
+    border-color:#e1a100;
 
     box-shadow:0 0 0 3px rgba(215,25,32,.08);
 }
@@ -2518,7 +2518,7 @@ body{
 
 .password-toggle:hover{
     background:#f2f2f2;
-    color:#D71920;
+    color:#e1a100;
 }
 
 
@@ -2535,7 +2535,7 @@ body{
 }
 
 .account-options a{
-    color:#D71920;
+    color:#e1a100;
 
     font-size:14px;
     font-weight:600;
@@ -2567,7 +2567,7 @@ body{
     border:none;
     border-radius:10px;
 
-    background:#D71920;
+    background:#e1a100;
     color:#fff;
 
     font-family:'Poppins',sans-serif;
@@ -2581,7 +2581,7 @@ body{
 }
 
 .account-login-btn:hover{
-    background:#FFC107;
+    background:#f9c32e;
     color:#111;
 
     transform:translateY(-2px);
@@ -2646,7 +2646,7 @@ body{
 
     margin-left:5px;
 
-    color:#D71920;
+    color:#e1a100;
 
     font-size:15px;
 
@@ -2681,7 +2681,7 @@ body{
 
     border:1px solid #e5e5e5;
 
-    border-left:4px solid #D71920;
+    border-left:4px solid #e1a100;
 
     border-radius:10px;
 }
@@ -2689,7 +2689,7 @@ body{
 .price-login-info > i{
     flex:none;
 
-    color:#D71920;
+    color:#e1a100;
 
     font-size:25px;
 }
@@ -2851,7 +2851,7 @@ body{
 }
 
 .login-price i{
-    color:#D71920;
+    color:#e1a100;
     font-size:16px;
 }
 
@@ -2912,7 +2912,7 @@ body{
     background:#f8f8f8;
 
     border:1px solid #ddd;
-    border-left:3px solid #D71920;
+    border-left:3px solid #e1a100;
 
     border-radius:8px;
 
@@ -2922,7 +2922,7 @@ body{
 }
 
 .special-card .price-login-info > i{
-    color:#D71920;
+    color:#e1a100;
 
     font-size:15px;
 
@@ -3222,8 +3222,8 @@ body{
 }
 
 .tiles-category-btn.active {
-    background: #d71920;
-    border-color: #d71920;
+    background: #e1a100;
+    border-color: #e1a100;
     color: #fff;
     box-shadow: 0 5px 12px rgba(0,0,0,0.18);
 }

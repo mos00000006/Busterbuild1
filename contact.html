@@ -7,16 +7,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact Us | BusterBuild Hardware</title>
+<meta name="description" content="Contact BusterBuild Hardware in Protea Glen for product enquiries, collection and delivery quotes.">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pro.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
-<body>
+<body><header><div class="container header-container"><a class="logo" href="index.html"><img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Hardware"></a><div class="icons"><a href="products.html">Products</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></div></div></header>
 
 <!-- CONTACT HERO -->
 
@@ -48,7 +51,7 @@
 
                 <p><i class="fa-solid fa-location-dot"></i> CNR R558 & K1503 Road, Isixaxabesha Street Ext 6, Protea Glen, Soweto</p>
 
-                <p><i class="fa-solid fa-phone"></i> +27 10 101 0424</p>
+                <p><i class="fa-solid fa-phone"></i> +27 10 101 0464</p>
 
                 <p><i class="fa-solid fa-envelope"></i> info@busterbuild.co.za</p>
 
@@ -72,7 +75,7 @@
 
                     <textarea placeholder="Your Message" rows="6" required></textarea>
 
-                    <button type="submit" class="buy-btn">Send Message</button>
+                    <button type="submit" class="buy-btn">Open in WhatsApp</button><p id="contact-status" role="status"></p><a id="contact-fallback" target="_blank" rel="noopener noreferrer" hidden>WhatsApp did not open? Tap here</a>
 
                 </form>
 
@@ -85,24 +88,16 @@
 </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
-    if (!form) return;
-    form.addEventListener("submit", event => {
-        event.preventDefault();
-        if (!form.checkValidity()) {
-            form.reportValidity();
-            return;
-        }
-        const button = form.querySelector('button[type="submit"]');
-        if (button) {
-            button.textContent = "Message Sent ✓";
-            button.disabled = true;
-        }
-        form.reset();
-        alert("Thank you. Your message has been received.");
-    });
-});
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (!this.reportValidity()) return;
+    const fields = this.querySelectorAll('input,textarea');
+    const message = ['Hello BusterBuild, I have an enquiry:', '', 'Name: '+fields[0].value.trim(), 'Email: '+fields[1].value.trim(), 'Phone: '+fields[2].value.trim(), '', fields[3].value.trim()].join('\n');
+    const url = 'https://wa.me/27632513656?text='+encodeURIComponent(message);
+    const fallback=document.getElementById('contact-fallback'); fallback.href=url; fallback.hidden=false;
+    document.getElementById('contact-status').textContent='WhatsApp is opening. Press Send there to deliver your message.';
+    window.open(url,'_blank','noopener,noreferrer');
+  });
 </script>
 </body>
 

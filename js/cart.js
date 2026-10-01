@@ -15,11 +15,12 @@ function readStorageArray(key) {
 let cart = readStorageArray("cart");
 
 // Fix old cart items
-cart = cart.map(item => ({
-    name: item.name,
-    price: Number(item.price),
-    quantity: Number(item.quantity) || 1
-}));
+cart = cart.filter(item => item && typeof item.name === "string" && Number.isFinite(Number(item.price)) && Number(item.price) >= 0)
+    .map(item => ({
+        name: item.name.slice(0, 180),
+        price: Number(item.price),
+        quantity: Math.min(999, Math.max(1, Math.trunc(Number(item.quantity)) || 1))
+    }));
 
 localStorage.setItem("cart", JSON.stringify(cart));
 
@@ -30,12 +31,13 @@ localStorage.setItem("cart", JSON.stringify(cart));
 function addToCart(name, price){
 
     price = Number(price);
+    if (typeof name !== "string" || !name.trim() || !Number.isFinite(price) || price < 0) return;
 
     let existing = cart.find(item => item.name === name);
 
     if(existing){
 
-        existing.quantity++;
+        existing.quantity = Math.min(999, existing.quantity + 1);
 
     }else{
 
@@ -51,8 +53,22 @@ function addToCart(name, price){
 
     updateCartCount();
 
-    alert(name + " added to cart");
+    showStoreNotice(name + " added to your enquiry cart");
 
+}
+
+function showStoreNotice(message) {
+    let notice = document.getElementById("store-notice");
+    if (!notice) {
+        notice = document.createElement("div");
+        notice.id = "store-notice";
+        notice.setAttribute("role", "status");
+        document.body.appendChild(notice);
+    }
+    notice.textContent = message;
+    notice.classList.add("visible");
+    clearTimeout(showStoreNotice.timer);
+    showStoreNotice.timer = setTimeout(() => notice.classList.remove("visible"), 3000);
 }
 
 // ===========================
@@ -105,7 +121,9 @@ function displayCart(){
         </div>
         `;
 
-        cartTotal.innerHTML = "Total: R0.00";
+        cartTotal.textContent = "Estimated subtotal: R0.00";
+        const quoteLink = document.getElementById("request-quote-link");
+        if (quoteLink) quoteLink.hidden = true;
 
         return;
 
@@ -153,7 +171,9 @@ function displayCart(){
 
     });
 
-    cartTotal.innerHTML = "Total: R" + total.toFixed(2);
+    cartTotal.textContent = "Estimated subtotal: R" + total.toFixed(2);
+    const quoteLink = document.getElementById("request-quote-link");
+    if (quoteLink) quoteLink.hidden = false;
 
 }
 // ===========================
@@ -162,7 +182,8 @@ function displayCart(){
 
 function increaseQuantity(index){
 
-    cart[index].quantity++;
+    if (!cart[index]) return;
+    cart[index].quantity = Math.min(999, cart[index].quantity + 1);
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
@@ -177,6 +198,7 @@ function increaseQuantity(index){
 // ===========================
 
 function decreaseQuantity(index){
+    if (!cart[index]) return;
 
     if(cart[index].quantity > 1){
 
@@ -201,6 +223,7 @@ function decreaseQuantity(index){
 // ===========================
 
 function removeItem(index){
+    if (!cart[index]) return;
 
     cart.splice(index,1);
 
@@ -219,6 +242,7 @@ function removeItem(index){
 let wishlist = readStorageArray("wishlist");
 
 function addToWishlist(name){
+    if (typeof name !== "string" || !name.trim()) return;
 
     if(!wishlist.includes(name)){
 
@@ -226,11 +250,11 @@ function addToWishlist(name){
 
         localStorage.setItem("wishlist", JSON.stringify(wishlist));
 
-        alert(name + " added to wishlist");
+        showStoreNotice(name + " saved to your wishlist");
 
     }else{
 
-        alert(name + " is already in your wishlist");
+        showStoreNotice(name + " is already on your wishlist");
 
     }
 
@@ -265,7 +289,9 @@ function displayWishlist(){
 
             <i class="fa-solid fa-heart"></i>
 
-            <h3>${product}</h3>
+            <h3>${escapeHtml(product)}</h3>
+
+            <a class="fallback-link" href="search.html?q=${encodeURIComponent(product)}">Find this product</a>
 
             <button class="remove-wishlist-btn"
                 onclick="removeFromWishlist(${index})">
@@ -320,6 +346,9 @@ function displayCheckout(){
 
     if(!checkoutItems) return;
 
+    const enquiryButton = document.querySelector("#enquiry-form button[type=submit]");
+    if (enquiryButton) enquiryButton.disabled = cart.length === 0;
+
     checkoutItems.innerHTML = "";
 
     let subtotal = 0;
@@ -352,9 +381,7 @@ function displayCheckout(){
 
     });
 
-    let delivery = subtotal >= 1000 ? 0 : (subtotal > 0 ? 100 : 0);
-
-    let grandTotal = subtotal + delivery;
+    let grandTotal = subtotal;
 
     const subtotalEl = document.getElementById("checkout-subtotal");
     const deliveryEl = document.getElementById("checkout-delivery");
@@ -362,9 +389,7 @@ function displayCheckout(){
 
     if(subtotalEl) subtotalEl.innerHTML = "R" + subtotal.toFixed(2);
 
-    if(deliveryEl){
-        deliveryEl.innerHTML = delivery === 0 ? "FREE" : "R" + delivery.toFixed(2);
-    }
+    if(deliveryEl) deliveryEl.textContent = "Confirmed by store";
 
     if(totalEl){
         totalEl.innerHTML = "R" + grandTotal.toFixed(2);
@@ -386,11 +411,6 @@ function loadPaymentTotal(){
 
     });
 
-    if(total > 0 && total < 1000){
-
-        total += 100;
-
-    }
 
     let paymentTotal = document.getElementById("payment-total");
 
@@ -406,54 +426,39 @@ function loadPaymentTotal(){
 // ===========================
 
 function completeOrder() {
-    const form = document.querySelector(".payment-page form");
-    if (form && !form.checkValidity()) {
-        form.reportValidity();
-        return;
+    const form = document.getElementById("enquiry-form");
+    if (form && form.elements.address) form.elements.address.setCustomValidity("");
+    if (!form || !form.reportValidity()) return false;
+    if (!cart.length) { window.location.href = "cart.html"; return false; }
+    const data = new FormData(form);
+    const method = String(data.get("method") || "");
+    const address = String(data.get("address") || "").trim();
+    if (method === "Delivery" && !address) {
+        const field = form.elements.address;
+        field.setCustomValidity("Please enter your delivery address.");
+        field.reportValidity();
+        return false;
     }
-
-    if (!cart.length) {
-        alert("Your cart is empty.");
-        window.location.href = "cart.html";
-        return;
-    }
-
-    const customerName = localStorage.getItem("customerName") || "";
-    const customerPhone = localStorage.getItem("customerPhone") || "";
-    const customerAddress = localStorage.getItem("customerAddress") || "";
-    const deliveryMethod = localStorage.getItem("deliveryMethod") || "";
-
-    let subtotal = 0;
-    let orderMessage = "New BusterBuild Hardware Order%0A%0A";
-    orderMessage += "Customer: " + encodeURIComponent(customerName) + "%0A";
-    orderMessage += "Phone: " + encodeURIComponent(customerPhone) + "%0A";
-    orderMessage += "Delivery: " + encodeURIComponent(deliveryMethod) + "%0A";
-
-    if (deliveryMethod === "Home Delivery") {
-        orderMessage += "Address: " + encodeURIComponent(customerAddress) + "%0A";
-    }
-
-    orderMessage += "%0AProducts:%0A";
-
-    cart.forEach(item => {
-        const lineTotal = Number(item.price) * Number(item.quantity);
-        subtotal += lineTotal;
-        orderMessage += encodeURIComponent(item.name) + " x" + item.quantity +
-            " - R" + lineTotal.toFixed(2) + "%0A";
-    });
-
-    const delivery = subtotal >= 1000 ? 0 : 100;
-    const grandTotal = subtotal + delivery;
-
-    orderMessage += "%0ADelivery: " + (delivery === 0 ? "FREE" : "R" + delivery.toFixed(2));
-    orderMessage += "%0ATotal: R" + grandTotal.toFixed(2);
-
-    localStorage.setItem("lastOrder", JSON.stringify(cart));
-    localStorage.setItem("lastOrderTotal", grandTotal.toFixed(2));
-    localStorage.setItem("lastOrderWhatsapp", orderMessage);
-    localStorage.removeItem("cart");
-
-    window.location.href = "success.html";
+    const lines = [
+        "Hello BusterBuild, please confirm this product enquiry:", "",
+        "Name: " + data.get("name"), "Phone: " + data.get("phone"),
+        "Email: " + (data.get("email") || "Not supplied"),
+        "Method: " + method
+    ];
+    if (address) lines.push("Address: " + address);
+    lines.push("", "Products:");
+    cart.forEach(item => lines.push(item.name + " × " + item.quantity + " — R" + (item.price * item.quantity).toFixed(2)));
+    const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    lines.push("", "Indicative subtotal: R" + subtotal.toFixed(2));
+    lines.push("Please confirm prices, availability, delivery charge and final amount before payment.");
+    if (data.get("notes")) lines.push("Notes: " + String(data.get("notes")).trim());
+    const url = "https://wa.me/27632513656?text=" + encodeURIComponent(lines.join("\n"));
+    const link = document.getElementById("whatsapp-enquiry-link");
+    link.href = url;
+    link.hidden = false;
+    document.getElementById("enquiry-status").textContent = "WhatsApp is opening. Press Send there to submit your enquiry. Your cart remains saved here.";
+    window.open(url, "_blank", "noopener,noreferrer");
+    return false;
 }
 
 // ===========================
@@ -492,56 +497,14 @@ function searchProducts(){
 // ===========================
 
 // Check if customer is logged in
-function isCustomerLoggedIn(){
-
-    return localStorage.getItem("busterbuildLoggedIn") === "true";
-
-}
+function isCustomerLoggedIn(){ return false; }
 
 
 // ===========================
 // HIDE PRICES FOR GUESTS
 // ===========================
 
-function protectPrices(){
-
-    const priceElements = document.querySelectorAll(
-        ".price, .special-price, .old-price, .product-price"
-    );
-
-    priceElements.forEach(function(priceElement){
-
-        // Save original price only once
-        if(!priceElement.dataset.originalPrice){
-
-            priceElement.dataset.originalPrice = priceElement.innerHTML;
-
-        }
-
-
-        // If customer is NOT logged in
-        if(!isCustomerLoggedIn()){
-
-            priceElement.innerHTML = `
-                <span class="login-price">
-                    <i class="fa-solid fa-eye-slash"></i>
-                    <span>Login to view price</span>
-                </span>
-            `;
-
-        }
-
-        // If customer IS logged in
-        else{
-
-            priceElement.innerHTML =
-                priceElement.dataset.originalPrice;
-
-        }
-
-    });
-
-}
+function protectPrices() { /* Display catalogue prices. Store confirms current pricing. */ }
 
 
 // ===========================
