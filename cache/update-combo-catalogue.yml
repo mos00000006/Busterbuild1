@@ -1,0 +1,72 @@
+name: Update Pulse combo catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 2 * * *'
+  push:
+    paths:
+      - 'scripts/update_combo_catalogue.py'
+      - '.github/workflows/update-combo-catalogue.yml'
+      - 'combo-catalogue.html'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-combo-catalogue
+  cancel-in-progress: false
+
+jobs:
+  update-combos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify combo updater
+        shell: bash
+        run: |
+          grep -q '2026-10-01-v1-combo-html-checkpoint' scripts/update_combo_catalogue.py
+          echo "Confirmed BusterBuild combo catalogue updater"
+
+      - name: Install catalogue tools
+        run: pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Build static combo catalogue
+        run: python -u scripts/update_combo_catalogue.py
+
+      - name: Validate generated combo catalogue
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/pulse-combo-catalogue.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          products = d.get('products', [])
+          print('Updater version:', d.get('updater_version'))
+          print('Combo products:', len(products))
+          print('Failed categories:', d.get('failed_categories', []))
+          if d.get('updater_version') != '2026-10-01-v1-combo-html-checkpoint':
+              raise SystemExit('Wrong combo updater version generated the catalogue')
+          if len(products) < 10:
+              raise SystemExit('Generated combo catalogue is unexpectedly small')
+          PY
+
+      - name: Save updated combo catalogue and cache
+        run: |
+          git config user.name "BusterBuild Catalogue Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pulse-combo-catalogue.json data/pulse-combo-product-cache.json
+          if git diff --cached --quiet; then
+            echo "No combo catalogue changes."
+          else
+            git commit -m "Update static combo catalogue"
+            git push
+          fi
