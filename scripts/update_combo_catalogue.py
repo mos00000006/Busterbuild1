@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 from requests.exceptions import RequestException
 
 BUSTERBUILD_COMBO_SYNC_VERSION = "2026-10-01-v1-combo-html-checkpoint"
-COMBO_DETAIL_PARSER_VERSION = "2026-10-01-combo-includes-v2"
+COMBO_DETAIL_PARSER_VERSION = "2026-10-01-combo-includes-v3"
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "pulse-combo-catalogue.json"
 CACHE = ROOT / "data" / "pulse-combo-product-cache.json"
@@ -159,48 +159,112 @@ def parse_price(text: str) -> dict:
 
 
 def extract_combo_includes(soup: BeautifulSoup) -> list[str]:
-    """Extract the actual WooCommerce Description-tab combo contents.
+    """Extract the factual "This Combo includes" list from a Pulse product page.
 
-    Pulse product pages place the factual bundle list under #tab-description.
-    We keep each included item as its own line so the BusterBuild product view
-    can render a clean checklist instead of a synthetic summary.
+    Pulse currently renders this list in the WooCommerce description area, but
+    the exact wrapper can vary. We therefore try the description panel first
+    and then fall back to the visible page text between the heading
+    "This Combo includes" and the next product-data/reviews section.
     """
+
+    heading_variants = {
+        "this combo includes",
+        "this combo include",
+        "this combo includes the following",
+        "combo includes",
+    }
+
+    stop_prefixes = (
+        "weight",
+        "additional information",
+        "reviews",
+        "be the first to review",
+        "related products",
+        "you may also like",
+    )
+
+    def normalise_lines(lines: list[str]) -> list[str]:
+        out: list[str] = []
+        seen: set[str] = set()
+        started = False
+        for raw in lines:
+            line = clean_text(raw).strip(" \t\r\n-–—•")
+            if not line:
+                continue
+            low = line.lower().rstrip(":")
+            if low in heading_variants:
+                started = True
+                continue
+            if not started:
+                continue
+            if any(low == x or low.startswith(x + " ") or low.startswith(x + ":") for x in stop_prefixes):
+                break
+            # Ignore tab labels or boilerplate that can appear inside theme wrappers.
+            if low in {"description", "additional information", "reviews (0)"}:
+                continue
+            if line not in seen:
+                seen.add(line)
+                out.append(line)
+        return out
+
+    # 1) Preferred: the WooCommerce description panel.
     panel = (
         soup.select_one("#tab-description")
         or soup.select_one(".woocommerce-Tabs-panel--description")
         or soup.select_one(".woocommerce-tabs .panel.entry-content")
+        or soup.select_one(".woocommerce-tabs")
     )
-    if not panel:
-        return []
+    if panel:
+        work = BeautifulSoup(str(panel), "html.parser")
+        for bad in work.select("script, style, noscript"):
+            bad.decompose()
+        for br in work.find_all("br"):
+            br.replace_with("\n")
+        for tag in work.find_all(["p", "li", "div", "h2", "h3", "h4", "strong"]):
+            tag.append("\n")
+        items = normalise_lines(work.get_text("\n", strip=True).splitlines())
+        if items:
+            return items
 
-    work = BeautifulSoup(str(panel), "html.parser")
-    for bad in work.select("script, style, noscript"):
+    # 2) Robust fallback: scan all visible page text. This handles Pulse theme
+    # variations where the description contents are not inside #tab-description.
+    work = BeautifulSoup(str(soup), "html.parser")
+    for bad in work.select("script, style, noscript, svg"):
         bad.decompose()
     for br in work.find_all("br"):
         br.replace_with("\n")
-    for tag in work.find_all(["p", "li", "div", "h2", "h3", "h4", "strong"]):
-        tag.append("\n")
+    page_lines = work.get_text("\n", strip=True).splitlines()
+    items = normalise_lines(page_lines)
+    if items:
+        return items
 
-    lines = []
-    seen = set()
-    for raw in work.get_text("\n", strip=True).splitlines():
-        line = clean_text(raw).strip(" \t\r\n-–—•")
-        if not line:
-            continue
-        low = line.lower().rstrip(":")
-        if low in {
-            "description", "this combo includes", "this combo include",
-            "this combo includes the following", "combo includes",
-            "additional information", "reviews", "reviews (0)"
-        }:
-            continue
-        # Defensive stop markers in case a theme nests later tabs in the same panel.
-        if low.startswith("reviews (") or low == "reviews":
+    # 3) Last fallback: locate a node containing the heading and walk forward
+    # through sibling blocks. This catches heavily nested page-builder markup.
+    marker = None
+    for txt in soup.find_all(string=True):
+        if clean_text(str(txt)).lower().rstrip(":") in heading_variants:
+            marker = txt
             break
-        if line not in seen:
-            seen.add(line)
-            lines.append(line)
-    return lines
+    if marker is not None:
+        node = marker.parent
+        lines: list[str] = [clean_text(str(marker))]
+        # Walk up to a practical content block, then collect following elements.
+        for _ in range(4):
+            if node and node.parent and node.parent.name not in {"body", "html"}:
+                node = node.parent
+        sib = node
+        steps = 0
+        while sib is not None and steps < 30:
+            text = clean_text(sib.get_text("\n", strip=True) if hasattr(sib, "get_text") else str(sib))
+            if text:
+                lines.extend(text.splitlines())
+            sib = getattr(sib, "find_next_sibling", lambda: None)()
+            steps += 1
+        items = normalise_lines(lines)
+        if items:
+            return items
+
+    return []
 
 
 def combo_description(name: str, attrs: list[dict], category: str) -> str:
@@ -375,12 +439,17 @@ def main() -> None:
                 p
                 and p.get("detail_parser_version") == COMBO_DETAIL_PARSER_VERSION
                 and isinstance(p.get("included_items"), list)
+                and len(p.get("included_items") or []) > 0
             )
             if not cache_is_current:
                 try:
                     p = parse_product(url, key)
                     cache[url] = p
                     details_fetched += 1
+                    if p.get("included_items"):
+                        print(f"    includes captured: {len(p['included_items'])} items")
+                    else:
+                        print(f"WARN no combo-includes list found for {url}; it will be retried on the next sync", file=sys.stderr)
                     time.sleep(random.uniform(0.75, 1.35))
                     if details_fetched % 30 == 0:
                         pause = random.uniform(7.0, 13.0)
