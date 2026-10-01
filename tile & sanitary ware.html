@@ -122,7 +122,7 @@ Get Quote
         <span class="tiles-kicker">Explore the collection</span>
         <h2>TILES BY TILES</h2>
         <p>Beautiful surfaces for every room, every style, and every project.</p>
-        <button type="button" class="tiles-hero-cta" onclick="browseTileCollection('our current tile range')">Shop Tiles <i class="fa-solid fa-arrow-right"></i></button>
+        <button type="button" class="tiles-hero-cta" onclick="openTileCatalogue('all','All Tiles')">Shop Tiles <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
 
@@ -135,13 +135,13 @@ Get Quote
         </div>
       </div>
       <div class="tiles-type-grid">
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Ceramic Tiles')"><span class="tile-type-swatch swatch-ceramic"></span><span>Ceramic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Porcelain Tiles')"><span class="tile-type-swatch swatch-porcelain"></span><span>Porcelain Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Mosaic Tiles')"><span class="tile-type-swatch swatch-mosaic"></span><span>Mosaic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Natural Cladding')"><span class="tile-type-swatch swatch-cladding"></span><span>Natural Cladding</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Hardbody Tiles')"><span class="tile-type-swatch swatch-hardbody"></span><span>Hardbody Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Decor Tiles')"><span class="tile-type-swatch swatch-decor"></span><span>Decor Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="tile-type-card" type="button" onclick="browseTileCollection('Laminate Flooring')"><span class="tile-type-swatch swatch-laminate"></span><span>Laminate Flooring</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('ceramic-tiles','Ceramic Tiles')"><span class="tile-type-swatch swatch-ceramic"></span><span>Ceramic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('porcelain-tiles','Porcelain Tiles')"><span class="tile-type-swatch swatch-porcelain"></span><span>Porcelain Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('mosaics','Mosaic Tiles')"><span class="tile-type-swatch swatch-mosaic"></span><span>Mosaic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('natural-stone-cladding','Natural Cladding')"><span class="tile-type-swatch swatch-cladding"></span><span>Natural Cladding</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('hardbody-tiles','Hardbody Tiles')"><span class="tile-type-swatch swatch-hardbody"></span><span>Hardbody Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('decor-tiles','Decor Tiles')"><span class="tile-type-swatch swatch-decor"></span><span>Decor Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="openTileCatalogue('laminate-flooring','Laminate Flooring')"><span class="tile-type-swatch swatch-laminate"></span><span>Laminate Flooring</span><i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </section>
 
@@ -154,22 +154,22 @@ Get Quote
         </div>
       </div>
       <div class="tiles-application-grid">
-        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Floor Tiles')">
+        <button class="tile-application-card" type="button" onclick="openTileCatalogue('all-floor-tiles','All Floor Tiles')">
           <img src="pictures/tiles &amp; sanitary ware/installed-display/product-1-installed.jpg" alt="Floor tiles in a modern living room" loading="lazy"/>
           <span class="tile-application-gradient"></span>
           <span class="tile-application-copy"><strong>All Floor Tiles</strong><small>Beautiful foundations for every room.</small><i class="fa-solid fa-arrow-right"></i></span>
         </button>
-        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Wall Tiles')">
+        <button class="tile-application-card" type="button" onclick="openTileCatalogue('all-wall-tiles','All Wall Tiles')">
           <img src="pictures/tiles &amp; sanitary ware/installed-display/product-3-installed.jpg" alt="Wall tiles in a modern bathroom" loading="lazy"/>
           <span class="tile-application-gradient"></span>
           <span class="tile-application-copy"><strong>All Wall Tiles</strong><small>Transform your walls with striking finishes.</small><i class="fa-solid fa-arrow-right"></i></span>
         </button>
-        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Indoor Tiles')">
+        <button class="tile-application-card" type="button" onclick="openTileCatalogue('all-indoor-tiles','All Indoor Tiles')">
           <img src="pictures/tiles &amp; sanitary ware/installed-display/product-119-installed.jpg" alt="Indoor tiles in a luxury living space" loading="lazy"/>
           <span class="tile-application-gradient"></span>
           <span class="tile-application-copy"><strong>All Indoor Tiles</strong><small>Designed to elevate your interior spaces.</small><i class="fa-solid fa-arrow-right"></i></span>
         </button>
-        <button class="tile-application-card tile-application-outdoor" type="button" onclick="browseTileCollection('All Outdoor Tiles')">
+        <button class="tile-application-card tile-application-outdoor" type="button" onclick="openTileCatalogue('all-outdoor-tiles','All Outdoor Tiles')">
           <div class="tile-outdoor-visual" aria-hidden="true"></div>
           <span class="tile-application-gradient"></span>
           <span class="tile-application-copy"><strong>All Outdoor Tiles</strong><small>Enhance outdoor spaces with lasting style.</small><i class="fa-solid fa-arrow-right"></i></span>
@@ -186,12 +186,12 @@ Get Quote
         </div>
       </div>
       <div class="tiles-style-grid">
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Subway Tiles')"><span class="tile-style-visual style-subway"></span><span class="tile-style-label">Subway Tiles</span></button>
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Large Format Tiles')"><span class="tile-style-visual style-large-format"></span><span class="tile-style-label">Large Format Tiles</span></button>
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Cladding Look Tiles')"><span class="tile-style-visual style-cladding-look"></span><span class="tile-style-label">Cladding Look Tiles</span></button>
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Woodlook Tiles')"><span class="tile-style-visual style-woodlook"></span><span class="tile-style-label">Woodlook Tiles</span></button>
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Marble Look Tiles')"><span class="tile-style-visual style-marble-look"></span><span class="tile-style-label">Marble Look Tiles</span></button>
-        <button class="tile-style-card" type="button" onclick="browseTileCollection('Slip Resistant Tiles')"><span class="tile-style-visual style-slip-resistant"></span><span class="tile-style-label">Slip Resistant Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('subway-tiles','Subway Tiles')"><span class="tile-style-visual style-subway"></span><span class="tile-style-label">Subway Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('large-format-tiles','Large Format Tiles')"><span class="tile-style-visual style-large-format"></span><span class="tile-style-label">Large Format Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('cladding-look-tiles','Cladding Look Tiles')"><span class="tile-style-visual style-cladding-look"></span><span class="tile-style-label">Cladding Look Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('woodlook-tiles','Woodlook Tiles')"><span class="tile-style-visual style-woodlook"></span><span class="tile-style-label">Woodlook Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('marble-look-tiles','Marble Look Tiles')"><span class="tile-style-visual style-marble-look"></span><span class="tile-style-label">Marble Look Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="openTileCatalogue('slip-resistant-tiles','Slip Resistant Tiles')"><span class="tile-style-visual style-slip-resistant"></span><span class="tile-style-label">Slip Resistant Tiles</span></button>
       </div>
     </section>
 
@@ -204,12 +204,12 @@ Get Quote
         </div>
       </div>
       <div class="tiles-essentials-grid">
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Adhesives')"><span class="tile-essential-icon"><i class="fa-solid fa-bag-shopping"></i></span><span><strong>Tile Adhesives</strong><small>Strong, reliable fixing solutions.</small></span></button>
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Edges &amp; Trims')"><span class="tile-essential-icon"><i class="fa-solid fa-ruler-combined"></i></span><span><strong>Tile Edges &amp; Trims</strong><small>Clean edges with a premium finish.</small></span></button>
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Bonds &amp; Key Coats')"><span class="tile-essential-icon"><i class="fa-solid fa-paint-roller"></i></span><span><strong>Tile Bonds &amp; Key Coats</strong><small>Prepare surfaces for lasting adhesion.</small></span></button>
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Grout')"><span class="tile-essential-icon"><i class="fa-solid fa-fill-drip"></i></span><span><strong>Tile Grout</strong><small>Complete every joint neatly.</small></span></button>
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Cleaners')"><span class="tile-essential-icon"><i class="fa-solid fa-droplet"></i></span><span><strong>Tile Cleaners</strong><small>Keep tiled surfaces looking their best.</small></span></button>
-        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Spacers &amp; Tools')"><span class="tile-essential-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><span><strong>Tile Spacers &amp; Tools</strong><small>Precision tools for a professional finish.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-adhesives','Tile Adhesives')"><span class="tile-essential-icon"><i class="fa-solid fa-bag-shopping"></i></span><span><strong>Tile Adhesives</strong><small>Strong, reliable fixing solutions.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-edges-trims','Tile Edges & Trims')"><span class="tile-essential-icon"><i class="fa-solid fa-ruler-combined"></i></span><span><strong>Tile Edges &amp; Trims</strong><small>Clean edges with a premium finish.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-bonds-key-coats','Tile Bonds & Key Coats')"><span class="tile-essential-icon"><i class="fa-solid fa-paint-roller"></i></span><span><strong>Tile Bonds &amp; Key Coats</strong><small>Prepare surfaces for lasting adhesion.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-grout','Tile Grout')"><span class="tile-essential-icon"><i class="fa-solid fa-fill-drip"></i></span><span><strong>Tile Grout</strong><small>Complete every joint neatly.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-cleaners','Tile Cleaners')"><span class="tile-essential-icon"><i class="fa-solid fa-droplet"></i></span><span><strong>Tile Cleaners</strong><small>Keep tiled surfaces looking their best.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="openTileCatalogue('tile-spacers-tools','Tile Spacers & Tools')"><span class="tile-essential-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><span><strong>Tile Spacers &amp; Tools</strong><small>Precision tools for a professional finish.</small></span></button>
       </div>
     </section>
   </div>
@@ -1442,6 +1442,12 @@ function filterTileCategory(category, button) {
         message.textContent = '';
         message.classList.remove('show');
     }
+}
+
+
+function openTileCatalogue(categorySlug, title) {
+    const url = 'tile-catalogue.html?category=' + encodeURIComponent(categorySlug) + '&title=' + encodeURIComponent(title || 'Tile Catalogue');
+    window.location.href = url;
 }
 
 function browseTileCollection(collectionName) {
