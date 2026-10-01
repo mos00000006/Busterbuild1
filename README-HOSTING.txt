@@ -19,3 +19,10 @@ BEFORE PUBLICATION
 Internal CRM: the supplied CRM contains sample figures and browser-only storage, with no real staff authentication. It was excluded from this public upload. A secure server and database are needed before it can be hosted for staff.
 
 Third-party fonts and icons load from Google Fonts and cdnjs; the pages retain fallback typography if those services are unavailable.
+
+TILES CATALOGUE UPDATE (01 Oct 2026)
+- The Tiles tab now loads the full tile catalogue from the supplied Pulse Tiles catalogue source using WooCommerce's public Store API.
+- Product names, SKUs/codes, product images, category assignment and current catalogue prices are loaded live.
+- Tile collection buttons (type/application/style/essentials) load their matching catalogue categories.
+- Tile search on the main Search page also includes the live tile catalogue when the source is reachable.
+- This requires internet access from the visitor's browser and the source Store API to remain publicly reachable.

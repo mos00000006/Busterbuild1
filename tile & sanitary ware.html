@@ -221,7 +221,13 @@ Get Quote
 <div class="tile-products-intro" id="tile-products-intro"><span>Available online now</span><h2>Shop our current tile range</h2><p>Browse the tile products currently loaded online, or contact us for any category shown above.</p></div>
 <div id="tile-products-anchor"></div>
 <p class="catalogue-disclaimer">Catalogue prices are indicative. Please confirm availability, current price and delivery with the store.</p>
-<div class="product-grid">
+<div class="pulse-tile-toolbar" id="pulse-tile-toolbar" hidden>
+  <div class="pulse-tile-toolbar-copy"><strong id="pulse-tile-title">All Tiles</strong><span id="pulse-tile-count">Loading catalogue…</span></div>
+  <label class="pulse-tile-search"><i class="fa-solid fa-magnifying-glass"></i><input id="pulse-tile-search" type="search" placeholder="Search tile name or code" aria-label="Search tile name or code"></label>
+</div>
+<div class="pulse-tile-status" id="pulse-tile-status" hidden></div>
+<div class="product-grid pulse-tile-grid" id="pulse-tile-grid" hidden></div>
+<div class="product-grid" id="local-product-grid">
 <!-- PRODUCT 1 -->
 <div class="product-card" data-items-image="pictures/tiles &amp; sanitary ware/installed-display/product-1-installed.jpg" data-product-category="tiles" data-product-image="pictures/tiles &amp; sanitary ware/dolomiti terraz dark gris.webp" data-product-name="Dolomiti Terraz Dark Gris Floor Tile 600X600mm" data-tile-category="tiles" data-product-price="179.90" data-product-code="A17916">
 <img alt="Ceramic Floor Tile" src="pictures/tiles &amp; sanitary ware/dolomiti terraz dark gris.webp"/>
@@ -1281,27 +1287,183 @@ Get Quote
 </div>
 </div>
 <script>
+const PULSE_STORE_API = 'https://pulsetiles.co.za/wp-json/wc/store/v1';
+const pulseTileCollections = {
+    'all': ['ceramic-tiles','porcelain-tiles','hardbody-tiles','natural-stone-cladding','mosaics','decor-tiles','laminate-flooring'],
+    'our current tile range': ['ceramic-tiles','porcelain-tiles','hardbody-tiles','natural-stone-cladding','mosaics','decor-tiles','laminate-flooring'],
+    'ceramic tiles': ['ceramic-tiles'],
+    'porcelain tiles': ['porcelain-tiles'],
+    'mosaic tiles': ['mosaics'],
+    'mosaics tiles': ['mosaics'],
+    'natural cladding': ['natural-stone-cladding'],
+    'natural stone cladding': ['natural-stone-cladding'],
+    'hardbody tiles': ['hardbody-tiles'],
+    'decor tiles': ['decor-tiles'],
+    'laminate flooring': ['laminate-flooring'],
+    'all floor tiles': ['all-floor-tiles'],
+    'all wall tiles': ['all-wall-tiles'],
+    'all indoor tiles': ['all-indoor-tiles'],
+    'all outdoor tiles': ['all-outdoor-tiles'],
+    'subway tiles': ['subway-tiles'],
+    'large format tiles': ['large-format-tiles'],
+    'cladding look tiles': ['cladding-look-tiles'],
+    'woodlook tiles': ['woodlook-tiles'],
+    'marble look tiles': ['marble-look-tiles'],
+    'slip resistant tiles': ['slip-resistant-tiles'],
+    'tile adhesives': ['tile-adhesives'],
+    'tile edges & trims': ['tile-edges-trims'],
+    'tile bonds & key coats': ['tile-bonds-key-coats'],
+    'tile grout': ['tile-grout'],
+    'tile cleaners': ['tile-cleaners'],
+    'tile spacers & tools': ['tile-spacers-tools']
+};
+let pulseTileProducts = [];
+let pulseTileRequestToken = 0;
+let pulseTileInitialLoaded = false;
+
+function pulseStripHtml(value){
+    const box=document.createElement('div'); box.innerHTML=String(value||''); return (box.textContent||'').replace(/\s+/g,' ').trim();
+}
+function pulsePrice(product){
+    const p=product && product.prices ? product.prices : {};
+    const minor=Number.isFinite(Number(p.currency_minor_unit)) ? Number(p.currency_minor_unit) : 2;
+    const raw=p.price || p.sale_price || p.regular_price || '0';
+    return Number(raw)/Math.pow(10,minor);
+}
+async function pulseFetchProductsForSlug(slug){
+    const all=[];
+    for(let page=1; page<=20; page++){
+        const url=PULSE_STORE_API+'/products?category='+encodeURIComponent(slug)+'&per_page=100&page='+page;
+        const response=await fetch(url,{headers:{'Accept':'application/json'}});
+        if(!response.ok){ if(response.status===400 && page>1) break; throw new Error('Catalogue request failed ('+response.status+')'); }
+        const rows=await response.json();
+        if(!Array.isArray(rows) || !rows.length) break;
+        all.push(...rows);
+        if(rows.length<100) break;
+    }
+    return all;
+}
+function pulseProductAttributes(product){
+    const attrs=[];
+    (product.attributes||[]).forEach(a=>{
+        const vals=[];
+        if(Array.isArray(a.terms)) a.terms.forEach(t=>vals.push(t.name||t.slug||''));
+        if(Array.isArray(a.options)) a.options.forEach(v=>vals.push(String(v)));
+        if(vals.filter(Boolean).length) attrs.push([a.name||'Specification', vals.filter(Boolean).join(', ')]);
+    });
+    return attrs;
+}
+function pulseDetailsHtml(product){
+    const attrs=pulseProductAttributes(product);
+    const cats=(product.categories||[]).map(c=>c.name).filter(Boolean);
+    let html='';
+    if(attrs.length){
+        html+='<div class="pulse-spec-grid">'+attrs.map(([k,v])=>'<div><strong>'+escapePulseHtml(k)+'</strong><span>'+escapePulseHtml(v)+'</span></div>').join('')+'</div>';
+    }
+    if(cats.length) html+='<p><strong>Categories:</strong> '+escapePulseHtml(cats.join(', '))+'</p>';
+    const short=pulseStripHtml(product.short_description||product.summary||'');
+    if(short) html+='<p>'+escapePulseHtml(short)+'</p>';
+    return html || '<p>Product specifications are available from the store.</p>';
+}
+function escapePulseHtml(v){ return String(v??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+function renderPulseTiles(products, title){
+    pulseTileProducts=products;
+    const grid=document.getElementById('pulse-tile-grid');
+    const status=document.getElementById('pulse-tile-status');
+    const toolbar=document.getElementById('pulse-tile-toolbar');
+    const titleEl=document.getElementById('pulse-tile-title');
+    const countEl=document.getElementById('pulse-tile-count');
+    if(titleEl) titleEl.textContent=title || 'All Tiles';
+    if(countEl) countEl.textContent=products.length+' product'+(products.length===1?'':'s');
+    if(toolbar) toolbar.hidden=false;
+    if(status){ status.hidden=true; status.textContent=''; }
+    if(!grid) return;
+    grid.hidden=false; grid.innerHTML='';
+    if(!products.length){
+        grid.innerHTML='<div class="pulse-tile-empty"><h3>No products found</h3><p>Please choose another tile collection.</p></div>'; return;
+    }
+    products.forEach(product=>{
+        const card=document.createElement('div'); card.className='product-card pulse-product-card';
+        const image=(product.images&&product.images[0]&&(product.images[0].thumbnail||product.images[0].src)) || 'pictures/tiles and sanitary hero.jpeg';
+        const price=pulsePrice(product);
+        card.dataset.tileCategory='tiles'; card.dataset.productCategory='tiles'; card.dataset.productName=product.name||'';
+        card.dataset.productCode=product.sku||'—'; card.dataset.productPrice=String(price||0); card.dataset.productImage=image;
+        card._pulseProduct=product;
+        const img=document.createElement('img'); img.src=image; img.alt=product.name||'Tile product'; img.loading='lazy'; img.referrerPolicy='no-referrer'; card.appendChild(img);
+        const h=document.createElement('h3'); h.textContent=product.name||'Tile Product'; card.appendChild(h);
+        const code=document.createElement('p'); code.className='product-code'; code.textContent='Code: '+(product.sku||'—'); card.appendChild(code);
+        const categories=(product.categories||[]).slice(0,2).map(c=>c.name).filter(Boolean);
+        if(categories.length){ const meta=document.createElement('p'); meta.className='pulse-product-meta'; meta.textContent=categories.join(' • '); card.appendChild(meta); }
+        const priceEl=document.createElement('p'); priceEl.className='price'; priceEl.textContent='R'+formatMoney(price); card.appendChild(priceEl);
+        const b=document.createElement('button'); b.className='buy-btn view-details-btn'; b.type='button'; b.textContent='View Details'; b.dataset.productPrice=String(price||0); b.onclick=()=>openProductDetails(b); card.appendChild(b);
+        grid.appendChild(card);
+    });
+}
+function filterPulseRenderedProducts(){
+    const q=(document.getElementById('pulse-tile-search')?.value||'').trim().toLowerCase();
+    const cards=document.querySelectorAll('#pulse-tile-grid .pulse-product-card');
+    let visible=0;
+    cards.forEach(card=>{
+        const match=!q || ((card.dataset.productName||'')+' '+(card.dataset.productCode||'')).toLowerCase().includes(q);
+        card.style.display=match?'':'none'; if(match) visible++;
+    });
+    const countEl=document.getElementById('pulse-tile-count'); if(countEl) countEl.textContent=visible+' product'+(visible===1?'':'s');
+}
+async function loadPulseTileCollection(collectionName='all'){
+    const key=String(collectionName||'all').trim().toLowerCase();
+    const slugs=pulseTileCollections[key] || pulseTileCollections.all;
+    const token=++pulseTileRequestToken;
+    const grid=document.getElementById('pulse-tile-grid');
+    const status=document.getElementById('pulse-tile-status');
+    const toolbar=document.getElementById('pulse-tile-toolbar');
+    if(grid){ grid.hidden=false; grid.innerHTML=''; }
+    if(toolbar) toolbar.hidden=true;
+    if(status){ status.hidden=false; status.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Loading '+escapePulseHtml(collectionName==='all'?'all tiles':collectionName)+'…'; }
+    try{
+        const groups=await Promise.all(slugs.map(pulseFetchProductsForSlug));
+        if(token!==pulseTileRequestToken) return;
+        const map=new Map(); groups.flat().forEach(p=>map.set(p.id,p));
+        const products=[...map.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||''));
+        pulseTileInitialLoaded=true;
+        renderPulseTiles(products, collectionName==='all'||key==='our current tile range'?'All Tiles':collectionName);
+    }catch(err){
+        if(token!==pulseTileRequestToken) return;
+        if(status){ status.hidden=false; status.innerHTML='<strong>Live tile catalogue could not load.</strong><br>Please check your internet connection and try again. <button type="button" class="pulse-retry-btn" onclick="loadPulseTileCollection(\''+escapePulseHtml(collectionName).replace(/'/g,'&#39;')+'\')">Retry</button>'; }
+        if(grid) grid.hidden=true;
+        if(toolbar) toolbar.hidden=true;
+    }
+}
+
 function filterTileCategory(category, button) {
-    const cards = document.querySelectorAll('.product-card[data-tile-category]');
+    const cards = document.querySelectorAll('#local-product-grid .product-card[data-tile-category]');
     const message = document.getElementById('tile-category-message');
     const tilesShowcase = document.getElementById('tiles-showcase');
     const tilesIntro = document.getElementById('tile-products-intro');
+    const pulseGrid=document.getElementById('pulse-tile-grid');
+    const pulseToolbar=document.getElementById('pulse-tile-toolbar');
+    const pulseStatus=document.getElementById('pulse-tile-status');
     document.querySelectorAll('.tiles-category-btn').forEach(btn => btn.classList.remove('active'));
     if (button) button.classList.add('active');
     const comboNav = document.getElementById('combo-subcategory-nav');
     if (comboNav) comboNav.style.display = category === 'combo' ? 'block' : 'none';
     if (tilesShowcase) tilesShowcase.style.display = category === 'tiles' ? 'block' : 'none';
     if (tilesIntro) tilesIntro.style.display = category === 'tiles' ? 'block' : 'none';
+    if(pulseGrid) pulseGrid.hidden=category!=='tiles';
+    if(pulseToolbar) pulseToolbar.hidden=category!=='tiles';
+    if(pulseStatus && category!=='tiles') pulseStatus.hidden=true;
     let visibleCount = 0;
     cards.forEach(card => {
-        const match = card.dataset.tileCategory === category;
+        const match = category !== 'tiles' && card.dataset.tileCategory === category;
         card.style.display = match ? '' : 'none';
         if (match) visibleCount++;
     });
     document.querySelectorAll('.combo-subcategory-btn').forEach(btn => btn.classList.remove('active'));
     const allBtn = document.querySelector('.combo-subcategory-btn[data-subcategory="all"]');
     if (category === 'combo' && allBtn) allBtn.classList.add('active');
-    if (visibleCount === 0) {
+    if(category==='tiles'){
+        message.textContent=''; message.classList.remove('show');
+        if(!pulseTileInitialLoaded) loadPulseTileCollection('all');
+    } else if (visibleCount === 0) {
         message.textContent = 'Products for this category are coming soon.';
         message.classList.add('show');
     } else {
@@ -1315,12 +1477,16 @@ function browseTileCollection(collectionName) {
     filterTileCategory('tiles', tilesButton);
     const intro = document.getElementById('tile-products-intro');
     if (intro) {
+        const title=intro.querySelector('h2'); if(title) title.textContent=collectionName==='our current tile range'?'Shop all tiles':'Shop '+collectionName;
         const text = intro.querySelector('p');
-        if (text) text.textContent = 'Looking for ' + collectionName + '? Browse the tile products currently loaded online below. If you do not see the item you need, contact BusterBuild and we will assist with availability.';
+        if (text) text.textContent = 'Browse the full '+collectionName+' range with product names, codes, images and current catalogue pricing.';
     }
+    loadPulseTileCollection(collectionName);
     const anchor = document.getElementById('tile-products-anchor');
     if (anchor) anchor.scrollIntoView({behavior:'smooth', block:'start'});
 }
+
+document.addEventListener('input',e=>{ if(e.target && e.target.id==='pulse-tile-search') filterPulseRenderedProducts(); });
 
 function filterComboSubcategory(subcategory, button) {
     document.querySelectorAll('.combo-subcategory-btn').forEach(btn => btn.classList.remove('active'));
@@ -1360,32 +1526,34 @@ function getFullDescription(name, category){
 function openProductDetails(button){
     const card=button.closest('.product-card');
     if(!card) return;
+    const pulse=card._pulseProduct || null;
     currentProduct.name=card.dataset.productName || card.querySelector('h3')?.textContent.trim() || '';
-    const priceButton=button.closest('.product-card')?.querySelector('.view-details-btn[data-product-price]');
+    const priceButton=card.querySelector('.view-details-btn[data-product-price]');
     const displayedPrice=card.querySelector('.price')?.textContent.replace(/[^0-9.]/g,'') || '';
     currentProduct.price=Number(card.dataset.productPrice || priceButton?.dataset.productPrice || displayedPrice || 0);
     currentProduct.image=card.dataset.productImage || card.querySelector('img')?.getAttribute('src') || '';
     currentProduct.itemsImage=card.dataset.itemsImage || currentProduct.image;
     currentProduct.category=card.dataset.productCategory || '';
     document.getElementById('product-details-title').textContent=currentProduct.name;
-    const code = card.dataset.productCode || '—';
+    const code = card.dataset.productCode || pulse?.sku || '—';
     document.getElementById('product-details-code').textContent='Code: ' + code;
-    document.getElementById('product-details-description').textContent=getProductDescription(currentProduct.name,currentProduct.category);
+    const desc=pulse ? pulseStripHtml(pulse.short_description||pulse.summary||'') : getProductDescription(currentProduct.name,currentProduct.category);
+    document.getElementById('product-details-description').textContent=desc || getProductDescription(currentProduct.name,currentProduct.category);
 
     const detailsPrice = document.getElementById('product-details-price');
     detailsPrice.textContent = 'R' + formatMoney(currentProduct.price);
     detailsPrice.classList.remove('login-price');
 
-    document.getElementById('product-details-full-description').innerHTML=getFullDescription(currentProduct.name,currentProduct.category);
+    document.getElementById('product-details-full-description').innerHTML=pulse ? pulseDetailsHtml(pulse) : getFullDescription(currentProduct.name,currentProduct.category);
     document.getElementById('product-details-qty').value=1;
     const main=document.getElementById('product-details-main-image');
     main.src=currentProduct.image; main.alt=currentProduct.name;
     const thumbs=document.getElementById('product-details-thumbs'); thumbs.innerHTML='';
-    const images=[currentProduct.image];
-    if(currentProduct.itemsImage && currentProduct.itemsImage!==currentProduct.image) images.push(currentProduct.itemsImage);
-    images.forEach((src,i)=>{
+    const images=pulse && Array.isArray(pulse.images) && pulse.images.length ? pulse.images.map(i=>i.src||i.thumbnail).filter(Boolean) : [currentProduct.image];
+    if(!pulse && currentProduct.itemsImage && currentProduct.itemsImage!==currentProduct.image) images.push(currentProduct.itemsImage);
+    [...new Set(images)].forEach((src,i)=>{
         const b=document.createElement('button'); b.type='button'; b.className='product-thumb'+(i===0?' active':'');
-        b.innerHTML='<img src="'+src.replace(/"/g,'&quot;')+'" alt="Product view '+(i+1)+'" loading="lazy">';
+        const im=document.createElement('img'); im.src=src; im.alt='Product view '+(i+1); im.loading='lazy'; im.referrerPolicy='no-referrer'; b.appendChild(im);
         b.onclick=()=>{ main.src=src; document.querySelectorAll('.product-thumb').forEach(x=>x.classList.remove('active')); b.classList.add('active'); };
         thumbs.appendChild(b);
     });

@@ -56,3 +56,13 @@ nav a:hover,.icons a:hover,.fallback-link{color:var(--bb-orange)}
 @media(max-width:800px){.enquiry-grid{grid-template-columns:1fr}.hero{min-height:460px}.header-container{flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none;margin:5px 0}.icons{margin-left:auto}.enquiry-page,.results-page{padding:35px 0 70px}}
 @media(max-width:550px){.logo img{height:44px}.header-container .icons a{font-size:.9rem}.hero{min-height:420px}.enquiry-panel{padding:20px}.page-banner{height:250px}.footer-bottom{padding:16px 0}}
 .enquiry-panel .buy-btn:disabled{opacity:.55;cursor:not-allowed}
+
+/* Live full tile catalogue */
+.pulse-tile-toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:22px 0 18px;padding:16px 18px;border:1px solid #e7e0d6;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.pulse-tile-toolbar[hidden],.pulse-tile-grid[hidden],.pulse-tile-status[hidden]{display:none!important}
+.pulse-tile-toolbar-copy{display:flex;flex-direction:column;gap:3px}.pulse-tile-toolbar-copy strong{font-size:1.12rem}.pulse-tile-toolbar-copy span{font-size:.86rem;color:#777}
+.pulse-tile-search{display:flex;align-items:center;gap:9px;min-width:280px;padding:0 14px;border:1px solid #ddd3c4;border-radius:999px;background:#faf8f4}.pulse-tile-search input{width:100%;border:0;outline:0;background:transparent;padding:11px 0;font:inherit}
+.pulse-tile-status{margin:18px 0;padding:18px;border-radius:16px;background:#fff7df;border:1px solid #efd28a;text-align:center;color:#3c3428}.pulse-retry-btn{margin-left:8px;border:0;border-radius:999px;padding:8px 14px;background:#e9aa00;font-weight:800;cursor:pointer}
+.pulse-product-card{position:relative}.pulse-product-card>img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:12px}.pulse-product-card h3{min-height:3.35em}.pulse-product-meta{font-size:.78rem;color:#777;margin:-2px 0 8px;line-height:1.35}.pulse-tile-empty{grid-column:1/-1;padding:35px;text-align:center;border:1px dashed #d8d0c5;border-radius:18px;background:#fff}
+.pulse-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin:10px 0 16px}.pulse-spec-grid>div{display:flex;flex-direction:column;padding:9px 10px;border-radius:10px;background:#f7f5f1}.pulse-spec-grid strong{font-size:.78rem;color:#6b6257}.pulse-spec-grid span{font-size:.9rem;margin-top:2px}
+@media(max-width:720px){.pulse-tile-toolbar{align-items:stretch;flex-direction:column}.pulse-tile-search{min-width:0}.pulse-spec-grid{grid-template-columns:1fr}}
