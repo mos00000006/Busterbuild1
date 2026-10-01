@@ -66,3 +66,62 @@ nav a:hover,.icons a:hover,.fallback-link{color:var(--bb-orange)}
 .pulse-product-card{position:relative}.pulse-product-card>img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:12px}.pulse-product-card h3{min-height:3.35em}.pulse-product-meta{font-size:.78rem;color:#777;margin:-2px 0 8px;line-height:1.35}.pulse-tile-empty{grid-column:1/-1;padding:35px;text-align:center;border:1px dashed #d8d0c5;border-radius:18px;background:#fff}
 .pulse-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin:10px 0 16px}.pulse-spec-grid>div{display:flex;flex-direction:column;padding:9px 10px;border-radius:10px;background:#f7f5f1}.pulse-spec-grid strong{font-size:.78rem;color:#6b6257}.pulse-spec-grid span{font-size:.9rem;margin-top:2px}
 @media(max-width:720px){.pulse-tile-toolbar{align-items:stretch;flex-direction:column}.pulse-tile-search{min-width:0}.pulse-spec-grid{grid-template-columns:1fr}}
+
+/* Simplified full tile catalogue: image + name + code only */
+#pulse-tile-grid.pulse-tile-grid{
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:24px;
+  align-items:stretch;
+}
+.pulse-simple-card{
+  padding:0 !important;
+  overflow:hidden;
+  border-radius:18px !important;
+  background:#fff;
+  border:1px solid rgba(17,17,17,.09);
+  box-shadow:0 8px 26px rgba(0,0,0,.08);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.pulse-simple-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 34px rgba(0,0,0,.13);
+}
+.pulse-simple-image-wrap{
+  width:100%;
+  aspect-ratio:1/1;
+  background:#f5f5f5;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.pulse-simple-image-wrap img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  margin:0 !important;
+  padding:10px;
+  background:#fff;
+}
+.pulse-simple-card-body{
+  padding:16px 17px 18px;
+}
+.pulse-simple-card-body h3{
+  margin:0 0 10px !important;
+  font-size:16px !important;
+  line-height:1.35 !important;
+  min-height:44px;
+  color:#111;
+}
+.pulse-simple-code{
+  margin:0 !important;
+  font-size:13px !important;
+  font-weight:800;
+  letter-spacing:.03em;
+  color:#8c6500 !important;
+}
+@media (max-width:700px){
+  #pulse-tile-grid.pulse-tile-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .pulse-simple-card-body{padding:12px}
+  .pulse-simple-card-body h3{font-size:14px !important;min-height:0}
+}
