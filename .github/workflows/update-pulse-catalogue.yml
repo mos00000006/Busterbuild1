@@ -1,0 +1,45 @@
+name: Update Pulse tile catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 2 * * *'
+  push:
+    paths:
+      - 'scripts/update_pulse_catalogue.py'
+      - '.github/workflows/update-pulse-catalogue.yml'
+      - 'tile-catalogue.html'
+
+permissions:
+  contents: write
+
+jobs:
+  update-catalogue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install catalogue tools
+        run: pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Build static tile catalogue
+        run: python scripts/update_pulse_catalogue.py
+
+      - name: Save updated catalogue to the website
+        run: |
+          git config user.name "BusterBuild Catalogue Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pulse-tile-catalogue.json
+          if git diff --cached --quiet; then
+            echo "No catalogue changes."
+          else
+            git commit -m "Update tile catalogue"
+            git push
+          fi

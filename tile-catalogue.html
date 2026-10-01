@@ -32,48 +32,83 @@
 </div></section>
 <script defer src="js/cart.js"></script>
 <script>
-const PULSE_API='https://pulsetiles.co.za/wp-json/wc/store/v1';
-const ALL_TILE_SLUGS=['ceramic-tiles','porcelain-tiles','hardbody-tiles','natural-stone-cladding','mosaics','decor-tiles','laminate-flooring'];
 const params=new URLSearchParams(location.search);
-const requestedSlug=params.get('category')||'ceramic-tiles';
-const requestedTitle=params.get('title')||'Ceramic Tiles';
+const requestedRaw=(params.get('category')||'ceramic-tiles').toLowerCase();
+const requestedTitle=params.get('title')||'Tile Catalogue';
+const aliases={
+  'woodlook-tiles':'wood-look-tiles',
+  'tile-bonds-key-coats':'bonds-key-coats',
+  'mosaic-tiles':'mosaics',
+  'natural-cladding':'natural-stone-cladding'
+};
+const requestedSlug=aliases[requestedRaw]||requestedRaw;
 let allProducts=[];
+let catalogueData=null;
 
-function stripHtml(value){const d=document.createElement('div');d.innerHTML=String(value||'');return(d.textContent||'').replace(/\s+/g,' ').trim();}
 function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-function money(raw,minor=2){const n=Number(raw||0)/Math.pow(10,Number(minor||2));return 'R'+n.toLocaleString('en-ZA',{minimumFractionDigits:2,maximumFractionDigits:2});}
-function numericPrice(product){const p=product.prices||{};return Number(p.price||p.sale_price||p.regular_price||0)/Math.pow(10,Number(p.currency_minor_unit||2));}
-function priceHtml(product){const p=product.prices||{}, minor=Number(p.currency_minor_unit||2);const current=Number(p.price||0), regular=Number(p.regular_price||0), sale=Number(p.sale_price||0);const range=p.price_range||null;let prefix='';if(range&&range.min_amount&&range.max_amount&&Number(range.min_amount)!==Number(range.max_amount))prefix='<span class="from">From</span>';if(sale>0&&regular>sale)return '<span class="old">'+money(regular,minor)+'</span>'+prefix+money(sale,minor);return prefix+money(current||regular,minor);}
-function getDescription(product){let text=stripHtml(product.short_description||'');if(!text)text=stripHtml(product.description||'');if(text.length>260)text=text.slice(0,257).trim()+'…';return text||'Product specifications and availability can be confirmed with BusterBuild Hardware.';}
-function specsHtml(product){const rows=[];(product.attributes||[]).forEach(a=>{let values=[];if(Array.isArray(a.terms))values=a.terms.map(t=>t.name||t.slug).filter(Boolean);if(Array.isArray(a.options))values=values.concat(a.options.map(String));if(values.length)rows.push('<div class="catalogue-spec"><strong>'+esc(a.name||'Specification')+':</strong> '+esc(values.join(', '))+'</div>');});const cats=(product.categories||[]).map(c=>c.name).filter(Boolean);if(cats.length)rows.push('<div class="catalogue-spec"><strong>Category:</strong> '+esc(cats.join(', '))+'</div>');return rows.join('');}
+function numericPrice(p){return Number((p.price||{}).current||0);}
+function money(n){if(n===null||n===undefined||Number.isNaN(Number(n)))return 'Price on request';return 'R'+Number(n).toLocaleString('en-ZA',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function priceHtml(p){const pr=p.price||{};let out='';if(pr.sale&&pr.regular&&Number(pr.sale)<Number(pr.regular))out+='<span class="old">'+money(pr.regular)+'</span>';if(pr.from)out+='<span class="from">From</span>';out+=money(pr.current??pr.sale??pr.regular);return out;}
+function specsHtml(p){return (p.attributes||[]).map(a=>'<div class="catalogue-spec"><strong>'+esc(a.name||'Specification')+':</strong> '+esc(a.value||'')+'</div>').join('');}
+function formatSyncDate(v){if(!v)return '';const d=new Date(v);if(Number.isNaN(d.getTime()))return '';return d.toLocaleString('en-ZA',{dateStyle:'medium',timeStyle:'short'});}
 
-async function directFetch(path){const r=await fetch(PULSE_API+path,{headers:{'Accept':'application/json'}});if(!r.ok)throw new Error('Source request '+r.status);return r.json();}
-async function proxyFetch(action,args={}){const q=new URLSearchParams({action,...Object.fromEntries(Object.entries(args).map(([k,v])=>[k,String(v)]))});const r=await fetch('pulse-proxy.php?'+q.toString(),{headers:{'Accept':'application/json'}});if(!r.ok)throw new Error('Proxy request '+r.status);return r.json();}
-async function catalogueFetch(action,args={}){try{return await proxyFetch(action,args);}catch(e){if(location.protocol==='file:'||location.hostname==='localhost'||location.hostname==='127.0.0.1'){if(action==='categories')return directFetch('/products/categories?per_page=100&page='+(args.page||1));if(action==='products')return directFetch('/products?category='+encodeURIComponent(args.category)+'&per_page=100&page='+(args.page||1)+'&orderby=title&order=asc');}throw e;}}
-async function loadCategoryMap(){const map=new Map();for(let page=1;page<=12;page++){const rows=await catalogueFetch('categories',{page});if(!Array.isArray(rows)||!rows.length)break;rows.forEach(c=>map.set(String(c.slug||'').toLowerCase(),c));if(rows.length<100)break;}return map;}
-async function loadProductsByCategoryId(id){const out=[];for(let page=1;page<=20;page++){const rows=await catalogueFetch('products',{category:id,page});if(!Array.isArray(rows)||!rows.length)break;out.push(...rows);if(rows.length<100)break;}return out;}
 async function loadCatalogue(){
-  const status=document.getElementById('catalogue-status'); const grid=document.getElementById('catalogue-grid');
-  document.title=requestedTitle+' | BusterBuild Hardware';document.getElementById('catalogue-title').textContent=requestedTitle;document.getElementById('crumb-title').textContent=requestedTitle;
-  document.getElementById('catalogue-subtitle').textContent='Browse the full '+requestedTitle+' range with product pictures, codes, current pricing and descriptions.';
-  status.className='catalogue-status';status.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Loading '+esc(requestedTitle)+'…';grid.hidden=true;
+  const status=document.getElementById('catalogue-status');
+  const grid=document.getElementById('catalogue-grid');
+  document.title=requestedTitle+' | BusterBuild Hardware';
+  document.getElementById('catalogue-title').textContent=requestedTitle;
+  document.getElementById('crumb-title').textContent=requestedTitle;
+  document.getElementById('catalogue-subtitle').textContent='Browse the full '+requestedTitle+' range with product pictures, codes, current pricing and product details.';
+  status.hidden=false;status.className='catalogue-status';status.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Loading '+esc(requestedTitle)+'…';grid.hidden=true;
   try{
-    const categories=await loadCategoryMap();
-    const slugs=requestedSlug==='all'?ALL_TILE_SLUGS:[requestedSlug];
-    const ids=slugs.map(s=>categories.get(s.toLowerCase())?.id).filter(Boolean);
-    if(!ids.length)throw new Error('Category not found');
-    const groups=await Promise.all(ids.map(loadProductsByCategoryId));
-    const unique=new Map();groups.flat().forEach(p=>unique.set(p.id,p));
-    allProducts=[...unique.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||''));
-    if(!allProducts.length)throw new Error('No products found');
+    const r=await fetch('data/pulse-tile-catalogue.json?v='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw new Error('Catalogue data file not found');
+    catalogueData=await r.json();
+    if(!catalogueData || !Array.isArray(catalogueData.products) || !catalogueData.products.length){
+      throw new Error('The first catalogue sync has not run yet');
+    }
+    const cat=(catalogueData.categories||{})[requestedSlug];
+    if(!cat)throw new Error('Category not found in the local catalogue');
+    const wanted=new Set(cat.product_ids||[]);
+    allProducts=catalogueData.products.filter(p=>wanted.has(String(p.id)));
+    if(!allProducts.length)throw new Error('No products were found in this category');
+    allProducts.sort((a,b)=>(a.name||'').localeCompare(b.name||''));
+    const sync=formatSyncDate(catalogueData.generated_at);
+    document.getElementById('catalogue-count').textContent=allProducts.length+' product'+(allProducts.length===1?'':'s')+(sync?' • Updated '+sync:'');
     status.hidden=true;grid.hidden=false;renderProducts();
   }catch(err){
-    status.hidden=false;status.className='catalogue-status error';status.innerHTML='<strong>Catalogue could not load.</strong><br>Once uploaded to your BusterBuild hosting, this page reads the category through the BusterBuild server. <button type="button" onclick="loadCatalogue()">Retry</button>';
-    document.getElementById('catalogue-count').textContent='Catalogue unavailable';
+    document.getElementById('catalogue-count').textContent='Catalogue update pending';
+    status.hidden=false;status.className='catalogue-status error';
+    status.innerHTML='<strong>Catalogue is preparing.</strong><br>This GitHub Pages version uses a local catalogue file. Run the <b>Update Pulse tile catalogue</b> workflow once in GitHub Actions, then refresh this page.';
+    grid.hidden=true;
   }
 }
-function renderProducts(){const grid=document.getElementById('catalogue-grid');const search=(document.getElementById('catalogue-search').value||'').trim().toLowerCase();const sort=document.getElementById('catalogue-sort').value;let rows=allProducts.filter(p=>!search||((p.name||'')+' '+(p.sku||'')).toLowerCase().includes(search));if(sort==='name')rows.sort((a,b)=>(a.name||'').localeCompare(b.name||''));if(sort==='price-asc')rows.sort((a,b)=>numericPrice(a)-numericPrice(b));if(sort==='price-desc')rows.sort((a,b)=>numericPrice(b)-numericPrice(a));document.getElementById('catalogue-count').textContent=rows.length+' product'+(rows.length===1?'':'s');grid.innerHTML='';rows.forEach(p=>{const img=p.images&&p.images[0]&&(p.images[0].thumbnail||p.images[0].src)||'pictures/tiles and sanitary hero.jpeg';const desc=getDescription(p);const card=document.createElement('article');card.className='catalogue-card';card.innerHTML='<div class="catalogue-image-wrap"><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(img)+'" alt="'+esc(p.name||'Tile product')+'"></div><div class="catalogue-card-body"><h3>'+esc(p.name||'Tile product')+'</h3><p class="catalogue-code">Code: '+esc(p.sku||'—')+'</p><p class="catalogue-desc">'+esc(desc)+'</p><div class="catalogue-price">'+priceHtml(p)+'</div><details class="catalogue-details"><summary>Product details</summary><div class="catalogue-specs">'+(specsHtml(p)||'<div class="catalogue-spec">'+esc(desc)+'</div>')+'</div></details></div>';grid.appendChild(card);});}
-document.getElementById('catalogue-search').addEventListener('input',renderProducts);document.getElementById('catalogue-sort').addEventListener('change',renderProducts);document.getElementById('header-search').addEventListener('input',e=>{document.getElementById('catalogue-search').value=e.target.value;renderProducts();});
+
+function renderProducts(){
+  const grid=document.getElementById('catalogue-grid');
+  const q=(document.getElementById('catalogue-search').value||'').trim().toLowerCase();
+  const sort=document.getElementById('catalogue-sort').value;
+  let rows=allProducts.filter(p=>!q||((p.name||'')+' '+(p.code||'')).toLowerCase().includes(q));
+  if(sort==='name')rows.sort((a,b)=>(a.name||'').localeCompare(b.name||''));
+  if(sort==='price-asc')rows.sort((a,b)=>numericPrice(a)-numericPrice(b));
+  if(sort==='price-desc')rows.sort((a,b)=>numericPrice(b)-numericPrice(a));
+  const sync=catalogueData?formatSyncDate(catalogueData.generated_at):'';
+  document.getElementById('catalogue-count').textContent=rows.length+' product'+(rows.length===1?'':'s')+(sync?' • Updated '+sync:'');
+  grid.innerHTML='';
+  rows.forEach(p=>{
+    const img=p.image||'pictures/tiles and sanitary hero.jpeg';
+    const desc=p.description||'Product details available from BusterBuild Hardware.';
+    const details=specsHtml(p);
+    const card=document.createElement('article');
+    card.className='catalogue-card';
+    card.innerHTML='<div class="catalogue-image-wrap"><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(img)+'" alt="'+esc(p.name||'Tile product')+'" onerror="this.onerror=null;this.src=\'pictures/tiles and sanitary hero.jpeg\';"></div><div class="catalogue-card-body"><h3>'+esc(p.name||'Tile product')+'</h3><p class="catalogue-code">Code: '+esc(p.code||'—')+'</p><p class="catalogue-desc">'+esc(desc)+'</p><div class="catalogue-price">'+priceHtml(p)+'</div>'+(details?'<details class="catalogue-details"><summary>Product details</summary><div class="catalogue-specs">'+details+'</div></details>':'')+'</div>';
+    grid.appendChild(card);
+  });
+}
+
+document.getElementById('catalogue-search').addEventListener('input',renderProducts);
+document.getElementById('catalogue-sort').addEventListener('change',renderProducts);
+document.getElementById('header-search').addEventListener('input',e=>{document.getElementById('catalogue-search').value=e.target.value;renderProducts();});
 loadCatalogue();
 </script>
 </body>
