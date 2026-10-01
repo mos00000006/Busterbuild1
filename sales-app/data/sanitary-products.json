@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "local-bb-0045",
+      "name": "Florence 2Pc Toilet With Seat P Trap 180mm",
+      "code": "BB-0045",
+      "price": {
+        "current": 2599.9,
+        "regular": 2599.9,
+        "sale": null,
+        "from": false
+      },
+      "images": [
+        {
+          "src": "pictures/tiles & sanitary ware/florence close couple toilet.webp"
+        }
+      ],
+      "attributes": [],
+      "description": "BusterBuild Hardware product."
+    },
+    {
+      "id": "local-bb-0046",
+      "name": "Bathroom Basin Shaily",
+      "code": "BB-0046",
+      "price": {
+        "current": 199.9,
+        "regular": 199.9,
+        "sale": null,
+        "from": false
+      },
+      "images": [
+        {
+          "src": "pictures/tiles & sanitary ware/basin shaily.webp"
+        }
+      ],
+      "attributes": [],
+      "description": "BusterBuild Hardware product."
+    },
+    {
+      "id": "local-bb-0048",
+      "name": "Bathtub With Handles 1700mm",
+      "code": "BB-0048",
+      "price": {
+        "current": 1899.9,
+        "regular": 1899.9,
+        "sale": null,
+        "from": false
+      },
+      "images": [
+        {
+          "src": "pictures/tiles & sanitary ware/bathtub with handles.webp"
+        }
+      ],
+      "attributes": [],
+      "description": "BusterBuild Hardware product."
+    }
+  ]
+}

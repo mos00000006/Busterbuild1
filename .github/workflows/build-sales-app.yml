@@ -1,0 +1,47 @@
+name: Build sales app QR labels
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/pulse-tile-catalogue.json'
+      - 'data/pulse-combo-catalogue.json'
+      - 'tile & sanitary ware.html'
+      - 'sales-app/**'
+      - 'scripts/build_sales_app.py'
+  workflow_run:
+    workflows: ['Update Pulse tile catalogue', 'Update Pulse combo catalogue']
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install QR build tools
+        run: pip install qrcode[pil] beautifulsoup4
+      - name: Build sales product QR labels
+        env:
+          SALES_APP_BASE_URL: https://mos00000006.github.io/Busterbuild1/sales-app/
+        run: python scripts/build_sales_app.py
+      - name: Save generated sales assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sales-app/data sales-app/qr
+          if git diff --cached --quiet; then
+            echo "No sales app changes to commit."
+          else
+            git commit -m "Update sales app QR labels"
+            git push
+          fi

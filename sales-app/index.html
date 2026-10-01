@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e1a100">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BB Sales">
+  <title>BusterBuild Tiles & Sanitary Sales</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-brand">
+        <img src="icons/icon-192.png" alt="BusterBuild">
+        <div><span>SALES APP</span><h1>Tiles &amp; Sanitary Ware</h1></div>
+      </div>
+      <p class="login-copy">Secure sales access for the BusterBuild tile and sanitary department.</p>
+      <form id="login-form">
+        <label>Email address<input id="login-email" type="email" autocomplete="username" required placeholder="sales@busterbuild.co.za"></label>
+        <label>Password<input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+        <button class="primary-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+      </form>
+      <p id="login-error" class="form-error" role="alert"></p>
+      <div id="firebase-setup" class="setup-warning" hidden>
+        <strong>Account setup required</strong>
+        <span>Firebase Authentication has not been connected yet. Add the Firebase Web App settings in <code>sales-app/firebase-config.js</code>.</span>
+      </div>
+      <small class="secure-note"><i class="fa-solid fa-lock"></i> Only authorised Tiles &amp; Sanitary Ware sales accounts can enter this app.</small>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <header class="app-header">
+      <div class="brand-lockup">
+        <img src="icons/icon-192.png" alt="BusterBuild">
+        <div><strong>BusterBuild Sales</strong><span>Tiles &amp; Sanitary Ware</span></div>
+      </div>
+      <div class="header-actions">
+        <button id="install-btn" class="icon-btn install-btn" type="button" hidden title="Install app"><i class="fa-solid fa-download"></i></button>
+        <button id="account-btn" class="account-pill" type="button"><span class="avatar"><i class="fa-solid fa-user"></i></span><span class="account-copy"><strong id="account-name">Sales</strong><small id="account-email"></small></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="catalogue-view" class="view active">
+        <div class="hero-card">
+          <div class="hero-copy"><span class="eyebrow">BUSTERBUILD SALES TOOL</span><h2>Find it. Scan it. Sell it.</h2><p>Fast access to tiles, sanitary ware and combo deals with live product details, prices, Smart Measure and cart building.</p></div>
+          <button class="scan-hero-btn" data-open-scan type="button"><span class="scan-icon"><i class="fa-solid fa-qrcode"></i></span><span><strong>Scan Product</strong><small>Open camera</small></span><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="quick-stats">
+          <div><span>Tiles</span><strong id="tile-count">0</strong></div>
+          <div><span>Sanitary</span><strong id="sanitary-count">0</strong></div>
+          <div><span>Combos</span><strong id="combo-count">0</strong></div>
+          <div><span>Cart</span><strong id="cart-stat">0</strong></div>
+        </div>
+
+        <div class="catalogue-tools">
+          <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="product-search" type="search" placeholder="Search product name or code"></label>
+          <div class="filter-row" id="filter-row">
+            <button class="filter-chip active" data-filter="all" type="button">All</button>
+            <button class="filter-chip" data-filter="tile" type="button">Tiles</button>
+            <button class="filter-chip" data-filter="sanitary" type="button">Sanitary Ware</button>
+            <button class="filter-chip" data-filter="combo" type="button">Combo Deals</button>
+          </div>
+        </div>
+
+        <div id="catalogue-status" class="status-card"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales catalogue…</div>
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+
+      <section id="scan-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CAMERA SCANNER</span><h2>Scan product QR code</h2></div></div>
+        <div class="scanner-shell">
+          <div id="qr-reader" class="qr-reader"></div>
+          <div class="scan-guide"><span></span><span></span><span></span><span></span></div>
+          <div id="camera-message" class="camera-message">Tap Start Camera and point the phone at a BusterBuild QR label.</div>
+        </div>
+        <div class="scanner-actions">
+          <button id="start-camera" class="primary-btn" type="button"><i class="fa-solid fa-camera"></i> Start Camera</button>
+          <button id="stop-camera" class="secondary-btn" type="button" hidden><i class="fa-solid fa-stop"></i> Stop Camera</button>
+        </div>
+        <div class="manual-scan">
+          <span>Camera not available?</span>
+          <div><input id="manual-code" type="text" placeholder="Enter product code"><button id="manual-find" type="button">Find</button></div>
+        </div>
+        <div id="scan-result" class="scan-result" hidden></div>
+      </section>
+
+      <section id="cart-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CUSTOMER ORDER</span><h2>Sales cart</h2></div></div>
+        <div id="cart-list" class="cart-list"></div>
+        <div id="cart-empty" class="empty-card"><i class="fa-solid fa-cart-shopping"></i><strong>Your sales cart is empty</strong><span>Add products from the catalogue or scanner.</span></div>
+        <div id="cart-summary" class="cart-summary" hidden>
+          <div><span>Items</span><strong id="cart-items-total">0</strong></div>
+          <div><span>Estimated total</span><strong id="cart-money-total">R0,00</strong></div>
+          <p>Final price and stock availability can be confirmed at checkout.</p>
+          <button id="clear-cart" class="secondary-btn danger" type="button"><i class="fa-solid fa-trash"></i> Clear cart</button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Sales app navigation">
+      <button class="nav-item active" data-nav="catalogue" type="button"><i class="fa-solid fa-border-all"></i><span>Catalogue</span></button>
+      <button class="nav-item scan-nav" data-open-scan type="button"><span class="nav-scan-circle"><i class="fa-solid fa-qrcode"></i></span><span>Scan</span></button>
+      <button class="nav-item" data-nav="cart" type="button"><span class="cart-icon-wrap"><i class="fa-solid fa-cart-shopping"></i><b id="bottom-cart-count">0</b></span><span>Cart</span></button>
+    </nav>
+  </div>
+
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-product></div>
+    <article class="product-sheet" role="dialog" aria-modal="true" aria-labelledby="product-title">
+      <button class="sheet-close" data-close-product type="button"><i class="fa-solid fa-xmark"></i></button>
+      <div class="product-visual"><img id="product-image" alt="Product"></div>
+      <div class="product-content">
+        <span id="product-type" class="product-type-badge">TILE</span>
+        <h2 id="product-title"></h2>
+        <p id="product-code" class="product-code"></p>
+        <div id="product-price" class="product-price"></div>
+        <p id="product-description" class="product-description"></p>
+        <div id="product-specs" class="product-specs"></div>
+
+        <section id="smart-measure" class="smart-measure" hidden>
+          <div class="smart-head"><span class="smart-icon"><i class="fa-solid fa-ruler-combined"></i></span><div><small>BUSTERBUILD</small><strong>Smart Measure</strong><p>Calculate the number of boxes for the customer's room.</p></div></div>
+          <div class="measure-inputs"><label>Room length (m)<input id="room-length" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label><label>Room width (m)<input id="room-width" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label></div>
+          <div class="measure-results"><div><span>Required area</span><strong id="required-area">0.00 m²</strong></div><div class="highlight"><span>Boxes to order</span><strong id="boxes-order">0</strong></div><div><span>Covers</span><strong id="covered-area">0.00 m²</strong></div><div class="dark"><span>Estimated tile total</span><strong id="measure-total">R0,00</strong></div></div>
+          <p id="box-note" class="box-note"></p>
+          <button id="use-boxes" class="secondary-btn" type="button"><i class="fa-solid fa-arrow-down"></i> Use calculated boxes as quantity</button>
+        </section>
+
+        <div class="buy-panel">
+          <div class="qty-block"><label id="qty-label">Quantity</label><div class="qty-control"><button id="qty-minus" type="button">−</button><input id="product-qty" type="number" min="1" value="1"><button id="qty-plus" type="button">+</button></div></div>
+          <button id="add-cart" class="add-cart-btn" type="button"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div id="account-menu" class="account-menu" hidden>
+    <strong id="menu-email"></strong><span>Tiles &amp; Sanitary Ware Sales</span>
+    <button id="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

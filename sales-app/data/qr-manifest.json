@@ -1,0 +1,83 @@
+{
+  "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
+  "count": 11,
+  "products": [
+    {
+      "type": "tile",
+      "code": "A17916",
+      "name": "Dolomiti Terraz Dark Gris Floor Tile 600X600mm",
+      "file": "qr/A17916.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17916"
+    },
+    {
+      "type": "tile",
+      "code": "A18122",
+      "name": "Luster Cloud Porcelain Tile 600x600mm Sugar Glazed",
+      "file": "qr/A18122.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A18122"
+    },
+    {
+      "type": "tile",
+      "code": "A17894",
+      "name": "Oscar Grey Wall Tile Glossy 300X600mm",
+      "file": "qr/A17894.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17894"
+    },
+    {
+      "type": "tile",
+      "code": "L00180",
+      "name": "Powergripp Ceramic Adhesive 24hr (20kg)",
+      "file": "qr/L00180.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=L00180"
+    },
+    {
+      "type": "tile",
+      "code": "A17309",
+      "name": "Angel White Gloss Porcelain Tile 600x600mm",
+      "file": "qr/A17309.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17309"
+    },
+    {
+      "type": "tile",
+      "code": "A17790",
+      "name": "Aaron White High Gloss Glazed Polished Porcelain 600X1200mm",
+      "file": "qr/A17790.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17790"
+    },
+    {
+      "type": "tile",
+      "code": "A18079",
+      "name": "Abstract River Glazed Polished Porcelain 600X1200mm",
+      "file": "qr/A18079.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A18079"
+    },
+    {
+      "type": "tile",
+      "code": "A18284",
+      "name": "Active Onyx Ice Glazed Polished Porcelain Matt 600x1200mm",
+      "file": "qr/A18284.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A18284"
+    },
+    {
+      "type": "sanitary",
+      "code": "BB-0045",
+      "name": "Florence 2Pc Toilet With Seat P Trap 180mm",
+      "file": "qr/BB-0045.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=BB-0045"
+    },
+    {
+      "type": "sanitary",
+      "code": "BB-0046",
+      "name": "Bathroom Basin Shaily",
+      "file": "qr/BB-0046.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=BB-0046"
+    },
+    {
+      "type": "sanitary",
+      "code": "BB-0048",
+      "name": "Bathtub With Handles 1700mm",
+      "file": "qr/BB-0048.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=BB-0048"
+    }
+  ]
+}
