@@ -3350,3 +3350,380 @@ body{
  .combo-subcategory-buttons{gap:8px}
  .combo-subcategory-btn{padding:9px 12px;font-size:.9rem}
 }
+
+/* ==========================================
+   TILES COLLECTION SHOWCASE
+   Premium category landing experience inside
+   Tiles & Sanitary Ware > Tiles
+========================================== */
+.tiles-showcase-shell{
+    display:none;
+    padding:8px 0 52px;
+    background:linear-gradient(180deg,#f7f4ef 0%,#fff 34%,#f7f4ef 100%);
+}
+.tiles-showcase-container{max-width:1460px}
+.tiles-showcase-hero{
+    position:relative;
+    min-height:520px;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 24px 60px rgba(17,17,17,.13);
+    isolation:isolate;
+}
+.tiles-showcase-hero>img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    transform:scale(1.01);
+}
+.tiles-showcase-hero-shade{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(13,13,13,.72) 0%,rgba(13,13,13,.4) 38%,rgba(13,13,13,.08) 70%,rgba(13,13,13,.15) 100%);
+    z-index:1;
+}
+.tiles-showcase-hero-copy{
+    position:absolute;
+    z-index:2;
+    left:6%;
+    top:50%;
+    transform:translateY(-50%);
+    width:min(620px,88%);
+    padding:42px 46px;
+    border:1px solid rgba(255,255,255,.42);
+    background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(255,255,255,.72));
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border-radius:28px;
+    box-shadow:0 20px 55px rgba(0,0,0,.18);
+}
+.tiles-kicker,.tiles-section-eyebrow{
+    display:inline-block;
+    color:#b67b00;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.74rem;
+    font-weight:800;
+    margin-bottom:8px;
+}
+.tiles-showcase-hero-copy h2{
+    margin:0 0 14px;
+    color:#111;
+    font-size:clamp(2.4rem,5vw,5rem);
+    line-height:.95;
+    letter-spacing:-2.2px;
+    font-weight:800;
+}
+.tiles-showcase-hero-copy p{
+    margin:0 0 26px;
+    color:#2e2e2e;
+    max-width:520px;
+    font-size:clamp(1rem,1.6vw,1.28rem);
+    line-height:1.55;
+    font-weight:500;
+}
+.tiles-hero-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    border:0;
+    background:#111;
+    color:#fff;
+    border-radius:999px;
+    padding:14px 22px;
+    font:700 .94rem 'Poppins',sans-serif;
+    cursor:pointer;
+    box-shadow:0 10px 24px rgba(0,0,0,.16);
+    transition:transform .22s ease,background .22s ease;
+}
+.tiles-hero-cta:hover{transform:translateY(-2px);background:#e1a100;color:#111}
+.tiles-showcase-section{
+    margin-top:28px;
+    padding:30px;
+    background:rgba(255,255,255,.92);
+    border:1px solid rgba(17,17,17,.06);
+    border-radius:26px;
+    box-shadow:0 14px 40px rgba(0,0,0,.06);
+}
+.tiles-section-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:22px;
+}
+.tiles-section-heading h2{
+    margin:0;
+    color:#111;
+    font-size:clamp(1.55rem,2.6vw,2.3rem);
+    line-height:1.1;
+    letter-spacing:-.8px;
+}
+.tiles-section-heading p{
+    margin:7px 0 0;
+    color:#6a6a6a;
+    font-size:.96rem;
+}
+.tiles-type-grid{
+    display:grid;
+    grid-template-columns:repeat(7,minmax(0,1fr));
+    gap:12px;
+}
+.tile-type-card{
+    min-width:0;
+    border:1px solid #ece7df;
+    background:#fff;
+    border-radius:18px;
+    padding:14px 12px;
+    display:grid;
+    grid-template-columns:58px 1fr auto;
+    align-items:center;
+    gap:10px;
+    text-align:left;
+    color:#151515;
+    font:700 .8rem/1.2 'Poppins',sans-serif;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.04);
+    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.tile-type-card:hover{
+    transform:translateY(-4px);
+    border-color:#e1a100;
+    box-shadow:0 12px 25px rgba(0,0,0,.1);
+}
+.tile-type-card>i{font-size:.75rem;color:#b67b00}
+.tile-type-swatch{
+    width:58px;
+    aspect-ratio:1;
+    border-radius:50%;
+    border:4px solid #f4f0ea;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+.swatch-ceramic{background:linear-gradient(145deg,#f7f4ed 0%,#dbd3c8 45%,#f5eee4 100%)}
+.swatch-porcelain{background:linear-gradient(135deg,#e7e7e5 0%,#bfc2c4 40%,#f3f3f1 41%,#d4d6d7 64%,#aaaeb0 100%)}
+.swatch-mosaic{background:conic-gradient(from 45deg,#d1b488 0 25%,#e7dfd2 0 50%,#9e8870 0 75%,#f4eee5 0) 0 0/18px 18px}
+.swatch-cladding{background:repeating-linear-gradient(0deg,#9d7655 0 7px,#6f513a 7px 11px,#c39d77 11px 18px,#75513a 18px 22px)}
+.swatch-hardbody{background:radial-gradient(circle at 30% 25%,#767676 0 9%,transparent 10%),linear-gradient(135deg,#767676,#b7b7b7 45%,#696969)}
+.swatch-decor{background:conic-gradient(from 45deg,#111 0 12.5%,#e1a100 0 25%,#f6ead3 0 37.5%,#111 0 50%,#f6ead3 0 62.5%,#e1a100 0 75%,#111 0 87.5%,#f6ead3 0)}
+.swatch-laminate{background:repeating-linear-gradient(90deg,#ae7d4f 0 8px,#c9945e 8px 14px,#8e633e 14px 19px,#c18c5a 19px 29px)}
+.tiles-application-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:16px;
+}
+.tile-application-card{
+    position:relative;
+    min-height:355px;
+    border:0;
+    padding:0;
+    border-radius:22px;
+    overflow:hidden;
+    background:#ddd;
+    cursor:pointer;
+    text-align:left;
+    box-shadow:0 12px 28px rgba(0,0,0,.1);
+    isolation:isolate;
+}
+.tile-application-card>img,.tile-outdoor-visual{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .5s ease;
+}
+.tile-application-card:hover>img,.tile-application-card:hover .tile-outdoor-visual{transform:scale(1.045)}
+.tile-outdoor-visual{
+    background:
+      linear-gradient(180deg,rgba(0,0,0,0) 0 55%,rgba(0,0,0,.15) 100%),
+      linear-gradient(140deg,#d4d0c8 0 22%,#9ca3a7 22% 25%,#d8d4cc 25% 50%,#a8adaf 50% 53%,#c9c4ba 53% 78%,#8e969a 78% 81%,#d9d3c8 81% 100%);
+}
+.tile-application-outdoor:before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 18% 18%,rgba(92,130,64,.9) 0 9%,transparent 10%),radial-gradient(circle at 80% 15%,rgba(63,112,52,.7) 0 11%,transparent 12%),linear-gradient(180deg,#d8e3d2 0 38%,transparent 39%);
+    z-index:0;
+}
+.tile-application-gradient{
+    position:absolute;
+    inset:42% 0 0;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,.74));
+    z-index:1;
+}
+.tile-application-copy{
+    position:absolute;
+    z-index:2;
+    left:14px;
+    right:14px;
+    bottom:14px;
+    padding:18px 50px 18px 18px;
+    border-radius:17px;
+    color:#fff;
+    background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.08));
+    border:1px solid rgba(255,255,255,.25);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+.tile-application-copy strong{display:block;font-size:1.02rem;line-height:1.15;text-transform:uppercase}
+.tile-application-copy small{display:block;margin-top:7px;font-size:.78rem;line-height:1.45;color:#f2f2f2}
+.tile-application-copy i{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    width:31px;
+    height:31px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    color:#111;
+    background:#fff;
+}
+.tiles-style-grid{
+    display:grid;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    gap:14px;
+}
+.tile-style-card{
+    border:1px solid #e8e3db;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    padding:0;
+    text-align:left;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    transition:transform .2s ease,box-shadow .2s ease;
+}
+.tile-style-card:hover{transform:translateY(-4px);box-shadow:0 13px 28px rgba(0,0,0,.11)}
+.tile-style-visual{display:block;height:180px;background-size:cover;background-position:center;transition:transform .45s ease}
+.tile-style-card:hover .tile-style-visual{transform:scale(1.045)}
+.style-subway{background:linear-gradient(90deg,#f9f9f6 0 48%,#d4d4cf 49% 51%,#f9f9f6 52%) 0 0/86px 42px,linear-gradient(#f9f9f6 0 46%,#d4d4cf 47% 51%,#f9f9f6 52%) 0 0/86px 42px;box-shadow:inset 0 0 30px rgba(0,0,0,.05)}
+.style-large-format{background-image:url("../pictures/tiles & sanitary ware/installed-display/product-118-installed.jpg")}
+.style-cladding-look{background-image:url("../pictures/tiles & sanitary ware/installed-display/product-105-installed.jpg")}
+.style-woodlook{background-image:url("../pictures/tiles & sanitary ware/installed-display/product-83-installed.jpg")}
+.style-marble-look{background-image:url("../pictures/tiles & sanitary ware/installed-display/product-55-installed.jpg")}
+.style-slip-resistant{background-image:url("../pictures/tiles & sanitary ware/installed-display/product-100-installed.jpg")}
+.tile-style-label{
+    display:flex;
+    min-height:58px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:10px 12px;
+    color:#111;
+    font-weight:800;
+    font-size:.82rem;
+    text-transform:uppercase;
+    line-height:1.2;
+}
+.tiles-essentials-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:14px;
+}
+.tile-essential-card{
+    border:1px solid #e8e3db;
+    background:linear-gradient(135deg,#fff,#f8f4ed);
+    border-radius:18px;
+    padding:18px;
+    min-height:112px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-align:left;
+    cursor:pointer;
+    color:#111;
+    box-shadow:0 8px 20px rgba(0,0,0,.045);
+    transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.tile-essential-card:hover{transform:translateY(-3px);border-color:#e1a100;box-shadow:0 12px 24px rgba(0,0,0,.09)}
+.tile-essential-icon{
+    flex:0 0 58px;
+    width:58px;
+    height:58px;
+    border-radius:16px;
+    display:grid;
+    place-items:center;
+    background:#111;
+    color:#e1a100;
+    font-size:1.3rem;
+    box-shadow:0 8px 16px rgba(0,0,0,.14);
+}
+.tile-essential-card strong{display:block;font-size:.92rem;line-height:1.2;text-transform:uppercase}
+.tile-essential-card small{display:block;margin-top:6px;color:#777;line-height:1.35}
+.tile-products-intro{
+    display:none;
+    text-align:center;
+    margin:4px auto 24px;
+    padding:24px 22px;
+    max-width:900px;
+}
+.tile-products-intro>span{
+    display:inline-block;
+    margin-bottom:5px;
+    color:#b67b00;
+    text-transform:uppercase;
+    letter-spacing:1.7px;
+    font-size:.73rem;
+    font-weight:800;
+}
+.tile-products-intro h2{margin:0;color:#111;font-size:clamp(1.55rem,2.8vw,2.2rem);line-height:1.1}
+.tile-products-intro p{margin:8px 0 0;color:#666}
+#tile-products-anchor{scroll-margin-top:110px}
+
+/* Refine main category tabs on the Tiles & Sanitary Ware page */
+.tiles-category-nav{padding-top:30px;padding-bottom:30px;gap:16px}
+.tiles-category-btn{border:1px solid #d9d9d9;border-radius:10px;min-width:150px;padding:14px 26px;background:#fff;font-size:14px;box-shadow:0 7px 16px rgba(0,0,0,.07)}
+.tiles-category-btn:hover{background:#111;border-color:#111;color:#fff;transform:translateY(-2px)}
+.tiles-category-btn.active{background:#e1a100;border-color:#e1a100;color:#fff;box-shadow:0 10px 24px rgba(225,161,0,.25)}
+.tiles-category-btn.active:hover{background:#c38d00;border-color:#c38d00;color:#fff}
+.tile-category-message.show{
+    background:#fff8e8;
+    border:1px solid #efd99a;
+    border-radius:14px;
+    color:#5f4b13;
+    box-shadow:0 8px 20px rgba(0,0,0,.04);
+}
+
+@media(max-width:1200px){
+    .tiles-type-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .tiles-style-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:900px){
+    .tiles-showcase-hero{min-height:450px}
+    .tiles-showcase-hero-copy{left:4%;padding:34px 32px}
+    .tiles-application-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .tiles-essentials-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+    .tiles-showcase-shell{padding-bottom:34px}
+    .tiles-showcase-container{width:94%}
+    .tiles-showcase-hero{min-height:500px;border-radius:22px}
+    .tiles-showcase-hero>img{object-position:60% center}
+    .tiles-showcase-hero-shade{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.6))}
+    .tiles-showcase-hero-copy{left:14px;right:14px;top:auto;bottom:14px;transform:none;width:auto;padding:26px 24px;border-radius:22px}
+    .tiles-showcase-hero-copy h2{font-size:2.45rem;letter-spacing:-1.5px}
+    .tiles-showcase-section{padding:22px 16px;border-radius:22px;margin-top:18px}
+    .tiles-type-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .tile-type-card{grid-template-columns:50px 1fr;padding:12px 10px}
+    .tile-type-card>i{display:none}
+    .tile-type-swatch{width:50px}
+    .tiles-application-grid{grid-template-columns:1fr}
+    .tile-application-card{min-height:320px}
+    .tiles-style-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .tile-style-visual{height:145px}
+    .tiles-essentials-grid{grid-template-columns:1fr}
+    .tiles-category-btn{min-width:0}
+}
+@media(max-width:440px){
+    .tiles-type-grid{grid-template-columns:1fr}
+    .tiles-style-grid{grid-template-columns:1fr 1fr}
+    .tile-style-label{font-size:.72rem;min-height:52px}
+    .tiles-showcase-hero-copy p{font-size:.93rem}
+}

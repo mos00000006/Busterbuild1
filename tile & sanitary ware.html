@@ -111,9 +111,115 @@ Get Quote
 </div>
 </div>
 <div aria-live="polite" class="tile-category-message" id="tile-category-message"></div>
+
+<!-- TILES COLLECTION SHOWCASE -->
+<section class="tiles-showcase-shell" id="tiles-showcase" aria-label="Tile collections">
+  <div class="container tiles-showcase-container">
+    <div class="tiles-showcase-hero">
+      <img src="pictures/tiles &amp; sanitary ware/installed-display/product-119-installed.jpg" alt="Luxury tiled living space" loading="lazy"/>
+      <div class="tiles-showcase-hero-shade"></div>
+      <div class="tiles-showcase-hero-copy">
+        <span class="tiles-kicker">Explore the collection</span>
+        <h2>TILES BY TILES</h2>
+        <p>Beautiful surfaces for every room, every style, and every project.</p>
+        <button type="button" class="tiles-hero-cta" onclick="browseTileCollection('our current tile range')">Shop Tiles <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <section class="tiles-showcase-section tiles-type-section">
+      <div class="tiles-section-heading">
+        <div>
+          <span class="tiles-section-eyebrow">Find your finish</span>
+          <h2>Tiles by Type</h2>
+          <p>Explore versatile finishes crafted for style, strength, and timeless appeal.</p>
+        </div>
+      </div>
+      <div class="tiles-type-grid">
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Ceramic Tiles')"><span class="tile-type-swatch swatch-ceramic"></span><span>Ceramic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Porcelain Tiles')"><span class="tile-type-swatch swatch-porcelain"></span><span>Porcelain Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Mosaic Tiles')"><span class="tile-type-swatch swatch-mosaic"></span><span>Mosaic Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Natural Cladding')"><span class="tile-type-swatch swatch-cladding"></span><span>Natural Cladding</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Hardbody Tiles')"><span class="tile-type-swatch swatch-hardbody"></span><span>Hardbody Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Decor Tiles')"><span class="tile-type-swatch swatch-decor"></span><span>Decor Tiles</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="tile-type-card" type="button" onclick="browseTileCollection('Laminate Flooring')"><span class="tile-type-swatch swatch-laminate"></span><span>Laminate Flooring</span><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <section class="tiles-showcase-section tiles-application-section">
+      <div class="tiles-section-heading">
+        <div>
+          <span class="tiles-section-eyebrow">Choose by space</span>
+          <h2>Tiles by Application</h2>
+          <p>Find the perfect tile solution for every space.</p>
+        </div>
+      </div>
+      <div class="tiles-application-grid">
+        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Floor Tiles')">
+          <img src="pictures/tiles &amp; sanitary ware/installed-display/product-1-installed.jpg" alt="Floor tiles in a modern living room" loading="lazy"/>
+          <span class="tile-application-gradient"></span>
+          <span class="tile-application-copy"><strong>All Floor Tiles</strong><small>Beautiful foundations for every room.</small><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Wall Tiles')">
+          <img src="pictures/tiles &amp; sanitary ware/installed-display/product-3-installed.jpg" alt="Wall tiles in a modern bathroom" loading="lazy"/>
+          <span class="tile-application-gradient"></span>
+          <span class="tile-application-copy"><strong>All Wall Tiles</strong><small>Transform your walls with striking finishes.</small><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+        <button class="tile-application-card" type="button" onclick="browseTileCollection('All Indoor Tiles')">
+          <img src="pictures/tiles &amp; sanitary ware/installed-display/product-119-installed.jpg" alt="Indoor tiles in a luxury living space" loading="lazy"/>
+          <span class="tile-application-gradient"></span>
+          <span class="tile-application-copy"><strong>All Indoor Tiles</strong><small>Designed to elevate your interior spaces.</small><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+        <button class="tile-application-card tile-application-outdoor" type="button" onclick="browseTileCollection('All Outdoor Tiles')">
+          <div class="tile-outdoor-visual" aria-hidden="true"></div>
+          <span class="tile-application-gradient"></span>
+          <span class="tile-application-copy"><strong>All Outdoor Tiles</strong><small>Enhance outdoor spaces with lasting style.</small><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="tiles-showcase-section tiles-style-section">
+      <div class="tiles-section-heading">
+        <div>
+          <span class="tiles-section-eyebrow">Create your look</span>
+          <h2>Tiles by Style</h2>
+          <p>Discover trending looks that bring character to every surface.</p>
+        </div>
+      </div>
+      <div class="tiles-style-grid">
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Subway Tiles')"><span class="tile-style-visual style-subway"></span><span class="tile-style-label">Subway Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Large Format Tiles')"><span class="tile-style-visual style-large-format"></span><span class="tile-style-label">Large Format Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Cladding Look Tiles')"><span class="tile-style-visual style-cladding-look"></span><span class="tile-style-label">Cladding Look Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Woodlook Tiles')"><span class="tile-style-visual style-woodlook"></span><span class="tile-style-label">Woodlook Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Marble Look Tiles')"><span class="tile-style-visual style-marble-look"></span><span class="tile-style-label">Marble Look Tiles</span></button>
+        <button class="tile-style-card" type="button" onclick="browseTileCollection('Slip Resistant Tiles')"><span class="tile-style-visual style-slip-resistant"></span><span class="tile-style-label">Slip Resistant Tiles</span></button>
+      </div>
+    </section>
+
+    <section class="tiles-showcase-section tiles-essentials-section">
+      <div class="tiles-section-heading">
+        <div>
+          <span class="tiles-section-eyebrow">Finish the job</span>
+          <h2>Tiles by Essentials</h2>
+          <p>Everything you need for a flawless tile installation and finish.</p>
+        </div>
+      </div>
+      <div class="tiles-essentials-grid">
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Adhesives')"><span class="tile-essential-icon"><i class="fa-solid fa-bag-shopping"></i></span><span><strong>Tile Adhesives</strong><small>Strong, reliable fixing solutions.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Edges &amp; Trims')"><span class="tile-essential-icon"><i class="fa-solid fa-ruler-combined"></i></span><span><strong>Tile Edges &amp; Trims</strong><small>Clean edges with a premium finish.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Bonds &amp; Key Coats')"><span class="tile-essential-icon"><i class="fa-solid fa-paint-roller"></i></span><span><strong>Tile Bonds &amp; Key Coats</strong><small>Prepare surfaces for lasting adhesion.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Grout')"><span class="tile-essential-icon"><i class="fa-solid fa-fill-drip"></i></span><span><strong>Tile Grout</strong><small>Complete every joint neatly.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Cleaners')"><span class="tile-essential-icon"><i class="fa-solid fa-droplet"></i></span><span><strong>Tile Cleaners</strong><small>Keep tiled surfaces looking their best.</small></span></button>
+        <button class="tile-essential-card" type="button" onclick="browseTileCollection('Tile Spacers &amp; Tools')"><span class="tile-essential-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><span><strong>Tile Spacers &amp; Tools</strong><small>Precision tools for a professional finish.</small></span></button>
+      </div>
+    </section>
+  </div>
+</section>
+
 <!-- PRODUCTS -->
 <section class="products-page">
 <div class="container">
+<div class="tile-products-intro" id="tile-products-intro"><span>Available online now</span><h2>Shop our current tile range</h2><p>Browse the tile products currently loaded online, or contact us for any category shown above.</p></div>
+<div id="tile-products-anchor"></div>
 <p class="catalogue-disclaimer">Catalogue prices are indicative. Please confirm availability, current price and delivery with the store.</p>
 <div class="product-grid">
 <!-- PRODUCT 1 -->
@@ -1178,10 +1284,14 @@ Get Quote
 function filterTileCategory(category, button) {
     const cards = document.querySelectorAll('.product-card[data-tile-category]');
     const message = document.getElementById('tile-category-message');
+    const tilesShowcase = document.getElementById('tiles-showcase');
+    const tilesIntro = document.getElementById('tile-products-intro');
     document.querySelectorAll('.tiles-category-btn').forEach(btn => btn.classList.remove('active'));
     if (button) button.classList.add('active');
     const comboNav = document.getElementById('combo-subcategory-nav');
     if (comboNav) comboNav.style.display = category === 'combo' ? 'block' : 'none';
+    if (tilesShowcase) tilesShowcase.style.display = category === 'tiles' ? 'block' : 'none';
+    if (tilesIntro) tilesIntro.style.display = category === 'tiles' ? 'block' : 'none';
     let visibleCount = 0;
     cards.forEach(card => {
         const match = card.dataset.tileCategory === category;
@@ -1198,6 +1308,18 @@ function filterTileCategory(category, button) {
         message.textContent = '';
         message.classList.remove('show');
     }
+}
+
+function browseTileCollection(collectionName) {
+    const tilesButton = document.querySelector('.tiles-category-btn[data-category="tiles"]');
+    filterTileCategory('tiles', tilesButton);
+    const intro = document.getElementById('tile-products-intro');
+    if (intro) {
+        const text = intro.querySelector('p');
+        if (text) text.textContent = 'Looking for ' + collectionName + '? Browse the tile products currently loaded online below. If you do not see the item you need, contact BusterBuild and we will assist with availability.';
+    }
+    const anchor = document.getElementById('tile-products-anchor');
+    if (anchor) anchor.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 function filterComboSubcategory(subcategory, button) {
