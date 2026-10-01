@@ -1,4 +1,4 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1640';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1650';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
@@ -64,7 +64,7 @@ async function initAuth(){
     e.preventDefault(); $('login-error').textContent='';
     const btn=qs('button[type="submit"]',$('login-form')); btn.disabled=true; btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Signing in…';
     try{ await signInWithEmailAndPassword(auth,$('login-email').value.trim(),$('login-password').value); }
-    catch(err){ $('login-error').textContent=authMessage(err); }
+    catch(err){ console.error('Firebase sign-in error:', err); $('login-error').textContent=authMessage(err); }
     finally{ btn.disabled=false; btn.innerHTML='<i class="fa-solid fa-right-to-bracket"></i> Sign in'; }
   });
   onAuthStateChanged(auth,async user=>{
@@ -100,7 +100,18 @@ async function resolveAccess(user){
   const allowed=profile.active!==false && profile.role==='sales' && profile.department==='tiles-sanitary';
   return {...profile,allowed};
 }
-function authMessage(err){ const c=err?.code||''; if(c.includes('invalid-credential')||c.includes('wrong-password')||c.includes('user-not-found'))return 'Incorrect email address or password.'; if(c.includes('too-many-requests'))return 'Too many attempts. Please wait and try again.'; if(c.includes('network'))return 'Network error. Check the phone connection.'; return 'Sign-in failed. Check the account and try again.'; }
+function authMessage(err){
+  const c=err?.code||'unknown';
+  const m=err?.message||'';
+  if(c.includes('invalid-credential')||c.includes('wrong-password')||c.includes('user-not-found')) return `Incorrect email address or password. (${c})`;
+  if(c.includes('too-many-requests')) return `Too many attempts. Please wait and try again. (${c})`;
+  if(c.includes('network')) return `Network error. Check the connection. (${c})`;
+  if(c.includes('operation-not-allowed')) return `Email/password sign-in is not enabled in Firebase. (${c})`;
+  if(c.includes('unauthorized-domain')) return `This GitHub Pages domain is not authorised in Firebase. (${c})`;
+  if(c.includes('invalid-api-key')) return `The Firebase API key in firebase-config.js is invalid. (${c})`;
+  if(c.includes('configuration-not-found')) return `Firebase Authentication configuration was not found for this project. (${c})`;
+  return `Firebase sign-in error: ${c}${m ? ' — '+m.replace(/^Firebase:\s*/,'') : ''}`;
+}
 initAuth();
 
 $('account-btn').addEventListener('click',()=>{$('account-menu').hidden=!$('account-menu').hidden;});
