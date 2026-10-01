@@ -22,6 +22,7 @@ from bs4 import BeautifulSoup
 from requests.exceptions import RequestException
 
 BUSTERBUILD_COMBO_SYNC_VERSION = "2026-10-01-v1-combo-html-checkpoint"
+COMBO_DETAIL_PARSER_VERSION = "2026-10-01-combo-includes-v2"
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "pulse-combo-catalogue.json"
 CACHE = ROOT / "data" / "pulse-combo-product-cache.json"
@@ -157,6 +158,51 @@ def parse_price(text: str) -> dict:
     return {"current": current, "regular": regular, "sale": sale, "from": "from" in txt.lower(), "currency": "ZAR"}
 
 
+def extract_combo_includes(soup: BeautifulSoup) -> list[str]:
+    """Extract the actual WooCommerce Description-tab combo contents.
+
+    Pulse product pages place the factual bundle list under #tab-description.
+    We keep each included item as its own line so the BusterBuild product view
+    can render a clean checklist instead of a synthetic summary.
+    """
+    panel = (
+        soup.select_one("#tab-description")
+        or soup.select_one(".woocommerce-Tabs-panel--description")
+        or soup.select_one(".woocommerce-tabs .panel.entry-content")
+    )
+    if not panel:
+        return []
+
+    work = BeautifulSoup(str(panel), "html.parser")
+    for bad in work.select("script, style, noscript"):
+        bad.decompose()
+    for br in work.find_all("br"):
+        br.replace_with("\n")
+    for tag in work.find_all(["p", "li", "div", "h2", "h3", "h4", "strong"]):
+        tag.append("\n")
+
+    lines = []
+    seen = set()
+    for raw in work.get_text("\n", strip=True).splitlines():
+        line = clean_text(raw).strip(" \t\r\n-–—•")
+        if not line:
+            continue
+        low = line.lower().rstrip(":")
+        if low in {
+            "description", "this combo includes", "this combo include",
+            "this combo includes the following", "combo includes",
+            "additional information", "reviews", "reviews (0)"
+        }:
+            continue
+        # Defensive stop markers in case a theme nests later tabs in the same panel.
+        if low.startswith("reviews (") or low == "reviews":
+            break
+        if line not in seen:
+            seen.add(line)
+            lines.append(line)
+    return lines
+
+
 def combo_description(name: str, attrs: list[dict], category: str) -> str:
     facts = []
     wanted = ("size", "finish", "colour", "color", "material", "quantity", "square meters", "sold", "pieces", "piece")
@@ -210,6 +256,8 @@ def parse_product(url: str, category: str) -> dict:
         if kk and vv and not any(x["name"] == kk and x["value"] == vv for x in attrs):
             attrs.append({"name": kk, "value": vv})
 
+    included_items = extract_combo_includes(soup)
+
     slug = urlparse(url).path.rstrip("/").split("/")[-1]
     return {
         "id": slug,
@@ -218,6 +266,8 @@ def parse_product(url: str, category: str) -> dict:
         "code": code,
         "price": price,
         "description": combo_description(name, attrs, category),
+        "included_items": included_items,
+        "detail_parser_version": COMBO_DETAIL_PARSER_VERSION,
         "image": image,
         "images": images,
         "attributes": attrs,
@@ -227,7 +277,7 @@ def parse_product(url: str, category: str) -> dict:
 
 def merge_product(existing: dict | None, incoming: dict, category: str) -> dict:
     out = dict(existing or {})
-    for field in ("source_url", "name", "code", "price", "description", "image", "images", "attributes"):
+    for field in ("source_url", "name", "code", "price", "description", "included_items", "detail_parser_version", "image", "images", "attributes"):
         if incoming.get(field):
             out[field] = incoming[field]
     out["id"] = incoming.get("id") or out.get("id")
@@ -282,6 +332,7 @@ def write_payload(products_by_id: dict[str, dict], category_products: dict[str, 
 def main() -> None:
     print(f"BUSTERBUILD_COMBO_SYNC_VERSION={BUSTERBUILD_COMBO_SYNC_VERSION}")
     print("Mode: HTML-only combo catalogue crawl")
+    print(f"Detail parser: {COMBO_DETAIL_PARSER_VERSION} (captures actual This Combo Includes list)")
 
     previous = load_json(OUT, {})
     prev_by_id, prev_by_url = previous_maps(previous)
@@ -320,7 +371,12 @@ def main() -> None:
         detail_failures = 0
         for i, url in enumerate(urls, 1):
             p = cache.get(url)
-            if not p:
+            cache_is_current = bool(
+                p
+                and p.get("detail_parser_version") == COMBO_DETAIL_PARSER_VERSION
+                and isinstance(p.get("included_items"), list)
+            )
+            if not cache_is_current:
                 try:
                     p = parse_product(url, key)
                     cache[url] = p
