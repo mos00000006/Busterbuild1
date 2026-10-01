@@ -218,11 +218,11 @@ Get Quote
 <!-- PRODUCTS -->
 <section class="products-page">
 <div class="container">
-<div class="tile-products-intro" id="tile-products-intro"><span>Full tile catalogue</span><h2>All Tiles</h2><p>Browse tile pictures, product names and product codes.</p></div>
+<div class="tile-products-intro" id="tile-products-intro"><span>Tile catalogue</span><h2>All Tiles</h2><p>Browse tile pictures, product names and product codes — stored directly in the website.</p></div>
 <div id="tile-products-anchor"></div>
-<p class="catalogue-disclaimer">Catalogue prices are indicative. Please confirm availability, current price and delivery with the store.</p>
+
 <div class="pulse-tile-toolbar" id="pulse-tile-toolbar" hidden>
-  <div class="pulse-tile-toolbar-copy"><strong id="pulse-tile-title">All Tiles</strong><span id="pulse-tile-count">Loading catalogue…</span></div>
+  <div class="pulse-tile-toolbar-copy"><strong id="pulse-tile-title">All Tiles</strong><span id="pulse-tile-count">Catalogue ready</span></div>
   <label class="pulse-tile-search"><i class="fa-solid fa-magnifying-glass"></i><input id="pulse-tile-search" type="search" placeholder="Search tile name or code" aria-label="Search tile name or code"></label>
 </div>
 <div class="pulse-tile-status" id="pulse-tile-status" hidden></div>
@@ -1287,84 +1287,49 @@ Get Quote
 </div>
 </div>
 <script>
-const PULSE_STORE_API = 'https://pulsetiles.co.za/wp-json/wc/store/v1';
-const pulseTileCollections = {
-    'all': ['ceramic-tiles','porcelain-tiles','hardbody-tiles','natural-stone-cladding','mosaics','decor-tiles','laminate-flooring'],
-    'our current tile range': ['ceramic-tiles','porcelain-tiles','hardbody-tiles','natural-stone-cladding','mosaics','decor-tiles','laminate-flooring'],
-    'ceramic tiles': ['ceramic-tiles'],
-    'porcelain tiles': ['porcelain-tiles'],
-    'mosaic tiles': ['mosaics'],
-    'mosaics tiles': ['mosaics'],
-    'natural cladding': ['natural-stone-cladding'],
-    'natural stone cladding': ['natural-stone-cladding'],
-    'hardbody tiles': ['hardbody-tiles'],
-    'decor tiles': ['decor-tiles'],
-    'laminate flooring': ['laminate-flooring'],
-    'all floor tiles': ['all-floor-tiles'],
-    'all wall tiles': ['all-wall-tiles'],
-    'all indoor tiles': ['all-indoor-tiles'],
-    'all outdoor tiles': ['all-outdoor-tiles'],
-    'subway tiles': ['subway-tiles'],
-    'large format tiles': ['large-format-tiles'],
-    'cladding look tiles': ['cladding-look-tiles'],
-    'woodlook tiles': ['woodlook-tiles'],
-    'marble look tiles': ['marble-look-tiles'],
-    'slip resistant tiles': ['slip-resistant-tiles'],
-    'tile adhesives': ['tile-adhesives'],
-    'tile edges & trims': ['tile-edges-trims'],
-    'tile bonds & key coats': ['tile-bonds-key-coats'],
-    'tile grout': ['tile-grout'],
-    'tile cleaners': ['tile-cleaners'],
-    'tile spacers & tools': ['tile-spacers-tools']
+const staticTileCollectionRules = {
+    'all': () => true,
+    'our current tile range': () => true,
+    'ceramic tiles': p => /ceramic\s+tile/i.test(p.name),
+    'porcelain tiles': p => /porcelain/i.test(p.name),
+    'mosaic tiles': p => /mosaic/i.test(p.name),
+    'mosaics tiles': p => /mosaic/i.test(p.name),
+    'natural cladding': p => /cladding|stone/i.test(p.name),
+    'natural stone cladding': p => /cladding|stone/i.test(p.name),
+    'hardbody tiles': p => /hardbody/i.test(p.name),
+    'decor tiles': p => /decor/i.test(p.name),
+    'laminate flooring': p => /laminate/i.test(p.name),
+    'all floor tiles': p => /floor|porcelain|600x600|600x1200/i.test(p.name),
+    'all wall tiles': p => /wall|300x600/i.test(p.name),
+    'all indoor tiles': p => !/outdoor/i.test(p.name),
+    'all outdoor tiles': p => /outdoor|antislip|slip/i.test(p.name),
+    'subway tiles': p => /subway/i.test(p.name),
+    'large format tiles': p => /600x1200|800x1600|600x1800|1200x2400/i.test(p.name),
+    'cladding look tiles': p => /cladding|elevation/i.test(p.name),
+    'woodlook tiles': p => /wood|teak|timber/i.test(p.name),
+    'marble look tiles': p => /marble|onyx|staturio|calacatta|dolomiti/i.test(p.name),
+    'slip resistant tiles': p => /slip|antislip|outdoor/i.test(p.name),
+    'tile adhesives': p => /adhesive/i.test(p.name),
+    'tile edges & trims': p => /trim|edge/i.test(p.name),
+    'tile bonds & key coats': p => /bond|key coat/i.test(p.name),
+    'tile grout': p => /grout/i.test(p.name),
+    'tile cleaners': p => /cleaner/i.test(p.name),
+    'tile spacers & tools': p => /spacer|tool/i.test(p.name)
 };
 let pulseTileProducts = [];
-let pulseTileRequestToken = 0;
 let pulseTileInitialLoaded = false;
-let pulseCategoryIdBySlug = null;
 
 function escapePulseHtml(v){
     return String(v??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[m]||m));
 }
 
-async function pulseLoadCategoryMap(){
-    if(pulseCategoryIdBySlug) return pulseCategoryIdBySlug;
-    const map = new Map();
-    for(let page=1; page<=20; page++){
-        const url=PULSE_STORE_API+'/products/categories?per_page=100&page='+page+'&hide_empty=false';
-        const response=await fetch(url,{headers:{'Accept':'application/json'}});
-        if(!response.ok){
-            if(page>1 && (response.status===400 || response.status===404)) break;
-            throw new Error('Category request failed ('+response.status+')');
-        }
-        const rows=await response.json();
-        if(!Array.isArray(rows) || !rows.length) break;
-        rows.forEach(c=>{
-            if(c && c.slug && c.id!=null) map.set(String(c.slug).toLowerCase(), c.id);
-        });
-        if(rows.length<100) break;
-    }
-    pulseCategoryIdBySlug=map;
-    return map;
-}
-
-async function pulseFetchProductsForSlug(slug){
-    const categoryMap=await pulseLoadCategoryMap();
-    const categoryId=categoryMap.get(String(slug).toLowerCase());
-    if(categoryId==null) return [];
-    const all=[];
-    for(let page=1; page<=20; page++){
-        const url=PULSE_STORE_API+'/products?category='+encodeURIComponent(categoryId)+'&per_page=100&page='+page;
-        const response=await fetch(url,{headers:{'Accept':'application/json'}});
-        if(!response.ok){
-            if(page>1 && (response.status===400 || response.status===404)) break;
-            throw new Error('Catalogue request failed ('+response.status+')');
-        }
-        const rows=await response.json();
-        if(!Array.isArray(rows) || !rows.length) break;
-        all.push(...rows);
-        if(rows.length<100) break;
-    }
-    return all;
+function getStaticTileProducts(){
+    return [...document.querySelectorAll('#local-product-grid .product-card[data-tile-category="tiles"]')].map((card,index)=>({
+        id: index+1,
+        name: card.dataset.productName || card.querySelector('h3')?.textContent.trim() || 'Tile Product',
+        sku: card.dataset.productCode || card.querySelector('.product-code')?.textContent.replace(/^\s*Code:\s*/i,'').trim() || '—',
+        image: card.dataset.productImage || card.querySelector('img')?.getAttribute('src') || 'pictures/tiles and sanitary hero.jpeg'
+    }));
 }
 
 function renderPulseTiles(products, title){
@@ -1382,7 +1347,7 @@ function renderPulseTiles(products, title){
     grid.hidden=false;
     grid.innerHTML='';
     if(!products.length){
-        grid.innerHTML='<div class="pulse-tile-empty"><h3>No tiles found</h3><p>Please choose another tile collection.</p></div>';
+        grid.innerHTML='<div class="pulse-tile-empty"><h3>No products loaded in this collection yet</h3><p>The page itself is working normally. Products can be added here as local catalogue items.</p></div>';
         return;
     }
     products.forEach(product=>{
@@ -1393,15 +1358,13 @@ function renderPulseTiles(products, title){
         card.dataset.productName=product.name||'';
         card.dataset.productCode=product.sku||'—';
 
-        const image=(product.images&&product.images[0]&&(product.images[0].src||product.images[0].thumbnail)) || 'pictures/tiles and sanitary hero.jpeg';
         const imageWrap=document.createElement('div');
         imageWrap.className='pulse-simple-image-wrap';
         const img=document.createElement('img');
-        img.src=image;
+        img.src=product.image;
         img.alt=product.name||'Tile product';
         img.loading='lazy';
         img.decoding='async';
-        img.referrerPolicy='no-referrer';
         imageWrap.appendChild(img);
         card.appendChild(imageWrap);
 
@@ -1432,33 +1395,14 @@ function filterPulseRenderedProducts(){
     if(countEl) countEl.textContent=visible+' tile'+(visible===1?'':'s');
 }
 
-async function loadPulseTileCollection(collectionName='all'){
+function loadPulseTileCollection(collectionName='all'){
     const key=String(collectionName||'all').trim().toLowerCase();
-    const slugs=pulseTileCollections[key] || pulseTileCollections.all;
-    const token=++pulseTileRequestToken;
-    const grid=document.getElementById('pulse-tile-grid');
-    const status=document.getElementById('pulse-tile-status');
-    const toolbar=document.getElementById('pulse-tile-toolbar');
-    if(grid){ grid.hidden=false; grid.innerHTML=''; }
-    if(toolbar) toolbar.hidden=true;
-    if(status){ status.hidden=false; status.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Loading '+escapePulseHtml(collectionName==='all'?'all tiles':collectionName)+'…'; }
-    try{
-        const groups=await Promise.all(slugs.map(pulseFetchProductsForSlug));
-        if(token!==pulseTileRequestToken) return;
-        const map=new Map();
-        groups.flat().forEach(p=>{ if(p && p.id!=null) map.set(p.id,p); });
-        const products=[...map.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||''));
-        pulseTileInitialLoaded=true;
-        renderPulseTiles(products, collectionName==='all'||key==='our current tile range'?'All Tiles':collectionName);
-    }catch(err){
-        if(token!==pulseTileRequestToken) return;
-        if(status){
-            status.hidden=false;
-            status.innerHTML='<strong>Tile catalogue could not load.</strong><br>Please refresh the page or try again. <button type="button" class="pulse-retry-btn" onclick="loadPulseTileCollection(\''+escapePulseHtml(collectionName).replace(/'/g,'&#39;')+'\')">Retry</button>';
-        }
-        if(grid) grid.hidden=true;
-        if(toolbar) toolbar.hidden=true;
-    }
+    const rule=staticTileCollectionRules[key] || staticTileCollectionRules.all;
+    const products=getStaticTileProducts().filter(rule);
+    pulseTileInitialLoaded=true;
+    renderPulseTiles(products, key==='all'||key==='our current tile range'?'All Tiles':collectionName);
+    const search=document.getElementById('pulse-tile-search');
+    if(search) search.value='';
 }
 
 function filterTileCategory(category, button) {
@@ -1508,7 +1452,7 @@ function browseTileCollection(collectionName) {
         const title=intro.querySelector('h2');
         if(title) title.textContent=collectionName==='our current tile range'?'All Tiles':'Shop '+collectionName;
         const text = intro.querySelector('p');
-        if (text) text.textContent = 'Browse tile pictures, product names and product codes.';
+        if (text) text.textContent = 'Browse tile pictures, product names and product codes — stored directly in the website.';
     }
     loadPulseTileCollection(collectionName);
     const anchor = document.getElementById('tile-products-anchor');
