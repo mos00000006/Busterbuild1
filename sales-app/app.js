@@ -1,4 +1,4 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-pdf1';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-publicqr1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
@@ -28,6 +28,10 @@ let quoteHistory = loadQuoteHistory();
 let currentQuoteNumber = '';
 let currentQuoteSavedId = '';
 
+const routeParams = new URLSearchParams(window.location.search);
+const publicProductCode = (routeParams.get('product') || routeParams.get('code') || '').trim();
+const publicProductMode = Boolean(publicProductCode);
+
 function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2300); }
 function showLogin(){
   $('login-screen').hidden=false;
@@ -47,7 +51,7 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-pdf1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-publicqr1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -58,6 +62,24 @@ $('install-btn').addEventListener('click', async()=>{
   const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
   toast(isiOS?'On iPhone: Share → Add to Home Screen':'Use your browser menu → Install app / Add to Home Screen');
 });
+
+async function startPublicProductMode(){
+  document.documentElement.classList.add('public-product-route');
+  $('login-screen').hidden=true;
+  $('app-shell').hidden=true;
+  $('account-menu').hidden=true;
+  try{
+    await loadCatalogue();
+  }catch(err){
+    showPublicProductError('Product information could not be loaded. Please ask a BusterBuild salesperson for assistance.');
+  }
+}
+function showPublicProductError(message){
+  const box=$('public-product-loading');
+  if(!box)return;
+  document.documentElement.classList.remove('public-product-loaded');
+  box.innerHTML=`<div class="public-loading-card"><img src="icons/icon-192.png" alt="BusterBuild"><strong>Product not found</strong><span>${esc(message)}</span></div>`;
+}
 
 async function initAuth(){
   $('firebase-setup').hidden=cfgReady;
@@ -117,7 +139,7 @@ function authMessage(err){
   if(c.includes('configuration-not-found')) return `Firebase Authentication configuration was not found for this project. (${c})`;
   return `Firebase sign-in error: ${c}${m ? ' — '+m.replace(/^Firebase:\s*/,'') : ''}`;
 }
-initAuth();
+if(publicProductMode) startPublicProductMode(); else initAuth();
 
 $('account-btn').addEventListener('click',()=>{$('account-menu').hidden=!$('account-menu').hidden;});
 document.addEventListener('click',e=>{if(!$('account-menu').hidden && !e.target.closest('#account-menu') && !e.target.closest('#account-btn'))$('account-menu').hidden=true;});
@@ -248,21 +270,59 @@ $('product-search').addEventListener('input',render);
 qsa('.filter-chip').forEach(b=>b.addEventListener('click',()=>{qsa('.filter-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');currentFilter=b.dataset.filter;render();}));
 
 function openProduct(p){
-  selectedProduct=p; $('product-type').textContent=typeLabel(p._type); $('product-title').textContent=p._name; $('product-code').textContent='Code: '+(p._code||'—'); $('product-image').src=p._image; $('product-image').alt=p._name;
+  selectedProduct=p;
+  $('product-type').textContent=typeLabel(p._type);
+  $('product-title').textContent=p._name;
+  $('product-code').textContent='Code: '+(p._code||'—');
+  $('product-image').src=p._image;
+  $('product-image').alt=p._name;
   $('product-price').innerHTML=money(p._price)+(isPerSqm(p)?'<small>per m²</small>':'');
   $('product-description').textContent=p._description||defaultDescription(p._type);
   renderSpecs(p);
-  const measure=$('smart-measure'); measure.hidden=!(p._type==='tile'&&p._sqm>0);
-  $('room-length').value='';$('room-width').value=''; resetMeasure();
+
+  const measure=$('smart-measure');
+  measure.hidden=!(p._type==='tile'&&p._sqm>0);
+  $('room-length').value='';
+  $('room-width').value='';
+  resetMeasure();
   $('box-note').textContent=p._sqm?`${p._tilesPerBox?formatNumber(p._tilesPerBox)+' tiles per box • ':''}${formatNumber(p._sqm)} m² per box. Calculator rounds up to full boxes.`:'';
-  const tileSqmQty=(p._type==='tile'&&isPerSqm(p)); $('qty-label').textContent=tileSqmQty?'Quantity (m²)':'Quantity'; $('product-qty').min=tileSqmQty?'0.01':'1'; $('product-qty').step=tileSqmQty?'0.01':'1'; $('product-qty').value=1;
-  $('add-cart').disabled=!p._price; $('add-cart').innerHTML=p._price?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>':'<span>Price unavailable</span>';
-  $('product-modal').classList.add('open'); $('product-modal').setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+
+  const buyPanel=qs('.buy-panel');
+  const useQtyButton=$('use-boxes');
+  const closeButton=qs('.sheet-close');
+
+  if(publicProductMode){
+    // Customer QR view: product information + Smart Measure only.
+    if(buyPanel) buyPanel.hidden=true;
+    if(useQtyButton) useQtyButton.hidden=true;
+    if(closeButton) closeButton.hidden=true;
+    document.documentElement.classList.add('public-product-loaded');
+  }else{
+    if(buyPanel) buyPanel.hidden=false;
+    if(useQtyButton) useQtyButton.hidden=false;
+    if(closeButton) closeButton.hidden=false;
+    const tileSqmQty=(p._type==='tile'&&isPerSqm(p));
+    $('qty-label').textContent=tileSqmQty?'Quantity (m²)':'Quantity';
+    $('product-qty').min=tileSqmQty?'0.01':'1';
+    $('product-qty').step=tileSqmQty?'0.01':'1';
+    $('product-qty').value=1;
+    $('add-cart').disabled=!p._price;
+    $('add-cart').innerHTML=p._price?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>':'<span>Price unavailable</span>';
+  }
+
+  $('product-modal').classList.add('open');
+  $('product-modal').setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
 }
-function closeProduct(){ $('product-modal').classList.remove('open'); $('product-modal').setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+function closeProduct(){
+  if(publicProductMode)return;
+  $('product-modal').classList.remove('open');
+  $('product-modal').setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+}
 qsa('[data-close-product]').forEach(b=>b.addEventListener('click',closeProduct));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProduct();});
-function defaultDescription(type){return type==='combo'?'Complete BusterBuild combo deal. Review the included items before adding the package to the customer cart.':type==='sanitary'?'BusterBuild sanitary ware product for bathroom installations and upgrades.':'BusterBuild tile product. Use Smart Measure to calculate the customer’s required boxes.';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!publicProductMode)closeProduct();});
+function defaultDescription(type){return type==='combo'?'Complete BusterBuild combo deal. Review the included items and product specifications below.':type==='sanitary'?'BusterBuild sanitary ware product for bathroom installations and upgrades.':'BusterBuild tile product. Use Smart Measure to calculate the required area and recommended boxes.';}
 function renderSpecs(p){
   const specs=[...p._attrs];
   if(p._sqm&&!specs.some(a=>/square/i.test(a.name)))specs.push({name:'Square metres per box',value:formatNumber(p._sqm)+' m²'});
@@ -511,6 +571,21 @@ function findScanned(raw){
   if(!p){$('scan-result').hidden=false;$('scan-result').innerHTML='<strong>Product not found</strong><br><small>Scanned: '+esc(extractCode(raw))+'</small>';toast('Product code not found');return;}
   $('scan-result').hidden=false;$('scan-result').innerHTML='<strong><i class="fa-solid fa-circle-check" style="color:#16984f"></i> '+esc(p._name)+'</strong><br><small>Code: '+esc(p._code||'—')+'</small>'; openProduct(p);
 }
-function handleProductQuery(){ const params=new URLSearchParams(location.search); const code=params.get('product')||params.get('code'); if(code){ const p=products.find(x=>x._code.toLowerCase()===code.toLowerCase()||String(x.id||'').toLowerCase()===code.toLowerCase()); if(p)openProduct(p); } }
+function handleProductQuery(){
+  const params=new URLSearchParams(location.search);
+  const code=(params.get('product')||params.get('code')||'').trim();
+  if(!code)return;
+  const wanted=code.toLowerCase();
+  const p=products.find(x=>
+    String(x._code||'').toLowerCase()===wanted ||
+    String(x.id||'').toLowerCase()===wanted ||
+    String(x._name||'').toLowerCase()===wanted
+  );
+  if(p){
+    openProduct(p);
+  }else if(publicProductMode){
+    showPublicProductError(`We could not find product ${code}. Please ask a BusterBuild salesperson for assistance.`);
+  }
+}
 
 updateCartUI();

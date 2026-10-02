@@ -1,11 +1,9 @@
-const CACHE = 'busterbuild-sales-20261002-logo1';
+const CACHE = 'busterbuild-sales-20261002-publicqr1';
 const STATIC_SHELL = [
   './styles.css',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './favicon.png',
-  './apple-touch-icon.png',
   './data/sanitary-products.json'
 ];
 
