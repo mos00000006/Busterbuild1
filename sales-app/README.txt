@@ -1,30 +1,31 @@
-BusterBuild Sales App — Mobile Zoom Fix
+BusterBuild Sales App — Auto PDF Download for Mobile
 
-Replace ONLY these four files in:
+Replace these four files in:
 Busterbuild1/sales-app/
 
-1. index.html
-2. app.js
-3. styles.css
-4. sw.js
+- index.html
+- app.js
+- styles.css
+- sw.js
 
 Do NOT replace:
 - firebase-config.js
+- catalogue JSON files
 - manifest.webmanifest
 - icons
-- catalogue JSON files
 
-What this update fixes:
-- iPhone/iOS form-field auto zoom when typing.
-- The screen staying zoomed after entering customer details.
-- Horizontal page expansion caused by the wide quotation preview.
-- Quotation preview now remains inside its own horizontal scroll area.
-- Long customer emails/product names no longer force the whole app wider.
-- Preserves the customer QR product-only view from the previous update.
-- Preserves staff login, catalogue, scanner, cart, quotations, PDF, WhatsApp and email features.
+New behaviour:
+- On iPhone / iPad / Android, tapping SAVE QUOTATION now:
+  1. saves the quotation in the app,
+  2. automatically creates the branded PDF,
+  3. automatically starts the PDF download.
+- Desktop Save Quotation behaviour remains unchanged.
+- WhatsApp and Email continue to download the PDF before opening the customer message.
+- Download PDF and Share PDF buttons still work.
+- Mobile zoom fix and customer QR product-only view are preserved.
 
-Permanent Sales App URL remains:
+Permanent URL remains:
 https://mos00000006.github.io/Busterbuild1/sales-app/
 
-After pushing the files to GitHub, wait for Pages to deploy and reload the same URL.
-On an installed iPhone PWA, fully close and reopen the app once after the update.
+Important:
+Mobile browsers control the final download destination. On iPhone/iPad the PDF normally appears in Downloads / Files. If iOS blocks an automatic download, the existing Download PDF button remains available as fallback.

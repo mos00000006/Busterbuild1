@@ -51,7 +51,7 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-mobilezoom1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-autopdf1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -408,7 +408,47 @@ function validateQuote(){
 $('create-quote').onclick=startQuote;
 $('refresh-quote-preview').onclick=renderQuotePreview;
 ['quote-customer-name','quote-customer-phone','quote-customer-email','quote-project','quote-notes'].forEach(id=>$(id).addEventListener('input',renderQuotePreview));
-$('quote-form').addEventListener('submit',e=>{e.preventDefault();if(!validateQuote())return;renderQuotePreview();const record=quoteRecord();const existing=quoteHistory.findIndex(q=>q.id===record.id);if(existing>=0)quoteHistory[existing]=record;else quoteHistory.unshift(record);currentQuoteSavedId=record.id;saveQuoteHistory();renderQuoteHistory();const s=$('quote-form-status');s.textContent='Quotation saved on this device.';s.className='admin-status success';toast('Quotation saved');});
+$('quote-form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(!validateQuote())return;
+  renderQuotePreview();
+  const record=quoteRecord();
+  const existing=quoteHistory.findIndex(q=>q.id===record.id);
+  if(existing>=0)quoteHistory[existing]=record;
+  else quoteHistory.unshift(record);
+  currentQuoteSavedId=record.id;
+  saveQuoteHistory();
+  renderQuoteHistory();
+
+  const s=$('quote-form-status');
+  s.textContent='Quotation saved on this device.';
+  s.className='admin-status success';
+
+  if(isMobileDevice()){
+    const submitBtn=qs('#quote-form button[type="submit"]');
+    const oldHtml=submitBtn?.innerHTML||'';
+    if(submitBtn){
+      submitBtn.disabled=true;
+      submitBtn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i><span>Saving PDF…</span>';
+    }
+    try{
+      const f=await getQuotePdfFile();
+      downloadBlob(f,f.name);
+      s.textContent='Quotation saved. PDF downloaded to this device.';
+      toast('Quotation saved + PDF downloaded');
+    }catch(err){
+      s.textContent='Quotation saved. PDF could not auto-download — use Download PDF below.';
+      toast('Quotation saved — tap Download PDF if needed');
+    }finally{
+      if(submitBtn){
+        submitBtn.disabled=false;
+        submitBtn.innerHTML=oldHtml;
+      }
+    }
+  }else{
+    toast('Quotation saved');
+  }
+});
 function normaliseWhatsApp(v){let d=String(v||'').replace(/\D/g,'');if(d.startsWith('00'))d=d.slice(2);if(d.startsWith('0'))d='27'+d.slice(1);return d;}
 function quoteText(){const c=currentCustomer();return `Hi ${c.name||'there'},\n\nPlease find your BusterBuild product estimate.\nEstimated total: ${money(quoteGrandTotal())}.\n\nPrices are subject to stock availability and final confirmation. Your official quotation/payment document will be completed on the BusterBuild sales system once you confirm.\n\nThank you for choosing BusterBuild.`;}
 
@@ -468,6 +508,11 @@ async function createQuoteCanvas(){
 }
 async function quoteBlob(){const canvas=await createQuoteCanvas();return await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(new Error('Could not create quotation image')),'image/png',1));}
 function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);}
+function isMobileDevice(){
+  const ua=navigator.userAgent||'';
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(ua) ||
+    (navigator.maxTouchPoints>1 && /Macintosh/i.test(ua));
+}
 function quotePdfFileName(){const c=currentCustomer();const base=(c.name||'Customer').replace(/[^a-z0-9]+/gi,'-').replace(/^-+|-+$/g,'')||'Customer';return `BusterBuild-Product-Estimate-${base}.pdf`;}
 async function getQuotePdfFile(){
   if(!validateQuote())throw new Error('Complete customer details');
