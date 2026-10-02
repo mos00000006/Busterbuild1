@@ -255,7 +255,7 @@ function openProduct(p){
   const measure=$('smart-measure'); measure.hidden=!(p._type==='tile'&&p._sqm>0);
   $('room-length').value='';$('room-width').value=''; resetMeasure();
   $('box-note').textContent=p._sqm?`${p._tilesPerBox?formatNumber(p._tilesPerBox)+' tiles per box • ':''}${formatNumber(p._sqm)} m² per box. Calculator rounds up to full boxes.`:'';
-  $('qty-label').textContent=(p._type==='tile'&&p._sqm>0)?'Boxes':'Quantity'; $('product-qty').value=1;
+  const tileSqmQty=(p._type==='tile'&&isPerSqm(p)); $('qty-label').textContent=tileSqmQty?'Quantity (m²)':'Quantity'; $('product-qty').min=tileSqmQty?'0.01':'1'; $('product-qty').step=tileSqmQty?'0.01':'1'; $('product-qty').value=1;
   $('add-cart').disabled=!p._price; $('add-cart').innerHTML=p._price?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>':'<span>Price unavailable</span>';
   $('product-modal').classList.add('open'); $('product-modal').setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
 }
@@ -271,17 +271,17 @@ function renderSpecs(p){
 }
 function formatNumber(n){return Number(n||0).toLocaleString('en-ZA',{maximumFractionDigits:2});}
 
-$('qty-minus').onclick=()=>{$('product-qty').value=Math.max(1,(Number($('product-qty').value)||1)-1);};
-$('qty-plus').onclick=()=>{$('product-qty').value=(Number($('product-qty').value)||1)+1;};
-$('add-cart').onclick=()=>{ if(!selectedProduct)return; addToCart(selectedProduct,Math.max(1,Number($('product-qty').value)||1)); closeProduct(); };
+$('qty-minus').onclick=()=>{const tile=selectedProduct&&isPerSqm(selectedProduct);const step=tile?1:1;const min=tile?0.01:1;const cur=Number($('product-qty').value)||min;$('product-qty').value=Math.max(min,cur-step).toFixed(tile?2:0);};
+$('qty-plus').onclick=()=>{const tile=selectedProduct&&isPerSqm(selectedProduct);const step=1;const cur=Number($('product-qty').value)||(tile?0:1);$('product-qty').value=(cur+step).toFixed(tile?2:0);};
+$('add-cart').onclick=()=>{ if(!selectedProduct)return; const tile=isPerSqm(selectedProduct); const qty=Math.max(tile?0.01:1,Number($('product-qty').value)||(tile?1:1)); addToCart(selectedProduct,qty); closeProduct(); };
 ['room-length','room-width'].forEach(id=>$(id).addEventListener('input',calculateMeasure));
-$('use-boxes').onclick=()=>{const boxes=Number($('boxes-order').textContent)||0;if(boxes){$('product-qty').value=boxes;toast(boxes+' boxes set as quantity');}};
+$('use-boxes').onclick=()=>{const area=parseFloat($('required-area').textContent)||0;const boxes=Number($('boxes-order').textContent)||0;if(area){$('product-qty').value=area.toFixed(2);toast(area.toFixed(2)+' m² set as quantity'+(boxes?' • '+boxes+' boxes recommended':''));}};
 function resetMeasure(){ $('required-area').textContent='0.00 m²';$('boxes-order').textContent='0';$('covered-area').textContent='0.00 m²';$('measure-total').textContent='R0,00'; }
 function calculateMeasure(){
   if(!selectedProduct||!selectedProduct._sqm)return resetMeasure();
   const l=Number($('room-length').value)||0,w=Number($('room-width').value)||0,area=l*w;
   const boxes=area>0?Math.ceil(area/selectedProduct._sqm):0,cover=boxes*selectedProduct._sqm;
-  const total=isPerSqm(selectedProduct)?cover*selectedProduct._price:boxes*selectedProduct._price;
+  const total=isPerSqm(selectedProduct)?area*selectedProduct._price:boxes*selectedProduct._price;
   $('required-area').textContent=area.toFixed(2)+' m²';$('boxes-order').textContent=boxes;$('covered-area').textContent=cover.toFixed(2)+' m²';$('measure-total').textContent=money(total);
 }
 
@@ -291,11 +291,11 @@ function saveCart(){localStorage.setItem('busterbuildSalesCart',JSON.stringify(c
 function addToCart(p,qty){
   const key=cartKey(p), existing=cart.find(x=>x.key===key); if(existing)existing.qty+=qty; else cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p)}); saveCart(); toast(`${p._name} added to cart`);
 }
-function lineTotal(i){return i.perSqm&&i.sqm?i.price*i.sqm*i.qty:i.price*i.qty;}
+function lineTotal(i){return i.price*i.qty;}
 function updateCartUI(){
-  const count=cart.reduce((s,i)=>s+i.qty,0); $('bottom-cart-count').textContent=count; $('cart-stat').textContent=count;
+  const count=cart.length; $('bottom-cart-count').textContent=count; $('cart-stat').textContent=count;
   const list=$('cart-list'); list.innerHTML=''; $('cart-empty').style.display=cart.length?'none':'grid'; $('cart-summary').hidden=!cart.length;
-  let total=0; cart.forEach((item,idx)=>{ total+=lineTotal(item); const row=document.createElement('div'); row.className='cart-row'; row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${esc(item.code||'')} • ${item.type==='tile'&&item.sqm?'Boxes':'Qty'}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong><div class="mini-qty"><button data-minus type="button">−</button><span>${item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div></div>`; qs('[data-minus]',row).onclick=()=>{item.qty=Math.max(1,item.qty-1);saveCart();}; qs('[data-plus]',row).onclick=()=>{item.qty++;saveCart();}; qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();}; list.appendChild(row); });
+  let total=0; cart.forEach((item,idx)=>{ total+=lineTotal(item); const row=document.createElement('div'); row.className='cart-row'; row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${esc(item.code||'')} • ${item.perSqm?'m²':'Qty'}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong><div class="mini-qty"><button data-minus type="button">−</button><span>${item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div></div>`; qs('[data-minus]',row).onclick=()=>{item.qty=Math.max(1,item.qty-1);saveCart();}; qs('[data-plus]',row).onclick=()=>{item.qty++;saveCart();}; qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();}; list.appendChild(row); });
   $('cart-items-total').textContent=count; $('cart-money-total').textContent=money(total);
 }
 
@@ -315,7 +315,7 @@ function currentCustomer(){return {
   notes:$('quote-notes').value.trim()
 };}
 function unitLabel(item){if(item.type==='tile'&&item.sqm&&item.perSqm)return `${money(item.price)}/m²`;return money(item.price);}
-function qtyLabel(item){return item.type==='tile'&&item.sqm?`${item.qty} box${item.qty===1?'':'es'}`:String(item.qty);}
+function qtyLabel(item){return item.perSqm?`${formatNumber(item.qty)} m²`:String(item.qty);}
 function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuoteNumber=quoteNumber();return currentQuoteNumber;}
 function renderQuotePreview(){
   ensureQuoteNumber();
