@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-v7-20261001-1700';
+const CACHE = 'busterbuild-sales-20261002-quote1';
 const STATIC_SHELL = [
   './styles.css',
   './manifest.webmanifest',
@@ -49,7 +49,8 @@ self.addEventListener('fetch', event => {
     path.endsWith('/sales-app/index.html') ||
     path.endsWith('/sales-app/app.js') ||
     path.endsWith('/sales-app/firebase-config.js') ||
-    path.endsWith('/sales-app/sw.js')
+    path.endsWith('/sales-app/sw.js') ||
+    path.endsWith('/sales-app/styles.css')
   ) {
     event.respondWith(networkFirst(request));
     return;

@@ -1,4 +1,4 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261001-1700';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-quote1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
@@ -24,6 +24,9 @@ let scannerRunning = false;
 let installPrompt = null;
 let toastTimer = null;
 let cart = loadCart();
+let quoteHistory = loadQuoteHistory();
+let currentQuoteNumber = '';
+let currentQuoteSavedId = '';
 
 function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2300); }
 function showLogin(){
@@ -38,12 +41,13 @@ function showApp(){
   $('app-shell').hidden=false;
   $('account-menu').hidden=true;
   updateCartUI();
+renderQuoteHistory();
   loadCatalogue();
 }
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261001-1700',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-quote1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -78,6 +82,7 @@ async function initAuth(){
       const display=currentAccess.name||user.displayName||user.email?.split('@')[0]||'Sales';
       $('account-name').textContent=display.replace(/[._-]+/g,' ');
       $('account-email').textContent=user.email||''; $('menu-email').textContent=user.email||'';
+      if($('quote-salesperson-preview')) $('quote-salesperson-preview').textContent=$('account-name').textContent;
       const admin=currentAccess.role==='admin';
       $('manage-sales-btn').hidden=!admin;
       $('menu-role').textContent=admin?'Sales App Administrator':'Tiles & Sanitary Ware Sales';
@@ -293,11 +298,87 @@ function updateCartUI(){
   let total=0; cart.forEach((item,idx)=>{ total+=lineTotal(item); const row=document.createElement('div'); row.className='cart-row'; row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${esc(item.code||'')} • ${item.type==='tile'&&item.sqm?'Boxes':'Qty'}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong><div class="mini-qty"><button data-minus type="button">−</button><span>${item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div></div>`; qs('[data-minus]',row).onclick=()=>{item.qty=Math.max(1,item.qty-1);saveCart();}; qs('[data-plus]',row).onclick=()=>{item.qty++;saveCart();}; qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();}; list.appendChild(row); });
   $('cart-items-total').textContent=count; $('cart-money-total').textContent=money(total);
 }
+
+function loadQuoteHistory(){try{return JSON.parse(localStorage.getItem('busterbuildQuoteHistory')||'[]')}catch{return[]}}
+function saveQuoteHistory(){localStorage.setItem('busterbuildQuoteHistory',JSON.stringify(quoteHistory.slice(0,60)));}
+function quoteNumber(){
+  const d=new Date(),pad=n=>String(n).padStart(2,'0');
+  return `BBQ-${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+}
+function quoteDate(){return new Date().toLocaleDateString('en-ZA',{day:'2-digit',month:'short',year:'numeric'});}
+function quoteGrandTotal(){return cart.reduce((sum,item)=>sum+lineTotal(item),0);}
+function currentCustomer(){return {
+  name:$('quote-customer-name').value.trim(),
+  phone:$('quote-customer-phone').value.trim(),
+  email:$('quote-customer-email').value.trim(),
+  project:$('quote-project').value.trim(),
+  notes:$('quote-notes').value.trim()
+};}
+function unitLabel(item){if(item.type==='tile'&&item.sqm&&item.perSqm)return `${money(item.price)}/m²`;return money(item.price);}
+function qtyLabel(item){return item.type==='tile'&&item.sqm?`${item.qty} box${item.qty===1?'':'es'}`:String(item.qty);}
+function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuoteNumber=quoteNumber();return currentQuoteNumber;}
+function renderQuotePreview(){
+  ensureQuoteNumber();
+  const c=currentCustomer(), total=quoteGrandTotal();
+  $('quote-number-preview').textContent=currentQuoteNumber;
+  $('quote-date-preview').textContent=quoteDate();
+  $('quote-name-preview').textContent=c.name||'Customer name';
+  $('quote-contact-preview').textContent=c.phone?`WhatsApp: ${c.phone}`:'WhatsApp number';
+  $('quote-email-preview').textContent=c.email||'';
+  $('quote-project-preview').textContent=c.project?`Project: ${c.project}`:'';
+  $('quote-salesperson-preview').textContent=$('account-name')?.textContent||'BusterBuild Sales';
+  $('quote-total-preview').textContent=money(total);$('quote-preview-total').textContent=money(total);
+  $('quote-items-preview').innerHTML=cart.map(item=>`<tr><td><strong>${esc(item.name)}</strong><small>${item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m²/box`:typeLabel(item.type)}</small></td><td>${esc(item.code||'—')}</td><td>${esc(qtyLabel(item))}</td><td>${esc(unitLabel(item))}</td><td><strong>${money(lineTotal(item))}</strong></td></tr>`).join('')||'<tr><td colspan="5" class="quote-empty-line">No products added yet.</td></tr>';
+  $('quote-note-preview').hidden=!c.notes;$('quote-note-preview').textContent=c.notes?`Notes: ${c.notes}`:'';
+}
+function startQuote(){
+  if(!cart.length){toast('Add products to the cart first');showView('catalogue');return;}
+  currentQuoteSavedId='';ensureQuoteNumber(true);renderQuotePreview();showView('quote');
+}
+function quoteRecord(){
+  const c=currentCustomer();
+  return {id:currentQuoteSavedId||currentQuoteNumber,number:currentQuoteNumber,date:new Date().toISOString(),customer:c,salesperson:$('account-name')?.textContent||'BusterBuild Sales',salesEmail:auth?.currentUser?.email||'',items:cart.map(x=>({...x})),total:quoteGrandTotal()};
+}
+function validateQuote(){
+  const c=currentCustomer(),status=$('quote-form-status');status.textContent='';status.className='admin-status';
+  if(!cart.length){status.textContent='Add at least one product to the cart.';status.classList.add('error');return false;}
+  if(!c.name||!c.phone){status.textContent='Customer name and WhatsApp number are required.';status.classList.add('error');return false;}
+  return true;
+}
+$('create-quote').onclick=startQuote;
+$('refresh-quote-preview').onclick=renderQuotePreview;
+['quote-customer-name','quote-customer-phone','quote-customer-email','quote-project','quote-notes'].forEach(id=>$(id).addEventListener('input',renderQuotePreview));
+$('quote-form').addEventListener('submit',e=>{e.preventDefault();if(!validateQuote())return;renderQuotePreview();const record=quoteRecord();const existing=quoteHistory.findIndex(q=>q.id===record.id);if(existing>=0)quoteHistory[existing]=record;else quoteHistory.unshift(record);currentQuoteSavedId=record.id;saveQuoteHistory();renderQuoteHistory();const s=$('quote-form-status');s.textContent='Quotation saved on this device.';s.className='admin-status success';toast('Quotation saved');});
+function normaliseWhatsApp(v){let d=String(v||'').replace(/\D/g,'');if(d.startsWith('00'))d=d.slice(2);if(d.startsWith('0'))d='27'+d.slice(1);return d;}
+function quoteText(){const c=currentCustomer();return `Hi ${c.name||'there'},\n\nPlease find your BusterBuild quotation ${currentQuoteNumber}.\nQuoted total: ${money(quoteGrandTotal())}.\n\nPrices are subject to stock availability and final confirmation.\n\nThank you for choosing BusterBuild.`;}
+async function quoteBlob(){
+  renderQuotePreview();
+  if(!window.html2canvas)throw new Error('Quotation image tool did not load');
+  if(document.fonts?.ready)await document.fonts.ready;
+  const canvas=await html2canvas($('quote-paper'),{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false,scrollX:0,scrollY:-window.scrollY});
+  return await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(new Error('Could not create image')),'image/png',1));
+}
+function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1200);}
+async function getQuoteFile(){if(!validateQuote())throw new Error('Complete customer details');const blob=await quoteBlob();return new File([blob],`${currentQuoteNumber}.png`,{type:'image/png'});}
+$('download-quote-image').onclick=async()=>{try{const f=await getQuoteFile();downloadBlob(f,f.name);toast('Quotation image downloaded');}catch(e){toast(e.message||'Could not create quotation image');}};
+$('share-quote-image').onclick=async()=>{try{const f=await getQuoteFile();if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[f]}))){await navigator.share({title:`BusterBuild ${currentQuoteNumber}`,text:quoteText(),files:[f]});}else{downloadBlob(f,f.name);toast('Image downloaded — share it from your phone');}}catch(e){if(e?.name!=='AbortError')toast(e.message||'Could not share quotation');}};
+$('whatsapp-quote').onclick=async()=>{if(!validateQuote())return;const phone=normaliseWhatsApp(currentCustomer().phone);if(!phone){toast('Enter the customer WhatsApp number');return;}try{const f=await getQuoteFile();if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[f]}))){await navigator.share({title:`BusterBuild ${currentQuoteNumber}`,text:quoteText(),files:[f]});return;}downloadBlob(f,f.name);window.open(`https://wa.me/${phone}?text=${encodeURIComponent(quoteText())}`,'_blank');toast('Quote image downloaded — attach it in WhatsApp');}catch(e){if(e?.name!=='AbortError')toast(e.message||'Could not prepare WhatsApp quote');}};
+$('email-quote').onclick=async()=>{if(!validateQuote())return;const c=currentCustomer();if(!c.email){toast('Enter the customer email address');return;}try{const f=await getQuoteFile();downloadBlob(f,f.name);location.href=`mailto:${encodeURIComponent(c.email)}?subject=${encodeURIComponent('BusterBuild Quotation '+currentQuoteNumber)}&body=${encodeURIComponent(quoteText()+'\n\nThe quotation image has been downloaded for attachment.')}`;toast('Quote image downloaded — attach it to the email');}catch(e){toast(e.message||'Could not prepare email');}};
+function renderQuoteHistory(){
+  const list=$('quotes-history-list');if(!list)return;
+  if(!quoteHistory.length){list.innerHTML='<div class="empty-card"><i class="fa-solid fa-file-circle-plus"></i><strong>No saved quotations yet</strong><span>Create a quotation from the sales cart.</span></div>';return;}
+  list.innerHTML='';quoteHistory.forEach((q,idx)=>{const c=q.customer||{},el=document.createElement('article');el.className='quote-history-card';el.innerHTML=`<div class="quote-history-icon"><i class="fa-solid fa-file-lines"></i></div><div class="quote-history-copy"><small>${esc(q.number||'QUOTATION')}</small><strong>${esc(c.name||'Customer')}</strong><span>${new Date(q.date).toLocaleDateString('en-ZA')} • ${esc(c.phone||'No WhatsApp')}</span></div><div class="quote-history-money"><strong>${money(q.total||0)}</strong><div><button data-open type="button" title="Open quotation"><i class="fa-solid fa-eye"></i></button><button data-delete type="button" title="Delete quotation"><i class="fa-solid fa-trash"></i></button></div></div>`;
+    qs('[data-open]',el).onclick=()=>openSavedQuote(idx);qs('[data-delete]',el).onclick=()=>{if(confirm('Delete this saved quotation?')){quoteHistory.splice(idx,1);saveQuoteHistory();renderQuoteHistory();}};list.appendChild(el);
+  });
+}
+function openSavedQuote(idx){const q=quoteHistory[idx];if(!q)return;cart=(q.items||[]).map(x=>({...x}));saveCart();currentQuoteNumber=q.number||quoteNumber();currentQuoteSavedId=q.id||currentQuoteNumber;const c=q.customer||{};$('quote-customer-name').value=c.name||'';$('quote-customer-phone').value=c.phone||'';$('quote-customer-email').value=c.email||'';$('quote-project').value=c.project||'';$('quote-notes').value=c.notes||'';renderQuotePreview();showView('quote');}
+$('new-quote-from-history').onclick=()=>{if(!cart.length){toast('Add products to the cart first');showView('catalogue');return;}currentQuoteSavedId='';ensureQuoteNumber(true);$('quote-form').reset();renderQuotePreview();showView('quote');};
+
 $('clear-cart').onclick=()=>{if(confirm('Clear the sales cart?')){cart=[];saveCart();}};
 
 function showView(name){
   qsa('.view').forEach(v=>v.classList.remove('active')); $(name+'-view').classList.add('active'); qsa('.nav-item').forEach(n=>n.classList.toggle('active',n.dataset.nav===name));
-  if(name==='cart')updateCartUI(); if(name!=='scan')stopScanner(); window.scrollTo({top:0,behavior:'smooth'});
+  if(name==='cart')updateCartUI(); if(name==='quote')renderQuotePreview(); if(name==='quotes')renderQuoteHistory(); if(name!=='scan')stopScanner(); window.scrollTo({top:0,behavior:'smooth'});
 }
 qsa('[data-nav]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.nav)));
 qsa('[data-open-scan]').forEach(b=>b.addEventListener('click',()=>showView('scan')));
