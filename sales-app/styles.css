@@ -59,3 +59,121 @@ html.public-product-route #product-modal .product-visual{min-height:480px}
     max-height:none;padding:20px 18px 34px
   }
 }
+
+
+/* =========================================================
+   MOBILE / iPHONE VIEWPORT STABILITY
+   Prevents Safari/PWA from auto-zooming when form fields focus
+   and keeps wide quotation content inside its own scroll area.
+   ========================================================= */
+html{
+  width:100%;
+  max-width:100%;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+main,.app-shell,.view,.quote-builder-grid,.quote-customer-card,
+.quote-preview-panel,.quote-scroll,.admin-grid,.admin-card{
+  min-width:0;
+  max-width:100%;
+}
+
+/* iOS Safari auto-zooms focused controls when their text is under 16px. */
+input,
+textarea,
+select{
+  font-size:16px!important;
+  line-height:1.35;
+}
+
+/* Keep taps stable without disabling normal pinch accessibility zoom. */
+button,
+a,
+input,
+textarea,
+select,
+.nav-item,
+.filter-chip{
+  touch-action:manipulation;
+}
+
+/* Wide PDF preview must scroll inside its panel, never widen the page. */
+.quote-preview-panel{
+  overflow:hidden;
+}
+.quote-scroll{
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+}
+.quote-paper{
+  max-width:none;
+  flex:0 0 auto;
+}
+
+/* Mobile forms should remain full-width and not trigger layout expansion. */
+.login-card input,
+.manual-scan input,
+.search-box input,
+.measure-inputs input,
+.quote-customer-card input,
+.quote-customer-card textarea,
+.admin-card input{
+  max-width:100%;
+  min-width:0;
+}
+
+/* Keep long text/emails/product names from forcing a wider viewport. */
+.quote-customer-card,
+.quote-preview-head,
+.quote-history-copy,
+.team-user-copy,
+.product-content,
+.cart-row,
+.section-heading,
+.brand-lockup,
+.account-copy{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+@media(max-width:900px){
+  .quote-builder-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+    width:100%;
+  }
+  .quote-customer-card,
+  .quote-preview-panel{
+    width:100%;
+  }
+}
+
+@media(max-width:520px){
+  .view{
+    width:100%;
+    padding-left:12px;
+    padding-right:12px;
+  }
+  .quote-scroll{
+    padding:8px;
+  }
+  .quote-customer-card input,
+  .quote-customer-card textarea,
+  .admin-card input,
+  .login-card input,
+  .manual-scan input,
+  .measure-inputs input,
+  .search-box input{
+    font-size:16px!important;
+  }
+}

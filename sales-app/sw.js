@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-20261002-publicqr1';
+const CACHE = 'busterbuild-sales-20261002-mobilezoom1';
 const STATIC_SHELL = [
   './styles.css',
   './manifest.webmanifest',

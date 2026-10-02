@@ -51,7 +51,7 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-publicqr1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-mobilezoom1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });

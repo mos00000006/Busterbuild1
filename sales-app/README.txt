@@ -1,21 +1,30 @@
-BusterBuild Customer QR View Update
+BusterBuild Sales App — Mobile Zoom Fix
 
-Replace ONLY these four files inside:
+Replace ONLY these four files in:
 Busterbuild1/sales-app/
 
-- index.html
-- app.js
-- styles.css
-- sw.js
+1. index.html
+2. app.js
+3. styles.css
+4. sw.js
 
-Do NOT replace firebase-config.js, your catalogue JSON files, manifest, or icons.
+Do NOT replace:
+- firebase-config.js
+- manifest.webmanifest
+- icons
+- catalogue JSON files
 
-Result:
-- Normal Sales App URL (no product query): staff still see the login and full sales app.
-- Price-tag QR URL with ?product=CODE: customers bypass login and see only:
-  product image/details/price + Smart Measure (where applicable).
-- Customer QR view has NO quantity controls, NO Add to Cart, NO cart, NO quotations, NO account access.
-- Existing QR codes continue to work; you do not need to remake them.
+What this update fixes:
+- iPhone/iOS form-field auto zoom when typing.
+- The screen staying zoomed after entering customer details.
+- Horizontal page expansion caused by the wide quotation preview.
+- Quotation preview now remains inside its own horizontal scroll area.
+- Long customer emails/product names no longer force the whole app wider.
+- Preserves the customer QR product-only view from the previous update.
+- Preserves staff login, catalogue, scanner, cart, quotations, PDF, WhatsApp and email features.
 
-Permanent staff app URL:
+Permanent Sales App URL remains:
 https://mos00000006.github.io/Busterbuild1/sales-app/
+
+After pushing the files to GitHub, wait for Pages to deploy and reload the same URL.
+On an installed iPhone PWA, fully close and reopen the app once after the update.
