@@ -128,12 +128,12 @@
           </form>
 
           <div class="quote-preview-panel">
-            <div class="quote-preview-head"><div><small>LIVE PREVIEW</small><strong>Your branded quotation image</strong></div><span id="quote-preview-total">R0,00</span></div>
+            <div class="quote-preview-head"><div><small>LIVE PREVIEW</small><strong>Your branded PDF product estimate</strong></div><span id="quote-preview-total">R0,00</span></div>
             <div class="quote-scroll">
               <article id="quote-paper" class="quote-paper">
                 <header class="quote-paper-header">
                   <div class="quote-brand"><img src="icons/icon-192.png" alt="BusterBuild"><div><strong>BUSTERBUILD</strong><span>TILES &amp; SANITARY WARE</span></div></div>
-                  <div class="quote-title-block"><span>QUOTATION</span><strong id="quote-number-preview">BBQ-</strong><small id="quote-date-preview"></small></div>
+                  <div class="quote-title-block"><span>PRODUCT ESTIMATE</span><strong id="quote-number-preview">PRODUCT ESTIMATE</strong><small id="quote-date-preview"></small></div>
                 </header>
                 <section class="quote-customer-band">
                   <div><small>QUOTED FOR</small><strong id="quote-name-preview">Customer name</strong><span id="quote-contact-preview">WhatsApp number</span><span id="quote-email-preview"></span></div>
@@ -151,12 +151,12 @@
               </article>
             </div>
             <div class="quote-share-actions">
-              <button id="download-quote-image" class="share-btn black" type="button"><i class="fa-solid fa-image"></i><span>Download Image</span></button>
-              <button id="share-quote-image" class="share-btn yellow" type="button"><i class="fa-solid fa-share-nodes"></i><span>Share Image</span></button>
+              <button id="download-quote-image" class="share-btn black" type="button"><i class="fa-solid fa-image"></i><span>Download PDF</span></button>
+              <button id="share-quote-image" class="share-btn yellow" type="button"><i class="fa-solid fa-share-nodes"></i><span>Share PDF</span></button>
               <button id="whatsapp-quote" class="share-btn whatsapp" type="button"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></button>
               <button id="email-quote" class="share-btn email" type="button"><i class="fa-solid fa-envelope"></i><span>Email</span></button>
             </div>
-            <p class="share-help">On a phone, <strong>Share Image</strong>, <strong>WhatsApp</strong> and <strong>Email</strong> create the quotation picture and open the secure device share sheet. On desktop, the image downloads and WhatsApp Web or your email app opens for you to attach it.</p>
+            <p class="share-help"><strong>Download PDF</strong> saves the product estimate as a PDF. <strong>Share PDF</strong> opens your phone share menu with the PDF attached. <strong>WhatsApp</strong> downloads the PDF and opens the exact customer WhatsApp chat. <strong>Email</strong> downloads the PDF and opens a message addressed to the customer email. Attach the downloaded PDF before sending.</p>
           </div>
         </div>
       </section>
@@ -237,6 +237,7 @@
   <div id="toast" class="toast" role="status"></div>
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-    <script type="module" src="app.js?v=20261002-direct1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="app.js?v=20261002-pdf1"></script>
 </body>
 </html>

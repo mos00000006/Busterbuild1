@@ -1,4 +1,4 @@
-import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-direct1';
+import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-pdf1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc, collection, getDocs, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
@@ -47,7 +47,7 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-direct1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-pdf1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -320,7 +320,7 @@ function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuo
 function renderQuotePreview(){
   ensureQuoteNumber();
   const c=currentCustomer(), total=quoteGrandTotal();
-  $('quote-number-preview').textContent=currentQuoteNumber;
+  $('quote-number-preview').textContent='PRODUCT ESTIMATE';
   $('quote-date-preview').textContent=quoteDate();
   $('quote-name-preview').textContent=c.name||'Customer name';
   $('quote-contact-preview').textContent=c.phone?`WhatsApp: ${c.phone}`:'WhatsApp number';
@@ -350,7 +350,7 @@ $('refresh-quote-preview').onclick=renderQuotePreview;
 ['quote-customer-name','quote-customer-phone','quote-customer-email','quote-project','quote-notes'].forEach(id=>$(id).addEventListener('input',renderQuotePreview));
 $('quote-form').addEventListener('submit',e=>{e.preventDefault();if(!validateQuote())return;renderQuotePreview();const record=quoteRecord();const existing=quoteHistory.findIndex(q=>q.id===record.id);if(existing>=0)quoteHistory[existing]=record;else quoteHistory.unshift(record);currentQuoteSavedId=record.id;saveQuoteHistory();renderQuoteHistory();const s=$('quote-form-status');s.textContent='Quotation saved on this device.';s.className='admin-status success';toast('Quotation saved');});
 function normaliseWhatsApp(v){let d=String(v||'').replace(/\D/g,'');if(d.startsWith('00'))d=d.slice(2);if(d.startsWith('0'))d='27'+d.slice(1);return d;}
-function quoteText(){const c=currentCustomer();return `Hi ${c.name||'there'},\n\nPlease find your BusterBuild quotation ${currentQuoteNumber}.\nQuoted total: ${money(quoteGrandTotal())}.\n\nPrices are subject to stock availability and final confirmation.\n\nThank you for choosing BusterBuild.`;}
+function quoteText(){const c=currentCustomer();return `Hi ${c.name||'there'},\n\nPlease find your BusterBuild product estimate.\nEstimated total: ${money(quoteGrandTotal())}.\n\nPrices are subject to stock availability and final confirmation. Your official quotation/payment document will be completed on the BusterBuild sales system once you confirm.\n\nThank you for choosing BusterBuild.`;}
 
 function roundedRect(ctx,x,y,w,h,r,fill,stroke){
   const rr=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+rr,y);ctx.arcTo(x+w,y,x+w,y+h,rr);ctx.arcTo(x+w,y+h,x,y+h,rr);ctx.arcTo(x,y+h,x,y,rr);ctx.arcTo(x,y,x+w,y,rr);ctx.closePath();
@@ -380,7 +380,7 @@ async function createQuoteCanvas(){
   ctx.fillStyle='#fff';ctx.font='900 54px Poppins, Arial, sans-serif';ctx.fillText('BUSTERBUILD',220,98);
   ctx.fillStyle=yellow;ctx.font='800 23px Poppins, Arial, sans-serif';ctx.fillText('TILES & SANITARY WARE',222,140);
   ctx.textAlign='right';ctx.fillStyle=yellow;ctx.font='900 42px Poppins, Arial, sans-serif';ctx.fillText('QUOTATION',W-60,83);
-  ctx.fillStyle='#fff';ctx.font='800 24px Poppins, Arial, sans-serif';ctx.fillText(currentQuoteNumber,W-60,124);
+  ctx.fillStyle='#fff';ctx.font='800 24px Poppins, Arial, sans-serif';ctx.fillText('PRODUCT ESTIMATE',W-60,124);
   ctx.fillStyle='#aaa';ctx.font='500 19px Poppins, Arial, sans-serif';ctx.fillText(quoteDate(),W-60,158);ctx.textAlign='left';
 
   // Customer band
@@ -403,17 +403,42 @@ async function createQuoteCanvas(){
   // Total
   y+=30;roundedRect(ctx,60,y,W-120,102,22,yellow);ctx.fillStyle=ink;ctx.font='900 20px Poppins, Arial, sans-serif';ctx.fillText('QUOTED TOTAL',92,y+59);ctx.textAlign='right';ctx.font='900 44px Poppins, Arial, sans-serif';ctx.fillText(money(quoteGrandTotal()),W-92,y+65);ctx.textAlign='left';y+=132;
   if(c.notes){roundedRect(ctx,60,y,W-120,90,18,'#faf9f6',line);ctx.fillStyle=muted;ctx.font='600 18px Poppins, Arial, sans-serif';canvasText(ctx,`Notes: ${c.notes}`,82,y+34,W-164,26,2);y+=118;}
-  ctx.fillStyle=ink;ctx.font='800 18px Poppins, Arial, sans-serif';ctx.fillText('Thank you for choosing BusterBuild.',60,y+35);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText('Prices are subject to stock availability and final confirmation.',60,y+66);ctx.textAlign='right';ctx.fillStyle='#9b7900';ctx.font='900 16px Poppins, Arial, sans-serif';ctx.fillText('BUILD WITH CONFIDENCE.',W-60,y+60);ctx.textAlign='left';
+  ctx.fillStyle=ink;ctx.font='800 18px Poppins, Arial, sans-serif';ctx.fillText('Thank you for choosing BusterBuild.',60,y+35);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText('Estimate only. Final quotation/payment document will be issued from the BusterBuild sales system.',60,y+66);ctx.textAlign='right';ctx.fillStyle='#9b7900';ctx.font='900 16px Poppins, Arial, sans-serif';ctx.fillText('BUILD WITH CONFIDENCE.',W-60,y+60);ctx.textAlign='left';
   return canvas;
 }
 async function quoteBlob(){const canvas=await createQuoteCanvas();return await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(new Error('Could not create quotation image')),'image/png',1));}
 function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);}
-async function getQuoteFile(){if(!validateQuote())throw new Error('Complete customer details');ensureQuoteNumber();const blob=await quoteBlob();return new File([blob],`${currentQuoteNumber}.png`,{type:'image/png'});}
+function quotePdfFileName(){const c=currentCustomer();const base=(c.name||'Customer').replace(/[^a-z0-9]+/gi,'-').replace(/^-+|-+$/g,'')||'Customer';return `BusterBuild-Product-Estimate-${base}.pdf`;}
+async function getQuotePdfFile(){
+  if(!validateQuote())throw new Error('Complete customer details');
+  ensureQuoteNumber();
+  const JSPDF=window.jspdf?.jsPDF;
+  if(!JSPDF)throw new Error('PDF generator is still loading. Check the internet connection and try again.');
+  const canvas=await createQuoteCanvas();
+  const pageW=210,pageH=297;
+  const pxPerPage=Math.floor(canvas.width*(pageH/pageW));
+  const pdf=new JSPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});
+  let offset=0,page=0;
+  while(offset<canvas.height){
+    const sliceH=Math.min(pxPerPage,canvas.height-offset);
+    const slice=document.createElement('canvas');
+    slice.width=canvas.width;slice.height=sliceH;
+    const sctx=slice.getContext('2d');sctx.fillStyle='#fff';sctx.fillRect(0,0,slice.width,slice.height);
+    sctx.drawImage(canvas,0,offset,canvas.width,sliceH,0,0,canvas.width,sliceH);
+    if(page>0)pdf.addPage('a4','portrait');
+    const img=slice.toDataURL('image/jpeg',0.92);
+    const renderH=(sliceH/canvas.width)*pageW;
+    pdf.addImage(img,'JPEG',0,0,pageW,renderH,undefined,'FAST');
+    offset+=sliceH;page++;
+  }
+  const blob=pdf.output('blob');
+  return new File([blob],quotePdfFileName(),{type:'application/pdf'});
+}
 async function withButtonBusy(id,label,fn){const b=$(id);if(!b)return;const old=b.innerHTML;b.disabled=true;b.innerHTML=`<i class="fa-solid fa-spinner fa-spin"></i><span>${label}</span>`;try{return await fn();}finally{b.disabled=false;b.innerHTML=old;}}
 function canShareFile(file){try{return !!navigator.share && (!navigator.canShare || navigator.canShare({files:[file]}));}catch{return false;}}
 
-$('download-quote-image').onclick=()=>withButtonBusy('download-quote-image','Creating…',async()=>{try{const f=await getQuoteFile();downloadBlob(f,f.name);toast('Quotation image downloaded');}catch(e){toast(e.message||'Could not create quotation image');}});
-$('share-quote-image').onclick=()=>withButtonBusy('share-quote-image','Preparing…',async()=>{try{const f=await getQuoteFile();if(canShareFile(f)){await navigator.share({title:`BusterBuild ${currentQuoteNumber}`,text:quoteText(),files:[f]});}else{downloadBlob(f,f.name);toast('Image downloaded — use your device Share option');}}catch(e){if(e?.name!=='AbortError')toast(e.message||'Could not share quotation');}});
+$('download-quote-image').onclick=()=>withButtonBusy('download-quote-image','Creating PDF…',async()=>{try{const f=await getQuotePdfFile();downloadBlob(f,f.name);toast('PDF estimate downloaded');}catch(e){toast(e.message||'Could not create PDF');}});
+$('share-quote-image').onclick=()=>withButtonBusy('share-quote-image','Preparing PDF…',async()=>{try{const f=await getQuotePdfFile();if(canShareFile(f)){await navigator.share({title:'BusterBuild Product Estimate',text:quoteText(),files:[f]});}else{downloadBlob(f,f.name);toast('PDF downloaded — use your device Share option');}}catch(e){if(e?.name!=='AbortError')toast(e.message||'Could not share PDF');}});
 function validWhatsAppNumber(phone){return /^\d{10,15}$/.test(String(phone||''));}
 function validEmailAddress(email){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email||'').trim());}
 
@@ -421,38 +446,30 @@ $('whatsapp-quote').onclick=()=>withButtonBusy('whatsapp-quote','Opening…',asy
   if(!validateQuote())return;
   const c=currentCustomer();
   const phone=normaliseWhatsApp(c.phone);
-  if(!validWhatsAppNumber(phone)){
-    toast('Enter a valid WhatsApp number, including the correct country code.');
-    return;
-  }
+  if(!validWhatsAppNumber(phone)){toast('Enter a valid WhatsApp number, including the correct country code.');return;}
   let waWindow=null;
   try{waWindow=window.open('about:blank','_blank');}catch{}
   try{
-    const f=await getQuoteFile();
+    const f=await getQuotePdfFile();
     downloadBlob(f,f.name);
     const url=`https://wa.me/${phone}?text=${encodeURIComponent(quoteText())}`;
     if(waWindow && !waWindow.closed){waWindow.location.replace(url);}else{window.location.href=url;}
-    toast('Opening the customer WhatsApp chat. If the number is not registered, WhatsApp will notify you.');
-  }catch(e){
-    try{if(waWindow && !waWindow.closed)waWindow.close();}catch{}
-    toast(e.message||'Could not open WhatsApp');
-  }
+    toast('PDF downloaded and customer WhatsApp opened. Attach the PDF in the chat.');
+  }catch(e){try{if(waWindow && !waWindow.closed)waWindow.close();}catch{} toast(e.message||'Could not open WhatsApp');}
 });
 
 $('email-quote').onclick=()=>withButtonBusy('email-quote','Opening…',async()=>{
   if(!validateQuote())return;
-  const c=currentCustomer();
-  const email=String(c.email||'').trim();
+  const c=currentCustomer(),email=String(c.email||'').trim();
   if(!email){toast('Enter the customer email address');return;}
   if(!validEmailAddress(email)){toast('Enter a valid customer email address');return;}
   try{
-    const f=await getQuoteFile();
+    const f=await getQuotePdfFile();
     downloadBlob(f,f.name);
-    const subject=`BusterBuild Quotation ${currentQuoteNumber}`;
-    const body=quoteText()+`\n\nQuotation image ${f.name} has been downloaded to this device. Please attach it before sending.`;
-    const url=`mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href=url;
-    toast(`Opening an email addressed to ${email}`);
+    const subject='BusterBuild Product Estimate';
+    const body=quoteText()+`\n\nThe PDF estimate ${f.name} has been downloaded to this device. Please attach it before sending.`;
+    window.location.href=`mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    toast(`PDF downloaded and email opened for ${email}`);
   }catch(e){toast(e.message||'Could not open email');}
 });
 function renderQuoteHistory(){
