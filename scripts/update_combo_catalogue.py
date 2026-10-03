@@ -149,11 +149,35 @@ def category_product_urls(base_url: str) -> list[str]:
     return found
 
 
+
+def busterbuild_price_99(value):
+    """Keep the Pulse rand amount but enforce BusterBuild's .99 price ending."""
+    if value is None or isinstance(value, bool):
+        return value
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return value
+    return round(int(number // 1) + 0.99, 2)
+
+
+def normalise_busterbuild_product_price(product: dict) -> dict:
+    """Apply .99 to current, regular and sale prices, including cached products."""
+    out = dict(product)
+    price = out.get("price")
+    if isinstance(price, dict):
+        price = dict(price)
+        for key in ("current", "regular", "sale"):
+            if price.get(key) is not None:
+                price[key] = busterbuild_price_99(price[key])
+        out["price"] = price
+    return out
+
 def parse_price(text: str) -> dict:
     txt = clean_text(text)
     nums = [float(x.replace(",", "")) for x in re.findall(r"R\s*([0-9][0-9,]*(?:\.\d{1,2})?)", txt, re.I)]
-    current = nums[-1] if nums else None
-    regular = nums[0] if len(nums) > 1 else current
+    current = busterbuild_price_99(nums[-1]) if nums else None
+    regular = busterbuild_price_99(nums[0]) if len(nums) > 1 else current
     sale = current if len(nums) > 1 and regular and current and current < regular else None
     return {"current": current, "regular": regular, "sale": sale, "from": "from" in txt.lower(), "currency": "ZAR"}
 
@@ -374,7 +398,7 @@ def write_payload(products_by_id: dict[str, dict], category_products: dict[str, 
         if target in category_meta:
             category_meta[alias] = dict(category_meta[target])
 
-    products = list(products_by_id.values())
+    products = [normalise_busterbuild_product_price(p) for p in products_by_id.values()]
     products.sort(key=lambda x: (x.get("name") or "").lower())
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

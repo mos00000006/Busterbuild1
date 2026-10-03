@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T09:04:27.931535+00:00",
+  "generated_at": "2026-10-01T13:12:38.998954+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -536,8 +536,8 @@
       "name": "6 PC Bathroom Set Square – Black and Bamboo",
       "code": "I00831",
       "price": {
-        "current": 399.9,
-        "regular": 399.9,
+        "current": 399.99,
+        "regular": 399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -580,8 +580,8 @@
       "name": "Abstract River Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01140",
       "price": {
-        "current": 3199.9,
-        "regular": 3199.9,
+        "current": 3199.99,
+        "regular": 3199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -618,8 +618,8 @@
       "name": "Active Onyx Ice Porcelain Combo Matt 600Ã1200mm",
       "code": "Q01411",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -656,8 +656,8 @@
       "name": "Alco Basin and Mixer Combo",
       "code": "Q01456",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -696,8 +696,8 @@
       "name": "Alco Black Shower Panel Combo",
       "code": "Q01327",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -737,8 +737,8 @@
       "name": "Alcora Blanco Porcelain Combo 600Ã600mm",
       "code": "Q01451",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -777,8 +777,8 @@
       "name": "Anti Sky Porcelain Combo Glossy 600Ã1200mm",
       "code": "Q01297",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -815,8 +815,8 @@
       "name": "Apple White Combo 600×1200",
       "code": "Q01514",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -853,8 +853,8 @@
       "name": "Astor Cloud Combo 600Ã600mm",
       "code": "Q01409",
       "price": {
-        "current": 2899.9,
-        "regular": 2899.9,
+        "current": 2899.99,
+        "regular": 2899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -891,8 +891,8 @@
       "name": "Base Combo 300X600mm",
       "code": "Q01103",
       "price": {
-        "current": 2449.9,
-        "regular": 2449.9,
+        "current": 2449.99,
+        "regular": 2449.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -929,8 +929,8 @@
       "name": "Basin and Mirror Combo",
       "code": "Q01418",
       "price": {
-        "current": 799.9,
-        "regular": 799.9,
+        "current": 799.99,
+        "regular": 799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -961,8 +961,8 @@
       "name": "Bathroom Solution Combo",
       "code": "Q01457",
       "price": {
-        "current": 2599.9,
-        "regular": 2599.9,
+        "current": 2599.99,
+        "regular": 2599.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1001,8 +1001,8 @@
       "name": "Braga Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01162",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1039,8 +1039,8 @@
       "name": "Bricola Gris Porcelain Combo 600Ã600mm",
       "code": "Q01465",
       "price": {
-        "current": 2599.9,
-        "regular": 2599.9,
+        "current": 2599.99,
+        "regular": 2599.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1077,9 +1077,9 @@
       "name": "Buffer Basin Combo",
       "code": "Q01536",
       "price": {
-        "current": 699.9,
-        "regular": 999.9,
-        "sale": 699.9,
+        "current": 699.99,
+        "regular": 999.99,
+        "sale": 699.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -1114,8 +1114,8 @@
       "name": "Ca-Cattack Dark Combo 300X600mm",
       "code": "Q01101",
       "price": {
-        "current": 2449.9,
-        "regular": 2449.9,
+        "current": 2449.99,
+        "regular": 2449.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1152,8 +1152,8 @@
       "name": "Chloe Bath and Freestanding mixer combo",
       "code": "Q01060",
       "price": {
-        "current": 12999.9,
-        "regular": 12999.9,
+        "current": 12999.99,
+        "regular": 12999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1192,8 +1192,8 @@
       "name": "Chrome Tivona Basin and Mixer Combo",
       "code": "Q01416",
       "price": {
-        "current": 2599.9,
-        "regular": 2599.9,
+        "current": 2599.99,
+        "regular": 2599.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1230,8 +1230,8 @@
       "name": "Classic Jakarta White Matt Glazed Porcelain Combo 600X1200mm",
       "code": "Q01086",
       "price": {
-        "current": 3199.9,
-        "regular": 3199.9,
+        "current": 3199.99,
+        "regular": 3199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1268,8 +1268,8 @@
       "name": "Clayton Aqua Glossy Glazed Porcelain Combo 600X1200mm",
       "code": "Q01153",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1306,8 +1306,8 @@
       "name": "Complete Bathroom Solution Combo",
       "code": "Q01506",
       "price": {
-        "current": 5499.9,
-        "regular": 5499.9,
+        "current": 5499.99,
+        "regular": 5499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1341,9 +1341,9 @@
       "name": "Complete Shower Solution Combo",
       "code": "Q01541",
       "price": {
-        "current": 3999.9,
-        "regular": 4899.9,
-        "sale": 3999.9,
+        "current": 3999.99,
+        "regular": 4899.99,
+        "sale": 3999.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -1379,8 +1379,8 @@
       "name": "Cordelia Bath and Freestanding mixer combo",
       "code": "Q01400",
       "price": {
-        "current": 19999.9,
-        "regular": 19999.9,
+        "current": 19999.99,
+        "regular": 19999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1422,8 +1422,8 @@
       "name": "Corner Shower Caddy",
       "code": "I00619",
       "price": {
-        "current": 349.9,
-        "regular": 349.9,
+        "current": 349.99,
+        "regular": 349.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1460,8 +1460,8 @@
       "name": "Cresto White Rustic Matt Porcelain Combo 600Ã1200mm",
       "code": "Q01245",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1498,8 +1498,8 @@
       "name": "Deluxe Toilet and Basin with Pedestal",
       "code": "Q01423",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1530,9 +1530,9 @@
       "name": "Designer Screen Combo",
       "code": "Q01537",
       "price": {
-        "current": 3499.9,
-        "regular": 3999.9,
-        "sale": 3499.9,
+        "current": 3499.99,
+        "regular": 3999.99,
+        "sale": 3499.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -1568,8 +1568,8 @@
       "name": "Dolomiti Alpine Gris Combo 600Ã600mm",
       "code": "Q01228",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1606,8 +1606,8 @@
       "name": "Dolomiti Autumn Combo 600Ã600mm",
       "code": "Q01227",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1644,8 +1644,8 @@
       "name": "Dolomiti Marengo Combo 600Ã600mm",
       "code": "Q01229",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1682,8 +1682,8 @@
       "name": "Dolomiti Saturio Matt Tile Combo 600×600",
       "code": "Q01124",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1714,8 +1714,8 @@
       "name": "Dolomiti Terraz Crema Combo 600Ã600mm",
       "code": "Q01230",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1752,8 +1752,8 @@
       "name": "Dolomiti Terraz Dark Gris Matt Combo 600X600mm",
       "code": "Q01114",
       "price": {
-        "current": 2299.9,
-        "regular": 2299.9,
+        "current": 2299.99,
+        "regular": 2299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1790,8 +1790,8 @@
       "name": "Dolomiti Terraz Gris Combo 600x600m",
       "code": "Q01231",
       "price": {
-        "current": 2349.9,
-        "regular": 2349.9,
+        "current": 2349.99,
+        "regular": 2349.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1828,8 +1828,8 @@
       "name": "Dune Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01159",
       "price": {
-        "current": 2249.9,
-        "regular": 2249.9,
+        "current": 2249.99,
+        "regular": 2249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1866,8 +1866,8 @@
       "name": "Dyna Glossy Polished Porcelain Combo 600X600mm",
       "code": "Q01090",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1904,8 +1904,8 @@
       "name": "Dyna Vitrified Polished Porcelain Combo 600×600",
       "code": "Q01490",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1936,8 +1936,8 @@
       "name": "Dynasty Beige Glossy Glazed Porcelain Combo 600×1200",
       "code": "Q01247",
       "price": {
-        "current": 3049.9,
-        "regular": 3049.9,
+        "current": 3049.99,
+        "regular": 3049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -1973,8 +1973,8 @@
       "name": "Element White Porcelain Combo Glossy 600Ã1200mm",
       "code": "Q01298",
       "price": {
-        "current": 3049.9,
-        "regular": 3049.9,
+        "current": 3049.99,
+        "regular": 3049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2010,8 +2010,8 @@
       "name": "Element White Porcelain Combo Matt 600Ã1200mm",
       "code": "Q01412",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2047,8 +2047,8 @@
       "name": "Eqen Ice Glossy Porcelain Combo 600Ã1200mm",
       "code": "Q01241",
       "price": {
-        "current": 3049.9,
-        "regular": 3049.9,
+        "current": 3049.99,
+        "regular": 3049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2085,8 +2085,8 @@
       "name": "Feather Brown Glossy Glazed Porcelain Combo 600X1200mm",
       "code": "Q01125",
       "price": {
-        "current": 3199.9,
-        "regular": 3199.9,
+        "current": 3199.99,
+        "regular": 3199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2123,8 +2123,8 @@
       "name": "Feather Me Porcelain Combo 600Ã600mm",
       "code": "Q01206",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2161,8 +2161,8 @@
       "name": "Finest Terrazo White Glazed Porcelain Combo 600X1200mm",
       "code": "Q01152",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2198,8 +2198,8 @@
       "name": "Galaxy Crema Glazed Porcelain Combo 600X600mm",
       "code": "Q01119",
       "price": {
-        "current": 2049.9,
-        "regular": 2049.9,
+        "current": 2049.99,
+        "regular": 2049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2236,8 +2236,8 @@
       "name": "Genesis Grey Carpe G Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01145",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2274,8 +2274,8 @@
       "name": "Grey Shower Panel Combo",
       "code": "Q01425",
       "price": {
-        "current": 2799.9,
-        "regular": 2799.9,
+        "current": 2799.99,
+        "regular": 2799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2311,8 +2311,8 @@
       "name": "Havana White Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01141",
       "price": {
-        "current": 2899.9,
-        "regular": 2899.9,
+        "current": 2899.99,
+        "regular": 2899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2350,9 +2350,9 @@
       "name": "Hazel Basin and Mixer Combo",
       "code": "Q00690",
       "price": {
-        "current": 1499.9,
-        "regular": 2399.8,
-        "sale": 1499.9,
+        "current": 1499.99,
+        "regular": 2399.99,
+        "sale": 1499.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -2393,8 +2393,8 @@
       "name": "Heritage Light Grey Porcelain Combo 600Ã1200mm",
       "code": "Q01239",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2431,8 +2431,8 @@
       "name": "Heritage Light Grey Porcelain Combo 600Ã1200mm",
       "code": "Q01252",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2469,8 +2469,8 @@
       "name": "Isla Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01158",
       "price": {
-        "current": 2249.9,
-        "regular": 2249.9,
+        "current": 2249.99,
+        "regular": 2249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2507,8 +2507,8 @@
       "name": "Ivory Polished Porcelain Combo 600X600mm",
       "code": "Q01188",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2545,8 +2545,8 @@
       "name": "Jaunty Alco Wall Hung Toilet Combo",
       "code": "Q01062",
       "price": {
-        "current": 6199.9,
-        "regular": 6199.9,
+        "current": 6199.99,
+        "regular": 6199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2587,8 +2587,8 @@
       "name": "Jaunty Wall Hung Combo",
       "code": "Q00682",
       "price": {
-        "current": 6599.9,
-        "regular": 6599.9,
+        "current": 6599.99,
+        "regular": 6599.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2620,8 +2620,8 @@
       "name": "Kalahari Breeze 450×450 Combo",
       "code": "Q01333",
       "price": {
-        "current": 1949.9,
-        "regular": 1949.9,
+        "current": 1949.99,
+        "regular": 1949.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2657,8 +2657,8 @@
       "name": "Kalahari Dune 450×450 Combo",
       "code": "Q01336",
       "price": {
-        "current": 1949.9,
-        "regular": 1949.9,
+        "current": 1949.99,
+        "regular": 1949.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2694,8 +2694,8 @@
       "name": "Kalahari Grey 450×450 Combo",
       "code": "Q01334",
       "price": {
-        "current": 1949.9,
-        "regular": 1949.9,
+        "current": 1949.99,
+        "regular": 1949.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2731,8 +2731,8 @@
       "name": "Karoo Ash Matt Combo 400X400mm",
       "code": "Q01098",
       "price": {
-        "current": 1799.9,
-        "regular": 1799.9,
+        "current": 1799.99,
+        "regular": 1799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2769,8 +2769,8 @@
       "name": "Karoo Autum Combo 400X400mm",
       "code": "Q01262",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2806,8 +2806,8 @@
       "name": "Karoo Beige Combo 400X400mm",
       "code": "Q01260",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2843,8 +2843,8 @@
       "name": "Karoo Blanco Matt Combo 400X400mm",
       "code": "Q01097",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2881,8 +2881,8 @@
       "name": "Karoo Cement Matt Combo 400X400mm",
       "code": "Q01100",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2919,8 +2919,8 @@
       "name": "Karoo Crema Combo 400X400mm",
       "code": "Q01261",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2956,8 +2956,8 @@
       "name": "Karoo Graphite Combo 400X400mm",
       "code": "Q01264",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -2993,8 +2993,8 @@
       "name": "Karoo Sand Combo 400X400mm",
       "code": "Q01259",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3030,8 +3030,8 @@
       "name": "Karoo Stone Combo 400X400mm",
       "code": "Q01263",
       "price": {
-        "current": 1799.9,
-        "regular": 1799.9,
+        "current": 1799.99,
+        "regular": 1799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3067,8 +3067,8 @@
       "name": "Kilavi Grey Ceramic 200×300 Combo",
       "code": "Q01050",
       "price": {
-        "current": 1349.9,
-        "regular": 1349.9,
+        "current": 1349.99,
+        "regular": 1349.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3098,8 +3098,8 @@
       "name": "Legacy Peada Porcelain Combo 600Ã600mm",
       "code": "Q01224",
       "price": {
-        "current": 2649.9,
-        "regular": 2649.9,
+        "current": 2649.99,
+        "regular": 2649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3136,8 +3136,8 @@
       "name": "Luster Azul Sugar Glazematt Combo 600X600mm",
       "code": "Q01135",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3174,8 +3174,8 @@
       "name": "Luster Carrara Sugar Glazed Combo 600×600",
       "code": "Q01233",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3206,8 +3206,8 @@
       "name": "Luster Cloud Sugar Glaze Matt Combo 600X600mm",
       "code": "Q01137",
       "price": {
-        "current": 2349.9,
-        "regular": 2349.9,
+        "current": 2349.99,
+        "regular": 2349.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3244,8 +3244,8 @@
       "name": "Luster Cloud Sugar Glaze Matt Combo 600Ã600mm",
       "code": "Q01235",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3282,8 +3282,8 @@
       "name": "Luster Empredor Sugar Glaze Combo 600×600",
       "code": "Q01236",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3314,8 +3314,8 @@
       "name": "Luster Gold Sugar Glaze Matt Combo 600X600mm",
       "code": "Q01130",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3352,8 +3352,8 @@
       "name": "Luster Nero Sugar Glaze Matt Combo 600X600mm",
       "code": "Q01134",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3390,8 +3390,8 @@
       "name": "Luster Onyx Sugar Glaze Matt Combo 600Ã600mm",
       "code": "Q01234",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3428,8 +3428,8 @@
       "name": "Luster Saturia Sugar Glaze Matt Combo 600X600mm",
       "code": "Q01136",
       "price": {
-        "current": 2399.9,
-        "regular": 2399.9,
+        "current": 2399.99,
+        "regular": 2399.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3465,8 +3465,8 @@
       "name": "Matrix Grey Glossy Glazed Porcelain Combo 600X1200mm",
       "code": "Q01079",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3503,8 +3503,8 @@
       "name": "Meadow Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01156",
       "price": {
-        "current": 2249.9,
-        "regular": 2249.9,
+        "current": 2249.99,
+        "regular": 2249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3541,8 +3541,8 @@
       "name": "Melbourne Glazed Porcelain Combo 600X600mm",
       "code": "Q01118",
       "price": {
-        "current": 2049.9,
-        "regular": 2049.9,
+        "current": 2049.99,
+        "regular": 2049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3579,8 +3579,8 @@
       "name": "Modern Toilet Combo",
       "code": "Q01274",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3614,8 +3614,8 @@
       "name": "Montana Blanco Combo 300X600mm",
       "code": "Q01096",
       "price": {
-        "current": 2449.9,
-        "regular": 2449.9,
+        "current": 2449.99,
+        "regular": 2449.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3651,8 +3651,8 @@
       "name": "Mystic Mint Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01150",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3689,8 +3689,8 @@
       "name": "Nexus Glossy Porcelain Combo 600Ã1200mm",
       "code": "Q01244",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3727,8 +3727,8 @@
       "name": "Onyx Green Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01148",
       "price": {
-        "current": 3199.9,
-        "regular": 3199.9,
+        "current": 3199.99,
+        "regular": 3199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3765,8 +3765,8 @@
       "name": "Palazzo Matt Porcelain Combo 600Ã1200mm",
       "code": "Q01246",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3803,8 +3803,8 @@
       "name": "Pan Connector Combo",
       "code": "Q01183",
       "price": {
-        "current": 499.9,
-        "regular": 499.9,
+        "current": 499.99,
+        "regular": 499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3841,9 +3841,9 @@
       "name": "Polio Basin & Mixer Combo",
       "code": "Q01417",
       "price": {
-        "current": 3699.9,
-        "regular": 3999.9,
-        "sale": 3699.9,
+        "current": 3699.99,
+        "regular": 3999.99,
+        "sale": 3699.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -3879,8 +3879,8 @@
       "name": "Pure View Shower Door Combo",
       "code": "Q01477",
       "price": {
-        "current": 2799.9,
-        "regular": 2799.9,
+        "current": 2799.99,
+        "regular": 2799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3921,8 +3921,8 @@
       "name": "River Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01161",
       "price": {
-        "current": 2249.9,
-        "regular": 2249.9,
+        "current": 2249.99,
+        "regular": 2249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3959,8 +3959,8 @@
       "name": "Rosata Glossy Glazed Porcelain Combo 600X600mm",
       "code": "Q01116",
       "price": {
-        "current": 1949.9,
-        "regular": 1949.9,
+        "current": 1949.99,
+        "regular": 1949.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -3997,8 +3997,8 @@
       "name": "Rotal Porcelain Combo 600Ã600mm",
       "code": "Q01205",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4035,8 +4035,8 @@
       "name": "Sahara Beige 330×330 Combo",
       "code": "Q01389",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4072,8 +4072,8 @@
       "name": "Sahara Cloud 330×330 Combo",
       "code": "Q01390",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4109,8 +4109,8 @@
       "name": "Sahara Grey 330×330 Combo",
       "code": "Q01391",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4146,8 +4146,8 @@
       "name": "Sahara Grigio 330×330 Combo",
       "code": "Q01392",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4183,8 +4183,8 @@
       "name": "Sahara Gris Combo 600Ã600mm",
       "code": "Q01212",
       "price": {
-        "current": 2749.9,
-        "regular": 2749.9,
+        "current": 2749.99,
+        "regular": 2749.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4221,8 +4221,8 @@
       "name": "Sahara Mist 330×330 Combo",
       "code": "Q01393",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4258,8 +4258,8 @@
       "name": "Sahara Nero Porcelain Combo 600Ã600mm",
       "code": "Q01211",
       "price": {
-        "current": 2649.9,
-        "regular": 2649.9,
+        "current": 2649.99,
+        "regular": 2649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4296,8 +4296,8 @@
       "name": "Sahara Rust 330×330 Combo",
       "code": "Q01394",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4333,8 +4333,8 @@
       "name": "Sahara Stone 330×330 Combo",
       "code": "Q01396",
       "price": {
-        "current": 1549.9,
-        "regular": 1549.9,
+        "current": 1549.99,
+        "regular": 1549.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4370,8 +4370,8 @@
       "name": "Sahara Taupe 330×330 Combo",
       "code": "Q01395",
       "price": {
-        "current": 1649.9,
-        "regular": 1649.9,
+        "current": 1649.99,
+        "regular": 1649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4407,8 +4407,8 @@
       "name": "San Marino Matt Antislip Outdoor Combo 450X450mm",
       "code": "Q01157",
       "price": {
-        "current": 2249.9,
-        "regular": 2249.9,
+        "current": 2249.99,
+        "regular": 2249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4445,9 +4445,9 @@
       "name": "Shower Arm and Head Combo",
       "code": "Q01011",
       "price": {
-        "current": 699.9,
-        "regular": 899.9,
-        "sale": 699.9,
+        "current": 699.99,
+        "regular": 899.99,
+        "sale": 699.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -4488,8 +4488,8 @@
       "name": "Shower Panel With 5pc Accessory Set Combo",
       "code": "Q01467",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4524,8 +4524,8 @@
       "name": "Shower Rail Combo",
       "code": "Q01495",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4559,8 +4559,8 @@
       "name": "Shower Rail Set With Mirror Cabinet Combo",
       "code": "Q01470",
       "price": {
-        "current": 2799.9,
-        "regular": 2799.9,
+        "current": 2799.99,
+        "regular": 2799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4595,9 +4595,9 @@
       "name": "Shower Rail-Set Combo",
       "code": "Q01538",
       "price": {
-        "current": 2499.9,
-        "regular": 2999.9,
-        "sale": 2499.9,
+        "current": 2499.99,
+        "regular": 2999.99,
+        "sale": 2499.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -4634,8 +4634,8 @@
       "name": "Shower Screen & Accessories Combo",
       "code": "Q01126",
       "price": {
-        "current": 2499.9,
-        "regular": 2499.9,
+        "current": 2499.99,
+        "regular": 2499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4669,9 +4669,9 @@
       "name": "Shower Screen + Shower Rail Combo Deal",
       "code": "Q01203",
       "price": {
-        "current": 2999.9,
-        "regular": 3699.9,
-        "sale": 2999.9,
+        "current": 2999.99,
+        "regular": 3699.99,
+        "sale": 2999.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -4706,8 +4706,8 @@
       "name": "Shower Screen Black Combo",
       "code": "Q01484",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4743,8 +4743,8 @@
       "name": "Shower Screen Plus Shower Head and Arm Combo 1000x2000x6mm",
       "code": "Q01501",
       "price": {
-        "current": 3299.9,
-        "regular": 3299.9,
+        "current": 3299.99,
+        "regular": 3299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4775,8 +4775,8 @@
       "name": "Shower Screen Plus Shower Head and Arm Combo 1200x1950x6mm",
       "code": "Q01500",
       "price": {
-        "current": 3499.9,
-        "regular": 3499.9,
+        "current": 3499.99,
+        "regular": 3499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4807,9 +4807,9 @@
       "name": "Shower Screen Plus Shower Head and Arm Combo 900x2000x6mm",
       "code": "Q01502",
       "price": {
-        "current": 2899.9,
-        "regular": 3299.9,
-        "sale": 2899.9,
+        "current": 2899.99,
+        "regular": 3299.99,
+        "sale": 2899.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -4839,8 +4839,8 @@
       "name": "Shower Screen With Shower Head and Arm Combo",
       "code": "Q01480",
       "price": {
-        "current": 2699.9,
-        "regular": 2699.9,
+        "current": 2699.99,
+        "regular": 2699.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4879,8 +4879,8 @@
       "name": "Shower Square and Rail Set Combo",
       "code": "Q01478",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4913,8 +4913,8 @@
       "name": "Siena Marfil Glossy Porcelain Combo 600Ã1200mm",
       "code": "Q01240",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4951,8 +4951,8 @@
       "name": "Siena Marfil Matt Porcelain Combo 600Ã1200mm",
       "code": "Q01248",
       "price": {
-        "current": 3349.9,
-        "regular": 3349.9,
+        "current": 3349.99,
+        "regular": 3349.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -4989,8 +4989,8 @@
       "name": "Sisam Beige Polished Porcelain Combo 600×600",
       "code": "Q01460",
       "price": {
-        "current": 1899.9,
-        "regular": 1899.9,
+        "current": 1899.99,
+        "regular": 1899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5021,8 +5021,8 @@
       "name": "Sisam Blue Combo 600Ã600mm",
       "code": "Q01208",
       "price": {
-        "current": 2199.9,
-        "regular": 2199.9,
+        "current": 2199.99,
+        "regular": 2199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5059,8 +5059,8 @@
       "name": "Spirit Bianco 600×1200 Matt Glazed Tile Combo",
       "code": "Q01413",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5096,8 +5096,8 @@
       "name": "Staturio Gold Porcelain Combo 600Ã1200mm",
       "code": "Q01253",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5134,8 +5134,8 @@
       "name": "Strat Crema Matt Tile 600x600mm",
       "code": "Q01452",
       "price": {
-        "current": 2899.9,
-        "regular": 2899.9,
+        "current": 2899.99,
+        "regular": 2899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5166,8 +5166,8 @@
       "name": "Strat Crema Porcelain Combo 600Ã600mm",
       "code": "Q01223",
       "price": {
-        "current": 2799.9,
-        "regular": 2799.9,
+        "current": 2799.99,
+        "regular": 2799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5204,8 +5204,8 @@
       "name": "Terra Alco Wall Hung Toilet Combo",
       "code": "Q01061",
       "price": {
-        "current": 6599.9,
-        "regular": 6599.9,
+        "current": 6599.99,
+        "regular": 6599.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5240,8 +5240,8 @@
       "name": "Terra Wall Hung Combo",
       "code": "Q00680",
       "price": {
-        "current": 6899.9,
-        "regular": 6899.9,
+        "current": 6899.99,
+        "regular": 6899.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5273,8 +5273,8 @@
       "name": "Terrazo Gris Matt Glazed Porcelain Combo 600X1200mm",
       "code": "Q01255",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5311,8 +5311,8 @@
       "name": "Thunder Grey Glazed Polished Porcelain Combo 600X1200mm",
       "code": "Q01147",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5349,8 +5349,8 @@
       "name": "Toilet + Basin and Pedestal + Caddy Combo",
       "code": "Q01172",
       "price": {
-        "current": 1199.9,
-        "regular": 1199.9,
+        "current": 1199.99,
+        "regular": 1199.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5385,8 +5385,8 @@
       "name": "Toilet Combo",
       "code": "Q01494",
       "price": {
-        "current": 1499.9,
-        "regular": 1499.9,
+        "current": 1499.99,
+        "regular": 1499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5421,9 +5421,9 @@
       "name": "Toilet Combo",
       "code": "Q01534",
       "price": {
-        "current": 899.9,
-        "regular": 1099.9,
-        "sale": 899.9,
+        "current": 899.99,
+        "regular": 1099.99,
+        "sale": 899.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -5460,8 +5460,8 @@
       "name": "Top Flush Toilet + Basin & Pedestal + Cleaner combo",
       "code": "Q01438",
       "price": {
-        "current": 1099.9,
-        "regular": 1099.9,
+        "current": 1099.99,
+        "regular": 1099.99,
         "sale": null,
         "from": true,
         "currency": "ZAR"
@@ -5510,8 +5510,8 @@
       "name": "Top flush toilet + Basin & Pedestal combo",
       "code": "Q01355",
       "price": {
-        "current": 1299.9,
-        "regular": 1299.9,
+        "current": 1299.99,
+        "regular": 1299.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5548,8 +5548,8 @@
       "name": "Top Flush Toilet Basin and Pedestal + Shelf Combo",
       "code": "Q01174",
       "price": {
-        "current": 1099.9,
-        "regular": 1099.9,
+        "current": 1099.99,
+        "regular": 1099.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5586,8 +5586,8 @@
       "name": "Toscana Grey Rustic Matt Porcelain Combo 600Ã1200mm",
       "code": "Q01242",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5624,8 +5624,8 @@
       "name": "Tuscany Blue Matt Glazed Porcelain Combo 600X1200m",
       "code": "Q01085",
       "price": {
-        "current": 3099.9,
-        "regular": 3099.9,
+        "current": 3099.99,
+        "regular": 3099.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5662,8 +5662,8 @@
       "name": "Tuscany Silver Matt Combo 600×1200",
       "code": "Q01295",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5699,8 +5699,8 @@
       "name": "Tuscany Silver Porcelain Combo Glossy 600Ã1200mm",
       "code": "Q01410",
       "price": {
-        "current": 3049.9,
-        "regular": 3049.9,
+        "current": 3049.99,
+        "regular": 3049.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5737,8 +5737,8 @@
       "name": "Ultimo Staturio Rustic Matt Porcelain Combo 600Ã1200mm",
       "code": "Q01250",
       "price": {
-        "current": 3249.9,
-        "regular": 3249.9,
+        "current": 3249.99,
+        "regular": 3249.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5775,8 +5775,8 @@
       "name": "Velora Floor Tile Combo 600Ã600mm",
       "code": "Q01216",
       "price": {
-        "current": 2649.9,
-        "regular": 2649.9,
+        "current": 2649.99,
+        "regular": 2649.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5813,8 +5813,8 @@
       "name": "Wal Hung Black Elegance Combo",
       "code": "Q01414",
       "price": {
-        "current": 6999.9,
-        "regular": 6999.9,
+        "current": 6999.99,
+        "regular": 6999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5853,8 +5853,8 @@
       "name": "Wall Hung Pool Black Combo",
       "code": "Q01415",
       "price": {
-        "current": 7499.9,
-        "regular": 7499.9,
+        "current": 7499.99,
+        "regular": 7499.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
@@ -5893,8 +5893,8 @@
       "name": "Zen Shower Combo",
       "code": "Q01311",
       "price": {
-        "current": 2999.9,
-        "regular": 2999.9,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"

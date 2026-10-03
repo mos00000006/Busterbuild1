@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import sys
 import time
@@ -22,14 +23,16 @@ import requests
 from bs4 import BeautifulSoup
 from requests.exceptions import RequestException
 
-BUSTERBUILD_PULSE_SYNC_VERSION = "2026-10-01-v3-html-checkpoint"
+BUSTERBUILD_PULSE_SYNC_VERSION = "2026-10-01-v4-fast-batched"
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "pulse-tile-catalogue.json"
 CACHE = ROOT / "data" / "pulse-product-cache.json"
 BASE = "https://pulsetiles.co.za"
 TIMEOUT = 50
-MAX_ATTEMPTS = 10
+MAX_ATTEMPTS = 6
+PRODUCT_WORKERS = 4
+PRODUCT_BATCH_SIZE = 16
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
@@ -103,9 +106,9 @@ def wait_seconds(attempt: int) -> float:
     return min(45.0, 1.5 * (1.7 ** attempt)) + random.uniform(0.5, 2.0)
 
 
-def fetch_html(url: str) -> BeautifulSoup:
+def fetch_html(url: str, max_attempts: int = MAX_ATTEMPTS) -> BeautifulSoup:
     last = None
-    for attempt in range(MAX_ATTEMPTS):
+    for attempt in range(max_attempts):
         s = make_session()
         try:
             r = s.get(
@@ -123,14 +126,14 @@ def fetch_html(url: str) -> BeautifulSoup:
             return BeautifulSoup(text, "html.parser")
         except (RequestException, RuntimeError) as exc:
             last = exc
-            if attempt == MAX_ATTEMPTS - 1:
+            if attempt == max_attempts - 1:
                 break
             delay = wait_seconds(attempt)
-            print(f"WARN fetch {attempt+1}/{MAX_ATTEMPTS} failed for {url}: {exc}; retrying in {delay:.1f}s", file=sys.stderr)
+            print(f"WARN fetch {attempt+1}/{max_attempts} failed for {url}: {exc}; retrying in {delay:.1f}s", file=sys.stderr)
             time.sleep(delay)
         finally:
             s.close()
-    raise RuntimeError(f"failed after {MAX_ATTEMPTS} attempts: {url}: {last}")
+    raise RuntimeError(f"failed after {max_attempts} attempts: {url}: {last}")
 
 
 def product_url_ok(url: str) -> bool:
@@ -166,11 +169,35 @@ def category_product_urls(base_url: str) -> list[str]:
     return found
 
 
+
+def busterbuild_price_99(value):
+    """Keep the Pulse rand amount but enforce BusterBuild's .99 price ending."""
+    if value is None or isinstance(value, bool):
+        return value
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return value
+    return round(int(number // 1) + 0.99, 2)
+
+
+def normalise_busterbuild_product_price(product: dict) -> dict:
+    """Apply .99 to current, regular and sale prices, including cached products."""
+    out = dict(product)
+    price = out.get("price")
+    if isinstance(price, dict):
+        price = dict(price)
+        for key in ("current", "regular", "sale"):
+            if price.get(key) is not None:
+                price[key] = busterbuild_price_99(price[key])
+        out["price"] = price
+    return out
+
 def parse_price(text: str) -> dict:
     txt = clean_text(text)
     nums = [float(x.replace(",", "")) for x in re.findall(r"R\s*([0-9][0-9,]*(?:\.\d{1,2})?)", txt, re.I)]
-    current = nums[-1] if nums else None
-    regular = nums[0] if len(nums) > 1 else current
+    current = busterbuild_price_99(nums[-1]) if nums else None
+    regular = busterbuild_price_99(nums[0]) if len(nums) > 1 else current
     sale = current if len(nums) > 1 and regular and current and current < regular else None
     return {
         "current": current,
@@ -199,7 +226,7 @@ def factual_description(name: str, attrs: list[dict], short: str) -> str:
 
 
 def parse_product(url: str) -> dict:
-    soup = fetch_html(url)
+    soup = fetch_html(url, max_attempts=4)
     h1 = soup.select_one("h1.product_title") or soup.find("h1")
     name = clean_text(h1.get_text(" ", strip=True) if h1 else "") or url.rstrip("/").split("/")[-1].replace("-", " ").title()
 
@@ -287,7 +314,7 @@ def write_payload(products_by_id: dict[str, dict], category_products: dict[str, 
         if target in category_meta:
             category_meta[alias] = dict(category_meta[target])
 
-    products = list(products_by_id.values())
+    products = [normalise_busterbuild_product_price(p) for p in products_by_id.values()]
     products.sort(key=lambda x: (x.get("name") or "").lower())
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -308,7 +335,7 @@ def write_payload(products_by_id: dict[str, dict], category_products: dict[str, 
 
 def main() -> None:
     print(f"BUSTERBUILD_PULSE_SYNC_VERSION={BUSTERBUILD_PULSE_SYNC_VERSION}")
-    print("Mode: HTML-only static crawl (WooCommerce JSON API disabled)")
+    print("Mode: FAST batched HTML-only crawl (4 concurrent product requests; WooCommerce JSON API disabled)")
 
     previous = load_json(OUT, {})
     prev_by_id, prev_by_url = previous_maps(previous)
@@ -347,36 +374,50 @@ def main() -> None:
 
         ids: list[str] = []
         detail_failures = 0
-        for i, url in enumerate(urls, 1):
-            p = cache.get(url)
-            if not p:
-                try:
-                    p = parse_product(url)
-                    cache[url] = p
-                    details_fetched += 1
-                    time.sleep(random.uniform(0.8, 1.5))
-                    if details_fetched % 35 == 0:
-                        pause = random.uniform(8.0, 15.0)
-                        print(f"  Cooling down for {pause:.1f}s after {details_fetched} new product pages")
-                        time.sleep(pause)
-                except Exception as exc:
-                    detail_failures += 1
-                    old = prev_by_url.get(url)
-                    if old:
-                        p = old
-                        print(f"WARN using previous product data for {url}: {exc}", file=sys.stderr)
-                    else:
-                        print(f"WARN product detail skipped {url}: {exc}", file=sys.stderr)
-                        continue
 
+        # Reuse cached products immediately and fetch only unseen product pages.
+        uncached = [u for u in urls if not cache.get(u)]
+        if uncached:
+            print(f"  Need details for {len(uncached)} new product pages; using {PRODUCT_WORKERS} workers")
+
+        for batch_start in range(0, len(uncached), PRODUCT_BATCH_SIZE):
+            batch = uncached[batch_start:batch_start + PRODUCT_BATCH_SIZE]
+            with ThreadPoolExecutor(max_workers=PRODUCT_WORKERS) as pool:
+                future_map = {pool.submit(parse_product, url): url for url in batch}
+                for future in as_completed(future_map):
+                    url = future_map[future]
+                    try:
+                        p = future.result()
+                        cache[url] = p
+                        details_fetched += 1
+                    except Exception as exc:
+                        detail_failures += 1
+                        old = prev_by_url.get(url)
+                        if old:
+                            cache[url] = old
+                            print(f"WARN using previous product data for {url}: {exc}", file=sys.stderr)
+                        else:
+                            print(f"WARN product detail skipped {url}: {exc}", file=sys.stderr)
+
+            done = min(batch_start + len(batch), len(uncached))
+            print(f"  {key}: fetched {done}/{len(uncached)} new detail pages")
+            # Short polite pause between batches; much quicker than V3's per-product delay.
+            if done < len(uncached):
+                time.sleep(random.uniform(1.0, 2.0))
+
+        # Merge cached/new details into this category in the original catalogue order.
+        for i, url in enumerate(urls, 1):
+            p = cache.get(url) or prev_by_url.get(url)
+            if not p:
+                continue
             pid = str(p.get("id") or urlparse(url).path.rstrip("/").split("/")[-1])
             p = dict(p)
             p["id"] = pid
             p["source_url"] = url
             products_by_id[pid] = merge_product(products_by_id.get(pid), p, key)
             ids.append(pid)
-            if i % 20 == 0:
-                print(f"  {key}: {i}/{len(urls)} processed")
+            if i % 40 == 0:
+                print(f"  {key}: {i}/{len(urls)} merged")
 
         if ids:
             category_products[key] = list(dict.fromkeys(ids))
@@ -392,7 +433,7 @@ def main() -> None:
         CACHE.parent.mkdir(parents=True, exist_ok=True)
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
         write_payload(products_by_id, category_products, failed_categories, checkpoint=True)
-        time.sleep(random.uniform(1.0, 2.0))
+        time.sleep(random.uniform(0.4, 0.9))
 
     payload = write_payload(products_by_id, category_products, failed_categories, checkpoint=False)
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
