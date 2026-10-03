@@ -237,3 +237,29 @@ select,
   opacity:.42;
   cursor:not-allowed;
 }
+
+
+/* Smart Measure — customer charged by required square metres */
+#use-boxes{display:none!important}
+#product-qty[readonly]{
+  background:#fff;
+  color:#111;
+  font-weight:900;
+}
+#qty-minus:disabled,#qty-plus:disabled{
+  opacity:.42;
+  cursor:not-allowed;
+}
+.smart-cart-boxes{
+  display:block;
+  margin-top:5px;
+  font-size:.72rem;
+  color:#7a746c;
+}
+.smart-measure-cart-row .smart-cart-math{
+  display:block;
+  margin-top:5px;
+  font-size:.82rem;
+  font-weight:900;
+  color:#111;
+}

@@ -1,59 +1,66 @@
-BusterBuild Sales App — SMART MEASURE HARD REFRESH FIX
+BusterBuild Sales App — FINAL m² PRICING SMART MEASURE FIX
 
-The screenshot proves the phone/browser was still running the OLD cached app.js:
-- Boxes to order showed 5
-- Quantity stayed 1
-- "Use required m² as quantity" was still visible
+The core issue was the quantity basis.
 
-This package fixes that in two ways:
+For tiles, the customer is paying the PRICE PER m² calculation.
+Therefore Smart Measure must use REQUIRED AREA as the sales quantity.
+"Boxes to order" is only an operational recommendation.
 
-1. Smart Measure behaviour
-   Example:
-   Room = 3m × 3m
-   Required area = 9.00 m²
-   Boxes to order = 5
-   Estimated total = R3,239.91
+EXAMPLE
+Room: 3m × 3m
+Required area: 9.00 m²
+Boxes to order: 5
+Covers: 10.80 m²
+Tile price: R359.99/m²
+Estimated total: R3,239.91
 
-   The app now AUTOMATICALLY changes:
-   Quantity (boxes) = 5
+THE APP NOW AUTOMATICALLY CHANGES:
+Quantity (m²): 9.00
 
-   Add button becomes:
-   Add 5 boxes to Cart • R3,239.91
+The Add button becomes:
+Add 9.00 m² to Cart • R3,239.91
 
-   The cart keeps:
-   Quantity = 5 boxes
-   Smart Measure Total = R3,239.91
+THE CART SHOWS:
+9.00 m² × R359.99/m² = R3,239.91
+5 boxes recommended • covers 10.80 m²
 
-   The fixed Smart Measure total is NOT recalculated as 5 × the m² price.
+THE QUOTATION / PDF SHOWS:
+QTY: 9.00 m²
+UNIT: R359.99/m²
+TOTAL: R3,239.91
 
-2. Cache fix
-   The app now loads:
-   app-smartmeasure.js
+IMPORTANT:
+The app does NOT charge 5 × the tile price.
+It does NOT use the covered 10.80 m² as the chargeable quantity.
+It charges the exact required area from Smart Measure.
 
-   This is a NEW filename, so the phone cannot keep using the old cached app.js.
+CACHE FIX:
+index.html now loads a new file:
+app-m2pricing.js
 
-UPLOAD/REPLACE THESE FILES IN:
+This prevents phones from continuing to use the old cached JavaScript.
+
+UPLOAD TO:
 Busterbuild1/sales-app/
 
 REPLACE:
 - index.html
+- app.js
 - styles.css
 - sw.js
-- app.js
 
-ADD NEW FILE:
-- app-smartmeasure.js
+ADD:
+- app-m2pricing.js
 
-Do not replace:
+Do NOT replace:
 - firebase-config.js
 - catalogue JSON files
-- manifest.webmanifest
+- manifest
 - icons
 
-After GitHub Pages finishes deploying:
-1. Fully close the installed Sales App.
-2. Open it again from the SAME permanent address/app icon.
-3. Open a tile and enter length + width.
-4. "Boxes to order" and "Quantity (boxes)" must now show the SAME number.
-
-The old "Use required m² as quantity" button is hidden permanently.
+After GitHub Pages deploys:
+1. Fully close the installed app.
+2. Reopen it.
+3. Remove any old test cart line once.
+4. Calculate a tile again.
+5. Quantity must automatically equal Required area in m².
