@@ -367,8 +367,8 @@
     "name": "Dolomiti Saturio Matt Tile Combo 600×600",
     "code": "Q01124",
     "price": {
-      "current": 2299.9,
-      "regular": 2299.9,
+      "current": 2299.99,
+      "regular": 2299.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -430,8 +430,8 @@
     "name": "Dyna Vitrified Polished Porcelain Combo 600×600",
     "code": "Q01490",
     "price": {
-      "current": 2199.9,
-      "regular": 2199.9,
+      "current": 2199.99,
+      "regular": 2199.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -958,8 +958,8 @@
     "name": "Luster Carrara Sugar Glazed Combo 600×600",
     "code": "Q01233",
     "price": {
-      "current": 2399.9,
-      "regular": 2399.9,
+      "current": 2399.99,
+      "regular": 2399.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -985,8 +985,8 @@
     "name": "Luster Empredor Sugar Glaze Combo 600×600",
     "code": "Q01236",
     "price": {
-      "current": 2399.9,
-      "regular": 2399.9,
+      "current": 2399.99,
+      "regular": 2399.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -1444,8 +1444,8 @@
     "name": "Sisam Beige Polished Porcelain Combo 600×600",
     "code": "Q01460",
     "price": {
-      "current": 1899.9,
-      "regular": 1899.9,
+      "current": 1899.99,
+      "regular": 1899.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -1578,8 +1578,8 @@
     "name": "Strat Crema Matt Tile 600x600mm",
     "code": "Q01452",
     "price": {
-      "current": 2899.9,
-      "regular": 2899.9,
+      "current": 2899.99,
+      "regular": 2899.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -3451,8 +3451,8 @@
     "name": "Alco Black Shower Panel Combo",
     "code": "Q01327",
     "price": {
-      "current": 2999.9,
-      "regular": 2999.9,
+      "current": 2999.99,
+      "regular": 2999.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -3662,9 +3662,9 @@
     "name": "Shower Arm and Head Combo",
     "code": "Q01011",
     "price": {
-      "current": 699.9,
-      "regular": 899.9,
-      "sale": 699.9,
+      "current": 699.99,
+      "regular": 899.99,
+      "sale": 699.99,
       "from": false,
       "currency": "ZAR"
     },
@@ -3834,8 +3834,8 @@
     "name": "Shower Screen & Accessories Combo",
     "code": "Q01126",
     "price": {
-      "current": 2499.9,
-      "regular": 2499.9,
+      "current": 2499.99,
+      "regular": 2499.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -3864,9 +3864,9 @@
     "name": "Shower Screen + Shower Rail Combo Deal",
     "code": "Q01203",
     "price": {
-      "current": 2999.9,
-      "regular": 3699.9,
-      "sale": 2999.9,
+      "current": 2999.99,
+      "regular": 3699.99,
+      "sale": 2999.99,
       "from": false,
       "currency": "ZAR"
     },
@@ -4095,8 +4095,8 @@
     "name": "Zen Shower Combo",
     "code": "Q01311",
     "price": {
-      "current": 2999.9,
-      "regular": 2999.9,
+      "current": 2999.99,
+      "regular": 2999.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4156,8 +4156,8 @@
     "name": "Jaunty Alco Wall Hung Toilet Combo",
     "code": "Q01062",
     "price": {
-      "current": 6199.9,
-      "regular": 6199.9,
+      "current": 6199.99,
+      "regular": 6199.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4218,8 +4218,8 @@
     "name": "Modern Toilet Combo",
     "code": "Q01274",
     "price": {
-      "current": 2499.9,
-      "regular": 2499.9,
+      "current": 2499.99,
+      "regular": 2499.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4247,8 +4247,8 @@
     "name": "Pan Connector Combo",
     "code": "Q01183",
     "price": {
-      "current": 499.9,
-      "regular": 499.9,
+      "current": 499.99,
+      "regular": 499.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4568,8 +4568,8 @@
     "name": "Wal Hung Black Elegance Combo",
     "code": "Q01414",
     "price": {
-      "current": 6999.9,
-      "regular": 6999.9,
+      "current": 6999.99,
+      "regular": 6999.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4597,8 +4597,8 @@
     "name": "Wall Hung Pool Black Combo",
     "code": "Q01415",
     "price": {
-      "current": 7499.9,
-      "regular": 7499.9,
+      "current": 7499.99,
+      "regular": 7499.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4765,9 +4765,9 @@
     "name": "Hazel Basin and Mixer Combo",
     "code": "Q00690",
     "price": {
-      "current": 1499.9,
-      "regular": 2399.8,
-      "sale": 1499.9,
+      "current": 1499.99,
+      "regular": 2399.99,
+      "sale": 1499.99,
       "from": false,
       "currency": "ZAR"
     },
@@ -4835,8 +4835,8 @@
     "name": "6 PC Bathroom Set Square – Black and Bamboo",
     "code": "I00831",
     "price": {
-      "current": 399.9,
-      "regular": 399.9,
+      "current": 399.99,
+      "regular": 399.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4910,8 +4910,8 @@
     "name": "Chloe Bath and Freestanding mixer combo",
     "code": "Q01060",
     "price": {
-      "current": 12999.9,
-      "regular": 12999.9,
+      "current": 12999.99,
+      "regular": 12999.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4943,8 +4943,8 @@
     "name": "Cordelia Bath and Freestanding mixer combo",
     "code": "Q01400",
     "price": {
-      "current": 19999.9,
-      "regular": 19999.9,
+      "current": 19999.99,
+      "regular": 19999.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"
@@ -4979,8 +4979,8 @@
     "name": "Corner Shower Caddy",
     "code": "I00619",
     "price": {
-      "current": 349.9,
-      "regular": 349.9,
+      "current": 349.99,
+      "regular": 349.99,
       "sale": null,
       "from": false,
       "currency": "ZAR"

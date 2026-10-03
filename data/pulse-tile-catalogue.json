@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T10:47:50.477589+00:00",
-  "updater_version": "2026-10-01-v3-html-checkpoint",
+  "generated_at": "2026-10-03T08:30:19.722041+00:00",
+  "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
   "sync_complete": true,
@@ -107,10 +107,9 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 108,
+      "count": 107,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -221,12 +220,10 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 12,
+      "count": 10,
       "product_ids": [
-        "dolomiti-alpine-crema-dark-matt-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
-        "dolomiti-carrara-floor-tile-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
         "dolomiti-satuario-50109-matt-600x600mm",
@@ -250,7 +247,7 @@
     },
     "mosaics": {
       "title": "Mosaic Tiles",
-      "count": 62,
+      "count": 61,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -287,7 +284,6 @@
         "hoxton-pearl-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gold-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gris-glass-mosaic-300mmx300mmx4mm",
-        "inchanga-porcelain-ceramic-mosaic-300x300x4mm",
         "jasper-azul-glass-mosaic-300mmx300mmx4mm",
         "jasper-nero-glass-mosaic-polished-nero-style-300x300x4mm",
         "jomo02-glass-mosaic-300x300mm-2",
@@ -376,10 +372,9 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 181,
+      "count": 178,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -409,10 +404,8 @@
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
-        "dolomiti-alpine-crema-dark-matt-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
-        "dolomiti-carrara-floor-tile-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
         "dolomiti-satuario-50109-matt-600x600mm",
@@ -563,10 +556,9 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 145,
+      "count": 142,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "alcora-blanco-glazed-porcelain-600x600mm",
@@ -592,10 +584,8 @@
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "dakota-beige-glossy-300x600mm",
-        "dolomiti-alpine-crema-dark-matt-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
-        "dolomiti-carrara-floor-tile-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
         "dolomiti-satuario-50109-matt-600x600mm",
@@ -714,10 +704,9 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 190,
+      "count": 187,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -753,10 +742,8 @@
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
-        "dolomiti-alpine-crema-dark-matt-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
-        "dolomiti-carrara-floor-tile-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
         "dolomiti-satuario-50109-matt-600x600mm",
@@ -960,11 +947,10 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 107,
+      "count": 106,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -1091,10 +1077,9 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 74,
+      "count": 73,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -1364,7 +1349,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 321,
+      "count": 317,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1460,7 +1445,6 @@
         "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
-        "abstract-river-glazed-polished-porcelain-600x1200",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
@@ -1567,10 +1551,8 @@
         "versilia-grey-glossy-glazed-porcelain-600x1200",
         "volga-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "yega-glossy-glazed-porcelain-800x1600mm",
-        "dolomiti-alpine-crema-dark-matt-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
-        "dolomiti-carrara-floor-tile-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
         "dolomiti-satuario-50109-matt-600x600mm",
@@ -1619,7 +1601,6 @@
         "hoxton-pearl-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gold-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gris-glass-mosaic-300mmx300mmx4mm",
-        "inchanga-porcelain-ceramic-mosaic-300x300x4mm",
         "jasper-azul-glass-mosaic-300mmx300mmx4mm",
         "jasper-nero-glass-mosaic-polished-nero-style-300x300x4mm",
         "jomo02-glass-mosaic-300x300mm-2",
@@ -1726,7 +1707,7 @@
     },
     "mosaic-tiles": {
       "title": "Mosaic Tiles",
-      "count": 62,
+      "count": 61,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -1763,7 +1744,6 @@
         "hoxton-pearl-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gold-glass-mosaic-300mmx300mmx4mm",
         "husky-lara-gris-glass-mosaic-300mmx300mmx4mm",
-        "inchanga-porcelain-ceramic-mosaic-300x300x4mm",
         "jasper-azul-glass-mosaic-300mmx300mmx4mm",
         "jasper-nero-glass-mosaic-polished-nero-style-300x300x4mm",
         "jomo02-glass-mosaic-300x300mm-2",
@@ -7466,7 +7446,7 @@
     {
       "id": "copper-cladding-60x15mm",
       "source_url": "https://pulsetiles.co.za/product/copper-cladding-60x15mm/",
-      "name": "Copper Cladding â 60Ã15mm",
+      "name": "Copper Cladding – 60×15mm",
       "code": "N00049",
       "price": {
         "current": 129.99,
@@ -28625,7 +28605,7 @@
     {
       "id": "teakwood-cladding-60x15mm",
       "source_url": "https://pulsetiles.co.za/product/teakwood-cladding-60x15mm/",
-      "name": "Teakwood Cladding â 60Ã15mm",
+      "name": "Teakwood Cladding – 60×15mm",
       "code": "N00050",
       "price": {
         "current": 129.99,
