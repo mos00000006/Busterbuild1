@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-20261003-smartcart1';
+const CACHE = 'busterbuild-sales-20261003-smartfixed1';
 const STATIC_SHELL = [
   './styles.css',
   './manifest.webmanifest',

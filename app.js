@@ -52,7 +52,7 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-smartcart1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-smartfixed1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -353,19 +353,15 @@ $('add-cart').onclick=()=>{
   if(!selectedProduct)return;
   const tile=isPerSqm(selectedProduct);
   const key=cartKey(selectedProduct);
-  let qty;
 
-  // If Smart Measure was used for this tile, always add the exact calculated m².
-  // This guarantees the cart line total is identical to the calculator's Estimated Total.
   if(tile&&smartMeasureState.productKey===key&&smartMeasureState.area>0){
-    qty=smartMeasureState.area;
-  }else{
-    qty=Math.max(tile?0.01:1,Number($('product-qty').value)||(tile?1:1));
-  }
-
-  addToCart(selectedProduct,qty);
-  if(tile&&smartMeasureState.productKey===key&&smartMeasureState.area>0){
+    // Smart Measure becomes ONE fixed estimate line.
+    // The displayed estimated total is the exact price carried into cart/quote/PDF.
+    addSmartMeasureToCart(selectedProduct, smartMeasureState);
     toast('Smart Measure added • '+money(smartMeasureState.total));
+  }else{
+    const qty=Math.max(tile?0.01:1,Number($('product-qty').value)||(tile?1:1));
+    addToCart(selectedProduct,qty);
   }
   closeProduct();
 };
@@ -418,7 +414,7 @@ function calculateMeasure(){
   // Keep quantity synced automatically so Add to Cart carries exactly the calculator result.
   if(!publicProductMode&&isPerSqm(selectedProduct)&&area>0){
     $('product-qty').value=area.toFixed(2);
-    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add Smart Measure to Cart • '+money(total)+'</span>';
+    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add Estimated Total to Cart • '+money(total)+'</span>';
   }else if(!publicProductMode&&selectedProduct._price){
     $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>';
   }
@@ -430,12 +426,67 @@ function saveCart(){localStorage.setItem('busterbuildSalesCart',JSON.stringify(c
 function addToCart(p,qty){
   const key=cartKey(p), existing=cart.find(x=>x.key===key); if(existing)existing.qty+=qty; else cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p)}); saveCart(); toast(`${p._name} added to cart`);
 }
+function addSmartMeasureToCart(p,measure){
+  const key=cartKey(p);
+  const item={
+    key,
+    name:p._name,
+    code:p._code,
+    image:p._image,
+    type:p._type,
+    // IMPORTANT: for Smart Measure this is now the FIXED estimated total.
+    price:Number(measure.total.toFixed(2)),
+    qty:1,
+    sqm:p._sqm||0,
+    perSqm:false,
+    smartMeasure:true,
+    smartArea:Number(measure.area.toFixed(2)),
+    smartBoxes:Number(measure.boxes||0),
+    smartCover:Number(measure.cover.toFixed(2)),
+    basePrice:Number(p._price||0)
+  };
+  const existingIndex=cart.findIndex(x=>x.key===key);
+  if(existingIndex>=0)cart[existingIndex]=item;
+  else cart.push(item);
+  saveCart();
+}
 function lineTotal(i){return Number((i.price*i.qty).toFixed(2));}
 function updateCartUI(){
-  const count=cart.length; $('bottom-cart-count').textContent=count; $('cart-stat').textContent=count;
-  const list=$('cart-list'); list.innerHTML=''; $('cart-empty').style.display=cart.length?'none':'grid'; $('cart-summary').hidden=!cart.length;
-  let total=0; cart.forEach((item,idx)=>{ total+=lineTotal(item); const row=document.createElement('div'); row.className='cart-row'; row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${esc(item.code||'')} • ${item.perSqm?'m²':'Qty'}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong><div class="mini-qty"><button data-minus type="button">−</button><span>${item.perSqm?formatNumber(item.qty):item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div></div>`; qs('[data-minus]',row).onclick=()=>{item.qty=Math.max(1,item.qty-1);saveCart();}; qs('[data-plus]',row).onclick=()=>{item.qty++;saveCart();}; qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();}; list.appendChild(row); });
-  $('cart-items-total').textContent=count; $('cart-money-total').textContent=money(total);
+  const count=cart.length;
+  $('bottom-cart-count').textContent=count;
+  $('cart-stat').textContent=count;
+  const list=$('cart-list');
+  list.innerHTML='';
+  $('cart-empty').style.display=cart.length?'none':'grid';
+  $('cart-summary').hidden=!cart.length;
+
+  let total=0;
+  cart.forEach((item,idx)=>{
+    total+=lineTotal(item);
+    const row=document.createElement('div');
+    row.className='cart-row';
+
+    const detail=item.smartMeasure
+      ? `${esc(item.code||'')} • Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} box${item.smartBoxes===1?'':'es'}`
+      : `${esc(item.code||'')} • ${item.perSqm?'m²':'Qty'}`;
+
+    const controls=item.smartMeasure
+      ? `<div class="smart-cart-fixed"><span>SMART MEASURE TOTAL</span><strong>${money(item.price)}</strong></div><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button>`
+      : `<div class="mini-qty"><button data-minus type="button">−</button><span>${item.perSqm?formatNumber(item.qty):item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div>`;
+
+    row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${detail}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong>${controls}</div>`;
+
+    if(!item.smartMeasure){
+      const minus=qs('[data-minus]',row), plus=qs('[data-plus]',row);
+      if(minus)minus.onclick=()=>{item.qty=Math.max(item.perSqm?0.01:1,item.qty-1);saveCart();};
+      if(plus)plus.onclick=()=>{item.qty++;saveCart();};
+    }
+    qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();};
+    list.appendChild(row);
+  });
+
+  $('cart-items-total').textContent=count;
+  $('cart-money-total').textContent=money(total);
 }
 
 function loadQuoteHistory(){try{return JSON.parse(localStorage.getItem('busterbuildQuoteHistory')||'[]')}catch{return[]}}
@@ -453,8 +504,15 @@ function currentCustomer(){return {
   project:$('quote-project').value.trim(),
   notes:$('quote-notes').value.trim()
 };}
-function unitLabel(item){if(item.type==='tile'&&item.sqm&&item.perSqm)return `${money(item.price)}/m²`;return money(item.price);}
-function qtyLabel(item){return item.perSqm?`${formatNumber(item.qty)} m²`:String(item.qty);}
+function unitLabel(item){
+  if(item.smartMeasure)return money(item.price);
+  if(item.type==='tile'&&item.sqm&&item.perSqm)return `${money(item.price)}/m²`;
+  return money(item.price);
+}
+function qtyLabel(item){
+  if(item.smartMeasure)return '1';
+  return item.perSqm?`${formatNumber(item.qty)} m²`:String(item.qty);
+} m²`:String(item.qty);}
 function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuoteNumber=quoteNumber();return currentQuoteNumber;}
 function renderQuotePreview(){
   ensureQuoteNumber();
@@ -467,7 +525,7 @@ function renderQuotePreview(){
   $('quote-project-preview').textContent=c.project?`Project: ${c.project}`:'';
   $('quote-salesperson-preview').textContent=$('account-name')?.textContent||'BusterBuild Sales';
   $('quote-total-preview').textContent=money(total);$('quote-preview-total').textContent=money(total);
-  $('quote-items-preview').innerHTML=cart.map(item=>`<tr><td><strong>${esc(item.name)}</strong><small>${item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m²/box`:typeLabel(item.type)}</small></td><td>${esc(item.code||'—')}</td><td>${esc(qtyLabel(item))}</td><td>${esc(unitLabel(item))}</td><td><strong>${money(lineTotal(item))}</strong></td></tr>`).join('')||'<tr><td colspan="5" class="quote-empty-line">No products added yet.</td></tr>';
+  $('quote-items-preview').innerHTML=cart.map(item=>`<tr><td><strong>${esc(item.name)}</strong><small>${item.smartMeasure?`Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m²/box`:typeLabel(item.type)}</small></td><td>${esc(item.code||'—')}</td><td>${esc(qtyLabel(item))}</td><td>${esc(unitLabel(item))}</td><td><strong>${money(lineTotal(item))}</strong></td></tr>`).join('')||'<tr><td colspan="5" class="quote-empty-line">No products added yet.</td></tr>';
   $('quote-note-preview').hidden=!c.notes;$('quote-note-preview').textContent=c.notes?`Notes: ${c.notes}`:'';
 }
 function startQuote(){
@@ -575,7 +633,7 @@ async function createQuoteCanvas(){
 
   items.forEach((item)=>{
     xx=x0;ctx.fillStyle='#fff';ctx.fillRect(x0,y,W-120,rowH);ctx.strokeStyle=line;ctx.beginPath();ctx.moveTo(x0,y+rowH);ctx.lineTo(W-60,y+rowH);ctx.stroke();
-    ctx.fillStyle=ink;ctx.font='800 21px Poppins, Arial, sans-serif';canvasText(ctx,item.name,xx+16,y+34,widths[0]-32,28,2);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText(item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m² per box`:typeLabel(item.type),xx+16,y+92);xx+=widths[0];
+    ctx.fillStyle=ink;ctx.font='800 21px Poppins, Arial, sans-serif';canvasText(ctx,item.name,xx+16,y+34,widths[0]-32,28,2);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText(item.smartMeasure?`Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m² per box`:typeLabel(item.type),xx+16,y+92);xx+=widths[0];
     ctx.fillStyle=muted;ctx.font='700 18px Poppins, Arial, sans-serif';ctx.fillText(item.code||'—',xx+16,y+46);xx+=widths[1];ctx.fillText(qtyLabel(item),xx+16,y+46);xx+=widths[2];ctx.fillText(unitLabel(item),xx+16,y+46);xx+=widths[3];ctx.fillStyle=ink;ctx.font='900 20px Poppins, Arial, sans-serif';ctx.textAlign='right';ctx.fillText(money(lineTotal(item)),xx+widths[4]-16,y+46);ctx.textAlign='left';y+=rowH;
   });
 

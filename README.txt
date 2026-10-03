@@ -1,40 +1,49 @@
-BusterBuild Sales App — Smart Measure Cart Price Fix
+BusterBuild Sales App — Smart Measure FIXED TOTAL Update
 
-Replace ONLY these four files in:
-Busterbuild1/sales-app/
-
+Replace ONLY:
 - index.html
 - app.js
 - styles.css
 - sw.js
 
-Do NOT replace firebase-config.js, catalogue JSON files, icons, or manifest.
+inside:
+Busterbuild1/sales-app/
 
-NEW SMART MEASURE BEHAVIOUR
-1. Enter room length and width.
-2. Smart Measure calculates the required m², recommended boxes and Estimated Total.
-3. The tile quantity is automatically set to the exact Smart Measure m².
-4. Tap Add Smart Measure to Cart.
-5. The cart line total stays EXACTLY the same as the Smart Measure Estimated Total.
-6. The same price then carries through to the quotation preview and PDF.
+Do NOT replace firebase-config.js, catalogue JSON files, manifest or icons.
+
+WHAT IS DIFFERENT NOW
+
+When Smart Measure calculates an Estimated Total, that amount becomes the FIXED price
+for the cart line.
 
 Example:
-If Smart Measure shows:
-Required area: 10.08 m²
+Tile price: R419.99 per m²
+Smart Measure required area: 10.08 m²
+Recommended boxes: 7
 Estimated Total: R4,233.50
 
-The cart will add:
-10.08 m²
-Total: R4,233.50
+After pressing:
+ADD ESTIMATED TOTAL TO CART • R4,233.50
 
-The calculator, cart, quotation and PDF all use the same 2-decimal m² value and the same .99 product price.
+The cart will show:
+SMART MEASURE: 10.08 m² • 7 boxes
+SMART MEASURE TOTAL: R4,233.50
+Line total: R4,233.50
 
-This update also preserves:
-- mobile auto-PDF download
-- mobile zoom fix
+It will NOT show the original tile/box price as the cart price.
+
+On the quotation and PDF:
+- Qty = 1
+- Unit Price = R4,233.50
+- Total = R4,233.50
+- Product description shows the Smart Measure area and recommended boxes
+
+This removes the confusing base tile price from a Smart Measure quotation line.
+
+All previous features are preserved:
 - customer QR product-only view
-- staff login/cart/quotation workflow
-- WhatsApp, email, Download PDF and Share PDF
-
-Permanent URL remains:
-https://mos00000006.github.io/Busterbuild1/sales-app/
+- mobile zoom fix
+- mobile auto PDF
+- staff login
+- cart/quotation/PDF
+- WhatsApp and email

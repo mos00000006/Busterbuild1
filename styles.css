@@ -177,3 +177,23 @@ select,
     font-size:16px!important;
   }
 }
+
+
+/* Fixed Smart Measure cart line */
+.smart-cart-fixed{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:2px;
+  margin-top:7px;
+}
+.smart-cart-fixed span{
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  color:#8a6a00;
+}
+.smart-cart-fixed strong{
+  font-size:.86rem;
+  color:#111;
+}
