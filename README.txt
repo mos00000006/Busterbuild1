@@ -1,43 +1,33 @@
-BusterBuild Sales App — FINAL SMART MEASURE FIX
+BusterBuild Sales App — Smart Measure Auto Box Quantity
 
-Your screenshot showed the exact issue:
-Smart Measure = 4.00 m² and R1,679.96,
-but the cart was still adding 1 × R419.99.
+This fixes the exact issue shown in the screenshot.
 
-This build changes that workflow completely.
+EXAMPLE:
+Room length: 3 m
+Room width: 2.97 m
+Required area: 8.91 m²
+Boxes to order: 7
+Estimated total: R3,742.11
 
-NEW BEHAVIOUR
-Example:
-Tile price: R419.99/m²
-Room: 2m × 2m
-Required area: 4.00 m²
-Boxes recommended: 3
-Estimated total: R1,679.96
+As soon as Smart Measure calculates 7 boxes:
+- Quantity automatically changes from 1 to 7.
+- Quantity label changes to "Quantity (boxes)".
+- The quantity is locked to the Smart Measure result so it cannot accidentally be changed.
+- Add to Cart shows "Add 7 boxes to Cart • R3,742.11".
+- Cart shows Quantity: 7 boxes.
+- Smart Measure total remains R3,742.11.
+- Quotation/PDF shows 7 boxes and keeps the Smart Measure total.
 
-As soon as Smart Measure calculates:
-- the separate Quantity control is hidden;
-- there is no "Use required m² as quantity" extra step;
-- the button changes to:
-  ADD 4.00 m² TO CART • R1,679.96
+The old "Use required m² as quantity" extra button is no longer needed.
 
-When pressed, the cart shows:
-- Smart Measure: 4.00 m²
-- 3 boxes recommended
-- 4.00 m² × R419.99/m²
-- SMART MEASURE TOTAL: R1,679.96
-
-The quotation and PDF then show:
-QTY: 4.00 m²
-UNIT: R419.99/m²
-TOTAL: R1,679.96
-
-The Smart Measure cart line cannot be changed with +/- buttons, preventing the calculated quote from being accidentally altered.
-
-REPLACE ONLY THESE FOUR FILES IN sales-app:
+REPLACE ONLY:
 - index.html
 - app.js
 - styles.css
 - sw.js
+
+inside:
+Busterbuild1/sales-app/
 
 Do NOT replace:
 - firebase-config.js
@@ -45,10 +35,4 @@ Do NOT replace:
 - manifest
 - icons
 
-IMPORTANT AFTER PUSHING:
-The new service worker forces the installed app to refresh to this build.
-If the OLD R419.99 test item is already sitting in your cart, remove that old item once,
-then calculate Smart Measure again and add it. New Smart Measure items will use the correct total.
-
-Permanent URL remains:
-https://mos00000006.github.io/Busterbuild1/sales-app/
+After pushing to GitHub, fully close and reopen the installed app once.

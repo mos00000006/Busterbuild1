@@ -212,3 +212,15 @@ select,
     min-width:0;
   }
 }
+
+/* Smart Measure automatic box quantity */
+.qty-stepper button:disabled,
+.qty-control button:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+#product-qty[readonly]{
+  background:#fff;
+  color:#111;
+  font-weight:900;
+}

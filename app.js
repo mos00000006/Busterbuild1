@@ -58,7 +58,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
       refreshing=true;
       window.location.reload();
     });
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-smartfinal3',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-autoboxes1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -393,6 +393,11 @@ function resetMeasure(){
   if(qtyBlock)qtyBlock.hidden=false;
 
   if(selectedProduct&&!publicProductMode&&$('add-cart')){
+    const tileSqmQty=(selectedProduct._type==='tile'&&isPerSqm(selectedProduct));
+    $('qty-label').textContent=tileSqmQty?'Quantity (m²)':'Quantity';
+    $('product-qty').readOnly=false;
+    $('qty-minus').disabled=false;
+    $('qty-plus').disabled=false;
     $('add-cart').innerHTML=selectedProduct._price
       ?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>'
       :'<span>Price unavailable</span>';
@@ -430,16 +435,25 @@ function calculateMeasure(){
   $('measure-total').textContent=money(total);
 
   if(!publicProductMode){
-    // No extra step: Smart Measure automatically becomes the cart quantity.
-    $('product-qty').value=area.toFixed(2);
+    // Smart Measure automatically changes the quantity to the recommended number of boxes.
+    $('product-qty').value=String(boxes);
 
     const buyPanel=qs('.buy-panel');
     const qtyBlock=qs('.qty-block');
-    if(buyPanel)buyPanel.classList.add('smart-active');
-    if(qtyBlock)qtyBlock.hidden=true;
+    if(buyPanel)buyPanel.classList.remove('smart-active');
+    if(qtyBlock)qtyBlock.hidden=false;
+
+    // Quantity now follows the recommended FULL BOXES automatically.
+    $('qty-label').textContent='Quantity (boxes)';
+    $('product-qty').min='1';
+    $('product-qty').step='1';
+    $('product-qty').value=String(boxes);
+    $('product-qty').readOnly=true;
+    $('qty-minus').disabled=true;
+    $('qty-plus').disabled=true;
 
     $('add-cart').innerHTML=
-      '<i class="fa-solid fa-cart-plus"></i><span>Add '+area.toFixed(2)+' m² to Cart • '+money(total)+'</span>';
+      '<i class="fa-solid fa-cart-plus"></i><span>Add '+boxes+' box'+(boxes===1?'':'es')+' to Cart • '+money(total)+'</span>';
   }
 }
 
@@ -470,10 +484,10 @@ function addSmartMeasureToCart(p,measure){
     code:p._code,
     image:p._image,
     type:p._type,
-    price:Number(p._price||0),       // keeps the correct R/m² unit price
-    qty:Number(measure.area.toFixed(2)),
+    price:Number(p._price||0),       // displayed selling price per m²
+    qty:Number(measure.boxes||0),     // quantity shown in cart/quote = recommended boxes
     sqm:p._sqm||0,
-    perSqm:true,
+    perSqm:false,
     smartMeasure:true,
     smartArea:Number(measure.area.toFixed(2)),
     smartBoxes:Number(measure.boxes||0),
@@ -521,8 +535,8 @@ function updateCartUI(){
         <img src="${esc(item.image)}" alt="">
         <div>
           <h3>${esc(item.name)}</h3>
-          <p>${esc(item.code||'')} • Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} box${item.smartBoxes===1?'':'es'} recommended</p>
-          <small class="smart-cart-math">${formatNumber(item.smartArea)} m² × ${money(item.price)}/m²</small>
+          <p>${esc(item.code||'')} • Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} box${item.smartBoxes===1?'':'es'}</p>
+          <small class="smart-cart-math">Quantity: ${item.smartBoxes} box${item.smartBoxes===1?'':'es'} • ${formatNumber(item.smartArea)} m² × ${money(item.price)}/m²</small>
         </div>
         <div class="cart-row-total">
           <strong>${money(itemTotal)}</strong>
@@ -581,12 +595,14 @@ function currentCustomer(){return {
   notes:$('quote-notes').value.trim()
 };}
 function unitLabel(item){
+  if(item.smartMeasure)return `${money(item.price)}/m²`;
   if(item.type==='tile'&&item.perSqm)return `${money(item.price)}/m²`;
   return money(item.price);
 }
 function qtyLabel(item){
+  if(item.smartMeasure)return `${item.smartBoxes} box${item.smartBoxes===1?'':'es'}`;
   return item.perSqm?`${formatNumber(item.qty)} m²`:String(item.qty);
-} m²`:String(item.qty);}
+}
 function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuoteNumber=quoteNumber();return currentQuoteNumber;}
 function renderQuotePreview(){
   ensureQuoteNumber();
