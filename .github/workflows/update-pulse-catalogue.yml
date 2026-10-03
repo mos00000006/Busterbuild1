@@ -20,7 +20,7 @@ concurrency:
 jobs:
   update-catalogue:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -30,11 +30,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Verify V3 updater is actually in the repository
+      - name: Verify V4 updater is actually in the repository
         shell: bash
         run: |
-          grep -q '2026-10-01-v3-html-checkpoint' scripts/update_pulse_catalogue.py
-          echo "Confirmed V3 HTML-only checkpoint updater"
+          grep -q '2026-10-01-v4-fast-batched' scripts/update_pulse_catalogue.py
+          echo "Confirmed V4 fast batched HTML-only updater"
           grep 'BUSTERBUILD_PULSE_SYNC_VERSION' scripts/update_pulse_catalogue.py | head -1
 
       - name: Install catalogue tools
@@ -48,16 +48,20 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+
           p = Path('data/pulse-tile-catalogue.json')
           d = json.loads(p.read_text(encoding='utf-8'))
           products = d.get('products', [])
+
           print('Updater version:', d.get('updater_version'))
           print('Products:', len(products))
           print('Source mode:', d.get('source_mode'))
           print('Sync complete:', d.get('sync_complete'))
           print('Failed categories:', d.get('failed_categories', []))
-          if d.get('updater_version') != '2026-10-01-v3-html-checkpoint':
+
+          if d.get('updater_version') != '2026-10-01-v4-fast-batched':
               raise SystemExit('Wrong updater version generated the catalogue')
+
           if len(products) < 20:
               raise SystemExit('Generated catalogue is unexpectedly small')
           PY
