@@ -224,3 +224,16 @@ select,
   color:#111;
   font-weight:900;
 }
+
+
+/* Smart Measure automatic box quantity - hard refresh build */
+#use-boxes{display:none!important}
+#product-qty[readonly]{
+  background:#fff;
+  color:#111;
+  font-weight:900;
+}
+#qty-minus:disabled,#qty-plus:disabled{
+  opacity:.42;
+  cursor:not-allowed;
+}
