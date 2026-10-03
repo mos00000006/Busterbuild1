@@ -1,6 +1,7 @@
-const CACHE = 'busterbuild-sales-20261002-autopdf1';
+const CACHE = 'busterbuild-sales-20261003-v1professional1';
 const STATIC_SHELL = [
   './styles.css',
+  './app-version.json',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -48,6 +49,10 @@ self.addEventListener('fetch', event => {
     path.endsWith('/sales-app/') ||
     path.endsWith('/sales-app/index.html') ||
     path.endsWith('/sales-app/app.js') ||
+    path.endsWith('/sales-app/app-smartmeasure.js') ||
+    path.endsWith('/sales-app/app-m2pricing.js') ||
+    path.endsWith('/sales-app/app-v1.js') ||
+    path.endsWith('/sales-app/app-version.json') ||
     path.endsWith('/sales-app/firebase-config.js') ||
     path.endsWith('/sales-app/sw.js') ||
     path.endsWith('/sales-app/styles.css')
