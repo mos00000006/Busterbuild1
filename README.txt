@@ -1,30 +1,40 @@
-BusterBuild .99 Pricing Update
+BusterBuild Sales App — Smart Measure Cart Price Fix
 
-This update changes the Pulse catalogue prices to BusterBuild price endings of .99.
+Replace ONLY these four files in:
+Busterbuild1/sales-app/
 
-Current catalogue updated:
-- Tiles: 468 products
-- Combo Deals: 144 products
+- index.html
+- app.js
+- styles.css
+- sw.js
 
-Replace these files in your GitHub repository:
+Do NOT replace firebase-config.js, catalogue JSON files, icons, or manifest.
 
-data/
-  pulse-tile-catalogue.json
-  pulse-combo-catalogue.json
+NEW SMART MEASURE BEHAVIOUR
+1. Enter room length and width.
+2. Smart Measure calculates the required m², recommended boxes and Estimated Total.
+3. The tile quantity is automatically set to the exact Smart Measure m².
+4. Tap Add Smart Measure to Cart.
+5. The cart line total stays EXACTLY the same as the Smart Measure Estimated Total.
+6. The same price then carries through to the quotation preview and PDF.
 
-scripts/
-  update_pulse_catalogue.py
-  update_combo_catalogue.py
+Example:
+If Smart Measure shows:
+Required area: 10.08 m²
+Estimated Total: R4,233.50
 
-IMPORTANT:
-The two script files make the change permanent. Future automatic Pulse catalogue updates
-will continue to import the Pulse rand amount but will change the cents to .99 before
-writing the BusterBuild catalogue.
+The cart will add:
+10.08 m²
+Total: R4,233.50
 
-Examples:
-R419.90 -> R419.99
-R259.90 -> R259.99
-R399.80 -> R399.99
+The calculator, cart, quotation and PDF all use the same 2-decimal m² value and the same .99 product price.
 
-The normal Sales App URL does not change:
+This update also preserves:
+- mobile auto-PDF download
+- mobile zoom fix
+- customer QR product-only view
+- staff login/cart/quotation workflow
+- WhatsApp, email, Download PDF and Share PDF
+
+Permanent URL remains:
 https://mos00000006.github.io/Busterbuild1/sales-app/
