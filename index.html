@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
-  <meta name="theme-color" content="#e1a100">
+  <meta name="theme-color" content="#111111">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BB Sales">
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261003-m2pricing1">
+  <link rel="stylesheet" href="styles.css?v=20261003-v1professional1">
 </head>
 <body>
   <div id="public-product-loading" class="public-product-loading">
@@ -63,6 +63,18 @@
         <button id="account-btn" class="account-pill" type="button"><span class="avatar"><i class="fa-solid fa-user"></i></span><span class="account-copy"><strong id="account-name">Sales</strong><small id="account-email"></small></span></button>
       </div>
     </header>
+
+    <div id="app-update-banner" class="app-update-banner" hidden>
+      <div><i class="fa-solid fa-circle-up"></i><span>A newer BusterBuild Sales version <strong id="available-version"></strong> is ready.</span></div>
+      <button id="update-now-btn" type="button">Update App</button>
+    </div>
+
+    <div class="system-strip">
+      <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
+      <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
+      <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
+      <span id="app-version" class="version-chip">v1.0.0</span>
+    </div>
 
     <main>
       <section id="catalogue-view" class="view active">
@@ -132,6 +144,20 @@
             <label>WhatsApp number *<input id="quote-customer-phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="e.g. 082 123 4567"></label>
             <label>Email address<input id="quote-customer-email" type="email" autocomplete="email" placeholder="customer@email.com"></label>
             <label>Project / reference<input id="quote-project" type="text" placeholder="Optional project name"></label>
+            <div class="quote-meta-grid">
+              <label>Estimate status
+                <select id="quote-status">
+                  <option value="draft">Draft</option>
+                  <option value="sent">Sent</option>
+                  <option value="confirmed">Customer Confirmed</option>
+                  <option value="converted">Converted</option>
+                  <option value="cancelled">Cancelled</option>
+                </select>
+              </label>
+              <label>Official sales-system reference
+                <input id="quote-official-ref" type="text" placeholder="Add after conversion">
+              </label>
+            </div>
             <label>Notes<textarea id="quote-notes" rows="3" placeholder="Optional quotation notes"></textarea></label>
             <div class="quote-form-actions">
               <button id="refresh-quote-preview" class="secondary-btn" type="button"><i class="fa-solid fa-rotate"></i> Refresh Preview</button>
@@ -176,23 +202,41 @@
 
       <section id="quotes-view" class="view">
         <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">QUOTATION HISTORY</span><h2>Saved quotations</h2></div></div>
-        <div class="quotes-history-hero"><div><small>THIS DEVICE</small><strong>Recent quotations</strong><p>Saved quotations remain available on this salesperson's device for quick re-opening and sharing.</p></div><button id="new-quote-from-history" class="primary-btn" type="button"><i class="fa-solid fa-plus"></i> New Quote</button></div>
+        <div class="quotes-history-hero"><div><small id="quotes-history-source">CLOUD + DEVICE</small><strong>Quotation history</strong><p>Saved estimates sync to the BusterBuild cloud and remain available on this device for offline access.</p></div><button id="new-quote-from-history" class="primary-btn" type="button"><i class="fa-solid fa-plus"></i> New Quote</button></div>
         <div id="quotes-history-list" class="quotes-history-list"></div>
       </section>
 
       <section id="admin-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Manage sales team</h2></div></div>
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Sales control centre</h2></div></div>
         <div class="admin-hero">
           <div><span class="eyebrow">TILES &amp; SANITARY WARE</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles &amp; Sanitary Ware Sales App.</p></div>
           <span class="admin-lock"><i class="fa-solid fa-user-shield"></i></span>
         </div>
+
+        <section class="admin-dashboard">
+          <div class="admin-dashboard-head">
+            <div><span class="eyebrow">CLOUD SALES OVERVIEW</span><h3>Quotation activity</h3><p>Live visibility of estimates created by the Tiles &amp; Sanitary Ware sales team.</p></div>
+            <button class="secondary-btn" type="button" onclick="location.reload()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+          </div>
+          <div class="admin-kpi-grid">
+            <div class="admin-kpi"><span>Quotes today</span><strong id="dash-today-count">0</strong><small>Estimates created or updated today</small></div>
+            <div class="admin-kpi"><span>Today's estimate value</span><strong id="dash-today-value">R0,00</strong><small>Combined value today</small></div>
+            <div class="admin-kpi"><span>Customer confirmed</span><strong id="dash-confirmed-value">R0,00</strong><small>Open confirmed estimate value</small></div>
+            <div class="admin-kpi"><span>Converted</span><strong id="dash-converted-value">R0,00</strong><small>Converted estimate value</small></div>
+          </div>
+          <div class="admin-activity-card">
+            <div class="admin-card-head"><div><small>RECENT ACTIVITY</small><strong>Latest quotations</strong></div><i class="fa-solid fa-chart-line"></i></div>
+            <div id="admin-activity-list" class="admin-activity-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading cloud quotations…</div></div>
+          </div>
+        </section>
+
         <div class="admin-grid">
           <form id="add-sales-form" class="admin-card">
             <div class="admin-card-head"><div><small>NEW ACCOUNT</small><strong>Add salesperson</strong></div><i class="fa-solid fa-user-plus"></i></div>
             <label>Full name<input id="sales-name" type="text" autocomplete="off" required placeholder="Salesperson name"></label>
             <label>Email address<input id="sales-email" type="email" autocomplete="off" required placeholder="name@busterbuild.co.za"></label>
             <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
-            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure and cart only.</span></div></div>
+            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
             <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
             <p id="sales-create-status" class="admin-status" role="status"></p>
           </form>
@@ -230,7 +274,7 @@
           <div class="measure-inputs"><label>Room length (m)<input id="room-length" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label><label>Room width (m)<input id="room-width" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label></div>
           <div class="measure-results"><div><span>Required area</span><strong id="required-area">0.00 m²</strong></div><div class="highlight"><span>Boxes to order</span><strong id="boxes-order">0</strong></div><div><span>Covers</span><strong id="covered-area">0.00 m²</strong></div><div class="dark"><span>Estimated total at m² price</span><strong id="measure-total">R0,00</strong></div></div>
           <p id="box-note" class="box-note"></p>
-          <button id="use-boxes" class="secondary-btn" type="button" hidden hidden><i class="fa-solid fa-arrow-down"></i> Use required m² as quantity</button>
+          <button id="use-boxes" class="secondary-btn" type="button" hidden><i class="fa-solid fa-arrow-down"></i> Use required m² as quantity</button>
         </section>
 
         <div class="buy-panel">
@@ -243,6 +287,7 @@
 
   <div id="account-menu" class="account-menu" hidden>
     <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
+    <span id="menu-version" class="menu-version">Version 1.0.0</span>
     <button id="manage-sales-btn" class="admin-menu-btn" type="button" hidden><i class="fa-solid fa-users-gear"></i> Manage Sales Team</button>
     <button id="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
   </div>
@@ -251,6 +296,6 @@
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-m2pricing.js?v=20261003-m2pricing1"></script>
+  <script type="module" src="app-v1.js?v=20261003-v1professional1"></script>
 </body>
 </html>

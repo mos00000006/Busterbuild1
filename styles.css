@@ -263,3 +263,111 @@ select,
   font-weight:900;
   color:#111;
 }
+
+
+/* =========================================================
+   BUSTERBUILD SALES v1.0 — PROFESSIONAL OPERATIONS LAYER
+   ========================================================= */
+.app-update-banner{
+  position:sticky;top:74px;z-index:39;
+  background:#fff3c6;border-bottom:1px solid #e8ca5c;
+  padding:9px 18px;display:flex;align-items:center;justify-content:center;gap:18px;
+  font-size:.72rem;font-weight:700;color:#392d07;
+}
+.app-update-banner>div{display:flex;align-items:center;gap:8px}
+.app-update-banner i{color:#a97800}
+.app-update-banner button{
+  border:0;border-radius:999px;background:#111;color:var(--yellow);
+  font-weight:900;padding:8px 13px;
+}
+.system-strip{
+  max-width:1180px;margin:10px auto 0;padding:0 18px;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
+.system-pill,.version-chip,.system-info{
+  min-height:32px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;display:inline-flex;align-items:center;gap:6px;
+  padding:6px 10px;font-size:.64rem;font-weight:800;color:#555;
+}
+.system-pill.online{color:#167a45;border-color:#cce8d8;background:#f2fbf6}
+.system-pill.offline{color:#a93c32;border-color:#f0c7c2;background:#fff5f3}
+.system-pill.cloud.ready{color:#285e48}
+.system-pill.cloud.syncing{color:#8a6700;background:#fff9e7}
+.system-pill.cloud.error{color:#a93c32;background:#fff5f3}
+.system-pill.cloud.offline{color:#826d44;background:#faf6ed}
+.system-info strong{color:#111}
+.version-chip{margin-left:auto;background:#111;color:var(--yellow);border-color:#111}
+
+.quote-meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.quote-customer-card select{
+  width:100%;margin-top:5px;border:1px solid #ddd5c7;border-radius:12px;
+  padding:12px 13px;background:#fff;color:#111;outline:none
+}
+.quote-customer-card select:focus{border-color:var(--yellow);box-shadow:0 0 0 3px rgba(225,161,0,.12)}
+.history-topline{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.quote-status-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:999px;padding:4px 8px;font-size:.52rem;font-weight:900;
+  letter-spacing:.03em;white-space:nowrap;border:1px solid transparent;
+}
+.quote-status-badge.draft{background:#f1f1f1;color:#666;border-color:#ddd}
+.quote-status-badge.sent{background:#eef4ff;color:#295f9d;border-color:#cfe0f7}
+.quote-status-badge.confirmed{background:#fff5c9;color:#7e6100;border-color:#ebd36d}
+.quote-status-badge.converted{background:#e9f8ef;color:#147344;border-color:#bfe4cf}
+.quote-status-badge.cancelled{background:#fff0ee;color:#a03931;border-color:#f0c2bd}
+.cloud-mark{display:block;margin-top:3px;font-size:.55rem;font-weight:800}
+.cloud-mark.synced{color:#16814b}.cloud-mark.pending{color:#9a7200}
+.quote-history-money select{
+  max-width:155px;border:1px solid #ddd5c7;border-radius:9px;
+  background:#fff;padding:6px 7px;font-size:.62rem;font-weight:800;
+}
+
+.admin-dashboard{margin:0 0 14px}
+.admin-dashboard-head{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:10px;
+}
+.admin-dashboard-head h3{margin:3px 0;font-size:1.18rem}
+.admin-dashboard-head p{margin:0;color:#777;font-size:.7rem}
+.admin-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:10px}
+.admin-kpi{
+  background:#111;color:#fff;border-radius:18px;padding:15px;
+  display:grid;gap:4px;min-height:112px
+}
+.admin-kpi span{font-size:.62rem;color:var(--yellow);font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.admin-kpi strong{font-size:1.35rem}
+.admin-kpi small{font-size:.58rem;color:#aaa;line-height:1.4}
+.admin-activity-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px}
+.admin-activity-list{display:grid;gap:7px;margin-top:10px}
+.activity-row{
+  border:1px solid var(--line);border-radius:14px;padding:10px 12px;
+  display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center
+}
+.activity-row>div:first-child{display:grid}
+.activity-row>div:first-child strong{font-size:.76rem}
+.activity-row>div:first-child span{font-size:.62rem;color:#777}
+.activity-meta{text-align:right;display:grid;justify-items:end;gap:3px}
+.activity-meta>strong{font-size:.78rem}.activity-meta>small{font-size:.55rem;color:#888}
+.menu-version{font-size:.58rem!important;color:#999!important;margin-top:2px}
+
+@media(max-width:850px){
+  .admin-kpi-grid{grid-template-columns:1fr 1fr}
+  .system-strip{padding:0 12px}
+  .system-info{order:3;width:100%;justify-content:center}
+  .version-chip{margin-left:0}
+}
+@media(max-width:520px){
+  .app-update-banner{top:74px;flex-direction:column;gap:7px;text-align:center;padding:9px 12px}
+  .app-update-banner button{width:100%}
+  .system-strip{gap:6px}
+  .system-pill,.version-chip,.system-info{font-size:.58rem;min-height:29px}
+  .quote-meta-grid{grid-template-columns:1fr}
+  .admin-kpi-grid{grid-template-columns:1fr 1fr}
+  .admin-kpi{min-height:100px;padding:12px}
+  .admin-kpi strong{font-size:1.08rem}
+  .admin-dashboard-head{align-items:flex-start;flex-direction:column}
+  .admin-dashboard-head .secondary-btn{width:100%}
+  .activity-row{grid-template-columns:1fr}
+  .activity-meta{text-align:left;justify-items:start}
+  .quote-history-money select{max-width:130px}
+}

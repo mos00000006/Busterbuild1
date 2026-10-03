@@ -1,46 +1,55 @@
-BusterBuild Sales App — FINAL m² PRICING SMART MEASURE FIX
+BusterBuild Sales App v1.0 Professional
+Build: 20261003-v1professional1
 
-The core issue was the quantity basis.
+This package upgrades the current Sales App without replacing your Firebase configuration,
+catalogue JSON files, icons, or manifest.
 
-For tiles, the customer is paying the PRICE PER m² calculation.
-Therefore Smart Measure must use REQUIRED AREA as the sales quantity.
-"Boxes to order" is only an operational recommendation.
+WHAT IS INCLUDED
 
-EXAMPLE
-Room: 3m × 3m
-Required area: 9.00 m²
-Boxes to order: 5
-Covers: 10.80 m²
-Tile price: R359.99/m²
-Estimated total: R3,239.91
+1. APP VERSION + UPDATE CONTROL
+- Current version displayed as v1.0.0.
+- The app checks app-version.json for a newer release.
+- When a newer build exists, staff see an "Update App" banner.
+- "Update App" clears stale app caches and reloads the SAME permanent URL.
 
-THE APP NOW AUTOMATICALLY CHANGES:
-Quantity (m²): 9.00
+2. ONLINE / OFFLINE + CLOUD STATUS
+- Online / Offline indicator.
+- Cloud synced / syncing / sync issue indicator.
+- If the salesperson is offline, quotations still save on the device.
+- Pending quotations retry cloud sync when the connection returns.
 
-The Add button becomes:
-Add 9.00 m² to Cart • R3,239.91
+3. PRICE / CATALOGUE SYNC TIMESTAMP
+- Shows the latest generated_at timestamp from the live catalogue JSON files.
+- Staff can see when the price catalogue was last refreshed.
 
-THE CART SHOWS:
-9.00 m² × R359.99/m² = R3,239.91
-5 boxes recommended • covers 10.80 m²
+4. CLOUD QUOTATIONS
+- Saved quotations are written to Firestore collection: quotations.
+- Salespeople load their own quotations on any authorised device.
+- Administrator can see all cloud quotations.
+- Local device history remains as an offline fallback.
 
-THE QUOTATION / PDF SHOWS:
-QTY: 9.00 m²
-UNIT: R359.99/m²
-TOTAL: R3,239.91
+5. QUOTE STATUS WORKFLOW
+Statuses:
+- Draft
+- Sent
+- Customer Confirmed
+- Converted
+- Cancelled
 
-IMPORTANT:
-The app does NOT charge 5 × the tile price.
-It does NOT use the covered 10.80 m² as the chargeable quantity.
-It charges the exact required area from Smart Measure.
+The quotation form also has:
+- Official sales-system reference
 
-CACHE FIX:
-index.html now loads a new file:
-app-m2pricing.js
+WhatsApp / Email will move a saved Draft quotation to Sent automatically.
 
-This prevents phones from continuing to use the old cached JavaScript.
+6. ADMIN SALES DASHBOARD
+Administrator dashboard includes:
+- Quotes today
+- Today's estimate value
+- Customer Confirmed value
+- Converted value
+- Latest quotation activity by salesperson
 
-UPLOAD TO:
+FILES TO UPLOAD / REPLACE IN:
 Busterbuild1/sales-app/
 
 REPLACE:
@@ -50,17 +59,39 @@ REPLACE:
 - sw.js
 
 ADD:
-- app-m2pricing.js
+- app-v1.js
+- app-version.json
 
-Do NOT replace:
+DO NOT REPLACE:
 - firebase-config.js
-- catalogue JSON files
-- manifest
-- icons
+- manifest.webmanifest
+- icons/
+- your catalogue JSON files
 
-After GitHub Pages deploys:
-1. Fully close the installed app.
-2. Reopen it.
-3. Remove any old test cart line once.
-4. Calculate a tile again.
-5. Quantity must automatically equal Required area in m².
+FIRESTORE RULES
+This ZIP also contains:
+- firestore.rules
+
+For cloud quotations to work, publish these rules in:
+Firebase Console -> Firestore Database -> Rules
+
+The administrator email in the rules is:
+moyanamoses006@icloud.com
+
+IMPORTANT
+Your permanent app address remains:
+https://mos00000006.github.io/Busterbuild1/sales-app/
+
+The current Smart Measure m² pricing logic is preserved:
+Required m² is the chargeable quantity, while recommended boxes remain informational.
+
+ROLL-OUT TEST
+Before issuing the app to the whole sales team:
+1. Sign in on one iPhone and one Android.
+2. Confirm Online + Cloud synced indicators.
+3. Open a tile, use Smart Measure, add to cart and verify the exact m² total.
+4. Save a quotation and verify "saved and synced".
+5. Sign into the same salesperson account on another device and confirm the quotation appears.
+6. As administrator, open Manage Sales Team and confirm the dashboard shows the quotation.
+7. Change status to Customer Confirmed, then Converted, and add the official sales-system reference.
+8. Generate/share the PDF.
