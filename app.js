@@ -52,7 +52,13 @@ renderQuoteHistory();
 
 if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
   try{
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-smartfixed1',{updateViaCache:'none'});
+    let refreshing=false;
+    navigator.serviceWorker.addEventListener('controllerchange',()=>{
+      if(refreshing)return;
+      refreshing=true;
+      window.location.reload();
+    });
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261003-smartfinal3',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -292,6 +298,10 @@ function openProduct(p){
   const useQtyButton=$('use-boxes');
   const closeButton=qs('.sheet-close');
 
+  const qtyBlock=qs('.qty-block');
+  if(buyPanel)buyPanel.classList.remove('smart-active');
+  if(qtyBlock)qtyBlock.hidden=false;
+
   if(publicProductMode){
     // Customer QR view: product information + Smart Measure only.
     if(buyPanel) buyPanel.hidden=true;
@@ -300,7 +310,8 @@ function openProduct(p){
     document.documentElement.classList.add('public-product-loaded');
   }else{
     if(buyPanel) buyPanel.hidden=false;
-    if(useQtyButton) useQtyButton.hidden=false;
+    // Smart Measure now applies the required m² automatically — no second button is needed.
+    if(useQtyButton) useQtyButton.hidden=true;
     if(closeButton) closeButton.hidden=false;
     const tileSqmQty=(p._type==='tile'&&isPerSqm(p));
     $('qty-label').textContent=tileSqmQty?'Quantity (m²)':'Quantity';
@@ -334,69 +345,76 @@ function formatNumber(n){return Number(n||0).toLocaleString('en-ZA',{maximumFrac
 
 $('qty-minus').onclick=()=>{
   const tile=selectedProduct&&isPerSqm(selectedProduct);
-  const step=1,min=tile?0.01:1;
+  const min=tile?0.01:1;
   const cur=Number($('product-qty').value)||min;
-  $('product-qty').value=Math.max(min,cur-step).toFixed(tile?2:0);
-  if(tile) clearSmartMeasureSelection(false);
+  $('product-qty').value=Math.max(min,cur-1).toFixed(tile?2:0);
 };
 $('qty-plus').onclick=()=>{
   const tile=selectedProduct&&isPerSqm(selectedProduct);
-  const step=1;
   const cur=Number($('product-qty').value)||(tile?0:1);
-  $('product-qty').value=(cur+step).toFixed(tile?2:0);
-  if(tile) clearSmartMeasureSelection(false);
+  $('product-qty').value=(cur+1).toFixed(tile?2:0);
 };
-$('product-qty').addEventListener('input',()=>{
-  if(selectedProduct&&isPerSqm(selectedProduct)) clearSmartMeasureSelection(false);
-});
+
 $('add-cart').onclick=()=>{
   if(!selectedProduct)return;
   const tile=isPerSqm(selectedProduct);
   const key=cartKey(selectedProduct);
 
+  // If Smart Measure has a valid result, its m² and estimated total ALWAYS win.
   if(tile&&smartMeasureState.productKey===key&&smartMeasureState.area>0){
-    // Smart Measure becomes ONE fixed estimate line.
-    // The displayed estimated total is the exact price carried into cart/quote/PDF.
-    addSmartMeasureToCart(selectedProduct, smartMeasureState);
-    toast('Smart Measure added • '+money(smartMeasureState.total));
+    addSmartMeasureToCart(selectedProduct,smartMeasureState);
+    toast(`${formatNumber(smartMeasureState.area)} m² added • ${money(smartMeasureState.total)}`);
   }else{
     const qty=Math.max(tile?0.01:1,Number($('product-qty').value)||(tile?1:1));
     addToCart(selectedProduct,qty);
   }
   closeProduct();
 };
+
 ['room-length','room-width'].forEach(id=>$(id).addEventListener('input',calculateMeasure));
+
+// Kept only for compatibility with the existing HTML; no longer needed by staff.
 $('use-boxes').onclick=()=>{
   if(smartMeasureState.area>0){
     $('product-qty').value=smartMeasureState.area.toFixed(2);
-    toast(smartMeasureState.area.toFixed(2)+' m² set as quantity'+(smartMeasureState.boxes?' • '+smartMeasureState.boxes+' boxes recommended':''));
   }
 };
-function clearSmartMeasureSelection(resetDisplay=true){
+
+function resetMeasure(){
   smartMeasureState={productKey:'',area:0,boxes:0,cover:0,total:0};
-  if(resetDisplay){
-    $('required-area').textContent='0.00 m²';
-    $('boxes-order').textContent='0';
-    $('covered-area').textContent='0.00 m²';
-    $('measure-total').textContent='R0,00';
-  }
-  if(selectedProduct&&$('add-cart')&&!publicProductMode){
-    $('add-cart').innerHTML=selectedProduct._price?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>':'<span>Price unavailable</span>';
+  $('required-area').textContent='0.00 m²';
+  $('boxes-order').textContent='0';
+  $('covered-area').textContent='0.00 m²';
+  $('measure-total').textContent='R0,00';
+
+  const buyPanel=qs('.buy-panel');
+  const qtyBlock=qs('.qty-block');
+  if(buyPanel)buyPanel.classList.remove('smart-active');
+  if(qtyBlock)qtyBlock.hidden=false;
+
+  if(selectedProduct&&!publicProductMode&&$('add-cart')){
+    $('add-cart').innerHTML=selectedProduct._price
+      ?'<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>'
+      :'<span>Price unavailable</span>';
   }
 }
-function resetMeasure(){ clearSmartMeasureSelection(true); }
+
 function calculateMeasure(){
   if(!selectedProduct||!selectedProduct._sqm)return resetMeasure();
 
   const l=Number($('room-length').value)||0;
   const w=Number($('room-width').value)||0;
-
-  // Use the same 2-decimal m² shown to the salesperson in every calculation.
-  // This keeps Estimated Total, Cart, Quotation and PDF totals identical.
   const area=Number((l*w).toFixed(2));
-  const boxes=area>0?Math.ceil(area/selectedProduct._sqm):0;
+
+  if(area<=0){
+    resetMeasure();
+    return;
+  }
+
+  const boxes=Math.ceil(area/selectedProduct._sqm);
   const cover=Number((boxes*selectedProduct._sqm).toFixed(2));
-  const total=isPerSqm(selectedProduct)?Number((area*selectedProduct._price).toFixed(2)):Number((boxes*selectedProduct._price).toFixed(2));
+  // The BusterBuild selling price is per m², so the estimate is required m² × displayed price.
+  const total=Number((area*selectedProduct._price).toFixed(2));
 
   smartMeasureState={
     productKey:cartKey(selectedProduct),
@@ -411,12 +429,17 @@ function calculateMeasure(){
   $('covered-area').textContent=cover.toFixed(2)+' m²';
   $('measure-total').textContent=money(total);
 
-  // Keep quantity synced automatically so Add to Cart carries exactly the calculator result.
-  if(!publicProductMode&&isPerSqm(selectedProduct)&&area>0){
+  if(!publicProductMode){
+    // No extra step: Smart Measure automatically becomes the cart quantity.
     $('product-qty').value=area.toFixed(2);
-    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add Estimated Total to Cart • '+money(total)+'</span>';
-  }else if(!publicProductMode&&selectedProduct._price){
-    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span>';
+
+    const buyPanel=qs('.buy-panel');
+    const qtyBlock=qs('.qty-block');
+    if(buyPanel)buyPanel.classList.add('smart-active');
+    if(qtyBlock)qtyBlock.hidden=true;
+
+    $('add-cart').innerHTML=
+      '<i class="fa-solid fa-cart-plus"></i><span>Add '+area.toFixed(2)+' m² to Cart • '+money(total)+'</span>';
   }
 }
 
@@ -424,8 +447,21 @@ function cartKey(p){return (p._type+'|'+(p._code||p.id||p._name)).toLowerCase();
 function loadCart(){try{return JSON.parse(localStorage.getItem('busterbuildSalesCart')||'[]')}catch{return[]}}
 function saveCart(){localStorage.setItem('busterbuildSalesCart',JSON.stringify(cart));updateCartUI();}
 function addToCart(p,qty){
-  const key=cartKey(p), existing=cart.find(x=>x.key===key); if(existing)existing.qty+=qty; else cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p)}); saveCart(); toast(`${p._name} added to cart`);
+  const key=cartKey(p),existing=cart.find(x=>x.key===key);
+  if(existing){
+    existing.qty+=qty;
+    existing.smartMeasure=false;
+    delete existing.fixedTotal;
+    delete existing.smartArea;
+    delete existing.smartBoxes;
+    delete existing.smartCover;
+  }else{
+    cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p),smartMeasure:false});
+  }
+  saveCart();
+  toast(`${p._name} added to cart`);
 }
+
 function addSmartMeasureToCart(p,measure){
   const key=cartKey(p);
   const item={
@@ -434,59 +470,99 @@ function addSmartMeasureToCart(p,measure){
     code:p._code,
     image:p._image,
     type:p._type,
-    // IMPORTANT: for Smart Measure this is now the FIXED estimated total.
-    price:Number(measure.total.toFixed(2)),
-    qty:1,
+    price:Number(p._price||0),       // keeps the correct R/m² unit price
+    qty:Number(measure.area.toFixed(2)),
     sqm:p._sqm||0,
-    perSqm:false,
+    perSqm:true,
     smartMeasure:true,
     smartArea:Number(measure.area.toFixed(2)),
     smartBoxes:Number(measure.boxes||0),
     smartCover:Number(measure.cover.toFixed(2)),
-    basePrice:Number(p._price||0)
+    fixedTotal:Number(measure.total.toFixed(2))
   };
+
+  // Replaces the existing same tile instead of adding a second/confusing line.
   const existingIndex=cart.findIndex(x=>x.key===key);
   if(existingIndex>=0)cart[existingIndex]=item;
   else cart.push(item);
+
   saveCart();
 }
-function lineTotal(i){return Number((i.price*i.qty).toFixed(2));}
+
+function lineTotal(item){
+  if(item.smartMeasure&&Number.isFinite(Number(item.fixedTotal))){
+    return Number(Number(item.fixedTotal).toFixed(2));
+  }
+  return Number((Number(item.price||0)*Number(item.qty||0)).toFixed(2));
+}
+
 function updateCartUI(){
   const count=cart.length;
   $('bottom-cart-count').textContent=count;
   $('cart-stat').textContent=count;
+
   const list=$('cart-list');
   list.innerHTML='';
   $('cart-empty').style.display=cart.length?'none':'grid';
   $('cart-summary').hidden=!cart.length;
 
   let total=0;
+
   cart.forEach((item,idx)=>{
-    total+=lineTotal(item);
+    const itemTotal=lineTotal(item);
+    total+=itemTotal;
+
     const row=document.createElement('div');
     row.className='cart-row';
 
-    const detail=item.smartMeasure
-      ? `${esc(item.code||'')} • Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} box${item.smartBoxes===1?'':'es'}`
-      : `${esc(item.code||'')} • ${item.perSqm?'m²':'Qty'}`;
+    if(item.smartMeasure){
+      row.classList.add('smart-measure-cart-row');
+      row.innerHTML=`
+        <img src="${esc(item.image)}" alt="">
+        <div>
+          <h3>${esc(item.name)}</h3>
+          <p>${esc(item.code||'')} • Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} box${item.smartBoxes===1?'':'es'} recommended</p>
+          <small class="smart-cart-math">${formatNumber(item.smartArea)} m² × ${money(item.price)}/m²</small>
+        </div>
+        <div class="cart-row-total">
+          <strong>${money(itemTotal)}</strong>
+          <span class="smart-cart-label">SMART MEASURE TOTAL</span>
+          <button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button>
+        </div>`;
+    }else{
+      row.innerHTML=`
+        <img src="${esc(item.image)}" alt="">
+        <div><h3>${esc(item.name)}</h3><p>${esc(item.code||'')} • ${item.perSqm?'m²':'Qty'}</p></div>
+        <div class="cart-row-total">
+          <strong>${money(itemTotal)}</strong>
+          <div class="mini-qty">
+            <button data-minus type="button">−</button>
+            <span>${item.perSqm?formatNumber(item.qty):item.qty}</span>
+            <button data-plus type="button">+</button>
+            <button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>`;
 
-    const controls=item.smartMeasure
-      ? `<div class="smart-cart-fixed"><span>SMART MEASURE TOTAL</span><strong>${money(item.price)}</strong></div><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button>`
-      : `<div class="mini-qty"><button data-minus type="button">−</button><span>${item.perSqm?formatNumber(item.qty):item.qty}</span><button data-plus type="button">+</button><button data-remove class="remove-item" type="button"><i class="fa-solid fa-trash"></i></button></div>`;
-
-    row.innerHTML=`<img src="${esc(item.image)}" alt=""><div><h3>${esc(item.name)}</h3><p>${detail}</p></div><div class="cart-row-total"><strong>${money(lineTotal(item))}</strong>${controls}</div>`;
-
-    if(!item.smartMeasure){
-      const minus=qs('[data-minus]',row), plus=qs('[data-plus]',row);
-      if(minus)minus.onclick=()=>{item.qty=Math.max(item.perSqm?0.01:1,item.qty-1);saveCart();};
-      if(plus)plus.onclick=()=>{item.qty++;saveCart();};
+      qs('[data-minus]',row).onclick=()=>{
+        item.qty=Math.max(item.perSqm?0.01:1,Number(item.qty)-1);
+        saveCart();
+      };
+      qs('[data-plus]',row).onclick=()=>{
+        item.qty=Number(item.qty)+1;
+        saveCart();
+      };
     }
-    qs('[data-remove]',row).onclick=()=>{cart.splice(idx,1);saveCart();};
+
+    qs('[data-remove]',row).onclick=()=>{
+      cart.splice(idx,1);
+      saveCart();
+    };
+
     list.appendChild(row);
   });
 
   $('cart-items-total').textContent=count;
-  $('cart-money-total').textContent=money(total);
+  $('cart-money-total').textContent=money(Number(total.toFixed(2)));
 }
 
 function loadQuoteHistory(){try{return JSON.parse(localStorage.getItem('busterbuildQuoteHistory')||'[]')}catch{return[]}}
@@ -505,12 +581,10 @@ function currentCustomer(){return {
   notes:$('quote-notes').value.trim()
 };}
 function unitLabel(item){
-  if(item.smartMeasure)return money(item.price);
-  if(item.type==='tile'&&item.sqm&&item.perSqm)return `${money(item.price)}/m²`;
+  if(item.type==='tile'&&item.perSqm)return `${money(item.price)}/m²`;
   return money(item.price);
 }
 function qtyLabel(item){
-  if(item.smartMeasure)return '1';
   return item.perSqm?`${formatNumber(item.qty)} m²`:String(item.qty);
 } m²`:String(item.qty);}
 function ensureQuoteNumber(force=false){if(force||!currentQuoteNumber)currentQuoteNumber=quoteNumber();return currentQuoteNumber;}
@@ -525,7 +599,7 @@ function renderQuotePreview(){
   $('quote-project-preview').textContent=c.project?`Project: ${c.project}`:'';
   $('quote-salesperson-preview').textContent=$('account-name')?.textContent||'BusterBuild Sales';
   $('quote-total-preview').textContent=money(total);$('quote-preview-total').textContent=money(total);
-  $('quote-items-preview').innerHTML=cart.map(item=>`<tr><td><strong>${esc(item.name)}</strong><small>${item.smartMeasure?`Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m²/box`:typeLabel(item.type)}</small></td><td>${esc(item.code||'—')}</td><td>${esc(qtyLabel(item))}</td><td>${esc(unitLabel(item))}</td><td><strong>${money(lineTotal(item))}</strong></td></tr>`).join('')||'<tr><td colspan="5" class="quote-empty-line">No products added yet.</td></tr>';
+  $('quote-items-preview').innerHTML=cart.map(item=>`<tr><td><strong>${esc(item.name)}</strong><small>${item.smartMeasure?`Smart Measure • ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes recommended`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m²/box`:typeLabel(item.type)}</small></td><td>${esc(item.code||'—')}</td><td>${esc(qtyLabel(item))}</td><td>${esc(unitLabel(item))}</td><td><strong>${money(lineTotal(item))}</strong></td></tr>`).join('')||'<tr><td colspan="5" class="quote-empty-line">No products added yet.</td></tr>';
   $('quote-note-preview').hidden=!c.notes;$('quote-note-preview').textContent=c.notes?`Notes: ${c.notes}`:'';
 }
 function startQuote(){
@@ -633,7 +707,7 @@ async function createQuoteCanvas(){
 
   items.forEach((item)=>{
     xx=x0;ctx.fillStyle='#fff';ctx.fillRect(x0,y,W-120,rowH);ctx.strokeStyle=line;ctx.beginPath();ctx.moveTo(x0,y+rowH);ctx.lineTo(W-60,y+rowH);ctx.stroke();
-    ctx.fillStyle=ink;ctx.font='800 21px Poppins, Arial, sans-serif';canvasText(ctx,item.name,xx+16,y+34,widths[0]-32,28,2);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText(item.smartMeasure?`Smart Measure: ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m² per box`:typeLabel(item.type),xx+16,y+92);xx+=widths[0];
+    ctx.fillStyle=ink;ctx.font='800 21px Poppins, Arial, sans-serif';canvasText(ctx,item.name,xx+16,y+34,widths[0]-32,28,2);ctx.fillStyle=muted;ctx.font='500 16px Poppins, Arial, sans-serif';ctx.fillText(item.smartMeasure?`Smart Measure • ${formatNumber(item.smartArea)} m² • ${item.smartBoxes} boxes recommended`:item.type==='tile'&&item.sqm?`${formatNumber(item.sqm)} m² per box`:typeLabel(item.type),xx+16,y+92);xx+=widths[0];
     ctx.fillStyle=muted;ctx.font='700 18px Poppins, Arial, sans-serif';ctx.fillText(item.code||'—',xx+16,y+46);xx+=widths[1];ctx.fillText(qtyLabel(item),xx+16,y+46);xx+=widths[2];ctx.fillText(unitLabel(item),xx+16,y+46);xx+=widths[3];ctx.fillStyle=ink;ctx.font='900 20px Poppins, Arial, sans-serif';ctx.textAlign='right';ctx.fillText(money(lineTotal(item)),xx+widths[4]-16,y+46);ctx.textAlign='left';y+=rowH;
   });
 

@@ -179,21 +179,36 @@ select,
 }
 
 
-/* Fixed Smart Measure cart line */
-.smart-cart-fixed{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-  gap:2px;
-  margin-top:7px;
+/* Smart Measure final cart behaviour */
+.buy-panel.smart-active{
+  grid-template-columns:minmax(0,1fr)!important;
 }
-.smart-cart-fixed span{
+.buy-panel.smart-active .add-cart-btn{
+  width:100%;
+}
+.smart-measure-cart-row .cart-row-total{
+  min-width:220px;
+}
+.smart-cart-label{
+  display:block;
+  margin-top:5px;
   font-size:.62rem;
   font-weight:900;
   letter-spacing:.08em;
-  color:#8a6a00;
+  color:#947000;
 }
-.smart-cart-fixed strong{
-  font-size:.86rem;
-  color:#111;
+.smart-cart-math{
+  display:block;
+  margin-top:5px;
+  font-size:.76rem;
+  font-weight:700;
+  color:#7a746c;
+}
+.smart-measure-cart-row .remove-item{
+  margin-top:10px;
+}
+@media(max-width:700px){
+  .smart-measure-cart-row .cart-row-total{
+    min-width:0;
+  }
 }

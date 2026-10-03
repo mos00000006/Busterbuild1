@@ -1,49 +1,54 @@
-BusterBuild Sales App — Smart Measure FIXED TOTAL Update
+BusterBuild Sales App — FINAL SMART MEASURE FIX
 
-Replace ONLY:
+Your screenshot showed the exact issue:
+Smart Measure = 4.00 m² and R1,679.96,
+but the cart was still adding 1 × R419.99.
+
+This build changes that workflow completely.
+
+NEW BEHAVIOUR
+Example:
+Tile price: R419.99/m²
+Room: 2m × 2m
+Required area: 4.00 m²
+Boxes recommended: 3
+Estimated total: R1,679.96
+
+As soon as Smart Measure calculates:
+- the separate Quantity control is hidden;
+- there is no "Use required m² as quantity" extra step;
+- the button changes to:
+  ADD 4.00 m² TO CART • R1,679.96
+
+When pressed, the cart shows:
+- Smart Measure: 4.00 m²
+- 3 boxes recommended
+- 4.00 m² × R419.99/m²
+- SMART MEASURE TOTAL: R1,679.96
+
+The quotation and PDF then show:
+QTY: 4.00 m²
+UNIT: R419.99/m²
+TOTAL: R1,679.96
+
+The Smart Measure cart line cannot be changed with +/- buttons, preventing the calculated quote from being accidentally altered.
+
+REPLACE ONLY THESE FOUR FILES IN sales-app:
 - index.html
 - app.js
 - styles.css
 - sw.js
 
-inside:
-Busterbuild1/sales-app/
+Do NOT replace:
+- firebase-config.js
+- catalogue JSON files
+- manifest
+- icons
 
-Do NOT replace firebase-config.js, catalogue JSON files, manifest or icons.
+IMPORTANT AFTER PUSHING:
+The new service worker forces the installed app to refresh to this build.
+If the OLD R419.99 test item is already sitting in your cart, remove that old item once,
+then calculate Smart Measure again and add it. New Smart Measure items will use the correct total.
 
-WHAT IS DIFFERENT NOW
-
-When Smart Measure calculates an Estimated Total, that amount becomes the FIXED price
-for the cart line.
-
-Example:
-Tile price: R419.99 per m²
-Smart Measure required area: 10.08 m²
-Recommended boxes: 7
-Estimated Total: R4,233.50
-
-After pressing:
-ADD ESTIMATED TOTAL TO CART • R4,233.50
-
-The cart will show:
-SMART MEASURE: 10.08 m² • 7 boxes
-SMART MEASURE TOTAL: R4,233.50
-Line total: R4,233.50
-
-It will NOT show the original tile/box price as the cart price.
-
-On the quotation and PDF:
-- Qty = 1
-- Unit Price = R4,233.50
-- Total = R4,233.50
-- Product description shows the Smart Measure area and recommended boxes
-
-This removes the confusing base tile price from a Smart Measure quotation line.
-
-All previous features are preserved:
-- customer QR product-only view
-- mobile zoom fix
-- mobile auto PDF
-- staff login
-- cart/quotation/PDF
-- WhatsApp and email
+Permanent URL remains:
+https://mos00000006.github.io/Busterbuild1/sales-app/
