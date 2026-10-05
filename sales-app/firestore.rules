@@ -13,41 +13,11 @@ service cloud.firestore {
         && request.auth.token.email == "moyanamoses006@icloud.com";
     }
 
-    function hasSalesAccess() {
-      return signedIn()
-        && request.auth.token.email != null
-        && exists(/databases/$(database)/documents/salesAccess/$(request.auth.token.email))
-        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.active == true
-        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.role == "sales"
-        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.department == "tiles-sanitary";
-    }
-
-    // Canonical admin-managed access registry, keyed by lowercase email.
-    match /salesAccess/{email} {
-      allow read: if isAdmin()
-        || (signedIn() && request.auth.token.email == email);
-
-      allow create, delete: if isAdmin();
-
-      allow update: if isAdmin()
-        || (signedIn()
-            && request.auth.token.email == email
-            && request.resource.data.role == resource.data.role
-            && request.resource.data.department == resource.data.department
-            && request.resource.data.active == resource.data.active
-            && request.resource.data.email == resource.data.email);
-    }
-
-    // UID-linked profile. Can be created by Admin or self-provisioned on first login
-    // when a valid salesAccess record exists for the signed-in email.
     match /salesUsers/{userId} {
       allow read: if isAdmin()
         || (signedIn() && request.auth.uid == userId);
 
-      allow create: if isAdmin()
-        || (signedIn()
-            && request.auth.uid == userId
-            && hasSalesAccess());
+      allow create, delete: if isAdmin();
 
       allow update: if isAdmin()
         || (signedIn()
@@ -55,8 +25,6 @@ service cloud.firestore {
             && request.resource.data.role == resource.data.role
             && request.resource.data.department == resource.data.department
             && request.resource.data.active == resource.data.active);
-
-      allow delete: if isAdmin();
     }
 
     match /quotations/{quoteId} {

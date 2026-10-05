@@ -1,6 +1,6 @@
 {
-  "version": "2.0.2",
-  "build": "20261005-useraddfix2",
-  "released_at": "2026-10-05T09:11:00+02:00",
-  "name": "BusterBuild Sales v2.0.2 Sales User Fix"
+  "version": "2.0.3",
+  "build": "20261005-salescompat1",
+  "released_at": "2026-10-05T09:33:00+02:00",
+  "name": "BusterBuild Sales v2.0.3 Sales Account Compatibility Fix"
 }
