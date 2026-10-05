@@ -1,73 +1,58 @@
-BusterBuild Sales App — LOGIN REPAIR
-Version 2.0.4
+BusterBuild Sales App — PASSWORD FIX
+Version 2.0.5
 
-THIS VERSION FIXES:
-A salesperson is created in Firebase Authentication but signs in and the Sales App
-does not open.
+WHY A NEWLY ADDED SALESPERSON CAN GET "PASSWORD WRONG"
 
-HOW IT WORKS NOW
+BRAND-NEW EMAIL
+- Firebase creates a new login.
+- The temporary password entered by the administrator is the actual password.
+- It works immediately.
 
-1. ADMIN APPROVES THE EMAIL
-When you add a salesperson, the app creates an administrator-approved salesInvites
-record for that exact email.
+EMAIL ALREADY EXISTED IN FIREBASE
+- Firebase does NOT overwrite the old account password with the new temporary password.
+- That is why the salesperson can get "password wrong".
 
-2. NEW ACCOUNT
-If Firebase Authentication creates the user successfully, their UID salesUsers profile
-is linked immediately.
+THIS VERSION FIXES THE WORKFLOW
 
-3. EXISTING / FAILED ACCOUNT
-If Firebase says the email already exists from an earlier failed attempt, the app does
-NOT fail anymore. It keeps the approved invitation.
+If the email already exists:
+- Sales access is repaired.
+- The app automatically sends a Firebase password-reset email.
+- The app clearly tells the administrator that the temporary password was NOT applied.
+- The salesperson opens the reset email, chooses a new password, then signs in.
 
-When that salesperson signs in:
-- Firebase Authentication verifies the email/password.
-- The Sales App looks for their UID salesUsers profile.
-- If it is missing, it checks the administrator-approved invitation for their email.
-- If approved, the app creates the missing UID profile automatically.
-- The Sales App opens normally.
+If the email is brand-new:
+- The temporary password works immediately.
 
-4. ADMIN REPAIR BUTTON
-Manage Sales Team now shows a repair/spanner button.
-Press it next to a salesperson and tell them to sign in again.
+LOGIN SCREEN
+The sign-in error now tells repaired users to use the password-reset email.
 
-MANDATORY FIRESTORE STEP
-
-Publish the included firestore.rules:
-
-Firebase Console
--> Firestore Database
--> Rules
--> Replace the existing rules
--> Publish
-
-Then in the Sales App:
-Manage Sales Team
--> Test Firebase Access
-
-You must see:
-"Firebase access is correct. Sales logins can be created and repaired."
-
-FOR THE SALESPERSON YOU ALREADY ADDED
-1. Publish the rules.
-2. Open Manage Sales Team.
-3. Press the repair/spanner button next to their email.
-4. Ask them to sign in again.
-5. If their password is uncertain, press the key button to send a password reset.
+MANAGE SALES TEAM
+The key button sends a password-reset email at any time.
 
 FILES TO REPLACE IN sales-app:
 - index.html
 - app.js
+- styles.css
 - sw.js
 - app-version.json
 
 ADD:
-- app-v2-loginrepair.js
+- app-v2-passwordfix.js
+
+firestore.rules is unchanged from the Login Repair package and is included again.
 
 Do NOT replace:
 - firebase-config.js
 - manifest.webmanifest
 - icons
 - catalogue JSON files
+
+FOR A SALESPERSON CURRENTLY GETTING "PASSWORD WRONG"
+1. Upload this update.
+2. Manage Sales Team -> press the KEY button next to the salesperson.
+3. They open the Firebase password-reset email.
+4. They choose a new password.
+5. They sign in using the new password.
 
 Permanent URL:
 https://mos00000006.github.io/Busterbuild1/sales-app/
