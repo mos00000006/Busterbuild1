@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-20261005-salescompat1';
+const CACHE = 'busterbuild-sales-20261005-loginrepair1';
 const STATIC_SHELL = [
   './styles.css',
   './app-version.json',
@@ -55,6 +55,7 @@ self.addEventListener('fetch', event => {
     path.endsWith('/sales-app/app-v2.js') ||
     path.endsWith('/sales-app/app-v2-usersfix.js') ||
     path.endsWith('/sales-app/app-v2-salescompat.js') ||
+    path.endsWith('/sales-app/app-v2-loginrepair.js') ||
     path.endsWith('/sales-app/app-version.json') ||
     path.endsWith('/sales-app/firebase-config.js') ||
     path.endsWith('/sales-app/sw.js') ||
