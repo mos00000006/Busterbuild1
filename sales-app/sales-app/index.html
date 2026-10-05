@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BB Sales">
+  <title>BusterBuild Tiles & Sanitary Sales</title>
+  <script>
+    (function(){
+      var p=new URLSearchParams(location.search);
+      if(p.get('product')||p.get('code')) document.documentElement.classList.add('public-product-route');
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css?v=20261005-passwordfix1">
+</head>
+<body>
+  <div id="public-product-loading" class="public-product-loading">
+    <div class="public-loading-card">
+      <img src="icons/icon-192.png" alt="BusterBuild">
+      <strong>Loading product…</strong>
+      <span>Please wait while we open the product information.</span>
+    </div>
+  </div>
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-brand">
+        <img src="icons/icon-192.png" alt="BusterBuild">
+        <div><span>SALES APP</span><h1>Tiles &amp; Sanitary Ware</h1></div>
+      </div>
+      <p class="login-copy">Secure sales access for the BusterBuild tile and sanitary department.</p>
+      <form id="login-form">
+        <label>Email address<input id="login-email" type="email" autocomplete="username" required placeholder="sales@busterbuild.co.za"></label>
+        <label>Password<input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+        <button class="primary-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+      </form>
+      <p id="login-error" class="form-error" role="alert"></p>
+      <div id="firebase-setup" class="setup-warning" hidden>
+        <strong>Account setup required</strong>
+        <span>Firebase Authentication has not been connected yet. Add the Firebase Web App settings in <code>sales-app/firebase-config.js</code>.</span>
+      </div>
+      <small class="secure-note"><i class="fa-solid fa-lock"></i> Only authorised Tiles &amp; Sanitary Ware sales accounts can enter this app.</small>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <header class="app-header">
+      <div class="brand-lockup">
+        <img src="icons/icon-192.png" alt="BusterBuild">
+        <div><strong>BusterBuild Sales</strong><span>Tiles &amp; Sanitary Ware</span></div>
+      </div>
+      <div class="header-actions">
+        <button id="install-btn" class="icon-btn install-btn" type="button" hidden title="Install app"><i class="fa-solid fa-download"></i></button>
+        <button id="account-btn" class="account-pill" type="button"><span class="avatar"><i class="fa-solid fa-user"></i></span><span class="account-copy"><strong id="account-name">Sales</strong><small id="account-email"></small></span></button>
+      </div>
+    </header>
+
+    <div id="app-update-banner" class="app-update-banner" hidden>
+      <div><i class="fa-solid fa-circle-up"></i><span>A newer BusterBuild Sales version <strong id="available-version"></strong> is ready.</span></div>
+      <button id="update-now-btn" type="button">Update App</button>
+    </div>
+
+    <div class="system-strip">
+      <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
+      <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
+      <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
+      <span id="app-version" class="version-chip">v2.0.5</span>
+    </div>
+
+    <main>
+      <section id="catalogue-view" class="view active">
+        <div class="hero-card">
+          <div class="hero-copy"><span class="eyebrow">BUSTERBUILD SALES TOOL</span><h2>Find it. Scan it. Sell it.</h2><p>Fast access to tiles, sanitary ware and combo deals with live product details, prices, Smart Measure and cart building.</p></div>
+          <button class="scan-hero-btn" data-open-scan type="button"><span class="scan-icon"><i class="fa-solid fa-qrcode"></i></span><span><strong>Scan Product</strong><small>Open camera</small></span><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="quick-stats">
+          <div><span>Tiles</span><strong id="tile-count">0</strong></div>
+          <div><span>Sanitary</span><strong id="sanitary-count">0</strong></div>
+          <div><span>Combos</span><strong id="combo-count">0</strong></div>
+          <div><span>Cart</span><strong id="cart-stat">0</strong></div>
+        </div>
+
+        <div class="catalogue-tools">
+          <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="product-search" type="search" placeholder="Search product name or code"></label>
+          <div class="filter-row" id="filter-row">
+            <button class="filter-chip active" data-filter="all" type="button">All</button>
+            <button class="filter-chip" data-filter="tile" type="button">Tiles</button>
+            <button class="filter-chip" data-filter="sanitary" type="button">Sanitary Ware</button>
+            <button class="filter-chip" data-filter="combo" type="button">Combo Deals</button>
+            <button class="filter-chip" data-filter="favourites" type="button"><i class="fa-solid fa-star"></i> Favourites</button>
+          </div>
+        </div>
+        <section id="recent-products" class="recent-products" hidden><div class="mini-section-head"><div><small>QUICK ACCESS</small><strong>Recently viewed</strong></div></div><div id="recent-products-list" class="recent-products-list"></div></section>
+        <div id="compare-tray" class="compare-tray" hidden><span><strong id="compare-count">0</strong> products selected</span><button id="compare-open" type="button"><i class="fa-solid fa-code-compare"></i> Compare</button></div>
+
+        <div id="catalogue-status" class="status-card"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales catalogue…</div>
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+
+      <section id="scan-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CAMERA SCANNER</span><h2>Scan product QR code</h2></div></div>
+        <div class="scanner-shell">
+          <div id="qr-reader" class="qr-reader"></div>
+          <div class="scan-guide"><span></span><span></span><span></span><span></span></div>
+          <div id="camera-message" class="camera-message">Tap Start Camera and point the phone at a BusterBuild QR label.</div>
+        </div>
+        <div class="scanner-actions">
+          <button id="start-camera" class="primary-btn" type="button"><i class="fa-solid fa-camera"></i> Start Camera</button>
+          <button id="stop-camera" class="secondary-btn" type="button" hidden><i class="fa-solid fa-stop"></i> Stop Camera</button>
+        </div>
+        <div class="manual-scan">
+          <span>Camera not available?</span>
+          <div><input id="manual-code" type="text" placeholder="Enter product code"><button id="manual-find" type="button">Find</button></div>
+        </div>
+        <div id="scan-result" class="scan-result" hidden></div>
+        <div class="recent-scans-card"><div class="mini-section-head"><div><small>RECENT</small><strong>Recent scans</strong></div></div><div id="recent-scans" class="recent-scans"></div></div>
+      </section>
+
+      <section id="cart-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CUSTOMER ORDER</span><h2>Sales cart</h2></div></div>
+        <div id="cart-list" class="cart-list"></div>
+        <div id="cart-empty" class="empty-card"><i class="fa-solid fa-cart-shopping"></i><strong>Your sales cart is empty</strong><span>Add products from the catalogue or scanner.</span></div>
+        <div id="cart-summary" class="cart-summary" hidden>
+          <div><span>Items</span><strong id="cart-items-total">0</strong></div>
+          <div><span>Estimated total</span><strong id="cart-money-total">R0,00</strong></div>
+          <p>Build a professional BusterBuild quotation from this cart.</p>
+          <button id="create-quote" class="primary-btn quote-create-btn" type="button"><i class="fa-solid fa-file-signature"></i> Create Quotation</button>
+          <button id="clear-cart" class="secondary-btn danger" type="button"><i class="fa-solid fa-trash"></i> Clear cart</button>
+        </div>
+      </section>
+
+      <section id="quote-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="cart" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">BUSTERBUILD QUOTATIONS</span><h2>Create customer quotation</h2></div></div>
+        <div class="quote-builder-grid">
+          <form id="quote-form" class="quote-customer-card">
+            <div class="quote-card-title"><span class="quote-card-icon"><i class="fa-solid fa-user"></i></span><div><small>CUSTOMER DETAILS</small><strong>Who is this quotation for?</strong></div></div>
+            <label>Customer name *<input id="quote-customer-name" type="text" required autocomplete="name" placeholder="Customer full name"></label>
+            <label>Company / account name<input id="quote-customer-company" type="text" placeholder="Optional company name"></label>
+            <label>WhatsApp number *<input id="quote-customer-phone" list="customer-suggestions" type="tel" required inputmode="tel" autocomplete="tel" placeholder="e.g. 082 123 4567"><datalist id="customer-suggestions"></datalist></label>
+            <label>Email address<input id="quote-customer-email" type="email" autocomplete="email" placeholder="customer@email.com"></label>
+            <label>Project / reference<input id="quote-project" type="text" placeholder="Optional project name"></label>
+            <div class="quote-meta-grid">
+              <label>Estimate status
+                <select id="quote-status">
+                  <option value="draft">Draft</option>
+                  <option value="sent">Sent</option>
+                  <option value="confirmed">Customer Confirmed</option>
+                  <option value="converted">Converted</option>
+                  <option value="cancelled">Cancelled</option>
+                </select>
+              </label>
+              <label id="quote-official-ref-wrap">Official sales-system reference
+                <input id="quote-official-ref" type="text" placeholder="Add after conversion">
+              </label>
+            </div>
+            <div class="quote-meta-grid">
+              <label>Estimate validity
+                <select id="quote-validity"><option value="24">24 hours</option><option value="48" selected>48 hours</option><option value="72">72 hours</option></select>
+              </label>
+              <label>Discount
+                <select id="quote-discount"><option value="0">No discount</option><option value="2">2%</option><option value="5">5%</option><option value="custom">Custom — Admin only</option></select>
+              </label>
+            </div>
+            <label id="quote-custom-discount-wrap" hidden>Custom discount %<input id="quote-custom-discount" type="number" min="0" max="100" step="0.1" placeholder="Admin only"></label>
+            <div id="quote-confirmation-fields" class="quote-meta-grid" hidden>
+              <label>Confirmed by<input id="quote-confirmed-by" type="text" placeholder="Customer / decision maker"></label>
+              <label>Confirmation date<input id="quote-confirmation-date" type="date"></label>
+            </div>
+                        <label>Notes<textarea id="quote-notes" rows="3" placeholder="Optional quotation notes"></textarea></label>
+            <div class="quote-form-actions">
+              <button id="refresh-quote-preview" class="secondary-btn" type="button"><i class="fa-solid fa-rotate"></i> Refresh Preview</button>
+              <button id="save-quote" class="primary-btn" type="submit"><i class="fa-solid fa-floppy-disk"></i> Save Quotation</button>
+            </div>
+            <p id="quote-form-status" class="admin-status" role="status"></p>
+          </form>
+
+          <div class="quote-preview-panel">
+            <div class="quote-preview-head"><div><small>LIVE PREVIEW</small><strong>Your branded PDF product estimate</strong></div><span id="quote-preview-total">R0,00</span></div>
+            <div class="quote-scroll">
+              <article id="quote-paper" class="quote-paper">
+                <header class="quote-paper-header">
+                  <div class="quote-brand"><img src="icons/icon-192.png" alt="BusterBuild"><div><strong>BUSTERBUILD</strong><span>TILES &amp; SANITARY WARE</span></div></div>
+                  <div class="quote-title-block"><span>PRODUCT ESTIMATE</span><strong id="quote-number-preview">PRODUCT ESTIMATE</strong><small id="quote-date-preview"></small></div>
+                </header>
+                <section class="quote-customer-band">
+                  <div><small>QUOTED FOR</small><strong id="quote-name-preview">Customer name</strong><span id="quote-contact-preview">WhatsApp number</span><span id="quote-email-preview"></span></div>
+                  <div class="quote-sales-meta"><small>SALESPERSON</small><strong id="quote-salesperson-preview">BusterBuild Sales</strong><span id="quote-project-preview"></span></div>
+                </section>
+                <div class="quote-table-wrap">
+                  <table class="quote-table">
+                    <thead><tr><th>PRODUCT</th><th>CODE</th><th>QTY</th><th>UNIT</th><th>TOTAL</th></tr></thead>
+                    <tbody id="quote-items-preview"></tbody>
+                  </table>
+                </div>
+                <section class="quote-summary-mini"><div><span>Subtotal</span><strong id="quote-subtotal-preview">R0,00</strong></div><div><span>Discount</span><strong id="quote-discount-preview">No discount</strong></div><div><span>Validity</span><strong id="quote-expiry-preview">Valid 48 hours</strong></div></section>
+                <section class="quote-total-band"><span>QUOTED TOTAL</span><strong id="quote-total-preview">R0,00</strong></section>
+                <section id="quote-note-preview" class="quote-notes-preview" hidden></section>
+                <footer class="quote-footer"><div><strong>Thank you for choosing BusterBuild.</strong><span>Prices are subject to stock availability and final confirmation.</span></div><div class="quote-footer-mark">BUILD WITH CONFIDENCE.</div></footer>
+              </article>
+            </div>
+            <div class="quote-share-actions">
+              <button id="download-quote-image" class="share-btn black" type="button"><i class="fa-solid fa-image"></i><span>Download PDF</span></button>
+              <button id="share-quote-image" class="share-btn yellow" type="button"><i class="fa-solid fa-share-nodes"></i><span>Share PDF</span></button>
+              <button id="whatsapp-quote" class="share-btn whatsapp" type="button"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></button>
+              <button id="email-quote" class="share-btn email" type="button"><i class="fa-solid fa-envelope"></i><span>Email</span></button>
+            </div>
+            <p class="share-help"><strong>Download PDF</strong> saves the product estimate as a PDF. <strong>Share PDF</strong> opens your phone share menu with the PDF attached. <strong>WhatsApp</strong> downloads the PDF and opens the exact customer WhatsApp chat. <strong>Email</strong> downloads the PDF and opens a message addressed to the customer email. Attach the downloaded PDF before sending.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="quotes-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">QUOTATION HISTORY</span><h2>Saved quotations</h2></div></div>
+        <div class="quotes-history-hero"><div><small id="quotes-history-source">CLOUD + DEVICE</small><strong>Quotation history</strong><p>Saved estimates sync to the BusterBuild cloud and remain available on this device for offline access.</p></div><button id="new-quote-from-history" class="primary-btn" type="button"><i class="fa-solid fa-plus"></i> New Quote</button></div>
+        <div id="quotes-history-list" class="quotes-history-list"></div>
+      </section>
+
+
+      <section id="customers-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CUSTOMER DATABASE</span><h2>Customers</h2></div><span id="customer-count" class="team-count">0</span></div>
+        <div class="catalogue-tools"><label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="customer-search" type="search" placeholder="Search name, company, phone or email"></label></div>
+        <div id="customers-list" class="customers-list"></div>
+      </section>
+
+      <section id="my-dashboard-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">MY SALES ACTIVITY</span><h2>Salesperson dashboard</h2></div></div>
+        <div class="my-kpi-grid"><div><span>Quotes today</span><strong id="my-quotes-today">0</strong></div><div><span>Value today</span><strong id="my-value-today">R0,00</strong></div><div><span>Confirmed</span><strong id="my-confirmed-value">R0,00</strong></div><div><span>Converted</span><strong id="my-converted-value">R0,00</strong></div><div><span>Conversion</span><strong id="my-conversion-rate">0%</strong></div></div>
+        <div class="admin-activity-card"><div class="admin-card-head"><div><small>FOLLOW-UP</small><strong>Customers waiting 2+ days</strong></div><i class="fa-brands fa-whatsapp"></i></div><div id="my-followups" class="my-followups"></div></div>
+      </section>
+
+      <section id="combo-builder-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CUSTOM PACKAGE</span><h2>Combo Builder</h2></div></div>
+        <div class="combo-builder-grid"><div class="admin-card"><label>Combo name<input id="combo-name" type="text" placeholder="e.g. Main Bathroom Tile Pack"></label><label class="search-box combo-search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="combo-search" type="search" placeholder="Search products to add"></label><div id="combo-search-results" class="combo-search-results"></div></div><div class="admin-card"><div class="admin-card-head"><div><small>SELECTED PRODUCTS</small><strong>Your custom combo</strong></div><span id="combo-builder-total">R0,00</span></div><div id="combo-builder-list" class="combo-builder-list"></div><button id="add-custom-combo" class="primary-btn" type="button"><i class="fa-solid fa-cart-plus"></i> Add Custom Combo to Cart</button></div></div>
+      </section>
+
+      <section id="help-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">TRAINING & HELP</span><h2>How to use BusterBuild Sales</h2></div></div>
+        <div class="help-grid">
+          <article><i class="fa-solid fa-qrcode"></i><strong>1. Scan / Find</strong><p>Scan the shelf QR or search the catalogue by product name or code.</p></article>
+          <article><i class="fa-solid fa-ruler-combined"></i><strong>2. Smart Measure</strong><p>Select layout and waste allowance, enter room size, then save multiple rooms if needed.</p></article>
+          <article><i class="fa-solid fa-cart-shopping"></i><strong>3. Build Cart</strong><p>Add the calculated m², recommended extras, sanitary items or a custom combo.</p></article>
+          <article><i class="fa-solid fa-file-signature"></i><strong>4. Create Estimate</strong><p>Select an existing customer or enter a new one, set validity and permitted discount, then save.</p></article>
+          <article><i class="fa-brands fa-whatsapp"></i><strong>5. Follow Up</strong><p>Send the PDF, mark the estimate Sent, then use follow-up reminders after two days.</p></article>
+          <article><i class="fa-solid fa-circle-check"></i><strong>6. Convert</strong><p>When confirmed, capture the customer confirmation and official sales-system reference.</p></article>
+        </div>
+      </section>
+
+      <section id="admin-view" class="view">
+        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Sales control centre</h2></div></div>
+        <div class="admin-hero">
+          <div><span class="eyebrow">TILES &amp; SANITARY WARE</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles &amp; Sanitary Ware Sales App.</p></div>
+          <span class="admin-lock"><i class="fa-solid fa-user-shield"></i></span>
+        </div>
+
+        <section class="admin-dashboard">
+          <div class="admin-dashboard-head">
+            <div><span class="eyebrow">CLOUD SALES OVERVIEW</span><h3>Quotation activity</h3><p>Live visibility of estimates created by the Tiles &amp; Sanitary Ware sales team.</p></div>
+            <button class="secondary-btn" type="button" onclick="location.reload()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+          </div>
+          <div class="admin-kpi-grid">
+            <div class="admin-kpi"><span>Quotes today</span><strong id="dash-today-count">0</strong><small>Estimates created or updated today</small></div>
+            <div class="admin-kpi"><span>Today's estimate value</span><strong id="dash-today-value">R0,00</strong><small>Combined value today</small></div>
+            <div class="admin-kpi"><span>Customer confirmed</span><strong id="dash-confirmed-value">R0,00</strong><small>Open confirmed estimate value</small></div>
+            <div class="admin-kpi"><span>Converted</span><strong id="dash-converted-value">R0,00</strong><small>Converted estimate value</small></div>
+          </div>
+          <div class="admin-activity-card">
+            <div class="admin-card-head"><div><small>RECENT ACTIVITY</small><strong>Latest quotations</strong></div><i class="fa-solid fa-chart-line"></i></div>
+            <div id="admin-activity-list" class="admin-activity-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading cloud quotations…</div></div>
+          </div>
+          <div class="admin-activity-card">
+            <div class="admin-card-head"><div><small>TEAM PERFORMANCE</small><strong>Sales activity by salesperson</strong></div><i class="fa-solid fa-users-line"></i></div>
+            <div class="table-scroll"><table class="performance-table"><thead><tr><th>Salesperson</th><th>Quotes</th><th>Value</th><th>Confirmed</th><th>Converted</th></tr></thead><tbody id="rep-performance-body"></tbody></table></div>
+          </div>
+          <div class="admin-export-row"><button id="export-quotes" class="secondary-btn" type="button"><i class="fa-solid fa-file-csv"></i> Export Quotations CSV</button><button id="export-customers" class="secondary-btn" type="button"><i class="fa-solid fa-address-book"></i> Export Customers CSV</button></div>
+        </section>
+
+        <div class="admin-grid">
+          <form id="add-sales-form" class="admin-card">
+            <div class="admin-card-head"><div><small>NEW ACCOUNT</small><strong>Add salesperson</strong></div><i class="fa-solid fa-user-plus"></i></div>
+            <label>Full name<input id="sales-name" type="text" autocomplete="off" required placeholder="Salesperson name"></label>
+            <label>Email address<input id="sales-email" type="email" autocomplete="off" required placeholder="name@busterbuild.co.za"></label>
+            <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
+            <p class="password-help"><i class="fa-solid fa-circle-info"></i> For a brand-new email, this temporary password works immediately. If the email already existed in Firebase, the app will send that salesperson a password-reset email instead.</p>
+            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
+            <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
+            <button id="test-sales-permissions" class="secondary-btn" type="button"><i class="fa-solid fa-shield-halved"></i> Test Firebase Access</button>
+            <p id="sales-create-status" class="admin-status" role="status"></p>
+          </form>
+          <div class="admin-card team-card">
+            <div class="admin-card-head"><div><small>ACCESS CONTROL</small><strong>Sales accounts</strong></div><span id="sales-team-count" class="team-count">0</span></div>
+            <div id="sales-team-list" class="sales-team-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales accounts…</div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Sales app navigation">
+      <button class="nav-item active" data-nav="catalogue" type="button"><i class="fa-solid fa-border-all"></i><span>Catalogue</span></button>
+      <button class="nav-item scan-nav" data-open-scan type="button"><span class="nav-scan-circle"><i class="fa-solid fa-qrcode"></i></span><span>Scan</span></button>
+      <button class="nav-item" data-nav="cart" type="button"><span class="cart-icon-wrap"><i class="fa-solid fa-cart-shopping"></i><b id="bottom-cart-count">0</b></span><span>Cart</span></button>
+      <button class="nav-item" data-nav="quotes" type="button"><i class="fa-solid fa-file-lines"></i><span>Quotes</span></button>
+    </nav>
+  </div>
+
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-product></div>
+    <article class="product-sheet" role="dialog" aria-modal="true" aria-labelledby="product-title">
+      <button class="sheet-close" data-close-product type="button"><i class="fa-solid fa-xmark"></i></button>
+      <div class="product-visual"><img id="product-image" alt="Product"></div>
+      <div class="product-content">
+        <span id="product-type" class="product-type-badge">TILE</span>
+        <h2 id="product-title"></h2>
+        <p id="product-code" class="product-code"></p>
+        <div id="product-price" class="product-price"></div>
+        <p id="product-description" class="product-description"></p>
+        <div id="product-specs" class="product-specs"></div>
+
+        <section id="smart-measure" class="smart-measure" hidden>
+          <div class="smart-head"><span class="smart-icon"><i class="fa-solid fa-ruler-combined"></i></span><div><small>BUSTERBUILD</small><strong>Smart Measure</strong><p>Calculate the required m² and recommended boxes for the customer's room.</p></div></div>
+          <div class="measure-project-grid">
+            <label>Room name<input id="room-name" type="text" placeholder="e.g. Main Bathroom"></label>
+            <label>Tile layout<select id="tile-layout"><option value="straight">Straight lay — 5% waste</option><option value="diagonal">Diagonal — 10% waste</option><option value="herringbone">Herringbone — 15% waste</option></select></label>
+            <label>Waste allowance<select id="waste-allowance"><option value="0">0%</option><option value="5" selected>5%</option><option value="10">10%</option><option value="15">15%</option></select></label>
+          </div>
+          <div class="measure-inputs"><label>Room length (m)<input id="room-length" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label><label>Room width (m)<input id="room-width" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label></div>
+          <p id="measure-base-note" class="measure-base-note"></p>
+          <div class="measure-results"><div><span>Required area</span><strong id="required-area">0.00 m²</strong></div><div class="highlight"><span>Boxes to order</span><strong id="boxes-order">0</strong></div><div><span>Covers</span><strong id="covered-area">0.00 m²</strong></div><div class="dark"><span>Estimated total at m² price</span><strong id="measure-total">R0,00</strong></div></div>
+          <p id="box-note" class="box-note"></p>
+          <button id="use-boxes" class="secondary-btn" type="button" hidden><i class="fa-solid fa-arrow-down"></i> Use required m² as quantity</button>
+          <div class="project-room-actions"><button id="save-room-btn" type="button"><i class="fa-solid fa-plus"></i> Add room to project</button><button id="use-project-rooms" type="button"><i class="fa-solid fa-layer-group"></i> Use project total</button></div>
+          <div class="project-rooms"><div class="project-rooms-head"><strong>Saved rooms</strong><span id="project-room-count">0</span></div><div id="project-rooms-list"></div><small id="project-room-summary"></small></div>
+          <div id="accessory-suggestions" class="accessory-suggestions" hidden></div>
+        </section>
+
+        <div id="public-product-actions" class="public-product-actions" hidden><div><strong>Need assistance?</strong><span>Show this product to a BusterBuild sales consultant in store.</span></div><button id="public-share-product" type="button"><i class="fa-solid fa-share-nodes"></i> Share product</button><button id="public-copy-code" type="button"><i class="fa-solid fa-copy"></i> Copy code</button></div>
+        <div class="buy-panel">
+          <div class="qty-block"><label id="qty-label">Quantity</label><div class="qty-control"><button id="qty-minus" type="button">−</button><input id="product-qty" type="number" min="1" value="1"><button id="qty-plus" type="button">+</button></div></div>
+          <button id="add-cart" class="add-cart-btn" type="button"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div id="account-menu" class="account-menu" hidden>
+    <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
+    <span id="menu-version" class="menu-version">Version 2.0.5</span>
+    <button id="my-dashboard-menu-btn" type="button"><i class="fa-solid fa-chart-simple"></i> My Dashboard</button>
+    <button id="customers-menu-btn" type="button"><i class="fa-solid fa-address-book"></i> Customers</button>
+    <button id="combo-builder-menu-btn" type="button"><i class="fa-solid fa-boxes-stacked"></i> Combo Builder</button>
+    <button id="help-menu-btn" type="button"><i class="fa-solid fa-circle-question"></i> Help & Training</button>
+    <button id="menu-install-btn" type="button"><i class="fa-solid fa-download"></i> Install App</button>
+    <button id="manage-sales-btn" class="admin-menu-btn" type="button" hidden><i class="fa-solid fa-users-gear"></i> Manage Sales Team</button>
+    <button id="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
+  </div>
+
+  
+  <div id="compare-modal" class="tool-modal"><div class="tool-modal-backdrop" data-close-compare></div><div class="tool-modal-card"><div class="tool-modal-head"><div><small>PRODUCT COMPARISON</small><strong>Compare selected products</strong></div><button data-close-compare type="button"><i class="fa-solid fa-xmark"></i></button></div><div id="compare-table-body" class="compare-grid"></div></div></div>
+  <div id="install-modal" class="tool-modal"><div class="tool-modal-backdrop" data-close-install></div><div class="tool-modal-card install-card"><div class="tool-modal-head"><div><small>INSTALL APP</small><strong>BusterBuild Sales on your phone</strong></div><button data-close-install type="button"><i class="fa-solid fa-xmark"></i></button></div><div class="install-steps"><div><span>Android</span><strong>Chrome → Menu → Install app</strong></div><div><span>iPhone / iPad</span><strong>Safari → Share → Add to Home Screen</strong></div><p>Use the same permanent Sales App URL. Future updates keep the same address.</p></div></div></div>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="app-v2-passwordfix.js?v=20261005-passwordfix1"></script>
+</body>
+</html>

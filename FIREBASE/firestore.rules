@@ -1,0 +1,121 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function userEmail() {
+      return request.auth.token.email;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && userEmail() != null
+        && userEmail() == "moyanamoses006@icloud.com";
+    }
+
+    function hasApprovedInvite() {
+      return signedIn()
+        && userEmail() != null
+        && exists(/databases/$(database)/documents/salesInvites/$(userEmail()))
+        && get(/databases/$(database)/documents/salesInvites/$(userEmail())).data.active == true
+        && get(/databases/$(database)/documents/salesInvites/$(userEmail())).data.role == "sales"
+        && get(/databases/$(database)/documents/salesInvites/$(userEmail())).data.department == "tiles-sanitary";
+    }
+
+    match /salesInvites/{email} {
+      allow read: if isAdmin()
+        || (signedIn() && userEmail() == email);
+
+      allow create, delete: if isAdmin();
+
+      allow update: if isAdmin()
+        || (signedIn()
+            && userEmail() == email
+            && request.resource.data.active == resource.data.active
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.department == resource.data.department
+            && request.resource.data.email == resource.data.email);
+    }
+
+    match /salesUsers/{userId} {
+      allow read: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
+
+      allow create: if isAdmin()
+        || (signedIn()
+            && request.auth.uid == userId
+            && hasApprovedInvite()
+            && request.resource.data.email == userEmail()
+            && request.resource.data.role == "sales"
+            && request.resource.data.department == "tiles-sanitary"
+            && request.resource.data.active == true);
+
+      allow update: if isAdmin()
+        || (signedIn()
+            && request.auth.uid == userId
+            && request.resource.data.email == resource.data.email
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.department == resource.data.department
+            && request.resource.data.active == resource.data.active);
+
+      allow delete: if isAdmin();
+    }
+
+    match /quotations/{quoteId} {
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      allow update: if isAdmin()
+        || (signedIn()
+            && resource.data.ownerUid == request.auth.uid
+            && request.resource.data.ownerUid == resource.data.ownerUid);
+
+      allow delete: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+    }
+
+    match /customers/{customerId} {
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      allow update: if isAdmin()
+        || (signedIn()
+            && resource.data.ownerUid == request.auth.uid
+            && request.resource.data.ownerUid == resource.data.ownerUid);
+
+      allow delete: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+    }
+
+    match /sessions/{userId} {
+      allow read: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
+
+      allow create, update: if signedIn()
+        && request.auth.uid == userId;
+
+      allow delete: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
+    }
+
+    match /auditLogs/{logId} {
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      allow update, delete: if isAdmin();
+    }
+  }
+}
