@@ -662,3 +662,251 @@ select,
     animation-delay:.01ms!important;
   }
 }
+
+
+/* =========================================================
+   BUSTERBUILD WELCOME MOTION V2
+   Cleaner premium motion + FULL BUSTERBUILD wordmark
+   ========================================================= */
+
+/* slightly richer black/orange BusterBuild opening */
+.buster-welcome{
+  background:
+    radial-gradient(circle at 50% 42%,rgba(241,137,18,.19),transparent 25%),
+    radial-gradient(circle at 84% 18%,rgba(241,137,18,.09),transparent 28%),
+    radial-gradient(circle at 10% 88%,rgba(255,255,255,.035),transparent 30%),
+    linear-gradient(145deg,#050505 0%,#101010 46%,#070707 100%);
+}
+
+/* Keep the central content wider so the full name is never cut */
+.buster-welcome-stage{
+  width:min(980px,94vw);
+  gap:20px;
+  padding:26px 20px;
+}
+
+/* Slightly more refined logo entrance */
+.buster-welcome-logo-shell{
+  width:190px;
+  height:190px;
+  animation:busterLogoPremium .82s cubic-bezier(.16,.9,.2,1.18) .1s forwards;
+}
+.buster-welcome-logo{
+  width:158px;
+  height:158px;
+  border-radius:30px;
+  box-shadow:
+    0 26px 78px rgba(0,0,0,.56),
+    0 0 0 1px rgba(255,255,255,.12),
+    0 0 55px rgba(241,137,18,.16);
+}
+
+/* FULL WORDMARK — no clipping */
+.buster-full-wordmark{
+  position:relative;
+  display:inline-flex;
+  align-items:baseline;
+  justify-content:center;
+  max-width:94vw;
+  white-space:nowrap;
+  overflow:visible;
+  margin-top:4px;
+  font-size:clamp(2.1rem,7.4vw,6rem);
+  line-height:.94;
+  font-weight:1000;
+  letter-spacing:-.065em;
+  opacity:0;
+  transform:translateY(16px) scale(.96);
+  animation:busterFullWordIn .72s cubic-bezier(.18,.82,.18,1) .58s forwards;
+  text-shadow:0 8px 26px rgba(0,0,0,.58);
+}
+
+.buster-word-buster{
+  color:#fff;
+}
+.buster-word-build{
+  color:#f18912;
+  margin-left:.02em;
+  text-shadow:
+    0 8px 26px rgba(0,0,0,.58),
+    0 0 24px rgba(241,137,18,.18);
+}
+
+/* elegant moving highlight across the complete name */
+.buster-word-shine{
+  position:absolute;
+  top:-12%;
+  bottom:-12%;
+  left:-35%;
+  width:18%;
+  transform:skewX(-18deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.52),transparent);
+  filter:blur(2px);
+  opacity:0;
+  animation:busterWordShine .85s ease 1.22s forwards;
+  pointer-events:none;
+}
+
+/* Remove the old clipped strong animation if any strong remains */
+.buster-welcome-wording>strong{
+  display:none!important;
+}
+
+.buster-welcome-small{
+  font-size:clamp(.68rem,1.25vw,.92rem);
+  letter-spacing:.38em;
+}
+
+.buster-welcome-line{
+  height:6px;
+  margin-top:10px;
+  background:linear-gradient(90deg,#c85c00,#f18912,#ffb35a);
+  box-shadow:0 0 22px rgba(241,137,18,.42);
+  animation:busterLinePremium .62s cubic-bezier(.2,.8,.2,1) 1.08s forwards;
+}
+
+.buster-welcome-sub{
+  margin-top:9px;
+  font-size:clamp(.68rem,1.45vw,.96rem);
+  letter-spacing:.22em;
+  color:rgba(255,255,255,.86);
+}
+
+.buster-welcome-tag{
+  margin-top:7px;
+  font-size:clamp(.58rem,1.1vw,.74rem);
+  font-weight:900;
+  letter-spacing:.16em;
+  color:#f18912;
+  opacity:0;
+  transform:translateY(8px);
+  animation:busterTagIn .42s ease 1.42s forwards;
+}
+
+.buster-welcome-loader{
+  width:min(500px,74vw);
+  margin-top:5px;
+  height:4px;
+}
+.buster-welcome-loader span{
+  background:linear-gradient(90deg,#9f4300,#e66f00,#f18912,#ffc067);
+  animation:busterLoadPremium 1.42s cubic-bezier(.2,.7,.2,1) 1.33s forwards;
+}
+
+/* premium orange construction accents */
+.buster-corner-bars{
+  position:absolute;
+  display:grid;
+  gap:8px;
+  opacity:.0;
+  z-index:1;
+  animation:busterBarsIn .65s ease .34s forwards;
+}
+.buster-corner-bars span{
+  display:block;
+  width:150px;
+  height:7px;
+  border-radius:999px;
+  background:linear-gradient(90deg,rgba(241,137,18,.05),#f18912);
+  box-shadow:0 0 18px rgba(241,137,18,.2);
+}
+.buster-bars-left{
+  left:-38px;
+  bottom:10%;
+  transform:rotate(-28deg);
+}
+.buster-bars-right{
+  right:-38px;
+  top:12%;
+  transform:rotate(152deg);
+}
+.buster-corner-bars span:nth-child(2){width:105px;opacity:.68}
+.buster-corner-bars span:nth-child(3){width:68px;opacity:.42}
+
+/* Refine background orbits */
+.orbit-a{
+  border-top-color:rgba(241,137,18,.92);
+  border-right-color:rgba(241,137,18,.07);
+}
+.orbit-b{
+  border-left-color:rgba(241,137,18,.34);
+  border-bottom-color:rgba(255,255,255,.09);
+}
+.orbit-c{
+  border-top-color:rgba(241,137,18,.19);
+}
+
+/* new motion */
+@keyframes busterLogoPremium{
+  0%{opacity:0;transform:translateY(18px) scale(.58)}
+  65%{opacity:1;transform:translateY(-2px) scale(1.035)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes busterFullWordIn{
+  0%{opacity:0;transform:translateY(16px) scale(.96);letter-spacing:-.01em}
+  100%{opacity:1;transform:translateY(0) scale(1);letter-spacing:-.065em}
+}
+@keyframes busterWordShine{
+  0%{left:-35%;opacity:0}
+  15%{opacity:.72}
+  85%{opacity:.55}
+  100%{left:118%;opacity:0}
+}
+@keyframes busterLinePremium{
+  from{width:0;opacity:.35}
+  to{width:min(560px,72vw);opacity:1}
+}
+@keyframes busterTagIn{
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes busterLoadPremium{
+  from{width:0}
+  to{width:100%}
+}
+@keyframes busterBarsIn{
+  from{opacity:0;filter:blur(8px)}
+  to{opacity:.72;filter:blur(0)}
+}
+
+@media(max-width:700px){
+  .buster-welcome-stage{
+    width:96vw;
+    padding:20px 10px;
+  }
+  .buster-welcome-logo-shell{
+    width:142px;
+    height:142px;
+  }
+  .buster-welcome-logo{
+    width:120px;
+    height:120px;
+    border-radius:23px;
+  }
+  .buster-full-wordmark{
+    font-size:clamp(1.95rem,10.2vw,3.5rem);
+    max-width:96vw;
+    letter-spacing:-.07em;
+  }
+  .buster-welcome-small{
+    font-size:.62rem;
+    letter-spacing:.31em;
+  }
+  .buster-welcome-sub{
+    font-size:.6rem;
+    letter-spacing:.17em;
+  }
+  .buster-welcome-tag{
+    font-size:.53rem;
+    letter-spacing:.12em;
+  }
+  .buster-corner-bars span{width:105px;height:5px}
+  .buster-corner-bars span:nth-child(2){width:72px}
+  .buster-corner-bars span:nth-child(3){width:48px}
+}
+
+@media(max-width:390px){
+  .buster-full-wordmark{
+    font-size:clamp(1.75rem,9.4vw,2.4rem);
+    letter-spacing:-.075em;
+  }
+}

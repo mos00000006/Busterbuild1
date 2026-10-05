@@ -1,27 +1,22 @@
-BusterBuild Sales App — BUSTERBUILD WELCOME MOTION
-Version 2.0.6
+BusterBuild Sales App — PREMIUM WELCOME MOTION V2
+Version 2.0.7
 
-This is NOT a picture splash screen.
-It is built directly into the Sales App with HTML/CSS animation.
+IMPROVEMENTS
+- Full BUSTERBUILD name is always visible.
+- BUSTER is white and BUILD is BusterBuild orange.
+- No clipping/reveal issue on the word BUSTERBUILD.
+- Better responsive sizing for phones and tablets.
+- Smoother logo entrance.
+- Moving light shine across the full BUSTERBUILD wordmark.
+- Orange construction-style corner bars.
+- Better orange/black atmospheric background.
+- Refined underline and loading motion.
+- Added:
+  FIND IT. MEASURE IT. SELL IT.
 
-DESIGN
-- BusterBuild colours: Black, Orange and White
-- Dark black opening screen
-- Orange moving light arcs
-- Existing BusterBuild app logo appears in the centre
-- WELCOME TO appears
-- BUSTERBUILD reveals with motion
-- Orange underline animation
-- TILES & SANITARY SALES appears below
-- Animated orange loading line
-- Smooth transition into the Sales App
+Customer product QR scans still skip the welcome screen.
 
-The animation lasts about 3 seconds.
-
-CUSTOMER QR SCANS
-Customer product QR links skip the welcome animation and open the product immediately.
-
-FILES TO REPLACE IN:
+UPLOAD TO:
 Busterbuild1/sales-app/
 
 REPLACE:
@@ -32,9 +27,9 @@ REPLACE:
 - app-version.json
 
 ADD:
-- app-v2-busterwelcome.js
+- app-v2-busterwelcome2.js
 
-firestore.rules is unchanged and included only for convenience.
+firestore.rules is unchanged and included for convenience.
 
 DO NOT REPLACE:
 - firebase-config.js
