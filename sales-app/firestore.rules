@@ -26,6 +26,7 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/salesInvites/$(userEmail())).data.department == "tiles-sanitary";
     }
 
+    // Administrator-approved email access / repair records.
     match /salesInvites/{email} {
       allow read: if isAdmin()
         || (signedIn() && userEmail() == email);
@@ -41,10 +42,16 @@ service cloud.firestore {
             && request.resource.data.email == resource.data.email);
     }
 
+    // Main Sales App access profile.
+    // THIS IS THE IMPORTANT LOGIN FIX:
+    // each salesperson can read their own UID profile after Firebase Auth succeeds.
     match /salesUsers/{userId} {
       allow read: if isAdmin()
         || (signedIn() && request.auth.uid == userId);
 
+      // Admin creates new profiles.
+      // A salesperson may self-link ONLY when their exact authenticated email
+      // has an active administrator-approved invitation.
       allow create: if isAdmin()
         || (signedIn()
             && request.auth.uid == userId

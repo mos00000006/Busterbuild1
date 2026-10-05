@@ -1,58 +1,40 @@
-BusterBuild Sales App — PASSWORD FIX
-Version 2.0.5
+BusterBuild Firebase Login Access Fix
 
-WHY A NEWLY ADDED SALESPERSON CAN GET "PASSWORD WRONG"
+The message "Account access could not be verified" means:
 
-BRAND-NEW EMAIL
-- Firebase creates a new login.
-- The temporary password entered by the administrator is the actual password.
-- It works immediately.
+- Firebase Authentication accepted the salesperson's email/password.
+- The Sales App then tried to read their Firestore access profile.
+- Firestore blocked that read.
 
-EMAIL ALREADY EXISTED IN FIREBASE
-- Firebase does NOT overwrite the old account password with the new temporary password.
-- That is why the salesperson can get "password wrong".
+This is a FIREBASE RULES issue, not a password issue.
 
-THIS VERSION FIXES THE WORKFLOW
+IMPORTANT:
+Uploading firestore.rules to GitHub does NOT activate Firebase rules.
 
-If the email already exists:
-- Sales access is repaired.
-- The app automatically sends a Firebase password-reset email.
-- The app clearly tells the administrator that the temporary password was NOT applied.
-- The salesperson opens the reset email, chooses a new password, then signs in.
+YOU MUST DO THIS ONCE:
 
-If the email is brand-new:
-- The temporary password works immediately.
+1. Open Firebase Console.
+2. Open project: busterbuild-sales-app.
+3. Go to Firestore Database.
+4. Click Rules.
+5. Delete the existing rules.
+6. Paste the complete contents of the supplied firestore.rules.
+7. Click PUBLISH.
 
-LOGIN SCREEN
-The sign-in error now tells repaired users to use the password-reset email.
+Then:
 
-MANAGE SALES TEAM
-The key button sends a password-reset email at any time.
+8. Return to BusterBuild Sales.
+9. Sign in as Administrator.
+10. Manage Sales Team -> Test Firebase Access.
+11. It must say Firebase access is correct.
+12. Press the repair/spanner icon beside the salesperson once.
+13. Ask the salesperson to close the app completely and sign in again.
 
-FILES TO REPLACE IN sales-app:
-- index.html
-- app.js
-- styles.css
-- sw.js
-- app-version.json
+The important rule now permits:
+- Administrator to manage all Sales App profiles.
+- A salesperson to read only their own salesUsers profile.
+- A previously incomplete salesperson to self-link only when their exact email has
+  an administrator-approved salesInvites record.
 
-ADD:
-- app-v2-passwordfix.js
-
-firestore.rules is unchanged from the Login Repair package and is included again.
-
-Do NOT replace:
-- firebase-config.js
-- manifest.webmanifest
-- icons
-- catalogue JSON files
-
-FOR A SALESPERSON CURRENTLY GETTING "PASSWORD WRONG"
-1. Upload this update.
-2. Manage Sales Team -> press the KEY button next to the salesperson.
-3. They open the Firebase password-reset email.
-4. They choose a new password.
-5. They sign in using the new password.
-
-Permanent URL:
-https://mos00000006.github.io/Busterbuild1/sales-app/
+Administrator:
+moyanamoses006@icloud.com
