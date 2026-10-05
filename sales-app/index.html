@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261005-busterwelcome2">
+  <link rel="stylesheet" href="styles.css?v=20261005-signingate1">
 </head>
 <body>
   <div id="buster-welcome" class="buster-welcome" aria-hidden="true">
@@ -67,11 +67,21 @@
         <img src="icons/icon-192.png" alt="BusterBuild">
         <div><span>SALES APP</span><h1>Tiles &amp; Sanitary Ware</h1></div>
       </div>
-      <p class="login-copy">Secure sales access for the BusterBuild tile and sanitary department.</p>
+      <div id="login-status-note" class="login-status-note">
+        <i class="fa-solid fa-user-shield"></i>
+        <span>Already registered? Sign in to start your BusterBuild sales session.</span>
+      </div>
+      <p class="login-copy">For security, authorised sales staff sign in whenever a new app session starts.</p>
       <form id="login-form">
         <label>Email address<input id="login-email" type="email" autocomplete="username" required placeholder="sales@busterbuild.co.za"></label>
-        <label>Password<input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+        <label>Password
+          <div class="login-password-field">
+            <input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••">
+            <button id="toggle-login-password" type="button" aria-label="Show or hide password"><i class="fa-regular fa-eye"></i></button>
+          </div>
+        </label>
         <button class="primary-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+        <button id="forgot-password-btn" class="login-forgot-btn" type="button"><i class="fa-solid fa-key"></i> Forgot password?</button>
       </form>
       <p id="login-error" class="form-error" role="alert"></p>
       <div id="firebase-setup" class="setup-warning" hidden>
@@ -103,7 +113,7 @@
       <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
       <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
       <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
-      <span id="app-version" class="version-chip">v2.0.7</span>
+      <span id="app-version" class="version-chip">v2.0.8</span>
     </div>
 
     <main>
@@ -383,7 +393,7 @@
 
   <div id="account-menu" class="account-menu" hidden>
     <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
-    <span id="menu-version" class="menu-version">Version 2.0.7</span>
+    <span id="menu-version" class="menu-version">Version 2.0.8</span>
     <button id="my-dashboard-menu-btn" type="button"><i class="fa-solid fa-chart-simple"></i> My Dashboard</button>
     <button id="customers-menu-btn" type="button"><i class="fa-solid fa-address-book"></i> Customers</button>
     <button id="combo-builder-menu-btn" type="button"><i class="fa-solid fa-boxes-stacked"></i> Combo Builder</button>
@@ -401,6 +411,6 @@
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-v2-busterwelcome2.js?v=20261005-busterwelcome2"></script>
+  <script type="module" src="app-v2-signingate.js?v=20261005-signingate1"></script>
 </body>
 </html>

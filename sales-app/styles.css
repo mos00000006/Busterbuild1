@@ -910,3 +910,62 @@ select,
     letter-spacing:-.075em;
   }
 }
+
+
+/* Staff sign-in gate */
+.login-status-note{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 13px;
+  margin:12px 0 8px;
+  border:1px solid rgba(241,137,18,.34);
+  border-radius:13px;
+  background:#fff8ee;
+  color:#5f451f;
+  font-size:.67rem;
+  font-weight:750;
+  line-height:1.45;
+}
+.login-status-note i{
+  color:#f18912;
+  font-size:1rem;
+  flex:0 0 auto;
+}
+.login-password-field{
+  display:grid;
+  grid-template-columns:1fr 46px;
+  border:1px solid #ded8cf;
+  border-radius:13px;
+  overflow:hidden;
+  background:#fff;
+  margin-top:5px;
+}
+.login-password-field:focus-within{
+  border-color:#f18912;
+  box-shadow:0 0 0 3px rgba(241,137,18,.12);
+}
+.login-password-field input{
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.login-password-field button{
+  border:0;
+  background:#fff;
+  color:#4d4d4d;
+  display:grid;
+  place-items:center;
+  font-size:.9rem;
+}
+.login-forgot-btn{
+  width:100%;
+  border:0;
+  background:transparent;
+  color:#745117;
+  padding:8px 6px 2px;
+  font-size:.64rem;
+  font-weight:850;
+}
+.login-forgot-btn:hover{color:#f18912}

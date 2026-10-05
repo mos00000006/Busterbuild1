@@ -1,25 +1,30 @@
-BusterBuild Sales App — PREMIUM WELCOME MOTION V2
-Version 2.0.7
+BusterBuild Sales App — STAFF SIGN-IN GATE
+Version 2.0.8
 
-IMPROVEMENTS
-- Full BUSTERBUILD name is always visible.
-- BUSTER is white and BUILD is BusterBuild orange.
-- No clipping/reveal issue on the word BUSTERBUILD.
-- Better responsive sizing for phones and tablets.
-- Smoother logo entrance.
-- Moving light shine across the full BUSTERBUILD wordmark.
-- Orange construction-style corner bars.
-- Better orange/black atmospheric background.
-- Refined underline and loading motion.
-- Added:
-  FIND IT. MEASURE IT. SELL IT.
+This update is for salespeople who are ALREADY registered.
 
-Customer product QR scans still skip the welcome screen.
+NEW BEHAVIOUR
+- Welcome motion plays.
+- Then the salesperson sees the Sign In screen.
+- A previously registered user is NOT taken straight into the app on a new app session.
+- Their email can be remembered/prefilled.
+- They must enter their password to start the new sales session.
+- Refreshing the page during the same session does not unnecessarily log them out.
+- Closing the app/browser session and starting a new session requires Sign In again.
+- Customer product QR links remain public and do not require staff login.
 
-UPLOAD TO:
-Busterbuild1/sales-app/
+LOGIN IMPROVEMENTS
+- "Already registered? Sign in" message.
+- Show/hide password button.
+- Forgot Password button.
+- Password reset can be sent directly from the login screen.
+- Logout clears the current staff session.
 
-REPLACE:
+IMPORTANT
+This is SIGN IN, not public SIGN UP.
+Only accounts created/approved by the BusterBuild administrator can enter the Sales App.
+
+FILES TO REPLACE:
 - index.html
 - app.js
 - styles.css
@@ -27,7 +32,7 @@ REPLACE:
 - app-version.json
 
 ADD:
-- app-v2-busterwelcome2.js
+- app-v2-signingate.js
 
 firestore.rules is unchanged and included for convenience.
 
