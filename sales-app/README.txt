@@ -1,28 +1,75 @@
-BusterBuild Sales App — STAFF SIGN-IN GATE
-Version 2.0.8
+BusterBuild Sales App — MOBILE + PC + CUSTOMER QR CLEANUP
+Version 2.0.9
 
-This update is for salespeople who are ALREADY registered.
+WHAT WAS FIXED
 
-NEW BEHAVIOUR
-- Welcome motion plays.
-- Then the salesperson sees the Sign In screen.
-- A previously registered user is NOT taken straight into the app on a new app session.
-- Their email can be remembered/prefilled.
-- They must enter their password to start the new sales session.
-- Refreshing the page during the same session does not unnecessarily log them out.
-- Closing the app/browser session and starting a new session requires Sign In again.
-- Customer product QR links remain public and do not require staff login.
+1. CUSTOMER QR / PRICE-TAG VIEW
+Customers scanning a product QR now see ONLY:
+- BusterBuild product image
+- Product name
+- Product code
+- Product price
+- Product description / specifications
+- Simple Smart Measure
+- Room length
+- Room width
+- Required m²
+- Recommended boxes
+- Coverage
+- Estimated m² price
+- Share Product
+- Copy Product Code
 
-LOGIN IMPROVEMENTS
-- "Already registered? Sign in" message.
-- Show/hide password button.
-- Forgot Password button.
-- Password reset can be sent directly from the login screen.
-- Logout clears the current staff session.
+CUSTOMERS DO NOT SEE:
+- Add to Cart
+- Quantity
+- Tile Adhesive suggestions
+- Grout / spacers / cleaner suggestions
+- Add Room to Project
+- Saved Rooms
+- Project Total
+- Combo Builder
+- Internal sales navigation
+- Staff tools
+- Quote controls
+- Waste / tile-layout controls
 
-IMPORTANT
-This is SIGN IN, not public SIGN UP.
-Only accounts created/approved by the BusterBuild administrator can enter the Sales App.
+Customer Smart Measure is intentionally simple:
+Room length × room width.
+It is shown as an estimate and tells the customer that a BusterBuild salesperson can
+confirm the final requirement.
+
+2. MOBILE
+- Full-width clean customer product page.
+- Larger touch controls.
+- 16px form fields to stop phone auto-zoom.
+- Responsive Smart Measure.
+- Safe-area support for iPhone.
+- Product image scales correctly.
+- No horizontal overflow.
+- Share / Copy Code buttons fit properly.
+
+3. PC / LAPTOP
+- Product detail uses a clean two-column layout.
+- Product image remains easy to view.
+- Product details scroll independently when needed.
+- Smart Measure results fit on one row on larger screens.
+- Customer QR product page is centered and polished.
+
+4. STAFF SALES APP
+All staff features remain:
+- Sign In
+- Catalogue
+- Scanner
+- Smart Measure
+- Cart
+- Quotations
+- Customer database
+- Dashboards
+- Follow-ups
+- Combo Builder
+- Admin
+- Cloud functions
 
 FILES TO REPLACE:
 - index.html
@@ -32,7 +79,7 @@ FILES TO REPLACE:
 - app-version.json
 
 ADD:
-- app-v2-signingate.js
+- app-v2-customerqr.js
 
 firestore.rules is unchanged and included for convenience.
 

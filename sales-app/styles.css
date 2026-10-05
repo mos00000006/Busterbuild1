@@ -969,3 +969,354 @@ select,
   font-weight:850;
 }
 .login-forgot-btn:hover{color:#f18912}
+
+
+/* =========================================================
+   BUSTERBUILD SALES v2.0.9
+   PC / MOBILE RESPONSIVE + CLEAN CUSTOMER QR MODE
+   ========================================================= */
+
+/* ----- General desktop product experience ----- */
+.product-sheet{
+  width:min(1180px,calc(100vw - 38px));
+  max-height:calc(100dvh - 38px);
+  grid-template-columns:minmax(320px,42%) minmax(0,58%);
+  overflow:hidden;
+}
+.product-visual{
+  min-width:0;
+  min-height:0;
+}
+.product-visual img{
+  max-width:100%;
+  max-height:calc(100dvh - 90px);
+  object-fit:contain;
+}
+.product-content{
+  min-width:0;
+  max-height:calc(100dvh - 38px);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+}
+.product-content::-webkit-scrollbar{width:7px}
+.product-content::-webkit-scrollbar-thumb{background:#d8d0c3;border-radius:999px}
+
+/* All interactive fields remain touch-safe and do not trigger iOS auto-zoom */
+input,select,textarea,button{touch-action:manipulation}
+@media(max-width:900px){
+  input,select,textarea{font-size:16px!important}
+}
+
+/* ----- Customer QR product mode ----- */
+.public-customer-banner{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  margin-bottom:14px;
+  padding:11px 13px;
+  border:1px solid #eed2ad;
+  border-radius:15px;
+  background:linear-gradient(135deg,#fffaf3,#fff);
+}
+.public-customer-banner img{
+  width:52px;height:52px;
+  object-fit:contain;
+  border-radius:11px;
+  background:#fff;
+  border:1px solid #eee3d6;
+}
+.public-customer-banner div{display:grid;gap:1px}
+.public-customer-banner small{
+  color:#d36c00;
+  font-size:.54rem;
+  font-weight:950;
+  letter-spacing:.1em;
+}
+.public-customer-banner strong{font-size:.83rem}
+.public-customer-banner span{font-size:.6rem;color:#777}
+
+.public-measure-note{
+  display:flex;
+  gap:8px;
+  align-items:flex-start;
+  margin:9px 0 11px;
+  padding:10px 11px;
+  border-radius:12px;
+  background:#fff7e9;
+  border:1px solid #f0d1a0;
+  color:#6b4b21;
+  font-size:.62rem;
+  line-height:1.5;
+}
+.public-measure-note i{color:#e47700;margin-top:2px}
+
+/* CSS safety net: staff-only controls can never leak into a customer QR page */
+html.public-product-route .buy-panel,
+html.public-product-route .staff-only-measure,
+html.public-product-route .staff-measure-tools,
+html.public-product-route #accessory-suggestions,
+html.public-product-route .project-room-actions,
+html.public-product-route .project-rooms,
+html.public-product-route #use-boxes{
+  display:none!important;
+}
+
+html.public-product-route body{
+  overflow:auto!important;
+  background:#f4f1eb;
+}
+
+html.public-product-route #product-modal{
+  position:relative;
+  inset:auto;
+  display:block!important;
+  min-height:100dvh;
+  background:#f4f1eb;
+  overflow:visible;
+}
+
+html.public-product-route #product-modal .modal-backdrop{
+  display:none!important;
+}
+
+html.public-product-route .product-sheet{
+  position:relative;
+  width:min(1120px,calc(100vw - 30px));
+  max-height:none;
+  min-height:auto;
+  margin:18px auto 28px;
+  border-radius:24px;
+  box-shadow:0 16px 55px rgba(0,0,0,.09);
+  overflow:visible;
+}
+
+html.public-product-route .product-content{
+  max-height:none;
+  overflow:visible;
+  padding-bottom:22px;
+}
+
+html.public-product-route .sheet-close{
+  display:none!important;
+}
+
+html.public-product-route .smart-measure{
+  margin-top:17px;
+  box-shadow:none;
+}
+
+html.public-product-route .smart-head p{
+  max-width:620px;
+}
+
+html.public-product-route .measure-inputs{
+  grid-template-columns:1fr 1fr;
+}
+
+html.public-product-route .measure-results{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+
+html.public-product-route .measure-results>div{
+  min-width:0;
+}
+
+html.public-product-route .measure-results strong{
+  overflow-wrap:anywhere;
+}
+
+html.public-product-route .public-product-actions{
+  margin-top:16px;
+  grid-template-columns:1fr auto auto;
+}
+
+html.public-product-route #product-price{
+  font-size:clamp(1.45rem,3vw,2.3rem);
+}
+
+/* ----- Tablet ----- */
+@media(max-width:900px){
+  .product-sheet{
+    width:min(760px,calc(100vw - 22px));
+    grid-template-columns:1fr;
+    max-height:calc(100dvh - 22px);
+  }
+  .product-visual{
+    min-height:230px;
+    max-height:38dvh;
+    padding:18px;
+  }
+  .product-visual img{
+    max-height:34dvh;
+  }
+  .product-content{
+    max-height:60dvh;
+    padding:18px;
+  }
+
+  html.public-product-route .product-sheet{
+    width:min(760px,calc(100vw - 22px));
+    margin:11px auto 22px;
+    grid-template-columns:1fr;
+  }
+  html.public-product-route .product-visual{
+    min-height:260px;
+    max-height:none;
+  }
+  html.public-product-route .product-visual img{
+    max-height:320px;
+  }
+  html.public-product-route .product-content{
+    max-height:none;
+    padding:18px;
+  }
+  html.public-product-route .measure-results{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* ----- Phone ----- */
+@media(max-width:600px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .app-header{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+  .brand-lockup img{width:42px;height:42px}
+  .brand-lockup strong{font-size:.74rem}
+  .brand-lockup span{font-size:.55rem}
+  .account-copy{display:none}
+
+  .login-screen{
+    padding:
+      max(18px,env(safe-area-inset-top))
+      max(13px,env(safe-area-inset-right))
+      max(18px,env(safe-area-inset-bottom))
+      max(13px,env(safe-area-inset-left));
+  }
+  .login-card{
+    width:100%;
+    max-width:430px;
+    padding:18px 15px;
+    border-radius:20px;
+  }
+
+  .modal{
+    align-items:stretch;
+    padding:0;
+  }
+  .product-sheet{
+    width:100%;
+    max-height:100dvh;
+    min-height:100dvh;
+    border-radius:0;
+    grid-template-columns:1fr;
+  }
+  .product-visual{
+    min-height:235px;
+    max-height:36dvh;
+    padding:15px 18px 8px;
+  }
+  .product-visual img{max-height:32dvh}
+  .product-content{
+    max-height:64dvh;
+    padding:16px 14px calc(92px + env(safe-area-inset-bottom));
+  }
+  .sheet-close{
+    top:max(10px,env(safe-area-inset-top));
+    right:max(10px,env(safe-area-inset-right));
+  }
+
+  .smart-measure{
+    padding:12px!important;
+    border-radius:16px!important;
+  }
+  .smart-head{
+    gap:9px;
+    align-items:flex-start;
+  }
+  .smart-head p{
+    font-size:.61rem;
+    line-height:1.45;
+  }
+  .measure-inputs{
+    grid-template-columns:1fr 1fr!important;
+    gap:8px;
+  }
+  .measure-inputs label{font-size:.65rem}
+  .measure-inputs input{
+    min-height:50px;
+    padding:10px 11px!important;
+  }
+  .measure-results{
+    grid-template-columns:1fr 1fr!important;
+    gap:7px;
+  }
+  .measure-results>div{
+    min-height:84px;
+    padding:11px!important;
+  }
+  .measure-results span{font-size:.57rem!important}
+  .measure-results strong{font-size:1rem!important}
+  .box-note{font-size:.58rem;line-height:1.45}
+
+  /* Customer QR becomes a clean mobile product page, not an app modal */
+  html.public-product-route #product-modal{
+    min-height:100dvh;
+    padding:0;
+  }
+  html.public-product-route .product-sheet{
+    width:100%;
+    margin:0;
+    min-height:100dvh;
+    border-radius:0;
+    box-shadow:none;
+    background:#fff;
+  }
+  html.public-product-route .product-visual{
+    min-height:270px;
+    max-height:none;
+    padding:22px 18px 8px;
+    background:linear-gradient(#faf8f4,#fff);
+  }
+  html.public-product-route .product-visual img{
+    width:100%;
+    max-width:360px;
+    max-height:280px;
+  }
+  html.public-product-route .product-content{
+    padding:14px 14px calc(22px + env(safe-area-inset-bottom));
+  }
+  html.public-product-route .public-customer-banner{
+    margin-bottom:12px;
+  }
+  html.public-product-route #product-title{
+    font-size:1.25rem;
+    line-height:1.2;
+  }
+  html.public-product-route #product-price{
+    font-size:1.7rem;
+  }
+  html.public-product-route .product-specs{
+    grid-template-columns:1fr 1fr;
+  }
+  html.public-product-route .public-product-actions{
+    grid-template-columns:1fr 1fr;
+  }
+  html.public-product-route .public-product-actions>div{
+    grid-column:1/-1;
+  }
+  html.public-product-route .public-product-actions button{
+    width:100%;
+  }
+
+  .bottom-nav{
+    padding-bottom:max(6px,env(safe-area-inset-bottom));
+  }
+}
+
+/* very small phones */
+@media(max-width:380px){
+  .measure-inputs{grid-template-columns:1fr!important}
+  html.public-product-route .product-specs{grid-template-columns:1fr}
+  html.public-product-route .public-product-actions{grid-template-columns:1fr}
+  .measure-results{grid-template-columns:1fr 1fr!important}
+}

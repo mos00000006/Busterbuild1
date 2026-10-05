@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261005-signingate1">
+  <link rel="stylesheet" href="styles.css?v=20261005-customerqr1">
 </head>
 <body>
   <div id="buster-welcome" class="buster-welcome" aria-hidden="true">
@@ -113,7 +113,7 @@
       <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
       <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
       <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
-      <span id="app-version" class="version-chip">v2.0.8</span>
+      <span id="app-version" class="version-chip">v2.0.9</span>
     </div>
 
     <main>
@@ -358,6 +358,10 @@
       <button class="sheet-close" data-close-product type="button"><i class="fa-solid fa-xmark"></i></button>
       <div class="product-visual"><img id="product-image" alt="Product"></div>
       <div class="product-content">
+        <div id="public-customer-banner" class="public-customer-banner" hidden>
+          <img src="icons/icon-192.png" alt="BusterBuild">
+          <div><small>BUSTERBUILD PRODUCT</small><strong>Product Information</strong><span>Scan. Measure. Ask our sales team for assistance.</span></div>
+        </div>
         <span id="product-type" class="product-type-badge">TILE</span>
         <h2 id="product-title"></h2>
         <p id="product-code" class="product-code"></p>
@@ -367,22 +371,31 @@
 
         <section id="smart-measure" class="smart-measure" hidden>
           <div class="smart-head"><span class="smart-icon"><i class="fa-solid fa-ruler-combined"></i></span><div><small>BUSTERBUILD</small><strong>Smart Measure</strong><p>Calculate the required m² and recommended boxes for the customer's room.</p></div></div>
-          <div class="measure-project-grid">
-            <label>Room name<input id="room-name" type="text" placeholder="e.g. Main Bathroom"></label>
-            <label>Tile layout<select id="tile-layout"><option value="straight">Straight lay — 5% waste</option><option value="diagonal">Diagonal — 10% waste</option><option value="herringbone">Herringbone — 15% waste</option></select></label>
-            <label>Waste allowance<select id="waste-allowance"><option value="0">0%</option><option value="5" selected>5%</option><option value="10">10%</option><option value="15">15%</option></select></label>
+          <div id="public-measure-note" class="public-measure-note" hidden><i class="fa-solid fa-circle-info"></i><span>Enter your room length and width. This gives a quick estimate only; a BusterBuild salesperson can confirm your final requirements.</span></div>
+          <div id="project-room-tools" class="staff-measure-tools">
+            <div class="measure-project-grid">
+              <label>Room name<input id="room-name" type="text" placeholder="e.g. Main Bathroom"></label>
+              <label>Tile layout<select id="tile-layout"><option value="straight">Straight lay — 5% waste</option><option value="diagonal">Diagonal — 10% waste</option><option value="herringbone">Herringbone — 15% waste</option></select></label>
+              <label>Waste allowance<select id="waste-allowance"><option value="0">0%</option><option value="5" selected>5%</option><option value="10">10%</option><option value="15">15%</option></select></label>
+            </div>
           </div>
           <div class="measure-inputs"><label>Room length (m)<input id="room-length" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label><label>Room width (m)<input id="room-width" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label></div>
           <p id="measure-base-note" class="measure-base-note"></p>
           <div class="measure-results"><div><span>Required area</span><strong id="required-area">0.00 m²</strong></div><div class="highlight"><span>Boxes to order</span><strong id="boxes-order">0</strong></div><div><span>Covers</span><strong id="covered-area">0.00 m²</strong></div><div class="dark"><span>Estimated total at m² price</span><strong id="measure-total">R0,00</strong></div></div>
           <p id="box-note" class="box-note"></p>
           <button id="use-boxes" class="secondary-btn" type="button" hidden><i class="fa-solid fa-arrow-down"></i> Use required m² as quantity</button>
-          <div class="project-room-actions"><button id="save-room-btn" type="button"><i class="fa-solid fa-plus"></i> Add room to project</button><button id="use-project-rooms" type="button"><i class="fa-solid fa-layer-group"></i> Use project total</button></div>
-          <div class="project-rooms"><div class="project-rooms-head"><strong>Saved rooms</strong><span id="project-room-count">0</span></div><div id="project-rooms-list"></div><small id="project-room-summary"></small></div>
-          <div id="accessory-suggestions" class="accessory-suggestions" hidden></div>
+          <div class="staff-only-measure">
+            <div class="project-room-actions"><button id="save-room-btn" type="button"><i class="fa-solid fa-plus"></i> Add room to project</button><button id="use-project-rooms" type="button"><i class="fa-solid fa-layer-group"></i> Use project total</button></div>
+            <div class="project-rooms"><div class="project-rooms-head"><strong>Saved rooms</strong><span id="project-room-count">0</span></div><div id="project-rooms-list"></div><small id="project-room-summary"></small></div>
+            <div id="accessory-suggestions" class="accessory-suggestions" hidden></div>
+          </div>
         </section>
 
-        <div id="public-product-actions" class="public-product-actions" hidden><div><strong>Need assistance?</strong><span>Show this product to a BusterBuild sales consultant in store.</span></div><button id="public-share-product" type="button"><i class="fa-solid fa-share-nodes"></i> Share product</button><button id="public-copy-code" type="button"><i class="fa-solid fa-copy"></i> Copy code</button></div>
+        <div id="public-product-actions" class="public-product-actions" hidden>
+          <div><strong>Interested in this product?</strong><span>Show this screen or product code to a BusterBuild sales consultant.</span></div>
+          <button id="public-share-product" type="button"><i class="fa-solid fa-share-nodes"></i> Share</button>
+          <button id="public-copy-code" type="button"><i class="fa-solid fa-copy"></i> Copy Code</button>
+        </div>
         <div class="buy-panel">
           <div class="qty-block"><label id="qty-label">Quantity</label><div class="qty-control"><button id="qty-minus" type="button">−</button><input id="product-qty" type="number" min="1" value="1"><button id="qty-plus" type="button">+</button></div></div>
           <button id="add-cart" class="add-cart-btn" type="button"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></button>
@@ -393,7 +406,7 @@
 
   <div id="account-menu" class="account-menu" hidden>
     <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
-    <span id="menu-version" class="menu-version">Version 2.0.8</span>
+    <span id="menu-version" class="menu-version">Version 2.0.9</span>
     <button id="my-dashboard-menu-btn" type="button"><i class="fa-solid fa-chart-simple"></i> My Dashboard</button>
     <button id="customers-menu-btn" type="button"><i class="fa-solid fa-address-book"></i> Customers</button>
     <button id="combo-builder-menu-btn" type="button"><i class="fa-solid fa-boxes-stacked"></i> Combo Builder</button>
@@ -411,6 +424,6 @@
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-v2-signingate.js?v=20261005-signingate1"></script>
+  <script type="module" src="app-v2-customerqr.js?v=20261005-customerqr1"></script>
 </body>
 </html>
