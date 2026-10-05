@@ -2,50 +2,113 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    function signedIn() { return request.auth != null; }
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
     function isAdmin() {
       return signedIn()
         && request.auth.token.email != null
         && request.auth.token.email == "moyanamoses006@icloud.com";
     }
 
-    match /salesUsers/{userId} {
-      allow read: if isAdmin() || (signedIn() && request.auth.uid == userId);
+    function hasSalesAccess() {
+      return signedIn()
+        && request.auth.token.email != null
+        && exists(/databases/$(database)/documents/salesAccess/$(request.auth.token.email))
+        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.active == true
+        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.role == "sales"
+        && get(/databases/$(database)/documents/salesAccess/$(request.auth.token.email)).data.department == "tiles-sanitary";
+    }
+
+    // Canonical admin-managed access registry, keyed by lowercase email.
+    match /salesAccess/{email} {
+      allow read: if isAdmin()
+        || (signedIn() && request.auth.token.email == email);
+
       allow create, delete: if isAdmin();
+
       allow update: if isAdmin()
-        || (signedIn() && request.auth.uid == userId
+        || (signedIn()
+            && request.auth.token.email == email
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.department == resource.data.department
+            && request.resource.data.active == resource.data.active
+            && request.resource.data.email == resource.data.email);
+    }
+
+    // UID-linked profile. Can be created by Admin or self-provisioned on first login
+    // when a valid salesAccess record exists for the signed-in email.
+    match /salesUsers/{userId} {
+      allow read: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
+
+      allow create: if isAdmin()
+        || (signedIn()
+            && request.auth.uid == userId
+            && hasSalesAccess());
+
+      allow update: if isAdmin()
+        || (signedIn()
+            && request.auth.uid == userId
             && request.resource.data.role == resource.data.role
             && request.resource.data.department == resource.data.department
             && request.resource.data.active == resource.data.active);
+
+      allow delete: if isAdmin();
     }
 
     match /quotations/{quoteId} {
-      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
-      allow read: if isAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
       allow update: if isAdmin()
-        || (signedIn() && resource.data.ownerUid == request.auth.uid
+        || (signedIn()
+            && resource.data.ownerUid == request.auth.uid
             && request.resource.data.ownerUid == resource.data.ownerUid);
-      allow delete: if isAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      allow delete: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
     }
 
     match /customers/{customerId} {
-      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
-      allow read: if isAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
       allow update: if isAdmin()
-        || (signedIn() && resource.data.ownerUid == request.auth.uid
+        || (signedIn()
+            && resource.data.ownerUid == request.auth.uid
             && request.resource.data.ownerUid == resource.data.ownerUid);
-      allow delete: if isAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      allow delete: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
     }
 
     match /sessions/{userId} {
-      allow read: if isAdmin() || (signedIn() && request.auth.uid == userId);
-      allow create, update: if signedIn() && request.auth.uid == userId;
-      allow delete: if isAdmin() || (signedIn() && request.auth.uid == userId);
+      allow read: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
+
+      allow create, update: if signedIn()
+        && request.auth.uid == userId;
+
+      allow delete: if isAdmin()
+        || (signedIn() && request.auth.uid == userId);
     }
 
     match /auditLogs/{logId} {
-      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
-      allow read: if isAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
       allow update, delete: if isAdmin();
     }
   }

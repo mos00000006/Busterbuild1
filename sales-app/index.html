@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261003-v2complete1">
+  <link rel="stylesheet" href="styles.css?v=20261005-useraddfix2">
 </head>
 <body>
   <div id="public-product-loading" class="public-product-loading">
@@ -73,7 +73,7 @@
       <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
       <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
       <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
-      <span id="app-version" class="version-chip">v2.0.0</span>
+      <span id="app-version" class="version-chip">v2.0.2</span>
     </div>
 
     <main>
@@ -292,6 +292,7 @@
             <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
             <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
             <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
+            <button id="test-sales-permissions" class="secondary-btn" type="button"><i class="fa-solid fa-shield-halved"></i> Test Firebase Access</button>
             <p id="sales-create-status" class="admin-status" role="status"></p>
           </form>
           <div class="admin-card team-card">
@@ -351,7 +352,7 @@
 
   <div id="account-menu" class="account-menu" hidden>
     <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
-    <span id="menu-version" class="menu-version">Version 2.0.0</span>
+    <span id="menu-version" class="menu-version">Version 2.0.2</span>
     <button id="my-dashboard-menu-btn" type="button"><i class="fa-solid fa-chart-simple"></i> My Dashboard</button>
     <button id="customers-menu-btn" type="button"><i class="fa-solid fa-address-book"></i> Customers</button>
     <button id="combo-builder-menu-btn" type="button"><i class="fa-solid fa-boxes-stacked"></i> Combo Builder</button>
@@ -369,6 +370,6 @@
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-v2.js?v=20261003-v2complete1"></script>
+  <script type="module" src="app-v2-usersfix.js?v=20261005-useraddfix2"></script>
 </body>
 </html>
