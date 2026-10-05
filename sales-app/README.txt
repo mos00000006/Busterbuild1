@@ -1,40 +1,46 @@
-BusterBuild Firebase Login Access Fix
+BusterBuild Sales App — BUSTERBUILD WELCOME MOTION
+Version 2.0.6
 
-The message "Account access could not be verified" means:
+This is NOT a picture splash screen.
+It is built directly into the Sales App with HTML/CSS animation.
 
-- Firebase Authentication accepted the salesperson's email/password.
-- The Sales App then tried to read their Firestore access profile.
-- Firestore blocked that read.
+DESIGN
+- BusterBuild colours: Black, Orange and White
+- Dark black opening screen
+- Orange moving light arcs
+- Existing BusterBuild app logo appears in the centre
+- WELCOME TO appears
+- BUSTERBUILD reveals with motion
+- Orange underline animation
+- TILES & SANITARY SALES appears below
+- Animated orange loading line
+- Smooth transition into the Sales App
 
-This is a FIREBASE RULES issue, not a password issue.
+The animation lasts about 3 seconds.
 
-IMPORTANT:
-Uploading firestore.rules to GitHub does NOT activate Firebase rules.
+CUSTOMER QR SCANS
+Customer product QR links skip the welcome animation and open the product immediately.
 
-YOU MUST DO THIS ONCE:
+FILES TO REPLACE IN:
+Busterbuild1/sales-app/
 
-1. Open Firebase Console.
-2. Open project: busterbuild-sales-app.
-3. Go to Firestore Database.
-4. Click Rules.
-5. Delete the existing rules.
-6. Paste the complete contents of the supplied firestore.rules.
-7. Click PUBLISH.
+REPLACE:
+- index.html
+- app.js
+- styles.css
+- sw.js
+- app-version.json
 
-Then:
+ADD:
+- app-v2-busterwelcome.js
 
-8. Return to BusterBuild Sales.
-9. Sign in as Administrator.
-10. Manage Sales Team -> Test Firebase Access.
-11. It must say Firebase access is correct.
-12. Press the repair/spanner icon beside the salesperson once.
-13. Ask the salesperson to close the app completely and sign in again.
+firestore.rules is unchanged and included only for convenience.
 
-The important rule now permits:
-- Administrator to manage all Sales App profiles.
-- A salesperson to read only their own salesUsers profile.
-- A previously incomplete salesperson to self-link only when their exact email has
-  an administrator-approved salesInvites record.
+DO NOT REPLACE:
+- firebase-config.js
+- manifest.webmanifest
+- icons/
+- catalogue JSON files
 
-Administrator:
-moyanamoses006@icloud.com
+Permanent URL:
+https://mos00000006.github.io/Busterbuild1/sales-app/

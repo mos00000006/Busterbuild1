@@ -406,3 +406,259 @@ select,
   align-items:flex-start;
 }
 .password-help i{color:#a77700;margin-top:2px}
+
+
+/* =========================================================
+   BUSTERBUILD WELCOME MOTION
+   Official app opening: BLACK / ORANGE / WHITE
+   ========================================================= */
+.buster-welcome{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 43%, rgba(241,137,18,.14), transparent 26%),
+    radial-gradient(circle at 18% 82%, rgba(241,137,18,.08), transparent 32%),
+    linear-gradient(135deg,#050505 0%,#111 52%,#090909 100%);
+  color:#fff;
+  opacity:1;
+  visibility:visible;
+  transition:opacity .58s ease, transform .58s cubic-bezier(.7,0,.2,1), visibility .58s;
+}
+.buster-welcome.leave{
+  opacity:0;
+  transform:scale(1.035);
+  visibility:hidden;
+  pointer-events:none;
+}
+
+/* orange atmospheric light */
+.buster-welcome-glow{
+  position:absolute;
+  width:min(720px,66vw);
+  height:min(720px,66vw);
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,145,24,.22) 0%, rgba(255,145,24,.07) 32%, transparent 67%);
+  filter:blur(8px);
+  animation:busterGlow 2.4s ease-in-out infinite alternate;
+}
+
+/* moving construction-style orange sweeps */
+.buster-welcome-orbit{
+  position:absolute;
+  width:120vw;
+  height:120vw;
+  max-width:1700px;
+  max-height:1700px;
+  border-radius:50%;
+  border:2px solid transparent;
+  pointer-events:none;
+}
+.orbit-a{
+  border-top-color:rgba(244,132,14,.8);
+  border-right-color:rgba(244,132,14,.12);
+  transform:rotate(-24deg) scale(.82);
+  animation:busterOrbitA 2.6s cubic-bezier(.22,.8,.2,1) both;
+}
+.orbit-b{
+  width:95vw;height:95vw;
+  border-bottom-color:rgba(255,255,255,.12);
+  border-left-color:rgba(244,132,14,.45);
+  transform:rotate(34deg) scale(.76);
+  animation:busterOrbitB 2.7s cubic-bezier(.22,.8,.2,1) both;
+}
+.orbit-c{
+  width:76vw;height:76vw;
+  border-top-color:rgba(244,132,14,.22);
+  border-left-color:rgba(255,255,255,.08);
+  transform:rotate(64deg) scale(.72);
+  animation:busterOrbitC 2.45s ease-out both;
+}
+
+.buster-welcome-stage{
+  position:relative;
+  z-index:3;
+  width:min(760px,88vw);
+  display:grid;
+  justify-items:center;
+  gap:22px;
+  text-align:center;
+  padding:30px;
+}
+
+/* logo */
+.buster-welcome-logo-shell{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:210px;
+  height:210px;
+  opacity:0;
+  transform:scale(.55);
+  animation:busterLogoIn .72s cubic-bezier(.15,.85,.22,1.22) .15s forwards;
+}
+.buster-welcome-logo{
+  position:relative;
+  z-index:3;
+  width:180px;
+  height:180px;
+  object-fit:contain;
+  border-radius:34px;
+  background:#fff;
+  box-shadow:
+    0 30px 85px rgba(0,0,0,.48),
+    0 0 0 1px rgba(255,255,255,.1),
+    0 0 44px rgba(241,137,18,.14);
+}
+.buster-logo-halo{
+  position:absolute;
+  inset:7px;
+  border:3px solid #f18912;
+  border-radius:42px;
+  opacity:0;
+  transform:scale(.66);
+  animation:busterHalo 1.25s ease .48s forwards;
+}
+
+/* wording */
+.buster-welcome-wording{
+  display:grid;
+  justify-items:center;
+  gap:4px;
+}
+.buster-welcome-small{
+  color:#f18912;
+  font-size:clamp(.72rem,1.5vw,.95rem);
+  font-weight:950;
+  letter-spacing:.34em;
+  opacity:0;
+  transform:translateY(12px);
+  animation:busterRise .42s ease .48s forwards;
+}
+.buster-welcome-wording strong{
+  display:block;
+  margin-top:2px;
+  font-size:clamp(2.9rem,7vw,5.9rem);
+  line-height:.92;
+  color:#fff;
+  font-weight:1000;
+  letter-spacing:-.055em;
+  text-shadow:0 8px 24px rgba(0,0,0,.52);
+  clip-path:inset(0 100% 0 0);
+  animation:busterNameReveal .72s cubic-bezier(.2,.72,.2,1) .66s forwards;
+}
+.buster-welcome-line{
+  display:block;
+  width:0;
+  height:7px;
+  margin-top:8px;
+  border-radius:999px;
+  background:#f18912;
+  box-shadow:0 0 20px rgba(241,137,18,.45);
+  animation:busterLine .58s ease .98s forwards;
+}
+.buster-welcome-sub{
+  margin-top:8px;
+  font-size:clamp(.72rem,1.8vw,1.05rem);
+  font-weight:800;
+  letter-spacing:.18em;
+  color:rgba(255,255,255,.86);
+  opacity:0;
+  animation:busterFade .45s ease 1.18s forwards;
+}
+
+/* loader */
+.buster-welcome-loader{
+  width:min(420px,72vw);
+  height:4px;
+  border-radius:999px;
+  overflow:hidden;
+  background:rgba(255,255,255,.12);
+  margin-top:10px;
+}
+.buster-welcome-loader span{
+  display:block;
+  width:0;
+  height:100%;
+  background:linear-gradient(90deg,#e66f00,#f18912,#ffb049);
+  box-shadow:0 0 16px rgba(241,137,18,.65);
+  animation:busterLoad 1.45s cubic-bezier(.2,.7,.2,1) 1.2s forwards;
+}
+
+@keyframes busterLogoIn{
+  to{opacity:1;transform:scale(1)}
+}
+@keyframes busterHalo{
+  0%{opacity:0;transform:scale(.64)}
+  38%{opacity:1}
+  100%{opacity:0;transform:scale(1.24)}
+}
+@keyframes busterRise{
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes busterNameReveal{
+  to{clip-path:inset(0 0 0 0)}
+}
+@keyframes busterLine{
+  to{width:min(470px,68vw)}
+}
+@keyframes busterFade{
+  to{opacity:1}
+}
+@keyframes busterLoad{
+  to{width:100%}
+}
+@keyframes busterGlow{
+  from{transform:scale(.92);opacity:.55}
+  to{transform:scale(1.08);opacity:1}
+}
+@keyframes busterOrbitA{
+  0%{opacity:0;transform:rotate(-56deg) scale(.68)}
+  25%{opacity:.95}
+  100%{opacity:.35;transform:rotate(-10deg) scale(.94)}
+}
+@keyframes busterOrbitB{
+  0%{opacity:0;transform:rotate(72deg) scale(.64)}
+  28%{opacity:.8}
+  100%{opacity:.28;transform:rotate(25deg) scale(.94)}
+}
+@keyframes busterOrbitC{
+  0%{opacity:0;transform:rotate(18deg) scale(.62)}
+  100%{opacity:.3;transform:rotate(75deg) scale(.9)}
+}
+
+@media(max-width:700px){
+  .buster-welcome-stage{
+    width:92vw;
+    gap:18px;
+    padding:22px 14px;
+  }
+  .buster-welcome-logo-shell{
+    width:150px;
+    height:150px;
+  }
+  .buster-welcome-logo{
+    width:126px;
+    height:126px;
+    border-radius:25px;
+  }
+  .buster-logo-halo{
+    border-radius:30px;
+  }
+  .buster-welcome-wording strong{
+    font-size:clamp(2.5rem,13vw,4.2rem);
+  }
+  .buster-welcome-small{font-size:.67rem}
+  .buster-welcome-sub{font-size:.66rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .buster-welcome *,
+  .buster-welcome{
+    animation-duration:.01ms!important;
+    animation-delay:.01ms!important;
+  }
+}
