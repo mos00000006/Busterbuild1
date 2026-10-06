@@ -1,30 +1,2271 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-10-06T13:40:07.639497+00:00",
   "updater_version": "2026-10-06-v1-pulse-kitchens",
-  "source_mode": "awaiting-first-sync",
+  "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
   "source_page": "https://pulsetiles.co.za/kitchens/",
   "price_policy": "BusterBuild prices end in .99",
   "tile_categories_excluded": true,
-  "sync_complete": false,
+  "sync_complete": true,
   "failed_categories": [],
-  "categories": {},
+  "categories": {
+    "kitchen-sinks": {
+      "title": "Kitchen Sinks",
+      "group": "sinks",
+      "count": 7,
+      "product_ids": [
+        "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
+        "alco-stainless-steel-sink-mixer-combo",
+        "blanco-sona-8s-black-double-sink",
+        "double-bowl-drop-in-stainless-steel-sink-1200x480",
+        "drop-in-single-bowl-stainless-steel-sink-900x450",
+        "stainless-steel-sink-combo",
+        "sit-on-single-bowl-stainless-steel-sink-900x450"
+      ]
+    },
+    "kitchen-sink-taps": {
+      "title": "Kitchen Sink Taps",
+      "group": "taps",
+      "count": 56,
+      "product_ids": [
+        "alco-pull-out-sink-mixer-spring-type-black",
+        "alco-pull-out-sink-mixer-spring-type-chrome",
+        "alco-pull-out-sink-mixer-spring-type-black-and-gold",
+        "alco-pull-out-sink-mixer-spring-type-grey",
+        "alco-pull-out-sink-mixer-stainless-steel-black",
+        "alco-pull-out-sink-mixer-stainless-steel-chrome",
+        "alco-pull-out-sink-mixer-stainless-steel-gold",
+        "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
+        "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-gold",
+        "alco-tivona-arc-sink-mixer-grey",
+        "alco-tivona-lux-sink-mixer-black",
+        "alco-tivona-lux-sink-mixer-chrome",
+        "alco-tivona-lux-sink-mixer-gold",
+        "alco-tivona-lux-sink-mixer-grey",
+        "aquavit-bravino-sink-mixer-35mm-black",
+        "aquavit-bravino-sink-mixer-35mm-chrome",
+        "aquavit-harmony-sink-mixer-black",
+        "aquavit-harmony-sink-mixer-chrome",
+        "aquavit-joop-sink-mixer-deck-type-chrome",
+        "aquavit-joop-sink-mixer-wall-type-black",
+        "aquavit-joop-sink-mixer-wall-type-chrome",
+        "aquavit-kitchen-sink-mixer-black",
+        "aquavit-kitchen-sink-mixer-chrome",
+        "aquavit-kitchen-sink-mixer-chrome-2",
+        "aquavit-lenoro-sink-mixer-35mm-black",
+        "aquavit-lenoro-sink-mixer-35mm-brush-gold",
+        "aquavit-lenoro-sink-mixer-35mm-chrome",
+        "aquavit-lenoro-sink-mixer-35mm-gun-grey",
+        "aquavit-oceana-sink-mixer-35mm-chrome",
+        "aquavit-sink-mixer-black",
+        "aquavit-sink-mixer-brushed-gold",
+        "aquavit-sink-mixer-chrome",
+        "aquavit-sink-mixer-gun-grey",
+        "aquavit-trinity-sink-mixer-deck-type",
+        "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
+        "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
+        "flexi-hose-sink-mixer-deck-type-black",
+        "flexi-hose-sink-mixer-deck-type-grey",
+        "jazz-sink-mixer-deck-type-chrome",
+        "shd-sink-mixer-black",
+        "shd-sink-mixer-black-2",
+        "shd-sink-mixer-black-3",
+        "shd-sink-mixer-black-4",
+        "shd-sink-mixer-brushed-gold",
+        "shd-sink-mixer-brushed-gold-2",
+        "shd-sink-mixer-brushed-gold-3",
+        "shd-sink-mixer-brushed-gold-4",
+        "shd-sink-mixer-chrome",
+        "shd-sink-mixer-chrome-2",
+        "shd-sink-mixer-chrome-3",
+        "shd-sink-mixer-chrome-4",
+        "shd-sink-mixer-gun-grey",
+        "shd-sink-mixer-gun-grey-2",
+        "shd-sink-mixer-gun-grey-3",
+        "shd-sink-mixer-gun-grey-4"
+      ]
+    },
+    "kitchen-sink-fittings": {
+      "title": "Kitchen Sink Fittings",
+      "group": "fittings",
+      "count": 4,
+      "product_ids": [
+        "alco-chrome-dish-rack",
+        "alco-double-sink-waste-with-overflow",
+        "alco-sink-waste-90mm-with-basket",
+        "waste-fitting-90mm"
+      ]
+    }
+  },
   "groups": {
     "sinks": {
       "title": "Kitchen Sinks",
-      "count": 0,
-      "product_ids": []
+      "count": 7,
+      "product_ids": [
+        "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
+        "alco-stainless-steel-sink-mixer-combo",
+        "blanco-sona-8s-black-double-sink",
+        "double-bowl-drop-in-stainless-steel-sink-1200x480",
+        "drop-in-single-bowl-stainless-steel-sink-900x450",
+        "stainless-steel-sink-combo",
+        "sit-on-single-bowl-stainless-steel-sink-900x450"
+      ]
     },
     "taps": {
       "title": "Kitchen Sink Taps",
-      "count": 0,
-      "product_ids": []
+      "count": 56,
+      "product_ids": [
+        "alco-pull-out-sink-mixer-spring-type-black",
+        "alco-pull-out-sink-mixer-spring-type-chrome",
+        "alco-pull-out-sink-mixer-spring-type-black-and-gold",
+        "alco-pull-out-sink-mixer-spring-type-grey",
+        "alco-pull-out-sink-mixer-stainless-steel-black",
+        "alco-pull-out-sink-mixer-stainless-steel-chrome",
+        "alco-pull-out-sink-mixer-stainless-steel-gold",
+        "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
+        "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-gold",
+        "alco-tivona-arc-sink-mixer-grey",
+        "alco-tivona-lux-sink-mixer-black",
+        "alco-tivona-lux-sink-mixer-chrome",
+        "alco-tivona-lux-sink-mixer-gold",
+        "alco-tivona-lux-sink-mixer-grey",
+        "aquavit-bravino-sink-mixer-35mm-black",
+        "aquavit-bravino-sink-mixer-35mm-chrome",
+        "aquavit-harmony-sink-mixer-black",
+        "aquavit-harmony-sink-mixer-chrome",
+        "aquavit-joop-sink-mixer-deck-type-chrome",
+        "aquavit-joop-sink-mixer-wall-type-black",
+        "aquavit-joop-sink-mixer-wall-type-chrome",
+        "aquavit-kitchen-sink-mixer-black",
+        "aquavit-kitchen-sink-mixer-chrome",
+        "aquavit-kitchen-sink-mixer-chrome-2",
+        "aquavit-lenoro-sink-mixer-35mm-black",
+        "aquavit-lenoro-sink-mixer-35mm-brush-gold",
+        "aquavit-lenoro-sink-mixer-35mm-chrome",
+        "aquavit-lenoro-sink-mixer-35mm-gun-grey",
+        "aquavit-oceana-sink-mixer-35mm-chrome",
+        "aquavit-sink-mixer-black",
+        "aquavit-sink-mixer-brushed-gold",
+        "aquavit-sink-mixer-chrome",
+        "aquavit-sink-mixer-gun-grey",
+        "aquavit-trinity-sink-mixer-deck-type",
+        "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
+        "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
+        "flexi-hose-sink-mixer-deck-type-black",
+        "flexi-hose-sink-mixer-deck-type-grey",
+        "jazz-sink-mixer-deck-type-chrome",
+        "shd-sink-mixer-black",
+        "shd-sink-mixer-black-2",
+        "shd-sink-mixer-black-3",
+        "shd-sink-mixer-black-4",
+        "shd-sink-mixer-brushed-gold",
+        "shd-sink-mixer-brushed-gold-2",
+        "shd-sink-mixer-brushed-gold-3",
+        "shd-sink-mixer-brushed-gold-4",
+        "shd-sink-mixer-chrome",
+        "shd-sink-mixer-chrome-2",
+        "shd-sink-mixer-chrome-3",
+        "shd-sink-mixer-chrome-4",
+        "shd-sink-mixer-gun-grey",
+        "shd-sink-mixer-gun-grey-2",
+        "shd-sink-mixer-gun-grey-3",
+        "shd-sink-mixer-gun-grey-4"
+      ]
     },
     "fittings": {
       "title": "Kitchen Sink Fittings",
-      "count": 0,
-      "product_ids": []
+      "count": 4,
+      "product_ids": [
+        "alco-chrome-dish-rack",
+        "alco-double-sink-waste-with-overflow",
+        "alco-sink-waste-90mm-with-basket",
+        "waste-fitting-90mm"
+      ]
     }
   },
-  "products": []
+  "products": [
+    {
+      "id": "alco-chrome-dish-rack",
+      "source_url": "https://pulsetiles.co.za/product/alco-chrome-dish-rack/",
+      "name": "Alco Chrome Dish Rack",
+      "code": "B04431",
+      "price": {
+        "current": 299.99,
+        "regular": 299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 40 × 25 × 12 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/B04431.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 25 × 12 cm"
+        },
+        {
+          "name": "Shipping Zone",
+          "value": "Nationwide"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-fittings"
+      ],
+      "kitchen_groups": [
+        "fittings"
+      ]
+    },
+    {
+      "id": "alco-double-sink-waste-with-overflow",
+      "source_url": "https://pulsetiles.co.za/product/alco-double-sink-waste-with-overflow/",
+      "name": "Alco Double Sink Waste with Overflow",
+      "code": "B04196",
+      "price": {
+        "current": 399.99,
+        "regular": 399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 30 × 17 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04196-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 17 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-fittings"
+      ],
+      "kitchen_groups": [
+        "fittings"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-spring-type-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-black/",
+      "name": "Alco Pull-Out Sink Mixer Spring Type Black",
+      "code": "B04480",
+      "price": {
+        "current": 3039.99,
+        "regular": 3039.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04480-1-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-spring-type-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-chrome/",
+      "name": "Alco Pull-Out Sink Mixer Spring Type Chrome",
+      "code": "B04482",
+      "price": {
+        "current": 2849.99,
+        "regular": 2849.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04482-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-spring-type-black-and-gold",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-black-and-gold/",
+      "name": "Alco Pull-Out Sink Mixer Spring Type Gold",
+      "code": "B04483",
+      "price": {
+        "current": 3419.99,
+        "regular": 3419.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04483-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-spring-type-grey",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-grey/",
+      "name": "Alco Pull-Out Sink Mixer Spring Type Grey",
+      "code": "B04481",
+      "price": {
+        "current": 3229.99,
+        "regular": 3229.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04481-2.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-stainless-steel-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-black/",
+      "name": "Alco Pull-Out Sink Mixer Stainless Steel Black",
+      "code": "B04484",
+      "price": {
+        "current": 3039.99,
+        "regular": 3039.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04484.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-stainless-steel-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-chrome/",
+      "name": "Alco Pull-Out Sink Mixer Stainless Steel Chrome",
+      "code": "B04486",
+      "price": {
+        "current": 3849.99,
+        "regular": 3849.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04486.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-stainless-steel-gold",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-gold/",
+      "name": "Alco Pull-Out Sink Mixer Stainless Steel Gold",
+      "code": "B04487",
+      "price": {
+        "current": 3419.99,
+        "regular": 3419.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04487-2.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
+      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-gun-grey/",
+      "name": "Alco Pull-Out Sink Mixer Stainless Steel Gun Grey",
+      "code": "B04485",
+      "price": {
+        "current": 3229.99,
+        "regular": 3229.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 57 × 27 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04485.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "57 × 27 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
+      "source_url": "https://pulsetiles.co.za/product/alco-sink-stainless-steel-sit-on-single-bowl-900x450/",
+      "name": "Alco Sink Stainless Steel Sit On Single Bowl 900×450",
+      "code": "B03668",
+      "price": {
+        "current": 899.99,
+        "regular": 899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 91 × 46 × 19 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B03668.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "91 × 46 × 19 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "alco-sink-waste-90mm-with-basket",
+      "source_url": "https://pulsetiles.co.za/product/alco-sink-waste-90mm-with-basket/",
+      "name": "Alco Sink Waste 90mm with Basket",
+      "code": "B04198",
+      "price": {
+        "current": 199.99,
+        "regular": 199.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 18 × 15 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04198-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "18 × 15 × 8 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-fittings"
+      ],
+      "kitchen_groups": [
+        "fittings"
+      ]
+    },
+    {
+      "id": "alco-stainless-steel-sink-mixer-combo",
+      "source_url": "https://pulsetiles.co.za/product/alco-stainless-steel-sink-mixer-combo/",
+      "name": "Alco Stainless steel sink + Mixer Combo",
+      "code": "Q01354",
+      "price": {
+        "current": 2499.99,
+        "regular": 2499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 120 × 50 × 25 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/Q01354-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "120 × 50 × 25 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-black/",
+      "name": "Alco Tivona Arc Sink Mixer â Black",
+      "code": "B04009",
+      "price": {
+        "current": 1799.99,
+        "regular": 1799.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04009-Black-Sink-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-sink-mixer-gold",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-gold/",
+      "name": "Alco Tivona Arc Sink Mixer â Gold",
+      "code": "B04011",
+      "price": {
+        "current": 2099.99,
+        "regular": 2099.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 66 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04011-Gold-Sink-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 66 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-sink-mixer-grey",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-grey/",
+      "name": "Alco Tivona Arc Sink Mixer â Grey",
+      "code": "B04010",
+      "price": {
+        "current": 1899.99,
+        "regular": 1899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04010-Gungrey-Sink-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-lux-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-black/",
+      "name": "Alco Tivona Lux Sink Mixer â Black",
+      "code": "B03989",
+      "price": {
+        "current": 1999.99,
+        "regular": 1999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04009.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-lux-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-chrome/",
+      "name": "Alco Tivona Lux Sink Mixer â Chrome",
+      "code": "B03988",
+      "price": {
+        "current": 1899.99,
+        "regular": 1899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 6 × 22 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/B03988-1.1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 6 × 22 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-lux-sink-mixer-gold",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-gold/",
+      "name": "Alco Tivona Lux Sink Mixer â Gold",
+      "code": "B03991",
+      "price": {
+        "current": 2399.99,
+        "regular": 2399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04011.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-lux-sink-mixer-grey",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-grey/",
+      "name": "Alco Tivona Lux Sink Mixer â Grey",
+      "code": "B03990",
+      "price": {
+        "current": 2199.99,
+        "regular": 2199.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04010.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-bravino-sink-mixer-35mm-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-sink-mixer-35mm-black/",
+      "name": "Aquavit Bravino Sink Mixer 35mm Black",
+      "code": "B04560",
+      "price": {
+        "current": 2564.99,
+        "regular": 2564.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04560--scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-bravino-sink-mixer-35mm-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-sink-mixer-35mm-chrome/",
+      "name": "Aquavit Bravino Sink Mixer 35mm Chrome",
+      "code": "B04559",
+      "price": {
+        "current": 2379.99,
+        "regular": 2379.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04559-2-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-harmony-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-sink-mixer-black/",
+      "name": "Aquavit Harmony Sink Mixer Black",
+      "code": "B04629",
+      "price": {
+        "current": 2899.99,
+        "regular": 2899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 43 × 25 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04629.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "43 × 25 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-harmony-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-sink-mixer-chrome/",
+      "name": "Aquavit Harmony Sink Mixer Chrome",
+      "code": "B04628",
+      "price": {
+        "current": 2699.99,
+        "regular": 2699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 4.3 × 25 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04628.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "4.3 × 25 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-joop-sink-mixer-deck-type-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-deck-type-chrome/",
+      "name": "Aquavit Joop Sink Mixer Deck Type Chrome",
+      "code": "B01946",
+      "price": {
+        "current": 899.99,
+        "regular": 899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 11 × 23 × 11 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/B01946.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "11 × 23 × 11 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-joop-sink-mixer-wall-type-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-wall-type-black/",
+      "name": "Aquavit Joop Sink Mixer Wall Type Black",
+      "code": "B03340",
+      "price": {
+        "current": 1099.99,
+        "regular": 1099.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 15 × 23 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03340.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "15 × 23 × 8 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-joop-sink-mixer-wall-type-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-wall-type-chrome/",
+      "name": "Aquavit Joop Sink Mixer Wall Type Chrome",
+      "code": "B01943",
+      "price": {
+        "current": 999.99,
+        "regular": 999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 15 × 23 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01943.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "15 × 23 × 8 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-kitchen-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-black/",
+      "name": "Aquavit Kitchen Sink Mixer â Black",
+      "code": "B04389",
+      "price": {
+        "current": 3999.99,
+        "regular": 3999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B03989.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-kitchen-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-chrome/",
+      "name": "Aquavit Kitchen Sink Mixer â Chrome",
+      "code": "B04387",
+      "price": {
+        "current": 4999.99,
+        "regular": 4999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B03787.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-kitchen-sink-mixer-chrome-2",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-chrome-2/",
+      "name": "Aquavit Kitchen Sink Mixer â Chrome",
+      "code": "B04388",
+      "price": {
+        "current": 4699.99,
+        "regular": 4699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04388.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-lenoro-sink-mixer-35mm-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-black/",
+      "name": "Aquavit Lenoro Sink Mixer 35mm Black",
+      "code": "B04528",
+      "price": {
+        "current": 2699.99,
+        "regular": 2699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04528-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-lenoro-sink-mixer-35mm-brush-gold",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-brush-gold/",
+      "name": "Aquavit Lenoro Sink Mixer 35mm Brush Gold",
+      "code": "B04529",
+      "price": {
+        "current": 3299.99,
+        "regular": 3299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04529-1-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-lenoro-sink-mixer-35mm-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-chrome/",
+      "name": "Aquavit Lenoro Sink Mixer 35mm Chrome",
+      "code": "B04526",
+      "price": {
+        "current": 2499.99,
+        "regular": 2499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04526-2-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-lenoro-sink-mixer-35mm-gun-grey",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-gun-grey/",
+      "name": "Aquavit Lenoro Sink Mixer 35mm Gun Grey",
+      "code": "B04527",
+      "price": {
+        "current": 2999.99,
+        "regular": 2999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04527-1-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-oceana-sink-mixer-35mm-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-oceana-sink-mixer-35mm-chrome/",
+      "name": "Aquavit Oceana Sink Mixer 35mm Chrome",
+      "code": "B04548",
+      "price": {
+        "current": 2184.99,
+        "regular": 2184.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 32 × 16 × 10 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04548.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "32 × 16 × 10 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-black/",
+      "name": "Aquavit Sink Mixer Black",
+      "code": "B04637",
+      "price": {
+        "current": 6099.99,
+        "regular": 6099.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04637-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-sink-mixer-brushed-gold",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-brushed-gold/",
+      "name": "Aquavit Sink Mixer Brushed Gold",
+      "code": "B04639",
+      "price": {
+        "current": 6499.99,
+        "regular": 6499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04639.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-chrome/",
+      "name": "Aquavit Sink Mixer Chrome",
+      "code": "B04636",
+      "price": {
+        "current": 5999.99,
+        "regular": 5999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04636.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-sink-mixer-gun-grey",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-gun-grey/",
+      "name": "Aquavit Sink Mixer Gun Grey",
+      "code": "B04638",
+      "price": {
+        "current": 6299.99,
+        "regular": 6299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04638.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-trinity-sink-mixer-deck-type",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-deck-type/",
+      "name": "Aquavit Trinity Sink Mixer Deck Type",
+      "code": "B04543",
+      "price": {
+        "current": 2099.99,
+        "regular": 2099.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 38 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04543-01-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "38 × 22 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome/",
+      "name": "Aquavit Trinity Sink Mixer Wall Type High Rise Swivel Spout Chrome",
+      "code": "B04541",
+      "price": {
+        "current": 2299.99,
+        "regular": 2299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 32 × 16 × 10 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04541-3-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "32 × 16 × 10 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome/",
+      "name": "Aquavit Trinity Sink Mixer Wall Type Swivel Spout Chrome",
+      "code": "B04542",
+      "price": {
+        "current": 2199.99,
+        "regular": 2199.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 32 × 16 × 10 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04542-2-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "32 × 16 × 10 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "blanco-sona-8s-black-double-sink",
+      "source_url": "https://pulsetiles.co.za/product/blanco-sona-8s-black-double-sink/",
+      "name": "Blanco Sona Black Double Sink",
+      "code": "B04219",
+      "price": {
+        "current": 7999.99,
+        "regular": 7999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 137 × 62 × 44 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/06/BLANCO-SONA-8S-BLACK-DOUBLE-SINK.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "22 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "137 × 62 × 44 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "double-bowl-drop-in-stainless-steel-sink-1200x480",
+      "source_url": "https://pulsetiles.co.za/product/double-bowl-drop-in-stainless-steel-sink-1200x480/",
+      "name": "Double Bowl Drop In Stainless Steel Sink 1200X480mm",
+      "code": "B03670",
+      "price": {
+        "current": 1799.99,
+        "regular": 1799.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 120 × 50 × 17 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03670.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "120 × 50 × 17 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "drop-in-single-bowl-stainless-steel-sink-900x450",
+      "source_url": "https://pulsetiles.co.za/product/drop-in-single-bowl-stainless-steel-sink-900x450/",
+      "name": "Drop In Single Bowl Stainless Steel Sink 900X450mm",
+      "code": "B03669",
+      "price": {
+        "current": 1049.99,
+        "regular": 1049.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 91 × 46 × 19 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03669.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "91 × 46 × 19 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "flexi-hose-sink-mixer-deck-type-black",
+      "source_url": "https://pulsetiles.co.za/product/flexi-hose-sink-mixer-deck-type-black/",
+      "name": "Flexi Hose Sink Mixer Deck Type Black",
+      "code": "B03395",
+      "price": {
+        "current": 999.99,
+        "regular": 1299.99,
+        "sale": 999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 20 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B03395-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "20 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "flexi-hose-sink-mixer-deck-type-grey",
+      "source_url": "https://pulsetiles.co.za/product/flexi-hose-sink-mixer-deck-type-grey/",
+      "name": "Flexi Hose Sink Mixer Deck Type Grey",
+      "code": "B03396",
+      "price": {
+        "current": 999.99,
+        "regular": 1299.99,
+        "sale": 999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 20 × 31 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B03396-1-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "20 × 31 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "jazz-sink-mixer-deck-type-chrome",
+      "source_url": "https://pulsetiles.co.za/product/jazz-sink-mixer-deck-type-chrome/",
+      "name": "Jazz Sink Mixer Deck Type Chrome",
+      "code": "B01939",
+      "price": {
+        "current": 799.99,
+        "regular": 799.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 11 × 28 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01939.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "11 × 28 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black/",
+      "name": "SHD Sink Mixer Black",
+      "code": "B04633",
+      "price": {
+        "current": 4586.99,
+        "regular": 5095.99,
+        "sale": 4586.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04633.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-black-2",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-2/",
+      "name": "SHD Sink Mixer Black",
+      "code": "B04641",
+      "price": {
+        "current": 3689.99,
+        "regular": 4099.99,
+        "sale": 3689.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04641.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-black-3",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-3/",
+      "name": "SHD Sink Mixer Black",
+      "code": "B04621",
+      "price": {
+        "current": 4136.99,
+        "regular": 4595.99,
+        "sale": 4136.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 26 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04621.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 26 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-black-4",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-4/",
+      "name": "SHD Sink Mixer Black",
+      "code": "B04645",
+      "price": {
+        "current": 3689.99,
+        "regular": 4099.99,
+        "sale": 3689.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 25 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04645.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 25 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-brushed-gold",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold/",
+      "name": "SHD Sink Mixer Brushed Gold",
+      "code": "B04635",
+      "price": {
+        "current": 4946.99,
+        "regular": 5495.99,
+        "sale": 4946.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04635.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-brushed-gold-2",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-2/",
+      "name": "SHD Sink Mixer Brushed Gold",
+      "code": "B04643",
+      "price": {
+        "current": 4049.99,
+        "regular": 4499.99,
+        "sale": 4049.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04643.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-brushed-gold-3",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-3/",
+      "name": "SHD Sink Mixer Brushed Gold",
+      "code": "B04623",
+      "price": {
+        "current": 4995.99,
+        "regular": 4995.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 26 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04623.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 26 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-brushed-gold-4",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-4/",
+      "name": "SHD Sink Mixer Brushed Gold",
+      "code": "B04647",
+      "price": {
+        "current": 4049.99,
+        "regular": 4499.99,
+        "sale": 4049.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 26 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04647.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 26 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome/",
+      "name": "SHD Sink Mixer Chrome",
+      "code": "B04685",
+      "price": {
+        "current": 4496.99,
+        "regular": 4995.99,
+        "sale": 4496.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04685.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-chrome-2",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-2/",
+      "name": "SHD Sink Mixer Chrome",
+      "code": "B04640",
+      "price": {
+        "current": 3599.99,
+        "regular": 3999.99,
+        "sale": 3599.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04640.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-chrome-3",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-3/",
+      "name": "SHD Sink Mixer Chrome",
+      "code": "B04632",
+      "price": {
+        "current": 4046.99,
+        "regular": 4495.99,
+        "sale": 4046.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04632.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-chrome-4",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-4/",
+      "name": "SHD Sink Mixer Chrome",
+      "code": "B04644",
+      "price": {
+        "current": 3599.99,
+        "regular": 3999.99,
+        "sale": 3599.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 25 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04644.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 25 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-gun-grey",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey/",
+      "name": "SHD Sink Mixer Gun Grey",
+      "code": "B04634",
+      "price": {
+        "current": 4766.99,
+        "regular": 5295.99,
+        "sale": 4766.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04634.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-gun-grey-2",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-2/",
+      "name": "SHD Sink Mixer Gun Grey",
+      "code": "B04642",
+      "price": {
+        "current": 3869.99,
+        "regular": 4299.99,
+        "sale": 3869.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 56 × 31 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04642.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "56 × 31 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-gun-grey-3",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-3/",
+      "name": "SHD Sink Mixer Gun Grey",
+      "code": "B04622",
+      "price": {
+        "current": 4316.99,
+        "regular": 4795.99,
+        "sale": 4316.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 26 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04622.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 26 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "shd-sink-mixer-gun-grey-4",
+      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-4/",
+      "name": "SHD Sink Mixer Gun Grey",
+      "code": "B04646",
+      "price": {
+        "current": 3869.99,
+        "regular": 4299.99,
+        "sale": 3869.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 25 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04646.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 25 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "stainless-steel-sink-combo",
+      "source_url": "https://pulsetiles.co.za/product/stainless-steel-sink-combo/",
+      "name": "Stainless Steel Sink Combo",
+      "code": "Q00772",
+      "price": {
+        "current": 1499.99,
+        "regular": 1499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 120 × 50 × 19 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q00772.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "120 × 50 × 19 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "sit-on-single-bowl-stainless-steel-sink-900x450",
+      "source_url": "https://pulsetiles.co.za/product/sit-on-single-bowl-stainless-steel-sink-900x450/",
+      "name": "Stainless Steel Sink Single Bowl Sit On Combo 900×450",
+      "code": "Q00774",
+      "price": {
+        "current": 899.99,
+        "regular": 1099.99,
+        "sale": 899.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 91 × 46 × 19 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q00774.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "91 × 46 × 19 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
+      ]
+    },
+    {
+      "id": "waste-fitting-90mm",
+      "source_url": "https://pulsetiles.co.za/product/waste-fitting-90mm/",
+      "name": "Waste Fitting – 90mm",
+      "code": "B03675",
+      "price": {
+        "current": 119.99,
+        "regular": 119.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 11 × 11 × 7 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/B03675.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "11 × 11 × 7 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-fittings"
+      ],
+      "kitchen_groups": [
+        "fittings"
+      ]
+    }
+  ]
 }
