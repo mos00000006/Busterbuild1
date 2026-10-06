@@ -1,0 +1,30 @@
+{
+  "generated_at": null,
+  "updater_version": "2026-10-06-v1-pulse-kitchens",
+  "source_mode": "awaiting-first-sync",
+  "source_site": "Pulse Tiles",
+  "source_page": "https://pulsetiles.co.za/kitchens/",
+  "price_policy": "BusterBuild prices end in .99",
+  "tile_categories_excluded": true,
+  "sync_complete": false,
+  "failed_categories": [],
+  "categories": {},
+  "groups": {
+    "sinks": {
+      "title": "Kitchen Sinks",
+      "count": 0,
+      "product_ids": []
+    },
+    "taps": {
+      "title": "Kitchen Sink Taps",
+      "count": 0,
+      "product_ids": []
+    },
+    "fittings": {
+      "title": "Kitchen Sink Fittings",
+      "count": 0,
+      "product_ids": []
+    }
+  },
+  "products": []
+}

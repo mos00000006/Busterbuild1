@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261006-pulsebathrooms1">
+  <link rel="stylesheet" href="styles.css?v=20261006-pulsekitchens1">
 </head>
 <body>
   <div id="buster-welcome" class="buster-welcome" aria-hidden="true">
@@ -65,7 +65,7 @@
     <div class="login-card">
       <div class="login-brand">
         <img src="icons/icon-192.png" alt="BusterBuild">
-        <div><span>SALES APP</span><h1>Tiles &amp; Bathrooms</h1></div>
+        <div><span>SALES APP</span><h1>Tiles, Bathrooms &amp; Kitchens</h1></div>
       </div>
       <div id="login-status-note" class="login-status-note">
         <i class="fa-solid fa-user-shield"></i>
@@ -88,7 +88,7 @@
         <strong>Account setup required</strong>
         <span>Firebase Authentication has not been connected yet. Add the Firebase Web App settings in <code>sales-app/firebase-config.js</code>.</span>
       </div>
-      <small class="secure-note"><i class="fa-solid fa-lock"></i> Only authorised Tiles &amp; Bathrooms sales accounts can enter this app.</small>
+      <small class="secure-note"><i class="fa-solid fa-lock"></i> Only authorised Tiles, Bathrooms &amp; Kitchens sales accounts can enter this app.</small>
     </div>
   </div>
 
@@ -96,7 +96,7 @@
     <header class="app-header">
       <div class="brand-lockup">
         <img src="icons/icon-192.png" alt="BusterBuild">
-        <div><strong>BusterBuild Sales</strong><span>Tiles &amp; Bathrooms</span></div>
+        <div><strong>BusterBuild Sales</strong><span>Tiles, Bathrooms &amp; Kitchens</span></div>
       </div>
       <div class="header-actions">
         <button id="install-btn" class="icon-btn install-btn" type="button" hidden title="Install app"><i class="fa-solid fa-download"></i></button>
@@ -113,19 +113,20 @@
       <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
       <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
       <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
-      <span id="app-version" class="version-chip">v2.1.0</span>
+      <span id="app-version" class="version-chip">v2.2.0</span>
     </div>
 
     <main>
       <section id="catalogue-view" class="view active">
         <div class="hero-card">
-          <div class="hero-copy"><span class="eyebrow">BUSTERBUILD SALES TOOL</span><h2>Find it. Scan it. Sell it.</h2><p>Fast access to tiles, Pulse bathroom products and combo deals with product details, prices, Smart Measure and cart building.</p></div>
+          <div class="hero-copy"><span class="eyebrow">BUSTERBUILD SALES TOOL</span><h2>Find it. Scan it. Sell it.</h2><p>Fast access to tiles, Pulse bathroom and kitchen products, and combo deals with product details, prices, Smart Measure and cart building.</p></div>
           <button class="scan-hero-btn" data-open-scan type="button"><span class="scan-icon"><i class="fa-solid fa-qrcode"></i></span><span><strong>Scan Product</strong><small>Open camera</small></span><i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
         <div class="quick-stats">
           <div><span>Tiles</span><strong id="tile-count">0</strong></div>
           <div><span>Bathrooms</span><strong id="sanitary-count">0</strong></div>
+          <div><span>Kitchens</span><strong id="kitchen-count">0</strong></div>
           <div><span>Combos</span><strong id="combo-count">0</strong></div>
           <div><span>Cart</span><strong id="cart-stat">0</strong></div>
         </div>
@@ -136,6 +137,7 @@
             <button class="filter-chip active" data-filter="all" type="button">All</button>
             <button class="filter-chip" data-filter="tile" type="button">Tiles</button>
             <button class="filter-chip" data-filter="sanitary" type="button"><i class="fa-solid fa-bath"></i> Bathrooms</button>
+            <button class="filter-chip" data-filter="kitchen" type="button"><i class="fa-solid fa-kitchen-set"></i> Kitchens</button>
             <button class="filter-chip" data-filter="combo" type="button">Combo Deals</button>
             <button class="filter-chip" data-filter="favourites" type="button"><i class="fa-solid fa-star"></i> Favourites</button>
           </div>
@@ -148,6 +150,13 @@
             <button class="bathroom-filter-chip" data-bath-filter="taps" type="button"><i class="fa-solid fa-faucet-drip"></i> Taps</button>
             <button class="bathroom-filter-chip" data-bath-filter="baths" type="button"><i class="fa-solid fa-bath"></i> Baths</button>
             <button class="bathroom-filter-chip" data-bath-filter="furniture" type="button"><i class="fa-solid fa-rectangle-portrait"></i> Bathroom Furniture</button>
+          </div>
+          <div id="kitchen-filter-row" class="kitchen-filter-row" hidden>
+            <span class="kitchen-filter-label">PULSE KITCHENS</span>
+            <button class="kitchen-filter-chip active" data-kitchen-filter="all" type="button">All Kitchens</button>
+            <button class="kitchen-filter-chip" data-kitchen-filter="sinks" type="button"><i class="fa-solid fa-sink"></i> Kitchen Sinks</button>
+            <button class="kitchen-filter-chip" data-kitchen-filter="taps" type="button"><i class="fa-solid fa-faucet-drip"></i> Sink Taps</button>
+            <button class="kitchen-filter-chip" data-kitchen-filter="fittings" type="button"><i class="fa-solid fa-wrench"></i> Sink Fittings</button>
           </div>
         </div>
         <section id="recent-products" class="recent-products" hidden><div class="mini-section-head"><div><small>QUICK ACCESS</small><strong>Recently viewed</strong></div></div><div id="recent-products-list" class="recent-products-list"></div></section>
@@ -239,7 +248,7 @@
             <div class="quote-scroll">
               <article id="quote-paper" class="quote-paper">
                 <header class="quote-paper-header">
-                  <div class="quote-brand"><img src="icons/icon-192.png" alt="BusterBuild"><div><strong>BUSTERBUILD</strong><span>TILES &amp; BATHROOMS</span></div></div>
+                  <div class="quote-brand"><img src="icons/icon-192.png" alt="BusterBuild"><div><strong>BUSTERBUILD</strong><span>TILES, BATHROOMS &amp; KITCHENS</span></div></div>
                   <div class="quote-title-block"><span>PRODUCT ESTIMATE</span><strong id="quote-number-preview">PRODUCT ESTIMATE</strong><small id="quote-date-preview"></small></div>
                 </header>
                 <section class="quote-customer-band">
@@ -308,13 +317,13 @@
       <section id="admin-view" class="view">
         <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Sales control centre</h2></div></div>
         <div class="admin-hero">
-          <div><span class="eyebrow">TILES &amp; BATHROOMS</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles &amp; Bathrooms Sales App.</p></div>
+          <div><span class="eyebrow">TILES, BATHROOMS &amp; KITCHENS</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles, Bathrooms &amp; Kitchens Sales App.</p></div>
           <span class="admin-lock"><i class="fa-solid fa-user-shield"></i></span>
         </div>
 
         <section class="admin-dashboard">
           <div class="admin-dashboard-head">
-            <div><span class="eyebrow">CLOUD SALES OVERVIEW</span><h3>Quotation activity</h3><p>Live visibility of estimates created by the Tiles &amp; Bathrooms sales team.</p></div>
+            <div><span class="eyebrow">CLOUD SALES OVERVIEW</span><h3>Quotation activity</h3><p>Live visibility of estimates created by the Tiles, Bathrooms &amp; Kitchens sales team.</p></div>
             <button class="secondary-btn" type="button" onclick="location.reload()"><i class="fa-solid fa-rotate"></i> Refresh</button>
           </div>
           <div class="admin-kpi-grid">
@@ -341,7 +350,7 @@
             <label>Email address<input id="sales-email" type="email" autocomplete="off" required placeholder="name@busterbuild.co.za"></label>
             <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
             <p class="password-help"><i class="fa-solid fa-circle-info"></i> For a brand-new email, this temporary password works immediately. If the email already existed in Firebase, the app will send that salesperson a password-reset email instead.</p>
-            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Bathrooms Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
+            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles, Bathrooms &amp; Kitchens Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
             <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
             <button id="test-sales-permissions" class="secondary-btn" type="button"><i class="fa-solid fa-shield-halved"></i> Test Firebase Access</button>
             <p id="sales-create-status" class="admin-status" role="status"></p>
@@ -415,8 +424,8 @@
   </div>
 
   <div id="account-menu" class="account-menu" hidden>
-    <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Bathrooms Sales</span>
-    <span id="menu-version" class="menu-version">Version 2.1.0</span>
+    <strong id="menu-email"></strong><span id="menu-role">Tiles, Bathrooms &amp; Kitchens Sales</span>
+    <span id="menu-version" class="menu-version">Version 2.2.0</span>
     <button id="my-dashboard-menu-btn" type="button"><i class="fa-solid fa-chart-simple"></i> My Dashboard</button>
     <button id="customers-menu-btn" type="button"><i class="fa-solid fa-address-book"></i> Customers</button>
     <button id="combo-builder-menu-btn" type="button"><i class="fa-solid fa-boxes-stacked"></i> Combo Builder</button>
@@ -434,6 +443,6 @@
 
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-v2-bathrooms.js?v=20261006-pulsebathrooms1"></script>
+  <script type="module" src="app-v2-kitchens.js?v=20261006-pulsekitchens1"></script>
 </body>
 </html>

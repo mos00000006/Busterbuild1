@@ -1,0 +1,91 @@
+name: Update Pulse kitchen catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 3 * * *'
+  push:
+    paths:
+      - 'scripts/update_kitchen_catalogue.py'
+      - '.github/workflows/update-kitchen-catalogue.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-kitchen-catalogue
+  cancel-in-progress: false
+
+jobs:
+  update-kitchens:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify kitchen updater
+        shell: bash
+        run: |
+          grep -q '2026-10-06-v1-pulse-kitchens' scripts/update_kitchen_catalogue.py
+          echo "Confirmed Pulse Kitchens updater"
+          grep 'BUSTERBUILD_KITCHEN_SYNC_VERSION' scripts/update_kitchen_catalogue.py | head -1
+
+      - name: Install catalogue tools
+        run: pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Build Pulse kitchen catalogue
+        run: python -u scripts/update_kitchen_catalogue.py
+
+      - name: Validate generated kitchen catalogue
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('data/pulse-kitchen-catalogue.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          products = d.get('products', [])
+          groups = d.get('groups', {})
+
+          print('Updater version:', d.get('updater_version'))
+          print('Kitchen products:', len(products))
+          print('Groups:', {k: v.get('count', 0) for k, v in groups.items()})
+          print('Sync complete:', d.get('sync_complete'))
+          print('Failed categories:', d.get('failed_categories', []))
+
+          if d.get('updater_version') != '2026-10-06-v1-pulse-kitchens':
+              raise SystemExit('Wrong kitchen updater version generated the catalogue')
+          if len(products) < 5:
+              raise SystemExit('Generated kitchen catalogue is unexpectedly small')
+
+          bad = []
+          for product in products:
+              price = (product.get('price') or {}).get('current')
+              if price is None:
+                  continue
+              if abs((float(price) % 1) - 0.99) > 0.001:
+                  bad.append((product.get('name'), price))
+                  if len(bad) >= 5:
+                      break
+          if bad:
+              raise SystemExit(f'Kitchen prices not ending in .99: {bad}')
+          PY
+
+      - name: Save updated kitchen catalogue and cache
+        run: |
+          git config user.name "BusterBuild Catalogue Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pulse-kitchen-catalogue.json data/pulse-kitchen-product-cache.json
+          if git diff --cached --quiet; then
+            echo "No kitchen catalogue changes."
+          else
+            git commit -m "Update Pulse kitchen catalogue"
+            git push
+          fi
