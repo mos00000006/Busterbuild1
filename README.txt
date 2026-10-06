@@ -1,40 +1,71 @@
-BusterBuild Firebase Login Access Fix
+BUSTERBUILD SALES APP — PULSE BATHROOMS
+Version 2.1.0
 
-The message "Account access could not be verified" means:
+SOURCE
+https://pulsetiles.co.za/bathrooms/
 
-- Firebase Authentication accepted the salesperson's email/password.
-- The Sales App then tried to read their Firestore access profile.
-- Firestore blocked that read.
+WHAT THIS UPDATE ADDS
+- Pulse bathroom products to the BusterBuild Sales App.
+- Main Bathrooms filter.
+- Bathroom subfilters:
+  * All Bathrooms
+  * Basins
+  * Toilets
+  * Showers
+  * Taps
+  * Baths
+  * Bathroom Furniture
+- Existing BusterBuild sanitary-products.json is preserved and merged.
+- Pulse Bathroom Tiles / Floor Tiles / Mosaics are excluded from this new feed because
+  those products are already covered by the Pulse tile catalogue.
+- BusterBuild price policy is applied: bathroom selling prices end in .99.
+- Product images, names, codes, descriptions and specifications are pulled from Pulse.
+- Customer product QR view remains clean:
+  no Add to Cart, no accessories, no staff-only controls.
+- Works on cellphone, tablet and PC.
 
-This is a FIREBASE RULES issue, not a password issue.
+UPLOAD / REPLACE
 
-IMPORTANT:
-Uploading firestore.rules to GitHub does NOT activate Firebase rules.
+1. Busterbuild1/sales-app/
+   Replace:
+   - index.html
+   - app.js
+   - styles.css
+   - sw.js
+   - app-version.json
 
-YOU MUST DO THIS ONCE:
+   Add:
+   - app-v2-bathrooms.js
 
-1. Open Firebase Console.
-2. Open project: busterbuild-sales-app.
-3. Go to Firestore Database.
-4. Click Rules.
-5. Delete the existing rules.
-6. Paste the complete contents of the supplied firestore.rules.
-7. Click PUBLISH.
+2. Busterbuild1/scripts/
+   Add:
+   - update_bathroom_catalogue.py
 
-Then:
+3. Busterbuild1/.github/workflows/
+   Add:
+   - update-bathroom-catalogue.yml
 
-8. Return to BusterBuild Sales.
-9. Sign in as Administrator.
-10. Manage Sales Team -> Test Firebase Access.
-11. It must say Firebase access is correct.
-12. Press the repair/spanner icon beside the salesperson once.
-13. Ask the salesperson to close the app completely and sign in again.
+4. Busterbuild1/data/
+   Add:
+   - pulse-bathroom-catalogue.json
 
-The important rule now permits:
-- Administrator to manage all Sales App profiles.
-- A salesperson to read only their own salesUsers profile.
-- A previously incomplete salesperson to self-link only when their exact email has
-  an administrator-approved salesInvites record.
+IMPORTANT
+Do NOT replace:
+- sales-app/firebase-config.js
+- manifest.webmanifest
+- icons/
+- your existing tile/combo catalogues
+- sales-app/data/sanitary-products.json
 
-Administrator:
-moyanamoses006@icloud.com
+FIRST SYNC
+Uploading the new updater/workflow triggers the GitHub Action because the workflow watches
+those paths. The Action will crawl Pulse Bathrooms and replace the placeholder
+data/pulse-bathroom-catalogue.json with the live catalogue.
+
+You can also run it manually:
+GitHub -> Actions -> Update Pulse bathroom catalogue -> Run workflow
+
+The workflow then runs daily automatically.
+
+PERMANENT APP URL
+https://mos00000006.github.io/Busterbuild1/sales-app/

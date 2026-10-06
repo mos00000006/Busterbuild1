@@ -1320,3 +1320,64 @@ html.public-product-route #product-price{
   html.public-product-route .public-product-actions{grid-template-columns:1fr}
   .measure-results{grid-template-columns:1fr 1fr!important}
 }
+
+
+/* =========================================================
+   BUSTERBUILD SALES v2.1.0 — PULSE BATHROOMS
+   ========================================================= */
+.bathroom-filter-row{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  overflow-x:auto;
+  padding:10px 2px 1px;
+  margin-top:10px;
+  border-top:1px solid var(--line);
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.bathroom-filter-row[hidden]{display:none!important}
+.bathroom-filter-row::-webkit-scrollbar{display:none}
+.bathroom-filter-label{
+  flex:0 0 auto;
+  font-size:.56rem;
+  font-weight:950;
+  letter-spacing:.09em;
+  color:#a27400;
+  padding:0 4px;
+}
+.bathroom-filter-chip{
+  flex:0 0 auto;
+  white-space:nowrap;
+  border:1px solid #e3dac9;
+  border-radius:999px;
+  background:#fffaf0;
+  color:#332d24;
+  padding:8px 11px;
+  font-size:.68rem;
+  font-weight:850;
+}
+.bathroom-filter-chip i{margin-right:5px;color:#ce7300}
+.bathroom-filter-chip.active{
+  background:var(--yellow);
+  color:#111;
+  border-color:var(--yellow);
+  box-shadow:0 5px 14px rgba(225,161,0,.18);
+}
+.bathroom-filter-chip.active i{color:#111}
+
+@media(max-width:600px){
+  .catalogue-tools{padding:12px}
+  .filter-row{padding-top:10px}
+  .bathroom-filter-row{
+    margin-left:-2px;
+    margin-right:-2px;
+    padding-bottom:2px;
+  }
+  .bathroom-filter-label{display:none}
+  .bathroom-filter-chip{
+    min-height:38px;
+    padding:9px 12px;
+    font-size:.67rem;
+  }
+}
