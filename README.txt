@@ -1,73 +1,56 @@
-BUSTERBUILD SALES APP — PULSE KITCHENS
-Version 2.2.0
+BUSTERBUILD ROOT WEBSITE FIX
 
-THIS PACKAGE INCLUDES THE PREVIOUS PULSE BATHROOMS UPDATE + THE NEW KITCHENS UPDATE.
+THE PROBLEM
+The repository ROOT index.html was replaced by the Sales App.
+That is why:
+https://mos00000006.github.io/Busterbuild1/
+opens the staff Sales App.
 
-SOURCE
-https://pulsetiles.co.za/kitchens/
+CORRECT STRUCTURE
 
-NEW KITCHEN SECTION
-- All Kitchens
-- Kitchen Sinks
-- Sink Taps
-- Sink Fittings
+PUBLIC WEBSITE:
+Busterbuild1/index.html
+https://mos00000006.github.io/Busterbuild1/
 
-Pulse's kitchen area also links to kitchen tile ranges. Those tile categories are NOT duplicated
-inside the kitchen feed because the BusterBuild app already loads Pulse tiles from the dedicated
-tile catalogue. This keeps one clean tile record and preserves Smart Measure.
+STAFF SALES APP:
+Busterbuild1/sales-app/index.html
+https://mos00000006.github.io/Busterbuild1/sales-app/
 
-THE APP STILL KEEPS
-- Tiles
-- Bathrooms and all bathroom subcategories
-- Kitchens
-- Combo Deals
-- Welcome motion
-- Staff sign-in
-- Mobile / tablet / PC responsive layouts
-- Clean customer QR product page
-- Smart Measure for tiles
-- Cart / quotations / customer database / dashboards / admin tools
+WHAT TO DO
 
-BUSTERBUILD PRICING
-Pulse prices are converted to the BusterBuild .99 ending in the kitchen updater.
+In GitHub open:
+Busterbuild1
 
-UPLOAD TO GITHUB
+IMPORTANT: stay in the ROOT of the repository.
+Do NOT open the sales-app folder.
 
-1. Busterbuild1/sales-app/
-   REPLACE:
-   - index.html
-   - app.js
-   - styles.css
-   - sw.js
-   - app-version.json
+1. Replace the ROOT:
+   index.html
 
-   ADD:
-   - app-v2-kitchens.js
+2. Replace the ROOT:
+   sw.js
 
-2. Busterbuild1/scripts/
-   KEEP the bathroom updater and ADD:
-   - update_kitchen_catalogue.py
+Do not upload these two files inside sales-app.
 
-3. Busterbuild1/.github/workflows/
-   KEEP the bathroom workflow and ADD:
-   - update-kitchen-catalogue.yml
+The replacement root sw.js only removes the old accidental root Sales App
+service worker. It does not replace /sales-app/sw.js.
 
-4. Busterbuild1/data/
-   KEEP pulse-bathroom-catalogue.json and ADD:
-   - pulse-kitchen-catalogue.json
+DO NOT CHANGE OR DELETE:
+- sales-app/
+- data/
+- scripts/
+- .github/
+- css/
+- js/
+- pictures/
+- existing public website pages
 
-DO NOT REPLACE
-- sales-app/firebase-config.js
-- manifest.webmanifest
-- icons/
-- pulse-tile-catalogue.json
-- pulse-combo-catalogue.json
-- sales-app/data/sanitary-products.json
+AFTER GITHUB PAGES DEPLOYS
 
-FIRST KITCHEN SYNC
-After the updater/workflow is uploaded, GitHub Actions should run the kitchen catalogue job.
-You can also run:
-GitHub -> Actions -> Update Pulse kitchen catalogue -> Run workflow
+Open:
+https://mos00000006.github.io/Busterbuild1/
 
-PERMANENT APP URL
+Press Ctrl + F5 once on PC if the old Sales App screen is still cached.
+
+The Staff Sales App remains:
 https://mos00000006.github.io/Busterbuild1/sales-app/

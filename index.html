@@ -1,301 +1,824 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111111">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="BB Sales">
-  <title>BusterBuild Tiles & Sanitary Sales</title>
-  <script>
-    (function(){
-      var p=new URLSearchParams(location.search);
-      if(p.get('product')||p.get('code')) document.documentElement.classList.add('public-product-route');
-    })();
-  </script>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icons/icon-192.png">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>BusterBuild Hardware | Build Better</title>
+  <meta name="description" content="BusterBuild Hardware — building materials, tiles, bathrooms, kitchens, plumbing, electrical, paint, tools and more.">
+  <link rel="icon" type="image/png" href="sales-app/icons/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=20261003-v1professional1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --bb-orange:#f28a00;
+      --bb-orange-2:#ffad32;
+      --bb-black:#0d0d0d;
+      --bb-soft:#f6f4ef;
+      --bb-line:#e8e2d8;
+      --bb-text:#171717;
+      --bb-muted:#6e6a63;
+      --bb-white:#fff;
+      --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Poppins,Arial,sans-serif;
+      color:var(--bb-text);
+      background:#fff;
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    button,input{font:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),calc(100% - 36px));margin:auto}
+
+    .topbar{
+      background:#090909;
+      color:#fff;
+      font-size:.78rem;
+    }
+    .topbar .container{
+      min-height:38px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .topbar-left,.topbar-right{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .topbar a:hover{color:var(--bb-orange)}
+    .topbar-center{
+      color:#ddd;
+      font-weight:600;
+      letter-spacing:.02em;
+    }
+
+    .site-header{
+      background:#fff;
+      border-bottom:1px solid #eee;
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+    .header-main{
+      min-height:88px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:210px;
+    }
+    .brand img{
+      width:150px;
+      height:66px;
+      object-fit:contain;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+    }
+    .nav a{
+      padding:12px 13px;
+      border-radius:11px;
+      font-size:.82rem;
+      font-weight:750;
+      color:#242424;
+    }
+    .nav a:hover{
+      background:#fff4df;
+      color:#a95600;
+    }
+    .header-actions{
+      display:flex;
+      align-items:center;
+      gap:9px;
+    }
+    .quote-btn,.sales-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      min-height:43px;
+      padding:0 16px;
+      border-radius:12px;
+      font-size:.76rem;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .quote-btn{background:var(--bb-orange);color:#111}
+    .quote-btn:hover{background:#ff9f16}
+    .sales-btn{background:#111;color:#fff}
+    .sales-btn:hover{background:#2a2a2a}
+    .mobile-menu{display:none;border:0;background:#111;color:#fff;width:44px;height:44px;border-radius:12px}
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 80% 22%,rgba(242,138,0,.34),transparent 25%),
+        radial-gradient(circle at 72% 72%,rgba(255,255,255,.05),transparent 30%),
+        linear-gradient(120deg,#080808 0%,#121212 57%,#2c1b05 100%);
+      color:#fff;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:610px;
+      height:610px;
+      border:2px solid rgba(242,138,0,.22);
+      border-radius:50%;
+      right:-170px;
+      top:-250px;
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      width:520px;
+      height:10px;
+      border-radius:999px;
+      background:linear-gradient(90deg,transparent,var(--bb-orange),transparent);
+      right:-30px;
+      bottom:90px;
+      transform:rotate(-20deg);
+      box-shadow:0 0 35px rgba(242,138,0,.28);
+    }
+    .hero-grid{
+      position:relative;
+      z-index:2;
+      min-height:600px;
+      display:grid;
+      grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+      gap:55px;
+      align-items:center;
+      padding:56px 0;
+    }
+    .hero-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      color:#111;
+      background:var(--bb-orange);
+      border-radius:999px;
+      padding:8px 13px;
+      font-size:.72rem;
+      font-weight:950;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+    }
+    .hero h1{
+      margin:18px 0 14px;
+      max-width:820px;
+      font-size:clamp(3.3rem,7vw,6.6rem);
+      line-height:.9;
+      letter-spacing:-.06em;
+      font-weight:950;
+    }
+    .hero h1 span{color:var(--bb-orange)}
+    .hero p{
+      margin:0;
+      max-width:660px;
+      color:#d5d5d5;
+      line-height:1.72;
+      font-size:1.02rem;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:11px;
+      margin-top:28px;
+    }
+    .hero-primary,.hero-secondary{
+      min-height:50px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      border-radius:14px;
+      padding:0 20px;
+      font-weight:900;
+      font-size:.82rem;
+    }
+    .hero-primary{background:var(--bb-orange);color:#111}
+    .hero-secondary{background:#fff;color:#111}
+    .hero-primary:hover,.hero-secondary:hover{transform:translateY(-1px)}
+    .hero-card{
+      position:relative;
+      border-radius:30px;
+      padding:28px;
+      min-height:390px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      backdrop-filter:blur(12px);
+      box-shadow:0 30px 85px rgba(0,0,0,.32);
+      display:grid;
+      align-content:center;
+      justify-items:center;
+      text-align:center;
+    }
+    .hero-logo-shell{
+      width:220px;
+      height:220px;
+      padding:20px;
+      background:#fff;
+      border-radius:30px;
+      display:grid;
+      place-items:center;
+      box-shadow:0 28px 60px rgba(0,0,0,.35),0 0 0 5px rgba(242,138,0,.14);
+    }
+    .hero-logo-shell img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+    .hero-card strong{
+      margin-top:20px;
+      font-size:1.08rem;
+      letter-spacing:.06em;
+    }
+    .hero-card span{
+      margin-top:5px;
+      color:#cfcfcf;
+      font-size:.72rem;
+    }
+
+    .department-strip{
+      background:#fff;
+      margin-top:-1px;
+      position:relative;
+      z-index:4;
+      border-bottom:1px solid #eee;
+    }
+    .department-grid{
+      display:grid;
+      grid-template-columns:repeat(6,minmax(0,1fr));
+      gap:0;
+    }
+    .department-item{
+      min-height:118px;
+      border-right:1px solid #eee;
+      display:grid;
+      justify-items:center;
+      align-content:center;
+      gap:9px;
+      text-align:center;
+      padding:18px 10px;
+    }
+    .department-item:first-child{border-left:1px solid #eee}
+    .department-icon{
+      width:42px;
+      height:42px;
+      border-radius:13px;
+      background:#fff5e6;
+      color:#d86f00;
+      display:grid;
+      place-items:center;
+      font-size:1rem;
+    }
+    .department-item strong{font-size:.72rem}
+    .department-item:hover{background:#fffaf2}
+    .department-item:hover .department-icon{background:var(--bb-orange);color:#111}
+
+    section.content-section{padding:76px 0}
+    .section-kicker{
+      color:#c76700;
+      font-size:.7rem;
+      font-weight:950;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .section-title{
+      margin:6px 0 12px;
+      font-size:clamp(2rem,4vw,3.25rem);
+      letter-spacing:-.045em;
+      line-height:1.05;
+    }
+    .section-copy{
+      max-width:720px;
+      color:var(--bb-muted);
+      line-height:1.7;
+      margin:0;
+    }
+
+    .feature-grid{
+      margin-top:34px;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+    }
+    .feature-card{
+      min-height:230px;
+      border:1px solid var(--bb-line);
+      border-radius:24px;
+      padding:25px;
+      background:#fff;
+      box-shadow:0 12px 32px rgba(0,0,0,.045);
+      display:flex;
+      flex-direction:column;
+    }
+    .feature-card .icon{
+      width:50px;height:50px;
+      border-radius:15px;
+      background:#111;
+      color:var(--bb-orange);
+      display:grid;
+      place-items:center;
+      font-size:1.15rem;
+      margin-bottom:20px;
+    }
+    .feature-card h3{margin:0 0 7px;font-size:1.05rem}
+    .feature-card p{margin:0;color:var(--bb-muted);font-size:.82rem;line-height:1.65}
+    .feature-card a{
+      margin-top:auto;
+      padding-top:18px;
+      font-size:.74rem;
+      font-weight:900;
+      color:#b75f00;
+    }
+
+    .range-section{background:var(--bb-soft)}
+    .range-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:16px;
+      margin-top:32px;
+    }
+    .range-card{
+      position:relative;
+      min-height:245px;
+      border-radius:23px;
+      overflow:hidden;
+      background:#111;
+      color:#fff;
+      padding:22px;
+      display:flex;
+      align-items:flex-end;
+      isolation:isolate;
+    }
+    .range-card:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 80% 20%,rgba(242,138,0,.45),transparent 28%),
+        linear-gradient(150deg,#111 0%,#1c1c1c 55%,#352105 100%);
+      z-index:-2;
+    }
+    .range-card:after{
+      content:"";
+      position:absolute;
+      width:130px;height:130px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:50%;
+      right:-20px;top:-20px;
+      z-index:-1;
+    }
+    .range-card i{
+      position:absolute;
+      top:22px;left:22px;
+      width:48px;height:48px;
+      border-radius:14px;
+      background:var(--bb-orange);
+      color:#111;
+      display:grid;
+      place-items:center;
+      font-size:1.1rem;
+    }
+    .range-card small{
+      display:block;
+      color:#f0a03d;
+      font-weight:900;
+      font-size:.62rem;
+      letter-spacing:.09em;
+      margin-bottom:4px;
+    }
+    .range-card strong{font-size:1.16rem}
+    .range-card span{display:block;margin-top:6px;color:#d8d8d8;font-size:.7rem;line-height:1.45}
+
+    .cta-section{
+      padding:0 0 78px;
+      background:var(--bb-soft);
+    }
+    .cta-card{
+      border-radius:28px;
+      overflow:hidden;
+      background:#111;
+      color:#fff;
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      gap:25px;
+      padding:34px 38px;
+      box-shadow:0 18px 48px rgba(0,0,0,.14);
+    }
+    .cta-card h2{margin:0 0 8px;font-size:clamp(1.6rem,3vw,2.5rem)}
+    .cta-card p{margin:0;color:#ccc;font-size:.84rem}
+    .cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .whatsapp-btn,.contact-btn{
+      min-height:47px;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:0 17px;
+      border-radius:13px;
+      font-size:.76rem;
+      font-weight:900;
+    }
+    .whatsapp-btn{background:#25D366;color:#082611}
+    .contact-btn{background:var(--bb-orange);color:#111}
+
+    footer{
+      background:#080808;
+      color:#fff;
+      padding:48px 0 22px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:44px;
+      padding-bottom:36px;
+    }
+    .footer-brand img{
+      width:160px;
+      height:74px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:14px;
+      padding:6px 10px;
+    }
+    .footer-brand p{max-width:460px;color:#aaa;font-size:.75rem;line-height:1.65}
+    .footer-col strong{display:block;margin-bottom:12px;font-size:.82rem}
+    .footer-col a{display:block;color:#aaa;font-size:.72rem;padding:5px 0}
+    .footer-col a:hover{color:var(--bb-orange)}
+    .footer-bottom{
+      border-top:1px solid #222;
+      padding-top:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      color:#777;
+      font-size:.68rem;
+    }
+    .staff-link{
+      color:#aaa;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+
+    @media(max-width:1050px){
+      .nav{display:none}
+      .mobile-menu{display:grid;place-items:center}
+      .header-actions .quote-btn{display:none}
+      .hero-grid{grid-template-columns:1fr .7fr}
+      .department-grid{grid-template-columns:repeat(3,1fr)}
+      .department-item:nth-child(4){border-left:1px solid #eee}
+      .range-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:760px){
+      .topbar-center{display:none}
+      .topbar .container{justify-content:space-between}
+      .topbar-left span{display:none}
+      .brand img{width:132px}
+      .header-main{min-height:76px}
+      .sales-btn span{display:none}
+      .sales-btn{width:44px;padding:0;justify-content:center}
+      .hero-grid{
+        grid-template-columns:1fr;
+        min-height:auto;
+        padding:44px 0 36px;
+        gap:34px;
+      }
+      .hero h1{font-size:clamp(3rem,15vw,5rem)}
+      .hero-card{min-height:300px}
+      .hero-logo-shell{width:170px;height:170px}
+      .feature-grid{grid-template-columns:1fr}
+      .range-grid{grid-template-columns:1fr 1fr}
+      .cta-card{grid-template-columns:1fr;padding:28px 24px}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-brand{grid-column:1/-1}
+    }
+    @media(max-width:520px){
+      .container{width:min(100% - 24px,var(--max))}
+      .topbar-right a:not(:last-child){display:none}
+      .header-actions{gap:6px}
+      .hero p{font-size:.9rem}
+      .hero-actions{display:grid;grid-template-columns:1fr}
+      .hero-primary,.hero-secondary{width:100%}
+      .hero-card{min-height:270px;padding:22px}
+      .hero-logo-shell{width:145px;height:145px;border-radius:24px}
+      .department-grid{grid-template-columns:repeat(2,1fr)}
+      .department-item:nth-child(3),
+      .department-item:nth-child(5){border-left:1px solid #eee}
+      section.content-section{padding:58px 0}
+      .range-grid{grid-template-columns:1fr}
+      .range-card{min-height:215px}
+      .footer-grid{grid-template-columns:1fr}
+      .footer-brand{grid-column:auto}
+      .footer-bottom{align-items:flex-start;flex-direction:column}
+    }
+
+    .mobile-panel{
+      position:fixed;
+      inset:0;
+      z-index:100;
+      background:rgba(0,0,0,.55);
+      display:none;
+    }
+    .mobile-panel.open{display:block}
+    .mobile-panel-card{
+      position:absolute;
+      top:0;right:0;
+      width:min(330px,88vw);
+      min-height:100%;
+      background:#fff;
+      padding:20px;
+      box-shadow:-20px 0 60px rgba(0,0,0,.25);
+    }
+    .mobile-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .mobile-panel-head strong{font-size:.82rem}
+    .mobile-close{border:0;background:#111;color:#fff;width:40px;height:40px;border-radius:11px}
+    .mobile-panel a{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:50px;
+      border-bottom:1px solid #eee;
+      font-size:.8rem;
+      font-weight:750;
+    }
+    .mobile-panel .mobile-sales{
+      margin-top:18px;
+      justify-content:center;
+      border:0;
+      border-radius:12px;
+      background:#111;
+      color:#fff;
+    }
+  </style>
+
+  <script>
+    // IMPORTANT:
+    // A Sales App service worker was previously registered from the WEBSITE ROOT.
+    // Remove ONLY the old root-scoped service worker. The real Sales App SW lives
+    // under /sales-app/ and remains untouched.
+    (function(){
+      if(!('serviceWorker' in navigator)) return;
+      window.addEventListener('load', async function(){
+        try{
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for(const reg of regs){
+            const scopePath = new URL(reg.scope).pathname.replace(/\/+$/,'/');
+            const appPath = location.pathname.replace(/\/index\.html$/,'/').replace(/\/+$/,'/');
+            if(scopePath === appPath){
+              await reg.unregister();
+            }
+          }
+        }catch(e){}
+      });
+    })();
+  </script>
 </head>
+
 <body>
-  <div id="public-product-loading" class="public-product-loading">
-    <div class="public-loading-card">
-      <img src="icons/icon-192.png" alt="BusterBuild">
-      <strong>Loading product…</strong>
-      <span>Please wait while we open the product information.</span>
-    </div>
-  </div>
-  <div id="login-screen" class="login-screen">
-    <div class="login-card">
-      <div class="login-brand">
-        <img src="icons/icon-192.png" alt="BusterBuild">
-        <div><span>SALES APP</span><h1>Tiles &amp; Sanitary Ware</h1></div>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <a href="tel:+27101010464"><i class="fa-solid fa-phone"></i> <span>+27 10 101 0464</span></a>
       </div>
-      <p class="login-copy">Secure sales access for the BusterBuild tile and sanitary department.</p>
-      <form id="login-form">
-        <label>Email address<input id="login-email" type="email" autocomplete="username" required placeholder="sales@busterbuild.co.za"></label>
-        <label>Password<input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
-        <button class="primary-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
-      </form>
-      <p id="login-error" class="form-error" role="alert"></p>
-      <div id="firebase-setup" class="setup-warning" hidden>
-        <strong>Account setup required</strong>
-        <span>Firebase Authentication has not been connected yet. Add the Firebase Web App settings in <code>sales-app/firebase-config.js</code>.</span>
+      <div class="topbar-center">Welcome to BusterBuild Hardware</div>
+      <div class="topbar-right">
+        <a href="https://www.facebook.com/share/167sFiFc3X1/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/busterbuild" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/27632513656" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-      <small class="secure-note"><i class="fa-solid fa-lock"></i> Only authorised Tiles &amp; Sanitary Ware sales accounts can enter this app.</small>
     </div>
   </div>
 
-  <div id="app-shell" class="app-shell" hidden>
-    <header class="app-header">
-      <div class="brand-lockup">
-        <img src="icons/icon-192.png" alt="BusterBuild">
-        <div><strong>BusterBuild Sales</strong><span>Tiles &amp; Sanitary Ware</span></div>
-      </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="./" aria-label="BusterBuild Hardware home">
+        <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
+             onerror="this.onerror=null;this.src='sales-app/icons/icon-192.png';"
+             alt="BusterBuild Hardware">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="products.html">Products</a>
+        <a href="tile%20%26%20sanitary%20ware.html">Tiles &amp; Bathrooms</a>
+        <a href="specials.html">Specials</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
       <div class="header-actions">
-        <button id="install-btn" class="icon-btn install-btn" type="button" hidden title="Install app"><i class="fa-solid fa-download"></i></button>
-        <button id="account-btn" class="account-pill" type="button"><span class="avatar"><i class="fa-solid fa-user"></i></span><span class="account-copy"><strong id="account-name">Sales</strong><small id="account-email"></small></span></button>
+        <a class="quote-btn" href="contact.html"><i class="fa-solid fa-file-signature"></i> Get Quote</a>
+        <a class="sales-btn" href="sales-app/" title="Staff Sales App"><i class="fa-solid fa-user-lock"></i><span>Sales App</span></a>
+        <button id="mobile-menu-btn" class="mobile-menu" type="button" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
       </div>
-    </header>
-
-    <div id="app-update-banner" class="app-update-banner" hidden>
-      <div><i class="fa-solid fa-circle-up"></i><span>A newer BusterBuild Sales version <strong id="available-version"></strong> is ready.</span></div>
-      <button id="update-now-btn" type="button">Update App</button>
     </div>
+  </header>
 
-    <div class="system-strip">
-      <span id="network-status" class="system-pill online"><i class="fa-solid fa-wifi"></i><span>Online</span></span>
-      <span id="cloud-status" class="system-pill cloud ready"><i class="fa-solid fa-cloud-check"></i><span>Cloud ready</span></span>
-      <span class="system-info"><i class="fa-solid fa-clock-rotate-left"></i> Prices synced: <strong id="catalogue-updated">Loading…</strong></span>
-      <span id="app-version" class="version-chip">v1.0.0</span>
+  <div id="mobile-panel" class="mobile-panel" aria-hidden="true">
+    <div class="mobile-panel-card">
+      <div class="mobile-panel-head"><strong>BUSTERBUILD MENU</strong><button id="mobile-close" class="mobile-close" type="button"><i class="fa-solid fa-xmark"></i></button></div>
+      <a href="./">Home <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="products.html">Products <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="tile%20%26%20sanitary%20ware.html">Tiles, Bathrooms &amp; Kitchens <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="specials.html">Specials <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="about.html">About Us <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="contact.html">Contact <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="mobile-sales" href="sales-app/"><i class="fa-solid fa-user-lock"></i>&nbsp; Staff Sales App</a>
     </div>
+  </div>
 
-    <main>
-      <section id="catalogue-view" class="view active">
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-kicker"><i class="fa-solid fa-hammer"></i> BusterBuild Hardware</span>
+          <h1>BUILD BETTER.<br><span>BUILD BUSTER.</span></h1>
+          <p>From the foundation to the finishing touches, BusterBuild brings your project together with building materials, tiles, bathrooms, kitchens, plumbing, electrical, paint, tools and more.</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="products.html"><i class="fa-solid fa-grid-2"></i> Browse Products</a>
+            <a class="hero-secondary" href="tile%20%26%20sanitary%20ware.html"><i class="fa-solid fa-bath"></i> Tiles, Bathrooms &amp; Kitchens</a>
+          </div>
+        </div>
+
         <div class="hero-card">
-          <div class="hero-copy"><span class="eyebrow">BUSTERBUILD SALES TOOL</span><h2>Find it. Scan it. Sell it.</h2><p>Fast access to tiles, sanitary ware and combo deals with live product details, prices, Smart Measure and cart building.</p></div>
-          <button class="scan-hero-btn" data-open-scan type="button"><span class="scan-icon"><i class="fa-solid fa-qrcode"></i></span><span><strong>Scan Product</strong><small>Open camera</small></span><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
-        <div class="quick-stats">
-          <div><span>Tiles</span><strong id="tile-count">0</strong></div>
-          <div><span>Sanitary</span><strong id="sanitary-count">0</strong></div>
-          <div><span>Combos</span><strong id="combo-count">0</strong></div>
-          <div><span>Cart</span><strong id="cart-stat">0</strong></div>
-        </div>
-
-        <div class="catalogue-tools">
-          <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="product-search" type="search" placeholder="Search product name or code"></label>
-          <div class="filter-row" id="filter-row">
-            <button class="filter-chip active" data-filter="all" type="button">All</button>
-            <button class="filter-chip" data-filter="tile" type="button">Tiles</button>
-            <button class="filter-chip" data-filter="sanitary" type="button">Sanitary Ware</button>
-            <button class="filter-chip" data-filter="combo" type="button">Combo Deals</button>
+          <div class="hero-logo-shell">
+            <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
+                 onerror="this.onerror=null;this.src='sales-app/icons/icon-512.png';"
+                 alt="BusterBuild Hardware">
           </div>
-        </div>
-
-        <div id="catalogue-status" class="status-card"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales catalogue…</div>
-        <div id="product-grid" class="product-grid"></div>
-      </section>
-
-      <section id="scan-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CAMERA SCANNER</span><h2>Scan product QR code</h2></div></div>
-        <div class="scanner-shell">
-          <div id="qr-reader" class="qr-reader"></div>
-          <div class="scan-guide"><span></span><span></span><span></span><span></span></div>
-          <div id="camera-message" class="camera-message">Tap Start Camera and point the phone at a BusterBuild QR label.</div>
-        </div>
-        <div class="scanner-actions">
-          <button id="start-camera" class="primary-btn" type="button"><i class="fa-solid fa-camera"></i> Start Camera</button>
-          <button id="stop-camera" class="secondary-btn" type="button" hidden><i class="fa-solid fa-stop"></i> Stop Camera</button>
-        </div>
-        <div class="manual-scan">
-          <span>Camera not available?</span>
-          <div><input id="manual-code" type="text" placeholder="Enter product code"><button id="manual-find" type="button">Find</button></div>
-        </div>
-        <div id="scan-result" class="scan-result" hidden></div>
-      </section>
-
-      <section id="cart-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">CUSTOMER ORDER</span><h2>Sales cart</h2></div></div>
-        <div id="cart-list" class="cart-list"></div>
-        <div id="cart-empty" class="empty-card"><i class="fa-solid fa-cart-shopping"></i><strong>Your sales cart is empty</strong><span>Add products from the catalogue or scanner.</span></div>
-        <div id="cart-summary" class="cart-summary" hidden>
-          <div><span>Items</span><strong id="cart-items-total">0</strong></div>
-          <div><span>Estimated total</span><strong id="cart-money-total">R0,00</strong></div>
-          <p>Build a professional BusterBuild quotation from this cart.</p>
-          <button id="create-quote" class="primary-btn quote-create-btn" type="button"><i class="fa-solid fa-file-signature"></i> Create Quotation</button>
-          <button id="clear-cart" class="secondary-btn danger" type="button"><i class="fa-solid fa-trash"></i> Clear cart</button>
-        </div>
-      </section>
-
-      <section id="quote-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="cart" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">BUSTERBUILD QUOTATIONS</span><h2>Create customer quotation</h2></div></div>
-        <div class="quote-builder-grid">
-          <form id="quote-form" class="quote-customer-card">
-            <div class="quote-card-title"><span class="quote-card-icon"><i class="fa-solid fa-user"></i></span><div><small>CUSTOMER DETAILS</small><strong>Who is this quotation for?</strong></div></div>
-            <label>Customer name *<input id="quote-customer-name" type="text" required autocomplete="name" placeholder="Customer full name"></label>
-            <label>WhatsApp number *<input id="quote-customer-phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="e.g. 082 123 4567"></label>
-            <label>Email address<input id="quote-customer-email" type="email" autocomplete="email" placeholder="customer@email.com"></label>
-            <label>Project / reference<input id="quote-project" type="text" placeholder="Optional project name"></label>
-            <div class="quote-meta-grid">
-              <label>Estimate status
-                <select id="quote-status">
-                  <option value="draft">Draft</option>
-                  <option value="sent">Sent</option>
-                  <option value="confirmed">Customer Confirmed</option>
-                  <option value="converted">Converted</option>
-                  <option value="cancelled">Cancelled</option>
-                </select>
-              </label>
-              <label>Official sales-system reference
-                <input id="quote-official-ref" type="text" placeholder="Add after conversion">
-              </label>
-            </div>
-            <label>Notes<textarea id="quote-notes" rows="3" placeholder="Optional quotation notes"></textarea></label>
-            <div class="quote-form-actions">
-              <button id="refresh-quote-preview" class="secondary-btn" type="button"><i class="fa-solid fa-rotate"></i> Refresh Preview</button>
-              <button id="save-quote" class="primary-btn" type="submit"><i class="fa-solid fa-floppy-disk"></i> Save Quotation</button>
-            </div>
-            <p id="quote-form-status" class="admin-status" role="status"></p>
-          </form>
-
-          <div class="quote-preview-panel">
-            <div class="quote-preview-head"><div><small>LIVE PREVIEW</small><strong>Your branded PDF product estimate</strong></div><span id="quote-preview-total">R0,00</span></div>
-            <div class="quote-scroll">
-              <article id="quote-paper" class="quote-paper">
-                <header class="quote-paper-header">
-                  <div class="quote-brand"><img src="icons/icon-192.png" alt="BusterBuild"><div><strong>BUSTERBUILD</strong><span>TILES &amp; SANITARY WARE</span></div></div>
-                  <div class="quote-title-block"><span>PRODUCT ESTIMATE</span><strong id="quote-number-preview">PRODUCT ESTIMATE</strong><small id="quote-date-preview"></small></div>
-                </header>
-                <section class="quote-customer-band">
-                  <div><small>QUOTED FOR</small><strong id="quote-name-preview">Customer name</strong><span id="quote-contact-preview">WhatsApp number</span><span id="quote-email-preview"></span></div>
-                  <div class="quote-sales-meta"><small>SALESPERSON</small><strong id="quote-salesperson-preview">BusterBuild Sales</strong><span id="quote-project-preview"></span></div>
-                </section>
-                <div class="quote-table-wrap">
-                  <table class="quote-table">
-                    <thead><tr><th>PRODUCT</th><th>CODE</th><th>QTY</th><th>UNIT</th><th>TOTAL</th></tr></thead>
-                    <tbody id="quote-items-preview"></tbody>
-                  </table>
-                </div>
-                <section class="quote-total-band"><span>QUOTED TOTAL</span><strong id="quote-total-preview">R0,00</strong></section>
-                <section id="quote-note-preview" class="quote-notes-preview" hidden></section>
-                <footer class="quote-footer"><div><strong>Thank you for choosing BusterBuild.</strong><span>Prices are subject to stock availability and final confirmation.</span></div><div class="quote-footer-mark">BUILD WITH CONFIDENCE.</div></footer>
-              </article>
-            </div>
-            <div class="quote-share-actions">
-              <button id="download-quote-image" class="share-btn black" type="button"><i class="fa-solid fa-image"></i><span>Download PDF</span></button>
-              <button id="share-quote-image" class="share-btn yellow" type="button"><i class="fa-solid fa-share-nodes"></i><span>Share PDF</span></button>
-              <button id="whatsapp-quote" class="share-btn whatsapp" type="button"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></button>
-              <button id="email-quote" class="share-btn email" type="button"><i class="fa-solid fa-envelope"></i><span>Email</span></button>
-            </div>
-            <p class="share-help"><strong>Download PDF</strong> saves the product estimate as a PDF. <strong>Share PDF</strong> opens your phone share menu with the PDF attached. <strong>WhatsApp</strong> downloads the PDF and opens the exact customer WhatsApp chat. <strong>Email</strong> downloads the PDF and opens a message addressed to the customer email. Attach the downloaded PDF before sending.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="quotes-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">QUOTATION HISTORY</span><h2>Saved quotations</h2></div></div>
-        <div class="quotes-history-hero"><div><small id="quotes-history-source">CLOUD + DEVICE</small><strong>Quotation history</strong><p>Saved estimates sync to the BusterBuild cloud and remain available on this device for offline access.</p></div><button id="new-quote-from-history" class="primary-btn" type="button"><i class="fa-solid fa-plus"></i> New Quote</button></div>
-        <div id="quotes-history-list" class="quotes-history-list"></div>
-      </section>
-
-      <section id="admin-view" class="view">
-        <div class="section-heading"><button class="back-btn" data-nav="catalogue" type="button"><i class="fa-solid fa-arrow-left"></i></button><div><span class="eyebrow">ADMIN ACCESS</span><h2>Sales control centre</h2></div></div>
-        <div class="admin-hero">
-          <div><span class="eyebrow">TILES &amp; SANITARY WARE</span><h3>Add salespeople when you are ready</h3><p>Create the salesperson's login here. Their account will only open the Tiles &amp; Sanitary Ware Sales App.</p></div>
-          <span class="admin-lock"><i class="fa-solid fa-user-shield"></i></span>
-        </div>
-
-        <section class="admin-dashboard">
-          <div class="admin-dashboard-head">
-            <div><span class="eyebrow">CLOUD SALES OVERVIEW</span><h3>Quotation activity</h3><p>Live visibility of estimates created by the Tiles &amp; Sanitary Ware sales team.</p></div>
-            <button class="secondary-btn" type="button" onclick="location.reload()"><i class="fa-solid fa-rotate"></i> Refresh</button>
-          </div>
-          <div class="admin-kpi-grid">
-            <div class="admin-kpi"><span>Quotes today</span><strong id="dash-today-count">0</strong><small>Estimates created or updated today</small></div>
-            <div class="admin-kpi"><span>Today's estimate value</span><strong id="dash-today-value">R0,00</strong><small>Combined value today</small></div>
-            <div class="admin-kpi"><span>Customer confirmed</span><strong id="dash-confirmed-value">R0,00</strong><small>Open confirmed estimate value</small></div>
-            <div class="admin-kpi"><span>Converted</span><strong id="dash-converted-value">R0,00</strong><small>Converted estimate value</small></div>
-          </div>
-          <div class="admin-activity-card">
-            <div class="admin-card-head"><div><small>RECENT ACTIVITY</small><strong>Latest quotations</strong></div><i class="fa-solid fa-chart-line"></i></div>
-            <div id="admin-activity-list" class="admin-activity-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading cloud quotations…</div></div>
-          </div>
-        </section>
-
-        <div class="admin-grid">
-          <form id="add-sales-form" class="admin-card">
-            <div class="admin-card-head"><div><small>NEW ACCOUNT</small><strong>Add salesperson</strong></div><i class="fa-solid fa-user-plus"></i></div>
-            <label>Full name<input id="sales-name" type="text" autocomplete="off" required placeholder="Salesperson name"></label>
-            <label>Email address<input id="sales-email" type="email" autocomplete="off" required placeholder="name@busterbuild.co.za"></label>
-            <label>Temporary password<input id="sales-password" type="password" autocomplete="new-password" minlength="6" required placeholder="Minimum 6 characters"></label>
-            <div class="role-preview"><i class="fa-solid fa-lock"></i><div><strong>Access: Tiles &amp; Sanitary Ware Sales</strong><span>Catalogue, QR scanner, Smart Measure, cart and their own cloud quotations.</span></div></div>
-            <button id="create-sales-btn" class="primary-btn" type="submit"><i class="fa-solid fa-user-plus"></i> Create Sales Account</button>
-            <p id="sales-create-status" class="admin-status" role="status"></p>
-          </form>
-          <div class="admin-card team-card">
-            <div class="admin-card-head"><div><small>ACCESS CONTROL</small><strong>Sales accounts</strong></div><span id="sales-team-count" class="team-count">0</span></div>
-            <div id="sales-team-list" class="sales-team-list"><div class="team-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading sales accounts…</div></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <nav class="bottom-nav" aria-label="Sales app navigation">
-      <button class="nav-item active" data-nav="catalogue" type="button"><i class="fa-solid fa-border-all"></i><span>Catalogue</span></button>
-      <button class="nav-item scan-nav" data-open-scan type="button"><span class="nav-scan-circle"><i class="fa-solid fa-qrcode"></i></span><span>Scan</span></button>
-      <button class="nav-item" data-nav="cart" type="button"><span class="cart-icon-wrap"><i class="fa-solid fa-cart-shopping"></i><b id="bottom-cart-count">0</b></span><span>Cart</span></button>
-      <button class="nav-item" data-nav="quotes" type="button"><i class="fa-solid fa-file-lines"></i><span>Quotes</span></button>
-    </nav>
-  </div>
-
-  <div id="product-modal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-product></div>
-    <article class="product-sheet" role="dialog" aria-modal="true" aria-labelledby="product-title">
-      <button class="sheet-close" data-close-product type="button"><i class="fa-solid fa-xmark"></i></button>
-      <div class="product-visual"><img id="product-image" alt="Product"></div>
-      <div class="product-content">
-        <span id="product-type" class="product-type-badge">TILE</span>
-        <h2 id="product-title"></h2>
-        <p id="product-code" class="product-code"></p>
-        <div id="product-price" class="product-price"></div>
-        <p id="product-description" class="product-description"></p>
-        <div id="product-specs" class="product-specs"></div>
-
-        <section id="smart-measure" class="smart-measure" hidden>
-          <div class="smart-head"><span class="smart-icon"><i class="fa-solid fa-ruler-combined"></i></span><div><small>BUSTERBUILD</small><strong>Smart Measure</strong><p>Calculate the required m² and recommended boxes for the customer's room.</p></div></div>
-          <div class="measure-inputs"><label>Room length (m)<input id="room-length" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label><label>Room width (m)<input id="room-width" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00"></label></div>
-          <div class="measure-results"><div><span>Required area</span><strong id="required-area">0.00 m²</strong></div><div class="highlight"><span>Boxes to order</span><strong id="boxes-order">0</strong></div><div><span>Covers</span><strong id="covered-area">0.00 m²</strong></div><div class="dark"><span>Estimated total at m² price</span><strong id="measure-total">R0,00</strong></div></div>
-          <p id="box-note" class="box-note"></p>
-          <button id="use-boxes" class="secondary-btn" type="button" hidden><i class="fa-solid fa-arrow-down"></i> Use required m² as quantity</button>
-        </section>
-
-        <div class="buy-panel">
-          <div class="qty-block"><label id="qty-label">Quantity</label><div class="qty-control"><button id="qty-minus" type="button">−</button><input id="product-qty" type="number" min="1" value="1"><button id="qty-plus" type="button">+</button></div></div>
-          <button id="add-cart" class="add-cart-btn" type="button"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></button>
+          <strong>EVERYTHING YOU NEED TO BUILD</strong>
+          <span>QUALITY • VALUE • SERVICE</span>
         </div>
       </div>
-    </article>
-  </div>
+    </section>
 
-  <div id="account-menu" class="account-menu" hidden>
-    <strong id="menu-email"></strong><span id="menu-role">Tiles &amp; Sanitary Ware Sales</span>
-    <span id="menu-version" class="menu-version">Version 1.0.0</span>
-    <button id="manage-sales-btn" class="admin-menu-btn" type="button" hidden><i class="fa-solid fa-users-gear"></i> Manage Sales Team</button>
-    <button id="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
-  </div>
+    <section class="department-strip" aria-label="Departments">
+      <div class="container department-grid">
+        <a class="department-item" href="products.html">
+          <span class="department-icon"><i class="fa-solid fa-building"></i></span>
+          <strong>Building Materials</strong>
+        </a>
+        <a class="department-item" href="tile%20%26%20sanitary%20ware.html">
+          <span class="department-icon"><i class="fa-solid fa-border-all"></i></span>
+          <strong>Tiles &amp; Bathrooms</strong>
+        </a>
+        <a class="department-item" href="tile%20%26%20sanitary%20ware.html">
+          <span class="department-icon"><i class="fa-solid fa-kitchen-set"></i></span>
+          <strong>Kitchens</strong>
+        </a>
+        <a class="department-item" href="products.html">
+          <span class="department-icon"><i class="fa-solid fa-faucet-drip"></i></span>
+          <strong>Plumbing</strong>
+        </a>
+        <a class="department-item" href="products.html">
+          <span class="department-icon"><i class="fa-solid fa-bolt"></i></span>
+          <strong>Electrical</strong>
+        </a>
+        <a class="department-item" href="products.html">
+          <span class="department-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+          <strong>Tools &amp; Hardware</strong>
+        </a>
+      </div>
+    </section>
 
-  <div id="toast" class="toast" role="status"></div>
+    <section class="content-section">
+      <div class="container">
+        <span class="section-kicker">BUSTERBUILD RANGE</span>
+        <h2 class="section-title">One store. Every stage of the build.</h2>
+        <p class="section-copy">Whether you are building, renovating or finishing a room, our departments are structured to make it easier to find the right products for the job.</p>
 
-  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="app-v1.js?v=20261003-v1professional1"></script>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-border-all"></i></span>
+            <h3>Tiles, Bathrooms &amp; Kitchens</h3>
+            <p>Explore tile ranges, bathroom products, kitchen sinks, taps and fittings in one dedicated section.</p>
+            <a href="tile%20%26%20sanitary%20ware.html">Browse the range <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-percent"></i></span>
+            <h3>Current Specials</h3>
+            <p>See featured offers and promotional pricing across key building and home-improvement categories.</p>
+            <a href="specials.html">View specials <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-comments"></i></span>
+            <h3>Need Help With Your Project?</h3>
+            <p>Speak to the BusterBuild team for product guidance, quotations and help putting your material list together.</p>
+            <a href="contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section range-section">
+      <div class="container">
+        <span class="section-kicker">SHOP BY PROJECT</span>
+        <h2 class="section-title">Built around the way you shop.</h2>
+
+        <div class="range-grid">
+          <a class="range-card" href="products.html">
+            <i class="fa-solid fa-trowel-bricks"></i>
+            <div><small>BUILD</small><strong>Building &amp; Yard</strong><span>Cement, bricks, roofing, steel, timber and core building materials.</span></div>
+          </a>
+          <a class="range-card" href="tile%20%26%20sanitary%20ware.html">
+            <i class="fa-solid fa-bath"></i>
+            <div><small>FINISH</small><strong>Tiles &amp; Bathrooms</strong><span>Tiles, basins, toilets, showers, baths, taps and bathroom furniture.</span></div>
+          </a>
+          <a class="range-card" href="tile%20%26%20sanitary%20ware.html">
+            <i class="fa-solid fa-kitchen-set"></i>
+            <div><small>UPGRADE</small><strong>Kitchens</strong><span>Kitchen sinks, sink taps, fittings and selected finishing products.</span></div>
+          </a>
+          <a class="range-card" href="products.html">
+            <i class="fa-solid fa-paint-roller"></i>
+            <div><small>COMPLETE</small><strong>Paint, Tools &amp; Hardware</strong><span>Finishing products and essential tools to get the job done.</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <h2>Need a quote or product assistance?</h2>
+            <p>Contact BusterBuild and our team will help you with your project requirements.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="whatsapp-btn" href="https://wa.me/27632513656"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+            <a class="contact-btn" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact BusterBuild</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
+               onerror="this.onerror=null;this.src='sales-app/icons/icon-192.png';"
+               alt="BusterBuild Hardware">
+          <p>Your building and home-improvement destination for materials, finishes and project essentials.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <a href="products.html">Products</a>
+          <a href="specials.html">Specials</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong>Departments</strong>
+          <a href="tile%20%26%20sanitary%20ware.html">Tiles &amp; Bathrooms</a>
+          <a href="tile%20%26%20sanitary%20ware.html">Kitchens</a>
+          <a href="products.html">Building Materials</a>
+          <a href="products.html">Tools &amp; Hardware</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 BusterBuild Hardware. All Rights Reserved.</span>
+        <a class="staff-link" href="sales-app/"><i class="fa-solid fa-lock"></i> Staff Sales App</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const panel=document.getElementById('mobile-panel');
+    const openBtn=document.getElementById('mobile-menu-btn');
+    const closeBtn=document.getElementById('mobile-close');
+
+    function setMenu(open){
+      panel.classList.toggle('open',open);
+      panel.setAttribute('aria-hidden',open?'false':'true');
+      document.body.style.overflow=open?'hidden':'';
+    }
+
+    openBtn?.addEventListener('click',()=>setMenu(true));
+    closeBtn?.addEventListener('click',()=>setMenu(false));
+    panel?.addEventListener('click',e=>{if(e.target===panel)setMenu(false)});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+  </script>
 </body>
 </html>
