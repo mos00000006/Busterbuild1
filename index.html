@@ -1,824 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#111111">
-  <title>BusterBuild Hardware | Build Better</title>
-  <meta name="description" content="BusterBuild Hardware — building materials, tiles, bathrooms, kitchens, plumbing, electrical, paint, tools and more.">
-  <link rel="icon" type="image/png" href="sales-app/icons/icon-192.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 
-  <style>
-    :root{
-      --bb-orange:#f28a00;
-      --bb-orange-2:#ffad32;
-      --bb-black:#0d0d0d;
-      --bb-soft:#f6f4ef;
-      --bb-line:#e8e2d8;
-      --bb-text:#171717;
-      --bb-muted:#6e6a63;
-      --bb-white:#fff;
-      --max:1240px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Poppins,Arial,sans-serif;
-      color:var(--bb-text);
-      background:#fff;
-      overflow-x:hidden;
-    }
-    a{text-decoration:none;color:inherit}
-    button,input{font:inherit}
-    img{max-width:100%;display:block}
-    .container{width:min(var(--max),calc(100% - 36px));margin:auto}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .topbar{
-      background:#090909;
-      color:#fff;
-      font-size:.78rem;
-    }
-    .topbar .container{
-      min-height:38px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
-    .topbar-left,.topbar-right{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-    .topbar a:hover{color:var(--bb-orange)}
-    .topbar-center{
-      color:#ddd;
-      font-weight:600;
-      letter-spacing:.02em;
-    }
+<title>BusterBuild Hardware</title>
+<meta name="description" content="Shop building materials, paint, tools, plumbing, electrical and tiles at BusterBuild Hardware in Protea Glen.">
 
-    .site-header{
-      background:#fff;
-      border-bottom:1px solid #eee;
-      position:sticky;
-      top:0;
-      z-index:50;
-    }
-    .header-main{
-      min-height:88px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:22px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width:210px;
-    }
-    .brand img{
-      width:150px;
-      height:66px;
-      object-fit:contain;
-    }
-    .nav{
-      display:flex;
-      align-items:center;
-      gap:4px;
-    }
-    .nav a{
-      padding:12px 13px;
-      border-radius:11px;
-      font-size:.82rem;
-      font-weight:750;
-      color:#242424;
-    }
-    .nav a:hover{
-      background:#fff4df;
-      color:#a95600;
-    }
-    .header-actions{
-      display:flex;
-      align-items:center;
-      gap:9px;
-    }
-    .quote-btn,.sales-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      min-height:43px;
-      padding:0 16px;
-      border-radius:12px;
-      font-size:.76rem;
-      font-weight:900;
-      white-space:nowrap;
-    }
-    .quote-btn{background:var(--bb-orange);color:#111}
-    .quote-btn:hover{background:#ff9f16}
-    .sales-btn{background:#111;color:#fff}
-    .sales-btn:hover{background:#2a2a2a}
-    .mobile-menu{display:none;border:0;background:#111;color:#fff;width:44px;height:44px;border-radius:12px}
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pro.css">
+<script src="js/cart.js"></script>
 
-    .hero{
-      position:relative;
-      overflow:hidden;
-      background:
-        radial-gradient(circle at 80% 22%,rgba(242,138,0,.34),transparent 25%),
-        radial-gradient(circle at 72% 72%,rgba(255,255,255,.05),transparent 30%),
-        linear-gradient(120deg,#080808 0%,#121212 57%,#2c1b05 100%);
-      color:#fff;
-    }
-    .hero:before{
-      content:"";
-      position:absolute;
-      width:610px;
-      height:610px;
-      border:2px solid rgba(242,138,0,.22);
-      border-radius:50%;
-      right:-170px;
-      top:-250px;
-    }
-    .hero:after{
-      content:"";
-      position:absolute;
-      width:520px;
-      height:10px;
-      border-radius:999px;
-      background:linear-gradient(90deg,transparent,var(--bb-orange),transparent);
-      right:-30px;
-      bottom:90px;
-      transform:rotate(-20deg);
-      box-shadow:0 0 35px rgba(242,138,0,.28);
-    }
-    .hero-grid{
-      position:relative;
-      z-index:2;
-      min-height:600px;
-      display:grid;
-      grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
-      gap:55px;
-      align-items:center;
-      padding:56px 0;
-    }
-    .hero-kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      color:#111;
-      background:var(--bb-orange);
-      border-radius:999px;
-      padding:8px 13px;
-      font-size:.72rem;
-      font-weight:950;
-      letter-spacing:.09em;
-      text-transform:uppercase;
-    }
-    .hero h1{
-      margin:18px 0 14px;
-      max-width:820px;
-      font-size:clamp(3.3rem,7vw,6.6rem);
-      line-height:.9;
-      letter-spacing:-.06em;
-      font-weight:950;
-    }
-    .hero h1 span{color:var(--bb-orange)}
-    .hero p{
-      margin:0;
-      max-width:660px;
-      color:#d5d5d5;
-      line-height:1.72;
-      font-size:1.02rem;
-    }
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:11px;
-      margin-top:28px;
-    }
-    .hero-primary,.hero-secondary{
-      min-height:50px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:9px;
-      border-radius:14px;
-      padding:0 20px;
-      font-weight:900;
-      font-size:.82rem;
-    }
-    .hero-primary{background:var(--bb-orange);color:#111}
-    .hero-secondary{background:#fff;color:#111}
-    .hero-primary:hover,.hero-secondary:hover{transform:translateY(-1px)}
-    .hero-card{
-      position:relative;
-      border-radius:30px;
-      padding:28px;
-      min-height:390px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      backdrop-filter:blur(12px);
-      box-shadow:0 30px 85px rgba(0,0,0,.32);
-      display:grid;
-      align-content:center;
-      justify-items:center;
-      text-align:center;
-    }
-    .hero-logo-shell{
-      width:220px;
-      height:220px;
-      padding:20px;
-      background:#fff;
-      border-radius:30px;
-      display:grid;
-      place-items:center;
-      box-shadow:0 28px 60px rgba(0,0,0,.35),0 0 0 5px rgba(242,138,0,.14);
-    }
-    .hero-logo-shell img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-    }
-    .hero-card strong{
-      margin-top:20px;
-      font-size:1.08rem;
-      letter-spacing:.06em;
-    }
-    .hero-card span{
-      margin-top:5px;
-      color:#cfcfcf;
-      font-size:.72rem;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    .department-strip{
-      background:#fff;
-      margin-top:-1px;
-      position:relative;
-      z-index:4;
-      border-bottom:1px solid #eee;
-    }
-    .department-grid{
-      display:grid;
-      grid-template-columns:repeat(6,minmax(0,1fr));
-      gap:0;
-    }
-    .department-item{
-      min-height:118px;
-      border-right:1px solid #eee;
-      display:grid;
-      justify-items:center;
-      align-content:center;
-      gap:9px;
-      text-align:center;
-      padding:18px 10px;
-    }
-    .department-item:first-child{border-left:1px solid #eee}
-    .department-icon{
-      width:42px;
-      height:42px;
-      border-radius:13px;
-      background:#fff5e6;
-      color:#d86f00;
-      display:grid;
-      place-items:center;
-      font-size:1rem;
-    }
-    .department-item strong{font-size:.72rem}
-    .department-item:hover{background:#fffaf2}
-    .department-item:hover .department-icon{background:var(--bb-orange);color:#111}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    section.content-section{padding:76px 0}
-    .section-kicker{
-      color:#c76700;
-      font-size:.7rem;
-      font-weight:950;
-      letter-spacing:.1em;
-      text-transform:uppercase;
-    }
-    .section-title{
-      margin:6px 0 12px;
-      font-size:clamp(2rem,4vw,3.25rem);
-      letter-spacing:-.045em;
-      line-height:1.05;
-    }
-    .section-copy{
-      max-width:720px;
-      color:var(--bb-muted);
-      line-height:1.7;
-      margin:0;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    .feature-grid{
-      margin-top:34px;
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:18px;
-    }
-    .feature-card{
-      min-height:230px;
-      border:1px solid var(--bb-line);
-      border-radius:24px;
-      padding:25px;
-      background:#fff;
-      box-shadow:0 12px 32px rgba(0,0,0,.045);
-      display:flex;
-      flex-direction:column;
-    }
-    .feature-card .icon{
-      width:50px;height:50px;
-      border-radius:15px;
-      background:#111;
-      color:var(--bb-orange);
-      display:grid;
-      place-items:center;
-      font-size:1.15rem;
-      margin-bottom:20px;
-    }
-    .feature-card h3{margin:0 0 7px;font-size:1.05rem}
-    .feature-card p{margin:0;color:var(--bb-muted);font-size:.82rem;line-height:1.65}
-    .feature-card a{
-      margin-top:auto;
-      padding-top:18px;
-      font-size:.74rem;
-      font-weight:900;
-      color:#b75f00;
-    }
-
-    .range-section{background:var(--bb-soft)}
-    .range-grid{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:16px;
-      margin-top:32px;
-    }
-    .range-card{
-      position:relative;
-      min-height:245px;
-      border-radius:23px;
-      overflow:hidden;
-      background:#111;
-      color:#fff;
-      padding:22px;
-      display:flex;
-      align-items:flex-end;
-      isolation:isolate;
-    }
-    .range-card:before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        radial-gradient(circle at 80% 20%,rgba(242,138,0,.45),transparent 28%),
-        linear-gradient(150deg,#111 0%,#1c1c1c 55%,#352105 100%);
-      z-index:-2;
-    }
-    .range-card:after{
-      content:"";
-      position:absolute;
-      width:130px;height:130px;
-      border:1px solid rgba(255,255,255,.14);
-      border-radius:50%;
-      right:-20px;top:-20px;
-      z-index:-1;
-    }
-    .range-card i{
-      position:absolute;
-      top:22px;left:22px;
-      width:48px;height:48px;
-      border-radius:14px;
-      background:var(--bb-orange);
-      color:#111;
-      display:grid;
-      place-items:center;
-      font-size:1.1rem;
-    }
-    .range-card small{
-      display:block;
-      color:#f0a03d;
-      font-weight:900;
-      font-size:.62rem;
-      letter-spacing:.09em;
-      margin-bottom:4px;
-    }
-    .range-card strong{font-size:1.16rem}
-    .range-card span{display:block;margin-top:6px;color:#d8d8d8;font-size:.7rem;line-height:1.45}
-
-    .cta-section{
-      padding:0 0 78px;
-      background:var(--bb-soft);
-    }
-    .cta-card{
-      border-radius:28px;
-      overflow:hidden;
-      background:#111;
-      color:#fff;
-      display:grid;
-      grid-template-columns:1fr auto;
-      align-items:center;
-      gap:25px;
-      padding:34px 38px;
-      box-shadow:0 18px 48px rgba(0,0,0,.14);
-    }
-    .cta-card h2{margin:0 0 8px;font-size:clamp(1.6rem,3vw,2.5rem)}
-    .cta-card p{margin:0;color:#ccc;font-size:.84rem}
-    .cta-actions{display:flex;gap:10px;flex-wrap:wrap}
-    .whatsapp-btn,.contact-btn{
-      min-height:47px;
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      padding:0 17px;
-      border-radius:13px;
-      font-size:.76rem;
-      font-weight:900;
-    }
-    .whatsapp-btn{background:#25D366;color:#082611}
-    .contact-btn{background:var(--bb-orange);color:#111}
-
-    footer{
-      background:#080808;
-      color:#fff;
-      padding:48px 0 22px;
-    }
-    .footer-grid{
-      display:grid;
-      grid-template-columns:1.4fr 1fr 1fr;
-      gap:44px;
-      padding-bottom:36px;
-    }
-    .footer-brand img{
-      width:160px;
-      height:74px;
-      object-fit:contain;
-      background:#fff;
-      border-radius:14px;
-      padding:6px 10px;
-    }
-    .footer-brand p{max-width:460px;color:#aaa;font-size:.75rem;line-height:1.65}
-    .footer-col strong{display:block;margin-bottom:12px;font-size:.82rem}
-    .footer-col a{display:block;color:#aaa;font-size:.72rem;padding:5px 0}
-    .footer-col a:hover{color:var(--bb-orange)}
-    .footer-bottom{
-      border-top:1px solid #222;
-      padding-top:18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      color:#777;
-      font-size:.68rem;
-    }
-    .staff-link{
-      color:#aaa;
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-    }
-
-    @media(max-width:1050px){
-      .nav{display:none}
-      .mobile-menu{display:grid;place-items:center}
-      .header-actions .quote-btn{display:none}
-      .hero-grid{grid-template-columns:1fr .7fr}
-      .department-grid{grid-template-columns:repeat(3,1fr)}
-      .department-item:nth-child(4){border-left:1px solid #eee}
-      .range-grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media(max-width:760px){
-      .topbar-center{display:none}
-      .topbar .container{justify-content:space-between}
-      .topbar-left span{display:none}
-      .brand img{width:132px}
-      .header-main{min-height:76px}
-      .sales-btn span{display:none}
-      .sales-btn{width:44px;padding:0;justify-content:center}
-      .hero-grid{
-        grid-template-columns:1fr;
-        min-height:auto;
-        padding:44px 0 36px;
-        gap:34px;
-      }
-      .hero h1{font-size:clamp(3rem,15vw,5rem)}
-      .hero-card{min-height:300px}
-      .hero-logo-shell{width:170px;height:170px}
-      .feature-grid{grid-template-columns:1fr}
-      .range-grid{grid-template-columns:1fr 1fr}
-      .cta-card{grid-template-columns:1fr;padding:28px 24px}
-      .footer-grid{grid-template-columns:1fr 1fr}
-      .footer-brand{grid-column:1/-1}
-    }
-    @media(max-width:520px){
-      .container{width:min(100% - 24px,var(--max))}
-      .topbar-right a:not(:last-child){display:none}
-      .header-actions{gap:6px}
-      .hero p{font-size:.9rem}
-      .hero-actions{display:grid;grid-template-columns:1fr}
-      .hero-primary,.hero-secondary{width:100%}
-      .hero-card{min-height:270px;padding:22px}
-      .hero-logo-shell{width:145px;height:145px;border-radius:24px}
-      .department-grid{grid-template-columns:repeat(2,1fr)}
-      .department-item:nth-child(3),
-      .department-item:nth-child(5){border-left:1px solid #eee}
-      section.content-section{padding:58px 0}
-      .range-grid{grid-template-columns:1fr}
-      .range-card{min-height:215px}
-      .footer-grid{grid-template-columns:1fr}
-      .footer-brand{grid-column:auto}
-      .footer-bottom{align-items:flex-start;flex-direction:column}
-    }
-
-    .mobile-panel{
-      position:fixed;
-      inset:0;
-      z-index:100;
-      background:rgba(0,0,0,.55);
-      display:none;
-    }
-    .mobile-panel.open{display:block}
-    .mobile-panel-card{
-      position:absolute;
-      top:0;right:0;
-      width:min(330px,88vw);
-      min-height:100%;
-      background:#fff;
-      padding:20px;
-      box-shadow:-20px 0 60px rgba(0,0,0,.25);
-    }
-    .mobile-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    .mobile-panel-head strong{font-size:.82rem}
-    .mobile-close{border:0;background:#111;color:#fff;width:40px;height:40px;border-radius:11px}
-    .mobile-panel a{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      min-height:50px;
-      border-bottom:1px solid #eee;
-      font-size:.8rem;
-      font-weight:750;
-    }
-    .mobile-panel .mobile-sales{
-      margin-top:18px;
-      justify-content:center;
-      border:0;
-      border-radius:12px;
-      background:#111;
-      color:#fff;
-    }
-  </style>
-
-  <script>
-    // IMPORTANT:
-    // A Sales App service worker was previously registered from the WEBSITE ROOT.
-    // Remove ONLY the old root-scoped service worker. The real Sales App SW lives
-    // under /sales-app/ and remains untouched.
-    (function(){
-      if(!('serviceWorker' in navigator)) return;
-      window.addEventListener('load', async function(){
-        try{
-          const regs = await navigator.serviceWorker.getRegistrations();
-          for(const reg of regs){
-            const scopePath = new URL(reg.scope).pathname.replace(/\/+$/,'/');
-            const appPath = location.pathname.replace(/\/index\.html$/,'/').replace(/\/+$/,'/');
-            if(scopePath === appPath){
-              await reg.unregister();
-            }
-          }
-        }catch(e){}
-      });
-    })();
-  </script>
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-  <div class="topbar">
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<div class="container">
+
+<div class="left">
+
+<i class="fa-solid fa-phone"></i>
+
++27 10 101 0464
+
+</div>
+
+<div class="center">
+
+    Welcome To BusterBuild 
+
+</div>
+
+<div class="right">
+
+<a href="https://www.facebook.com/share/167sFiFc3X1/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+
+<a href="https://www.instagram.com/busterbuild?igsh=dzUwdmhkamJvenAy"><i class="fab fa-instagram"></i></a>
+
+<a href="https://wa.me/27632513656?text="><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png" alt="BusterBuild Logo">
+        </div>
+
+        <div class="search">
+
+            <input type="text" id="search-input" placeholder="Search products...">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div class="icons">
+
+            <a href="account.html" title="My Account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="wishlist.html" title="Wishlist">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="specials.html">Specials</a></li>
+
+<li><a href="#brands">Brands</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+
+
+</ul>
+
+<a href="contact.html" class="quote-btn">
+
+Get Quote
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-text">
+
+<h1>BUILD YOUR NEXT PROJECT WITH CONFIDENCE</h1>
+
+<p>
+
+Everything you need for construction, DIY and home improvement.
+
+</p>
+
+<a href="specials.html" class="shop-btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- SHOP BY CATEGORY -->
+
+<section class="categories">
+
     <div class="container">
-      <div class="topbar-left">
-        <a href="tel:+27101010464"><i class="fa-solid fa-phone"></i> <span>+27 10 101 0464</span></a>
-      </div>
-      <div class="topbar-center">Welcome to BusterBuild Hardware</div>
-      <div class="topbar-right">
-        <a href="https://www.facebook.com/share/167sFiFc3X1/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/busterbuild" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://wa.me/27632513656" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
+
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <p>Everything you need for your next project.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="paint.html" class="category-card">
+    <img src="pictures/products/paint first.webp" alt="Paint">
+    <h3>Paint</h3>
+</a>
+
+<a href="cement.html" class="category-card">
+    <img src="pictures/products/cement.webp" alt="Cement">
+    <h3>Cement</h3>
+</a>
+
+<a href="tools.html" class="category-card">
+    <img src="pictures/products/tools.webp" alt="Tools">
+    <h3>Tools</h3>
+</a>
+
+<a href="plumbing.html" class="category-card">
+    <img src="pictures/products/plumbing.webp" alt="Plumbing" loading="lazy">
+    <h3>Plumbing</h3>
+</a>
+
+<a href="electrical.html" class="category-card">
+    <img src="pictures/products/electrical.webp" alt="Electrical" loading="lazy">
+    <h3>Electrical</h3>
+</a>
+
+<a href="tile & sanitary ware.html" class="category-card">
+    <img src="pictures/products/tiles_and_sanitaryware.webp" alt="Tiles &amp; Sanitary Ware" loading="lazy">
+    <h3>Tiles &amp; Sanitary Ware</h3>
+</a>
+
+<a href="powertools.html" class="category-card">
+    <img src="pictures/products/powertools.webp" alt="Power Tools" loading="lazy">
+    <h3>Power Tools</h3>
+</a>
+
+<a href="building materials.html" class="category-card">
+    <img src="pictures/products/building_material_transparent.webp" alt="Building Materials" loading="lazy">
+    <h3>Building Materials</h3>
+</a>
+
+        </div>
+
     </div>
-  </div>
 
-  <header class="site-header">
-    <div class="container header-main">
-      <a class="brand" href="./" aria-label="BusterBuild Hardware home">
-        <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
-             onerror="this.onerror=null;this.src='sales-app/icons/icon-192.png';"
-             alt="BusterBuild Hardware">
-      </a>
+</section>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="./">Home</a>
-        <a href="products.html">Products</a>
-        <a href="tile%20%26%20sanitary%20ware.html">Tiles &amp; Bathrooms</a>
-        <a href="specials.html">Specials</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<!-- ===========================
+     SPECIAL OFFERS
+=========================== -->
 
-      <div class="header-actions">
-        <a class="quote-btn" href="contact.html"><i class="fa-solid fa-file-signature"></i> Get Quote</a>
-        <a class="sales-btn" href="sales-app/" title="Staff Sales App"><i class="fa-solid fa-user-lock"></i><span>Sales App</span></a>
-        <button id="mobile-menu-btn" class="mobile-menu" type="button" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
-      </div>
-    </div>
-  </header>
+<section class="special-offers">
 
-  <div id="mobile-panel" class="mobile-panel" aria-hidden="true">
-    <div class="mobile-panel-card">
-      <div class="mobile-panel-head"><strong>BUSTERBUILD MENU</strong><button id="mobile-close" class="mobile-close" type="button"><i class="fa-solid fa-xmark"></i></button></div>
-      <a href="./">Home <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="products.html">Products <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="tile%20%26%20sanitary%20ware.html">Tiles, Bathrooms &amp; Kitchens <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="specials.html">Specials <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="about.html">About Us <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="contact.html">Contact <i class="fa-solid fa-chevron-right"></i></a>
-      <a class="mobile-sales" href="sales-app/"><i class="fa-solid fa-user-lock"></i>&nbsp; Staff Sales App</a>
-    </div>
-  </div>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="hero-kicker"><i class="fa-solid fa-hammer"></i> BusterBuild Hardware</span>
-          <h1>BUILD BETTER.<br><span>BUILD BUSTER.</span></h1>
-          <p>From the foundation to the finishing touches, BusterBuild brings your project together with building materials, tiles, bathrooms, kitchens, plumbing, electrical, paint, tools and more.</p>
-          <div class="hero-actions">
-            <a class="hero-primary" href="products.html"><i class="fa-solid fa-grid-2"></i> Browse Products</a>
-            <a class="hero-secondary" href="tile%20%26%20sanitary%20ware.html"><i class="fa-solid fa-bath"></i> Tiles, Bathrooms &amp; Kitchens</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="hero-logo-shell">
-            <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
-                 onerror="this.onerror=null;this.src='sales-app/icons/icon-512.png';"
-                 alt="BusterBuild Hardware">
-          </div>
-          <strong>EVERYTHING YOU NEED TO BUILD</strong>
-          <span>QUALITY • VALUE • SERVICE</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="department-strip" aria-label="Departments">
-      <div class="container department-grid">
-        <a class="department-item" href="products.html">
-          <span class="department-icon"><i class="fa-solid fa-building"></i></span>
-          <strong>Building Materials</strong>
-        </a>
-        <a class="department-item" href="tile%20%26%20sanitary%20ware.html">
-          <span class="department-icon"><i class="fa-solid fa-border-all"></i></span>
-          <strong>Tiles &amp; Bathrooms</strong>
-        </a>
-        <a class="department-item" href="tile%20%26%20sanitary%20ware.html">
-          <span class="department-icon"><i class="fa-solid fa-kitchen-set"></i></span>
-          <strong>Kitchens</strong>
-        </a>
-        <a class="department-item" href="products.html">
-          <span class="department-icon"><i class="fa-solid fa-faucet-drip"></i></span>
-          <strong>Plumbing</strong>
-        </a>
-        <a class="department-item" href="products.html">
-          <span class="department-icon"><i class="fa-solid fa-bolt"></i></span>
-          <strong>Electrical</strong>
-        </a>
-        <a class="department-item" href="products.html">
-          <span class="department-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
-          <strong>Tools &amp; Hardware</strong>
-        </a>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <span class="section-kicker">BUSTERBUILD RANGE</span>
-        <h2 class="section-title">One store. Every stage of the build.</h2>
-        <p class="section-copy">Whether you are building, renovating or finishing a room, our departments are structured to make it easier to find the right products for the job.</p>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-border-all"></i></span>
-            <h3>Tiles, Bathrooms &amp; Kitchens</h3>
-            <p>Explore tile ranges, bathroom products, kitchen sinks, taps and fittings in one dedicated section.</p>
-            <a href="tile%20%26%20sanitary%20ware.html">Browse the range <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-          <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-percent"></i></span>
-            <h3>Current Specials</h3>
-            <p>See featured offers and promotional pricing across key building and home-improvement categories.</p>
-            <a href="specials.html">View specials <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-          <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-comments"></i></span>
-            <h3>Need Help With Your Project?</h3>
-            <p>Speak to the BusterBuild team for product guidance, quotations and help putting your material list together.</p>
-            <a href="contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section range-section">
-      <div class="container">
-        <span class="section-kicker">SHOP BY PROJECT</span>
-        <h2 class="section-title">Built around the way you shop.</h2>
-
-        <div class="range-grid">
-          <a class="range-card" href="products.html">
-            <i class="fa-solid fa-trowel-bricks"></i>
-            <div><small>BUILD</small><strong>Building &amp; Yard</strong><span>Cement, bricks, roofing, steel, timber and core building materials.</span></div>
-          </a>
-          <a class="range-card" href="tile%20%26%20sanitary%20ware.html">
-            <i class="fa-solid fa-bath"></i>
-            <div><small>FINISH</small><strong>Tiles &amp; Bathrooms</strong><span>Tiles, basins, toilets, showers, baths, taps and bathroom furniture.</span></div>
-          </a>
-          <a class="range-card" href="tile%20%26%20sanitary%20ware.html">
-            <i class="fa-solid fa-kitchen-set"></i>
-            <div><small>UPGRADE</small><strong>Kitchens</strong><span>Kitchen sinks, sink taps, fittings and selected finishing products.</span></div>
-          </a>
-          <a class="range-card" href="products.html">
-            <i class="fa-solid fa-paint-roller"></i>
-            <div><small>COMPLETE</small><strong>Paint, Tools &amp; Hardware</strong><span>Finishing products and essential tools to get the job done.</span></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-card">
-          <div>
-            <h2>Need a quote or product assistance?</h2>
-            <p>Contact BusterBuild and our team will help you with your project requirements.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="whatsapp-btn" href="https://wa.me/27632513656"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
-            <a class="contact-btn" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact BusterBuild</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="pictures/73c9395a-423f-44cf-8faa-4b0cabf5c998.png"
-               onerror="this.onerror=null;this.src='sales-app/icons/icon-192.png';"
-               alt="BusterBuild Hardware">
-          <p>Your building and home-improvement destination for materials, finishes and project essentials.</p>
-        </div>
-        <div class="footer-col">
-          <strong>Quick Links</strong>
-          <a href="products.html">Products</a>
-          <a href="specials.html">Specials</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-col">
-          <strong>Departments</strong>
-          <a href="tile%20%26%20sanitary%20ware.html">Tiles &amp; Bathrooms</a>
-          <a href="tile%20%26%20sanitary%20ware.html">Kitchens</a>
-          <a href="products.html">Building Materials</a>
-          <a href="products.html">Tools &amp; Hardware</a>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <span>© 2026 BusterBuild Hardware. All Rights Reserved.</span>
-        <a class="staff-link" href="sales-app/"><i class="fa-solid fa-lock"></i> Staff Sales App</a>
-      </div>
+        <div class="offer-content">
+
+            <div class="offer-text">
+
+                <span class="offer-tag">EXPLORE OUR RANGE</span>
+
+                <h2>Save Big on Building Supplies!</h2>
+
+                <p>
+                    Explore cement, paint, power tools,
+                    plumbing supplies, tiles and much more.
+                </p>
+
+                <a href="specials.html" class="offer-btn">
+                    View Specials
+                </a>
+
+            </div>
+
+            <div class="offer-image">
+
+                <img src="pictures/products/special offer photo.jpeg" class="specials-image" loading="lazy">
+
+            </div>
+
+        </div>
+
     </div>
-  </footer>
 
-  <script>
-    const panel=document.getElementById('mobile-panel');
-    const openBtn=document.getElementById('mobile-menu-btn');
-    const closeBtn=document.getElementById('mobile-close');
+</section>
 
-    function setMenu(open){
-      panel.classList.toggle('open',open);
-      panel.setAttribute('aria-hidden',open?'false':'true');
-      document.body.style.overflow=open?'hidden':'';
-    }
 
-    openBtn?.addEventListener('click',()=>setMenu(true));
-    closeBtn?.addEventListener('click',()=>setMenu(false));
-    panel?.addEventListener('click',e=>{if(e.target===panel)setMenu(false)});
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
-  </script>
+<!-- FEATURED PRODUCTS -->
+
+<section class="featured-products">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Quality products at unbeatable prices.</p>
+        </div>
+
+        <p class="catalogue-disclaimer">Catalogue prices are indicative. Please confirm availability, current price and delivery with the store.</p>
+<div class="product-grid">
+
+ <!-- Product 1 -->
+<div class="product-card" data-product-code="BB-0021">
+
+<img src="pictures/tools/Afrisam-APC-Bag_2023-3.webp" alt="Cement" loading="lazy">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('AfriSam Cement 42.5N')">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<span class="sale-badge">SALE</span>
+
+
+<h3>AfriSam Cement 42.5N</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0021</p>
+<p class="price">R119.90</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('AfriSam Cement 42.5N','119.90'); return false;">
+Add to Cart
+</a>
+
+</div>
+
+
+
+
+<!-- Product 2 -->
+<div class="product-card" data-product-code="BB-0022">
+
+<img src="pictures/products/drip value kote.jpeg" alt="Paint" loading="lazy">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('Dripp Value Kote Paint 20L')">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<span class="sale-badge">NEW</span>
+
+
+<h3>Dripp Value Kote Paint 20L</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0022</p>
+<p class="price">R499.90</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Dripp Value Kote Paint 20L','499.90'); return false;">
+Add to Cart
+</a>
+
+</div>
+
+
+
+
+<!-- Product 3 -->
+<div class="product-card" data-product-code="BB-0023">
+
+<img src="pictures/products/impact drill 680w 13mm.webp" alt="Drill" loading="lazy">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('Adegso Impact Drill 680w 13mm')">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<span class="sale-badge">HOT</span>
+
+
+<h3>Adegso Impact Drill 680w 13mm</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0023</p>
+<p class="price">R999.90</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Adegso Impact Drill 680w 13mm','999.90'); return false;">
+Add to Cart
+</a>
+
+</div>
+
+
+
+
+<!-- Product 4 -->
+<div class="product-card" data-product-code="BB-0024">
+
+<img src="pictures/products/ivory tile.jpeg" alt="Tiles" loading="lazy">
+
+
+<button class="wishlist-btn" onclick="addToWishlist('Ivory Porcelain Floor Tiles')">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<span class="sale-badge">SALE</span>
+
+
+<h3>Ivory Porcelain Floor Tiles</h3>
+
+<p class="product-code" aria-label="Product code">Code: BB-0024</p>
+<p class="price">R129.90/m²</p>
+
+
+<a href="#" class="buy-btn" onclick="addToCart('Ivory Porcelain Floor Tiles','129.90'); return false;">
+Add to Cart
+</a>
+
+</div>
+</div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     TOP BRANDS
+=========================== -->
+
+<section class="brands" id="brands">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Trusted Brands</h2>
+            <p>We stock leading brands trusted by professionals and homeowners.</p>
+        </div>
+
+        <div class="brand-grid">
+
+            <div class="brand-card">
+                <img src="pictures/TOMMY FIX.png" alt="Adegso" loading="lazy">
+            </div>
+
+             <div class="brand-card">
+                <img src="pictures/ADEGSO LOGO.jpeg" alt="Adegso" loading="lazy">
+            </div>
+
+             <div class="brand-card">
+                <img src="pictures/conan logo.png" alt="Conan Tools" loading="lazy">
+            </div>
+
+             <div class="brand-card">
+                <img src="pictures/AQUAVIT.webp" alt="Adegso" loading="lazy">
+            </div>
+
+             <div class="brand-card">
+                <img src="pictures/POWERGRIP.webp" alt="Adegso" loading="lazy">
+            </div>
+
+            <div class="brand-card">
+                <img src="pictures/Drip.PNG" alt="Dripp" loading="lazy">
+            </div>
+            
+
+            <div class="brand-card">
+                <img src="pictures/alco.jpeg" alt="alco" loading="lazy">
+            </div>
+
+            <div class="brand-card">
+                <img src="pictures/PULSE-ON-THE-GO-LOGO-2048x498.webp" alt="pulse" loading="lazy">
+            </div>
+
+            <div class="brand-card">
+                <img src="pictures/Ruwag-Profile-Pic_1200x1200.webp" alt="ruwag" loading="lazy">
+            </div>
+
+            <div class="brand-card">
+                <img src="pictures/logo (1)a.png" alt="africapaints" loading="lazy">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why Choose BusterBuild Hardware?</h2>
+            <p>Your trusted partner for quality hardware and building supplies.</p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Affordable Prices</h3>
+                <p>Great value on quality hardware products every day.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery to homes and construction sites.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-award"></i>
+                <h3>Trusted Brands</h3>
+                <p>We stock leading brands known for quality and durability.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Expert Support</h3>
+                <p>Friendly staff ready to help you choose the right products.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+     STORE LOCATION
+=========================== -->
+
+<section class="store-location">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Visit BusterBuild Hardware</h2>
+            <p>Come and see our wide range of quality products in-store.</p>
+        </div>
+
+        <div class="location-grid">
+
+            <div class="location-info">
+
+                <h3>Store Information</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> CNR R558 & K1503 ROAD ISIXAXABESHA STREET, PROTEA GLEN EXT 6, SOWETO</p>
+
+                <p><i class="fa-solid fa-phone"></i> +27 10 101 0464</p>
+
+                <p><i class="fa-solid fa-envelope"></i> info@busterbuild.co.za</p>
+
+                <p><i class="fa-solid fa-clock"></i> Mon - Fri: 08:00 - 17:00</p>
+
+                <p><i class="fa-solid fa-clock"></i> Sat: 08:00 - 14:00</p>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=CNR+R558+K1503+Road+Isixaxabesha+Street+Protea+Glen+Ext+6+Soweto" 
+class="direction-btn"
+target="_blank">
+
+Get Directions
+
+</a>
+
+            </div>
+
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.3193976970456!2d27.81093787412789!3d-26.283743877027675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a51597c680ff%3A0xb0504bb1efc7cd1d!2sBuster%20Build%20Hardware!5e0!3m2!1sen!2sza!4v1785976157711!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h3>BusterBuild Hardware</h3>
+
+                <p>
+                    Your trusted destination for quality building materials,
+                    paint, tools, plumbing, electrical supplies,
+                    tiles and sanitary ware.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p><i class="fa-solid fa-phone"></i> +27 10 101 0424</p>
+
+                <p><i class="fa-solid fa-envelope"></i> info@busterbuild.co.za</p>
+
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</p>
+
+            </div>
+
+            <!-- Follow Us -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <p>Stay connected with us for the latest specials and promotions.</p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.facebook.com/share/167sFiFc3X1/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/busterbuild?igsh=dzUwdmhkamJvenAy"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://wa.me/27632513656?text="><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 BusterBuild Hardware. All Rights Reserved.</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/search.js"></script>
+
 </body>
 </html>

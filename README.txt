@@ -1,56 +1,46 @@
-BUSTERBUILD ROOT WEBSITE FIX
+BUSTERBUILD — RESTORE THE ORIGINAL WEBSITE
 
-THE PROBLEM
-The repository ROOT index.html was replaced by the Sales App.
-That is why:
-https://mos00000006.github.io/Busterbuild1/
-opens the staff Sales App.
+This package restores the EXACT original BusterBuild homepage that was used
+before the Sales App replaced the repository root.
 
-CORRECT STRUCTURE
+The original homepage includes:
+- Welcome To BusterBuild top bar
+- Original BusterBuild header and search bar
+- Account / Wishlist / Cart icons
+- Original navigation
+- BUILD YOUR NEXT PROJECT WITH CONFIDENCE hero
+- Shop by Category
+- Special Offers
+- Featured Products
+- Existing original BusterBuild styling and layout
 
-PUBLIC WEBSITE:
-Busterbuild1/index.html
-https://mos00000006.github.io/Busterbuild1/
+UPLOAD THESE 2 FILES TO THE ROOT OF:
+Busterbuild1/
 
-STAFF SALES APP:
-Busterbuild1/sales-app/index.html
-https://mos00000006.github.io/Busterbuild1/sales-app/
+REPLACE:
+- index.html
+- sw.js
 
-WHAT TO DO
+DO NOT upload these into:
+Busterbuild1/sales-app/
 
-In GitHub open:
-Busterbuild1
-
-IMPORTANT: stay in the ROOT of the repository.
-Do NOT open the sales-app folder.
-
-1. Replace the ROOT:
-   index.html
-
-2. Replace the ROOT:
-   sw.js
-
-Do not upload these two files inside sales-app.
-
-The replacement root sw.js only removes the old accidental root Sales App
-service worker. It does not replace /sales-app/sw.js.
-
-DO NOT CHANGE OR DELETE:
-- sales-app/
-- data/
-- scripts/
-- .github/
+DO NOT replace or delete:
 - css/
 - js/
 - pictures/
-- existing public website pages
+- data/
+- sales-app/
+- scripts/
+- .github/
 
-AFTER GITHUB PAGES DEPLOYS
-
-Open:
+PUBLIC WEBSITE:
 https://mos00000006.github.io/Busterbuild1/
 
-Press Ctrl + F5 once on PC if the old Sales App screen is still cached.
-
-The Staff Sales App remains:
+STAFF SALES APP:
 https://mos00000006.github.io/Busterbuild1/sales-app/
+
+The supplied sw.js only clears the mistakenly registered root Sales App
+service worker. It does not touch /sales-app/sw.js.
+
+After GitHub Pages deploys, press Ctrl + F5 once if the old login screen
+is still cached.
