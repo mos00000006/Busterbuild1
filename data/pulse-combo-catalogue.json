@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T09:39:47.940529+00:00",
+  "generated_at": "2026-10-06T09:28:51.319819+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -157,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 20,
+      "count": 18,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -169,9 +169,7 @@
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
         "shower-rail-set-with-mirror-cabinet-combo",
-        "shower-rail-set-combo",
         "shower-screen-accessories-combo",
-        "shower-screen-shower-rail-combo-deal",
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
@@ -206,11 +204,10 @@
     "basin-mixer-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 6,
+      "count": 5,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
-        "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo"
@@ -231,7 +228,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 144,
+      "count": 141,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -341,9 +338,7 @@
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
         "shower-rail-set-with-mirror-cabinet-combo",
-        "shower-rail-set-combo",
         "shower-screen-accessories-combo",
-        "shower-screen-shower-rail-combo-deal",
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
@@ -368,7 +363,6 @@
         "wall-hung-pool-black-combo",
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
-        "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo",
@@ -404,11 +398,10 @@
     "basin-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 6,
+      "count": 5,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
-        "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo"
