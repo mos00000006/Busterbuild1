@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T09:05:40.824339+00:00",
+  "generated_at": "2026-10-07T08:46:04.107377+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -220,13 +220,12 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 10,
+      "count": 9,
       "product_ids": [
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -372,7 +371,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 178,
+      "count": 177,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -408,7 +407,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -556,7 +554,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 142,
+      "count": 141,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -588,7 +586,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -704,7 +701,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 187,
+      "count": 186,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -746,7 +743,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -1349,7 +1345,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 317,
+      "count": 316,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1555,7 +1551,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
