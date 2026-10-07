@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T09:28:51.319819+00:00",
+  "generated_at": "2026-10-07T09:23:00.633588+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -157,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 18,
+      "count": 17,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -168,7 +168,6 @@
         "shower-arm-head",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
-        "shower-rail-set-with-mirror-cabinet-combo",
         "shower-screen-accessories-combo",
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
@@ -182,7 +181,7 @@
     "toilet-combos": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 15,
+      "count": 13,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -192,11 +191,9 @@
         "terra-alco-wall-hung-toilet-combo",
         "terra-wall-hung-combo-2",
         "toilet-basin-pedestal-caddy",
-        "toilet-combo-2",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
         "toilet-combo",
-        "top-flush-toilet-basin-pedestal-shelf-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo"
       ]
@@ -228,7 +225,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 141,
+      "count": 138,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -337,7 +334,6 @@
         "shower-arm-head",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
-        "shower-rail-set-with-mirror-cabinet-combo",
         "shower-screen-accessories-combo",
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
@@ -354,11 +350,9 @@
         "terra-alco-wall-hung-toilet-combo",
         "terra-wall-hung-combo-2",
         "toilet-basin-pedestal-caddy",
-        "toilet-combo-2",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
         "toilet-combo",
-        "top-flush-toilet-basin-pedestal-shelf-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo",
         "tivona-tabby-basin-and-mixer-combo",
@@ -376,7 +370,7 @@
     "toilet-combo-deals": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 15,
+      "count": 13,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -386,11 +380,9 @@
         "terra-alco-wall-hung-toilet-combo",
         "terra-wall-hung-combo-2",
         "toilet-basin-pedestal-caddy",
-        "toilet-combo-2",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
         "toilet-combo",
-        "top-flush-toilet-basin-pedestal-shelf-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo"
       ]
