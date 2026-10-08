@@ -27906,5 +27906,95 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/karoo-slate-rustic-floor-a-grade-400x400mm/": {
+    "id": "karoo-slate-rustic-floor-a-grade-400x400mm",
+    "source_url": "https://pulsetiles.co.za/product/karoo-slate-rustic-floor-a-grade-400x400mm/",
+    "name": "Karoo Slate Rustic Floor A Grade 400X400mm",
+    "code": "A17666",
+    "price": {
+      "current": 119.99,
+      "regular": 119.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 6 Tiles Per Box. Square Meters Per Box: 0.96 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17666.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "40 × 40 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "400mm x 400mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "6 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.96 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
   }
 }

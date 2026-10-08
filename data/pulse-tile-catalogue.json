@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T08:46:04.107377+00:00",
+  "generated_at": "2026-10-08T09:05:30.912234+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -51,6 +51,7 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
+        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
@@ -67,7 +68,6 @@
         "luster-onyx-sugar-glaze-matt-600x600mm",
         "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
-        "mali-nero-wall-tile-new-250x400",
         "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
@@ -371,7 +371,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 177,
+      "count": 178,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -457,6 +457,7 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
+        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "liverpool-stone-glazed-polished-porcelain-800x1600",
@@ -554,7 +555,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 141,
+      "count": 140,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -630,7 +631,6 @@
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "madison-deco-wall-tile-300x600mm",
-        "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "marina-aqua-wall-tile-300x600mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
@@ -701,7 +701,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 186,
+      "count": 185,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -803,7 +803,6 @@
         "luster-onyx-sugar-glaze-matt-600x600mm",
         "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
-        "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "marina-aqua-wall-tile-300x600mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
@@ -893,7 +892,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 44,
+      "count": 45,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -923,6 +922,7 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
+        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "meadow-antislip-floor-tile-450x450",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
@@ -1388,6 +1388,7 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
+        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
@@ -1404,7 +1405,6 @@
         "luster-onyx-sugar-glaze-matt-600x600mm",
         "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
-        "mali-nero-wall-tile-new-250x400",
         "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
@@ -15905,6 +15905,100 @@
       },
       "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 6 Tiles Per Box. Square Meters Per Box: 0.96 m2. Sold: m2.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/A17665-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 40 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "400mm x 400mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "6 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.96 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        },
+        {
+          "name": "Weight",
+          "value": "20 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 28 × 8 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "5.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 19 × 14 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "14 × 6 × 16 cm"
+        },
+        {
+          "name": "Dimensions",
+          "value": "12 × 8 × 2 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "0.01 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "14 × 10 × 7 cm"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-outdoor-tiles",
+        "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "karoo-slate-rustic-floor-a-grade-400x400mm",
+      "source_url": "https://pulsetiles.co.za/product/karoo-slate-rustic-floor-a-grade-400x400mm/",
+      "name": "Karoo Slate Rustic Floor A Grade 400X400mm",
+      "code": "A17666",
+      "price": {
+        "current": 119.99,
+        "regular": 119.99,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 6 Tiles Per Box. Square Meters Per Box: 0.96 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17666.webp",
       "attributes": [
         {
           "name": "Weight",
