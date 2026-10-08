@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 616,
+  "count": 617,
   "products": [
     {
       "type": "tile",
@@ -1548,6 +1548,13 @@
       "name": "Karoo Sand Rustic Floor A Grade 400X400mm",
       "file": "qr/A17665.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17665"
+    },
+    {
+      "type": "tile",
+      "code": "A17666",
+      "name": "Karoo Slate Rustic Floor A Grade 400X400mm",
+      "file": "qr/A17666.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=A17666"
     },
     {
       "type": "tile",
