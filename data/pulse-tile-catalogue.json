@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T09:05:30.912234+00:00",
+  "generated_at": "2026-10-09T09:12:28.883938+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -1218,8 +1218,9 @@
     },
     "tile-grout": {
       "title": "Tile Grout",
-      "count": 4,
+      "count": 5,
       "product_ids": [
+        "alco-light-grey-grout-5kg",
         "alco-light-grey-tile-grout-9-5kg",
         "alco-white-grout-5kg",
         "powergripp-light-grey-grout-5kg",
@@ -2754,6 +2755,34 @@
       ],
       "categories": [
         "bonds-key-coats"
+      ]
+    },
+    {
+      "id": "alco-light-grey-grout-5kg",
+      "source_url": "https://pulsetiles.co.za/product/alco-light-grey-grout-5kg/",
+      "name": "Alco Light Grey Grout (5kg)",
+      "code": "L00151",
+      "price": {
+        "current": 84.99,
+        "regular": 84.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Alco Light Grey Grout (5kg). See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/L00151.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 23 × 4 cm"
+        }
+      ],
+      "categories": [
+        "tile-grout"
       ]
     },
     {
