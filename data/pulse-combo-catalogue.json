@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T09:32:40.657497+00:00",
+  "generated_at": "2026-10-09T09:42:19.106402+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -157,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 17,
+      "count": 21,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -165,11 +165,15 @@
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
+        "saturn-corner-entry-combo",
         "shower-arm-head",
+        "shower-door-round-combo-2",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
+        "shower-rail-set-combo-2",
         "shower-screen-accessories-combo",
         "shower-screen-black-combo",
+        "shower-screen-combo-3",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
         "shower-screen-plus-shower-head-and-arm-combo",
@@ -181,13 +185,14 @@
     "toilet-combos": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 13,
+      "count": 14,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
         "jaunty-wall-hung-combo",
         "modern-toilet-combo",
         "pan-connector-combo",
+        "shower-door-round-combo-2",
         "terra-alco-wall-hung-toilet-combo",
         "terra-wall-hung-combo-2",
         "toilet-basin-pedestal-caddy",
@@ -201,10 +206,11 @@
     "basin-mixer-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 5,
+      "count": 6,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo"
@@ -225,7 +231,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 138,
+      "count": 143,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -331,11 +337,15 @@
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
+        "saturn-corner-entry-combo",
         "shower-arm-head",
+        "shower-door-round-combo-2",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
+        "shower-rail-set-combo-2",
         "shower-screen-accessories-combo",
         "shower-screen-black-combo",
+        "shower-screen-combo-3",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
         "shower-screen-plus-shower-head-and-arm-combo",
@@ -357,6 +367,7 @@
         "wall-hung-pool-black-combo",
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo",
@@ -370,13 +381,14 @@
     "toilet-combo-deals": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 13,
+      "count": 14,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
         "jaunty-wall-hung-combo",
         "modern-toilet-combo",
         "pan-connector-combo",
+        "shower-door-round-combo-2",
         "terra-alco-wall-hung-toilet-combo",
         "terra-wall-hung-combo-2",
         "toilet-basin-pedestal-caddy",
@@ -390,10 +402,11 @@
     "basin-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 5,
+      "count": 6,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo"
@@ -940,6 +953,44 @@
         "Nina Mirror 600x450mm"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/",
+      "name": "Basin and Mirror Combo",
+      "code": "Q01574",
+      "price": {
+        "current": 699.99,
+        "regular": 999.99,
+        "sale": 699.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "One Counter Top Wash Basin Rosso",
+        "One Mirror Square 27x37cm",
+        "One Alco P-Trap 32x40mm",
+        "One Pop-Up-Waste – Alco Chrome Unslotted 170g"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "10 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "52 × 33 × 25 cm"
+        }
+      ],
+      "id": "basin-and-mirror-combo-2",
+      "categories": [
+        "basin-mixer-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/bathroom-solution-combo/",
@@ -4426,6 +4477,42 @@
       "detail_parser_version": "2026-10-01-combo-includes-v3"
     },
     {
+      "source_url": "https://pulsetiles.co.za/product/saturn-corner-entry-combo/",
+      "name": "Saturn Corner Entry Combo",
+      "code": "Q01564",
+      "price": {
+        "current": 1799.99,
+        "regular": 1999.99,
+        "sale": 1799.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "One ABS Shower Head with Shower Arm & SS Flange – Alco",
+        "One Alco Saturn Square Corner Entry Clear Glass 900x900x1850"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q1564.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q1564.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "43 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "187 × 50 × 19 cm"
+        }
+      ],
+      "id": "saturn-corner-entry-combo",
+      "categories": [
+        "shower-combos"
+      ]
+    },
+    {
       "source_url": "https://pulsetiles.co.za/product/shower-arm-head/",
       "name": "Shower Arm and Head Combo",
       "code": "Q01011",
@@ -4467,6 +4554,48 @@
         "Shower Arm Size: 35cm"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-door-round-combo-2/",
+      "name": "Shower Door Round Combo",
+      "code": "Q01570",
+      "price": {
+        "current": 2599.99,
+        "regular": 2999.99,
+        "sale": 2599.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "One AquaVit Pure View Shower Door Clear 900x9001800mm 4mm",
+        "One Toilet Close Couple Set – Irani White Top Flush – B Grade",
+        "One Plastic Toilet Seat Orchid White",
+        "One Mechanism Black 2pc Fitting Kit",
+        "One Toilet Brush Set Chrome",
+        "One Bathroom Mat 360×660",
+        "One Silicone Sealant – Acetic Clear"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01570.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01570.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "75 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "190 × 99 × 56 cm"
+        }
+      ],
+      "id": "shower-door-round-combo-2",
+      "categories": [
+        "shower-combos",
+        "toilet-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-panel-with-5pc-accessory-set-combo/",
@@ -4538,6 +4667,43 @@
         "One 3D 2 Piece Bathroom Mat Set"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-rail-set-combo-2/",
+      "name": "Shower Rail Set Combo",
+      "code": "Q01569",
+      "price": {
+        "current": 1999.99,
+        "regular": 2299.99,
+        "sale": 1999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "One Shower Rail Set – Alco – Black 220x80mm",
+        "One Alco Corner Shower Caddy Black",
+        "One Alco Square Soap Basket Black"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01569.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01569.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "74 × 34 × 20 cm"
+        }
+      ],
+      "id": "shower-rail-set-combo-2",
+      "categories": [
+        "shower-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-rail-set-with-mirror-cabinet-combo/",
@@ -4722,6 +4888,44 @@
         "Alco Aspire Square Shower Head Black 100mm"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-combo-3/",
+      "name": "Shower Screen Combo",
+      "code": "Q01563",
+      "price": {
+        "current": 2499.99,
+        "regular": 2999.99,
+        "sale": 2499.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "One Shower Screen Clear Vista Clear Glass 900x2000x6mm",
+        "One ABS Shower Head with Shower Arm & Flanges 5 Setting – Alco",
+        "One Jazz Shower Mixer",
+        "One Silicone Sealant – Acetic – Clear"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01563.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01563.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "45 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "205 × 97 × 34 cm"
+        }
+      ],
+      "id": "shower-screen-combo-3",
+      "categories": [
+        "shower-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm/",

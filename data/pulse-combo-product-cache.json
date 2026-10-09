@@ -5003,5 +5003,185 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/saturn-corner-entry-combo/": {
+    "id": "saturn-corner-entry-combo",
+    "source_url": "https://pulsetiles.co.za/product/saturn-corner-entry-combo/",
+    "name": "Saturn Corner Entry Combo",
+    "code": "Q01564",
+    "price": {
+      "current": 1799.99,
+      "regular": 1999.99,
+      "sale": 1799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One ABS Shower Head with Shower Arm & SS Flange – Alco",
+      "One Alco Saturn Square Corner Entry Clear Glass 900x900x1850"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q1564.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q1564.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "43 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "187 × 50 × 19 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/shower-door-round-combo-2/": {
+    "id": "shower-door-round-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/shower-door-round-combo-2/",
+    "name": "Shower Door Round Combo",
+    "code": "Q01570",
+    "price": {
+      "current": 2599.99,
+      "regular": 2999.99,
+      "sale": 2599.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One AquaVit Pure View Shower Door Clear 900x9001800mm 4mm",
+      "One Toilet Close Couple Set – Irani White Top Flush – B Grade",
+      "One Plastic Toilet Seat Orchid White",
+      "One Mechanism Black 2pc Fitting Kit",
+      "One Toilet Brush Set Chrome",
+      "One Bathroom Mat 360×660",
+      "One Silicone Sealant – Acetic Clear"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01570.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01570.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "75 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "190 × 99 × 56 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/shower-rail-set-combo-2/": {
+    "id": "shower-rail-set-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/shower-rail-set-combo-2/",
+    "name": "Shower Rail Set Combo",
+    "code": "Q01569",
+    "price": {
+      "current": 1999.99,
+      "regular": 2299.99,
+      "sale": 1999.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One Shower Rail Set – Alco – Black 220x80mm",
+      "One Alco Corner Shower Caddy Black",
+      "One Alco Square Soap Basket Black"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01569.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01569.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "5 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "74 × 34 × 20 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/shower-screen-combo-3/": {
+    "id": "shower-screen-combo-3",
+    "source_url": "https://pulsetiles.co.za/product/shower-screen-combo-3/",
+    "name": "Shower Screen Combo",
+    "code": "Q01563",
+    "price": {
+      "current": 2499.99,
+      "regular": 2999.99,
+      "sale": 2499.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One Shower Screen Clear Vista Clear Glass 900x2000x6mm",
+      "One ABS Shower Head with Shower Arm & Flanges 5 Setting – Alco",
+      "One Jazz Shower Mixer",
+      "One Silicone Sealant – Acetic – Clear"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01563.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01563.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "45 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "205 × 97 × 34 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/": {
+    "id": "basin-and-mirror-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/",
+    "name": "Basin and Mirror Combo",
+    "code": "Q01574",
+    "price": {
+      "current": 699.99,
+      "regular": 999.99,
+      "sale": 699.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One Counter Top Wash Basin Rosso",
+      "One Mirror Square 27x37cm",
+      "One Alco P-Trap 32x40mm",
+      "One Pop-Up-Waste – Alco Chrome Unslotted 170g"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "10 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "52 × 33 × 25 cm"
+      }
+    ],
+    "categories": []
   }
 }
