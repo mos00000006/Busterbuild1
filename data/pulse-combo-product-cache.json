@@ -5183,5 +5183,32 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/ivory-polished-tile-combo-600x600/": {
+    "id": "ivory-polished-tile-combo-600x600",
+    "source_url": "https://pulsetiles.co.za/product/ivory-polished-tile-combo-600x600/",
+    "name": "Ivory Polished Tile Combo 600×600",
+    "code": "Q01545",
+    "price": {
+      "current": 1899.99,
+      "regular": 1899.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01545.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01545.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "256 kg"
+      }
+    ],
+    "categories": []
   }
 }
