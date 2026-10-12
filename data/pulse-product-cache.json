@@ -28022,5 +28022,103 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/ivory-nano-vitrified-polished-tile-600x600/": {
+    "id": "ivory-nano-vitrified-polished-tile-600x600",
+    "source_url": "https://pulsetiles.co.za/product/ivory-nano-vitrified-polished-tile-600x600/",
+    "name": "Ivory Nano Vitrified Polished Tile 600×600",
+    "code": "A18282",
+    "price": {
+      "current": 139.99,
+      "regular": 139.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18282.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 27 × 10 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
   }
 }
