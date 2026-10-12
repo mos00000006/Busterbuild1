@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 624,
+  "count": 625,
   "products": [
     {
       "type": "tile",
@@ -3704,6 +3704,13 @@
       "name": "Ivory Polished Porcelain Combo 600X600mm",
       "file": "qr/Q01188.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01188"
+    },
+    {
+      "type": "combo",
+      "code": "Q01545",
+      "name": "Ivory Polished Tile Combo 600×600",
+      "file": "qr/Q01545.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01545"
     },
     {
       "type": "combo",
