@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T09:32:01.411162+00:00",
+  "generated_at": "2026-10-14T07:44:47.868866+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 93,
+      "count": 92,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -26,7 +26,6 @@
         "colorado-graffito-elevation-tile-300x600mm",
         "colorado-grey-dust-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
-        "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-grigio-elevation-tile-300x600mm",
@@ -107,7 +106,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 108,
+      "count": 107,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -148,7 +147,6 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
-        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harper-black-glazed-polished-porcelain-600x1200",
@@ -372,7 +370,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 179,
+      "count": 178,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -431,7 +429,6 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
-        "florentino-first-grade-polished-tile-600x600",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "galaxy-crema-polished-porc-600x600",
@@ -557,7 +554,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 141,
+      "count": 139,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -575,7 +572,6 @@
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "ca-cuttack-dark-wall-tile-300x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
-        "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
@@ -614,7 +610,6 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
-        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
@@ -704,7 +699,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 186,
+      "count": 184,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -723,7 +718,6 @@
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
-        "blossom-gris-1620-hl-1-wall-tile-super-white-300x600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "ca-cuttack-dark-wall-tile-300x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
@@ -773,7 +767,6 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
-        "florentino-first-grade-polished-tile-600x600",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "galaxy-crema-polished-porc-600x600",
@@ -896,11 +889,10 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 45,
+      "count": 44,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
-        "blossom-gris-1620-hl-1-wall-tile-super-white-300x600mm",
         "braga-antislip-floor-tile-450x450",
         "colorado-graffito-elevation-tile-300x600mm",
         "colorado-grey-dust-elevation-tile-300x600mm",
@@ -1349,7 +1341,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 317,
+      "count": 315,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1367,7 +1359,6 @@
         "colorado-graffito-elevation-tile-300x600mm",
         "colorado-grey-dust-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
-        "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-grigio-elevation-tile-300x600mm",
@@ -1483,7 +1474,6 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
-        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harper-black-glazed-polished-porcelain-600x1200",
