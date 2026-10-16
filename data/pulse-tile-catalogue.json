@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:33:08.047361+00:00",
+  "generated_at": "2026-10-16T07:17:05.509483+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 92,
+      "count": 91,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -50,7 +50,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
@@ -106,7 +105,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 107,
+      "count": 110,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -121,6 +120,7 @@
         "avery-black-glazed-polished-porcelain-600x1200",
         "bali-carara-glazed-polished-porcelain-600x1200",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
+        "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
@@ -129,6 +129,7 @@
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
+        "dolomiti-alpine-crema-floor-tile-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -182,6 +183,7 @@
         "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
+        "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
@@ -219,12 +221,13 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 9,
+      "count": 10,
       "product_ids": [
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -358,19 +361,18 @@
     },
     "laminate-flooring": {
       "title": "Laminate Flooring",
-      "count": 6,
+      "count": 5,
       "product_ids": [
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
         "laminate-flooring-castello-oak-colour-1220x200x7mm",
         "laminate-flooring-soft-oak-colour-1220x200x7mm",
-        "laminate-flooring-trendy-ash-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 178,
+      "count": 181,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -390,6 +392,7 @@
         "braga-antislip-floor-tile-450x450",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
+        "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
@@ -402,10 +405,12 @@
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
+        "dolomiti-alpine-crema-floor-tile-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -456,7 +461,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "liverpool-stone-glazed-polished-porcelain-800x1600",
@@ -505,6 +509,7 @@
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
+        "ravenna-600x600mm",
         "river-antislip-floor-tile-450x450",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
@@ -554,7 +559,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 139,
+      "count": 143,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -570,6 +575,7 @@
         "base-wall-tile-300x600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "ca-cuttack-dark-wall-tile-300x600mm",
+        "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
@@ -581,10 +587,12 @@
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "dakota-beige-glossy-300x600mm",
+        "dolomiti-alpine-crema-floor-tile-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -652,6 +660,7 @@
         "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
+        "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "rotal-polished-porcelain-glossy-600x600mm",
@@ -699,7 +708,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 184,
+      "count": 188,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -721,6 +730,7 @@
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "ca-cuttack-dark-wall-tile-300x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
+        "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
@@ -736,10 +746,12 @@
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
+        "dolomiti-alpine-crema-floor-tile-600x600mm",
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -837,6 +849,7 @@
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
+        "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
@@ -889,7 +902,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 44,
+      "count": 43,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -918,7 +931,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "meadow-antislip-floor-tile-450x450",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
@@ -1242,7 +1254,7 @@
     },
     "tile-edges-trims": {
       "title": "Tile Edges & Trims",
-      "count": 41,
+      "count": 42,
       "product_ids": [
         "alco-aluminium-straight-trim-mill-finish-10mm",
         "alco-aluminium-straight-trim-mill-finish-12mm",
@@ -1284,12 +1296,13 @@
         "straight-aluminium-trim-mill-finish-10mm",
         "straight-aluminium-trim-silver-10mm",
         "transition-strip-aluminium-matt-silver",
-        "trim-aluminium-mill-finish-12mm"
+        "trim-aluminium-mill-finish-12mm",
+        "u-profile-steel-gold-2mmx3m"
       ]
     },
     "tile-cleaners": {
       "title": "Tile Cleaners",
-      "count": 9,
+      "count": 10,
       "product_ids": [
         "powergripp-mould-remover-500ml",
         "powergripp-all-purpose-cleaner-1l",
@@ -1298,13 +1311,14 @@
         "powergripp-ezy-clean-1l",
         "powergripp-ezy-clean-5l",
         "powergripp-ezy-grout-off-5l",
+        "powergripp-ezy-grout-off-1lt",
         "powergripp-grout-renew-1l",
         "powergripp-nano-scrub-5l"
       ]
     },
     "tile-spacers-tools": {
       "title": "Tile Spacers & Tools",
-      "count": 31,
+      "count": 32,
       "product_ids": [
         "alco-fixation-screws",
         "alco-handle-with-cutting-wheel-for-1290mm-tile-cutter",
@@ -1320,6 +1334,7 @@
         "alco-tile-cutter-950mm",
         "alco-tile-spacers-3mm-white-100pcs-bag",
         "alco-tile-spacers-5mm-white-100pcs-bag",
+        "alco-tile-spacers-white-100-pack-2mm",
         "brush-white-wash",
         "cutting-disk-diamond-plain-230mm",
         "cutting-disk-diamond-segmented-230mm",
@@ -1341,7 +1356,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 315,
+      "count": 317,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1383,7 +1398,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-slate-rustic-floor-a-grade-400x400mm",
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
@@ -1448,6 +1462,7 @@
         "avery-black-glazed-polished-porcelain-600x1200",
         "bali-carara-glazed-polished-porcelain-600x1200",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
+        "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
@@ -1456,6 +1471,7 @@
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
+        "dolomiti-alpine-crema-floor-tile-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -1509,6 +1525,7 @@
         "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
+        "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
@@ -1546,6 +1563,7 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -1655,7 +1673,6 @@
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
         "laminate-flooring-castello-oak-colour-1220x200x7mm",
         "laminate-flooring-soft-oak-colour-1220x200x7mm",
-        "laminate-flooring-trendy-ash-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
@@ -3133,6 +3150,34 @@
         {
           "name": "Dimensions",
           "value": "12 × 8 × 2 cm"
+        }
+      ],
+      "categories": [
+        "tile-spacers-tools"
+      ]
+    },
+    {
+      "id": "alco-tile-spacers-white-100-pack-2mm",
+      "source_url": "https://pulsetiles.co.za/product/alco-tile-spacers-white-100-pack-2mm/",
+      "name": "Alco Tile Spacers White 100 Pack 2mm",
+      "code": "T00420",
+      "price": {
+        "current": 24.99,
+        "regular": 24.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Alco Tile Spacers White 100 Pack 2mm. See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/T00420.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "14 × 11 × 4 cm"
         }
       ],
       "categories": [
@@ -5778,6 +5823,65 @@
         "all-floor-tiles",
         "all-indoor-tiles",
         "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "cairns-polished-tile-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/cairns-polished-tile-600x600mm/",
+      "name": "Cairns Polished Tile 600x600mm",
+      "code": "A18309",
+      "price": {
+        "current": 159.99,
+        "regular": 159.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18309.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 60 × 2.8 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "4 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -8435,6 +8539,65 @@
         "all-indoor-tiles",
         "all-wall-tiles",
         "hardbody-tiles"
+      ]
+    },
+    {
+      "id": "dolomiti-alpine-crema-floor-tile-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/dolomiti-alpine-crema-floor-tile-600x600mm/",
+      "name": "Dolomiti Alpine Crema Floor Tile 600x600mm",
+      "code": "A17911",
+      "price": {
+        "current": 179.99,
+        "regular": 179.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A17911.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 60 × 2.8 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "4 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -23507,6 +23670,34 @@
       ]
     },
     {
+      "id": "powergripp-ezy-grout-off-1lt",
+      "source_url": "https://pulsetiles.co.za/product/powergripp-ezy-grout-off-1lt/",
+      "name": "Powergripp Ezy Grout Off 1lt",
+      "code": "L00199",
+      "price": {
+        "current": 169.99,
+        "regular": 169.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Powergripp Ezy Grout Off 1lt. See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/L00199.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "21 × 18 × 12 cm"
+        }
+      ],
+      "categories": [
+        "tile-cleaners"
+      ]
+    },
+    {
       "id": "powergripp-grout-renew-1l",
       "source_url": "https://pulsetiles.co.za/product/powergripp-grout-renew-1l/",
       "name": "Powergripp Grout Renew (1L)",
@@ -24530,6 +24721,65 @@
       ],
       "categories": [
         "decor-tiles"
+      ]
+    },
+    {
+      "id": "ravenna-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/ravenna-600x600mm/",
+      "name": "Ravenna 600X600mm",
+      "code": "A18300",
+      "price": {
+        "current": 159.99,
+        "regular": 159.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18300.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 60 × 2.8 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "4 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -30079,6 +30329,34 @@
         "large-format-tiles",
         "marble-look-tiles",
         "porcelain-tiles"
+      ]
+    },
+    {
+      "id": "u-profile-steel-gold-2mmx3m",
+      "source_url": "https://pulsetiles.co.za/product/u-profile-steel-gold-2mmx3m/",
+      "name": "U Profile Steel – Gold 2mmx3m",
+      "code": "I00203",
+      "price": {
+        "current": 299.99,
+        "regular": 299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "U Profile Steel – Gold 2mmx3m. See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00203.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "300 × 6 × 6 cm"
+        }
+      ],
+      "categories": [
+        "tile-edges-trims"
       ]
     },
     {

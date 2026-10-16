@@ -28120,5 +28120,245 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/ravenna-600x600mm/": {
+    "id": "ravenna-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/ravenna-600x600mm/",
+    "name": "Ravenna 600X600mm",
+    "code": "A18300",
+    "price": {
+      "current": 159.99,
+      "regular": 159.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18300.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/cairns-polished-tile-600x600mm/": {
+    "id": "cairns-polished-tile-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/cairns-polished-tile-600x600mm/",
+    "name": "Cairns Polished Tile 600x600mm",
+    "code": "A18309",
+    "price": {
+      "current": 159.99,
+      "regular": 159.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18309.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/dolomiti-alpine-crema-floor-tile-600x600mm/": {
+    "id": "dolomiti-alpine-crema-floor-tile-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/dolomiti-alpine-crema-floor-tile-600x600mm/",
+    "name": "Dolomiti Alpine Crema Floor Tile 600x600mm",
+    "code": "A17911",
+    "price": {
+      "current": 179.99,
+      "regular": 179.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A17911.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/u-profile-steel-gold-2mmx3m/": {
+    "id": "u-profile-steel-gold-2mmx3m",
+    "source_url": "https://pulsetiles.co.za/product/u-profile-steel-gold-2mmx3m/",
+    "name": "U Profile Steel – Gold 2mmx3m",
+    "code": "I00203",
+    "price": {
+      "current": 299.99,
+      "regular": 299.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "U Profile Steel – Gold 2mmx3m. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00203.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "300 × 6 × 6 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/powergripp-ezy-grout-off-1lt/": {
+    "id": "powergripp-ezy-grout-off-1lt",
+    "source_url": "https://pulsetiles.co.za/product/powergripp-ezy-grout-off-1lt/",
+    "name": "Powergripp Ezy Grout Off 1lt",
+    "code": "L00199",
+    "price": {
+      "current": 169.99,
+      "regular": 169.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Powergripp Ezy Grout Off 1lt. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/L00199.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "21 × 18 × 12 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/alco-tile-spacers-white-100-pack-2mm/": {
+    "id": "alco-tile-spacers-white-100-pack-2mm",
+    "source_url": "https://pulsetiles.co.za/product/alco-tile-spacers-white-100-pack-2mm/",
+    "name": "Alco Tile Spacers White 100 Pack 2mm",
+    "code": "T00420",
+    "price": {
+      "current": 24.99,
+      "regular": 24.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Alco Tile Spacers White 100 Pack 2mm. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/T00420.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 11 × 4 cm"
+      }
+    ],
+    "categories": []
   }
 }
