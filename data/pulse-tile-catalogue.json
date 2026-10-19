@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T07:19:21.903436+00:00",
+  "generated_at": "2026-10-19T07:53:09.379460+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -105,7 +105,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 110,
+      "count": 108,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -123,8 +123,6 @@
         "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
-        "city-magia-glazed-polished-porcelain-600x600",
-        "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
@@ -372,7 +370,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 181,
+      "count": 179,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -386,14 +384,12 @@
         "apple-white-glossy-glazed-porcelain-600x1200",
         "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
-        "bali-carara-glazed-polished-porcelain-600x1200",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "braga-antislip-floor-tile-450x450",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
         "cairns-polished-tile-600x600mm",
-        "calcata-snow-glossy-glazed-porcelain-600x1200",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
@@ -559,7 +555,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 143,
+      "count": 141,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -577,8 +573,6 @@
         "ca-cuttack-dark-wall-tile-300x600mm",
         "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
-        "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
-        "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
@@ -708,7 +702,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 188,
+      "count": 186,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -723,7 +717,6 @@
         "apple-white-glossy-glazed-porcelain-600x1200",
         "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
-        "bali-carara-glazed-polished-porcelain-600x1200",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
@@ -731,7 +724,6 @@
         "ca-cuttack-dark-wall-tile-300x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
         "cairns-polished-tile-600x600mm",
-        "calcata-snow-glossy-glazed-porcelain-600x1200",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
@@ -951,7 +943,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 106,
+      "count": 103,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -969,8 +961,6 @@
         "avis-white-high-gloss-glazed-polished-porcelain-600x1800mm",
         "bali-carara-glazed-polished-porcelain-600x1200",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
-        "calcatta-bianco-high-gloss-glazed-polished-porcelain-1200x2400mm",
-        "calcatta-prigon-high-gloss-glazed-polished-porcelain-800x2400mm",
         "cc-vtc-pj-7387-polished-porcelain-glossy-1200x3200mm",
         "ciena-prada-glazed-porcelain-1200x1800mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
@@ -993,7 +983,6 @@
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
         "floriana-mosh-carving-matt-porcelain-1200x1800mm",
-        "floriana-pearl-carving-matt-porcelain-1200x1800mm",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
@@ -1081,7 +1070,7 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 73,
+      "count": 71,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1091,8 +1080,6 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
-        "bali-carara-glazed-polished-porcelain-600x1200",
-        "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
@@ -1318,7 +1305,7 @@
     },
     "tile-spacers-tools": {
       "title": "Tile Spacers & Tools",
-      "count": 32,
+      "count": 31,
       "product_ids": [
         "alco-fixation-screws",
         "alco-handle-with-cutting-wheel-for-1290mm-tile-cutter",
@@ -1349,14 +1336,13 @@
         "steel-cutting-disc-230mm",
         "stone-cutting-disc-115mm",
         "stone-cutting-disc-230mm",
-        "2mm-spacers-white",
         "5mm-spacers-white",
         "6mm-spacers-white"
       ]
     },
     "all": {
       "title": "All Tiles",
-      "count": 317,
+      "count": 315,
       "product_ids": [
         "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1465,8 +1451,6 @@
         "cairns-polished-tile-600x600mm",
         "calcata-snow-glossy-glazed-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
-        "city-magia-glazed-polished-porcelain-600x600",
-        "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
