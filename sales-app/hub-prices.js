@@ -43,7 +43,9 @@ export function createHubPriceSync({getProducts, onChange, onStatus, fetcher = f
         if (!response.ok) throw new Error('Price feed unavailable');
         latest = validHubPrices(await response.json());
         const changed = applyHubPrices(getProducts(), latest);
-        lastSuccess = Date.now(); onStatus?.('Hub prices updated', false);
+        lastSuccess = Date.now();
+        const matched = getProducts().filter(p=>latest.has(key(p._code))).length;
+        onStatus?.(!latest.size ? 'Hub connected, but no published BusterBuild tag prices were found.' : !matched ? 'Hub prices found, but product codes do not match this sales catalogue.' : `Hub prices updated (${matched} matching products)`, !latest.size || !matched);
         if (changed) onChange?.();
         return true;
       } catch {

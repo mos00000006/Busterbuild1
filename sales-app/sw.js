@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-20261006-pulsekitchens1';
+const CACHE = 'busterbuild-sales-20261021-ready2';
 const STATIC_SHELL = [
   './styles.css',
   './app-version.json',
@@ -42,6 +42,9 @@ self.addEventListener('fetch', event => {
 
   const url = new URL(request.url);
   const path = url.pathname;
+
+  // Live Hub prices must never use an old service-worker response.
+  if (path === '/api/public-price-tags/prices') { event.respondWith(fetch(request, {cache:'no-store'})); return; }
 
   // Always fetch the live app/config HTML/JS first so Firebase changes appear immediately.
   if (

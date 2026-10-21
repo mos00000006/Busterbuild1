@@ -1,3 +1,4 @@
+import {createHubPriceSync,hubPriceSuffix,hubMeasureCost,refreshHubCart} from './hub-prices.js?v=20261021-ready2';
 import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-publicqr1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail, deleteUser, setPersistence, browserSessionPersistence } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
@@ -16,6 +17,32 @@ let db = null;
 let firebaseApp = null;
 let currentAccess = null;
 let products = [];
+
+// HUB_PRICE_SYNC_V1
+const hubPriceSync = createHubPriceSync({
+  getProducts:()=>products,
+  onChange:()=>{
+    cart=refreshHubCart(cart,products);saveCart();
+    render();
+    if(selectedProduct){
+      $('product-price').innerHTML=money(selectedProduct._price)+salesPriceSuffix(selectedProduct,true);
+      if(smartMeasureState.area>0)calculateMeasure();
+    }
+  },
+  onStatus:(message,failed)=>{
+    let notice=$('hub-price-status');
+    if(!notice){notice=document.createElement('p');notice.id='hub-price-status';notice.setAttribute('role','status');$('catalogue-status')?.after(notice);}
+    notice.textContent=message;notice.style.cssText='font-size:12px;padding:8px;border-radius:6px;background:'+(failed?'#fff0cb':'#eef6ee')+';color:#443814';
+  }
+});
+function salesPriceSuffix(product,html=false){
+  if(product._hubUnit)return hubPriceSuffix(product,html);
+  return isPerSqm(product)?(html?'<small>per m²</small>':'/m²'):'';
+}
+setInterval(()=>{if(products.length&&!document.hidden)void hubPriceSync.refresh();},60000);
+document.addEventListener('visibilitychange',()=>{if(products.length&&!document.hidden)void hubPriceSync.refresh();});
+window.addEventListener('online',()=>{if(products.length)void hubPriceSync.refresh();});
+
 let filtered = [];
 let currentFilter = 'all';
 let selectedProduct = null;
@@ -28,7 +55,7 @@ let quoteHistory = loadQuoteHistory();
 let currentQuoteNumber = '';
 let currentQuoteSavedId = '';
 let smartMeasureState={productKey:'',area:0,boxes:0,cover:0,total:0,baseArea:0,wastePct:0,layout:'straight'};
-const CURRENT_APP_VERSION='2.2.0';
+const CURRENT_APP_VERSION='2.2.1';
 let catalogueUpdatedAt=null;
 let cloudQuotes=[];
 let cloudCustomers=[];
@@ -210,7 +237,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
       refreshing=true;
       window.location.reload();
     });
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261006-pulsekitchens1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261021-ready2',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -948,7 +975,7 @@ function attrValue(attrs,re){ const a=attrs.find(x=>re.test(x.name)); return a?.
 function firstNumber(v){ const m=String(v||'').replace(',','.').match(/\d+(?:\.\d+)?/); return m?Number(m[0]):0; }
 function sqmPerBox(p,attrs){ let v=attrValue(attrs,/square\s*(meters?|metres?)\s*per\s*box|m²\s*per\s*box|sqm\s*per\s*box/i); if(!v){ const d=clean(p.description||p.short_description||''); const m=d.match(/(\d+(?:[.,]\d+)?)\s*m(?:²|2)\s*per\s*box/i)||d.match(/square\s*(?:meters?|metres?)\s*per\s*box\s*[:\-]?\s*(\d+(?:[.,]\d+)?)/i); if(m)v=m[1]; } return firstNumber(v); }
 function tilesPerBox(p,attrs){ let v=attrValue(attrs,/quantity\s*per\s*box|tiles?\s*per\s*box/i); if(!v){ const d=clean(p.description||''); const m=d.match(/quantity\s*per\s*box\s*[:\-]?\s*(\d+)/i)||d.match(/(\d+)\s*tiles?\s*per\s*box/i); if(m)v=m[1]; } return firstNumber(v); }
-function isPerSqm(p){ if(p._type!=='tile')return false; const sold=attrValue(p._attrs,/^sold$|unit|selling\s*unit/i); return /m2|m²|sqm|square/i.test(sold)||p._sqm>0; }
+function isPerSqm(p){ if(p._hubUnit)return p._hubUnit==='M2'; if(p._type!=='tile')return false; const sold=attrValue(p._attrs,/^sold$|unit|selling\s*unit/i); return /m2|m²|sqm|square/i.test(sold)||p._sqm>0; }
 
 function inferBathroomGroups(p){
   const explicit=Array.isArray(p.bathroom_groups)?p.bathroom_groups:[];
@@ -1041,6 +1068,7 @@ async function loadCatalogue(){
       ...comboRows.map(p=>normalise(p,'combo'))
     ];
     const byKey=new Map(); products.forEach(p=>byKey.set((p._type+'|'+(p._code||p.id||p._name)).toLowerCase(),p)); products=[...byKey.values()];
+    await hubPriceSync.refresh();
     $('tile-count').textContent=products.filter(p=>p._type==='tile').length;
     $('sanitary-count').textContent=products.filter(p=>p._type==='sanitary').length;
     $('kitchen-count').textContent=products.filter(p=>p._type==='kitchen').length;
@@ -1075,7 +1103,7 @@ function render(){
       <button class="fav-btn ${isFavourite(p)?'active':''}" type="button" title="Favourite"><i class="${isFavourite(p)?'fa-solid':'fa-regular'} fa-star"></i></button>
       <label class="compare-check"><input type="checkbox" ${compareKeys.includes(key)?'checked':''}><span>Compare</span></label>
       <img loading="lazy" referrerpolicy="no-referrer" src="${esc(p._image)}" alt="${esc(p._name)}" onerror="this.onerror=null;this.src='../pictures/tiles and sanitary hero.jpeg'">
-    </div><div class="product-card-body"><span class="product-kind">${typeLabel(p._type)}</span><h3>${esc(p._name)}</h3><span class="card-code">CODE: ${esc(p._code||'—')}</span><div class="card-price">${money(p._price)}${isPerSqm(p)?'<small>per m²</small>':''}</div><button class="view-btn" type="button"><i class="fa-regular fa-eye"></i> View Details</button></div>`;
+    </div><div class="product-card-body"><span class="product-kind">${typeLabel(p._type)}</span><h3>${esc(p._name)}</h3><span class="card-code">CODE: ${esc(p._code||'—')}</span><div class="card-price">${money(p._price)}${salesPriceSuffix(p,true)}</div><button class="view-btn" type="button"><i class="fa-regular fa-eye"></i> View Details</button></div>`;
     qs('.view-btn',card).onclick=()=>openProduct(p);
     qs('.fav-btn',card).onclick=e=>{e.stopPropagation();toggleFavourite(p)};
     qs('.compare-check input',card).onchange=e=>toggleCompare(key,e.target.checked);
@@ -1110,7 +1138,7 @@ function openComparison(){
   body.innerHTML=rows.map(p=>`<article class="compare-card">
     <img src="${esc(p._image)}" alt="">
     <span>${typeLabel(p._type)}</span><h3>${esc(p._name)}</h3><small>${esc(p._code||'—')}</small>
-    <strong>${money(p._price)}${isPerSqm(p)?'/m²':''}</strong>
+    <strong>${money(p._price)}${salesPriceSuffix(p)}</strong>
     <dl><div><dt>m² / box</dt><dd>${p._sqm?formatNumber(p._sqm):'—'}</dd></div><div><dt>Tiles / box</dt><dd>${p._tilesPerBox||'—'}</dd></div></dl>
     <button class="primary-btn compact" type="button" data-compare-open="${esc(productKey(p))}">View product</button>
   </article>`).join('');
@@ -1179,7 +1207,7 @@ function openProduct(p){
   $('product-code').textContent='Code: '+(p._code||'—');
   $('product-image').src=p._image;
   $('product-image').alt=p._name;
-  $('product-price').innerHTML=money(p._price)+(isPerSqm(p)?'<small>per m²</small>':'');
+  $('product-price').innerHTML=money(p._price)+(salesPriceSuffix(p,true));
   $('product-description').textContent=p._description||defaultDescription(p._type);
   renderSpecs(p);
 
@@ -1239,7 +1267,7 @@ function openProduct(p){
 }
 
 $('public-share-product')?.addEventListener('click',async()=>{
-  if(!selectedProduct)return;const text=`BusterBuild: ${selectedProduct._name}\nCode: ${selectedProduct._code||'—'}\nPrice: ${money(selectedProduct._price)}${isPerSqm(selectedProduct)?'/m²':''}`;
+  if(!selectedProduct)return;const text=`BusterBuild: ${selectedProduct._name}\nCode: ${selectedProduct._code||'—'}\nPrice: ${money(selectedProduct._price)}${salesPriceSuffix(selectedProduct)}`;
   try{if(navigator.share)await navigator.share({title:selectedProduct._name,text,url:location.href});else{await navigator.clipboard.writeText(text+'\n'+location.href);toast('Product link copied')}}catch{}
 });
 $('public-copy-code')?.addEventListener('click',async()=>{if(!selectedProduct)return;try{await navigator.clipboard.writeText(selectedProduct._code||selectedProduct._name);toast('Product code copied')}catch{}});
@@ -1280,7 +1308,7 @@ $('add-cart').onclick=()=>{
   const key=cartKey(selectedProduct);
 
   // If Smart Measure has a valid result, its m² and estimated total ALWAYS win.
-  if(tile&&smartMeasureState.productKey===key&&smartMeasureState.area>0){
+  if((tile||selectedProduct._hubUnit==='BOX')&&smartMeasureState.productKey===key&&smartMeasureState.area>0){
     addSmartMeasureToCart(selectedProduct,smartMeasureState);
     toast(`${formatNumber(smartMeasureState.area)} m² added • ${money(smartMeasureState.total)}`);
   }else{
@@ -1351,7 +1379,7 @@ function calculateMeasure(){
 
   const boxes=Math.ceil(area/selectedProduct._sqm);
   const cover=Number((boxes*selectedProduct._sqm).toFixed(2));
-  const total=Number((area*selectedProduct._price).toFixed(2));
+  const total=hubMeasureCost(selectedProduct,area,boxes);
 
   smartMeasureState={productKey:cartKey(selectedProduct),baseArea,area,boxes,cover,total,wastePct,layout};
 
@@ -1364,17 +1392,17 @@ function calculateMeasure(){
     : `Room area ${baseArea.toFixed(2)} m² + ${wastePct}% waste • ${layout==='straight'?'Straight lay':layout==='diagonal'?'Diagonal':'Herringbone'}`;
 
   if(!publicProductMode){
-    $('qty-label').textContent='Quantity (m²)';
+    $('qty-label').textContent=selectedProduct._hubUnit==='BOX'?'Quantity (boxes)':'Quantity (m²)';
     $('product-qty').min='0.01';
     $('product-qty').step='0.01';
-    $('product-qty').value=area.toFixed(2);
+    $('product-qty').value=selectedProduct._hubUnit==='BOX'?String(boxes):area.toFixed(2);
     $('product-qty').readOnly=true;
     $('qty-minus').disabled=true;
     $('qty-plus').disabled=true;
     const buyPanel=qs('.buy-panel');const qtyBlock=qs('.qty-block');
     if(buyPanel)buyPanel.classList.remove('smart-active');
     if(qtyBlock)qtyBlock.hidden=false;
-    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add '+area.toFixed(2)+' m² to Cart • '+money(total)+'</span>';
+    $('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add '+(selectedProduct._hubUnit==='BOX'?boxes+' boxes':area.toFixed(2)+' m²')+' to Cart • '+money(total)+'</span>';
   }
   renderAccessorySuggestions(area);
 }
@@ -1411,11 +1439,11 @@ function useProjectRooms(){
   const baseArea=Number(rows.reduce((s,r)=>s+r.baseArea,0).toFixed(2));
   const boxes=rows.reduce((s,r)=>s+r.boxes,0);
   const cover=Number(rows.reduce((s,r)=>s+r.cover,0).toFixed(2));
-  const total=Number(rows.reduce((s,r)=>s+r.total,0).toFixed(2));
+  const total=selectedProduct._hubUnit?hubMeasureCost(selectedProduct,area,boxes):Number(rows.reduce((s,r)=>s+r.total,0).toFixed(2));
   smartMeasureState={productKey:cartKey(selectedProduct),baseArea,area,boxes,cover,total,wastePct:0,layout:'project'};
   $('required-area').textContent=area.toFixed(2)+' m²';$('boxes-order').textContent=boxes;$('covered-area').textContent=cover.toFixed(2)+' m²';$('measure-total').textContent=money(total);
   $('measure-base-note').textContent=`Combined total for ${rows.length} saved room${rows.length===1?'':'s'}`;
-  if(!publicProductMode){$('product-qty').value=area.toFixed(2);$('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add project • '+money(total)+'</span>'}
+  if(!publicProductMode){$('product-qty').value=selectedProduct._hubUnit==='BOX'?String(boxes):area.toFixed(2);$('add-cart').innerHTML='<i class="fa-solid fa-cart-plus"></i><span>Add project • '+money(total)+'</span>'}
   renderAccessorySuggestions(area);toast('Project room total applied');
 }
 function findAccessoryProduct(terms=[]){
@@ -1451,7 +1479,7 @@ function addToCart(p,qty){
     delete existing.smartBoxes;
     delete existing.smartCover;
   }else{
-    cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p),smartMeasure:false});
+    cart.push({key,name:p._name,code:p._code,image:p._image,type:p._type,price:p._price,qty,sqm:p._sqm||0,perSqm:isPerSqm(p),hubUnit:p._hubUnit,smartMeasure:false});
   }
   saveCart();
   toast(`${p._name} added to cart`);
@@ -1466,9 +1494,10 @@ function addSmartMeasureToCart(p,measure){
     image:p._image,
     type:p._type,
     price:Number(p._price||0),                 // selling price per m²
-    qty:Number(measure.area.toFixed(2)),       // REQUIRED m² = chargeable quantity
+    qty:p._hubUnit==='BOX'?measure.boxes:Number(measure.area.toFixed(2)),       // REQUIRED m² = chargeable quantity
     sqm:p._sqm||0,
-    perSqm:true,
+    perSqm:p._hubUnit!=='BOX',
+    hubUnit:p._hubUnit,
     smartMeasure:true,
     smartArea:Number(measure.area.toFixed(2)),
     smartBoxes:Number(measure.boxes||0),       // recommendation only
@@ -2096,7 +2125,7 @@ async function openSavedQuote(idx){
       finalItems=items.map(item=>{
         if(item._currentPrice==null)return item;
         const updated={...item,price:Number(item._currentPrice)};delete updated._currentPrice;
-        if(updated.smartMeasure&&updated.smartArea)updated.fixedTotal=Number((updated.smartArea*updated.price).toFixed(2));
+        if(updated.smartMeasure&&updated.smartArea)updated.fixedTotal=Number(((updated.hubUnit==='BOX'?updated.smartBoxes:updated.smartArea)*updated.price).toFixed(2));
         return updated;
       });
       toast('Estimate updated to current prices');logAudit('quote_prices_refreshed',{quoteId:q.id,items:changed.length});
@@ -2122,7 +2151,7 @@ function renderComboSearch(){
   const term=($('combo-search')?.value||'').trim().toLowerCase();const box=$('combo-search-results');if(!box)return;
   if(term.length<2){box.innerHTML='<span class="muted-small">Type at least 2 characters to search products.</span>';return}
   const rows=products.filter(p=>p._name.toLowerCase().includes(term)||p._code.toLowerCase().includes(term)).slice(0,12);
-  box.innerHTML=rows.map(p=>`<button type="button" data-combo-add="${esc(productKey(p))}"><img src="${esc(p._image)}" alt=""><span><strong>${esc(p._name)}</strong><small>${esc(p._code||'—')}</small></span><b>${money(p._price)}${isPerSqm(p)?'/m²':''}</b></button>`).join('')||'<span class="muted-small">No products found.</span>';
+  box.innerHTML=rows.map(p=>`<button type="button" data-combo-add="${esc(productKey(p))}"><img src="${esc(p._image)}" alt=""><span><strong>${esc(p._name)}</strong><small>${esc(p._code||'—')}</small></span><b>${money(p._price)}${salesPriceSuffix(p)}</b></button>`).join('')||'<span class="muted-small">No products found.</span>';
   qsa('[data-combo-add]',box).forEach(b=>b.onclick=()=>{const p=getProductByKey(b.dataset.comboAdd);if(p)addComboBuilderItem(p)})
 }
 function addComboBuilderItem(p){

@@ -1,0 +1,15 @@
+BUSTERBUILD SALES APP — READY TO UPLOAD
+
+1. Extract this ZIP.
+2. Open your BusterBuild sales WEBSITE repository (not the Company Hub).
+3. Upload the included sales-app folder at the repository root and replace the five matching files. The destination must be sales-app/index.html, NOT sales-app/sales-app/index.html. Keep all other existing website files.
+4. Commit and let the sales website deploy. No Python installer is needed.
+5. Close and reopen the sales app, or use its Update button. The app version is now 2.2.1.
+
+The Hub live-price patch must also be deployed. In Hub > Price tag generator > BusterBuild, find the product, enter the price, keep publishing selected and click Generate. The product code must match the sales catalogue. Open sales apps check once a minute, on return to the app and on reconnect.
+
+The catalogue status shows whether Hub prices were loaded, whether no published prices exist, whether codes do not match, or whether the connection failed. An offline device cannot receive a new price. Saved quotations keep their original price; active carts update.
+
+This patch was applied directly to your uploaded sales-app.zip. It changes the active kitchen script referenced by your live index, activates the price module and refreshes the app/service-worker cache versions. It does not include login settings or replace Firebase configuration, catalogues, pictures or icons. The accidentally nested sales-app/sales-app folder is not used by the main page; this patch does not require it.
+
+Verification: JavaScript syntax checks; active app integration test with your HTML (initial Hub price, open-product update, active cart update and failure warning); five price-sync module tests. Production deployment and live Hub connectivity were not verified here.
