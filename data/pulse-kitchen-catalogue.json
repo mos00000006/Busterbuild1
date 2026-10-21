@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:40:07.639497+00:00",
+  "generated_at": "2026-10-21T08:29:28.413412+00:00",
   "updater_version": "2026-10-06-v1-pulse-kitchens",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -12,11 +12,10 @@
     "kitchen-sinks": {
       "title": "Kitchen Sinks",
       "group": "sinks",
-      "count": 7,
+      "count": 6,
       "product_ids": [
         "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
         "alco-stainless-steel-sink-mixer-combo",
-        "blanco-sona-8s-black-double-sink",
         "double-bowl-drop-in-stainless-steel-sink-1200x480",
         "drop-in-single-bowl-stainless-steel-sink-900x450",
         "stainless-steel-sink-combo",
@@ -101,11 +100,10 @@
   "groups": {
     "sinks": {
       "title": "Kitchen Sinks",
-      "count": 7,
+      "count": 6,
       "product_ids": [
         "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
         "alco-stainless-steel-sink-mixer-combo",
-        "blanco-sona-8s-black-double-sink",
         "double-bowl-drop-in-stainless-steel-sink-1200x480",
         "drop-in-single-bowl-stainless-steel-sink-900x450",
         "stainless-steel-sink-combo",
@@ -1490,37 +1488,6 @@
       ],
       "kitchen_groups": [
         "taps"
-      ]
-    },
-    {
-      "id": "blanco-sona-8s-black-double-sink",
-      "source_url": "https://pulsetiles.co.za/product/blanco-sona-8s-black-double-sink/",
-      "name": "Blanco Sona Black Double Sink",
-      "code": "B04219",
-      "price": {
-        "current": 7999.99,
-        "regular": 7999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 137 × 62 × 44 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/06/BLANCO-SONA-8S-BLACK-DOUBLE-SINK.jpg",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "22 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "137 × 62 × 44 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sinks"
-      ],
-      "kitchen_groups": [
-        "sinks"
       ]
     },
     {
