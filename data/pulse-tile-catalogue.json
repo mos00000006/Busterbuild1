@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T07:40:47.995753+00:00",
+  "generated_at": "2026-10-21T07:46:00.971942+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -10,7 +10,6 @@
       "title": "Ceramic Tiles",
       "count": 88,
       "product_ids": [
-        "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
@@ -23,9 +22,10 @@
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
         "colorado-graffito-elevation-tile-300x600mm",
-        "colorado-grey-dust-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
+        "dubois-dark-beige-elevation-tile-300x600mm",
+        "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -243,7 +243,7 @@
     },
     "mosaics": {
       "title": "Mosaic Tiles",
-      "count": 61,
+      "count": 60,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -291,7 +291,6 @@
         "oasis-azul-glass-mosaic-300mmx336mmx4mm",
         "oasis-brown-glass-mosaic-warm-brown-tone-finish-300x336x4mm",
         "oasis-nero-glass-mosaic-polished-black-finish-300x300x4mm",
-        "oxford-porcelain-ceramic-mosaic-300x300x4mm-301",
         "paradise-aqua-glass-mosaic-260mmx300mmx4mm",
         "paradise-azul-glass-mosaic-260mmx300mmx4mm",
         "paradise-cararra-glass-mosaic-260mmx300mmx4mm",
@@ -1327,9 +1326,8 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 312,
+      "count": 311,
       "product_ids": [
-        "angel-white-gloss-porcelain-tile-600x600mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
@@ -1342,9 +1340,10 @@
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
         "colorado-graffito-elevation-tile-300x600mm",
-        "colorado-grey-dust-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
+        "dubois-dark-beige-elevation-tile-300x600mm",
+        "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -1586,7 +1585,6 @@
         "oasis-azul-glass-mosaic-300mmx336mmx4mm",
         "oasis-brown-glass-mosaic-warm-brown-tone-finish-300x336x4mm",
         "oasis-nero-glass-mosaic-polished-black-finish-300x300x4mm",
-        "oxford-porcelain-ceramic-mosaic-300x300x4mm-301",
         "paradise-aqua-glass-mosaic-260mmx300mmx4mm",
         "paradise-azul-glass-mosaic-260mmx300mmx4mm",
         "paradise-cararra-glass-mosaic-260mmx300mmx4mm",
@@ -1680,7 +1678,7 @@
     },
     "mosaic-tiles": {
       "title": "Mosaic Tiles",
-      "count": 61,
+      "count": 60,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -1728,7 +1726,6 @@
         "oasis-azul-glass-mosaic-300mmx336mmx4mm",
         "oasis-brown-glass-mosaic-warm-brown-tone-finish-300x336x4mm",
         "oasis-nero-glass-mosaic-polished-black-finish-300x300x4mm",
-        "oxford-porcelain-ceramic-mosaic-300x300x4mm-301",
         "paradise-aqua-glass-mosaic-260mmx300mmx4mm",
         "paradise-azul-glass-mosaic-260mmx300mmx4mm",
         "paradise-cararra-glass-mosaic-260mmx300mmx4mm",
