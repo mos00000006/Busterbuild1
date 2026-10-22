@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T08:03:29.272871+00:00",
+  "generated_at": "2026-10-22T08:01:20.696842+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 56,
+      "count": 55,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -23,7 +23,6 @@
         "astor-cloud-combo-600x600mm",
         "bricola-gris-porcelain-combo-600x600mm",
         "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
-        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
         "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
         "dolomiti-saturio-matt-tile-combo-600x600",
         "dyna-glossy-glazed-porcelain-600x600-combo",
@@ -158,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 21,
+      "count": 22,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -178,6 +177,7 @@
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
         "shower-screen-plus-shower-head-and-arm-combo",
+        "shower-screen-shower-rail-combo-deal",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
         "zen-shower-combo"
@@ -242,7 +242,6 @@
         "astor-cloud-combo-600x600mm",
         "bricola-gris-porcelain-combo-600x600mm",
         "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
-        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
         "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
         "dolomiti-saturio-matt-tile-combo-600x600",
         "dyna-glossy-glazed-porcelain-600x600-combo",
@@ -351,6 +350,7 @@
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
         "shower-screen-plus-shower-head-and-arm-combo",
+        "shower-screen-shower-rail-combo-deal",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
         "zen-shower-combo",
@@ -417,7 +417,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 56,
+      "count": 55,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -427,7 +427,6 @@
         "astor-cloud-combo-600x600mm",
         "bricola-gris-porcelain-combo-600x600mm",
         "classic-jakarta-white-matt-glazed-porcelain-combo-600x1200mm",
-        "clayton-aqua-glossy-glazed-porcelain-600x1200-combo",
         "cresto-white-rustic-matt-porcelain-combo-600x1200mm",
         "dolomiti-saturio-matt-tile-combo-600x600",
         "dyna-glossy-glazed-porcelain-600x600-combo",
@@ -4847,43 +4846,6 @@
       "detail_parser_version": "2026-10-01-combo-includes-v3"
     },
     {
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/",
-      "name": "Shower Screen + Shower Rail Combo Deal",
-      "code": "Q01203",
-      "price": {
-        "current": 2999.99,
-        "regular": 3699.99,
-        "sale": 2999.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
-      "images": [
-        "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
-        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04186-scaled.webp",
-        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03739.webp",
-        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp",
-        "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04192-scaled.webp",
-        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01940.jpg"
-      ],
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "38 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "200 × 100 × 20 cm"
-        }
-      ],
-      "id": "shower-screen-shower-rail-combo-deal",
-      "categories": [
-        "shower-combos"
-      ],
-      "detail_parser_version": "2026-10-01-combo-includes-v3"
-    },
-    {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-black-combo/",
       "name": "Shower Screen Black Combo",
       "code": "Q01484",
@@ -5053,6 +5015,49 @@
         "One Aquavit Chrome Square Showerhead 200mm With Arm"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/",
+      "name": "Shower Screen Plus Shower Rail Combo Deal",
+      "code": "Q01203",
+      "price": {
+        "current": 2999.99,
+        "regular": 2999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04186-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03739.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04192-scaled.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01940.jpg"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "38 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "200 × 100 × 20 cm"
+        }
+      ],
+      "id": "shower-screen-shower-rail-combo-deal",
+      "categories": [
+        "shower-combos"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "included_items": [
+        "One Jazz Shower Mixer – 5 Year Warranty",
+        "One AquaVit Shower Rail Set With 1.5 Hose",
+        "One Alco Shower Outlet Bracket – Chrome Round",
+        "One Shower Screen Clear Vista Clear Glass 900x2000x6mm"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/shower-screen-with-shower-head-and-arm-combo/",

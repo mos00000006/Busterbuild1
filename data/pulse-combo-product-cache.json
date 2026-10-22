@@ -3861,24 +3861,29 @@
   "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/": {
     "id": "shower-screen-shower-rail-combo-deal",
     "source_url": "https://pulsetiles.co.za/product/shower-screen-shower-rail-combo-deal/",
-    "name": "Shower Screen + Shower Rail Combo Deal",
+    "name": "Shower Screen Plus Shower Rail Combo Deal",
     "code": "Q01203",
     "price": {
       "current": 2999.99,
-      "regular": 3699.99,
-      "sale": 2999.99,
+      "regular": 2999.99,
+      "sale": null,
       "from": false,
       "currency": "ZAR"
     },
     "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
-    "included_items": [],
+    "included_items": [
+      "One Jazz Shower Mixer – 5 Year Warranty",
+      "One AquaVit Shower Rail Set With 1.5 Hose",
+      "One Alco Shower Outlet Bracket – Chrome Round",
+      "One Shower Screen Clear Vista Clear Glass 900x2000x6mm"
+    ],
     "detail_parser_version": "2026-10-01-combo-includes-v3",
     "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
     "images": [
       "https://pulsetiles.co.za/wp-content/uploads/2026/04/SHOWER-scaled.webp",
+      "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp",
       "https://pulsetiles.co.za/wp-content/uploads/2026/03/B04186-scaled.webp",
       "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03739.webp",
-      "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03739-3.webp",
       "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04192-scaled.webp",
       "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01940.jpg"
     ],
