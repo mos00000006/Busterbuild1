@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T07:46:00.971942+00:00",
+  "generated_at": "2026-10-22T07:41:40.995178+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -33,6 +33,7 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
@@ -61,7 +62,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
         "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
@@ -102,7 +102,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 108,
+      "count": 107,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -175,7 +175,6 @@
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -216,13 +215,12 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 10,
+      "count": 9,
       "product_ids": [
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -366,7 +364,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 178,
+      "count": 175,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -401,7 +399,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -465,7 +462,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "meadow-antislip-floor-tile-450x450",
@@ -496,7 +492,6 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "pebble-drift-full-body-porcelain-tile-600x600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
@@ -550,7 +545,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 139,
+      "count": 138,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -580,7 +575,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -609,6 +603,7 @@
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
         "heritage-light-grey-glossy-glazed-porcelain-600x1200mm",
@@ -644,7 +639,6 @@
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -695,7 +689,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 183,
+      "count": 181,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -734,7 +728,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -767,6 +760,7 @@
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
         "heritage-light-grey-glossy-glazed-porcelain-600x1200mm",
@@ -792,7 +786,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "marina-aqua-wall-tile-300x600mm",
@@ -827,7 +820,6 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "pebble-drift-full-body-porcelain-tile-600x600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
@@ -884,7 +876,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 41,
+      "count": 42,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -898,6 +890,7 @@
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
         "kalahari-breeze-a-grade-floor-tile-450x450mm-1-0125m2",
@@ -931,7 +924,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 101,
+      "count": 100,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -1001,7 +994,6 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "pantagonia-high-gloss-polished-porcelain-1200x3200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-1003-polished-porcelain-tile-800x1600mm",
@@ -1056,7 +1048,7 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 71,
+      "count": 70,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1101,7 +1093,6 @@
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-1003-polished-porcelain-tile-800x1600mm",
@@ -1167,7 +1158,7 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 7,
+      "count": 8,
       "product_ids": [
         "colorado-graffito-elevation-tile-300x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
@@ -1175,7 +1166,8 @@
         "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
-        "harmony-crema-elevation-tile-300x600mm"
+        "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm"
       ]
     },
     "tile-adhesives": {
@@ -1326,7 +1318,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 311,
+      "count": 309,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1351,6 +1343,7 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "harmony-crema-elevation-tile-300x600mm",
+        "harmony-gris-elevation-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
@@ -1379,7 +1372,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "luster-saturia-porcelain-tile-600x600mm-sugar-glazed",
         "madison-deco-wall-tile-300x600mm",
         "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
@@ -1487,7 +1479,6 @@
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
-        "prada-gold-polished-glazed-porcelain-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -1528,7 +1519,6 @@
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
-        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
