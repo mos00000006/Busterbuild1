@@ -4176,13 +4176,6 @@
     },
     {
       "type": "combo",
-      "code": "Q01203",
-      "name": "Shower Screen + Shower Rail Combo Deal",
-      "file": "qr/Q01203.png",
-      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01203"
-    },
-    {
-      "type": "combo",
       "code": "Q01484",
       "name": "Shower Screen Black Combo",
       "file": "qr/Q01484.png",
@@ -4215,6 +4208,13 @@
       "name": "Shower Screen Plus Shower Head and Arm Combo 900x2000x6mm",
       "file": "qr/Q01502.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01502"
+    },
+    {
+      "type": "combo",
+      "code": "Q01203",
+      "name": "Shower Screen Plus Shower Rail Combo Deal",
+      "file": "qr/Q01203.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01203"
     },
     {
       "type": "combo",
