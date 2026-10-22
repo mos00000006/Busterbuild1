@@ -13,9 +13,21 @@ export function validHubPrices(payload) {
 }
 export function applyHubPrices(products, prices) {
   let changed = false;
+  for (let i=products.length-1;i>=0;i--) {
+    if(products[i]._hubCombo && prices.get(key(products[i]._code))?.kind!=='combo') { products.splice(i,1); changed=true; }
+  }
+  for (const row of prices.values()) {
+    if(row.kind!=='combo' || !row.name || !row.token)continue;
+    let product=products.find(p=>key(p._code)===key(row.code));
+    if(!product){product={_code:row.code,_hubCombo:true,_price:0,_sqm:0,_tilesPerBox:0};products.push(product);changed=true;}
+    const metadata={id:'hub-combo-'+row.token,_type:'combo',_name:String(row.name),_description:String(row.includes_text||''),_attrs:[],_bathGroups:[],_kitchenGroups:[],_hubToken:row.token,_image:new URL('./'+encodeURIComponent(row.token)+'/image?slot='+encodeURIComponent(row.image_slot||''),HUB_PRICE_URL).href};
+    if(Object.entries(metadata).some(([k,v])=>JSON.stringify(product[k])!==JSON.stringify(v)))changed=true;
+    Object.assign(product,metadata);
+  }
   for (const product of products) {
     if (!product._hubOriginal) product._hubOriginal = { price: product._price, sqm: product._sqm, pieces: product._tilesPerBox, unit: product._hubUnit };
     const row = prices.get(key(product._code));
+    if(row?.token)product._hubToken=row.token;else delete product._hubToken;
     const old = `${product._price}|${product._sqm}|${product._tilesPerBox}|${product._hubUnit}`;
     const original = product._hubOriginal;
     product._price = row ? row.price_cents / 100 : original.price;
@@ -71,4 +83,16 @@ export function refreshHubCart(cart, products) {
     if(item.smartMeasure)next.fixedTotal=Number((qty*product._price).toFixed(2));
     return next;
   });
+}
+
+export function hubScanToken(raw) {
+  try {
+    const url=new URL(String(raw).trim());
+    if(url.origin!==new URL(HUB_PRICE_URL).origin)return '';
+    return url.pathname.match(/^\/p\/([a-f0-9-]{36})\/?$/i)?.[1]?.toLowerCase()||'';
+  }catch{return '';}
+}
+export function findHubScanned(products,raw) {
+  const token=hubScanToken(raw);
+  return token?products.find(p=>String(p._hubToken||'').toLowerCase()===token):undefined;
 }

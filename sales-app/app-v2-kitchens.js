@@ -1,4 +1,4 @@
-import {createHubPriceSync,hubPriceSuffix,hubMeasureCost,refreshHubCart} from './hub-prices.js?v=20261021-ready2';
+import {createHubPriceSync,hubPriceSuffix,hubMeasureCost,refreshHubCart,hubScanToken,findHubScanned} from './hub-prices.js?v=20261022-comboscan1';
 import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-publicqr1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail, deleteUser, setPersistence, browserSessionPersistence } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
@@ -237,7 +237,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
       refreshing=true;
       window.location.reload();
     });
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261021-ready2',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261022-comboscan1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -2209,9 +2209,21 @@ async function startScanner(){
 }
 async function stopScanner(){ if(scanner&&scannerRunning){try{await scanner.stop();await scanner.clear();}catch{} } scanner=null;scannerRunning=false;$('start-camera').hidden=false;$('stop-camera').hidden=true; }
 function extractCode(raw){ const txt=String(raw||'').trim(); try{ const u=new URL(txt); return u.searchParams.get('product')||u.searchParams.get('code')||u.searchParams.get('sku')||txt; }catch{} const m=txt.match(/(?:product|code|sku)[:=]\s*([^|\s]+)/i); return (m?m[1]:txt).trim(); }
-function findScanned(raw){
+let scanLookupPending=false;
+async function findScanned(raw){
+  if(scanLookupPending)return;
+  if(hubScanToken(raw)){
+    scanLookupPending=true;
+    try{
+      const synced=await hubPriceSync.refresh();
+      if(!synced&&!findHubScanned(products,raw)){
+        $('scan-result').hidden=false;$('scan-result').textContent='Could not load Hub product details. Check your internet connection and try scanning again.';
+        toast('Hub details unavailable — please retry');return;
+      }
+    }finally{scanLookupPending=false;}
+  }
   const code=extractCode(raw).toLowerCase(); if(!code){toast('Enter or scan a product code');return;}
-  const p=products.find(x=>x._code.toLowerCase()===code||String(x.id||'').toLowerCase()===code||x._name.toLowerCase()===code);
+  const p=findHubScanned(products,raw)||products.find(x=>x._code.toLowerCase()===code||String(x.id||'').toLowerCase()===code||x._name.toLowerCase()===code);
   if(!p){$('scan-result').hidden=false;$('scan-result').innerHTML='<strong>Product not found</strong><br><small>Scanned: '+esc(extractCode(raw))+'</small>';toast('Product code not found');return;}
   $('scan-result').hidden=false;$('scan-result').innerHTML='<strong><i class="fa-solid fa-circle-check" style="color:#16984f"></i> '+esc(p._name)+'</strong><br><small>Code: '+esc(p._code||'—')+'</small>';
   const scans=loadLocalArray('busterbuildRecentScans');scans.unshift({key:productKey(p),date:new Date().toISOString()});saveLocalArray('busterbuildRecentScans',scans.slice(0,10));renderRecentScans();openProduct(p);
