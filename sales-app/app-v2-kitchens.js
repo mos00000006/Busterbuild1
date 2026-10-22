@@ -1,4 +1,5 @@
-import {createHubPriceSync,hubPriceSuffix,hubMeasureCost,refreshHubCart,hubScanToken,findHubScanned} from './hub-prices.js?v=20261022-comboscan1';
+import {mountComboImage} from './combo-images.js?v=20261022-combopictures1';
+import {createHubPriceSync,hubPriceSuffix,hubMeasureCost,refreshHubCart,hubScanToken,findHubScanned} from './hub-prices.js?v=20261022-combopictures1';
 import { firebaseConfig, salesAppConfig } from './firebase-config.js?v=20261002-publicqr1';
 import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, sendPasswordResetEmail, deleteUser, setPersistence, browserSessionPersistence } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
@@ -55,7 +56,7 @@ let quoteHistory = loadQuoteHistory();
 let currentQuoteNumber = '';
 let currentQuoteSavedId = '';
 let smartMeasureState={productKey:'',area:0,boxes:0,cover:0,total:0,baseArea:0,wastePct:0,layout:'straight'};
-const CURRENT_APP_VERSION='2.2.1';
+const CURRENT_APP_VERSION='2.2.3';
 let catalogueUpdatedAt=null;
 let cloudQuotes=[];
 let cloudCustomers=[];
@@ -237,7 +238,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load',async()=>{
       refreshing=true;
       window.location.reload();
     });
-    const reg=await navigator.serviceWorker.register('./sw.js?v=20261022-comboscan1',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('./sw.js?v=20261022-combopictures1',{updateViaCache:'none'});
     await reg.update();
   }catch(e){console.warn('Service worker update skipped',e);}
 });
@@ -1104,6 +1105,7 @@ function render(){
       <label class="compare-check"><input type="checkbox" ${compareKeys.includes(key)?'checked':''}><span>Compare</span></label>
       <img loading="lazy" referrerpolicy="no-referrer" src="${esc(p._image)}" alt="${esc(p._name)}" onerror="this.onerror=null;this.src='../pictures/tiles and sanitary hero.jpeg'">
     </div><div class="product-card-body"><span class="product-kind">${typeLabel(p._type)}</span><h3>${esc(p._name)}</h3><span class="card-code">CODE: ${esc(p._code||'—')}</span><div class="card-price">${money(p._price)}${salesPriceSuffix(p,true)}</div><button class="view-btn" type="button"><i class="fa-regular fa-eye"></i> View Details</button></div>`;
+    mountComboImage(qs('.product-image>img',card),p);
     qs('.view-btn',card).onclick=()=>openProduct(p);
     qs('.fav-btn',card).onclick=e=>{e.stopPropagation();toggleFavourite(p)};
     qs('.compare-check input',card).onchange=e=>toggleCompare(key,e.target.checked);
@@ -1207,6 +1209,7 @@ function openProduct(p){
   $('product-code').textContent='Code: '+(p._code||'—');
   $('product-image').src=p._image;
   $('product-image').alt=p._name;
+  mountComboImage($('product-image'),p);
   $('product-price').innerHTML=money(p._price)+(salesPriceSuffix(p,true));
   $('product-description').textContent=p._description||defaultDescription(p._type);
   renderSpecs(p);

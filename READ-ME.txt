@@ -1,6 +1,3 @@
-BUSTERBUILD SALES APP ONLY — deploy the companion Hub patch first.
-Copy the files inside sales-app/ into your existing sales-app/ folder, replacing matching files. Do not create sales-app/sales-app/.
-Deploy, then close and reopen the installed sales app. Build: 20261022-comboscan1.
-Published BusterBuild combos load from the Hub and can be scanned, searched by code and added to quotations at the saved Hub price. Existing printed QR codes remain valid. An internet connection is required to fetch new combos and current prices.
-Includes a new cache version. Existing saved quotations remain unchanged.
-Verification: seven price/scan/cart tests, JavaScript syntax checks, Hub SQL check and Hub production build.
+BUSTERBUILD SALES APP ONLY. Apply the companion Hub patch first. Copy sales-app contents into your existing sales-app folder; do not create sales-app/sales-app. Deploy, close and reopen the app.
+Shows all saved combo products together in the catalogue card and scanned product details, preserving slot positions, rotation and scale. Existing QR codes continue working. Build 20261022-combopictures1.
+Verified Hub production build, seven price/scan tests and browser rendering of seven images including rotation and reset to ordinary products.

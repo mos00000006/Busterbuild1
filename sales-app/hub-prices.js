@@ -20,7 +20,7 @@ export function applyHubPrices(products, prices) {
     if(row.kind!=='combo' || !row.name || !row.token)continue;
     let product=products.find(p=>key(p._code)===key(row.code));
     if(!product){product={_code:row.code,_hubCombo:true,_price:0,_sqm:0,_tilesPerBox:0};products.push(product);changed=true;}
-    const metadata={id:'hub-combo-'+row.token,_type:'combo',_name:String(row.name),_description:String(row.includes_text||''),_attrs:[],_bathGroups:[],_kitchenGroups:[],_hubToken:row.token,_image:new URL('./'+encodeURIComponent(row.token)+'/image?slot='+encodeURIComponent(row.image_slot||''),HUB_PRICE_URL).href};
+    const metadata={id:'hub-combo-'+row.token,_type:'combo',_name:String(row.name),_description:String(row.includes_text||''),_attrs:[],_bathGroups:[],_kitchenGroups:[],_hubToken:row.token,_hubComboItems:Array.isArray(row.combo_items)?row.combo_items:[],_image:new URL('./'+encodeURIComponent(row.token)+'/image?slot='+encodeURIComponent(row.image_slot||''),HUB_PRICE_URL).href};
     if(Object.entries(metadata).some(([k,v])=>JSON.stringify(product[k])!==JSON.stringify(v)))changed=true;
     Object.assign(product,metadata);
   }

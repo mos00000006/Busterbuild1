@@ -1,4 +1,4 @@
-const CACHE = 'busterbuild-sales-20261022-comboscan1';
+const CACHE = 'busterbuild-sales-20261022-combopictures1';
 const STATIC_SHELL = [
   './styles.css',
   './app-version.json',
