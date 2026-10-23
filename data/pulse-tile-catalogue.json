@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T07:41:40.995178+00:00",
+  "generated_at": "2026-10-23T07:38:51.164945+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 88,
+      "count": 85,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -26,7 +26,6 @@
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
@@ -62,8 +61,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "madison-deco-wall-tile-300x600mm",
-        "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -102,7 +99,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 107,
+      "count": 106,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -120,7 +117,6 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
@@ -364,7 +360,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 175,
+      "count": 174,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -375,7 +371,6 @@
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
-        "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
@@ -545,7 +540,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 138,
+      "count": 134,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -563,7 +558,6 @@
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
-        "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "colorado-graffito-elevation-tile-300x600mm",
@@ -584,7 +578,6 @@
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -618,9 +611,7 @@
         "larica-carrara-wall-tile-300x600mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
-        "madison-deco-wall-tile-300x600mm",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
-        "marina-aqua-wall-tile-300x600mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
@@ -689,7 +680,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 181,
+      "count": 177,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -701,7 +692,6 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
-        "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
@@ -737,7 +727,6 @@
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -786,9 +775,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "madison-deco-wall-tile-300x600mm",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
-        "marina-aqua-wall-tile-300x600mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "middle-black-polished-tile-600x600mm",
@@ -876,7 +863,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 42,
+      "count": 41,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -885,7 +872,6 @@
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
@@ -1158,12 +1144,11 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 8,
+      "count": 7,
       "product_ids": [
         "colorado-graffito-elevation-tile-300x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "harmony-crema-elevation-tile-300x600mm",
@@ -1318,7 +1303,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 309,
+      "count": 305,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1336,7 +1321,6 @@
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
-        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
@@ -1372,8 +1356,6 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
-        "madison-deco-wall-tile-300x600mm",
-        "marina-aqua-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -1424,7 +1406,6 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
