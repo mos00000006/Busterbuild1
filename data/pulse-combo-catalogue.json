@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T08:01:20.696842+00:00",
+  "generated_at": "2026-10-23T07:59:46.231434+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -157,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 22,
+      "count": 20,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -175,8 +175,6 @@
         "shower-screen-black-combo",
         "shower-screen-combo-3",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-shower-rail-combo-deal",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
@@ -232,7 +230,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 144,
+      "count": 142,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -348,8 +346,6 @@
         "shower-screen-black-combo",
         "shower-screen-combo-3",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-shower-rail-combo-deal",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
