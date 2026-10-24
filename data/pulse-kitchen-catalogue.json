@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:28:17.925058+00:00",
+  "generated_at": "2026-10-24T08:03:18.560367+00:00",
   "updater_version": "2026-10-06-v1-pulse-kitchens",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -88,8 +88,9 @@
     "kitchen-sink-fittings": {
       "title": "Kitchen Sink Fittings",
       "group": "fittings",
-      "count": 4,
+      "count": 5,
       "product_ids": [
+        "2-tier-dish-rack-with-cutlery-holder-and-drip-tray",
         "alco-chrome-dish-rack",
         "alco-double-sink-waste-with-overflow",
         "alco-sink-waste-90mm-with-basket",
@@ -174,8 +175,9 @@
     },
     "fittings": {
       "title": "Kitchen Sink Fittings",
-      "count": 4,
+      "count": 5,
       "product_ids": [
+        "2-tier-dish-rack-with-cutlery-holder-and-drip-tray",
         "alco-chrome-dish-rack",
         "alco-double-sink-waste-with-overflow",
         "alco-sink-waste-90mm-with-basket",
@@ -184,6 +186,37 @@
     }
   },
   "products": [
+    {
+      "id": "2-tier-dish-rack-with-cutlery-holder-and-drip-tray",
+      "source_url": "https://pulsetiles.co.za/product/2-tier-dish-rack-with-cutlery-holder-and-drip-tray/",
+      "name": "2 Tier Dish Rack With Cutlery Holder and Drip Tray",
+      "code": "I01009",
+      "price": {
+        "current": 269.99,
+        "regular": 269.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 45 × 34 × 13 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I01009.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "45 × 34 × 13 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-fittings"
+      ],
+      "kitchen_groups": [
+        "fittings"
+      ]
+    },
     {
       "id": "alco-chrome-dish-rack",
       "source_url": "https://pulsetiles.co.za/product/alco-chrome-dish-rack/",

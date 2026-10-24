@@ -1811,5 +1811,32 @@
     ],
     "categories": [],
     "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/2-tier-dish-rack-with-cutlery-holder-and-drip-tray/": {
+    "id": "2-tier-dish-rack-with-cutlery-holder-and-drip-tray",
+    "source_url": "https://pulsetiles.co.za/product/2-tier-dish-rack-with-cutlery-holder-and-drip-tray/",
+    "name": "2 Tier Dish Rack With Cutlery Holder and Drip Tray",
+    "code": "I01009",
+    "price": {
+      "current": 269.99,
+      "regular": 269.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 45 × 34 × 13 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I01009.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "45 × 34 × 13 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
   }
 }
