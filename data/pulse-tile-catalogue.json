@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T07:18:40.683749+00:00",
+  "generated_at": "2026-10-25T07:41:00.283244+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 85,
+      "count": 84,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -32,7 +32,6 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
@@ -110,13 +109,13 @@
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
-        "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
+        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
@@ -540,7 +539,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 134,
+      "count": 133,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -550,7 +549,6 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
-        "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "base-wall-tile-300x600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
@@ -558,6 +556,7 @@
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
+        "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "colorado-graffito-elevation-tile-300x600mm",
@@ -596,7 +595,6 @@
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
         "heritage-light-grey-glossy-glazed-porcelain-600x1200mm",
@@ -680,7 +678,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 177,
+      "count": 176,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -749,7 +747,6 @@
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
         "heritage-light-grey-glossy-glazed-porcelain-600x1200mm",
@@ -863,7 +860,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 41,
+      "count": 40,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -876,7 +873,6 @@
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
         "kalahari-breeze-a-grade-floor-tile-450x450mm-1-0125m2",
@@ -1144,15 +1140,14 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 7,
+      "count": 6,
       "product_ids": [
         "colorado-graffito-elevation-tile-300x600mm",
         "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
-        "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm"
+        "harmony-crema-elevation-tile-300x600mm"
       ]
     },
     "tile-adhesives": {
@@ -1303,7 +1298,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 305,
+      "count": 304,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1327,7 +1322,6 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "harmony-crema-elevation-tile-300x600mm",
-        "harmony-gris-elevation-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
         "kalahari-beige-matt-floor-tile-450x450mm",
@@ -1399,13 +1393,13 @@
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
-        "astor-r-cloud-glossy-porcelain-600x600mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
+        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
