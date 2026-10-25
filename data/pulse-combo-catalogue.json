@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T07:38:43.767958+00:00",
+  "generated_at": "2026-10-25T07:51:27.674936+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 55,
+      "count": 57,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -39,6 +39,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
@@ -53,6 +54,7 @@
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
         "sahara-gris-combo-600x600mm",
+        "sahara-mist-combo-330x33",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
@@ -229,7 +231,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 142,
+      "count": 144,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -255,6 +257,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
@@ -269,6 +272,7 @@
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
         "sahara-gris-combo-600x600mm",
+        "sahara-mist-combo-330x33",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
@@ -411,7 +415,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 55,
+      "count": 57,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -437,6 +441,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
@@ -451,6 +456,7 @@
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
         "sahara-gris-combo-600x600mm",
+        "sahara-mist-combo-330x33",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
@@ -2535,6 +2541,48 @@
       "detail_parser_version": "2026-10-01-combo-includes-v3"
     },
     {
+      "source_url": "https://pulsetiles.co.za/product/ivory-nano-vitrified-combo-600x600/",
+      "name": "Ivory Nano Vitrified Combo 600x600mm",
+      "code": "Q01599",
+      "price": {
+        "current": 2499.99,
+        "regular": 2899.99,
+        "sale": 2499.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "14.40 Square meters (10 boxes) of 600×600 1st grade polished tiles",
+        "2 x Alco Bond 1lt",
+        "1 x Alco Light Grey Grout 5kg",
+        "4 x Alco Porcelain 24hr Adhesive 20kg",
+        "1 x Powergripp All Purpose Cleaner 1lt",
+        "1 x Pulse Cleaning Sponge 150x100x70",
+        "1 x Alco Spacer White 3mm – 100pcs/bag"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01599.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01599.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01599-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "313 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "107 × 88 × 7 cm"
+        }
+      ],
+      "id": "ivory-nano-vitrified-combo-600x600",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
+    },
+    {
       "source_url": "https://pulsetiles.co.za/product/ivory-polished-porcelainelain-600x600-combo/",
       "name": "Ivory Polished Porcelain Combo 600X600mm",
       "code": "Q01188",
@@ -4312,6 +4360,46 @@
         "1 Pulse Cleaning Sponge 150x100x70"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/sahara-mist-combo-330x33/",
+      "name": "Sahara Mist Combo 330x330mm",
+      "code": "Q01598",
+      "price": {
+        "current": 5999.99,
+        "regular": 7999.99,
+        "sale": 5999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Porcelain Tile Combos package. Review the product image and specifications for the items included in this combo.",
+      "included_items": [
+        "50.76 Square meters (47 boxes) of 330×330 ceramic floor tiles",
+        "15 x Powergripp Ceramic Adhesive 24hr",
+        "2 x Alco Light Grey Grout 5kg",
+        "2 x Alco Bond 5lt",
+        "2 x Pulse Spacers Black 5mm"
+      ],
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01598.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01598.webp",
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01598-1.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1070 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "111 × 95 × 81 cm"
+        }
+      ],
+      "id": "sahara-mist-combo-330x33",
+      "categories": [
+        "porcelain-tile-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/sahara-nero-porcelain-combo-600x600mm/",
