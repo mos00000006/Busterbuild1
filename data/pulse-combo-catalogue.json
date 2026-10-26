@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T07:51:27.674936+00:00",
+  "generated_at": "2026-10-26T08:10:41.827144+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 57,
+      "count": 56,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -40,7 +40,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
@@ -219,10 +218,9 @@
     "bath-combos": {
       "title": "Bath Combos",
       "group": "Bathroom Combos",
-      "count": 5,
+      "count": 4,
       "product_ids": [
         "6-pc-bathroom-set-square-black-and-bamboo",
-        "bathroom-solution-combo",
         "chloe-bath-and-freestanding-mixer-combo",
         "cordelia-bath-and-freestanding-mixer-combo",
         "corner-shower-caddy"
@@ -231,7 +229,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 144,
+      "count": 142,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -258,7 +256,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
@@ -373,7 +370,6 @@
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo",
         "6-pc-bathroom-set-square-black-and-bamboo",
-        "bathroom-solution-combo",
         "chloe-bath-and-freestanding-mixer-combo",
         "cordelia-bath-and-freestanding-mixer-combo",
         "corner-shower-caddy"
@@ -415,7 +411,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 57,
+      "count": 56,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -442,7 +438,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-porcelainelain-600x600-combo",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
