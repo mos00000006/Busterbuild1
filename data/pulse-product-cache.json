@@ -28360,5 +28360,51 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/roxy-marengo-mosaic-282mmx325mmx6mm/": {
+    "id": "roxy-marengo-mosaic-282mmx325mmx6mm",
+    "source_url": "https://pulsetiles.co.za/product/roxy-marengo-mosaic-282mmx325mmx6mm/",
+    "name": "Roxy Marengo Mosaic 282X325X6mm",
+    "code": "C01079",
+    "price": {
+      "current": 129.99,
+      "regular": 129.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 282mm x 325mm. Sold: Per Sheet. Square Meters Per Unit: 0.09165 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01079.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "28.2 × 32.5 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "282mm x 325mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "282 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "325 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.09165 m2"
+      }
+    ],
+    "categories": []
   }
 }
