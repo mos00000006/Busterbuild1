@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 633,
+  "count": 634,
   "products": [
     {
       "type": "tile",
@@ -2661,6 +2661,13 @@
       "name": "Round Aluminium Trim – Matt Black 10mm",
       "file": "qr/T00461.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=T00461"
+    },
+    {
+      "type": "tile",
+      "code": "C01079",
+      "name": "Roxy Marengo Mosaic 282X325X6mm",
+      "file": "qr/C01079.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=C01079"
     },
     {
       "type": "tile",
