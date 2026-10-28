@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T07:58:19.882762+00:00",
+  "generated_at": "2026-10-28T08:39:23.145070+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 84,
+      "count": 82,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -24,7 +24,6 @@
         "colorado-graffito-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -49,7 +48,6 @@
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
-        "larica-carrara-wall-tile-300x600mm",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
         "luster-azul-sugar-glaze-600x600",
         "luster-carrara-sugar-glaze-matt-600x600mm",
@@ -98,7 +96,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 106,
+      "count": 105,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -193,7 +191,6 @@
         "terrazo-griss-matt-600x1200",
         "thunder-grey-glazed-porcelain-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
-        "toledo-polished-porcelain-1st-grade-600x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
         "turkish-rosa-high-gloss-glazed-polished-porcelain-600x1200mm",
         "tuscany-blue-glossy-glazed-porcelain-600x1200mm",
@@ -236,10 +233,11 @@
     },
     "mosaics": {
       "title": "Mosaic Tiles",
-      "count": 61,
+      "count": 62,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
+        "bahama-sky-glass-mosiac-48x48x3-5mm",
         "capulet-ceramic-mosaic-295x295mm",
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
@@ -360,7 +358,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 174,
+      "count": 173,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -522,7 +520,6 @@
         "terrazo-griss-matt-600x1200",
         "thunder-grey-glazed-porcelain-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
-        "toledo-polished-porcelain-1st-grade-600x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
         "turkish-rosa-high-gloss-glazed-polished-porcelain-600x1200mm",
         "tuscany-blue-glossy-glazed-porcelain-600x1200mm",
@@ -540,7 +537,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 133,
+      "count": 130,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -576,7 +573,6 @@
         "dolomiti-willow-20003-matt-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -607,7 +603,6 @@
         "ivory-maxum-polished-porcelain-tile-600x600mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
-        "larica-carrara-wall-tile-300x600mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
@@ -660,7 +655,6 @@
         "terrazo-griss-glossy-600x1200",
         "terrazo-griss-matt-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
-        "toledo-polished-porcelain-1st-grade-600x600mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
@@ -679,7 +673,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 176,
+      "count": 173,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -724,7 +718,6 @@
         "dolomiti-willow-20003-matt-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -760,7 +753,6 @@
         "ivory-maxum-polished-porcelain-tile-600x600mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
-        "larica-carrara-wall-tile-300x600mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "liverpool-stone-glazed-polished-porcelain-800x1600",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
@@ -842,7 +834,6 @@
         "terrazo-griss-matt-600x1200",
         "thunder-grey-glazed-porcelain-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
-        "toledo-polished-porcelain-1st-grade-600x600mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
@@ -861,14 +852,13 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 40,
+      "count": 39,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
         "braga-antislip-floor-tile-450x450",
         "colorado-graffito-elevation-tile-300x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -1141,10 +1131,9 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 6,
+      "count": 5,
       "product_ids": [
         "colorado-graffito-elevation-tile-300x600mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -1299,7 +1288,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 305,
+      "count": 303,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1315,7 +1304,6 @@
         "colorado-graffito-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
-        "dubois-dark-beige-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
@@ -1340,7 +1328,6 @@
         "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
-        "larica-carrara-wall-tile-300x600mm",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
         "luster-azul-sugar-glaze-600x600",
         "luster-carrara-sugar-glaze-matt-600x600mm",
@@ -1478,7 +1465,6 @@
         "terrazo-griss-matt-600x1200",
         "thunder-grey-glazed-porcelain-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
-        "toledo-polished-porcelain-1st-grade-600x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
         "turkish-rosa-high-gloss-glazed-polished-porcelain-600x1200mm",
         "tuscany-blue-glossy-glazed-porcelain-600x1200mm",
@@ -1507,6 +1493,7 @@
         "teakwood-cladding-60x15mm",
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
+        "bahama-sky-glass-mosiac-48x48x3-5mm",
         "capulet-ceramic-mosaic-295x295mm",
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
@@ -1645,10 +1632,11 @@
     },
     "mosaic-tiles": {
       "title": "Mosaic Tiles",
-      "count": 61,
+      "count": 62,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
+        "bahama-sky-glass-mosiac-48x48x3-5mm",
         "capulet-ceramic-mosaic-295x295mm",
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
@@ -4619,6 +4607,54 @@
       "categories": [
         "ceramic-tiles",
         "decor-tiles"
+      ]
+    },
+    {
+      "id": "bahama-sky-glass-mosiac-48x48x3-5mm",
+      "source_url": "https://pulsetiles.co.za/product/bahama-sky-glass-mosiac-48x48x3-5mm/",
+      "name": "Bahama Sky Glass Mosaic 300X300X4mm",
+      "code": "C01037",
+      "price": {
+        "current": 99.99,
+        "regular": 99.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 480mm x 480mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01037.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.55 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 30 × 1 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "480mm x 480mm"
+        },
+        {
+          "name": "Tile Length",
+          "value": "480 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "480 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "Per Sheet"
+        },
+        {
+          "name": "Square Meters Per Unit",
+          "value": "0.09 m2"
+        }
+      ],
+      "categories": [
+        "mosaics"
       ]
     },
     {

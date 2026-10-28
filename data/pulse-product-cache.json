@@ -28406,5 +28406,51 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/bahama-sky-glass-mosiac-48x48x3-5mm/": {
+    "id": "bahama-sky-glass-mosiac-48x48x3-5mm",
+    "source_url": "https://pulsetiles.co.za/product/bahama-sky-glass-mosiac-48x48x3-5mm/",
+    "name": "Bahama Sky Glass Mosaic 300X300X4mm",
+    "code": "C01037",
+    "price": {
+      "current": 99.99,
+      "regular": 99.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 480mm x 480mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01037.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 30 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "480mm x 480mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "480 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "480 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.09 m2"
+      }
+    ],
+    "categories": []
   }
 }
