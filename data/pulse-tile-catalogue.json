@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:39:23.145070+00:00",
+  "generated_at": "2026-10-29T08:35:26.499900+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -96,7 +96,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 105,
+      "count": 104,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -113,7 +113,6 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
@@ -358,7 +357,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 173,
+      "count": 172,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -382,7 +381,6 @@
         "city-magia-glazed-polished-porcelain-600x600",
         "clara-light-beige-matt-woodlook-tile-200x1200",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
@@ -537,7 +535,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 130,
+      "count": 129,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -555,7 +553,6 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "colorado-graffito-elevation-tile-300x600mm",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
@@ -673,7 +670,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 173,
+      "count": 172,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -699,7 +696,6 @@
         "city-magia-glazed-polished-porcelain-600x600",
         "clara-light-beige-matt-woodlook-tile-200x1200",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "colorado-graffito-elevation-tile-300x600mm",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
@@ -897,7 +893,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 100,
+      "count": 99,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -919,7 +915,6 @@
         "ciena-prada-glazed-porcelain-1200x1800mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
@@ -1021,7 +1016,7 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 70,
+      "count": 69,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1033,7 +1028,6 @@
         "avery-black-glazed-polished-porcelain-600x1200",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
@@ -1288,7 +1282,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 303,
+      "count": 302,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1387,7 +1381,6 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
-        "classic-jakarta-white-glossy-glazed-porcelain-600x1200",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
