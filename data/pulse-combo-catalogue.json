@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T09:04:59.499324+00:00",
+  "generated_at": "2026-10-31T08:57:38.714698+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -185,7 +185,7 @@
     "toilet-combos": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 13,
+      "count": 12,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -197,7 +197,6 @@
         "toilet-basin-pedestal-caddy",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
-        "toilet-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo"
       ]
@@ -229,7 +228,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 142,
+      "count": 141,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -360,7 +359,6 @@
         "toilet-basin-pedestal-caddy",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
-        "toilet-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo",
         "tivona-tabby-basin-and-mixer-combo",
@@ -378,7 +376,7 @@
     "toilet-combo-deals": {
       "title": "Toilet Combos",
       "group": "Bathroom Combos",
-      "count": 13,
+      "count": 12,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -390,7 +388,6 @@
         "toilet-basin-pedestal-caddy",
         "toilet-combo-3",
         "top-flush-toilet-basin-pedestal-cleaner-combo",
-        "toilet-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo"
       ]
