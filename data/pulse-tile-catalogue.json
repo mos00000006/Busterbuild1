@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:32:20.588477+00:00",
+  "generated_at": "2026-11-01T09:22:02.890023+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 82,
+      "count": 81,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -58,6 +58,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "mali-nero-wall-tile-new-250x400",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -69,7 +70,6 @@
         "morocco-grigio-matt-600x600mm",
         "morocco-gris-matt-600x600mm",
         "morocco-verde-matt-600x600mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "otis-silver-24170-decor-tile-300x600mm-2",
@@ -84,7 +84,6 @@
         "sahara-grigio-ceramic-330x330mm",
         "sahara-mist-ceramic-330x330mm",
         "sahara-stone-ceramic-330x330mm",
-        "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
         "slide-nero-dark-wall-tile-300x600mm",
@@ -96,7 +95,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 104,
+      "count": 103,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -163,7 +162,6 @@
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
@@ -221,9 +219,8 @@
     },
     "natural-stone-cladding": {
       "title": "Natural Stone Cladding",
-      "count": 5,
+      "count": 4,
       "product_ids": [
-        "cladding-black-slate-60x150mm",
         "cladding-desert-sand-60x150mm",
         "cladding-silver-shine-60x150mm",
         "copper-cladding-60x15mm",
@@ -232,7 +229,7 @@
     },
     "mosaics": {
       "title": "Mosaic Tiles",
-      "count": 62,
+      "count": 61,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -241,7 +238,6 @@
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
         "checkered-porcelain-ceramic-mosaic-300x300x4mm",
-        "cosmic-alu-glass-mosaic-polished-aluminium-style-25x25x3-8mm",
         "cosmic-beige-glass-mosaic-300mmx300mmx4mm",
         "cosmic-bronze-glass-mosaic-polished-bronze-style-25x25x3-8mm",
         "cosmic-crema-glass-mosaic-300mmx300mmx4mm",
@@ -346,18 +342,16 @@
     },
     "laminate-flooring": {
       "title": "Laminate Flooring",
-      "count": 5,
+      "count": 3,
       "product_ids": [
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
-        "laminate-flooring-castello-oak-colour-1220x200x7mm",
-        "laminate-flooring-soft-oak-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 172,
+      "count": 169,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -473,11 +467,9 @@
         "new-york-grey-glazed-glossy-porcelain-600x600mm",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "palazzo-matt-glazed-porcelain-600x1200mm",
@@ -500,7 +492,6 @@
         "sahara-mist-ceramic-330x330mm",
         "sahara-nero-glazed-polished-porcelain-600x600mm",
         "sahara-stone-ceramic-330x330mm",
-        "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
@@ -602,6 +593,7 @@
         "kilavi-grey-wall-tile-200x300mm-2",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
+        "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
@@ -617,7 +609,6 @@
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
@@ -670,7 +661,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 172,
+      "count": 171,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -761,6 +752,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
@@ -782,11 +774,9 @@
         "new-york-grey-glazed-glossy-porcelain-600x600mm",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
@@ -848,7 +838,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 39,
+      "count": 38,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -883,7 +873,6 @@
         "sahara-grigio-ceramic-330x330mm",
         "sahara-mist-ceramic-330x330mm",
         "sahara-stone-ceramic-330x330mm",
-        "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
@@ -893,7 +882,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 99,
+      "count": 98,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -957,7 +946,6 @@
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
         "onyx-birch-glazed-porcelain-glossy1200x1800mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "pantagonia-high-gloss-polished-porcelain-1200x3200mm",
@@ -998,7 +986,7 @@
     },
     "wood-look-tiles": {
       "title": "Woodlook Tiles",
-      "count": 12,
+      "count": 11,
       "product_ids": [
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
@@ -1009,14 +997,13 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "quro-beige-woodlook-floor-tile-200x900mm"
       ]
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 69,
+      "count": 68,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1057,7 +1044,6 @@
         "mystic-mint-polished-glazed-porcelian-600x1200",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
@@ -1282,7 +1268,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 302,
+      "count": 296,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1332,6 +1318,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "mali-nero-wall-tile-new-250x400",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -1343,7 +1330,6 @@
         "morocco-grigio-matt-600x600mm",
         "morocco-gris-matt-600x600mm",
         "morocco-verde-matt-600x600mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "otis-silver-24170-decor-tile-300x600mm-2",
@@ -1358,7 +1344,6 @@
         "sahara-grigio-ceramic-330x330mm",
         "sahara-mist-ceramic-330x330mm",
         "sahara-stone-ceramic-330x330mm",
-        "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
         "slide-nero-dark-wall-tile-300x600mm",
@@ -1431,7 +1416,6 @@
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
-        "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
@@ -1479,7 +1463,6 @@
         "dolomiti-terraz-crema-matt-600x600mm",
         "dolomiti-terraz-gris-floor-tile-600x600",
         "dolomiti-willow-20003-matt-600x600mm",
-        "cladding-black-slate-60x150mm",
         "cladding-desert-sand-60x150mm",
         "cladding-silver-shine-60x150mm",
         "copper-cladding-60x15mm",
@@ -1491,7 +1474,6 @@
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
         "checkered-porcelain-ceramic-mosaic-300x300x4mm",
-        "cosmic-alu-glass-mosaic-polished-aluminium-style-25x25x3-8mm",
         "cosmic-beige-glass-mosaic-300mmx300mmx4mm",
         "cosmic-bronze-glass-mosaic-polished-bronze-style-25x25x3-8mm",
         "cosmic-crema-glass-mosaic-300mmx300mmx4mm",
@@ -1582,15 +1564,13 @@
         "ziron-decor-tile-300x600mm",
         "zodiac-silver-24001-s-decor-wall-tile-300x600mm",
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
-        "laminate-flooring-castello-oak-colour-1220x200x7mm",
-        "laminate-flooring-soft-oak-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
     },
     "woodlook-tiles": {
       "title": "Woodlook Tiles",
-      "count": 12,
+      "count": 11,
       "product_ids": [
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
@@ -1601,7 +1581,6 @@
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
-        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "quro-beige-woodlook-floor-tile-200x900mm"
       ]
@@ -1625,7 +1604,7 @@
     },
     "mosaic-tiles": {
       "title": "Mosaic Tiles",
-      "count": 62,
+      "count": 61,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -1634,7 +1613,6 @@
         "casa-bronze-mosaic-mix-bronze-tone-blend-300x300x8mm",
         "casa-silver-mosaic-mix-silver-tone-blend-300x300x8mm",
         "checkered-porcelain-ceramic-mosaic-300x300x4mm",
-        "cosmic-alu-glass-mosaic-polished-aluminium-style-25x25x3-8mm",
         "cosmic-beige-glass-mosaic-300mmx300mmx4mm",
         "cosmic-bronze-glass-mosaic-polished-bronze-style-25x25x3-8mm",
         "cosmic-crema-glass-mosaic-300mmx300mmx4mm",
@@ -1693,9 +1671,8 @@
     },
     "natural-cladding": {
       "title": "Natural Stone Cladding",
-      "count": 5,
+      "count": 4,
       "product_ids": [
-        "cladding-black-slate-60x150mm",
         "cladding-desert-sand-60x150mm",
         "cladding-silver-shine-60x150mm",
         "copper-cladding-60x15mm",
