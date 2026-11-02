@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T10:23:09.777894+00:00",
+  "generated_at": "2026-11-02T10:55:21.483295+00:00",
   "updater_version": "2026-10-06-v1-pulse-kitchens",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -12,12 +12,13 @@
     "kitchen-sinks": {
       "title": "Kitchen Sinks",
       "group": "sinks",
-      "count": 5,
+      "count": 6,
       "product_ids": [
         "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
         "alco-stainless-steel-sink-mixer-combo",
         "double-bowl-drop-in-stainless-steel-sink-1200x480",
         "drop-in-single-bowl-stainless-steel-sink-900x450",
+        "stainless-steel-sink-combo",
         "sit-on-single-bowl-stainless-steel-sink-900x450"
       ]
     },
@@ -100,12 +101,13 @@
   "groups": {
     "sinks": {
       "title": "Kitchen Sinks",
-      "count": 5,
+      "count": 6,
       "product_ids": [
         "alco-sink-stainless-steel-sit-on-single-bowl-900x450",
         "alco-stainless-steel-sink-mixer-combo",
         "double-bowl-drop-in-stainless-steel-sink-1200x480",
         "drop-in-single-bowl-stainless-steel-sink-900x450",
+        "stainless-steel-sink-combo",
         "sit-on-single-bowl-stainless-steel-sink-900x450"
       ]
     },
@@ -2170,6 +2172,37 @@
       ],
       "kitchen_groups": [
         "taps"
+      ]
+    },
+    {
+      "id": "stainless-steel-sink-combo",
+      "source_url": "https://pulsetiles.co.za/product/stainless-steel-sink-combo/",
+      "name": "Stainless Steel Sink Combo",
+      "code": "Q00772",
+      "price": {
+        "current": 1499.99,
+        "regular": 1499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 120 × 50 × 19 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q00772.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "120 × 50 × 19 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sinks"
+      ],
+      "kitchen_groups": [
+        "sinks"
       ]
     },
     {
