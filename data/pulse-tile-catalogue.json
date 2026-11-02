@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T09:22:02.890023+00:00",
+  "generated_at": "2026-11-02T09:36:23.989301+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -342,9 +342,10 @@
     },
     "laminate-flooring": {
       "title": "Laminate Flooring",
-      "count": 3,
+      "count": 4,
       "product_ids": [
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
+        "laminate-flooring-soft-oak-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
@@ -661,7 +662,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 171,
+      "count": 172,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -774,6 +775,7 @@
         "new-york-grey-glazed-glossy-porcelain-600x600mm",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
+        "nodic-pine-918-woodlook-floor-tile-200x600mm",
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
         "ocean-marble-first-grade-polished-tile-600x600",
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
@@ -838,7 +840,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 38,
+      "count": 39,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "base-wall-tile-300x600mm",
@@ -873,6 +875,7 @@
         "sahara-grigio-ceramic-330x330mm",
         "sahara-mist-ceramic-330x330mm",
         "sahara-stone-ceramic-330x330mm",
+        "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
@@ -1268,7 +1271,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 296,
+      "count": 297,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1564,6 +1567,7 @@
         "ziron-decor-tile-300x600mm",
         "zodiac-silver-24001-s-decor-wall-tile-300x600mm",
         "laminate-flooring-autumn-ash-colour-1220x200x7mm",
+        "laminate-flooring-soft-oak-colour-1220x200x7mm",
         "laminate-flooring-walnut-colour-1220x200x7mm",
         "laminate-flooring-epe-underlay-film-roll-18-59m2"
       ]
