@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T09:49:09.191736+00:00",
+  "generated_at": "2026-11-02T10:02:33.118543+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 54,
+      "count": 55,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -39,6 +39,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
@@ -156,10 +157,11 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 15,
+      "count": 17,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
+        "complete-shower-solution-combo-2",
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
@@ -170,6 +172,7 @@
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
         "zen-shower-combo"
@@ -221,7 +224,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 134,
+      "count": 137,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -247,6 +250,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
@@ -322,6 +326,7 @@
         "montana-blanco-300x600-combo",
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
+        "complete-shower-solution-combo-2",
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
@@ -332,6 +337,7 @@
         "shower-screen-black-combo",
         "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
         "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
+        "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
         "zen-shower-combo",
@@ -394,7 +400,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 54,
+      "count": 55,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -420,6 +426,7 @@
         "havana-white-glazed-polished-porcelain-600x1200-combo",
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
+        "ivory-nano-vitrified-combo-600x600",
         "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
