@@ -17629,5 +17629,460 @@
     ],
     "categories": [],
     "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/buffer-basin-combo/": {
+    "id": "buffer-basin-combo",
+    "source_url": "https://pulsetiles.co.za/product/buffer-basin-combo/",
+    "name": "Buffer Basin Combo",
+    "code": "Q01536",
+    "price": {
+      "current": 699.99,
+      "regular": 999.99,
+      "sale": 699.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 44 × 44 × 18 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01536.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "9.20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 44 × 18 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/shower-square-and-rail-set-combo/": {
+    "id": "shower-square-and-rail-set-combo",
+    "source_url": "https://pulsetiles.co.za/product/shower-square-and-rail-set-combo/",
+    "name": "Shower Square and Rail Set Combo",
+    "code": "Q01478",
+    "price": {
+      "current": 2999.99,
+      "regular": 2999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Square and Rail Set Combo. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01478.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "33 kg"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/iceburg-wall-combo-white/": {
+    "id": "iceburg-wall-combo-white",
+    "source_url": "https://pulsetiles.co.za/product/iceburg-wall-combo-white/",
+    "name": "Iceburg Wall Combo – White",
+    "code": "Q01380",
+    "price": {
+      "current": 1799.99,
+      "regular": 1799.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 110 × 104 × 73 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01380.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "44 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "110 × 104 × 73 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/aquavit-freestanding-bath-ella-white-1700x800x580mm/": {
+    "id": "aquavit-freestanding-bath-ella-white-1700x800x580mm",
+    "source_url": "https://pulsetiles.co.za/product/aquavit-freestanding-bath-ella-white-1700x800x580mm/",
+    "name": "Aquavit Freestanding Bath – Ella White 1700x800x580mm",
+    "code": "B04261",
+    "price": {
+      "current": 14999.99,
+      "regular": 14999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 174 × 74 × 74 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04261.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "45 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "174 × 74 × 74 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/free-standing-bath-aquavit-gianna-grey-1700x800x580mm/": {
+    "id": "free-standing-bath-aquavit-gianna-grey-1700x800x580mm",
+    "source_url": "https://pulsetiles.co.za/product/free-standing-bath-aquavit-gianna-grey-1700x800x580mm/",
+    "name": "Free Standing Bath Aquavit Gianna Grey 1700x800x580mm",
+    "code": "B04266",
+    "price": {
+      "current": 15999.99,
+      "regular": 15999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 172 × 83 × 63 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04266.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "36.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "172 × 83 × 63 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/toilet-close-couple-aqua-white-with-seat/": {
+    "id": "toilet-close-couple-aqua-white-with-seat",
+    "source_url": "https://pulsetiles.co.za/product/toilet-close-couple-aqua-white-with-seat/",
+    "name": "Toilet Close Couple – Aqua White With Seat",
+    "code": "B04424",
+    "price": {
+      "current": 1599.99,
+      "regular": 1599.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 67 × 47 × 70 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04424.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "42 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "67 × 47 × 70 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-pan-connector-flexible-110mm/": {
+    "id": "alco-pan-connector-flexible-110mm",
+    "source_url": "https://pulsetiles.co.za/product/alco-pan-connector-flexible-110mm/",
+    "name": "Alco Pan Connector Flexible 110mm",
+    "code": "B04120",
+    "price": {
+      "current": 149.99,
+      "regular": 149.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 35 × 25 × 20 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04120.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "35 × 25 × 20 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/stand-up-mirror-360x1460mm/": {
+    "id": "stand-up-mirror-360x1460mm",
+    "source_url": "https://pulsetiles.co.za/product/stand-up-mirror-360x1460mm/",
+    "name": "Stand Up Mirror 360x1460mm",
+    "code": "B04707",
+    "price": {
+      "current": 499.99,
+      "regular": 499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 16 × 2 × 59 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04707.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "3 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "16 × 2 × 59 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/bathroom-mat-340x610mm/": {
+    "id": "bathroom-mat-340x610mm",
+    "source_url": "https://pulsetiles.co.za/product/bathroom-mat-340x610mm/",
+    "name": "Bathroom Mat 340x610mm",
+    "code": "I00915",
+    "price": {
+      "current": 29.99,
+      "regular": 29.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 35 × 66 × 2 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00915-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "35 × 66 × 2 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-corner-shower-caddy-black/": {
+    "id": "alco-corner-shower-caddy-black",
+    "source_url": "https://pulsetiles.co.za/product/alco-corner-shower-caddy-black/",
+    "name": "Alco Corner Shower Caddy -Black",
+    "code": "B04429",
+    "price": {
+      "current": 149.99,
+      "regular": 149.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 26 × 26 × 12 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04429.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "26 × 26 × 12 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/backscrubber-with-handle/": {
+    "id": "backscrubber-with-handle",
+    "source_url": "https://pulsetiles.co.za/product/backscrubber-with-handle/",
+    "name": "Backscrubber With Handle",
+    "code": "I00972",
+    "price": {
+      "current": 49.99,
+      "regular": 49.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 8 × 1 × 2.5 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00972-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "8 × 1 × 2.5 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-square-soap-basket-black/": {
+    "id": "alco-square-soap-basket-black",
+    "source_url": "https://pulsetiles.co.za/product/alco-square-soap-basket-black/",
+    "name": "Alco Square Soap Basket-Black",
+    "code": "B04430",
+    "price": {
+      "current": 89.99,
+      "regular": 89.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 19 × 14 × 7 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04430.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "19 × 14 × 7 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/zen-square-corner-entry-shower-900x900x1800mm-black-line-4mm/": {
+    "id": "zen-square-corner-entry-shower-900x900x1800mm-black-line-4mm",
+    "source_url": "https://pulsetiles.co.za/product/zen-square-corner-entry-shower-900x900x1800mm-black-line-4mm/",
+    "name": "Zen Square Corner Entry Shower – Black Line 900x900x1800x4mm",
+    "code": "B04040",
+    "price": {
+      "current": 2499.99,
+      "regular": 2499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 180 × 46 × 7 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04040.png",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "32.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "180 × 46 × 7 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/libra-showerdoor-pivot-and-clear-glass-panel-white-frame-900x900mm/": {
+    "id": "libra-showerdoor-pivot-and-clear-glass-panel-white-frame-900x900mm",
+    "source_url": "https://pulsetiles.co.za/product/libra-showerdoor-pivot-and-clear-glass-panel-white-frame-900x900mm/",
+    "name": "Libra Showerdoor Pivot And Clear Glass Panel White Frame 900X900mm",
+    "code": "B00335",
+    "price": {
+      "current": 3999.99,
+      "regular": 3999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 194 × 89 × 8 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/B00335.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "44 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "194 × 89 × 8 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-saturn-square-corner-entry-clear-glass-900x900x1850mm/": {
+    "id": "alco-saturn-square-corner-entry-clear-glass-900x900x1850mm",
+    "source_url": "https://pulsetiles.co.za/product/alco-saturn-square-corner-entry-clear-glass-900x900x1850mm/",
+    "name": "Alco Saturn Square Corner Entry Clear Glass 900X900X1850mm",
+    "code": "B04818",
+    "price": {
+      "current": 1599.99,
+      "regular": 1699.99,
+      "sale": 1599.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 193 × 53 × 12 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04818.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "44 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "193 × 53 × 12 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/onyx-vista-shower-screen-black-glass-1000x1950x8mm/": {
+    "id": "onyx-vista-shower-screen-black-glass-1000x1950x8mm",
+    "source_url": "https://pulsetiles.co.za/product/onyx-vista-shower-screen-black-glass-1000x1950x8mm/",
+    "name": "Onyx Vista Shower Screen – Black Glass 1000x1950x8mm",
+    "code": "B04607",
+    "price": {
+      "current": 3599.99,
+      "regular": 3599.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 102 × 203 × 4 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04606.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "30 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "102 × 203 × 4 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-shower-trap-pvc-square-grid/": {
+    "id": "alco-shower-trap-pvc-square-grid",
+    "source_url": "https://pulsetiles.co.za/product/alco-shower-trap-pvc-square-grid/",
+    "name": "Alco Shower Trap Pvc Square Grid",
+    "code": "B04128",
+    "price": {
+      "current": 119.99,
+      "regular": 119.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 25 × 24 × 12 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04128.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "25 × 24 × 12 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
   }
 }
