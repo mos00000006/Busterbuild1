@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 635,
+  "count": 636,
   "products": [
     {
       "type": "tile",
@@ -4292,6 +4292,13 @@
       "name": "Spirit Bianco 600×1200 Matt Glazed Tile Combo",
       "file": "qr/Q01413.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01413"
+    },
+    {
+      "type": "combo",
+      "code": "Q01568",
+      "name": "Square Shower Combo",
+      "file": "qr/Q01568.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01568"
     },
     {
       "type": "combo",
