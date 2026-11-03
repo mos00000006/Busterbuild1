@@ -5293,5 +5293,36 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/square-shower-combo-4/": {
+    "id": "square-shower-combo-4",
+    "source_url": "https://pulsetiles.co.za/product/square-shower-combo-4/",
+    "name": "Square Shower Combo",
+    "code": "Q01568",
+    "price": {
+      "current": 1799.99,
+      "regular": 1899.99,
+      "sale": 1799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "42 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "191 × 54 × 17 cm"
+      }
+    ],
+    "categories": []
   }
 }

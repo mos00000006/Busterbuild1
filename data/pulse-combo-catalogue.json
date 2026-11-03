@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T10:02:33.118543+00:00",
+  "generated_at": "2026-11-03T10:09:00.621707+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -157,7 +157,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "Bathroom Combos",
-      "count": 17,
+      "count": 18,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -175,6 +175,7 @@
         "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
+        "square-shower-combo-4",
         "zen-shower-combo"
       ]
     },
@@ -224,7 +225,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 137,
+      "count": 138,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -340,6 +341,7 @@
         "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
+        "square-shower-combo-4",
         "zen-shower-combo",
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -5380,6 +5382,38 @@
         "Alco Spacers 3mm – 100pcs/Bag"
       ],
       "detail_parser_version": "2026-10-01-combo-includes-v3"
+    },
+    {
+      "source_url": "https://pulsetiles.co.za/product/square-shower-combo-4/",
+      "name": "Square Shower Combo",
+      "code": "Q01568",
+      "price": {
+        "current": 1799.99,
+        "regular": 1899.99,
+        "sale": 1799.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+      "detail_parser_version": "2026-10-01-combo-includes-v3",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp",
+      "images": [
+        "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp"
+      ],
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "42 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "191 × 54 × 17 cm"
+        }
+      ],
+      "id": "square-shower-combo-4",
+      "categories": [
+        "shower-combos"
+      ]
     },
     {
       "source_url": "https://pulsetiles.co.za/product/staturio-gold-porcelain-combo-600x1200mm/",
