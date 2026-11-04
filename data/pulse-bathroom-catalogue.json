@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T10:08:31.759134+00:00",
+  "generated_at": "2026-11-04T10:00:21.408498+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -45,7 +45,7 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "showers",
-      "count": 17,
+      "count": 18,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -63,6 +63,7 @@
         "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
+        "square-shower-combo-4",
         "zen-shower-combo"
       ]
     },
@@ -1115,7 +1116,7 @@
     },
     "showers": {
       "title": "Showers",
-      "count": 144,
+      "count": 145,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -1133,6 +1134,7 @@
         "shower-screen-plus-shower-head-and-arm-combo",
         "shower-screen-with-shower-head-and-arm-combo",
         "shower-square-and-rail-set-combo",
+        "square-shower-combo-4",
         "zen-shower-combo",
         "alco-saturn-square-corner-entry-clear-glass-900x900x1850mm",
         "corner-entry-shower-door-square-grey-glass-900x900x1800mm",
@@ -20479,6 +20481,37 @@
       ],
       "categories": [
         "shower-head-arms"
+      ],
+      "bathroom_groups": [
+        "showers"
+      ]
+    },
+    {
+      "id": "square-shower-combo-4",
+      "source_url": "https://pulsetiles.co.za/product/square-shower-combo-4/",
+      "name": "Square Shower Combo",
+      "code": "Q01568",
+      "price": {
+        "current": 1799.99,
+        "regular": 1899.99,
+        "sale": 1799.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 191 × 54 × 17 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "42 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "191 × 54 × 17 cm"
+        }
+      ],
+      "categories": [
+        "shower-combos"
       ],
       "bathroom_groups": [
         "showers"
