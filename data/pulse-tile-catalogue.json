@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T09:39:11.099736+00:00",
+  "generated_at": "2026-11-04T09:19:25.703039+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,10 +8,11 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 83,
+      "count": 84,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
+        "baltico-antislip-floor-tile-45x45",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
@@ -297,7 +298,7 @@
     },
     "decor-tiles": {
       "title": "Decor Tiles",
-      "count": 40,
+      "count": 39,
       "product_ids": [
         "aqua-leaves-decor-tile-300x600mm",
         "aqua-white-leaves-decor-tile-300x600mm",
@@ -333,7 +334,6 @@
         "rangolii-white-decor-tile-300x600mm",
         "reo-bianco-24044-s-decor-wall-tile-300x600mm",
         "reo-nero-24043-s-decor-wall-tile-300x600mm",
-        "vector-white-decor-tile-300x600mm",
         "veliver-decor-tile-300x600mm",
         "white-decor-tile-300x600mm",
         "white-decor-tile-300x600mm-2",
@@ -354,7 +354,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 168,
+      "count": 169,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -366,6 +366,7 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
+        "baltico-antislip-floor-tile-45x45",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "braga-antislip-floor-tile-450x450",
@@ -835,9 +836,10 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 39,
+      "count": 40,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
+        "baltico-antislip-floor-tile-45x45",
         "base-wall-tile-300x600mm",
         "braga-antislip-floor-tile-450x450",
         "colorado-graffito-elevation-tile-300x600mm",
@@ -1093,8 +1095,9 @@
     },
     "slip-resistant-tiles": {
       "title": "Slip Resistant Tiles",
-      "count": 11,
+      "count": 12,
       "product_ids": [
+        "baltico-antislip-floor-tile-45x45",
         "braga-antislip-floor-tile-450x450",
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "isla-antislip-floor-tile-45x45",
@@ -1271,6 +1274,7 @@
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
+        "baltico-antislip-floor-tile-45x45",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
@@ -1557,7 +1561,6 @@
         "net-white-decor-tile-300x600mm",
         "net-white-decor-tile-300x600mm-2",
         "rangolii-white-decor-tile-300x600mm",
-        "vector-white-decor-tile-300x600mm",
         "veliver-decor-tile-300x600mm",
         "white-decor-tile-300x600mm",
         "white-decor-tile-300x600mm-2",
@@ -4727,6 +4730,109 @@
         "large-format-tiles",
         "marble-look-tiles",
         "porcelain-tiles"
+      ]
+    },
+    {
+      "id": "baltico-antislip-floor-tile-45x45",
+      "source_url": "https://pulsetiles.co.za/product/baltico-antislip-floor-tile-45x45/",
+      "name": "Baltico Antislip Floor Tile 450X450mm",
+      "code": "A18077",
+      "price": {
+        "current": 199.99,
+        "regular": 199.99,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 450mm x 450mm. Quantity Per Box: 11 Tiles Per Box. Square Meters Per Box: 2.25 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A18077.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "30.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "45 × 45 × 5.5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "450mm x 450mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "11 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "2.25 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "450 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "450 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "5 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        },
+        {
+          "name": "Weight",
+          "value": "20 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 28 × 8 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "5.1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "44 × 27 × 10 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "5.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 19 × 14 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "14 × 6 × 16 cm"
+        },
+        {
+          "name": "Dimensions",
+          "value": "12 × 8 × 2 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "0.01 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "14 × 10 × 7 cm"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-outdoor-tiles",
+        "ceramic-tiles",
+        "slip-resistant-tiles"
       ]
     },
     {
