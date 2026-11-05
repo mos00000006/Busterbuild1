@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T09:19:25.703039+00:00",
+  "generated_at": "2026-11-05T09:35:14.426705+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 84,
+      "count": 83,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -89,7 +89,6 @@
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
-        "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "topaz-smock-wall-tile-sugar-glaze-300x600mm",
@@ -98,7 +97,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 101,
+      "count": 100,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -178,7 +177,6 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
-        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -354,7 +352,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 169,
+      "count": 168,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -499,7 +497,6 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
-        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "sisam-blue-polished-porcelain-600x600",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
@@ -529,7 +526,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 126,
+      "count": 124,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -623,8 +620,6 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
-        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
-        "slide-nero-dark-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
         "statuario-gold-matt-glazed-porcelain-600x1200mm",
@@ -661,7 +656,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 169,
+      "count": 167,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -794,9 +789,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
-        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "sisam-blue-polished-porcelain-600x600",
-        "slide-nero-dark-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -836,7 +829,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 40,
+      "count": 39,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "baltico-antislip-floor-tile-45x45",
@@ -874,7 +867,6 @@
         "sahara-stone-ceramic-330x330mm",
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
-        "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2"
@@ -1270,7 +1262,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 299,
+      "count": 297,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1351,7 +1343,6 @@
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
-        "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "topaz-smock-wall-tile-sugar-glaze-300x600mm",
@@ -1434,7 +1425,6 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
-        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
