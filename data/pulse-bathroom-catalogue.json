@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T10:00:21.408498+00:00",
+  "generated_at": "2026-11-05T09:57:59.857969+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -643,7 +643,7 @@
     "shower-screens": {
       "title": "Shower Screens",
       "group": "showers",
-      "count": 21,
+      "count": 20,
       "product_ids": [
         "aqua-sheild-shower-screen-1200x2000x6mm",
         "aqua-sheild-shower-screen-black-design-900x2000x6mm-black-design",
@@ -663,7 +663,6 @@
         "onyx-vista-shower-screen-grey-glass-1200x2000x8mm",
         "onyx-vista-shower-screen-grey-glass-900x2000x8mm",
         "onyx-vista-shower-screen-grey-glass-black-finish-900x2000x6mm",
-        "shower-screen-frosted-glass-with-gold-frame-1000x2000mmx6mm",
         "shower-screen-white-strip-with-black-frame-1000x2000x6mm",
         "shower-screen-white-strip-with-black-frame-1200x2000x6mm"
       ]
@@ -1116,7 +1115,7 @@
     },
     "showers": {
       "title": "Showers",
-      "count": 145,
+      "count": 144,
       "product_ids": [
         "alco-black-shower-panel-combo",
         "complete-bathroom-solution-combo",
@@ -1168,7 +1167,6 @@
         "onyx-vista-shower-screen-grey-glass-1200x2000x8mm",
         "onyx-vista-shower-screen-grey-glass-900x2000x8mm",
         "onyx-vista-shower-screen-grey-glass-black-finish-900x2000x6mm",
-        "shower-screen-frosted-glass-with-gold-frame-1000x2000mmx6mm",
         "shower-screen-white-strip-with-black-frame-1000x2000x6mm",
         "shower-screen-white-strip-with-black-frame-1200x2000x6mm",
         "alco-3-function-shower-panel-gun-grey-1200mmx220mm",
@@ -20105,37 +20103,6 @@
       ],
       "categories": [
         "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-frosted-glass-with-gold-frame-1000x2000mmx6mm",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-frosted-glass-with-gold-frame-1000x2000mmx6mm/",
-      "name": "Shower Screen – Frosted Glass With Gold Frame 1000x2000mmx6mm",
-      "code": "B04600",
-      "price": {
-        "current": 3699.99,
-        "regular": 3699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 101 × 192 × 4 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04600.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "101 × 192 × 4 cm"
-        }
-      ],
-      "categories": [
-        "shower-screens"
       ],
       "bathroom_groups": [
         "showers"
