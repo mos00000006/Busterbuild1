@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T09:54:26.928493+00:00",
+  "generated_at": "2026-11-06T09:57:06.698539+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -201,10 +201,11 @@
     "basin-mixer-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 6,
+      "count": 7,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -225,7 +226,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 138,
+      "count": 139,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -357,6 +358,7 @@
         "wall-hung-pool-black-combo",
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -389,10 +391,11 @@
     "basin-combos": {
       "title": "Basin & Mixer Combos",
       "group": "Bathroom Combos",
-      "count": 6,
+      "count": 7,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
