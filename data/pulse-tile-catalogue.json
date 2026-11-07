@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T09:30:31.579142+00:00",
+  "generated_at": "2026-11-07T08:53:52.532330+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -97,14 +97,13 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 100,
+      "count": 99,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
         "alcora-blanco-glazed-porcelain-600x600mm",
-        "alcora-blanco-matt-glazed-porcelain-600x600mm",
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
@@ -352,14 +351,13 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 168,
+      "count": 167,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
         "alcora-blanco-glazed-porcelain-600x600mm",
-        "alcora-blanco-matt-glazed-porcelain-600x600mm",
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
@@ -526,13 +524,12 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 124,
+      "count": 123,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "alcora-blanco-glazed-porcelain-600x600mm",
-        "alcora-blanco-matt-glazed-porcelain-600x600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
@@ -656,14 +653,13 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 167,
+      "count": 166,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
         "alcora-blanco-glazed-porcelain-600x600mm",
-        "alcora-blanco-matt-glazed-porcelain-600x600mm",
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
@@ -1262,7 +1258,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 297,
+      "count": 296,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1352,7 +1348,6 @@
         "adrina-gold-glazed-polished-porcelain-600x1200",
         "albaratros-glazed-polished-porcelain-800x1600",
         "alcora-blanco-glazed-porcelain-600x600mm",
-        "alcora-blanco-matt-glazed-porcelain-600x600mm",
         "amalfi-white-glazed-polished-porcelain-800x1600mm",
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
