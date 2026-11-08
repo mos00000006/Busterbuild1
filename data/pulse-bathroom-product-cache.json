@@ -18111,5 +18111,32 @@
     ],
     "categories": [],
     "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/": {
+    "id": "basin-and-mirror-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/",
+    "name": "Basin and Mirror Combo",
+    "code": "Q01574",
+    "price": {
+      "current": 799.99,
+      "regular": 799.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 52 × 33 × 25 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "10 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "52 × 33 × 25 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
   }
 }

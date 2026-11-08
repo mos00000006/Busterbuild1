@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T09:57:59.857969+00:00",
+  "generated_at": "2026-11-08T09:37:36.190558+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -32,10 +32,11 @@
     "basin-mixer-combos": {
       "title": "Basin Combos",
       "group": "taps",
-      "count": 6,
+      "count": 7,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -70,8 +71,9 @@
     "mirror-combo": {
       "title": "Mirror Combos",
       "group": "furniture",
-      "count": 1,
+      "count": 2,
       "product_ids": [
+        "basin-and-mirror-combo-2",
         "led-mirror-and-accessory-set-combo"
       ]
     },
@@ -1265,10 +1267,11 @@
     },
     "taps": {
       "title": "Taps",
-      "count": 151,
+      "count": 152,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
+        "basin-and-mirror-combo-2",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -1452,8 +1455,9 @@
     },
     "furniture": {
       "title": "Bathroom Furniture",
-      "count": 166,
+      "count": 167,
       "product_ids": [
+        "basin-and-mirror-combo-2",
         "led-mirror-and-accessory-set-combo",
         "coco-brookhill-mirror-cabinet-730x400x134mm",
         "jenny-black-mirror-cabinet-650x440x120mm",
@@ -13435,6 +13439,39 @@
         "basin-mixer-combos"
       ],
       "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "basin-and-mirror-combo-2",
+      "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/",
+      "name": "Basin and Mirror Combo",
+      "code": "Q01574",
+      "price": {
+        "current": 799.99,
+        "regular": 799.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 52 × 33 × 25 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "10 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "52 × 33 × 25 cm"
+        }
+      ],
+      "categories": [
+        "basin-mixer-combos",
+        "mirror-combo"
+      ],
+      "bathroom_groups": [
+        "furniture",
         "taps"
       ]
     },
