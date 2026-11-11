@@ -28550,5 +28550,371 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/sahara-rust-ceramic-330x330mm/": {
+    "id": "sahara-rust-ceramic-330x330mm",
+    "source_url": "https://pulsetiles.co.za/product/sahara-rust-ceramic-330x330mm/",
+    "name": "Sahara Rust Ceramic 330×330mm",
+    "code": "A18236",
+    "price": {
+      "current": 119.99,
+      "regular": 119.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 330mm x 330mm. Quantity Per Box: 10 Tiles Per Box. Square Meters Per Box: 1.08 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/A18136-1-scaled.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "11.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "33 × 33 × 7 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "330mm x 330mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "10 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.08 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "330 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "330 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "5 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 27 × 10 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/kalahari-dune-matt-floor-tile-450x450mm/": {
+    "id": "kalahari-dune-matt-floor-tile-450x450mm",
+    "source_url": "https://pulsetiles.co.za/product/kalahari-dune-matt-floor-tile-450x450mm/",
+    "name": "Kalahari Dune Matt Floor Tile 450×450mm",
+    "code": "A18239",
+    "price": {
+      "current": 179.99,
+      "regular": 179.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 450mm x 450mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.0125 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/A18239.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "13 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "45 × 45 × 5.5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "450mm x 450mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.0125 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "450 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "450 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "5 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 27 × 10 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm/": {
+    "id": "matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm",
+    "source_url": "https://pulsetiles.co.za/product/matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm/",
+    "name": "Matrix Grey Metallic Mosaic Brushed Grey Finish 265Ã300Ã8mm",
+    "code": "C01083",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/C01083-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "26 × 30 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 300mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "300 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.09 m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/nexa-glossy-porcelain-600x600mm/": {
+    "id": "nexa-glossy-porcelain-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/nexa-glossy-porcelain-600x600mm/",
+    "name": "Nexa Glossy Porcelain 600x600mm",
+    "code": "A18287",
+    "price": {
+      "current": 239.99,
+      "regular": 239.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18164-NEW.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 27 × 10 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/pvc-expansion-joint-dark-grey/": {
+    "id": "pvc-expansion-joint-dark-grey",
+    "source_url": "https://pulsetiles.co.za/product/pvc-expansion-joint-dark-grey/",
+    "name": "PVC Expansion Joint Dark Grey",
+    "code": "T00321",
+    "price": {
+      "current": 109.99,
+      "regular": 109.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "PVC Expansion Joint Dark Grey. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/T00321.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.35 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "24.5 × 4 × 1.3 cm"
+      }
+    ],
+    "categories": []
   }
 }
