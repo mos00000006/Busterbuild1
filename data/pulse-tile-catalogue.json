@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T09:33:06.178468+00:00",
+  "generated_at": "2026-11-12T09:57:35.668673+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,11 +8,12 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 86,
+      "count": 87,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
         "baltico-antislip-floor-tile-45x45",
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
@@ -22,6 +23,7 @@
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "colorado-graffito-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
@@ -47,7 +49,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
@@ -60,6 +61,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "madison-deco-wall-tile-300x600mm",
         "mali-nero-wall-tile-new-250x400",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
@@ -94,13 +96,12 @@
         "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
-        "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2"
       ]
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 102,
+      "count": 108,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -111,6 +112,7 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
@@ -138,6 +140,7 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
+        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harper-black-glazed-polished-porcelain-600x1200",
@@ -161,6 +164,7 @@
         "mystic-mint-polished-glazed-porcelian-600x1200",
         "nero-stone-full-body-porcelain-matt-600x600mm",
         "new-york-grey-glazed-glossy-porcelain-600x600mm",
+        "nexa-glossy-porcelain-600x600mm",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
@@ -168,6 +172,7 @@
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
@@ -175,6 +180,7 @@
         "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "rotal-polished-porcelain-glossy-600x600mm",
         "sahara-gris-glazed-polished-porcelain-600x600mm",
@@ -182,6 +188,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
+        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -208,11 +215,13 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 8,
+      "count": 10,
       "product_ids": [
+        "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -233,7 +242,7 @@
     },
     "mosaics": {
       "title": "Mosaic Tiles",
-      "count": 65,
+      "count": 68,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -278,6 +287,8 @@
         "jomo03-glass-mosaic-300x300mm",
         "kloof-ceramic-mosaic-295x295mm",
         "kulula-ceramic-mosaic-295x295mm",
+        "light-grey-ceramic-mosaic-295x295mm",
+        "matrix-copper-mosaic-265mmx300mmx8mm",
         "matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm",
         "matrix-silver-metallic-mosaic-brushed-silver-finish-265x300x8mm",
         "moreno-carrara-glass-mosaic-282mmx325mmx4mm",
@@ -296,6 +307,7 @@
         "roxy-marengo-mosaic-282mmx325mmx6mm",
         "safari-grey-glass-mosaic-300mmx300mmx4mm",
         "splendid-bey-glass-mosaic-neutral-beige-tone-300x300x4mm",
+        "stone-gris-glass-mosaic-300mmx300mmx4mm",
         "tessa-mosiac-nero-glass-25x25x3-55mm",
         "volga-mix-glass-mosaic-25x25x3-5mm",
         "white-ceramic-mosaic-295x295mm",
@@ -360,7 +372,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 173,
+      "count": 181,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -372,8 +384,10 @@
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
         "baltico-antislip-floor-tile-45x45",
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "braga-antislip-floor-tile-450x450",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
@@ -383,15 +397,18 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "cresto-white-matt-glazed-porcelain-600x1200mm",
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dolomiti-alpine-crema-floor-tile-600x600mm",
+        "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -415,6 +432,7 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
+        "florentino-first-grade-polished-tile-600x600",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "galaxy-crema-polished-porc-600x600",
@@ -443,7 +461,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-stone-rustic-floor-a-grade-400x400mm",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "liverpool-stone-glazed-polished-porcelain-800x1600",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
@@ -483,6 +500,7 @@
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
@@ -494,6 +512,7 @@
         "river-antislip-floor-tile-450x450",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "rotal-polished-porcelain-glossy-600x600mm",
         "sahara-beige-ceramic-330x330mm",
@@ -510,6 +529,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
+        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "sisam-blue-polished-porcelain-600x600",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
@@ -539,7 +559,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 128,
+      "count": 132,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -562,9 +582,11 @@
         "crosswaves-ftil56-polished-porcelain-1st-grade-600x600mm",
         "dakota-beige-glossy-300x600mm",
         "dolomiti-alpine-crema-floor-tile-600x600mm",
+        "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -588,6 +610,7 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
+        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harmony-crema-elevation-tile-300x600mm",
@@ -604,6 +627,7 @@
         "kilavi-grey-wall-tile-200x300mm-2",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
+        "madison-deco-wall-tile-300x600mm",
         "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
@@ -636,6 +660,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
+        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -656,7 +681,6 @@
         "terrazo-griss-matt-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
-        "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
         "turkish-rosa-high-gloss-glazed-polished-porcelain-600x1200mm",
         "tuscany-blue-glossy-glazed-porcelain-600x1200mm",
@@ -673,7 +697,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 171,
+      "count": 180,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -685,9 +709,11 @@
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "ca-cuttack-dark-wall-tile-300x600mm",
         "cadbury-toledo-polished-porcelain-600x600",
@@ -697,6 +723,7 @@
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "city-magia-glazed-polished-porcelain-600x600",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
         "colorado-graffito-elevation-tile-300x600mm",
@@ -705,9 +732,11 @@
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dolomiti-alpine-crema-floor-tile-600x600mm",
+        "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -733,6 +762,7 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
+        "florentino-first-grade-polished-tile-600x600",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "galaxy-crema-polished-porc-600x600",
@@ -762,6 +792,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "madison-deco-wall-tile-300x600mm",
         "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
@@ -791,6 +822,7 @@
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "opal-choco-woodlook-floor-tile-200x900mm-2",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
@@ -802,6 +834,7 @@
         "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "rotal-polished-porcelain-glossy-600x600mm",
         "sahara-gris-glazed-polished-porcelain-600x600mm",
@@ -809,6 +842,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
+        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "sisam-blue-polished-porcelain-600x600",
         "slide-nero-dark-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
@@ -833,7 +867,6 @@
         "thunder-grey-glazed-porcelain-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
-        "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "toscana-matt-glazed-porcelain-600x1200mm",
         "turkish-rosa-high-gloss-glazed-polished-porcelain-600x1200mm",
         "tuscany-blue-glossy-glazed-porcelain-600x1200mm",
@@ -850,7 +883,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 42,
+      "count": 41,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "baltico-antislip-floor-tile-45x45",
@@ -877,7 +910,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-stone-rustic-floor-a-grade-400x400mm",
         "meadow-antislip-floor-tile-450x450",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "river-antislip-floor-tile-450x450",
@@ -898,7 +930,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 99,
+      "count": 102,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -914,6 +946,7 @@
         "athens-blue-high-gloss-glazed-polished-porcelain-800x2400mm",
         "avery-black-glazed-polished-porcelain-600x1200",
         "avis-white-high-gloss-glazed-polished-porcelain-600x1800mm",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "calcatta-bianco-high-gloss-glazed-polished-porcelain-1200x2400mm",
         "calcatta-prigon-high-gloss-glazed-polished-porcelain-800x2400mm",
         "cc-vtc-pj-7387-polished-porcelain-glossy-1200x3200mm",
@@ -964,12 +997,14 @@
         "onyx-birch-glazed-porcelain-glossy1200x1800mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "pantagonia-high-gloss-polished-porcelain-1200x3200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
@@ -1003,13 +1038,15 @@
     },
     "wood-look-tiles": {
       "title": "Woodlook Tiles",
-      "count": 12,
+      "count": 14,
       "product_ids": [
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
@@ -1021,7 +1058,7 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 69,
+      "count": 72,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1031,6 +1068,7 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-600x1200mm",
         "classic-jakarta-white-matt-glazed-porcelain-tile-600x1200",
@@ -1064,10 +1102,12 @@
         "nexus-matt-glazed-porcelain-600x1200mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
@@ -1160,8 +1200,9 @@
     },
     "tile-grout": {
       "title": "Tile Grout",
-      "count": 5,
+      "count": 6,
       "product_ids": [
+        "alco-dove-grey-grout-5kg",
         "alco-light-grey-grout-5kg",
         "alco-light-grey-tile-grout-9-5kg",
         "alco-white-grout-5kg",
@@ -1188,7 +1229,7 @@
     },
     "tile-edges-trims": {
       "title": "Tile Edges & Trims",
-      "count": 43,
+      "count": 45,
       "product_ids": [
         "alco-aluminium-straight-trim-mill-finish-10mm",
         "alco-aluminium-straight-trim-mill-finish-12mm",
@@ -1221,12 +1262,14 @@
         "sparking-listello-blue-8x2500mm",
         "sparking-listello-gold-8mmx2500mm",
         "sparking-listello-grey-8x2500mm",
+        "sparking-listello-silver-8mmx2500mm",
         "sparking-listello-white-8x2500mm",
         "square-aluminium-steel-trim-black-12mm",
         "square-aluminium-steel-trim-gun-grey-10mm",
         "square-aluminium-steel-trim-matt-bronze-10mm",
         "square-aluminium-steel-trim-polished-silver-10mm",
         "square-aluminium-steel-trim-polished-silver-12mm",
+        "square-stainless-steel-trim-silver-12mm",
         "stainless-steel-trim-silver-10mm",
         "straight-aluminium-trim-mill-finish-10mm",
         "straight-aluminium-trim-silver-10mm",
@@ -1290,11 +1333,12 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 305,
+      "count": 317,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
         "baltico-antislip-floor-tile-45x45",
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "base-wall-tile-300x600mm",
@@ -1304,6 +1348,7 @@
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "colorado-graffito-elevation-tile-300x600mm",
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
@@ -1329,7 +1374,6 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
-        "karoo-stone-rustic-floor-a-grade-400x400mm",
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
@@ -1342,6 +1386,7 @@
         "luster-gris-sugar-glaze-600x600",
         "luster-nero-sugar-glaze-600x600",
         "luster-onyx-sugar-glaze-matt-600x600mm",
+        "madison-deco-wall-tile-300x600mm",
         "mali-nero-wall-tile-new-250x400",
         "meadow-antislip-floor-tile-450x450",
         "middle-black-polished-tile-600x600mm",
@@ -1376,7 +1421,6 @@
         "slide-nero-dark-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
-        "topaz-smock-wall-tile-sugar-glaze-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -1387,6 +1431,7 @@
         "anti-sky-glazed-polished-porcelain-glossy-600x1200mm",
         "apple-white-glossy-glazed-porcelain-600x1200",
         "avery-black-glazed-polished-porcelain-600x1200",
+        "bixbite-beige-glazed-polished-porcelain-800x1600mm",
         "bricola-gris-glazed-polished-porcelain-600x600mm",
         "cairns-polished-tile-600x600mm",
         "citi-gris-glazed-polished-porcelain-glossy-600x1200mm",
@@ -1414,6 +1459,7 @@
         "finest-terrazzo-gris-porcelain-tile-600x1200mm-glazed",
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
+        "florentino-first-grade-polished-tile-600x600",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "harper-black-glazed-polished-porcelain-600x1200",
@@ -1437,6 +1483,7 @@
         "mystic-mint-polished-glazed-porcelian-600x1200",
         "nero-stone-full-body-porcelain-matt-600x600mm",
         "new-york-grey-glazed-glossy-porcelain-600x600mm",
+        "nexa-glossy-porcelain-600x600mm",
         "nexus-glossy-glazed-porcelain-600x1200mm",
         "nexus-matt-glazed-porcelain-600x1200mm",
         "obisdian-tide-hammer-full-body-matt-porcelain-600x600mm",
@@ -1444,6 +1491,7 @@
         "oceanic-black-sand-plaster-glossy-porcelain-600x600mm",
         "onyx-crema-glossy-glazed-porcelain-600x1200",
         "onyx-green-glazed-polished-porcelain-600x1200",
+        "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
@@ -1451,6 +1499,7 @@
         "ravenna-600x600mm",
         "river-stone-plaster-full-body-matt-porcelain-600x600mm",
         "rock-1003-polished-porcelain-tile-800x1600mm",
+        "rock-glazed-polished-porcelain-800x1600",
         "rocky-dune-glazed-polished-porcelain-600x1200-601",
         "rotal-polished-porcelain-glossy-600x600mm",
         "sahara-gris-glazed-polished-porcelain-600x600mm",
@@ -1458,6 +1507,7 @@
         "sculptorea-dove-glazed-porcelain-matt-600x1200mm",
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
+        "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -1480,9 +1530,11 @@
         "versilia-grey-glossy-glazed-porcelain-600x1200",
         "volga-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "yega-glossy-glazed-porcelain-800x1600mm",
+        "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
         "dolomiti-cement-60038-dark-matt-600x600mm",
         "dolomiti-marengo-floor-tile-600x600",
+        "dolomiti-satuario-50109-matt-600x600mm",
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
@@ -1536,6 +1588,8 @@
         "jomo03-glass-mosaic-300x300mm",
         "kloof-ceramic-mosaic-295x295mm",
         "kulula-ceramic-mosaic-295x295mm",
+        "light-grey-ceramic-mosaic-295x295mm",
+        "matrix-copper-mosaic-265mmx300mmx8mm",
         "matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm",
         "matrix-silver-metallic-mosaic-brushed-silver-finish-265x300x8mm",
         "moreno-carrara-glass-mosaic-282mmx325mmx4mm",
@@ -1554,6 +1608,7 @@
         "roxy-marengo-mosaic-282mmx325mmx6mm",
         "safari-grey-glass-mosaic-300mmx300mmx4mm",
         "splendid-bey-glass-mosaic-neutral-beige-tone-300x300x4mm",
+        "stone-gris-glass-mosaic-300mmx300mmx4mm",
         "tessa-mosiac-nero-glass-25x25x3-55mm",
         "volga-mix-glass-mosaic-25x25x3-5mm",
         "white-ceramic-mosaic-295x295mm",
@@ -1601,13 +1656,15 @@
     },
     "woodlook-tiles": {
       "title": "Woodlook Tiles",
-      "count": 12,
+      "count": 14,
       "product_ids": [
+        "barcelona-grey-wall-floor-tile-200x1200mm",
         "barcelona-light-grey-wall-floor-tile-200x1200mm",
         "barma-teak-matt-wall-floor-tile-200x1200mm",
         "canary-natural-matt-wall-floor-tile-200x1200mm-201",
         "casa-brown-921-woodlook-floor-tile-200x600mm",
         "clara-light-beige-matt-woodlook-tile-200x1200",
+        "clara-light-beige-wall-floor-tile-200x1200mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
@@ -1636,7 +1693,7 @@
     },
     "mosaic-tiles": {
       "title": "Mosaic Tiles",
-      "count": 65,
+      "count": 68,
       "product_ids": [
         "amazon-mix-glass-mosiac-25x25x3-5mm",
         "aston-black-glass-mosaic-15x15x6mm",
@@ -1681,6 +1738,8 @@
         "jomo03-glass-mosaic-300x300mm",
         "kloof-ceramic-mosaic-295x295mm",
         "kulula-ceramic-mosaic-295x295mm",
+        "light-grey-ceramic-mosaic-295x295mm",
+        "matrix-copper-mosaic-265mmx300mmx8mm",
         "matrix-grey-metallic-mosaic-brushed-grey-finish-265x300x8mm",
         "matrix-silver-metallic-mosaic-brushed-silver-finish-265x300x8mm",
         "moreno-carrara-glass-mosaic-282mmx325mmx4mm",
@@ -1699,6 +1758,7 @@
         "roxy-marengo-mosaic-282mmx325mmx6mm",
         "safari-grey-glass-mosaic-300mmx300mmx4mm",
         "splendid-bey-glass-mosaic-neutral-beige-tone-300x300x4mm",
+        "stone-gris-glass-mosaic-300mmx300mmx4mm",
         "tessa-mosiac-nero-glass-25x25x3-55mm",
         "volga-mix-glass-mosaic-25x25x3-5mm",
         "white-ceramic-mosaic-295x295mm",
@@ -2444,6 +2504,34 @@
       ],
       "categories": [
         "tile-adhesives"
+      ]
+    },
+    {
+      "id": "alco-dove-grey-grout-5kg",
+      "source_url": "https://pulsetiles.co.za/product/alco-dove-grey-grout-5kg/",
+      "name": "Alco Dove Grey Grout (5kg)",
+      "code": "L00154",
+      "price": {
+        "current": 84.99,
+        "regular": 84.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Alco Dove Grey Grout (5kg). See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/L00154.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 23 × 4 cm"
+        }
+      ],
+      "categories": [
+        "tile-grout"
       ]
     },
     {
@@ -4865,6 +4953,65 @@
       ]
     },
     {
+      "id": "barcelona-grey-wall-floor-tile-200x1200mm",
+      "source_url": "https://pulsetiles.co.za/product/barcelona-grey-wall-floor-tile-200x1200mm/",
+      "name": "Barcelona Grey Wall/Floor Tile 200X1200mm",
+      "code": "A17534",
+      "price": {
+        "current": 399.99,
+        "regular": 399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 200mm x 1200mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.2 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17534.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "24.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "20 × 120 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "200mm x 1200mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.2 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "200 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1200 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "ceramic-tiles",
+        "wood-look-tiles"
+      ]
+    },
+    {
       "id": "barcelona-light-grey-wall-floor-tile-200x1200mm",
       "source_url": "https://pulsetiles.co.za/product/barcelona-light-grey-wall-floor-tile-200x1200mm/",
       "name": "Barcelona Light Grey Wall/Floor Tile 200X1200mm",
@@ -5075,6 +5222,66 @@
         "all-outdoor-tiles",
         "all-wall-tiles",
         "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "bixbite-beige-glazed-polished-porcelain-800x1600mm",
+      "source_url": "https://pulsetiles.co.za/product/bixbite-beige-glazed-polished-porcelain-800x1600mm/",
+      "name": "Bixbite Beige Glazed Polished Porcelain 800X1600mm",
+      "code": "A17724",
+      "price": {
+        "current": 459.99,
+        "regular": 459.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17724-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "50.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "80 × 160 × 1.6 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "800mm x 1600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "2 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "2.56 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "800 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "8 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "large-format-tiles",
+        "marble-look-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -7046,6 +7253,65 @@
       },
       "description": "Tile Size: 200mm x 1200mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.2 m2. Sold: m2.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/A18322.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "24.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "20 × 120 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "200mm x 1200mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.2 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "200 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1200 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "ceramic-tiles",
+        "wood-look-tiles"
+      ]
+    },
+    {
+      "id": "clara-light-beige-wall-floor-tile-200x1200mm",
+      "source_url": "https://pulsetiles.co.za/product/clara-light-beige-wall-floor-tile-200x1200mm/",
+      "name": "Clara Light Beige Wall/Floor Tile 200X1200mm",
+      "code": "A17808",
+      "price": {
+        "current": 399.99,
+        "regular": 399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 200mm x 1200mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.2 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17808.webp",
       "attributes": [
         {
           "name": "Weight",
@@ -17621,6 +17887,54 @@
       ]
     },
     {
+      "id": "light-grey-ceramic-mosaic-295x295mm",
+      "source_url": "https://pulsetiles.co.za/product/light-grey-ceramic-mosaic-295x295mm/",
+      "name": "Light Grey Porcelain Mosaic 300X300X4mm",
+      "code": "C01023",
+      "price": {
+        "current": 49.99,
+        "regular": 49.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 295mm x 295mm. Sold: Per Sheet. Square Meters Per Unit: 0.0872315 m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01023.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "29.5 × 29.5 × 1 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "295mm x 295mm"
+        },
+        {
+          "name": "Tile Length",
+          "value": "295 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "295 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "Per Sheet"
+        },
+        {
+          "name": "Square Meters Per Unit",
+          "value": "0.0872315 m2"
+        }
+      ],
+      "categories": [
+        "mosaics"
+      ]
+    },
+    {
       "id": "liverpool-stone-glazed-polished-porcelain-800x1600",
       "source_url": "https://pulsetiles.co.za/product/liverpool-stone-glazed-polished-porcelain-800x1600/",
       "name": "Liverpool Stone Glazed Polished Porcelain 800X1600mm",
@@ -19294,6 +19608,54 @@
         "all-indoor-tiles",
         "all-wall-tiles",
         "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "matrix-copper-mosaic-265mmx300mmx8mm",
+      "source_url": "https://pulsetiles.co.za/product/matrix-copper-mosaic-265mmx300mmx8mm/",
+      "name": "Matrix Copper Mosaic 265X300X8mm",
+      "code": "C01082",
+      "price": {
+        "current": 259.99,
+        "regular": 259.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 265mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.0795 m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01082.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.55 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "26.5 × 30 × 1 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "265mm x 300mm"
+        },
+        {
+          "name": "Tile Length",
+          "value": "265 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "300 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "Per Sheet"
+        },
+        {
+          "name": "Square Meters Per Unit",
+          "value": "0.0795 m2"
+        }
+      ],
+      "categories": [
+        "mosaics"
       ]
     },
     {
@@ -22043,7 +22405,8 @@
       "categories": [
         "all-floor-tiles",
         "all-indoor-tiles",
-        "all-wall-tiles"
+        "all-wall-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -22967,6 +23330,66 @@
         {
           "name": "Dimensions",
           "value": "14 × 10 × 7 cm"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "large-format-tiles",
+        "marble-look-tiles",
+        "porcelain-tiles"
+      ]
+    },
+    {
+      "id": "onyx-grey-polished-porcelain-tile-800x1600mm",
+      "source_url": "https://pulsetiles.co.za/product/onyx-grey-polished-porcelain-tile-800x1600mm/",
+      "name": "Onyx Grey Polished Porcelain Tile 800x1600mm",
+      "code": "A17720",
+      "price": {
+        "current": 459.99,
+        "regular": 459.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17720-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "50.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "80 × 160 × 1.6 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "800mm x 1600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "2 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "2.56 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "800 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "8 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
         }
       ],
       "categories": [
@@ -25609,6 +26032,66 @@
       ]
     },
     {
+      "id": "rock-glazed-polished-porcelain-800x1600",
+      "source_url": "https://pulsetiles.co.za/product/rock-glazed-polished-porcelain-800x1600/",
+      "name": "Rock Glazed Polished Porcelain 800X1600mm",
+      "code": "A18102",
+      "price": {
+        "current": 459.99,
+        "regular": 459.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17944-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "50.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "80 × 160 × 1.6 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "800mm x 1600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "2 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "2.56 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "800 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "8 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "large-format-tiles",
+        "marble-look-tiles",
+        "porcelain-tiles"
+      ]
+    },
+    {
       "id": "rocky-dune-glazed-polished-porcelain-600x1200-601",
       "source_url": "https://pulsetiles.co.za/product/rocky-dune-glazed-polished-porcelain-600x1200-601/",
       "name": "Rocky Dune Glazed Polished Porcelain 600×1200",
@@ -27841,6 +28324,34 @@
       ]
     },
     {
+      "id": "sparking-listello-silver-8mmx2500mm",
+      "source_url": "https://pulsetiles.co.za/product/sparking-listello-silver-8mmx2500mm/",
+      "name": "Sparking Listello Silver 8x2500mm",
+      "code": "T00404",
+      "price": {
+        "current": 179.99,
+        "regular": 179.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Sparking Listello Silver 8x2500mm. See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/T00404.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "240 × 2 × 1 cm"
+        }
+      ],
+      "categories": [
+        "tile-edges-trims"
+      ]
+    },
+    {
       "id": "sparking-listello-white-8x2500mm",
       "source_url": "https://pulsetiles.co.za/product/sparking-listello-white-8x2500mm/",
       "name": "Sparking Listello White 8x2500mm",
@@ -28784,6 +29295,54 @@
       ],
       "categories": [
         "tile-spacers-tools"
+      ]
+    },
+    {
+      "id": "stone-gris-glass-mosaic-300mmx300mmx4mm",
+      "source_url": "https://pulsetiles.co.za/product/stone-gris-glass-mosaic-300mmx300mmx4mm/",
+      "name": "Stone Gris Glass Mosaic 300X300X4mm",
+      "code": "C01067",
+      "price": {
+        "current": 179.99,
+        "regular": 179.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01067.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.55 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 30 × 1 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 300mm"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "300 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "Per Sheet"
+        },
+        {
+          "name": "Square Meters Per Unit",
+          "value": "0.09 m2"
+        }
+      ],
+      "categories": [
+        "mosaics"
       ]
     },
     {

@@ -28916,5 +28916,465 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/barcelona-grey-wall-floor-tile-200x1200mm/": {
+    "id": "barcelona-grey-wall-floor-tile-200x1200mm",
+    "source_url": "https://pulsetiles.co.za/product/barcelona-grey-wall-floor-tile-200x1200mm/",
+    "name": "Barcelona Grey Wall/Floor Tile 200X1200mm",
+    "code": "A17534",
+    "price": {
+      "current": 399.99,
+      "regular": 399.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 200mm x 1200mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.2 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17534.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "24.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "20 × 120 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "200mm x 1200mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.2 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "200 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1200 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/clara-light-beige-wall-floor-tile-200x1200mm/": {
+    "id": "clara-light-beige-wall-floor-tile-200x1200mm",
+    "source_url": "https://pulsetiles.co.za/product/clara-light-beige-wall-floor-tile-200x1200mm/",
+    "name": "Clara Light Beige Wall/Floor Tile 200X1200mm",
+    "code": "A17808",
+    "price": {
+      "current": 399.99,
+      "regular": 399.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 200mm x 1200mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 1.2 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17808.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "24.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "20 × 120 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "200mm x 1200mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.2 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "200 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1200 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/rock-glazed-polished-porcelain-800x1600/": {
+    "id": "rock-glazed-polished-porcelain-800x1600",
+    "source_url": "https://pulsetiles.co.za/product/rock-glazed-polished-porcelain-800x1600/",
+    "name": "Rock Glazed Polished Porcelain 800X1600mm",
+    "code": "A18102",
+    "price": {
+      "current": 459.99,
+      "regular": 459.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17944-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "50.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "80 × 160 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "800mm x 1600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "2.56 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "800 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/bixbite-beige-glazed-polished-porcelain-800x1600mm/": {
+    "id": "bixbite-beige-glazed-polished-porcelain-800x1600mm",
+    "source_url": "https://pulsetiles.co.za/product/bixbite-beige-glazed-polished-porcelain-800x1600mm/",
+    "name": "Bixbite Beige Glazed Polished Porcelain 800X1600mm",
+    "code": "A17724",
+    "price": {
+      "current": 459.99,
+      "regular": 459.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17724-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "50.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "80 × 160 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "800mm x 1600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "2.56 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "800 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/onyx-grey-polished-porcelain-tile-800x1600mm/": {
+    "id": "onyx-grey-polished-porcelain-tile-800x1600mm",
+    "source_url": "https://pulsetiles.co.za/product/onyx-grey-polished-porcelain-tile-800x1600mm/",
+    "name": "Onyx Grey Polished Porcelain Tile 800x1600mm",
+    "code": "A17720",
+    "price": {
+      "current": 459.99,
+      "regular": 459.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 800mm x 1600mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 2.56 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/A17720-1.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "50.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "80 × 160 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "800mm x 1600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "2.56 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "800 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/matrix-copper-mosaic-265mmx300mmx8mm/": {
+    "id": "matrix-copper-mosaic-265mmx300mmx8mm",
+    "source_url": "https://pulsetiles.co.za/product/matrix-copper-mosaic-265mmx300mmx8mm/",
+    "name": "Matrix Copper Mosaic 265X300X8mm",
+    "code": "C01082",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 265mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.0795 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01082.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "26.5 × 30 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "265mm x 300mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "265 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "300 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.0795 m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/stone-gris-glass-mosaic-300mmx300mmx4mm/": {
+    "id": "stone-gris-glass-mosaic-300mmx300mmx4mm",
+    "source_url": "https://pulsetiles.co.za/product/stone-gris-glass-mosaic-300mmx300mmx4mm/",
+    "name": "Stone Gris Glass Mosaic 300X300X4mm",
+    "code": "C01067",
+    "price": {
+      "current": 179.99,
+      "regular": 179.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01067.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 30 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 300mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "300 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.09 m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/light-grey-ceramic-mosaic-295x295mm/": {
+    "id": "light-grey-ceramic-mosaic-295x295mm",
+    "source_url": "https://pulsetiles.co.za/product/light-grey-ceramic-mosaic-295x295mm/",
+    "name": "Light Grey Porcelain Mosaic 300X300X4mm",
+    "code": "C01023",
+    "price": {
+      "current": 49.99,
+      "regular": 49.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 295mm x 295mm. Sold: Per Sheet. Square Meters Per Unit: 0.0872315 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01023.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "29.5 × 29.5 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "295mm x 295mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "295 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "295 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.0872315 m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/alco-dove-grey-grout-5kg/": {
+    "id": "alco-dove-grey-grout-5kg",
+    "source_url": "https://pulsetiles.co.za/product/alco-dove-grey-grout-5kg/",
+    "name": "Alco Dove Grey Grout (5kg)",
+    "code": "L00154",
+    "price": {
+      "current": 84.99,
+      "regular": 84.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Alco Dove Grey Grout (5kg). See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/L00154.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "5 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "40 × 23 × 4 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/sparking-listello-silver-8mmx2500mm/": {
+    "id": "sparking-listello-silver-8mmx2500mm",
+    "source_url": "https://pulsetiles.co.za/product/sparking-listello-silver-8mmx2500mm/",
+    "name": "Sparking Listello Silver 8x2500mm",
+    "code": "T00404",
+    "price": {
+      "current": 179.99,
+      "regular": 179.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Sparking Listello Silver 8x2500mm. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/T00404.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "240 × 2 × 1 cm"
+      }
+    ],
+    "categories": []
   }
 }
