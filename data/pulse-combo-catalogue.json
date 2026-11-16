@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T09:58:49.694410+00:00",
+  "generated_at": "2026-11-16T10:13:19.725712+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 55,
+      "count": 54,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -52,7 +52,6 @@
         "palazzo-matt-porcelain-combo-600x1200mm",
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
-        "sahara-gris-combo-600x600mm",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
@@ -226,7 +225,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 139,
+      "count": 138,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -265,7 +264,6 @@
         "palazzo-matt-porcelain-combo-600x1200mm",
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
-        "sahara-gris-combo-600x600mm",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
@@ -405,7 +403,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 55,
+      "count": 54,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -444,7 +442,6 @@
         "palazzo-matt-porcelain-combo-600x1200mm",
         "rosata-kt09i-glossy-glazed-porcelain-600x600-combo",
         "rotal-porcelain-combo-600x600mm",
-        "sahara-gris-combo-600x600mm",
         "sahara-nero-porcelain-combo-600x600mm",
         "siena-marfil-glossy-porcelain-combo-600x1200mm",
         "siena-marfil-matt-porcelain-combo-600x1200mm",
