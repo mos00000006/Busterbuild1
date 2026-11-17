@@ -18138,5 +18138,167 @@
     ],
     "categories": [],
     "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/urban-square-basin-with-bracket-white-425x367x195mm/": {
+    "id": "urban-square-basin-with-bracket-white-425x367x195mm",
+    "source_url": "https://pulsetiles.co.za/product/urban-square-basin-with-bracket-white-425x367x195mm/",
+    "name": "Urban Square Basin With Bracket-White",
+    "code": "B04243",
+    "price": {
+      "current": 999.99,
+      "regular": 999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 45 × 22 × 38 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04243-3.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "8.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "45 × 22 × 38 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/aquavit-harmony-basin-mixer-tall-body-black/": {
+    "id": "aquavit-harmony-basin-mixer-tall-body-black",
+    "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-basin-mixer-tall-body-black/",
+    "name": "Aquavit Harmony Basin Mixer Tall Body Black",
+    "code": "B04626",
+    "price": {
+      "current": 2799.99,
+      "regular": 2799.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 43 × 25 × 6 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04626.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "43 × 25 × 6 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-chrome/": {
+    "id": "alco-tivona-arc-basin-mixer-chrome",
+    "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-chrome/",
+    "name": "Alco Tivona Arc Basin Mixer â Chrome",
+    "code": "B04000",
+    "price": {
+      "current": 1499.99,
+      "regular": 1499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 21 × 21 × 9 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04000-Chrome-Basin-Mixer.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "21 × 21 × 9 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-black/": {
+    "id": "alco-tivona-arc-basin-mixer-black",
+    "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-black/",
+    "name": "Alco Tivona Arc Basin Mixer â Black",
+    "code": "B04001",
+    "price": {
+      "current": 1599.99,
+      "regular": 1599.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 21 × 21 × 9 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04001-Black-Basin-Mixer.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "21 × 21 × 9 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-tivona-arc-bath-mixer-with-hose-chrome/": {
+    "id": "alco-tivona-arc-bath-mixer-with-hose-chrome",
+    "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-bath-mixer-with-hose-chrome/",
+    "name": "Alco Tivona Arc Bath Mixer with Hose â Chrome",
+    "code": "B04004",
+    "price": {
+      "current": 2199.99,
+      "regular": 2199.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 21 × 21 × 9 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04004-3.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1.9 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "21 × 21 × 9 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/aquavit-shower-panel-black-and-bamboo-1200x220mm/": {
+    "id": "aquavit-shower-panel-black-and-bamboo-1200x220mm",
+    "source_url": "https://pulsetiles.co.za/product/aquavit-shower-panel-black-and-bamboo-1200x220mm/",
+    "name": "Aquavit Shower Panel Black And Bamboo 1420Ã220mm",
+    "code": "B03290",
+    "price": {
+      "current": 5999.99,
+      "regular": 5999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 146 × 30 × 26 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03290-NEW.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "10.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "146 × 30 × 26 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
   }
 }

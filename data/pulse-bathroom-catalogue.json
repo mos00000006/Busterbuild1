@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T09:37:36.190558+00:00",
+  "generated_at": "2026-11-17T11:17:19.583912+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -110,7 +110,7 @@
     "basin-cabinets": {
       "title": "Basin Cabinets",
       "group": "basins",
-      "count": 39,
+      "count": 38,
       "product_ids": [
         "cabinet-set-with-basin-c002-model-134-white-515x300x800mm",
         "alegria-floor-450-combo",
@@ -140,7 +140,6 @@
         "nkosi-farasan-550-floor-combo-j00295-b04386",
         "pandora-two-tone-floor-combo",
         "pandora-450-two-tone-wall-combo",
-        "pixel-wood-carved-cabinet-set-with-pixel-basin-combo-600x450mm",
         "sere-nosara-610-floor-combo",
         "shelf-3-tier",
         "tefira-luca-polenta-610-floor-combo-j00185-j00113-2",
@@ -168,9 +167,9 @@
         "modern-curve-basin-with-bracket-white-445x362x195mm",
         "roach-wash-basin-wall-hung",
         "umbel-wash-basin-wall-hung",
+        "urban-square-basin-with-bracket-white-425x367x195mm",
         "wall-hung-wash-basin-electroplated-gold",
-        "wall-hung-wash-basin-electroplated-silver",
-        "wall-hung-wash-basin-white-underglaze-3"
+        "wall-hung-wash-basin-electroplated-silver"
       ]
     },
     "freestanding-basins": {
@@ -190,8 +189,10 @@
     "basin-taps": {
       "title": "Basin Taps",
       "group": "taps",
-      "count": 15,
+      "count": 18,
       "product_ids": [
+        "alco-tivona-arc-basin-mixer-black",
+        "alco-tivona-arc-basin-mixer-chrome",
         "alco-tivona-arc-basin-mixer-gold",
         "alco-tivona-arc-basin-mixer-grey",
         "alco-tivona-lux-basin-mixer-chrome",
@@ -202,6 +203,7 @@
         "aquavit-harmony-basin-mixer-black",
         "aquavit-harmony-basin-mixer-chrome",
         "aquavit-harmony-basin-mixer-long-body-chrome",
+        "aquavit-harmony-basin-mixer-tall-body-black",
         "aquavit-harmony-basin-mixer-tall-body-chrome",
         "aquavit-lenoro-basin-mixer-30mm-chrome",
         "aquavit-marina-basin-mixer-long-body-chrome",
@@ -291,9 +293,10 @@
     "bath-taps": {
       "title": "Bath Taps",
       "group": "taps",
-      "count": 24,
+      "count": 25,
       "product_ids": [
         "alco-tivona-arc-bath-mixer-with-hose-black",
+        "alco-tivona-arc-bath-mixer-with-hose-chrome",
         "alco-tivona-arc-bath-mixer-with-hose-gold",
         "alco-tivona-arc-bath-mixer-with-hose-grey",
         "alco-tivona-lux-bath-mixer-with-hose-black",
@@ -672,7 +675,7 @@
     "shower-panels": {
       "title": "Shower Panels",
       "group": "showers",
-      "count": 20,
+      "count": 21,
       "product_ids": [
         "alco-3-function-shower-panel-gun-grey-1200mmx220mm",
         "alco-3-function-shower-panel-black-1200mmx220mm",
@@ -693,6 +696,7 @@
         "aquavit-shower-panel-white-1200x220mm",
         "aquavit-shower-panel-black-1200x220mm",
         "aquavit-shower-panel-mirror-1200x220mm",
+        "aquavit-shower-panel-black-and-bamboo-1200x220mm",
         "black-shower-panel-and-accessory-combo-2"
       ]
     },
@@ -760,7 +764,7 @@
     "shower-channels-traps": {
       "title": "Shower Channels Traps",
       "group": "showers",
-      "count": 25,
+      "count": 24,
       "product_ids": [
         "alco-round-shower-trap-cover-black-100mm",
         "alco-round-shower-trap-cover-chrome-100mm",
@@ -773,7 +777,6 @@
         "aquavit-shower-channel-with-drainage-black-stainless-steel-500mm",
         "shower-channel-with-drainage-chrome-150mm",
         "aquavit-square-brass-shower-trap-cover-black-100mm",
-        "brevik-shower-channel-chrome-150mm",
         "shower-channel-with-drainage-black-150mm",
         "shower-channel-brevik-black-150mm",
         "shower-channel-with-drainage-black-250mm",
@@ -792,7 +795,7 @@
     "shower-taps-outlets": {
       "title": "Shower Taps Outlets",
       "group": "taps",
-      "count": 42,
+      "count": 43,
       "product_ids": [
         "alco-round-shower-outlet-braket-black",
         "alco-round-shower-outlet-braket-chrome",
@@ -807,6 +810,7 @@
         "alco-tivona-arc-shower-mixer-with-diverter-black",
         "alco-tivona-arc-shower-mixer-with-diverter-gold",
         "alco-tivona-arc-shower-mixer-with-diverter-grey",
+        "alco-tivona-lux-shower-mixer-black",
         "alco-tivona-lux-shower-mixer-chrome",
         "alco-tivona-lux-shower-mixer-gold",
         "alco-tivona-lux-shower-mixer-grey",
@@ -932,7 +936,7 @@
   "groups": {
     "basins": {
       "title": "Basins",
-      "count": 115,
+      "count": 114,
       "product_ids": [
         "breton-wash-basin-belonia-pedestal",
         "canon-wash-basin-renzo-pedestal",
@@ -978,7 +982,6 @@
         "nkosi-farasan-550-floor-combo-j00295-b04386",
         "pandora-two-tone-floor-combo",
         "pandora-450-two-tone-wall-combo",
-        "pixel-wood-carved-cabinet-set-with-pixel-basin-combo-600x450mm",
         "sere-nosara-610-floor-combo",
         "shelf-3-tier",
         "tefira-luca-polenta-610-floor-combo-j00185-j00113-2",
@@ -999,9 +1002,9 @@
         "modern-curve-basin-with-bracket-white-445x362x195mm",
         "roach-wash-basin-wall-hung",
         "umbel-wash-basin-wall-hung",
+        "urban-square-basin-with-bracket-white-425x367x195mm",
         "wall-hung-wash-basin-electroplated-gold",
         "wall-hung-wash-basin-electroplated-silver",
-        "wall-hung-wash-basin-white-underglaze-3",
         "freestanding-basin-electroplated-gold",
         "freestanding-basin-electroplated-silver-2",
         "freestanding-basin-white-underglaze-2",
@@ -1190,6 +1193,7 @@
         "aquavit-shower-panel-white-1200x220mm",
         "aquavit-shower-panel-black-1200x220mm",
         "aquavit-shower-panel-mirror-1200x220mm",
+        "aquavit-shower-panel-black-and-bamboo-1200x220mm",
         "black-shower-panel-and-accessory-combo-2",
         "alco-chrome-shower-rail-with-hand-shower-flexi-hose",
         "alco-shower-rail-grey-2",
@@ -1249,7 +1253,6 @@
         "aquavit-shower-channel-with-drainage-black-stainless-steel-500mm",
         "shower-channel-with-drainage-chrome-150mm",
         "aquavit-square-brass-shower-trap-cover-black-100mm",
-        "brevik-shower-channel-chrome-150mm",
         "shower-channel-with-drainage-black-150mm",
         "shower-channel-brevik-black-150mm",
         "shower-channel-with-drainage-black-250mm",
@@ -1267,7 +1270,7 @@
     },
     "taps": {
       "title": "Taps",
-      "count": 152,
+      "count": 157,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
@@ -1276,6 +1279,8 @@
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
         "polio-basin-mixer-combo",
+        "alco-tivona-arc-basin-mixer-black",
+        "alco-tivona-arc-basin-mixer-chrome",
         "alco-tivona-arc-basin-mixer-gold",
         "alco-tivona-arc-basin-mixer-grey",
         "alco-tivona-lux-basin-mixer-chrome",
@@ -1286,12 +1291,14 @@
         "aquavit-harmony-basin-mixer-black",
         "aquavit-harmony-basin-mixer-chrome",
         "aquavit-harmony-basin-mixer-long-body-chrome",
+        "aquavit-harmony-basin-mixer-tall-body-black",
         "aquavit-harmony-basin-mixer-tall-body-chrome",
         "aquavit-lenoro-basin-mixer-30mm-chrome",
         "aquavit-marina-basin-mixer-long-body-chrome",
         "aquavit-oceana-basin-mixer-35mm-chrome",
         "aquavit-trinity-basin-mixer-40mm-chrome-brass",
         "alco-tivona-arc-bath-mixer-with-hose-black",
+        "alco-tivona-arc-bath-mixer-with-hose-chrome",
         "alco-tivona-arc-bath-mixer-with-hose-gold",
         "alco-tivona-arc-bath-mixer-with-hose-grey",
         "alco-tivona-lux-bath-mixer-with-hose-black",
@@ -1328,6 +1335,7 @@
         "alco-tivona-arc-shower-mixer-with-diverter-black",
         "alco-tivona-arc-shower-mixer-with-diverter-gold",
         "alco-tivona-arc-shower-mixer-with-diverter-grey",
+        "alco-tivona-lux-shower-mixer-black",
         "alco-tivona-lux-shower-mixer-chrome",
         "alco-tivona-lux-shower-mixer-gold",
         "alco-tivona-lux-shower-mixer-grey",
@@ -5614,6 +5622,68 @@
       ]
     },
     {
+      "id": "alco-tivona-arc-basin-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-black/",
+      "name": "Alco Tivona Arc Basin Mixer â Black",
+      "code": "B04001",
+      "price": {
+        "current": 1599.99,
+        "regular": 1599.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 21 × 21 × 9 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04001-Black-Basin-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "21 × 21 × 9 cm"
+        }
+      ],
+      "categories": [
+        "basin-taps"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-basin-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-chrome/",
+      "name": "Alco Tivona Arc Basin Mixer â Chrome",
+      "code": "B04000",
+      "price": {
+        "current": 1499.99,
+        "regular": 1499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 21 × 21 × 9 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04000-Chrome-Basin-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "21 × 21 × 9 cm"
+        }
+      ],
+      "categories": [
+        "basin-taps"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
       "id": "alco-tivona-arc-basin-mixer-gold",
       "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-basin-mixer-gold/",
       "name": "Alco Tivona Arc Basin Mixer â Gold",
@@ -5689,6 +5759,37 @@
       },
       "description": "Dimensions: 21 × 21 × 9 cm.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04005-3.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.9 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "21 × 21 × 9 cm"
+        }
+      ],
+      "categories": [
+        "bath-taps"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-bath-mixer-with-hose-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-bath-mixer-with-hose-chrome/",
+      "name": "Alco Tivona Arc Bath Mixer with Hose â Chrome",
+      "code": "B04004",
+      "price": {
+        "current": 2199.99,
+        "regular": 2199.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 21 × 21 × 9 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04004-3.webp",
       "attributes": [
         {
           "name": "Weight",
@@ -6410,6 +6511,37 @@
         {
           "name": "Dimensions",
           "value": "20 × 20 × 9 cm"
+        }
+      ],
+      "categories": [
+        "shower-taps-outlets"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-lux-shower-mixer-black",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-black/",
+      "name": "Alco Tivona Lux Shower Mixer â Black",
+      "code": "B03993",
+      "price": {
+        "current": 1899.99,
+        "regular": 1899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 22 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03993-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 22 × 6 cm"
         }
       ],
       "categories": [
@@ -8537,6 +8669,37 @@
         {
           "name": "Dimensions",
           "value": "19 × 36 × 6 cm"
+        }
+      ],
+      "categories": [
+        "basin-taps"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "aquavit-harmony-basin-mixer-tall-body-black",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-basin-mixer-tall-body-black/",
+      "name": "Aquavit Harmony Basin Mixer Tall Body Black",
+      "code": "B04626",
+      "price": {
+        "current": 2799.99,
+        "regular": 2799.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 43 × 25 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04626.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "43 × 25 × 6 cm"
         }
       ],
       "categories": [
@@ -12205,6 +12368,37 @@
       ]
     },
     {
+      "id": "aquavit-shower-panel-black-and-bamboo-1200x220mm",
+      "source_url": "https://pulsetiles.co.za/product/aquavit-shower-panel-black-and-bamboo-1200x220mm/",
+      "name": "Aquavit Shower Panel Black And Bamboo 1420Ã220mm",
+      "code": "B03290",
+      "price": {
+        "current": 5999.99,
+        "regular": 5999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 146 × 30 × 26 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03290-NEW.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "10.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "146 × 30 × 26 cm"
+        }
+      ],
+      "categories": [
+        "shower-panels"
+      ],
+      "bathroom_groups": [
+        "showers"
+      ]
+    },
+    {
       "id": "aquavit-shower-rail-set-with-1-5m-hose-2",
       "source_url": "https://pulsetiles.co.za/product/aquavit-shower-rail-set-with-1-5m-hose-2/",
       "name": "Aquavit Shower Rail Set With 1.5M Hose",
@@ -13820,37 +14014,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "brevik-shower-channel-chrome-150mm",
-      "source_url": "https://pulsetiles.co.za/product/brevik-shower-channel-chrome-150mm/",
-      "name": "Brevik Shower Channel – Chrome 150mm",
-      "code": "B03787",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 44 × 13 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/B03787.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "44 × 13 × 7 cm"
-        }
-      ],
-      "categories": [
-        "shower-channels-traps"
-      ],
-      "bathroom_groups": [
-        "showers"
       ]
     },
     {
@@ -18177,37 +18340,6 @@
       ]
     },
     {
-      "id": "pixel-wood-carved-cabinet-set-with-pixel-basin-combo-600x450mm",
-      "source_url": "https://pulsetiles.co.za/product/pixel-wood-carved-cabinet-set-with-pixel-basin-combo-600x450mm/",
-      "name": "Pixel Wood Carved Cabinet Set With Pixel Basin Combo 600x450mm",
-      "code": "B04339",
-      "price": {
-        "current": 3099.99,
-        "regular": 3099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 72 × 50 × 31 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/B04339-Pixel-Carved-Cabinet-Wood.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "30 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "72 × 50 × 31 cm"
-        }
-      ],
-      "categories": [
-        "basin-cabinets"
-      ],
-      "bathroom_groups": [
-        "basins"
-      ]
-    },
-    {
       "id": "plastic-toilet-seat-orchid-black",
       "source_url": "https://pulsetiles.co.za/product/plastic-toilet-seat-orchid-black/",
       "name": "Plastic Toilet Seat Orchid (Black)",
@@ -21404,6 +21536,37 @@
       ]
     },
     {
+      "id": "urban-square-basin-with-bracket-white-425x367x195mm",
+      "source_url": "https://pulsetiles.co.za/product/urban-square-basin-with-bracket-white-425x367x195mm/",
+      "name": "Urban Square Basin With Bracket-White",
+      "code": "B04243",
+      "price": {
+        "current": 999.99,
+        "regular": 999.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 45 × 22 × 38 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04243-3.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "8.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "45 × 22 × 38 cm"
+        }
+      ],
+      "categories": [
+        "wall-hung-basins"
+      ],
+      "bathroom_groups": [
+        "basins"
+      ]
+    },
+    {
       "id": "valencia-led-mirror-3-colour-light-function-500x600mm",
       "source_url": "https://pulsetiles.co.za/product/valencia-led-mirror-3-colour-light-function-500x600mm/",
       "name": "Valencia Led Mirror 3 Colour Light Function 500X600mm",
@@ -21722,28 +21885,6 @@
       },
       "description": "Wall hung wash basin with an electroplated silver finish, measuring 400 x 380 x 450mm.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04688-scaled.webp",
-      "attributes": [],
-      "categories": [
-        "wall-hung-basins"
-      ],
-      "bathroom_groups": [
-        "basins"
-      ]
-    },
-    {
-      "id": "wall-hung-wash-basin-white-underglaze-3",
-      "source_url": "https://pulsetiles.co.za/product/wall-hung-wash-basin-white-underglaze-3/",
-      "name": "Wall Hung Wash Basin (White Underglaze)",
-      "code": "B04695",
-      "price": {
-        "current": 2399.99,
-        "regular": 2399.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Wall hung wash basin with a white underglaze finish, measuring 400 x 400 x 450mm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04695-scaled.webp",
       "attributes": [],
       "categories": [
         "wall-hung-basins"
