@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 652,
+  "count": 653,
   "products": [
     {
       "type": "tile",
@@ -2962,6 +2962,13 @@
       "name": "Splendid Bey Glass Mosaic Neutral Beige Tone 300Ã300Ã4mm",
       "file": "qr/C01089.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=C01089"
+    },
+    {
+      "type": "tile",
+      "code": "C01047",
+      "name": "Splendid Check Glass Mosaic 300X300X6mm",
+      "file": "qr/C01047.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=C01047"
     },
     {
       "type": "tile",
