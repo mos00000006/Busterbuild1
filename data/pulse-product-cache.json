@@ -29376,5 +29376,51 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/splendid-check-glass-mosaic-300mmx300mmx6mm/": {
+    "id": "splendid-check-glass-mosaic-300mmx300mmx6mm",
+    "source_url": "https://pulsetiles.co.za/product/splendid-check-glass-mosaic-300mmx300mmx6mm/",
+    "name": "Splendid Check Glass Mosaic 300X300X6mm",
+    "code": "C01047",
+    "price": {
+      "current": 219.99,
+      "regular": 219.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 300mm. Sold: Per Sheet. Square Meters Per Unit: 0.09 m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/C01047.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.55 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 30 × 1 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 300mm"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "300 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "Per Sheet"
+      },
+      {
+        "name": "Square Meters Per Unit",
+        "value": "0.09 m2"
+      }
+    ],
+    "categories": []
   }
 }
