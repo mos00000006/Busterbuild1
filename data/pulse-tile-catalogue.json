@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:07:55.330944+00:00",
+  "generated_at": "2026-11-21T09:56:04.589267+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -101,7 +101,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 108,
+      "count": 107,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -125,7 +125,6 @@
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
-        "dyna-vitrified-polished-porcelain-600x600",
         "dynasty-beige-glazed-glossy-porcelain-600x600mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
         "element-invisible-zenus-matt-porcelain-600x1200mm",
@@ -215,7 +214,7 @@
     },
     "hardbody-tiles": {
       "title": "Hardbody Tiles",
-      "count": 10,
+      "count": 9,
       "product_ids": [
         "dolomiti-alpine-gris-floor-tile-600x600mm",
         "dolomiti-autumn-matt-600x600mm",
@@ -225,8 +224,7 @@
         "dolomiti-stone-bianco-45024-matt-600x600mm",
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
-        "dolomiti-terraz-gris-floor-tile-600x600",
-        "dolomiti-willow-20003-matt-600x600mm"
+        "dolomiti-terraz-gris-floor-tile-600x600"
       ]
     },
     "natural-stone-cladding": {
@@ -373,7 +371,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 181,
+      "count": 179,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -414,12 +412,10 @@
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
         "dolomiti-terraz-gris-floor-tile-600x600",
-        "dolomiti-willow-20003-matt-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "dyna-vitrifed-polished-porcelain-600x600",
-        "dyna-vitrified-polished-porcelain-600x600",
         "dynasty-beige-glazed-glossy-porcelain-600x600mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
         "element-invisible-zenus-matt-porcelain-600x1200mm",
@@ -560,7 +556,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 132,
+      "count": 130,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -592,14 +588,12 @@
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
         "dolomiti-terraz-gris-floor-tile-600x600",
-        "dolomiti-willow-20003-matt-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
-        "dyna-vitrified-polished-porcelain-600x600",
         "dynasty-beige-glazed-glossy-porcelain-600x600mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
         "element-invisible-zenus-matt-porcelain-600x1200mm",
@@ -698,7 +692,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 180,
+      "count": 178,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -742,14 +736,12 @@
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
         "dolomiti-terraz-gris-floor-tile-600x600",
-        "dolomiti-willow-20003-matt-600x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
-        "dyna-vitrified-polished-porcelain-600x600",
         "dynasty-beige-glazed-glossy-porcelain-600x600mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
         "element-invisible-zenus-matt-porcelain-600x1200mm",
@@ -1334,7 +1326,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 318,
+      "count": 316,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1445,7 +1437,6 @@
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
-        "dyna-vitrified-polished-porcelain-600x600",
         "dynasty-beige-glazed-glossy-porcelain-600x600mm",
         "earth-vein-taupe-glazed-polished-porcelain-600x1200",
         "element-invisible-zenus-matt-porcelain-600x1200mm",
@@ -1540,7 +1531,6 @@
         "dolomiti-stone-dark-45032-matt-600x600mm",
         "dolomiti-terraz-crema-matt-600x600mm",
         "dolomiti-terraz-gris-floor-tile-600x600",
-        "dolomiti-willow-20003-matt-600x600mm",
         "cladding-black-slate-60x150mm",
         "cladding-desert-sand-60x150mm",
         "cladding-silver-shine-60x150mm",
