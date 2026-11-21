@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:36:21.167725+00:00",
+  "generated_at": "2026-11-21T10:17:48.598624+00:00",
   "updater_version": "2026-10-01-v1-combo-html-checkpoint",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -13,7 +13,7 @@
     "porcelain-tile-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 54,
+      "count": 53,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -40,7 +40,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
         "luster-empredor-sugar-glaze-combo-600x600",
@@ -225,7 +224,7 @@
     "all": {
       "title": "All Combo Deals",
       "group": "All",
-      "count": 138,
+      "count": 137,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -252,7 +251,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
         "luster-empredor-sugar-glaze-combo-600x600",
@@ -403,7 +401,7 @@
     "porcelain-combos": {
       "title": "Porcelain Tile Combos",
       "group": "Tile Combo Deals",
-      "count": 54,
+      "count": 53,
       "product_ids": [
         "abstract-river-glazed-polished-porcelainelain-600x1200-combo",
         "active-onyx-ice-porcelain-combo-matt-600x1200mm",
@@ -430,7 +428,6 @@
         "heritage-light-grey-porcelain-combo-600x1200mm",
         "heritage-light-grey-porcelain-combo-600x1200mm-2",
         "ivory-nano-vitrified-combo-600x600",
-        "ivory-polished-tile-combo-600x600",
         "legacy-peada-porcelain-combo-600x600mm",
         "luster-carrara-sugar-glazed-combo-600x600",
         "luster-empredor-sugar-glaze-combo-600x600",
