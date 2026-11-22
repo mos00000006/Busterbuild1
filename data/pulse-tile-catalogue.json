@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T09:56:04.589267+00:00",
+  "generated_at": "2026-11-22T09:52:56.712186+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 87,
+      "count": 88,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -28,6 +28,7 @@
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
@@ -556,7 +557,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 130,
+      "count": 131,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -591,6 +592,7 @@
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -692,7 +694,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 178,
+      "count": 179,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "active-onyx-ice-glazed-polished-porcelain-matt-600x1200mm",
@@ -739,6 +741,7 @@
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dove-stone-full-body-porcelain-matt-600x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dyna-vitrifed-polished-porcelain-600x600",
@@ -876,7 +879,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 41,
+      "count": 42,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "baltico-antislip-floor-tile-45x45",
@@ -885,6 +888,7 @@
         "colorado-graffito-elevation-tile-300x600mm",
         "dolomiti-pro-cosmo-matt-glazed-porcelain-600x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
@@ -1165,10 +1169,11 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 5,
+      "count": 6,
       "product_ids": [
         "colorado-graffito-elevation-tile-300x600mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "harmony-crema-elevation-tile-300x600mm"
@@ -1326,7 +1331,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 316,
+      "count": 317,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1346,6 +1351,7 @@
         "dakota-beige-glossy-300x600mm",
         "deco-grey-wood-look-floor-tile-200x900mm",
         "dubois-dark-grey-elevation-tile-300x600mm",
+        "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
