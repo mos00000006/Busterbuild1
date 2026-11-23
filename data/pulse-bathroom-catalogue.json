@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T10:50:26.760138+00:00",
+  "generated_at": "2026-11-23T11:24:25.468321+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -283,11 +283,10 @@
     "built-in-baths": {
       "title": "Built in Baths",
       "group": "baths",
-      "count": 3,
+      "count": 2,
       "product_ids": [
         "arabella-drop-in-bath-1800x800x390",
-        "bathtub-with-handles-1500mm",
-        "bathtub-with-handles-1700x700x390"
+        "bathtub-with-handles-1500mm"
       ]
     },
     "bath-taps": {
@@ -339,9 +338,10 @@
     "close-couple-toilets": {
       "title": "Close Couple Toilets",
       "group": "toilets",
-      "count": 12,
+      "count": 13,
       "product_ids": [
         "alco-bailey-white-top-flush-toilet-close-couple-set",
+        "alco-jonell-white-top-flush-toilet-close-couple-set",
         "sash-close-couple-toilet-incl-t-seat",
         "benito-close-couple-toilet-including-mechanism-toilet-seat",
         "florence-2pc-toilet-with-seat-p-trap-180mm",
@@ -385,12 +385,11 @@
     "flush-plates": {
       "title": "Flush Plates",
       "group": "toilets",
-      "count": 4,
+      "count": 3,
       "product_ids": [
         "alco-actuator-square-plate-chrome",
         "alco-actuator-round-plate-chrome",
-        "alco-actuator-round-plate-gold",
-        "alco-actuator-square-plate-black"
+        "alco-actuator-round-plate-gold"
       ]
     },
     "toilet-fittings": {
@@ -436,13 +435,13 @@
       "group": "furniture",
       "count": 7,
       "product_ids": [
-        "coco-brookhill-mirror-cabinet-730x400x134mm",
         "jenny-black-mirror-cabinet-650x440x120mm",
         "jenny-kalapana-mirror-cabinet-650x440x120mm",
         "jenny-nosara-mirror-cabinet-650x440x120mm",
         "maahira-black-mirror-cabinet-520x550mm",
         "maahira-nosara-mirror-cabinet-520x550mm",
-        "mirror-and-cabinet-combo"
+        "mirror-and-cabinet-combo",
+        "sam-brookhill-mirror-cabinet-610x610x116mm"
       ]
     },
     "mirrors": {
@@ -475,7 +474,7 @@
     "led-mirrors": {
       "title": "LED Mirrors",
       "group": "furniture",
-      "count": 20,
+      "count": 19,
       "product_ids": [
         "alco-echo-led-mirror-3-colour-light-600x600mm",
         "alco-haylee-led-mirror-3-colour-light-600x600mm",
@@ -488,7 +487,6 @@
         "enzo-led-mirror-3-colour-light-function-600x600mm",
         "gemini-gleam-led-mirror-500x1600mm",
         "golden-reflection-led-mirror-600x900mm",
-        "halo-glow-led-mirror-800x800mm",
         "juniper-led-mirror-3-colour-light-function-800x800mm",
         "lunar-led-mirror-3-colour-light-function-800x600mm",
         "roda-led-mirror-3-colour-light-function-600x700",
@@ -502,7 +500,7 @@
     "bathroom-accessories": {
       "title": "Bathroom Accessories",
       "group": "furniture",
-      "count": 118,
+      "count": 129,
       "product_ids": [
         "6-pc-bathroom-set-square-black-and-bamboo",
         "6-piece-bathroom-accessories-black",
@@ -591,6 +589,13 @@
         "aquavit-square-shower-basket",
         "backscrubber-with-handle",
         "bathroom-mat-340x610mm",
+        "bathroom-mat-rubber-beige-with-suction",
+        "bathroom-mat-rubber-black-with-suction",
+        "bathroom-mat-rubber-blue-with-suction",
+        "bathroom-mat-rubber-dark-green-with-suction",
+        "bathroom-mat-rubber-grey-with-suction",
+        "bathroom-mat-rubber-light-green-with-suction",
+        "bathroom-mat-rubber-white-with-suction",
         "corner-shower-caddy",
         "elara-black-double-towel-rail",
         "elara-black-soap-basket",
@@ -621,7 +626,11 @@
         "majestic-ebony-soap-dish-gold-and-black",
         "majestic-ebony-toilet-paper-holder-gold-and-black",
         "majestic-ebony-towel-ring-gold-and-black",
-        "majestic-ebony-tumbler-holder-gold-and-black"
+        "majestic-ebony-tumbler-holder-gold-and-black",
+        "shower-curtain-hook-black",
+        "shower-curtain-hook-clear",
+        "shower-curtain-hook-white",
+        "shower-curtain-rail-extendable-1100-2000mm"
       ]
     },
     "shower-cubicles": {
@@ -923,13 +932,24 @@
     "bath-accessories": {
       "title": "Bath Accessories",
       "group": "baths",
-      "count": 5,
+      "count": 16,
       "product_ids": [
         "6-pc-bathroom-set-square-black-and-bamboo",
         "alco-shower-caddy-black",
         "backscrubber-with-handle",
         "bathroom-mat-340x610mm",
-        "corner-shower-caddy"
+        "bathroom-mat-rubber-beige-with-suction",
+        "bathroom-mat-rubber-black-with-suction",
+        "bathroom-mat-rubber-blue-with-suction",
+        "bathroom-mat-rubber-dark-green-with-suction",
+        "bathroom-mat-rubber-grey-with-suction",
+        "bathroom-mat-rubber-light-green-with-suction",
+        "bathroom-mat-rubber-white-with-suction",
+        "corner-shower-caddy",
+        "shower-curtain-hook-black",
+        "shower-curtain-hook-clear",
+        "shower-curtain-hook-white",
+        "shower-curtain-rail-extendable-1100-2000mm"
       ]
     }
   },
@@ -1071,6 +1091,7 @@
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo",
         "alco-bailey-white-top-flush-toilet-close-couple-set",
+        "alco-jonell-white-top-flush-toilet-close-couple-set",
         "sash-close-couple-toilet-incl-t-seat",
         "benito-close-couple-toilet-including-mechanism-toilet-seat",
         "florence-2pc-toilet-with-seat-p-trap-180mm",
@@ -1098,7 +1119,6 @@
         "alco-actuator-square-plate-chrome",
         "alco-actuator-round-plate-chrome",
         "alco-actuator-round-plate-gold",
-        "alco-actuator-square-plate-black",
         "alco-15mmx15mm-round-angle-valve",
         "alco-braided-flexible-hose-black-15x15mm",
         "alco-braided-flexible-hose-chrome-15x15mm",
@@ -1433,7 +1453,7 @@
     },
     "baths": {
       "title": "Baths",
-      "count": 24,
+      "count": 34,
       "product_ids": [
         "amara-black-free-standing-bath-1700x730x580",
         "aquavit-ella-freestanding-bath-grey-1700x800x580mm",
@@ -1452,28 +1472,38 @@
         "victorian-freestanding-bath-1700mm",
         "arabella-drop-in-bath-1800x800x390",
         "bathtub-with-handles-1500mm",
-        "bathtub-with-handles-1700x700x390",
         "spa-bath-2-seater-corner-white-odette",
         "6-pc-bathroom-set-square-black-and-bamboo",
         "alco-shower-caddy-black",
         "backscrubber-with-handle",
         "bathroom-mat-340x610mm",
-        "corner-shower-caddy"
+        "bathroom-mat-rubber-beige-with-suction",
+        "bathroom-mat-rubber-black-with-suction",
+        "bathroom-mat-rubber-blue-with-suction",
+        "bathroom-mat-rubber-dark-green-with-suction",
+        "bathroom-mat-rubber-grey-with-suction",
+        "bathroom-mat-rubber-light-green-with-suction",
+        "bathroom-mat-rubber-white-with-suction",
+        "corner-shower-caddy",
+        "shower-curtain-hook-black",
+        "shower-curtain-hook-clear",
+        "shower-curtain-hook-white",
+        "shower-curtain-rail-extendable-1100-2000mm"
       ]
     },
     "furniture": {
       "title": "Bathroom Furniture",
-      "count": 167,
+      "count": 177,
       "product_ids": [
         "basin-and-mirror-combo-2",
         "led-mirror-and-accessory-set-combo",
-        "coco-brookhill-mirror-cabinet-730x400x134mm",
         "jenny-black-mirror-cabinet-650x440x120mm",
         "jenny-kalapana-mirror-cabinet-650x440x120mm",
         "jenny-nosara-mirror-cabinet-650x440x120mm",
         "maahira-black-mirror-cabinet-520x550mm",
         "maahira-nosara-mirror-cabinet-520x550mm",
         "mirror-and-cabinet-combo",
+        "sam-brookhill-mirror-cabinet-610x610x116mm",
         "aquavit-round-bracket-extendable-cosmetic-mirror",
         "aquavit-square-bracket-extendable-cosmetic-mirror",
         "erin-mirror-600x600mm",
@@ -1505,7 +1535,6 @@
         "enzo-led-mirror-3-colour-light-function-600x600mm",
         "gemini-gleam-led-mirror-500x1600mm",
         "golden-reflection-led-mirror-600x900mm",
-        "halo-glow-led-mirror-800x800mm",
         "juniper-led-mirror-3-colour-light-function-800x800mm",
         "lunar-led-mirror-3-colour-light-function-800x600mm",
         "roda-led-mirror-3-colour-light-function-600x700",
@@ -1601,6 +1630,13 @@
         "aquavit-square-shower-basket",
         "backscrubber-with-handle",
         "bathroom-mat-340x610mm",
+        "bathroom-mat-rubber-beige-with-suction",
+        "bathroom-mat-rubber-black-with-suction",
+        "bathroom-mat-rubber-blue-with-suction",
+        "bathroom-mat-rubber-dark-green-with-suction",
+        "bathroom-mat-rubber-grey-with-suction",
+        "bathroom-mat-rubber-light-green-with-suction",
+        "bathroom-mat-rubber-white-with-suction",
         "corner-shower-caddy",
         "elara-black-double-towel-rail",
         "elara-black-soap-basket",
@@ -1631,7 +1667,11 @@
         "majestic-ebony-soap-dish-gold-and-black",
         "majestic-ebony-toilet-paper-holder-gold-and-black",
         "majestic-ebony-towel-ring-gold-and-black",
-        "majestic-ebony-tumbler-holder-gold-and-black"
+        "majestic-ebony-tumbler-holder-gold-and-black",
+        "shower-curtain-hook-black",
+        "shower-curtain-hook-clear",
+        "shower-curtain-hook-white",
+        "shower-curtain-rail-extendable-1100-2000mm"
       ]
     }
   },
@@ -2148,37 +2188,6 @@
       },
       "description": "Dimensions: 28 × 18 × 6 cm.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03972.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "28 × 18 × 6 cm"
-        }
-      ],
-      "categories": [
-        "flush-plates"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "alco-actuator-square-plate-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-actuator-square-plate-black/",
-      "name": "Alco Actuator Square Plate Black",
-      "code": "B03975",
-      "price": {
-        "current": 749.99,
-        "regular": 749.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 28 × 18 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03975-1.webp",
       "attributes": [
         {
           "name": "Weight",
@@ -2875,6 +2884,45 @@
       ],
       "bathroom_groups": [
         "furniture"
+      ]
+    },
+    {
+      "id": "alco-jonell-white-top-flush-toilet-close-couple-set",
+      "source_url": "https://pulsetiles.co.za/product/alco-jonell-white-top-flush-toilet-close-couple-set/",
+      "name": "Alco Jonell White Top Flush Toilet Close Couple Set",
+      "code": "B03867",
+      "price": {
+        "current": 2199.99,
+        "regular": 2199.99,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 59 × 39 × 62 cm. Dimensions: 30 × 20 × 15 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B03867-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "41.25 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "59 × 39 × 62 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 20 × 15 cm"
+        }
+      ],
+      "categories": [
+        "close-couple-toilets"
+      ],
+      "bathroom_groups": [
+        "toilets"
       ]
     },
     {
@@ -13800,6 +13848,237 @@
       ]
     },
     {
+      "id": "bathroom-mat-rubber-beige-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-beige-with-suction/",
+      "name": "Bathroom Mat Rubber Beige With Suction",
+      "code": "I00847",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00847.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-black-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-black-with-suction/",
+      "name": "Bathroom Mat Rubber Black With Suction",
+      "code": "I00845",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00845.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-blue-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-blue-with-suction/",
+      "name": "Bathroom Mat Rubber Blue With Suction",
+      "code": "I00850",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00850.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-dark-green-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-dark-green-with-suction/",
+      "name": "Bathroom Mat Rubber Dark Green With Suction",
+      "code": "I00849",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00849.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-grey-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-grey-with-suction/",
+      "name": "Bathroom Mat Rubber Grey With Suction",
+      "code": "I00846",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00846.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-light-green-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-light-green-with-suction/",
+      "name": "Bathroom Mat Rubber Light Green With Suction",
+      "code": "I00851",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00851.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "bathroom-mat-rubber-white-with-suction",
+      "source_url": "https://pulsetiles.co.za/product/bathroom-mat-rubber-white-with-suction/",
+      "name": "Bathroom Mat Rubber White With Suction",
+      "code": "I00848",
+      "price": {
+        "current": 59.99,
+        "regular": 59.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 48 × 10 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00848.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "48 × 10 × 8 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
       "id": "bathtub-with-handles-1500mm",
       "source_url": "https://pulsetiles.co.za/product/bathtub-with-handles-1500mm/",
       "name": "Bathtub With Handles 1500mm",
@@ -13821,37 +14100,6 @@
         {
           "name": "Dimensions",
           "value": "153 × 93 × 46 cm"
-        }
-      ],
-      "categories": [
-        "built-in-baths"
-      ],
-      "bathroom_groups": [
-        "baths"
-      ]
-    },
-    {
-      "id": "bathtub-with-handles-1700x700x390",
-      "source_url": "https://pulsetiles.co.za/product/bathtub-with-handles-1700x700x390/",
-      "name": "Bathtub With Handles 1700mm",
-      "code": "B03095",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 170 × 93 × 46 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03095.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "26 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "170 × 93 × 46 cm"
         }
       ],
       "categories": [
@@ -14506,37 +14754,6 @@
       ],
       "bathroom_groups": [
         "toilets"
-      ]
-    },
-    {
-      "id": "coco-brookhill-mirror-cabinet-730x400x134mm",
-      "source_url": "https://pulsetiles.co.za/product/coco-brookhill-mirror-cabinet-730x400x134mm/",
-      "name": "Coco Brookhill Mirror Cabinet 730Ã400Ã134mm",
-      "code": "J00243",
-      "price": {
-        "current": 1099.99,
-        "regular": 1099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 76 × 15 × 41 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/J00243-REAL.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "9.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "76 × 15 × 41 cm"
-        }
-      ],
-      "categories": [
-        "mirror-cabinets"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -16132,37 +16349,6 @@
       ],
       "bathroom_groups": [
         "showers"
-      ]
-    },
-    {
-      "id": "halo-glow-led-mirror-800x800mm",
-      "source_url": "https://pulsetiles.co.za/product/halo-glow-led-mirror-800x800mm/",
-      "name": "Halo Glow LED Mirror 800Ã800mm",
-      "code": "B04252",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 88.5 × 88.5 × 6.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04252-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "6.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "88.5 × 88.5 × 6.5 cm"
-        }
-      ],
-      "categories": [
-        "led-mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -19120,6 +19306,37 @@
       ]
     },
     {
+      "id": "sam-brookhill-mirror-cabinet-610x610x116mm",
+      "source_url": "https://pulsetiles.co.za/product/sam-brookhill-mirror-cabinet-610x610x116mm/",
+      "name": "Sam Brookhill Mirror Cabinet 610Ã610Ã116mm",
+      "code": "J00244",
+      "price": {
+        "current": 999.99,
+        "regular": 1199.99,
+        "sale": 999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 60 × 15 × 62 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/J00244.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 15 × 62 cm"
+        }
+      ],
+      "categories": [
+        "mirror-cabinets"
+      ],
+      "bathroom_groups": [
+        "furniture"
+      ]
+    },
+    {
       "id": "samba-mirror-800x600mm",
       "source_url": "https://pulsetiles.co.za/product/samba-mirror-800x600mm/",
       "name": "Samba Mirror 800X600mm",
@@ -20043,6 +20260,138 @@
       ],
       "bathroom_groups": [
         "showers"
+      ]
+    },
+    {
+      "id": "shower-curtain-hook-black",
+      "source_url": "https://pulsetiles.co.za/product/shower-curtain-hook-black/",
+      "name": "Shower Curtain Hook Black",
+      "code": "I00876",
+      "price": {
+        "current": 29.99,
+        "regular": 29.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 23 × 9 × 4 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00876.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "23 × 9 × 4 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "shower-curtain-hook-clear",
+      "source_url": "https://pulsetiles.co.za/product/shower-curtain-hook-clear/",
+      "name": "Shower Curtain Hook Clear",
+      "code": "I00875",
+      "price": {
+        "current": 29.99,
+        "regular": 29.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 23 × 9 × 4 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00875.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "23 × 9 × 4 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "shower-curtain-hook-white",
+      "source_url": "https://pulsetiles.co.za/product/shower-curtain-hook-white/",
+      "name": "Shower Curtain Hook White",
+      "code": "I00873",
+      "price": {
+        "current": 17.99,
+        "regular": 17.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 23 × 9 × 4 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00873.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "23 × 9 × 4 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
+    {
+      "id": "shower-curtain-rail-extendable-1100-2000mm",
+      "source_url": "https://pulsetiles.co.za/product/shower-curtain-rail-extendable-1100-2000mm/",
+      "name": "Shower Curtain Rail Extendable – 1100-2000mm",
+      "code": "I00651",
+      "price": {
+        "current": 79.99,
+        "regular": 79.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 117 × 9 × 4 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/I00651.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "117 × 9 × 4 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
       ]
     },
     {
