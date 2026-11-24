@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 662,
+  "count": 663,
   "products": [
     {
       "type": "tile",
@@ -4334,6 +4334,13 @@
       "name": "Shower Arm and Head Combo",
       "file": "qr/Q01011.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01011"
+    },
+    {
+      "type": "combo",
+      "code": "Q01561",
+      "name": "Shower Combo",
+      "file": "qr/Q01561.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01561"
     },
     {
       "type": "combo",
