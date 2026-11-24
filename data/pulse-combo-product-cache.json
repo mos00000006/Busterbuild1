@@ -5324,5 +5324,41 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/shower-combo-3/": {
+    "id": "shower-combo-3",
+    "source_url": "https://pulsetiles.co.za/product/shower-combo-3/",
+    "name": "Shower Combo",
+    "code": "Q01561",
+    "price": {
+      "current": 3499.99,
+      "regular": 3499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [
+      "One Alco Saturn Square Corner Entry Clear Glass 900x900x1850",
+      "One Joop Shower Mixer – CP – 5 Year Warranty",
+      "One Stainless Steel Showerhead – AquaVit Square 8inch (20cm)",
+      "One Shower Arm Stainless Steel With Rosette – Square (307g)"
+    ],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01561.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01561.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "45 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "194 × 52 × 23 cm"
+      }
+    ],
+    "categories": []
   }
 }
