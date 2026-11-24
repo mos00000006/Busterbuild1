@@ -29422,5 +29422,535 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/blue-horizon-matt-wall-tile-300x600mm/": {
+    "id": "blue-horizon-matt-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/blue-horizon-matt-wall-tile-300x600mm/",
+    "name": "Blue Horizon Matt Wall Tile 300x600mm",
+    "code": "A18124",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18124.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/casa-crema-wood-look-tile-200x600mm/": {
+    "id": "casa-crema-wood-look-tile-200x600mm",
+    "source_url": "https://pulsetiles.co.za/product/casa-crema-wood-look-tile-200x600mm/",
+    "name": "Casa Crema Wood Look Tile 200x600mm",
+    "code": "A18002",
+    "price": {
+      "current": 199.99,
+      "regular": 199.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 200mm x 600mm. Quantity Per Box: 6 Tiles Per Box. Square Meters Per Box: 0.72 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18002.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "10.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "20 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "200mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "6 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.72 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "200 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "10 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/cubic-drift-matt-wall-tile-300x600mm/": {
+    "id": "cubic-drift-matt-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/cubic-drift-matt-wall-tile-300x600mm/",
+    "name": "Cubic Drift Matt Wall Tile 300x600mm",
+    "code": "A18123",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/A18123.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/glacier-white-wall-tile-300x600mm/": {
+    "id": "glacier-white-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/glacier-white-wall-tile-300x600mm/",
+    "name": "Glacier White Wall Tile 300x600mm",
+    "code": "A17852",
+    "price": {
+      "current": 219.99,
+      "regular": 219.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A17852.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/gunmetal-decor-wall-tile-300x600mm/": {
+    "id": "gunmetal-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/gunmetal-decor-wall-tile-300x600mm/",
+    "name": "Gunmetal Decor Wall Tile 300x600mm",
+    "code": "A17848",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A17848.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/urban-strip-sugar-glaze-wall-tile-300x600mm/": {
+    "id": "urban-strip-sugar-glaze-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/urban-strip-sugar-glaze-wall-tile-300x600mm/",
+    "name": "Urban Strip Sugar Glaze Wall Tile 300x600mm",
+    "code": "A18125",
+    "price": {
+      "current": 279.99,
+      "regular": 279.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18125.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/rosata-polished-porcelain-600x600/": {
+    "id": "rosata-polished-porcelain-600x600",
+    "source_url": "https://pulsetiles.co.za/product/rosata-polished-porcelain-600x600/",
+    "name": "Rosata Polished Porcelain 600X600mm",
+    "code": "A18056",
+    "price": {
+      "current": 139.99,
+      "regular": 159.99,
+      "sale": 139.99,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/A18056.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      },
+      {
+        "name": "Weight",
+        "value": "20 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 28 × 8 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "44 × 27 × 10 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "5.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 19 × 14 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "1 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 6 × 16 cm"
+      },
+      {
+        "name": "Dimensions",
+        "value": "12 × 8 × 2 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.01 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "14 × 10 × 7 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/denim-azul-gloss-porcelain-tile-600x1200mm/": {
+    "id": "denim-azul-gloss-porcelain-tile-600x1200mm",
+    "source_url": "https://pulsetiles.co.za/product/denim-azul-gloss-porcelain-tile-600x1200mm/",
+    "name": "Denim Azul Gloss Porcelain Tile 600x1200mm",
+    "code": "A17992",
+    "price": {
+      "current": 399.99,
+      "regular": 399.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 1200mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A17992-.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "25.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 120 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 1200mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1200 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/eristo-ebony-gloss-porcelain-tile-600x1200mm/": {
+    "id": "eristo-ebony-gloss-porcelain-tile-600x1200mm",
+    "source_url": "https://pulsetiles.co.za/product/eristo-ebony-gloss-porcelain-tile-600x1200mm/",
+    "name": "Eristo Ebony Gloss Porcelain Tile 600x1200mm",
+    "code": "A17561",
+    "price": {
+      "current": 439.99,
+      "regular": 439.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 1200mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A17561.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "25.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 120 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 1200mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1200 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
   }
 }
