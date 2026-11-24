@@ -1838,5 +1838,221 @@
     ],
     "categories": [],
     "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo/": {
+    "id": "stainless-steel-double-bowl-sink-combo",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo/",
+    "name": "Stainless Steel Double Bowl Sink Combo",
+    "code": "Q01556",
+    "price": {
+      "current": 1999.99,
+      "regular": 1999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 125 × 56 × 25 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01556.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "125 × 56 × 25 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-6/": {
+    "id": "stainless-steel-double-bowl-sink-combo-6",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-6/",
+    "name": "Stainless Steel Double Bowl Sink Combo",
+    "code": "Q01553",
+    "price": {
+      "current": 2199.99,
+      "regular": 2199.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 125 × 56 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01553.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "9 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "125 × 56 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-5/": {
+    "id": "stainless-steel-double-bowl-sink-combo-5",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-5/",
+    "name": "Stainless Steel Double Bowl Sink Combo",
+    "code": "Q01554",
+    "price": {
+      "current": 2299.99,
+      "regular": 2299.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 125 × 56 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01554.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "9 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "125 × 56 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-2/": {
+    "id": "stainless-steel-double-bowl-sink-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-double-bowl-sink-combo-2/",
+    "name": "Stainless Steel Double Bowl Sink Combo",
+    "code": "Q01555",
+    "price": {
+      "current": 1999.99,
+      "regular": 1999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 125 × 56 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01555.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "125 × 56 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo/": {
+    "id": "stainless-steel-single-bowl-sink-combo",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo/",
+    "name": "Stainless Steel Single Bowl Sink Combo",
+    "code": "Q01558",
+    "price": {
+      "current": 1699.99,
+      "regular": 1699.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 94 × 49 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01558.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "94 × 49 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-6/": {
+    "id": "stainless-steel-single-bowl-sink-combo-6",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-6/",
+    "name": "Stainless Steel Single Bowl Sink Combo",
+    "code": "Q01559",
+    "price": {
+      "current": 1499.99,
+      "regular": 1499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 94 × 49 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01559.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "94 × 49 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-2/": {
+    "id": "stainless-steel-single-bowl-sink-combo-2",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-2/",
+    "name": "Stainless Steel Single Bowl Sink Combo",
+    "code": "Q01557",
+    "price": {
+      "current": 1599.99,
+      "regular": 1599.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 94 × 49 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01557.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "7 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "94 × 49 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
+  },
+  "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-5/": {
+    "id": "stainless-steel-single-bowl-sink-combo-5",
+    "source_url": "https://pulsetiles.co.za/product/stainless-steel-single-bowl-sink-combo-5/",
+    "name": "Stainless Steel Single Bowl Sink Combo",
+    "code": "Q01560",
+    "price": {
+      "current": 1499.99,
+      "regular": 1499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 94 × 49 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01560.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "94 × 49 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "kitchen_groups": []
   }
 }
