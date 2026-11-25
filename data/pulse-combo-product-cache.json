@@ -5360,5 +5360,67 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/": {
+    "id": "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
+    "source_url": "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/",
+    "name": "Classy Riva Shower Mixer Plus Shower Rail and Outlet Combo",
+    "code": "Q01645",
+    "price": {
+      "current": 799.99,
+      "regular": 999.99,
+      "sale": 799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Shower Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01645.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01645.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "70 × 25 × 22 cm"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/basin-and-mixer-combo/": {
+    "id": "basin-and-mixer-combo",
+    "source_url": "https://pulsetiles.co.za/product/basin-and-mixer-combo/",
+    "name": "Basin and Mixer Combo",
+    "code": "Q01672",
+    "price": {
+      "current": 799.99,
+      "regular": 999.99,
+      "sale": 799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Basin & Mixer Combos package. Review the product image and specifications for the items included in this combo.",
+    "included_items": [],
+    "detail_parser_version": "2026-10-01-combo-includes-v3",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01672.webp",
+    "images": [
+      "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01672.webp"
+    ],
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 32 × 24 cm"
+      }
+    ],
+    "categories": []
   }
 }
