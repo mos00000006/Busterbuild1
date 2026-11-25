@@ -1,6 +1,6 @@
 {
   "base_url": "https://mos00000006.github.io/Busterbuild1/sales-app/",
-  "count": 674,
+  "count": 676,
   "products": [
     {
       "type": "tile",
@@ -3728,6 +3728,13 @@
     },
     {
       "type": "combo",
+      "code": "Q01672",
+      "name": "Basin and Mixer Combo",
+      "file": "qr/Q01672.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01672"
+    },
+    {
+      "type": "combo",
       "code": "Q01457",
       "name": "Bathroom Solution Combo",
       "file": "qr/Q01457.png",
@@ -3781,6 +3788,13 @@
       "name": "Classic Jakarta White Matt Glazed Porcelain Combo 600X1200mm",
       "file": "qr/Q01086.png",
       "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01086"
+    },
+    {
+      "type": "combo",
+      "code": "Q01645",
+      "name": "Classy Riva Shower Mixer Plus Shower Rail and Outlet Combo",
+      "file": "qr/Q01645.png",
+      "url": "https://mos00000006.github.io/Busterbuild1/sales-app/?product=Q01645"
     },
     {
       "type": "combo",
