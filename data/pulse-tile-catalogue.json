@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:37:22.250473+00:00",
+  "generated_at": "2026-11-25T11:24:53.523017+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -8,7 +8,7 @@
   "categories": {
     "ceramic-tiles": {
       "title": "Ceramic Tiles",
-      "count": 92,
+      "count": 101,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -37,7 +37,10 @@
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "glacier-white-wall-tile-300x600mm",
+        "glazed-ceramic-tile-400x400",
+        "glossy-ceramic-tile-400x400",
         "gunmetal-decor-wall-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
@@ -57,6 +60,7 @@
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
         "luster-carrara-sugar-glaze-matt-600x600mm",
         "luster-cloud-porcelain-tile-600x600mm-sugar-glazed",
         "luster-dunes-sugar-glaze-600x600",
@@ -97,8 +101,13 @@
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "urban-strip-sugar-glaze-wall-tile-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2"
@@ -106,7 +115,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 108,
+      "count": 110,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -164,6 +173,7 @@
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
+        "mf-glossy-porcelain-tile-600x600",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "mozzero-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "mozzero-grey-high-gloss-gloss-glazed-polished-porcelain-600x1200mm",
@@ -181,6 +191,7 @@
         "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -376,7 +387,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 179,
+      "count": 183,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -441,6 +452,8 @@
         "foster-grey-901-woodlook-floor-tile-200x600mm",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
+        "glazed-ceramic-tile-400x400",
+        "glossy-ceramic-tile-400x400",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
         "heritage-light-grey-glossy-glazed-porcelain-600x1200mm",
@@ -480,6 +493,7 @@
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "meadow-antislip-floor-tile-450x450",
         "melbourne-polished-porcelain-600x600",
+        "mf-glossy-porcelain-tile-600x600",
         "middle-black-polished-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "morocca-azul-60101-matt-600x600mm",
@@ -508,6 +522,7 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "pebble-drift-full-body-porcelain-tile-600x600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
@@ -561,7 +576,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 136,
+      "count": 147,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -615,9 +630,12 @@
         "finest-terrazzo-white-porcelain-tile-600x1200mm-glazed",
         "flamingo-gris-glossy-glazed-porcelain-600x1200",
         "florentino-first-grade-polished-tile-600x600",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "glacier-white-wall-tile-300x600mm",
+        "glazed-ceramic-tile-400x400",
+        "glossy-ceramic-tile-400x400",
         "gunmetal-decor-wall-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
@@ -632,11 +650,13 @@
         "kilavi-grey-wall-tile-200x300mm-2",
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
         "madison-deco-wall-tile-300x600mm",
         "mali-nero-wall-tile-new-250x400",
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
+        "mf-glossy-porcelain-tile-600x600",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
         "montana-decor-wall-tile-300x600mm",
@@ -654,6 +674,7 @@
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -666,7 +687,11 @@
         "siena-marfil-glossy-glazed-porcelain-600x1200mm",
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
         "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
         "statuario-gold-matt-glazed-porcelain-600x1200mm",
@@ -682,6 +707,7 @@
         "subway-splendor-blanco-1201-glossy-75x300mm",
         "subway-splendor-grigio-1231-glossy-75x300mm",
         "75x300-subway-splendor-verde-1271-glossy",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "terrazo-griss-glossy-600x1200",
         "terrazo-griss-matt-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
@@ -703,7 +729,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 183,
+      "count": 194,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -774,9 +800,12 @@
         "florentino-first-grade-polished-tile-600x600",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "galaxy-crema-polished-porc-600x600",
         "genesis-grey-glazed-polished-porcelain-600x1200",
         "glacier-white-wall-tile-300x600mm",
+        "glazed-ceramic-tile-400x400",
+        "glossy-ceramic-tile-400x400",
         "gunmetal-decor-wall-tile-300x600mm",
         "harper-black-glazed-polished-porcelain-600x1200",
         "havana-white-glazed-polished-porcelain-600x1200",
@@ -793,6 +822,7 @@
         "legacy-peada-glazed-glossy-porcelain-600x600mm",
         "liverpool-stone-glazed-polished-porcelain-800x1600",
         "louvers-sculptorea-dove-glazed-porcelain-matt-600x1200mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
         "luster-carrara-sugar-glaze-matt-600x600mm",
         "luster-cloud-porcelain-tile-600x600mm-sugar-glazed",
         "luster-dunes-sugar-glaze-600x600",
@@ -806,6 +836,7 @@
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
+        "mf-glossy-porcelain-tile-600x600",
         "middle-black-polished-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -837,6 +868,7 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
         "pebble-drift-full-body-porcelain-tile-600x600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "quro-beige-woodlook-floor-tile-200x900mm",
         "rg50005-600x1200-matt-porcelain",
@@ -853,7 +885,11 @@
         "siena-marfil-matt-glazed-porcelain-600x1200mm",
         "sisam-beige-ftil55-polished-porcelain-1st-grade-600x600mm",
         "sisam-blue-polished-porcelain-600x600",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
         "spirit-bianco-matt-glazed-porcelain-600x1200",
         "statuario-alaska-glazed-polished-porcelain-800x1600mm",
         "statuario-gold-glossy-glazed-porcelain-600x1200mm",
@@ -871,6 +907,7 @@
         "subway-splendor-blanco-1201-glossy-75x300mm",
         "subway-splendor-grigio-1231-glossy-75x300mm",
         "75x300-subway-splendor-verde-1271-glossy",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "terrazo-griss-glossy-600x1200",
         "terrazo-griss-matt-600x1200",
         "tikoline-gold-glossy-glazed-porcelain-600x1200",
@@ -892,7 +929,7 @@
     },
     "all-outdoor-tiles": {
       "title": "All Outdoor Tiles",
-      "count": 46,
+      "count": 53,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "baltico-antislip-floor-tile-45x45",
@@ -907,6 +944,7 @@
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
         "dune-45446-antislip-floor-tile-450mmx450mm",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "glacier-white-wall-tile-300x600mm",
         "gunmetal-decor-wall-tile-300x600mm",
         "isla-antislip-floor-tile-45x45",
@@ -923,6 +961,7 @@
         "karoo-graphite-rustic-floor-a-grade-400x400mm",
         "karoo-pebble-rustic-floor-a-grade-400x400mm",
         "karoo-sand-rustic-floor-a-grade-400x400mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
         "meadow-antislip-floor-tile-450x450",
         "oscar-grey-1238-d-wall-tile-glossy-300x600mm",
         "river-antislip-floor-tile-450x450",
@@ -935,8 +974,13 @@
         "sahara-stone-ceramic-330x330mm",
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "urban-strip-sugar-glaze-wall-tile-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2"
@@ -944,7 +988,7 @@
     },
     "large-format-tiles": {
       "title": "Large Format Tiles",
-      "count": 104,
+      "count": 105,
       "product_ids": [
         "1001-glazed-polished-porcelain-glossy-600x1800mm",
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
@@ -1018,6 +1062,7 @@
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "pantagonia-high-gloss-polished-porcelain-1200x3200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-glazed-polished-porcelain-800x1600",
@@ -1075,7 +1120,7 @@
     },
     "marble-look-tiles": {
       "title": "Marble Look Tiles",
-      "count": 74,
+      "count": 75,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -1124,6 +1169,7 @@
         "onyx-green-glazed-polished-porcelain-600x1200",
         "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "rock-glazed-polished-porcelain-800x1600",
@@ -1191,7 +1237,7 @@
     },
     "cladding-look-tiles": {
       "title": "Cladding Look Tiles",
-      "count": 10,
+      "count": 17,
       "product_ids": [
         "blue-horizon-matt-wall-tile-300x600mm",
         "colorado-graffito-elevation-tile-300x600mm",
@@ -1200,8 +1246,15 @@
         "dubois-grigio-elevation-tile-300x600mm",
         "dubois-light-grey-elevation-tile-300x600mm",
         "dubois-verde-elevation-wall-tile-300x600mm",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "glacier-white-wall-tile-300x600mm",
         "gunmetal-decor-wall-tile-300x600mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "urban-strip-sugar-glaze-wall-tile-300x600mm"
       ]
     },
@@ -1357,7 +1410,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 321,
+      "count": 332,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1386,7 +1439,10 @@
         "dune-45446-antislip-floor-tile-450mmx450mm",
         "foster-ash-902-woodlook-floor-tile-200x600mm",
         "foster-grey-901-woodlook-floor-tile-200x600mm",
+        "fusion-geo-gloss-wall-tile-300x600mm",
         "glacier-white-wall-tile-300x600mm",
+        "glazed-ceramic-tile-400x400",
+        "glossy-ceramic-tile-400x400",
         "gunmetal-decor-wall-tile-300x600mm",
         "honey-light-grey-woodlook-floor-tile-200x900mm",
         "isla-antislip-floor-tile-45x45",
@@ -1406,6 +1462,7 @@
         "kerry-blanco-wall-tile-300x600mm",
         "kilavi-grey-wall-tile-200x300mm-2",
         "leaf-nero-24023-s-decor-wall-tile-300x600mm",
+        "lunar-drift-sugar-glaze-wall-tile-300x600mm",
         "luster-carrara-sugar-glaze-matt-600x600mm",
         "luster-cloud-porcelain-tile-600x600mm-sugar-glazed",
         "luster-dunes-sugar-glaze-600x600",
@@ -1446,8 +1503,13 @@
         "sahara-taupe-ceramic-330x330mm",
         "san-marino-45441-antislip-floor-tile-450mmx450mm",
         "sisam-blue-polished-porcelain-600x600",
+        "slide-azure-dark-decor-wall-tile-300x600mm",
+        "slide-grey-dark-decor-wall-tile-300x600mm",
+        "slide-grey-light-decor-wall-tile-300x600mm",
         "slide-nero-dark-wall-tile-300x600mm",
+        "slide-nero-light-decor-wall-tile-300x600mm",
         "stone-clay-45450-antislip-floor-tile-450mmx450mm",
+        "tellus-midnight-blue-decor-wall-tile-300x600mm",
         "topaz-gris-9084-d-wall-tile-sugar-glaze-300x600mm",
         "urban-strip-sugar-glaze-wall-tile-300x600mm",
         "walk-45914-antislip-floor-tile-450mmx450mm-2",
@@ -1507,6 +1569,7 @@
         "manilla-clear-glazed-porcelain-matt-600x1200mm",
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
+        "mf-glossy-porcelain-tile-600x600",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "mozzero-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "mozzero-grey-high-gloss-gloss-glazed-polished-porcelain-600x1200mm",
@@ -1524,6 +1587,7 @@
         "onyx-grey-polished-porcelain-tile-800x1600mm",
         "palazzo-matt-glazed-porcelain-600x1200mm",
         "paris-high-gloss-glazed-porcelain-800x1600mm",
+        "polished-terraz-tile-600x1200",
         "quantic-aqua-glazed-porcelain-matt-600x1200mm",
         "rg50005-600x1200-matt-porcelain",
         "ravenna-600x600mm",
@@ -13300,6 +13364,66 @@
       ]
     },
     {
+      "id": "fusion-geo-gloss-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/fusion-geo-gloss-wall-tile-300x600mm/",
+      "name": "Fusion Geo Gloss Wall Tile 300x600mm",
+      "code": "A18130",
+      "price": {
+        "current": 259.99,
+        "regular": 259.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18130.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
+      ]
+    },
+    {
       "id": "fusion-red-glass-mosaic-300mmx300mmx4mm",
       "source_url": "https://pulsetiles.co.za/product/fusion-red-glass-mosaic-300mmx300mmx4mm/",
       "name": "Fusion Red Glass Mosaic 300mmx300mmx4mm",
@@ -13933,6 +14057,124 @@
       ],
       "categories": [
         "mosaics"
+      ]
+    },
+    {
+      "id": "glazed-ceramic-tile-400x400",
+      "source_url": "https://pulsetiles.co.za/product/glazed-ceramic-tile-400x400/",
+      "name": "Glazed Ceramic Tile 400×400",
+      "code": "A18377",
+      "price": {
+        "current": 59.99,
+        "regular": 179.99,
+        "sale": 59.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 7 Tiles Per Box. Square Meters Per Box: 1.12 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18377.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 40 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "400mm x 400mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "7 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.12 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "5 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "glossy-ceramic-tile-400x400",
+      "source_url": "https://pulsetiles.co.za/product/glossy-ceramic-tile-400x400/",
+      "name": "Glossy Ceramic Tile 400×400",
+      "code": "A18368",
+      "price": {
+        "current": 79.99,
+        "regular": 89.99,
+        "sale": 79.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 7 Tiles Per Box. Square Meters Per Box: 1.12 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18368.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "40 × 40 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "400mm x 400mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "7 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.12 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "400 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "5 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles"
       ]
     },
     {
@@ -18675,6 +18917,66 @@
       ]
     },
     {
+      "id": "lunar-drift-sugar-glaze-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/lunar-drift-sugar-glaze-wall-tile-300x600mm/",
+      "name": "Lunar Drift Sugar Glaze Wall Tile 300x600mm",
+      "code": "A18129",
+      "price": {
+        "current": 279.99,
+        "regular": 279.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18129.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
+      ]
+    },
+    {
       "id": "luster-azul-sugar-glaze-600x600",
       "source_url": "https://pulsetiles.co.za/product/luster-azul-sugar-glaze-600x600/",
       "name": "Luster Azul Sugar Glaze 600X600mm",
@@ -20795,6 +21097,65 @@
         {
           "name": "Dimensions",
           "value": "14 × 10 × 7 cm"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "porcelain-tiles"
+      ]
+    },
+    {
+      "id": "mf-glossy-porcelain-tile-600x600",
+      "source_url": "https://pulsetiles.co.za/product/mf-glossy-porcelain-tile-600x600/",
+      "name": "MF Glossy Porcelain Tile 600×600",
+      "code": "A18372",
+      "price": {
+        "current": 129.99,
+        "regular": 169.99,
+        "sale": 129.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18372.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 60 × 2.8 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "4 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
         }
       ],
       "categories": [
@@ -24607,6 +24968,67 @@
       ],
       "categories": [
         "tile-edges-trims"
+      ]
+    },
+    {
+      "id": "polished-terraz-tile-600x1200",
+      "source_url": "https://pulsetiles.co.za/product/polished-terraz-tile-600x1200/",
+      "name": "Polished Terraz Tile 600×1200",
+      "code": "A18367",
+      "price": {
+        "current": 99.99,
+        "regular": 159.99,
+        "sale": 99.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 1200mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18367.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "25.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 120 × 1.6 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 1200mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "2 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "1200 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "8 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "large-format-tiles",
+        "marble-look-tiles",
+        "porcelain-tiles"
       ]
     },
     {
@@ -28643,6 +29065,186 @@
       ]
     },
     {
+      "id": "slide-azure-dark-decor-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/slide-azure-dark-decor-wall-tile-300x600mm/",
+      "name": "Slide Azure Dark Decor Wall Tile 300x600mm",
+      "code": "A18144",
+      "price": {
+        "current": 259.99,
+        "regular": 259.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18144.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
+      ]
+    },
+    {
+      "id": "slide-grey-dark-decor-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/slide-grey-dark-decor-wall-tile-300x600mm/",
+      "name": "Slide Grey Dark Decor Wall Tile 300x600mm",
+      "code": "A18143",
+      "price": {
+        "current": 249.99,
+        "regular": 249.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18143.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
+      ]
+    },
+    {
+      "id": "slide-grey-light-decor-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/slide-grey-light-decor-wall-tile-300x600mm/",
+      "name": "Slide Grey Light Decor Wall Tile 300x600mm",
+      "code": "A18142",
+      "price": {
+        "current": 249.99,
+        "regular": 249.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18142.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
+      ]
+    },
+    {
       "id": "slide-nero-dark-wall-tile-300x600mm",
       "source_url": "https://pulsetiles.co.za/product/slide-nero-dark-wall-tile-300x600mm/",
       "name": "Slide Nero Dark Wall Tile 300X600mm",
@@ -28735,6 +29337,66 @@
         "all-outdoor-tiles",
         "all-wall-tiles",
         "ceramic-tiles"
+      ]
+    },
+    {
+      "id": "slide-nero-light-decor-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/slide-nero-light-decor-wall-tile-300x600mm/",
+      "name": "Slide Nero Light Decor Wall Tile 300x600mm",
+      "code": "A18140",
+      "price": {
+        "current": 249.99,
+        "regular": 249.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18140.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
       ]
     },
     {
@@ -30782,6 +31444,66 @@
       ],
       "categories": [
         "natural-stone-cladding"
+      ]
+    },
+    {
+      "id": "tellus-midnight-blue-decor-wall-tile-300x600mm",
+      "source_url": "https://pulsetiles.co.za/product/tellus-midnight-blue-decor-wall-tile-300x600mm/",
+      "name": "Tellus Midnight Blue Decor Wall Tile 300x600mm",
+      "code": "A18146",
+      "price": {
+        "current": 249.99,
+        "regular": 249.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18146.jpg",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "30 × 60 × 5 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "300mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "5 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "0.90 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "300 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "9 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-indoor-tiles",
+        "all-outdoor-tiles",
+        "all-wall-tiles",
+        "ceramic-tiles",
+        "cladding-look-tiles"
       ]
     },
     {

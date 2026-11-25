@@ -29952,5 +29952,599 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/lunar-drift-sugar-glaze-wall-tile-300x600mm/": {
+    "id": "lunar-drift-sugar-glaze-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/lunar-drift-sugar-glaze-wall-tile-300x600mm/",
+    "name": "Lunar Drift Sugar Glaze Wall Tile 300x600mm",
+    "code": "A18129",
+    "price": {
+      "current": 279.99,
+      "regular": 279.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18129.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/fusion-geo-gloss-wall-tile-300x600mm/": {
+    "id": "fusion-geo-gloss-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/fusion-geo-gloss-wall-tile-300x600mm/",
+    "name": "Fusion Geo Gloss Wall Tile 300x600mm",
+    "code": "A18130",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18130.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/glossy-ceramic-tile-400x400/": {
+    "id": "glossy-ceramic-tile-400x400",
+    "source_url": "https://pulsetiles.co.za/product/glossy-ceramic-tile-400x400/",
+    "name": "Glossy Ceramic Tile 400×400",
+    "code": "A18368",
+    "price": {
+      "current": 79.99,
+      "regular": 89.99,
+      "sale": 79.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 7 Tiles Per Box. Square Meters Per Box: 1.12 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18368.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "40 × 40 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "400mm x 400mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "7 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.12 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "5 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/glazed-ceramic-tile-400x400/": {
+    "id": "glazed-ceramic-tile-400x400",
+    "source_url": "https://pulsetiles.co.za/product/glazed-ceramic-tile-400x400/",
+    "name": "Glazed Ceramic Tile 400×400",
+    "code": "A18377",
+    "price": {
+      "current": 59.99,
+      "regular": 179.99,
+      "sale": 59.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 400mm x 400mm. Quantity Per Box: 7 Tiles Per Box. Square Meters Per Box: 1.12 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18377.jpg",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "40 × 40 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "400mm x 400mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "7 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.12 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "400 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "5 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/slide-azure-dark-decor-wall-tile-300x600mm/": {
+    "id": "slide-azure-dark-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/slide-azure-dark-decor-wall-tile-300x600mm/",
+    "name": "Slide Azure Dark Decor Wall Tile 300x600mm",
+    "code": "A18144",
+    "price": {
+      "current": 259.99,
+      "regular": 259.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18144.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/slide-grey-light-decor-wall-tile-300x600mm/": {
+    "id": "slide-grey-light-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/slide-grey-light-decor-wall-tile-300x600mm/",
+    "name": "Slide Grey Light Decor Wall Tile 300x600mm",
+    "code": "A18142",
+    "price": {
+      "current": 249.99,
+      "regular": 249.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18142.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/slide-grey-dark-decor-wall-tile-300x600mm/": {
+    "id": "slide-grey-dark-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/slide-grey-dark-decor-wall-tile-300x600mm/",
+    "name": "Slide Grey Dark Decor Wall Tile 300x600mm",
+    "code": "A18143",
+    "price": {
+      "current": 249.99,
+      "regular": 249.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18143.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/slide-nero-light-decor-wall-tile-300x600mm/": {
+    "id": "slide-nero-light-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/slide-nero-light-decor-wall-tile-300x600mm/",
+    "name": "Slide Nero Light Decor Wall Tile 300x600mm",
+    "code": "A18140",
+    "price": {
+      "current": 249.99,
+      "regular": 249.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18140.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/tellus-midnight-blue-decor-wall-tile-300x600mm/": {
+    "id": "tellus-midnight-blue-decor-wall-tile-300x600mm",
+    "source_url": "https://pulsetiles.co.za/product/tellus-midnight-blue-decor-wall-tile-300x600mm/",
+    "name": "Tellus Midnight Blue Decor Wall Tile 300x600mm",
+    "code": "A18146",
+    "price": {
+      "current": 249.99,
+      "regular": 249.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 300mm x 600mm. Quantity Per Box: 5 Tiles Per Box. Square Meters Per Box: 0.90 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18146.jpg",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "30 × 60 × 5 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "300mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "5 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "0.90 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "300 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "9 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/polished-terraz-tile-600x1200/": {
+    "id": "polished-terraz-tile-600x1200",
+    "source_url": "https://pulsetiles.co.za/product/polished-terraz-tile-600x1200/",
+    "name": "Polished Terraz Tile 600×1200",
+    "code": "A18367",
+    "price": {
+      "current": 99.99,
+      "regular": 159.99,
+      "sale": 99.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 1200mm. Quantity Per Box: 2 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18367.jpg",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "25.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 120 × 1.6 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 1200mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "2 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "1200 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "8 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/mf-glossy-porcelain-tile-600x600/": {
+    "id": "mf-glossy-porcelain-tile-600x600",
+    "source_url": "https://pulsetiles.co.za/product/mf-glossy-porcelain-tile-600x600/",
+    "name": "MF Glossy Porcelain Tile 600×600",
+    "code": "A18372",
+    "price": {
+      "current": 129.99,
+      "regular": 169.99,
+      "sale": 129.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18372.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
   }
 }
