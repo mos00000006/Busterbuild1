@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T12:43:45.751686+00:00",
+  "generated_at": "2026-11-26T12:18:51.188093+00:00",
   "updater_version": "2026-10-06-v1-pulse-kitchens",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -33,7 +33,7 @@
     "kitchen-sink-taps": {
       "title": "Kitchen Sink Taps",
       "group": "taps",
-      "count": 56,
+      "count": 57,
       "product_ids": [
         "alco-pull-out-sink-mixer-spring-type-black",
         "alco-pull-out-sink-mixer-spring-type-chrome",
@@ -44,6 +44,7 @@
         "alco-pull-out-sink-mixer-stainless-steel-gold",
         "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
         "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-chrome",
         "alco-tivona-arc-sink-mixer-gold",
         "alco-tivona-arc-sink-mixer-grey",
         "alco-tivona-lux-sink-mixer-black",
@@ -129,7 +130,7 @@
     },
     "taps": {
       "title": "Kitchen Sink Taps",
-      "count": 56,
+      "count": 57,
       "product_ids": [
         "alco-pull-out-sink-mixer-spring-type-black",
         "alco-pull-out-sink-mixer-spring-type-chrome",
@@ -140,6 +141,7 @@
         "alco-pull-out-sink-mixer-stainless-steel-gold",
         "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
         "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-chrome",
         "alco-tivona-arc-sink-mixer-gold",
         "alco-tivona-arc-sink-mixer-grey",
         "alco-tivona-lux-sink-mixer-black",
@@ -654,6 +656,37 @@
       },
       "description": "Dimensions: 39 × 21 × 6 cm.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04009-Black-Sink-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
+      ],
+      "kitchen_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-chrome/",
+      "name": "Alco Tivona Arc Sink Mixer â Chrome",
+      "code": "B04008",
+      "price": {
+        "current": 1699.99,
+        "regular": 1699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04008-Chrome-Sink-Mixer.webp",
       "attributes": [
         {
           "name": "Weight",
