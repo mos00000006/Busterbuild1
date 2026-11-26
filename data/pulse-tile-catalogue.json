@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T11:24:53.523017+00:00",
+  "generated_at": "2026-11-26T11:01:20.280341+00:00",
   "updater_version": "2026-10-01-v4-fast-batched",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -115,7 +115,7 @@
     },
     "porcelain-tiles": {
       "title": "Porcelain Tiles",
-      "count": 110,
+      "count": 111,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -174,6 +174,7 @@
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "mf-glossy-porcelain-tile-600x600",
+        "mf-porcelain-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "mozzero-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "mozzero-grey-high-gloss-gloss-glazed-polished-porcelain-600x1200mm",
@@ -387,7 +388,7 @@
     },
     "all-floor-tiles": {
       "title": "All Floor Tiles",
-      "count": 183,
+      "count": 184,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -494,6 +495,7 @@
         "meadow-antislip-floor-tile-450x450",
         "melbourne-polished-porcelain-600x600",
         "mf-glossy-porcelain-tile-600x600",
+        "mf-porcelain-tile-600x600mm",
         "middle-black-polished-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "morocca-azul-60101-matt-600x600mm",
@@ -576,7 +578,7 @@
     },
     "all-wall-tiles": {
       "title": "All Wall Tiles",
-      "count": 147,
+      "count": 148,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -657,6 +659,7 @@
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "mf-glossy-porcelain-tile-600x600",
+        "mf-porcelain-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
         "montana-decor-wall-tile-300x600mm",
@@ -729,7 +732,7 @@
     },
     "all-indoor-tiles": {
       "title": "All Indoor Tiles",
-      "count": 194,
+      "count": 195,
       "product_ids": [
         "aaron-white-high-gloss-glazed-polished-porcelain-600x1200mm",
         "abstract-river-glazed-polished-porcelain-600x1200",
@@ -837,6 +840,7 @@
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "mf-glossy-porcelain-tile-600x600",
+        "mf-porcelain-tile-600x600mm",
         "middle-black-polished-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "montana-blanco-me-wall-tiles-300x600mm-2",
@@ -1373,7 +1377,7 @@
     },
     "tile-spacers-tools": {
       "title": "Tile Spacers & Tools",
-      "count": 31,
+      "count": 32,
       "product_ids": [
         "alco-fixation-screws",
         "alco-handle-with-cutting-wheel-for-1290mm-tile-cutter",
@@ -1394,6 +1398,7 @@
         "cutting-disk-diamond-plain-230mm",
         "cutting-disk-diamond-segmented-230mm",
         "mallet-white-921-9",
+        "measuring-tape-5m-me2705-5m",
         "black-spacers-2mm",
         "pulse-5mm-spacers-black",
         "pulse-cleaning-sponge-150x100x70",
@@ -1410,7 +1415,7 @@
     },
     "all": {
       "title": "All Tiles",
-      "count": 332,
+      "count": 333,
       "product_ids": [
         "apex-gris-1020-l-wall-tile-glossy-300x600mm",
         "azuro-silver-24175-s-decor-wall-tile-300x600mm",
@@ -1570,6 +1575,7 @@
         "matrix-grey-glossy-glazed-porcelain-600x1200mm",
         "melbourne-polished-porcelain-600x600",
         "mf-glossy-porcelain-tile-600x600",
+        "mf-porcelain-tile-600x600mm",
         "mint-bianco-glazed-polished-porcelain-floor-tiles-600x1200-mm",
         "mozzero-blue-high-gloss-glazed-polished-porcelain-600x1200mm",
         "mozzero-grey-high-gloss-gloss-glazed-polished-porcelain-600x1200mm",
@@ -20844,6 +20850,34 @@
       ]
     },
     {
+      "id": "measuring-tape-5m-me2705-5m",
+      "source_url": "https://pulsetiles.co.za/product/measuring-tape-5m-me2705-5m/",
+      "name": "Measuring Tape 5M",
+      "code": "U00442",
+      "price": {
+        "current": 29.99,
+        "regular": 29.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Measuring Tape 5M. See available product specifications.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/T00293.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "13 × 9 × 5 cm"
+        }
+      ],
+      "categories": [
+        "tile-spacers-tools"
+      ]
+    },
+    {
       "id": "10mm-mechanical-polish-aluminium-straight-trim",
       "source_url": "https://pulsetiles.co.za/product/10mm-mechanical-polish-aluminium-straight-trim/",
       "name": "Mechanical Polish Aluminium Straight Trim (10mm)",
@@ -21120,6 +21154,65 @@
       },
       "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18372.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "26.6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "60 × 60 × 2.8 cm"
+        },
+        {
+          "name": "Tile Size",
+          "value": "600mm x 600mm"
+        },
+        {
+          "name": "Quantity Per Box",
+          "value": "4 Tiles Per Box"
+        },
+        {
+          "name": "Square Meters Per Box",
+          "value": "1.44 m2"
+        },
+        {
+          "name": "Tile Length",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Width",
+          "value": "600 mm"
+        },
+        {
+          "name": "Tile Thickness",
+          "value": "7 mm"
+        },
+        {
+          "name": "Sold",
+          "value": "m2"
+        }
+      ],
+      "categories": [
+        "all-floor-tiles",
+        "all-indoor-tiles",
+        "all-wall-tiles",
+        "porcelain-tiles"
+      ]
+    },
+    {
+      "id": "mf-porcelain-tile-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/mf-porcelain-tile-600x600mm/",
+      "name": "MF Porcelain Tile 600x600mm",
+      "code": "A18380",
+      "price": {
+        "current": 169.99,
+        "regular": 169.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18380.webp",
       "attributes": [
         {
           "name": "Weight",

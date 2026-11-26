@@ -30546,5 +30546,85 @@
       }
     ],
     "categories": []
+  },
+  "https://pulsetiles.co.za/product/mf-porcelain-tile-600x600mm/": {
+    "id": "mf-porcelain-tile-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/mf-porcelain-tile-600x600mm/",
+    "name": "MF Porcelain Tile 600x600mm",
+    "code": "A18380",
+    "price": {
+      "current": 169.99,
+      "regular": 169.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Tile Size: 600mm x 600mm. Quantity Per Box: 4 Tiles Per Box. Square Meters Per Box: 1.44 m2. Sold: m2.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/A18380.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "26.6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "60 × 60 × 2.8 cm"
+      },
+      {
+        "name": "Tile Size",
+        "value": "600mm x 600mm"
+      },
+      {
+        "name": "Quantity Per Box",
+        "value": "4 Tiles Per Box"
+      },
+      {
+        "name": "Square Meters Per Box",
+        "value": "1.44 m2"
+      },
+      {
+        "name": "Tile Length",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Width",
+        "value": "600 mm"
+      },
+      {
+        "name": "Tile Thickness",
+        "value": "7 mm"
+      },
+      {
+        "name": "Sold",
+        "value": "m2"
+      }
+    ],
+    "categories": []
+  },
+  "https://pulsetiles.co.za/product/measuring-tape-5m-me2705-5m/": {
+    "id": "measuring-tape-5m-me2705-5m",
+    "source_url": "https://pulsetiles.co.za/product/measuring-tape-5m-me2705-5m/",
+    "name": "Measuring Tape 5M",
+    "code": "U00442",
+    "price": {
+      "current": 29.99,
+      "regular": 29.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Measuring Tape 5M. See available product specifications.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/T00293.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "13 × 9 × 5 cm"
+      }
+    ],
+    "categories": []
   }
 }
