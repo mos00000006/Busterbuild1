@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:24:25.468321+00:00",
+  "generated_at": "2026-11-27T11:31:10.886070+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -32,11 +32,12 @@
     "basin-mixer-combos": {
       "title": "Basin Combos",
       "group": "taps",
-      "count": 7,
+      "count": 8,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
         "basin-and-mirror-combo-2",
+        "basin-and-mixer-combo",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -46,15 +47,18 @@
     "shower-combos": {
       "title": "Shower Combos",
       "group": "showers",
-      "count": 18,
+      "count": 21,
       "product_ids": [
         "alco-black-shower-panel-combo",
+        "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
         "complete-bathroom-solution-combo",
         "complete-shower-solution-combo-2",
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
         "shower-arm-head",
+        "shower-combo-3",
+        "shower-cubicle-plus-free-silicone-combo",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
         "shower-screen-accessories-combo",
@@ -90,11 +94,13 @@
     "counter-top-basins": {
       "title": "Counter top Basins",
       "group": "basins",
-      "count": 13,
+      "count": 14,
       "product_ids": [
         "snow-counter-top-wash-basin-white",
+        "basin-counter-top-700x460x200mm",
         "buffer-wash-basin-table-top",
         "dooms-table-top-wash-basin",
+        "gracia-conuter-top-basin-silver-white-400x400x140mm",
         "hazel-wash-basin-table-top",
         "mozito-counter-top-wash-basin-white",
         "otto-wash-basin-table-top",
@@ -103,7 +109,6 @@
         "rosso-wash-basin-table-top",
         "rowan-wash-basin-table-top",
         "sleek-counter-top",
-        "swing-counter-top-basin",
         "tabby-counter-top-wash-basin-white"
       ]
     },
@@ -261,7 +266,7 @@
     "freestanding-baths": {
       "title": "Freestanding Baths",
       "group": "baths",
-      "count": 15,
+      "count": 14,
       "product_ids": [
         "amara-black-free-standing-bath-1700x730x580",
         "aquavit-ella-freestanding-bath-grey-1700x800x580mm",
@@ -271,7 +276,6 @@
         "aquavit-freestanding-bath-marina-white-1700x750x580mm",
         "aquavit-gianna-freestanding-bath-black-1700x800x580mm",
         "aquavit-monet-freestanding-bath-white-1700x750x580mm",
-        "chloe-free-standing-bath-white-1700x700x580",
         "cordelia-freestanding-bath-1700x750x620mm",
         "diana-freestanding-bath-white",
         "free-standing-bath-aquavit-gianna-grey-1700x800x580mm",
@@ -283,9 +287,8 @@
     "built-in-baths": {
       "title": "Built in Baths",
       "group": "baths",
-      "count": 2,
+      "count": 1,
       "product_ids": [
-        "arabella-drop-in-bath-1800x800x390",
         "bathtub-with-handles-1500mm"
       ]
     },
@@ -338,13 +341,11 @@
     "close-couple-toilets": {
       "title": "Close Couple Toilets",
       "group": "toilets",
-      "count": 13,
+      "count": 11,
       "product_ids": [
-        "alco-bailey-white-top-flush-toilet-close-couple-set",
         "alco-jonell-white-top-flush-toilet-close-couple-set",
         "sash-close-couple-toilet-incl-t-seat",
         "benito-close-couple-toilet-including-mechanism-toilet-seat",
-        "florence-2pc-toilet-with-seat-p-trap-180mm",
         "juliette-2pc-toilet-with-seat-p-trap-180mm",
         "irani-close-couple-toilet-set-top-flush-white",
         "irani-close-couple-toilet-set-top-flush-white-2",
@@ -358,9 +359,10 @@
     "wall-hung-toilets": {
       "title": "Wall Hung Toilets",
       "group": "toilets",
-      "count": 8,
+      "count": 9,
       "product_ids": [
         "elegance-black-wall-hung-toilet",
+        "fluence-wall-hung-toilet-white",
         "natura-wall-hung-toilet-white",
         "playa-wall-hung-toilet-white",
         "pool-wall-hung-toilet-black",
@@ -447,12 +449,13 @@
     "mirrors": {
       "title": "Mirrors",
       "group": "furniture",
-      "count": 20,
+      "count": 21,
       "product_ids": [
         "aquavit-round-bracket-extendable-cosmetic-mirror",
         "aquavit-square-bracket-extendable-cosmetic-mirror",
         "erin-mirror-600x600mm",
         "jupiter-belt-mirror-black-600x600mm",
+        "jupiter-frame-mirror-gold-600x600mm",
         "lapana-mirror-800x600mm",
         "lara-mirror-800x600mm",
         "liro-mirror-800x600mm",
@@ -474,13 +477,16 @@
     "led-mirrors": {
       "title": "LED Mirrors",
       "group": "furniture",
-      "count": 19,
+      "count": 23,
       "product_ids": [
         "alco-echo-led-mirror-3-colour-light-600x600mm",
         "alco-haylee-led-mirror-3-colour-light-600x600mm",
         "alco-luna-led-mirror-3-colour-light-800x600mm",
+        "alco-lyra-led-mirror-3-colour-light-600x600mm",
+        "alco-orion-led-mirror-3-colour-light-600x600mm",
         "amara-led-mirror-3-colour-light-function-500x900mm",
         "amore-led-mirror-3-colour-light-function-600x600mm",
+        "aura-horizon-led-mirror-620x665-5mm",
         "aurora-led-mirror-3-colour-light-function-800x600mm",
         "bastina-led-mirror-3-colour-light-function-100x600mm",
         "canova-led-mirror-3-colour-light-function-600x800mm",
@@ -490,6 +496,7 @@
         "juniper-led-mirror-3-colour-light-function-800x800mm",
         "lunar-led-mirror-3-colour-light-function-800x600mm",
         "roda-led-mirror-3-colour-light-function-600x700",
+        "serenity-curve-led-mirror-600x900mm",
         "tacora-led-mirror-3-colour-light-function-500x600mm",
         "the-vogue-stand-led-mirror-500x1500mm",
         "valencia-led-mirror-3-colour-light-function-500x600mm",
@@ -500,8 +507,9 @@
     "bathroom-accessories": {
       "title": "Bathroom Accessories",
       "group": "furniture",
-      "count": 129,
+      "count": 130,
       "product_ids": [
+        "6-pc-bathroom-set-beige-and-chrome",
         "6-pc-bathroom-set-square-black-and-bamboo",
         "6-piece-bathroom-accessories-black",
         "alco-corner-shower-caddy-black",
@@ -712,7 +720,7 @@
     "shower-rails": {
       "title": "Shower Rails",
       "group": "showers",
-      "count": 10,
+      "count": 9,
       "product_ids": [
         "alco-chrome-shower-rail-with-hand-shower-flexi-hose",
         "alco-shower-rail-grey-2",
@@ -721,7 +729,6 @@
         "alco-shower-rail-set-black-260x85mm",
         "alco-shower-rail-set-gun-metal-260x85mm",
         "alco-shower-rail-set-gun-metal-220x80mm",
-        "alco-shower-rail-set-gun-metal-3-function",
         "alco-shower-rail-set-combo",
         "aquavit-shower-rail-set-with-1-5m-hose-2"
       ]
@@ -773,7 +780,7 @@
     "shower-channels-traps": {
       "title": "Shower Channels Traps",
       "group": "showers",
-      "count": 24,
+      "count": 23,
       "product_ids": [
         "alco-round-shower-trap-cover-black-100mm",
         "alco-round-shower-trap-cover-chrome-100mm",
@@ -790,7 +797,6 @@
         "shower-channel-brevik-black-150mm",
         "shower-channel-with-drainage-black-250mm",
         "shower-channel-with-drainage-brushed-gold-250mm",
-        "shower-channel-with-drainage-brushed-grey-250mm",
         "shower-channel-with-drainage-chrome-250mm",
         "shower-channel-with-drainage-chrome-500mm",
         "shower-channel-with-drainage-chrome-860mm",
@@ -804,7 +810,7 @@
     "shower-taps-outlets": {
       "title": "Shower Taps Outlets",
       "group": "taps",
-      "count": 43,
+      "count": 45,
       "product_ids": [
         "alco-round-shower-outlet-braket-black",
         "alco-round-shower-outlet-braket-chrome",
@@ -848,6 +854,8 @@
         "aquavit-shower-mixer-with-diverter-chrome",
         "aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass",
         "aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome",
+        "cobra-nile-shower-mixer-concealed",
+        "cobra-seine-bath-shower-mixer-concealed-chrome",
         "jazz-shower-mixer-chrome"
       ]
     },
@@ -869,7 +877,7 @@
     "kitchen-sink-taps": {
       "title": "Kitchen Sink Taps",
       "group": "taps",
-      "count": 56,
+      "count": 57,
       "product_ids": [
         "alco-pull-out-sink-mixer-spring-type-black",
         "alco-pull-out-sink-mixer-spring-type-chrome",
@@ -880,6 +888,7 @@
         "alco-pull-out-sink-mixer-stainless-steel-gold",
         "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
         "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-chrome",
         "alco-tivona-arc-sink-mixer-gold",
         "alco-tivona-arc-sink-mixer-grey",
         "alco-tivona-lux-sink-mixer-black",
@@ -932,8 +941,9 @@
     "bath-accessories": {
       "title": "Bath Accessories",
       "group": "baths",
-      "count": 16,
+      "count": 17,
       "product_ids": [
+        "6-pc-bathroom-set-beige-and-chrome",
         "6-pc-bathroom-set-square-black-and-bamboo",
         "alco-shower-caddy-black",
         "backscrubber-with-handle",
@@ -956,14 +966,16 @@
   "groups": {
     "basins": {
       "title": "Basins",
-      "count": 114,
+      "count": 115,
       "product_ids": [
         "breton-wash-basin-belonia-pedestal",
         "canon-wash-basin-renzo-pedestal",
         "repose-wash-basin-with-pedestal-b-grade-white",
         "snow-counter-top-wash-basin-white",
+        "basin-counter-top-700x460x200mm",
         "buffer-wash-basin-table-top",
         "dooms-table-top-wash-basin",
+        "gracia-conuter-top-basin-silver-white-400x400x140mm",
         "hazel-wash-basin-table-top",
         "mozito-counter-top-wash-basin-white",
         "otto-wash-basin-table-top",
@@ -972,7 +984,6 @@
         "rosso-wash-basin-table-top",
         "rowan-wash-basin-table-top",
         "sleek-counter-top",
-        "swing-counter-top-basin",
         "tabby-counter-top-wash-basin-white",
         "cabinet-set-with-basin-c002-model-134-white-515x300x800mm",
         "alegria-floor-450-combo",
@@ -1076,7 +1087,7 @@
     },
     "toilets": {
       "title": "Toilets",
-      "count": 58,
+      "count": 57,
       "product_ids": [
         "toilet-and-basin-with-pedestal",
         "jaunty-alco-wall-hung-toilet-combo",
@@ -1090,11 +1101,9 @@
         "top-flush-toilet-basin-pedestal-cleaner-combo",
         "wal-hung-black-elegance-combo",
         "wall-hung-pool-black-combo",
-        "alco-bailey-white-top-flush-toilet-close-couple-set",
         "alco-jonell-white-top-flush-toilet-close-couple-set",
         "sash-close-couple-toilet-incl-t-seat",
         "benito-close-couple-toilet-including-mechanism-toilet-seat",
-        "florence-2pc-toilet-with-seat-p-trap-180mm",
         "juliette-2pc-toilet-with-seat-p-trap-180mm",
         "irani-close-couple-toilet-set-top-flush-white",
         "irani-close-couple-toilet-set-top-flush-white-2",
@@ -1104,6 +1113,7 @@
         "toilet-close-couple-aqua-white-with-seat",
         "victoria-2pc-toilet-with-seat-p-trap-180mm",
         "elegance-black-wall-hung-toilet",
+        "fluence-wall-hung-toilet-white",
         "natura-wall-hung-toilet-white",
         "playa-wall-hung-toilet-white",
         "pool-wall-hung-toilet-black",
@@ -1140,15 +1150,18 @@
     },
     "showers": {
       "title": "Showers",
-      "count": 144,
+      "count": 145,
       "product_ids": [
         "alco-black-shower-panel-combo",
+        "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
         "complete-bathroom-solution-combo",
         "complete-shower-solution-combo-2",
         "designer-screen-combo-2",
         "grey-shower-panel-combo",
         "pure-view-shower-door-combo",
         "shower-arm-head",
+        "shower-combo-3",
+        "shower-cubicle-plus-free-silicone-combo",
         "shower-panel-with-5pc-accessory-set-combo",
         "shower-rail-combo",
         "shower-screen-accessories-combo",
@@ -1222,7 +1235,6 @@
         "alco-shower-rail-set-black-260x85mm",
         "alco-shower-rail-set-gun-metal-260x85mm",
         "alco-shower-rail-set-gun-metal-220x80mm",
-        "alco-shower-rail-set-gun-metal-3-function",
         "alco-shower-rail-set-combo",
         "aquavit-shower-rail-set-with-1-5m-hose-2",
         "alco-3-setting-shower-head-with-shower-arm-flange",
@@ -1277,7 +1289,6 @@
         "shower-channel-brevik-black-150mm",
         "shower-channel-with-drainage-black-250mm",
         "shower-channel-with-drainage-brushed-gold-250mm",
-        "shower-channel-with-drainage-brushed-grey-250mm",
         "shower-channel-with-drainage-chrome-250mm",
         "shower-channel-with-drainage-chrome-500mm",
         "shower-channel-with-drainage-chrome-860mm",
@@ -1290,11 +1301,12 @@
     },
     "taps": {
       "title": "Taps",
-      "count": 157,
+      "count": 161,
       "product_ids": [
         "tivona-tabby-basin-and-mixer-combo",
         "basin-and-mirror-combo",
         "basin-and-mirror-combo-2",
+        "basin-and-mixer-combo",
         "buffer-basin-combo",
         "chrome-tivona-combo-2",
         "hazel-basin-mixer-combo",
@@ -1384,6 +1396,8 @@
         "aquavit-shower-mixer-with-diverter-chrome",
         "aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass",
         "aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome",
+        "cobra-nile-shower-mixer-concealed",
+        "cobra-seine-bath-shower-mixer-concealed-chrome",
         "jazz-shower-mixer-chrome",
         "aquavit-freestanding-bath-mixer-round-black",
         "aquavit-freestanding-bath-mixer-round-brushed-gold",
@@ -1402,6 +1416,7 @@
         "alco-pull-out-sink-mixer-stainless-steel-gold",
         "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
         "alco-tivona-arc-sink-mixer-black",
+        "alco-tivona-arc-sink-mixer-chrome",
         "alco-tivona-arc-sink-mixer-gold",
         "alco-tivona-arc-sink-mixer-grey",
         "alco-tivona-lux-sink-mixer-black",
@@ -1453,7 +1468,7 @@
     },
     "baths": {
       "title": "Baths",
-      "count": 34,
+      "count": 33,
       "product_ids": [
         "amara-black-free-standing-bath-1700x730x580",
         "aquavit-ella-freestanding-bath-grey-1700x800x580mm",
@@ -1463,16 +1478,15 @@
         "aquavit-freestanding-bath-marina-white-1700x750x580mm",
         "aquavit-gianna-freestanding-bath-black-1700x800x580mm",
         "aquavit-monet-freestanding-bath-white-1700x750x580mm",
-        "chloe-free-standing-bath-white-1700x700x580",
         "cordelia-freestanding-bath-1700x750x620mm",
         "diana-freestanding-bath-white",
         "free-standing-bath-aquavit-gianna-grey-1700x800x580mm",
         "raihaan-free-standing-bath-white-1700x750x580mm",
         "raihaan-grey-free-standing-bath-1700x750x580mm",
         "victorian-freestanding-bath-1700mm",
-        "arabella-drop-in-bath-1800x800x390",
         "bathtub-with-handles-1500mm",
         "spa-bath-2-seater-corner-white-odette",
+        "6-pc-bathroom-set-beige-and-chrome",
         "6-pc-bathroom-set-square-black-and-bamboo",
         "alco-shower-caddy-black",
         "backscrubber-with-handle",
@@ -1493,7 +1507,7 @@
     },
     "furniture": {
       "title": "Bathroom Furniture",
-      "count": 177,
+      "count": 183,
       "product_ids": [
         "basin-and-mirror-combo-2",
         "led-mirror-and-accessory-set-combo",
@@ -1508,6 +1522,7 @@
         "aquavit-square-bracket-extendable-cosmetic-mirror",
         "erin-mirror-600x600mm",
         "jupiter-belt-mirror-black-600x600mm",
+        "jupiter-frame-mirror-gold-600x600mm",
         "lapana-mirror-800x600mm",
         "lara-mirror-800x600mm",
         "liro-mirror-800x600mm",
@@ -1527,8 +1542,11 @@
         "alco-echo-led-mirror-3-colour-light-600x600mm",
         "alco-haylee-led-mirror-3-colour-light-600x600mm",
         "alco-luna-led-mirror-3-colour-light-800x600mm",
+        "alco-lyra-led-mirror-3-colour-light-600x600mm",
+        "alco-orion-led-mirror-3-colour-light-600x600mm",
         "amara-led-mirror-3-colour-light-function-500x900mm",
         "amore-led-mirror-3-colour-light-function-600x600mm",
+        "aura-horizon-led-mirror-620x665-5mm",
         "aurora-led-mirror-3-colour-light-function-800x600mm",
         "bastina-led-mirror-3-colour-light-function-100x600mm",
         "canova-led-mirror-3-colour-light-function-600x800mm",
@@ -1538,11 +1556,13 @@
         "juniper-led-mirror-3-colour-light-function-800x800mm",
         "lunar-led-mirror-3-colour-light-function-800x600mm",
         "roda-led-mirror-3-colour-light-function-600x700",
+        "serenity-curve-led-mirror-600x900mm",
         "tacora-led-mirror-3-colour-light-function-500x600mm",
         "the-vogue-stand-led-mirror-500x1500mm",
         "valencia-led-mirror-3-colour-light-function-500x600mm",
         "venato-led-mirror-3-colour-light-function-700x700mm",
         "venus-3-colour-light-function-led-mirror-700x700mm",
+        "6-pc-bathroom-set-beige-and-chrome",
         "6-pc-bathroom-set-square-black-and-bamboo",
         "6-piece-bathroom-accessories-black",
         "alco-corner-shower-caddy-black",
@@ -1676,6 +1696,39 @@
     }
   },
   "products": [
+    {
+      "id": "6-pc-bathroom-set-beige-and-chrome",
+      "source_url": "https://pulsetiles.co.za/product/6-pc-bathroom-set-beige-and-chrome/",
+      "name": "6 Pc Bathroom Set Beige and Chrome",
+      "code": "I00826",
+      "price": {
+        "current": 279.99,
+        "regular": 349.99,
+        "sale": 279.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 33 × 23 × 23 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00826.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "33 × 23 × 23 cm"
+        }
+      ],
+      "categories": [
+        "bath-accessories",
+        "bathroom-accessories"
+      ],
+      "bathroom_groups": [
+        "baths",
+        "furniture"
+      ]
+    },
     {
       "id": "6-pc-bathroom-set-square-black-and-bamboo",
       "source_url": "https://pulsetiles.co.za/product/6-pc-bathroom-set-square-black-and-bamboo/",
@@ -2265,45 +2318,6 @@
       ],
       "bathroom_groups": [
         "showers"
-      ]
-    },
-    {
-      "id": "alco-bailey-white-top-flush-toilet-close-couple-set",
-      "source_url": "https://pulsetiles.co.za/product/alco-bailey-white-top-flush-toilet-close-couple-set/",
-      "name": "Alco Bailey White Top Flush Toilet Close Couple Set",
-      "code": "B00590",
-      "price": {
-        "current": 1999.99,
-        "regular": 1999.99,
-        "sale": null,
-        "from": true,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 68 × 40 × 61 cm. Dimensions: 30 × 20 × 15 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B000590-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "38.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "68 × 40 × 61 cm"
-        },
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "30 × 20 × 15 cm"
-        }
-      ],
-      "categories": [
-        "close-couple-toilets"
-      ],
-      "bathroom_groups": [
-        "toilets"
       ]
     },
     {
@@ -2957,6 +2971,37 @@
       ]
     },
     {
+      "id": "alco-lyra-led-mirror-3-colour-light-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/alco-lyra-led-mirror-3-colour-light-600x600mm/",
+      "name": "Alco Lyra LED Mirror 3 Colour Light 600Ã600mm",
+      "code": "B04218",
+      "price": {
+        "current": 2699.99,
+        "regular": 2699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 82 × 63 × 4.5 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/B04218-.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "82 × 63 × 4.5 cm"
+        }
+      ],
+      "categories": [
+        "led-mirrors"
+      ],
+      "bathroom_groups": [
+        "furniture"
+      ]
+    },
+    {
       "id": "moka-wall-hung-wash-basin-white",
       "source_url": "https://pulsetiles.co.za/product/moka-wall-hung-wash-basin-white/",
       "name": "Alco Moka Wall Hung Wash Basin White",
@@ -2985,6 +3030,37 @@
       ],
       "bathroom_groups": [
         "basins"
+      ]
+    },
+    {
+      "id": "alco-orion-led-mirror-3-colour-light-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/alco-orion-led-mirror-3-colour-light-600x600mm/",
+      "name": "Alco Orion LED Mirror 3 Colour Light 600Ã600mm",
+      "code": "B04217",
+      "price": {
+        "current": 2299.99,
+        "regular": 2299.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 82 × 52 × 3.5 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/B04217-.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "3.3 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "82 × 52 × 3.5 cm"
+        }
+      ],
+      "categories": [
+        "led-mirrors"
+      ],
+      "bathroom_groups": [
+        "furniture"
       ]
     },
     {
@@ -3954,9 +4030,9 @@
       "name": "Alco Rio 6 Piece Set Oval Chrome",
       "code": "B04139",
       "price": {
-        "current": 899.99,
+        "current": 499.99,
         "regular": 899.99,
-        "sale": null,
+        "sale": 499.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -5135,37 +5211,6 @@
       ]
     },
     {
-      "id": "alco-shower-rail-set-gun-metal-3-function",
-      "source_url": "https://pulsetiles.co.za/product/alco-shower-rail-set-gun-metal-3-function/",
-      "name": "Alco Shower Rail Set â Gun Metal â 3 Function",
-      "code": "B04381",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 70 × 31 × 11 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04381-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "70 × 31 × 11 cm"
-        }
-      ],
-      "categories": [
-        "shower-rails"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "alco-shower-rail-set-gun-metal-220x80mm",
       "source_url": "https://pulsetiles.co.za/product/alco-shower-rail-set-gun-metal-220x80mm/",
       "name": "Alco Shower Rail Set â Gun Metal – 2200Ã800mm",
@@ -6129,6 +6174,37 @@
       ],
       "categories": [
         "shower-taps-outlets"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "alco-tivona-arc-sink-mixer-chrome",
+      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-chrome/",
+      "name": "Alco Tivona Arc Sink Mixer â Chrome",
+      "code": "B04008",
+      "price": {
+        "current": 1699.99,
+        "regular": 1699.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 39 × 21 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04008-Chrome-Sink-Mixer.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "1.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "39 × 21 × 6 cm"
+        }
+      ],
+      "categories": [
+        "kitchen-sink-taps"
       ],
       "bathroom_groups": [
         "taps"
@@ -13501,34 +13577,34 @@
       ]
     },
     {
-      "id": "arabella-drop-in-bath-1800x800x390",
-      "source_url": "https://pulsetiles.co.za/product/arabella-drop-in-bath-1800x800x390/",
-      "name": "Arabella Drop In Bath",
-      "code": "B03724",
+      "id": "aura-horizon-led-mirror-620x665-5mm",
+      "source_url": "https://pulsetiles.co.za/product/aura-horizon-led-mirror-620x665-5mm/",
+      "name": "Aura Horizon LED Mirror 620Ã665.5mm",
+      "code": "B04254",
       "price": {
-        "current": 3299.99,
-        "regular": 3299.99,
+        "current": 2799.99,
+        "regular": 2799.99,
         "sale": null,
         "from": false,
         "currency": "ZAR"
       },
-      "description": "Dimensions: 182 × 93 × 57 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03724.webp",
+      "description": "Dimensions: 72 × 70 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04254.webp",
       "attributes": [
         {
           "name": "Weight",
-          "value": "33 kg"
+          "value": "5 kg"
         },
         {
           "name": "Dimensions",
-          "value": "182 × 93 × 57 cm"
+          "value": "72 × 70 × 8 cm"
         }
       ],
       "categories": [
-        "built-in-baths"
+        "led-mirrors"
       ],
       "bathroom_groups": [
-        "baths"
+        "furniture"
       ]
     },
     {
@@ -13718,14 +13794,45 @@
       ]
     },
     {
+      "id": "basin-and-mixer-combo",
+      "source_url": "https://pulsetiles.co.za/product/basin-and-mixer-combo/",
+      "name": "Basin and Mixer Combo",
+      "code": "Q01672",
+      "price": {
+        "current": 799.99,
+        "regular": 999.99,
+        "sale": 799.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 50 × 32 × 24 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01672.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "14 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "50 × 32 × 24 cm"
+        }
+      ],
+      "categories": [
+        "basin-mixer-combos"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
       "id": "basin-bantam",
       "source_url": "https://pulsetiles.co.za/product/basin-bantam/",
       "name": "Basin Bantam",
       "code": "B00034",
       "price": {
-        "current": 199.99,
+        "current": 99.99,
         "regular": 199.99,
-        "sale": null,
+        "sale": 99.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -13747,6 +13854,45 @@
       ],
       "categories": [
         "wall-hung-basins"
+      ],
+      "bathroom_groups": [
+        "basins"
+      ]
+    },
+    {
+      "id": "basin-counter-top-700x460x200mm",
+      "source_url": "https://pulsetiles.co.za/product/basin-counter-top-700x460x200mm/",
+      "name": "Basin Counter Top",
+      "code": "B03308",
+      "price": {
+        "current": 599.99,
+        "regular": 599.99,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 72 × 48 × 23 cm. Dimensions: 10 × 7 × 10 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/B03308-02-scaled.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "22.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "72 × 48 × 23 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "0.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "10 × 7 × 10 cm"
+        }
+      ],
+      "categories": [
+        "counter-top-basins"
       ],
       "bathroom_groups": [
         "basins"
@@ -14571,37 +14717,6 @@
       ]
     },
     {
-      "id": "chloe-free-standing-bath-white-1700x700x580",
-      "source_url": "https://pulsetiles.co.za/product/chloe-free-standing-bath-white-1700x700x580/",
-      "name": "Chloe White Free Standing Bath",
-      "code": "B03723",
-      "price": {
-        "current": 8999.99,
-        "regular": 8999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 170 × 70 × 58 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/B03723-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "170 × 70 × 58 cm"
-        }
-      ],
-      "categories": [
-        "freestanding-baths"
-      ],
-      "bathroom_groups": [
-        "baths"
-      ]
-    },
-    {
       "id": "chrome-tivona-combo-2",
       "source_url": "https://pulsetiles.co.za/product/chrome-tivona-combo-2/",
       "name": "Chrome Tivona Basin and Mixer Combo",
@@ -14630,6 +14745,37 @@
       ],
       "bathroom_groups": [
         "taps"
+      ]
+    },
+    {
+      "id": "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
+      "source_url": "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/",
+      "name": "Classy Riva Shower Mixer Plus Shower Rail and Outlet Combo",
+      "code": "Q01645",
+      "price": {
+        "current": 799.99,
+        "regular": 999.99,
+        "sale": 799.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 70 × 25 × 22 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01645.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "6 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "70 × 25 × 22 cm"
+        }
+      ],
+      "categories": [
+        "shower-combos"
+      ],
+      "bathroom_groups": [
+        "showers"
       ]
     },
     {
@@ -14754,6 +14900,68 @@
       ],
       "bathroom_groups": [
         "toilets"
+      ]
+    },
+    {
+      "id": "cobra-nile-shower-mixer-concealed",
+      "source_url": "https://pulsetiles.co.za/product/cobra-nile-shower-mixer-concealed/",
+      "name": "Cobra Nile Shower Mixer Concealed",
+      "code": "B03522",
+      "price": {
+        "current": 1399.99,
+        "regular": 1399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 16 × 17 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03522.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "16 × 17 × 8 cm"
+        }
+      ],
+      "categories": [
+        "shower-taps-outlets"
+      ],
+      "bathroom_groups": [
+        "taps"
+      ]
+    },
+    {
+      "id": "cobra-seine-bath-shower-mixer-concealed-chrome",
+      "source_url": "https://pulsetiles.co.za/product/cobra-seine-bath-shower-mixer-concealed-chrome/",
+      "name": "Cobra Seine Bath/Shower Mixer Concealed Chrome",
+      "code": "B03444",
+      "price": {
+        "current": 1899.99,
+        "regular": 1899.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 16 × 18 × 8 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03444.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "0.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "16 × 18 × 8 cm"
+        }
+      ],
+      "categories": [
+        "shower-taps-outlets"
+      ],
+      "bathroom_groups": [
+        "taps"
       ]
     },
     {
@@ -16123,39 +16331,31 @@
       ]
     },
     {
-      "id": "florence-2pc-toilet-with-seat-p-trap-180mm",
-      "source_url": "https://pulsetiles.co.za/product/florence-2pc-toilet-with-seat-p-trap-180mm/",
-      "name": "Florence 2Pc Toilet With Seat P Trap 180mm",
-      "code": "B03865",
+      "id": "fluence-wall-hung-toilet-white",
+      "source_url": "https://pulsetiles.co.za/product/fluence-wall-hung-toilet-white/",
+      "name": "Fluence Wall Hung Toilet White",
+      "code": "B04439",
       "price": {
-        "current": 2599.99,
-        "regular": 2599.99,
+        "current": 2999.99,
+        "regular": 2999.99,
         "sale": null,
-        "from": true,
+        "from": false,
         "currency": "ZAR"
       },
-      "description": "Dimensions: 69 × 40 × 69 cm. Dimensions: 30 × 20 × 15 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03865.webp",
+      "description": "Dimensions: 58 × 44 × 38 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04439-2.webp",
       "attributes": [
         {
           "name": "Weight",
-          "value": "44 kg"
+          "value": "35.2 kg"
         },
         {
           "name": "Dimensions",
-          "value": "69 × 40 × 69 cm"
-        },
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "30 × 20 × 15 cm"
+          "value": "58 × 44 × 38 cm"
         }
       ],
       "categories": [
-        "close-couple-toilets"
+        "wall-hung-toilets"
       ],
       "bathroom_groups": [
         "toilets"
@@ -16318,6 +16518,45 @@
       ],
       "bathroom_groups": [
         "furniture"
+      ]
+    },
+    {
+      "id": "gracia-conuter-top-basin-silver-white-400x400x140mm",
+      "source_url": "https://pulsetiles.co.za/product/gracia-conuter-top-basin-silver-white-400x400x140mm/",
+      "name": "Gracia Counter Top Basin Silver/White",
+      "code": "B03659",
+      "price": {
+        "current": 1899.99,
+        "regular": 1899.99,
+        "sale": null,
+        "from": true,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 43 × 42 × 16 cm. Dimensions: 10 × 7 × 10 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03659.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "7 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "43 × 42 × 16 cm"
+        },
+        {
+          "name": "Weight",
+          "value": "0.2 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "10 × 7 × 10 cm"
+        }
+      ],
+      "categories": [
+        "counter-top-basins"
+      ],
+      "bathroom_groups": [
+        "basins"
       ]
     },
     {
@@ -16888,6 +17127,37 @@
       },
       "description": "Dimensions: 9 × 67 × 67 cm.",
       "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04238-1.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "4.4 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "9 × 67 × 67 cm"
+        }
+      ],
+      "categories": [
+        "mirrors"
+      ],
+      "bathroom_groups": [
+        "furniture"
+      ]
+    },
+    {
+      "id": "jupiter-frame-mirror-gold-600x600mm",
+      "source_url": "https://pulsetiles.co.za/product/jupiter-frame-mirror-gold-600x600mm/",
+      "name": "Jupiter Frame Mirror Gold 600X600mm",
+      "code": "B04239",
+      "price": {
+        "current": 2599.99,
+        "regular": 2599.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 9 × 67 × 67 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04239-2.webp",
       "attributes": [
         {
           "name": "Weight",
@@ -19117,9 +19387,9 @@
       "name": "Round Mirror – 30cm",
       "code": "B04728",
       "price": {
-        "current": 59.99,
+        "current": 39.99,
         "regular": 59.99,
-        "sale": null,
+        "sale": 39.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -19423,6 +19693,37 @@
       ],
       "bathroom_groups": [
         "basins"
+      ]
+    },
+    {
+      "id": "serenity-curve-led-mirror-600x900mm",
+      "source_url": "https://pulsetiles.co.za/product/serenity-curve-led-mirror-600x900mm/",
+      "name": "Serenity Curve LED Mirror 600Ã900mm",
+      "code": "B04253",
+      "price": {
+        "current": 2399.99,
+        "regular": 2399.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 67 × 98 × 6 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/b04253.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "5.8 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "67 × 98 × 6 cm"
+        }
+      ],
+      "categories": [
+        "led-mirrors"
+      ],
+      "bathroom_groups": [
+        "furniture"
       ]
     },
     {
@@ -20077,37 +20378,6 @@
       ]
     },
     {
-      "id": "shower-channel-with-drainage-brushed-grey-250mm",
-      "source_url": "https://pulsetiles.co.za/product/shower-channel-with-drainage-brushed-grey-250mm/",
-      "name": "Shower Channel With Drainage Brushed Grey 250mm",
-      "code": "B03881",
-      "price": {
-        "current": 1699.99,
-        "regular": 1699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 60 × 7 × 4 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03881.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "60 × 7 × 4 cm"
-        }
-      ],
-      "categories": [
-        "shower-channels-traps"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "shower-channel-with-drainage-chrome-250mm",
       "source_url": "https://pulsetiles.co.za/product/shower-channel-with-drainage-chrome-250mm/",
       "name": "Shower Channel With Drainage Chrome 250mm",
@@ -20263,6 +20533,68 @@
       ]
     },
     {
+      "id": "shower-combo-3",
+      "source_url": "https://pulsetiles.co.za/product/shower-combo-3/",
+      "name": "Shower Combo",
+      "code": "Q01561",
+      "price": {
+        "current": 3499.99,
+        "regular": 3499.99,
+        "sale": null,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 194 × 52 × 23 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01561.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "45 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "194 × 52 × 23 cm"
+        }
+      ],
+      "categories": [
+        "shower-combos"
+      ],
+      "bathroom_groups": [
+        "showers"
+      ]
+    },
+    {
+      "id": "shower-cubicle-plus-free-silicone-combo",
+      "source_url": "https://pulsetiles.co.za/product/shower-cubicle-plus-free-silicone-combo/",
+      "name": "Shower Cubicle Plus Free Silicone Combo",
+      "code": "Q01671",
+      "price": {
+        "current": 999.99,
+        "regular": 1299.99,
+        "sale": 999.99,
+        "from": false,
+        "currency": "ZAR"
+      },
+      "description": "Dimensions: 193 × 52 × 23 cm.",
+      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01671.webp",
+      "attributes": [
+        {
+          "name": "Weight",
+          "value": "45 kg"
+        },
+        {
+          "name": "Dimensions",
+          "value": "193 × 52 × 23 cm"
+        }
+      ],
+      "categories": [
+        "shower-combos"
+      ],
+      "bathroom_groups": [
+        "showers"
+      ]
+    },
+    {
       "id": "shower-curtain-hook-black",
       "source_url": "https://pulsetiles.co.za/product/shower-curtain-hook-black/",
       "name": "Shower Curtain Hook Black",
@@ -20400,9 +20732,9 @@
       "name": "Shower Panel With 5pc Accessory Set Combo",
       "code": "Q01467",
       "price": {
-        "current": 1999.99,
+        "current": 1699.99,
         "regular": 2499.99,
-        "sale": 1999.99,
+        "sale": 1699.99,
         "from": false,
         "currency": "ZAR"
       },
@@ -21065,45 +21397,6 @@
       ]
     },
     {
-      "id": "swing-counter-top-basin",
-      "source_url": "https://pulsetiles.co.za/product/swing-counter-top-basin/",
-      "name": "Swing Counter Top Basin",
-      "code": "B03730",
-      "price": {
-        "current": 1499.99,
-        "regular": 1499.99,
-        "sale": null,
-        "from": true,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 46 × 46 × 17 cm. Dimensions: 10 × 7 × 10 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/B03729-02-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "10.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "46 × 46 × 17 cm"
-        },
-        {
-          "name": "Weight",
-          "value": "0.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 7 × 10 cm"
-        }
-      ],
-      "categories": [
-        "counter-top-basins"
-      ],
-      "bathroom_groups": [
-        "basins"
-      ]
-    },
-    {
       "id": "tabby-counter-top-wash-basin-white",
       "source_url": "https://pulsetiles.co.za/product/tabby-counter-top-wash-basin-white/",
       "name": "Tabby Counter Top Wash Basin White",
@@ -21148,9 +21441,9 @@
       "name": "Tacora Led Mirror 3 Colour Light Function 500X600mm",
       "code": "B03854",
       "price": {
-        "current": 1199.99,
+        "current": 599.99,
         "regular": 1199.99,
-        "sale": null,
+        "sale": 599.99,
         "from": false,
         "currency": "ZAR"
       },

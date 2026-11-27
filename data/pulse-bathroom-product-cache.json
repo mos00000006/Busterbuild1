@@ -18597,5 +18597,418 @@
     ],
     "categories": [],
     "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/basin-and-mixer-combo/": {
+    "id": "basin-and-mixer-combo",
+    "source_url": "https://pulsetiles.co.za/product/basin-and-mixer-combo/",
+    "name": "Basin and Mixer Combo",
+    "code": "Q01672",
+    "price": {
+      "current": 799.99,
+      "regular": 999.99,
+      "sale": 799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 50 × 32 × 24 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01672.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "14 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "50 × 32 × 24 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/shower-cubicle-plus-free-silicone-combo/": {
+    "id": "shower-cubicle-plus-free-silicone-combo",
+    "source_url": "https://pulsetiles.co.za/product/shower-cubicle-plus-free-silicone-combo/",
+    "name": "Shower Cubicle Plus Free Silicone Combo",
+    "code": "Q01671",
+    "price": {
+      "current": 999.99,
+      "regular": 1299.99,
+      "sale": 999.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 193 × 52 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01671.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "45 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "193 × 52 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/": {
+    "id": "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
+    "source_url": "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/",
+    "name": "Classy Riva Shower Mixer Plus Shower Rail and Outlet Combo",
+    "code": "Q01645",
+    "price": {
+      "current": 799.99,
+      "regular": 999.99,
+      "sale": 799.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 70 × 25 × 22 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01645.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "6 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "70 × 25 × 22 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/shower-combo-3/": {
+    "id": "shower-combo-3",
+    "source_url": "https://pulsetiles.co.za/product/shower-combo-3/",
+    "name": "Shower Combo",
+    "code": "Q01561",
+    "price": {
+      "current": 3499.99,
+      "regular": 3499.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 194 × 52 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01561.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "45 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "194 × 52 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/gracia-conuter-top-basin-silver-white-400x400x140mm/": {
+    "id": "gracia-conuter-top-basin-silver-white-400x400x140mm",
+    "source_url": "https://pulsetiles.co.za/product/gracia-conuter-top-basin-silver-white-400x400x140mm/",
+    "name": "Gracia Counter Top Basin Silver/White",
+    "code": "B03659",
+    "price": {
+      "current": 1899.99,
+      "regular": 1899.99,
+      "sale": null,
+      "from": true,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 43 × 42 × 16 cm. Dimensions: 10 × 7 × 10 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03659.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "7 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "43 × 42 × 16 cm"
+      },
+      {
+        "name": "Weight",
+        "value": "0.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "10 × 7 × 10 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/fluence-wall-hung-toilet-white/": {
+    "id": "fluence-wall-hung-toilet-white",
+    "source_url": "https://pulsetiles.co.za/product/fluence-wall-hung-toilet-white/",
+    "name": "Fluence Wall Hung Toilet White",
+    "code": "B04439",
+    "price": {
+      "current": 2999.99,
+      "regular": 2999.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 58 × 44 × 38 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04439-2.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "35.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "58 × 44 × 38 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/jupiter-frame-mirror-gold-600x600mm/": {
+    "id": "jupiter-frame-mirror-gold-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/jupiter-frame-mirror-gold-600x600mm/",
+    "name": "Jupiter Frame Mirror Gold 600X600mm",
+    "code": "B04239",
+    "price": {
+      "current": 2599.99,
+      "regular": 2599.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 9 × 67 × 67 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04239-2.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "4.4 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "9 × 67 × 67 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/aura-horizon-led-mirror-620x665-5mm/": {
+    "id": "aura-horizon-led-mirror-620x665-5mm",
+    "source_url": "https://pulsetiles.co.za/product/aura-horizon-led-mirror-620x665-5mm/",
+    "name": "Aura Horizon LED Mirror 620Ã665.5mm",
+    "code": "B04254",
+    "price": {
+      "current": 2799.99,
+      "regular": 2799.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 72 × 70 × 8 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04254.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "5 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "72 × 70 × 8 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/serenity-curve-led-mirror-600x900mm/": {
+    "id": "serenity-curve-led-mirror-600x900mm",
+    "source_url": "https://pulsetiles.co.za/product/serenity-curve-led-mirror-600x900mm/",
+    "name": "Serenity Curve LED Mirror 600Ã900mm",
+    "code": "B04253",
+    "price": {
+      "current": 2399.99,
+      "regular": 2399.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 67 × 98 × 6 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/b04253.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "5.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "67 × 98 × 6 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-lyra-led-mirror-3-colour-light-600x600mm/": {
+    "id": "alco-lyra-led-mirror-3-colour-light-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/alco-lyra-led-mirror-3-colour-light-600x600mm/",
+    "name": "Alco Lyra LED Mirror 3 Colour Light 600Ã600mm",
+    "code": "B04218",
+    "price": {
+      "current": 2699.99,
+      "regular": 2699.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 82 × 63 × 4.5 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/B04218-.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "4.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "82 × 63 × 4.5 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-orion-led-mirror-3-colour-light-600x600mm/": {
+    "id": "alco-orion-led-mirror-3-colour-light-600x600mm",
+    "source_url": "https://pulsetiles.co.za/product/alco-orion-led-mirror-3-colour-light-600x600mm/",
+    "name": "Alco Orion LED Mirror 3 Colour Light 600Ã600mm",
+    "code": "B04217",
+    "price": {
+      "current": 2299.99,
+      "regular": 2299.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 82 × 52 × 3.5 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/B04217-.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "3.3 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "82 × 52 × 3.5 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/6-pc-bathroom-set-beige-and-chrome/": {
+    "id": "6-pc-bathroom-set-beige-and-chrome",
+    "source_url": "https://pulsetiles.co.za/product/6-pc-bathroom-set-beige-and-chrome/",
+    "name": "6 Pc Bathroom Set Beige and Chrome",
+    "code": "I00826",
+    "price": {
+      "current": 279.99,
+      "regular": 349.99,
+      "sale": 279.99,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 33 × 23 × 23 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/I00826.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "33 × 23 × 23 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/cobra-seine-bath-shower-mixer-concealed-chrome/": {
+    "id": "cobra-seine-bath-shower-mixer-concealed-chrome",
+    "source_url": "https://pulsetiles.co.za/product/cobra-seine-bath-shower-mixer-concealed-chrome/",
+    "name": "Cobra Seine Bath/Shower Mixer Concealed Chrome",
+    "code": "B03444",
+    "price": {
+      "current": 1899.99,
+      "regular": 1899.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 16 × 18 × 8 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03444.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "16 × 18 × 8 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/cobra-nile-shower-mixer-concealed/": {
+    "id": "cobra-nile-shower-mixer-concealed",
+    "source_url": "https://pulsetiles.co.za/product/cobra-nile-shower-mixer-concealed/",
+    "name": "Cobra Nile Shower Mixer Concealed",
+    "code": "B03522",
+    "price": {
+      "current": 1399.99,
+      "regular": 1399.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 16 × 17 × 8 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03522.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "0.8 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "16 × 17 × 8 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
+  },
+  "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-chrome/": {
+    "id": "alco-tivona-arc-sink-mixer-chrome",
+    "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-chrome/",
+    "name": "Alco Tivona Arc Sink Mixer â Chrome",
+    "code": "B04008",
+    "price": {
+      "current": 1699.99,
+      "regular": 1699.99,
+      "sale": null,
+      "from": false,
+      "currency": "ZAR"
+    },
+    "description": "Dimensions: 39 × 21 × 6 cm.",
+    "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04008-Chrome-Sink-Mixer.webp",
+    "attributes": [
+      {
+        "name": "Weight",
+        "value": "1.2 kg"
+      },
+      {
+        "name": "Dimensions",
+        "value": "39 × 21 × 6 cm"
+      }
+    ],
+    "categories": [],
+    "bathroom_groups": []
   }
 }
