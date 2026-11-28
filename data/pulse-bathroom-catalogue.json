@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:31:10.886070+00:00",
+  "generated_at": "2026-11-28T10:56:31.180246+00:00",
   "updater_version": "2026-10-06-v1-pulse-bathrooms",
   "source_mode": "html-static-cache",
   "source_site": "Pulse Tiles",
@@ -7,82 +7,13 @@
   "price_policy": "BusterBuild prices end in .99",
   "sync_complete": false,
   "failed_categories": [
-    "bath-screens"
+    "shower-taps",
+    "bath-screens",
+    "feature-mirrors"
   ],
   "categories": {
-    "toilet-combo-deals": {
-      "title": "Toilet Combos",
-      "group": "toilets",
-      "count": 12,
-      "product_ids": [
-        "toilet-and-basin-with-pedestal",
-        "jaunty-alco-wall-hung-toilet-combo",
-        "jaunty-wall-hung-combo",
-        "modern-toilet-combo",
-        "pan-connector-combo",
-        "terra-alco-wall-hung-toilet-combo",
-        "terra-wall-hung-combo-2",
-        "toilet-basin-pedestal-caddy",
-        "toilet-combo-3",
-        "top-flush-toilet-basin-pedestal-cleaner-combo",
-        "wal-hung-black-elegance-combo",
-        "wall-hung-pool-black-combo"
-      ]
-    },
-    "basin-mixer-combos": {
-      "title": "Basin Combos",
-      "group": "taps",
-      "count": 8,
-      "product_ids": [
-        "tivona-tabby-basin-and-mixer-combo",
-        "basin-and-mirror-combo",
-        "basin-and-mirror-combo-2",
-        "basin-and-mixer-combo",
-        "buffer-basin-combo",
-        "chrome-tivona-combo-2",
-        "hazel-basin-mixer-combo",
-        "polio-basin-mixer-combo"
-      ]
-    },
-    "shower-combos": {
-      "title": "Shower Combos",
-      "group": "showers",
-      "count": 21,
-      "product_ids": [
-        "alco-black-shower-panel-combo",
-        "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
-        "complete-bathroom-solution-combo",
-        "complete-shower-solution-combo-2",
-        "designer-screen-combo-2",
-        "grey-shower-panel-combo",
-        "pure-view-shower-door-combo",
-        "shower-arm-head",
-        "shower-combo-3",
-        "shower-cubicle-plus-free-silicone-combo",
-        "shower-panel-with-5pc-accessory-set-combo",
-        "shower-rail-combo",
-        "shower-screen-accessories-combo",
-        "shower-screen-black-combo",
-        "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo",
-        "shower-screen-with-shower-head-and-arm-combo",
-        "shower-square-and-rail-set-combo",
-        "square-shower-combo-4",
-        "zen-shower-combo"
-      ]
-    },
-    "mirror-combo": {
-      "title": "Mirror Combos",
-      "group": "furniture",
-      "count": 2,
-      "product_ids": [
-        "basin-and-mirror-combo-2",
-        "led-mirror-and-accessory-set-combo"
-      ]
-    },
     "basin-pedestals": {
-      "title": "Basin Pedestals",
+      "title": "Basin & Pedestals",
       "group": "basins",
       "count": 3,
       "product_ids": [
@@ -92,7 +23,7 @@
       ]
     },
     "counter-top-basins": {
-      "title": "Counter top Basins",
+      "title": "Counter Top Basins",
       "group": "basins",
       "count": 14,
       "product_ids": [
@@ -113,7 +44,7 @@
       ]
     },
     "basin-cabinets": {
-      "title": "Basin Cabinets",
+      "title": "Basin & Cabinets",
       "group": "basins",
       "count": 38,
       "product_ids": [
@@ -263,81 +194,6 @@
         "aquavit-square-brass-bottle-trap-matt-black-32mm"
       ]
     },
-    "freestanding-baths": {
-      "title": "Freestanding Baths",
-      "group": "baths",
-      "count": 14,
-      "product_ids": [
-        "amara-black-free-standing-bath-1700x730x580",
-        "aquavit-ella-freestanding-bath-grey-1700x800x580mm",
-        "aquavit-freestanding-bath-ella-black-1700x800x580mm",
-        "aquavit-freestanding-bath-ella-white-1700x800x580mm",
-        "aquavit-freestanding-bath-gianna-white-1700x800x580mm",
-        "aquavit-freestanding-bath-marina-white-1700x750x580mm",
-        "aquavit-gianna-freestanding-bath-black-1700x800x580mm",
-        "aquavit-monet-freestanding-bath-white-1700x750x580mm",
-        "cordelia-freestanding-bath-1700x750x620mm",
-        "diana-freestanding-bath-white",
-        "free-standing-bath-aquavit-gianna-grey-1700x800x580mm",
-        "raihaan-free-standing-bath-white-1700x750x580mm",
-        "raihaan-grey-free-standing-bath-1700x750x580mm",
-        "victorian-freestanding-bath-1700mm"
-      ]
-    },
-    "built-in-baths": {
-      "title": "Built in Baths",
-      "group": "baths",
-      "count": 1,
-      "product_ids": [
-        "bathtub-with-handles-1500mm"
-      ]
-    },
-    "bath-taps": {
-      "title": "Bath Taps",
-      "group": "taps",
-      "count": 25,
-      "product_ids": [
-        "alco-tivona-arc-bath-mixer-with-hose-black",
-        "alco-tivona-arc-bath-mixer-with-hose-chrome",
-        "alco-tivona-arc-bath-mixer-with-hose-gold",
-        "alco-tivona-arc-bath-mixer-with-hose-grey",
-        "alco-tivona-lux-bath-mixer-with-hose-black",
-        "alco-tivona-lux-bath-mixer-with-hose-chrome",
-        "alco-tivona-lux-bath-mixer-with-hose-gold",
-        "alco-tivona-lux-bath-mixer-with-hose-grey",
-        "aquavit-bravino-bath-mixer-with-hose-35mm-black",
-        "aquavit-bravino-bath-mixer-with-hose-35mm-chrome",
-        "aquavit-harmony-bath-mixer-with-hand-shower-hose-black",
-        "aquavit-harmony-bath-mixer-with-hand-shower-hose-chrome",
-        "aquavit-joop-bath-mixer-black",
-        "aquavit-lenoro-basin-mixer-30mm-black",
-        "aquavit-lenoro-basin-mixer-30mm-brush-gold",
-        "aquavit-lenoro-basin-mixer-30mm-gun-grey",
-        "aquavit-lenoro-basin-mixer-long-body-30mm-black",
-        "aquavit-lenoro-basin-mixer-long-body-30mm-brush-gold",
-        "aquavit-lenoro-basin-mixer-long-body-30mm-chrome",
-        "aquavit-lenoro-basin-mixer-long-body-30mm-gun-grey",
-        "aquavit-lenoro-bath-mixer-35mm-chrome",
-        "aquavit-lenoro-bath-mixer-with-hose-35mm-black",
-        "aquavit-lenoro-bath-mixer-with-hose-35mm-gun-grey",
-        "aquavit-oceana-bath-mixer-with-hose-35mm-chrome",
-        "aquavit-trinity-bath-mixer-with-hose-40mm-chrome-brass"
-      ]
-    },
-    "spa-baths": {
-      "title": "Spa Baths",
-      "group": "baths",
-      "count": 1,
-      "product_ids": [
-        "spa-bath-2-seater-corner-white-odette"
-      ]
-    },
-    "bath-screens": {
-      "title": "Bath Screens",
-      "group": "baths",
-      "count": 0,
-      "product_ids": []
-    },
     "close-couple-toilets": {
       "title": "Close Couple Toilets",
       "group": "toilets",
@@ -424,13 +280,299 @@
       ]
     },
     "squat-pans-urinals": {
-      "title": "Squat Pans Urinals",
+      "title": "Squat Pans & Urinals",
       "group": "toilets",
       "count": 2,
       "product_ids": [
         "toilet-pan-squat-white-orissa-20",
         "toilet-pan-squat-white-orissa-23"
       ]
+    },
+    "shower-cubicles": {
+      "title": "Shower Cubicles",
+      "group": "showers",
+      "count": 14,
+      "product_ids": [
+        "alco-saturn-square-corner-entry-clear-glass-900x900x1850mm",
+        "corner-entry-shower-door-square-grey-glass-900x900x1800mm",
+        "corner-silver-clear-temp-glass-900mmx900mmx1800mm-4mm",
+        "cubic-showerdoor-quarter-round-4mm-glass",
+        "libra-showerdoor-pivot-and-clear-glass-panel-white-frame-900x900mm",
+        "pure-view-shower-door-clear-900x900x1800mm-4mm",
+        "round-black-lines-900mmx900mmx1800mm-clear-temp-black-lines-4mm",
+        "round-pear-frosted-tempered-glass-900mmx900mmx1800mm-4mm",
+        "titan-square-corner-entry-shower-door-black-blocks-900x900x1800-4mm",
+        "tri-slide-showerdoor-clear-glass-90x180",
+        "trinidad-corner-entry-showerdoor-clear-glass-6mm",
+        "trinidad-showerdoor-quarter-round-clear-glass-6mm",
+        "zen-curve-corner-entry-shower-door-black-line-900x900x1800-4mm",
+        "zen-square-corner-entry-shower-900x900x1800mm-black-line-4mm"
+      ]
+    },
+    "shower-screens": {
+      "title": "Shower Screens",
+      "group": "showers",
+      "count": 20,
+      "product_ids": [
+        "aqua-sheild-shower-screen-1200x2000x6mm",
+        "aqua-sheild-shower-screen-black-design-900x2000x6mm-black-design",
+        "aqua-shield-shower-screen-black-design1000x2000x6mm",
+        "aqua-vista-shower-screen-clear-glass-chrome-finish-1000x2000x8mm",
+        "aurora-gold-glass-shower-screen-1000x2000mm-6mm",
+        "aurora-gold-glass-shower-screen-1200x2000mm-6mm",
+        "clear-vista-shower-screen-clear-glass-900x2000x6mm",
+        "clear-vista-shower-screen-clear-glass-chrome-1000x2000x6mm",
+        "clear-vista-shower-screen-clear-glass-chrome-1200x2000x6mm",
+        "elegance-shower-screen-1200x2000x6mm-black-design",
+        "elegance-shower-screen-black-design-1000x2000x6mm",
+        "onyx-shower-screen-grey-glass-black-finish-1200x2000x8mm",
+        "onyx-vista-shower-screen-grey-glass-black-finish-1000x2000x6mm",
+        "onyx-vista-shower-screen-grey-glass-black-finish-1200x2000x6mm",
+        "onyx-vista-shower-screen-black-glass-1000x1950x8mm",
+        "onyx-vista-shower-screen-grey-glass-1200x2000x8mm",
+        "onyx-vista-shower-screen-grey-glass-900x2000x8mm",
+        "onyx-vista-shower-screen-grey-glass-black-finish-900x2000x6mm",
+        "shower-screen-white-strip-with-black-frame-1000x2000x6mm",
+        "shower-screen-white-strip-with-black-frame-1200x2000x6mm"
+      ]
+    },
+    "shower-panels": {
+      "title": "Shower Panels",
+      "group": "showers",
+      "count": 21,
+      "product_ids": [
+        "alco-3-function-shower-panel-gun-grey-1200mmx220mm",
+        "alco-3-function-shower-panel-black-1200mmx220mm",
+        "alco-3-function-shower-panel-gold-1200mmx220mm",
+        "alco-4-function-shower-panel-gold-1500mmx220mm",
+        "alco-4-function-shower-panel-black-1500mmx220mm",
+        "alco-4-function-shower-panel-chrome-1500mmx220mm",
+        "alco-4-function-shower-panel-gun-grey-1500mmx220mm",
+        "alco-black-shower-panel-3-function-combo",
+        "shower-panel-with-screen-black-1200x220mm-2",
+        "aquavit-shower-panel-chrome-1200x220mm",
+        "shower-panel-with-screen-brushed1200x220mm",
+        "shower-panel-with-screen-brushed-1200x220mm",
+        "shower-panel-with-screen-black-1200x220mm",
+        "aquavit-black-led-shower-panel-1500mmx220mm",
+        "aquavit-shower-panel-black-led-1500mmx220mm",
+        "aquavit-shower-panel-shiny-1500mmx220mm",
+        "aquavit-shower-panel-white-1200x220mm",
+        "aquavit-shower-panel-black-1200x220mm",
+        "aquavit-shower-panel-mirror-1200x220mm",
+        "aquavit-shower-panel-black-and-bamboo-1200x220mm",
+        "black-shower-panel-and-accessory-combo-2"
+      ]
+    },
+    "shower-rails": {
+      "title": "Shower Rails",
+      "group": "showers",
+      "count": 9,
+      "product_ids": [
+        "alco-chrome-shower-rail-with-hand-shower-flexi-hose",
+        "alco-shower-rail-grey-2",
+        "alco-shower-rail-grey-3",
+        "alco-shower-rail-set-black-220x80mm",
+        "alco-shower-rail-set-black-260x85mm",
+        "alco-shower-rail-set-gun-metal-260x85mm",
+        "alco-shower-rail-set-gun-metal-220x80mm",
+        "alco-shower-rail-set-combo",
+        "aquavit-shower-rail-set-with-1-5m-hose-2"
+      ]
+    },
+    "shower-head-arms": {
+      "title": "Shower Head & Arms",
+      "group": "showers",
+      "count": 37,
+      "product_ids": [
+        "alco-3-setting-shower-head-with-shower-arm-flange",
+        "alco-5-setting-shower-head-with-shower-arm-flange",
+        "alco-abs-rose-shower-head-aspire-black-100mm-101",
+        "alco-abs-shower-head-black-rose-style-150mm",
+        "alco-abs-shower-head-chrome-black-rose-style-100mm",
+        "alco-aspire-black-square-showerhead-100mm",
+        "alco-shower-head-6-with-shower-arm-ss-flange",
+        "alco-shower-head-with-shower-arm-ss-flange",
+        "alco-shower-head-with-shower-arm-ss-flange-2",
+        "aquavit-abs-shower-head-with-arm-rose-style",
+        "aquavit-chrome-round-shower-head-with-arm-200mm",
+        "aquavit-chrome-square-shower-head-with-arm-200mm",
+        "aquavit-shower-arm-black-round-35cm",
+        "aquavit-shower-arm-black-square-35cm",
+        "aquavit-shower-arm-black-square-35cm-2",
+        "aquavit-shower-arm-s-steel-round-35cm",
+        "aquavit-shower-arm-s-steel-square-35cm",
+        "aquavit-shower-arm-s-steel-square-35cm-2",
+        "aquavit-showerhead-arm-combo-black-round-8%e2%80%b3-20cm",
+        "aquavit-showerhead-black-round-10-25cm",
+        "aquavit-showerhead-black-round-12-30cm",
+        "aquavit-showerhead-black-round-8-20cm",
+        "aquavit-showerhead-black-square-10-25cm",
+        "aquavit-showerhead-black-square-12-30cm",
+        "aquavit-showerhead-black-square-8-20cm",
+        "aquavit-showerhead-s-steel-round-10-25cm",
+        "aquavit-showerhead-s-steel-round-12-30cm",
+        "aquavit-showerhead-s-steel-round-8-20cm",
+        "aquavit-showerhead-s-steel-square-10-25cm",
+        "aquavit-showerhead-s-steel-square-12-30cm",
+        "aquavit-showerhead-s-steel-square-8-20cm",
+        "aquavit-square-shower-head-gold-8-20cm",
+        "round-shower-arm-with-rosette-gold-156g",
+        "round-shower-head-gold-10-25cm",
+        "round-shower-head-gold-8-20cm",
+        "square-shower-arm-with-rosette-gold-307g",
+        "square-shower-head-gold-10-25cm"
+      ]
+    },
+    "shower-channels-traps": {
+      "title": "Shower Channels & Traps",
+      "group": "showers",
+      "count": 23,
+      "product_ids": [
+        "alco-round-shower-trap-cover-black-100mm",
+        "alco-round-shower-trap-cover-chrome-100mm",
+        "alco-shower-trap-pvc-square-grid",
+        "alco-square-shower-trap-cover-black-100mm",
+        "alco-square-shower-trap-cover-chrome-100mm",
+        "aquavit-round-brass-shower-trap-cover-black-100mm",
+        "aquavit-round-brass-shower-trap-cover-chrome-100mm",
+        "aquavit-round-brass-shower-trap-cover-chrome-100mm-2",
+        "aquavit-shower-channel-with-drainage-black-stainless-steel-500mm",
+        "shower-channel-with-drainage-chrome-150mm",
+        "aquavit-square-brass-shower-trap-cover-black-100mm",
+        "shower-channel-with-drainage-black-150mm",
+        "shower-channel-brevik-black-150mm",
+        "shower-channel-with-drainage-black-250mm",
+        "shower-channel-with-drainage-brushed-gold-250mm",
+        "shower-channel-with-drainage-chrome-250mm",
+        "shower-channel-with-drainage-chrome-500mm",
+        "shower-channel-with-drainage-chrome-860mm",
+        "shower-channel-with-drainage-grey-500mm",
+        "slim-line-shower-channel-chrome-748mm",
+        "slim-line-shower-channel-black-348mm",
+        "slim-line-shower-channel-chrome-348mm",
+        "slim-line-shower-channel-chrome-498mm"
+      ]
+    },
+    "bath-taps": {
+      "title": "Bath Taps",
+      "group": "taps",
+      "count": 25,
+      "product_ids": [
+        "alco-tivona-arc-bath-mixer-with-hose-black",
+        "alco-tivona-arc-bath-mixer-with-hose-chrome",
+        "alco-tivona-arc-bath-mixer-with-hose-gold",
+        "alco-tivona-arc-bath-mixer-with-hose-grey",
+        "alco-tivona-lux-bath-mixer-with-hose-black",
+        "alco-tivona-lux-bath-mixer-with-hose-chrome",
+        "alco-tivona-lux-bath-mixer-with-hose-gold",
+        "alco-tivona-lux-bath-mixer-with-hose-grey",
+        "aquavit-bravino-bath-mixer-with-hose-35mm-black",
+        "aquavit-bravino-bath-mixer-with-hose-35mm-chrome",
+        "aquavit-harmony-bath-mixer-with-hand-shower-hose-black",
+        "aquavit-harmony-bath-mixer-with-hand-shower-hose-chrome",
+        "aquavit-joop-bath-mixer-black",
+        "aquavit-lenoro-basin-mixer-30mm-black",
+        "aquavit-lenoro-basin-mixer-30mm-brush-gold",
+        "aquavit-lenoro-basin-mixer-30mm-gun-grey",
+        "aquavit-lenoro-basin-mixer-long-body-30mm-black",
+        "aquavit-lenoro-basin-mixer-long-body-30mm-brush-gold",
+        "aquavit-lenoro-basin-mixer-long-body-30mm-chrome",
+        "aquavit-lenoro-basin-mixer-long-body-30mm-gun-grey",
+        "aquavit-lenoro-bath-mixer-35mm-chrome",
+        "aquavit-lenoro-bath-mixer-with-hose-35mm-black",
+        "aquavit-lenoro-bath-mixer-with-hose-35mm-gun-grey",
+        "aquavit-oceana-bath-mixer-with-hose-35mm-chrome",
+        "aquavit-trinity-bath-mixer-with-hose-40mm-chrome-brass"
+      ]
+    },
+    "shower-taps": {
+      "title": "Shower Taps",
+      "group": "taps",
+      "count": 0,
+      "product_ids": []
+    },
+    "freestanding-bath-taps": {
+      "title": "Freestanding Bath Taps",
+      "group": "taps",
+      "count": 8,
+      "product_ids": [
+        "aquavit-freestanding-bath-mixer-round-black",
+        "aquavit-freestanding-bath-mixer-round-brushed-gold",
+        "aquavit-freestanding-bath-mixer-round-chrome",
+        "aquavit-freestanding-bath-mixer-round-gun-grey",
+        "aquavit-freestanding-bath-mixer-square-black",
+        "aquavit-freestanding-bath-mixer-square-brushed-gold",
+        "aquavit-freestanding-bath-mixer-square-chrome",
+        "aquavit-freestanding-bath-mixer-square-gun-grey"
+      ]
+    },
+    "freestanding-baths": {
+      "title": "Freestanding Baths",
+      "group": "baths",
+      "count": 14,
+      "product_ids": [
+        "amara-black-free-standing-bath-1700x730x580",
+        "aquavit-ella-freestanding-bath-grey-1700x800x580mm",
+        "aquavit-freestanding-bath-ella-black-1700x800x580mm",
+        "aquavit-freestanding-bath-ella-white-1700x800x580mm",
+        "aquavit-freestanding-bath-gianna-white-1700x800x580mm",
+        "aquavit-freestanding-bath-marina-white-1700x750x580mm",
+        "aquavit-gianna-freestanding-bath-black-1700x800x580mm",
+        "aquavit-monet-freestanding-bath-white-1700x750x580mm",
+        "cordelia-freestanding-bath-1700x750x620mm",
+        "diana-freestanding-bath-white",
+        "free-standing-bath-aquavit-gianna-grey-1700x800x580mm",
+        "raihaan-free-standing-bath-white-1700x750x580mm",
+        "raihaan-grey-free-standing-bath-1700x750x580mm",
+        "victorian-freestanding-bath-1700mm"
+      ]
+    },
+    "built-in-baths": {
+      "title": "Built In Baths",
+      "group": "baths",
+      "count": 1,
+      "product_ids": [
+        "bathtub-with-handles-1500mm"
+      ]
+    },
+    "spa-baths": {
+      "title": "Spa Baths",
+      "group": "baths",
+      "count": 1,
+      "product_ids": [
+        "spa-bath-2-seater-corner-white-odette"
+      ]
+    },
+    "bath-accessories": {
+      "title": "Bath Accessories",
+      "group": "baths",
+      "count": 17,
+      "product_ids": [
+        "6-pc-bathroom-set-beige-and-chrome",
+        "6-pc-bathroom-set-square-black-and-bamboo",
+        "alco-shower-caddy-black",
+        "backscrubber-with-handle",
+        "bathroom-mat-340x610mm",
+        "bathroom-mat-rubber-beige-with-suction",
+        "bathroom-mat-rubber-black-with-suction",
+        "bathroom-mat-rubber-blue-with-suction",
+        "bathroom-mat-rubber-dark-green-with-suction",
+        "bathroom-mat-rubber-grey-with-suction",
+        "bathroom-mat-rubber-light-green-with-suction",
+        "bathroom-mat-rubber-white-with-suction",
+        "corner-shower-caddy",
+        "shower-curtain-hook-black",
+        "shower-curtain-hook-clear",
+        "shower-curtain-hook-white",
+        "shower-curtain-rail-extendable-1100-2000mm"
+      ]
+    },
+    "bath-screens": {
+      "title": "Bath Screens",
+      "group": "baths",
+      "count": 0,
+      "product_ids": []
     },
     "mirror-cabinets": {
       "title": "Mirror Cabinets",
@@ -446,33 +588,11 @@
         "sam-brookhill-mirror-cabinet-610x610x116mm"
       ]
     },
-    "mirrors": {
-      "title": "Mirrors",
+    "feature-mirrors": {
+      "title": "Feature Mirrors",
       "group": "furniture",
-      "count": 21,
-      "product_ids": [
-        "aquavit-round-bracket-extendable-cosmetic-mirror",
-        "aquavit-square-bracket-extendable-cosmetic-mirror",
-        "erin-mirror-600x600mm",
-        "jupiter-belt-mirror-black-600x600mm",
-        "jupiter-frame-mirror-gold-600x600mm",
-        "lapana-mirror-800x600mm",
-        "lara-mirror-800x600mm",
-        "liro-mirror-800x600mm",
-        "luna-mirror-800x600mm",
-        "mecury-frame-mirror-black-400x400mm",
-        "miami-mirror-600x450mm",
-        "neptune-frame-mirror-gold-500x400mm",
-        "nina-wall-mirror-600x450mm",
-        "nova-mirror-600x600mm",
-        "pescara-mirror-800x600mm",
-        "round-mirror-30cm-31",
-        "samba-mirror-800x600mm",
-        "savio-mirror-800x600mm",
-        "sofia-mirror-800x600mm",
-        "stand-up-mirror-360x1460mm",
-        "tear-drop-mirror-29x33cm"
-      ]
+      "count": 0,
+      "product_ids": []
     },
     "led-mirrors": {
       "title": "LED Mirrors",
@@ -640,327 +760,6 @@
         "shower-curtain-hook-white",
         "shower-curtain-rail-extendable-1100-2000mm"
       ]
-    },
-    "shower-cubicles": {
-      "title": "Shower Cubicles",
-      "group": "showers",
-      "count": 14,
-      "product_ids": [
-        "alco-saturn-square-corner-entry-clear-glass-900x900x1850mm",
-        "corner-entry-shower-door-square-grey-glass-900x900x1800mm",
-        "corner-silver-clear-temp-glass-900mmx900mmx1800mm-4mm",
-        "cubic-showerdoor-quarter-round-4mm-glass",
-        "libra-showerdoor-pivot-and-clear-glass-panel-white-frame-900x900mm",
-        "pure-view-shower-door-clear-900x900x1800mm-4mm",
-        "round-black-lines-900mmx900mmx1800mm-clear-temp-black-lines-4mm",
-        "round-pear-frosted-tempered-glass-900mmx900mmx1800mm-4mm",
-        "titan-square-corner-entry-shower-door-black-blocks-900x900x1800-4mm",
-        "tri-slide-showerdoor-clear-glass-90x180",
-        "trinidad-corner-entry-showerdoor-clear-glass-6mm",
-        "trinidad-showerdoor-quarter-round-clear-glass-6mm",
-        "zen-curve-corner-entry-shower-door-black-line-900x900x1800-4mm",
-        "zen-square-corner-entry-shower-900x900x1800mm-black-line-4mm"
-      ]
-    },
-    "shower-screens": {
-      "title": "Shower Screens",
-      "group": "showers",
-      "count": 20,
-      "product_ids": [
-        "aqua-sheild-shower-screen-1200x2000x6mm",
-        "aqua-sheild-shower-screen-black-design-900x2000x6mm-black-design",
-        "aqua-shield-shower-screen-black-design1000x2000x6mm",
-        "aqua-vista-shower-screen-clear-glass-chrome-finish-1000x2000x8mm",
-        "aurora-gold-glass-shower-screen-1000x2000mm-6mm",
-        "aurora-gold-glass-shower-screen-1200x2000mm-6mm",
-        "clear-vista-shower-screen-clear-glass-900x2000x6mm",
-        "clear-vista-shower-screen-clear-glass-chrome-1000x2000x6mm",
-        "clear-vista-shower-screen-clear-glass-chrome-1200x2000x6mm",
-        "elegance-shower-screen-1200x2000x6mm-black-design",
-        "elegance-shower-screen-black-design-1000x2000x6mm",
-        "onyx-shower-screen-grey-glass-black-finish-1200x2000x8mm",
-        "onyx-vista-shower-screen-grey-glass-black-finish-1000x2000x6mm",
-        "onyx-vista-shower-screen-grey-glass-black-finish-1200x2000x6mm",
-        "onyx-vista-shower-screen-black-glass-1000x1950x8mm",
-        "onyx-vista-shower-screen-grey-glass-1200x2000x8mm",
-        "onyx-vista-shower-screen-grey-glass-900x2000x8mm",
-        "onyx-vista-shower-screen-grey-glass-black-finish-900x2000x6mm",
-        "shower-screen-white-strip-with-black-frame-1000x2000x6mm",
-        "shower-screen-white-strip-with-black-frame-1200x2000x6mm"
-      ]
-    },
-    "shower-panels": {
-      "title": "Shower Panels",
-      "group": "showers",
-      "count": 21,
-      "product_ids": [
-        "alco-3-function-shower-panel-gun-grey-1200mmx220mm",
-        "alco-3-function-shower-panel-black-1200mmx220mm",
-        "alco-3-function-shower-panel-gold-1200mmx220mm",
-        "alco-4-function-shower-panel-gold-1500mmx220mm",
-        "alco-4-function-shower-panel-black-1500mmx220mm",
-        "alco-4-function-shower-panel-chrome-1500mmx220mm",
-        "alco-4-function-shower-panel-gun-grey-1500mmx220mm",
-        "alco-black-shower-panel-3-function-combo",
-        "shower-panel-with-screen-black-1200x220mm-2",
-        "aquavit-shower-panel-chrome-1200x220mm",
-        "shower-panel-with-screen-brushed1200x220mm",
-        "shower-panel-with-screen-brushed-1200x220mm",
-        "shower-panel-with-screen-black-1200x220mm",
-        "aquavit-black-led-shower-panel-1500mmx220mm",
-        "aquavit-shower-panel-black-led-1500mmx220mm",
-        "aquavit-shower-panel-shiny-1500mmx220mm",
-        "aquavit-shower-panel-white-1200x220mm",
-        "aquavit-shower-panel-black-1200x220mm",
-        "aquavit-shower-panel-mirror-1200x220mm",
-        "aquavit-shower-panel-black-and-bamboo-1200x220mm",
-        "black-shower-panel-and-accessory-combo-2"
-      ]
-    },
-    "shower-rails": {
-      "title": "Shower Rails",
-      "group": "showers",
-      "count": 9,
-      "product_ids": [
-        "alco-chrome-shower-rail-with-hand-shower-flexi-hose",
-        "alco-shower-rail-grey-2",
-        "alco-shower-rail-grey-3",
-        "alco-shower-rail-set-black-220x80mm",
-        "alco-shower-rail-set-black-260x85mm",
-        "alco-shower-rail-set-gun-metal-260x85mm",
-        "alco-shower-rail-set-gun-metal-220x80mm",
-        "alco-shower-rail-set-combo",
-        "aquavit-shower-rail-set-with-1-5m-hose-2"
-      ]
-    },
-    "shower-head-arms": {
-      "title": "Shower Head Arms",
-      "group": "showers",
-      "count": 37,
-      "product_ids": [
-        "alco-3-setting-shower-head-with-shower-arm-flange",
-        "alco-5-setting-shower-head-with-shower-arm-flange",
-        "alco-abs-rose-shower-head-aspire-black-100mm-101",
-        "alco-abs-shower-head-black-rose-style-150mm",
-        "alco-abs-shower-head-chrome-black-rose-style-100mm",
-        "alco-aspire-black-square-showerhead-100mm",
-        "alco-shower-head-6-with-shower-arm-ss-flange",
-        "alco-shower-head-with-shower-arm-ss-flange",
-        "alco-shower-head-with-shower-arm-ss-flange-2",
-        "aquavit-abs-shower-head-with-arm-rose-style",
-        "aquavit-chrome-round-shower-head-with-arm-200mm",
-        "aquavit-chrome-square-shower-head-with-arm-200mm",
-        "aquavit-shower-arm-black-round-35cm",
-        "aquavit-shower-arm-black-square-35cm",
-        "aquavit-shower-arm-black-square-35cm-2",
-        "aquavit-shower-arm-s-steel-round-35cm",
-        "aquavit-shower-arm-s-steel-square-35cm",
-        "aquavit-shower-arm-s-steel-square-35cm-2",
-        "aquavit-showerhead-arm-combo-black-round-8%e2%80%b3-20cm",
-        "aquavit-showerhead-black-round-10-25cm",
-        "aquavit-showerhead-black-round-12-30cm",
-        "aquavit-showerhead-black-round-8-20cm",
-        "aquavit-showerhead-black-square-10-25cm",
-        "aquavit-showerhead-black-square-12-30cm",
-        "aquavit-showerhead-black-square-8-20cm",
-        "aquavit-showerhead-s-steel-round-10-25cm",
-        "aquavit-showerhead-s-steel-round-12-30cm",
-        "aquavit-showerhead-s-steel-round-8-20cm",
-        "aquavit-showerhead-s-steel-square-10-25cm",
-        "aquavit-showerhead-s-steel-square-12-30cm",
-        "aquavit-showerhead-s-steel-square-8-20cm",
-        "aquavit-square-shower-head-gold-8-20cm",
-        "round-shower-arm-with-rosette-gold-156g",
-        "round-shower-head-gold-10-25cm",
-        "round-shower-head-gold-8-20cm",
-        "square-shower-arm-with-rosette-gold-307g",
-        "square-shower-head-gold-10-25cm"
-      ]
-    },
-    "shower-channels-traps": {
-      "title": "Shower Channels Traps",
-      "group": "showers",
-      "count": 23,
-      "product_ids": [
-        "alco-round-shower-trap-cover-black-100mm",
-        "alco-round-shower-trap-cover-chrome-100mm",
-        "alco-shower-trap-pvc-square-grid",
-        "alco-square-shower-trap-cover-black-100mm",
-        "alco-square-shower-trap-cover-chrome-100mm",
-        "aquavit-round-brass-shower-trap-cover-black-100mm",
-        "aquavit-round-brass-shower-trap-cover-chrome-100mm",
-        "aquavit-round-brass-shower-trap-cover-chrome-100mm-2",
-        "aquavit-shower-channel-with-drainage-black-stainless-steel-500mm",
-        "shower-channel-with-drainage-chrome-150mm",
-        "aquavit-square-brass-shower-trap-cover-black-100mm",
-        "shower-channel-with-drainage-black-150mm",
-        "shower-channel-brevik-black-150mm",
-        "shower-channel-with-drainage-black-250mm",
-        "shower-channel-with-drainage-brushed-gold-250mm",
-        "shower-channel-with-drainage-chrome-250mm",
-        "shower-channel-with-drainage-chrome-500mm",
-        "shower-channel-with-drainage-chrome-860mm",
-        "shower-channel-with-drainage-grey-500mm",
-        "slim-line-shower-channel-chrome-748mm",
-        "slim-line-shower-channel-black-348mm",
-        "slim-line-shower-channel-chrome-348mm",
-        "slim-line-shower-channel-chrome-498mm"
-      ]
-    },
-    "shower-taps-outlets": {
-      "title": "Shower Taps Outlets",
-      "group": "taps",
-      "count": 45,
-      "product_ids": [
-        "alco-round-shower-outlet-braket-black",
-        "alco-round-shower-outlet-braket-chrome",
-        "alco-round-shower-outlet-braket-gold",
-        "alco-square-shower-outlet-braket-black",
-        "alco-square-shower-outlet-braket-gold",
-        "alco-square-shower-outlet-braket-grey",
-        "alco-tivona-arc-shower-mixer-black",
-        "alco-tivona-arc-shower-mixer-chrome",
-        "alco-tivona-arc-shower-mixer-gold",
-        "alco-tivona-arc-shower-mixer-grey",
-        "alco-tivona-arc-shower-mixer-with-diverter-black",
-        "alco-tivona-arc-shower-mixer-with-diverter-gold",
-        "alco-tivona-arc-shower-mixer-with-diverter-grey",
-        "alco-tivona-lux-shower-mixer-black",
-        "alco-tivona-lux-shower-mixer-chrome",
-        "alco-tivona-lux-shower-mixer-gold",
-        "alco-tivona-lux-shower-mixer-grey",
-        "alco-tivona-lux-shower-mixer-with-diverter-black",
-        "alco-tivona-lux-shower-mixer-with-diverter-chrome",
-        "alco-tivona-lux-shower-mixer-with-diverter-gold",
-        "alco-tivona-lux-shower-mixer-with-diverter-grey",
-        "aquavit-bravino-concealed-shower-mixer-black",
-        "aquavit-bravino-concealed-shower-mixer-with-diverter-black",
-        "aquavit-bravino-concealed-shower-mixer-with-diverter-chrome",
-        "aquavit-bravino-shower-mixer-35mm-chrome",
-        "aquavit-joop-shower-mixer-black",
-        "aquavit-joop-shower-mixer-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-black",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-brush-gold",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-gun-grey",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-black",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-gun-grey",
-        "aquavit-oceana-concealed-shower-mixer-35mm-chrome",
-        "aquavit-oceana-concealed-shower-mixer-with-diverter-35mm-chrome",
-        "aquavit-shower-mixer-black",
-        "aquavit-shower-mixer-chrome",
-        "aquavit-shower-mixer-with-diverter-black",
-        "aquavit-shower-mixer-with-diverter-chrome",
-        "aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass",
-        "aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome",
-        "cobra-nile-shower-mixer-concealed",
-        "cobra-seine-bath-shower-mixer-concealed-chrome",
-        "jazz-shower-mixer-chrome"
-      ]
-    },
-    "freestanding-bath-taps": {
-      "title": "Freestanding Taps",
-      "group": "taps",
-      "count": 8,
-      "product_ids": [
-        "aquavit-freestanding-bath-mixer-round-black",
-        "aquavit-freestanding-bath-mixer-round-brushed-gold",
-        "aquavit-freestanding-bath-mixer-round-chrome",
-        "aquavit-freestanding-bath-mixer-round-gun-grey",
-        "aquavit-freestanding-bath-mixer-square-black",
-        "aquavit-freestanding-bath-mixer-square-brushed-gold",
-        "aquavit-freestanding-bath-mixer-square-chrome",
-        "aquavit-freestanding-bath-mixer-square-gun-grey"
-      ]
-    },
-    "kitchen-sink-taps": {
-      "title": "Kitchen Sink Taps",
-      "group": "taps",
-      "count": 57,
-      "product_ids": [
-        "alco-pull-out-sink-mixer-spring-type-black",
-        "alco-pull-out-sink-mixer-spring-type-chrome",
-        "alco-pull-out-sink-mixer-spring-type-black-and-gold",
-        "alco-pull-out-sink-mixer-spring-type-grey",
-        "alco-pull-out-sink-mixer-stainless-steel-black",
-        "alco-pull-out-sink-mixer-stainless-steel-chrome",
-        "alco-pull-out-sink-mixer-stainless-steel-gold",
-        "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
-        "alco-tivona-arc-sink-mixer-black",
-        "alco-tivona-arc-sink-mixer-chrome",
-        "alco-tivona-arc-sink-mixer-gold",
-        "alco-tivona-arc-sink-mixer-grey",
-        "alco-tivona-lux-sink-mixer-black",
-        "alco-tivona-lux-sink-mixer-chrome",
-        "alco-tivona-lux-sink-mixer-gold",
-        "alco-tivona-lux-sink-mixer-grey",
-        "aquavit-bravino-sink-mixer-35mm-black",
-        "aquavit-bravino-sink-mixer-35mm-chrome",
-        "aquavit-harmony-sink-mixer-black",
-        "aquavit-harmony-sink-mixer-chrome",
-        "aquavit-joop-sink-mixer-deck-type-chrome",
-        "aquavit-joop-sink-mixer-wall-type-black",
-        "aquavit-joop-sink-mixer-wall-type-chrome",
-        "aquavit-kitchen-sink-mixer-black",
-        "aquavit-kitchen-sink-mixer-chrome",
-        "aquavit-kitchen-sink-mixer-chrome-2",
-        "aquavit-lenoro-sink-mixer-35mm-black",
-        "aquavit-lenoro-sink-mixer-35mm-brush-gold",
-        "aquavit-lenoro-sink-mixer-35mm-chrome",
-        "aquavit-lenoro-sink-mixer-35mm-gun-grey",
-        "aquavit-oceana-sink-mixer-35mm-chrome",
-        "aquavit-sink-mixer-black",
-        "aquavit-sink-mixer-brushed-gold",
-        "aquavit-sink-mixer-chrome",
-        "aquavit-sink-mixer-gun-grey",
-        "aquavit-trinity-sink-mixer-deck-type",
-        "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
-        "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
-        "flexi-hose-sink-mixer-deck-type-black",
-        "flexi-hose-sink-mixer-deck-type-grey",
-        "jazz-sink-mixer-deck-type-chrome",
-        "shd-sink-mixer-black",
-        "shd-sink-mixer-black-2",
-        "shd-sink-mixer-black-3",
-        "shd-sink-mixer-black-4",
-        "shd-sink-mixer-brushed-gold",
-        "shd-sink-mixer-brushed-gold-2",
-        "shd-sink-mixer-brushed-gold-3",
-        "shd-sink-mixer-brushed-gold-4",
-        "shd-sink-mixer-chrome",
-        "shd-sink-mixer-chrome-2",
-        "shd-sink-mixer-chrome-3",
-        "shd-sink-mixer-chrome-4",
-        "shd-sink-mixer-gun-grey",
-        "shd-sink-mixer-gun-grey-2",
-        "shd-sink-mixer-gun-grey-3",
-        "shd-sink-mixer-gun-grey-4"
-      ]
-    },
-    "bath-accessories": {
-      "title": "Bath Accessories",
-      "group": "baths",
-      "count": 17,
-      "product_ids": [
-        "6-pc-bathroom-set-beige-and-chrome",
-        "6-pc-bathroom-set-square-black-and-bamboo",
-        "alco-shower-caddy-black",
-        "backscrubber-with-handle",
-        "bathroom-mat-340x610mm",
-        "bathroom-mat-rubber-beige-with-suction",
-        "bathroom-mat-rubber-black-with-suction",
-        "bathroom-mat-rubber-blue-with-suction",
-        "bathroom-mat-rubber-dark-green-with-suction",
-        "bathroom-mat-rubber-grey-with-suction",
-        "bathroom-mat-rubber-light-green-with-suction",
-        "bathroom-mat-rubber-white-with-suction",
-        "corner-shower-caddy",
-        "shower-curtain-hook-black",
-        "shower-curtain-hook-clear",
-        "shower-curtain-hook-white",
-        "shower-curtain-rail-extendable-1100-2000mm"
-      ]
     }
   },
   "groups": {
@@ -1087,20 +886,8 @@
     },
     "toilets": {
       "title": "Toilets",
-      "count": 57,
+      "count": 45,
       "product_ids": [
-        "toilet-and-basin-with-pedestal",
-        "jaunty-alco-wall-hung-toilet-combo",
-        "jaunty-wall-hung-combo",
-        "modern-toilet-combo",
-        "pan-connector-combo",
-        "terra-alco-wall-hung-toilet-combo",
-        "terra-wall-hung-combo-2",
-        "toilet-basin-pedestal-caddy",
-        "toilet-combo-3",
-        "top-flush-toilet-basin-pedestal-cleaner-combo",
-        "wal-hung-black-elegance-combo",
-        "wall-hung-pool-black-combo",
         "alco-jonell-white-top-flush-toilet-close-couple-set",
         "sash-close-couple-toilet-incl-t-seat",
         "benito-close-couple-toilet-including-mechanism-toilet-seat",
@@ -1150,29 +937,8 @@
     },
     "showers": {
       "title": "Showers",
-      "count": 145,
+      "count": 124,
       "product_ids": [
-        "alco-black-shower-panel-combo",
-        "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
-        "complete-bathroom-solution-combo",
-        "complete-shower-solution-combo-2",
-        "designer-screen-combo-2",
-        "grey-shower-panel-combo",
-        "pure-view-shower-door-combo",
-        "shower-arm-head",
-        "shower-combo-3",
-        "shower-cubicle-plus-free-silicone-combo",
-        "shower-panel-with-5pc-accessory-set-combo",
-        "shower-rail-combo",
-        "shower-screen-accessories-combo",
-        "shower-screen-black-combo",
-        "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
-        "shower-screen-plus-shower-head-and-arm-combo",
-        "shower-screen-with-shower-head-and-arm-combo",
-        "shower-square-and-rail-set-combo",
-        "square-shower-combo-4",
-        "zen-shower-combo",
         "alco-saturn-square-corner-entry-clear-glass-900x900x1850mm",
         "corner-entry-shower-door-square-grey-glass-900x900x1800mm",
         "corner-silver-clear-temp-glass-900mmx900mmx1800mm-4mm",
@@ -1301,16 +1067,8 @@
     },
     "taps": {
       "title": "Taps",
-      "count": 161,
+      "count": 51,
       "product_ids": [
-        "tivona-tabby-basin-and-mixer-combo",
-        "basin-and-mirror-combo",
-        "basin-and-mirror-combo-2",
-        "basin-and-mixer-combo",
-        "buffer-basin-combo",
-        "chrome-tivona-combo-2",
-        "hazel-basin-mixer-combo",
-        "polio-basin-mixer-combo",
         "alco-tivona-arc-basin-mixer-black",
         "alco-tivona-arc-basin-mixer-chrome",
         "alco-tivona-arc-basin-mixer-gold",
@@ -1354,51 +1112,6 @@
         "aquavit-lenoro-bath-mixer-with-hose-35mm-gun-grey",
         "aquavit-oceana-bath-mixer-with-hose-35mm-chrome",
         "aquavit-trinity-bath-mixer-with-hose-40mm-chrome-brass",
-        "alco-round-shower-outlet-braket-black",
-        "alco-round-shower-outlet-braket-chrome",
-        "alco-round-shower-outlet-braket-gold",
-        "alco-square-shower-outlet-braket-black",
-        "alco-square-shower-outlet-braket-gold",
-        "alco-square-shower-outlet-braket-grey",
-        "alco-tivona-arc-shower-mixer-black",
-        "alco-tivona-arc-shower-mixer-chrome",
-        "alco-tivona-arc-shower-mixer-gold",
-        "alco-tivona-arc-shower-mixer-grey",
-        "alco-tivona-arc-shower-mixer-with-diverter-black",
-        "alco-tivona-arc-shower-mixer-with-diverter-gold",
-        "alco-tivona-arc-shower-mixer-with-diverter-grey",
-        "alco-tivona-lux-shower-mixer-black",
-        "alco-tivona-lux-shower-mixer-chrome",
-        "alco-tivona-lux-shower-mixer-gold",
-        "alco-tivona-lux-shower-mixer-grey",
-        "alco-tivona-lux-shower-mixer-with-diverter-black",
-        "alco-tivona-lux-shower-mixer-with-diverter-chrome",
-        "alco-tivona-lux-shower-mixer-with-diverter-gold",
-        "alco-tivona-lux-shower-mixer-with-diverter-grey",
-        "aquavit-bravino-concealed-shower-mixer-black",
-        "aquavit-bravino-concealed-shower-mixer-with-diverter-black",
-        "aquavit-bravino-concealed-shower-mixer-with-diverter-chrome",
-        "aquavit-bravino-shower-mixer-35mm-chrome",
-        "aquavit-joop-shower-mixer-black",
-        "aquavit-joop-shower-mixer-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-black",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-brush-gold",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-35mm-gun-grey",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-black",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-chrome",
-        "aquavit-lenoro-concealed-shower-mixer-with-diverter-gun-grey",
-        "aquavit-oceana-concealed-shower-mixer-35mm-chrome",
-        "aquavit-oceana-concealed-shower-mixer-with-diverter-35mm-chrome",
-        "aquavit-shower-mixer-black",
-        "aquavit-shower-mixer-chrome",
-        "aquavit-shower-mixer-with-diverter-black",
-        "aquavit-shower-mixer-with-diverter-chrome",
-        "aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass",
-        "aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome",
-        "cobra-nile-shower-mixer-concealed",
-        "cobra-seine-bath-shower-mixer-concealed-chrome",
-        "jazz-shower-mixer-chrome",
         "aquavit-freestanding-bath-mixer-round-black",
         "aquavit-freestanding-bath-mixer-round-brushed-gold",
         "aquavit-freestanding-bath-mixer-round-chrome",
@@ -1406,64 +1119,7 @@
         "aquavit-freestanding-bath-mixer-square-black",
         "aquavit-freestanding-bath-mixer-square-brushed-gold",
         "aquavit-freestanding-bath-mixer-square-chrome",
-        "aquavit-freestanding-bath-mixer-square-gun-grey",
-        "alco-pull-out-sink-mixer-spring-type-black",
-        "alco-pull-out-sink-mixer-spring-type-chrome",
-        "alco-pull-out-sink-mixer-spring-type-black-and-gold",
-        "alco-pull-out-sink-mixer-spring-type-grey",
-        "alco-pull-out-sink-mixer-stainless-steel-black",
-        "alco-pull-out-sink-mixer-stainless-steel-chrome",
-        "alco-pull-out-sink-mixer-stainless-steel-gold",
-        "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
-        "alco-tivona-arc-sink-mixer-black",
-        "alco-tivona-arc-sink-mixer-chrome",
-        "alco-tivona-arc-sink-mixer-gold",
-        "alco-tivona-arc-sink-mixer-grey",
-        "alco-tivona-lux-sink-mixer-black",
-        "alco-tivona-lux-sink-mixer-chrome",
-        "alco-tivona-lux-sink-mixer-gold",
-        "alco-tivona-lux-sink-mixer-grey",
-        "aquavit-bravino-sink-mixer-35mm-black",
-        "aquavit-bravino-sink-mixer-35mm-chrome",
-        "aquavit-harmony-sink-mixer-black",
-        "aquavit-harmony-sink-mixer-chrome",
-        "aquavit-joop-sink-mixer-deck-type-chrome",
-        "aquavit-joop-sink-mixer-wall-type-black",
-        "aquavit-joop-sink-mixer-wall-type-chrome",
-        "aquavit-kitchen-sink-mixer-black",
-        "aquavit-kitchen-sink-mixer-chrome",
-        "aquavit-kitchen-sink-mixer-chrome-2",
-        "aquavit-lenoro-sink-mixer-35mm-black",
-        "aquavit-lenoro-sink-mixer-35mm-brush-gold",
-        "aquavit-lenoro-sink-mixer-35mm-chrome",
-        "aquavit-lenoro-sink-mixer-35mm-gun-grey",
-        "aquavit-oceana-sink-mixer-35mm-chrome",
-        "aquavit-sink-mixer-black",
-        "aquavit-sink-mixer-brushed-gold",
-        "aquavit-sink-mixer-chrome",
-        "aquavit-sink-mixer-gun-grey",
-        "aquavit-trinity-sink-mixer-deck-type",
-        "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
-        "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
-        "flexi-hose-sink-mixer-deck-type-black",
-        "flexi-hose-sink-mixer-deck-type-grey",
-        "jazz-sink-mixer-deck-type-chrome",
-        "shd-sink-mixer-black",
-        "shd-sink-mixer-black-2",
-        "shd-sink-mixer-black-3",
-        "shd-sink-mixer-black-4",
-        "shd-sink-mixer-brushed-gold",
-        "shd-sink-mixer-brushed-gold-2",
-        "shd-sink-mixer-brushed-gold-3",
-        "shd-sink-mixer-brushed-gold-4",
-        "shd-sink-mixer-chrome",
-        "shd-sink-mixer-chrome-2",
-        "shd-sink-mixer-chrome-3",
-        "shd-sink-mixer-chrome-4",
-        "shd-sink-mixer-gun-grey",
-        "shd-sink-mixer-gun-grey-2",
-        "shd-sink-mixer-gun-grey-3",
-        "shd-sink-mixer-gun-grey-4"
+        "aquavit-freestanding-bath-mixer-square-gun-grey"
       ]
     },
     "baths": {
@@ -1507,10 +1163,8 @@
     },
     "furniture": {
       "title": "Bathroom Furniture",
-      "count": 183,
+      "count": 160,
       "product_ids": [
-        "basin-and-mirror-combo-2",
-        "led-mirror-and-accessory-set-combo",
         "jenny-black-mirror-cabinet-650x440x120mm",
         "jenny-kalapana-mirror-cabinet-650x440x120mm",
         "jenny-nosara-mirror-cabinet-650x440x120mm",
@@ -1518,27 +1172,6 @@
         "maahira-nosara-mirror-cabinet-520x550mm",
         "mirror-and-cabinet-combo",
         "sam-brookhill-mirror-cabinet-610x610x116mm",
-        "aquavit-round-bracket-extendable-cosmetic-mirror",
-        "aquavit-square-bracket-extendable-cosmetic-mirror",
-        "erin-mirror-600x600mm",
-        "jupiter-belt-mirror-black-600x600mm",
-        "jupiter-frame-mirror-gold-600x600mm",
-        "lapana-mirror-800x600mm",
-        "lara-mirror-800x600mm",
-        "liro-mirror-800x600mm",
-        "luna-mirror-800x600mm",
-        "mecury-frame-mirror-black-400x400mm",
-        "miami-mirror-600x450mm",
-        "neptune-frame-mirror-gold-500x400mm",
-        "nina-wall-mirror-600x450mm",
-        "nova-mirror-600x600mm",
-        "pescara-mirror-800x600mm",
-        "round-mirror-30cm-31",
-        "samba-mirror-800x600mm",
-        "savio-mirror-800x600mm",
-        "sofia-mirror-800x600mm",
-        "stand-up-mirror-360x1460mm",
-        "tear-drop-mirror-29x33cm",
         "alco-echo-led-mirror-3-colour-light-600x600mm",
         "alco-haylee-led-mirror-3-colour-light-600x600mm",
         "alco-luna-led-mirror-3-colour-light-800x600mm",
@@ -2321,37 +1954,6 @@
       ]
     },
     {
-      "id": "tivona-tabby-basin-and-mixer-combo",
-      "source_url": "https://pulsetiles.co.za/product/tivona-tabby-basin-and-mixer-combo/",
-      "name": "Alco Basin and Mixer Combo",
-      "code": "Q01456",
-      "price": {
-        "current": 2199.99,
-        "regular": 2199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 50 × 20 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01456.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "14 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 50 × 20 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "alco-black-shower-panel-3-function-combo",
       "source_url": "https://pulsetiles.co.za/product/alco-black-shower-panel-3-function-combo/",
       "name": "Alco Black Shower Panel 3 Function Combo",
@@ -2377,37 +1979,6 @@
       ],
       "categories": [
         "shower-panels"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "alco-black-shower-panel-combo",
-      "source_url": "https://pulsetiles.co.za/product/alco-black-shower-panel-combo/",
-      "name": "Alco Black Shower Panel Combo",
-      "code": "Q01327",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 132 × 28 × 51 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/Q01327-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "5.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "132 × 28 × 51 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
       ],
       "bathroom_groups": [
         "showers"
@@ -3343,254 +2914,6 @@
       ]
     },
     {
-      "id": "alco-pull-out-sink-mixer-spring-type-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-black/",
-      "name": "Alco Pull-Out Sink Mixer Spring Type Black",
-      "code": "B04480",
-      "price": {
-        "current": 3039.99,
-        "regular": 3039.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04480-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-spring-type-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-chrome/",
-      "name": "Alco Pull-Out Sink Mixer Spring Type Chrome",
-      "code": "B04482",
-      "price": {
-        "current": 2849.99,
-        "regular": 2849.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04482-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-spring-type-black-and-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-black-and-gold/",
-      "name": "Alco Pull-Out Sink Mixer Spring Type Gold",
-      "code": "B04483",
-      "price": {
-        "current": 3419.99,
-        "regular": 3419.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04483-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-spring-type-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-spring-type-grey/",
-      "name": "Alco Pull-Out Sink Mixer Spring Type Grey",
-      "code": "B04481",
-      "price": {
-        "current": 3229.99,
-        "regular": 3229.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04481-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-stainless-steel-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-black/",
-      "name": "Alco Pull-Out Sink Mixer Stainless Steel Black",
-      "code": "B04484",
-      "price": {
-        "current": 3039.99,
-        "regular": 3039.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04484.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-stainless-steel-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-chrome/",
-      "name": "Alco Pull-Out Sink Mixer Stainless Steel Chrome",
-      "code": "B04486",
-      "price": {
-        "current": 3849.99,
-        "regular": 3849.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04486.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-stainless-steel-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-gold/",
-      "name": "Alco Pull-Out Sink Mixer Stainless Steel Gold",
-      "code": "B04487",
-      "price": {
-        "current": 3419.99,
-        "regular": 3419.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04487-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-pull-out-sink-mixer-stainless-steel-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-pull-out-sink-mixer-stainless-steel-gun-grey/",
-      "name": "Alco Pull-Out Sink Mixer Stainless Steel Gun Grey",
-      "code": "B04485",
-      "price": {
-        "current": 3229.99,
-        "regular": 3229.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 57 × 27 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04485.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "57 × 27 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "alco-radius-6-piece-set-square-black",
       "source_url": "https://pulsetiles.co.za/product/alco-radius-6-piece-set-square-black/",
       "name": "Alco Radius 6 Piece Set Square Black",
@@ -4521,99 +3844,6 @@
       ]
     },
     {
-      "id": "alco-round-shower-outlet-braket-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-round-shower-outlet-braket-black/",
-      "name": "Alco Round Shower Outlet Braket – Black",
-      "code": "B04193",
-      "price": {
-        "current": 699.99,
-        "regular": 699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04193-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-round-shower-outlet-braket-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-round-shower-outlet-braket-chrome/",
-      "name": "Alco Round Shower Outlet Braket – Chrome",
-      "code": "B04192",
-      "price": {
-        "current": 649.99,
-        "regular": 649.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04192-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-round-shower-outlet-braket-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-round-shower-outlet-braket-gold/",
-      "name": "Alco Round Shower Outlet Braket – Gold",
-      "code": "B04194",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04194-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "alco-round-shower-trap-cover-black-100mm",
       "source_url": "https://pulsetiles.co.za/product/alco-round-shower-trap-cover-black-100mm/",
       "name": "Alco Round Shower Trap Cover Black 100mm",
@@ -5529,99 +4759,6 @@
       ]
     },
     {
-      "id": "alco-square-shower-outlet-braket-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-square-shower-outlet-braket-black/",
-      "name": "Alco Square Shower Outlet Braket – Black",
-      "code": "B04189",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04189-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-square-shower-outlet-braket-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-square-shower-outlet-braket-gold/",
-      "name": "Alco Square Shower Outlet Braket – Gold",
-      "code": "B04190",
-      "price": {
-        "current": 899.99,
-        "regular": 899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04190-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-square-shower-outlet-braket-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-square-shower-outlet-braket-grey/",
-      "name": "Alco Square Shower Outlet Braket – Grey",
-      "code": "B04191",
-      "price": {
-        "current": 849.99,
-        "regular": 849.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 10 × 6 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04191-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "10 × 6 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "alco-square-shower-trap-cover-black-100mm",
       "source_url": "https://pulsetiles.co.za/product/alco-square-shower-trap-cover-black-100mm/",
       "name": "Alco Square Shower Trap Cover Black 100mm",
@@ -5963,347 +5100,6 @@
       ]
     },
     {
-      "id": "alco-tivona-arc-shower-mixer-with-diverter-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-with-diverter-black/",
-      "name": "Alco Tivona Arc Shower Mixer with Diverter â Black",
-      "code": "B04017",
-      "price": {
-        "current": 2899.99,
-        "regular": 2899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04017-Black-Shower-Mixer-with-Diverter.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-with-diverter-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-with-diverter-gold/",
-      "name": "Alco Tivona Arc Shower Mixer with Diverter â Gold",
-      "code": "B04019",
-      "price": {
-        "current": 3299.99,
-        "regular": 3299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04019-Gold-Shower-Mixer-with-Diverter-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-with-diverter-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-with-diverter-grey/",
-      "name": "Alco Tivona Arc Shower Mixer with Diverter â Grey",
-      "code": "B04018",
-      "price": {
-        "current": 3099.99,
-        "regular": 3099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04018-Gungrey-Shower-Mixer-with-Diverter.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-black/",
-      "name": "Alco Tivona Arc Shower Mixer â Black",
-      "code": "B04013",
-      "price": {
-        "current": 1699.99,
-        "regular": 1699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04013-Black-Shower-Mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-chrome/",
-      "name": "Alco Tivona Arc Shower Mixer â Chrome",
-      "code": "B04012",
-      "price": {
-        "current": 1599.99,
-        "regular": 1599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04012-Chrome-shower-mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-gold/",
-      "name": "Alco Tivona Arc Shower Mixer â Gold",
-      "code": "B04015",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13 × 8 × 14 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04015-Gold-shower-mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13 × 8 × 14 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-shower-mixer-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-shower-mixer-grey/",
-      "name": "Alco Tivona Arc Shower Mixer â Grey",
-      "code": "B04014",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04014-Gungrey-shower-mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-chrome/",
-      "name": "Alco Tivona Arc Sink Mixer â Chrome",
-      "code": "B04008",
-      "price": {
-        "current": 1699.99,
-        "regular": 1699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 21 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04008-Chrome-Sink-Mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 21 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-black/",
-      "name": "Alco Tivona Arc Sink Mixer – Black",
-      "code": "B04009",
-      "price": {
-        "current": 1799.99,
-        "regular": 1799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 21 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04009-Black-Sink-Mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 21 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-sink-mixer-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-gold/",
-      "name": "Alco Tivona Arc Sink Mixer – Gold",
-      "code": "B04011",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 21 × 66 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04011-Gold-Sink-Mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 21 × 66 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-arc-sink-mixer-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-arc-sink-mixer-grey/",
-      "name": "Alco Tivona Arc Sink Mixer – Grey",
-      "code": "B04010",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 21 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04010-Gungrey-Sink-Mixer.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 21 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "alco-tivona-lux-basin-mixer-chrome",
       "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-basin-mixer-chrome/",
       "name": "Alco Tivona Lux Basin Mixer â Chrome",
@@ -6515,378 +5311,6 @@
       ],
       "categories": [
         "bath-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-with-diverter-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-with-diverter-black/",
-      "name": "Alco Tivona Lux Shower Mixer with Diverter â Black",
-      "code": "B03997",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03997-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-with-diverter-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-with-diverter-chrome/",
-      "name": "Alco Tivona Lux Shower Mixer with Diverter â Chrome",
-      "code": "B03996",
-      "price": {
-        "current": 2899.99,
-        "regular": 2899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/B03996.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-with-diverter-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-with-diverter-gold/",
-      "name": "Alco Tivona Lux Shower Mixer with Diverter â Gold",
-      "code": "B03999",
-      "price": {
-        "current": 3399.99,
-        "regular": 3399.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03999-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-with-diverter-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-with-diverter-grey/",
-      "name": "Alco Tivona Lux Shower Mixer with Diverter â Grey",
-      "code": "B03998",
-      "price": {
-        "current": 3199.99,
-        "regular": 3199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 20 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03998-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 20 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-black/",
-      "name": "Alco Tivona Lux Shower Mixer â Black",
-      "code": "B03993",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03993-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-chrome/",
-      "name": "Alco Tivona Lux Shower Mixer â Chrome",
-      "code": "B03992",
-      "price": {
-        "current": 1799.99,
-        "regular": 1799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 43 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/B03992-1.1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "43 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-gold/",
-      "name": "Alco Tivona Lux Shower Mixer â Gold",
-      "code": "B03995",
-      "price": {
-        "current": 2299.99,
-        "regular": 2299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03995-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-shower-mixer-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-shower-mixer-grey/",
-      "name": "Alco Tivona Lux Shower Mixer â Grey",
-      "code": "B03994",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03994-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-black/",
-      "name": "Alco Tivona Lux Sink Mixer – Black",
-      "code": "B03989",
-      "price": {
-        "current": 1999.99,
-        "regular": 1999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 21 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04009.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 21 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-chrome/",
-      "name": "Alco Tivona Lux Sink Mixer – Chrome",
-      "code": "B03988",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 6 × 22 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/B03988-1.1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 6 × 22 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-sink-mixer-gold",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-gold/",
-      "name": "Alco Tivona Lux Sink Mixer – Gold",
-      "code": "B03991",
-      "price": {
-        "current": 2399.99,
-        "regular": 2399.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04011.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "alco-tivona-lux-sink-mixer-grey",
-      "source_url": "https://pulsetiles.co.za/product/alco-tivona-lux-sink-mixer-grey/",
-      "name": "Alco Tivona Lux Sink Mixer – Grey",
-      "code": "B03990",
-      "price": {
-        "current": 2199.99,
-        "regular": 2199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04010.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
       ],
       "bathroom_groups": [
         "taps"
@@ -7935,192 +6359,6 @@
       ]
     },
     {
-      "id": "aquavit-bravino-concealed-shower-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-concealed-shower-mixer-black/",
-      "name": "Aquavit Bravino Concealed Shower Mixer Black",
-      "code": "B04556",
-      "price": {
-        "current": 1994.99,
-        "regular": 1994.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b03556-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-bravino-concealed-shower-mixer-with-diverter-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-concealed-shower-mixer-with-diverter-black/",
-      "name": "Aquavit Bravino Concealed Shower Mixer with Diverter Black",
-      "code": "B04558",
-      "price": {
-        "current": 3419.99,
-        "regular": 3419.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04558-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-bravino-concealed-shower-mixer-with-diverter-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-concealed-shower-mixer-with-diverter-chrome/",
-      "name": "Aquavit Bravino Concealed Shower Mixer with Diverter Chrome",
-      "code": "B04557",
-      "price": {
-        "current": 3229.99,
-        "regular": 3229.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04557-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-bravino-shower-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-shower-mixer-35mm-chrome/",
-      "name": "Aquavit Bravino Shower Mixer 35mm Chrome",
-      "code": "B04555",
-      "price": {
-        "current": 1804.99,
-        "regular": 1804.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04555-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-bravino-sink-mixer-35mm-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-sink-mixer-35mm-black/",
-      "name": "Aquavit Bravino Sink Mixer 35mm Black",
-      "code": "B04560",
-      "price": {
-        "current": 2564.99,
-        "regular": 2564.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04560--scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-bravino-sink-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-bravino-sink-mixer-35mm-chrome/",
-      "name": "Aquavit Bravino Sink Mixer 35mm Chrome",
-      "code": "B04559",
-      "price": {
-        "current": 2379.99,
-        "regular": 2379.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04559-2-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "aquavit-chrome-round-brass-angle-valve-15x15mm",
       "source_url": "https://pulsetiles.co.za/product/aquavit-chrome-round-brass-angle-valve-15x15mm/",
       "name": "Aquavit Chrome Round Brass Angle Valve 15Ã15mm",
@@ -8927,68 +7165,6 @@
       ]
     },
     {
-      "id": "aquavit-harmony-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-sink-mixer-black/",
-      "name": "Aquavit Harmony Sink Mixer Black",
-      "code": "B04629",
-      "price": {
-        "current": 2899.99,
-        "regular": 2899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 43 × 25 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04629.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "43 × 25 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-harmony-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-harmony-sink-mixer-chrome/",
-      "name": "Aquavit Harmony Sink Mixer Chrome",
-      "code": "B04628",
-      "price": {
-        "current": 2699.99,
-        "regular": 2699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 4.3 × 25 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04628.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "4.3 × 25 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "aquavit-joop-bath-mixer-black",
       "source_url": "https://pulsetiles.co.za/product/aquavit-joop-bath-mixer-black/",
       "name": "Aquavit Joop Bath Mixer Black",
@@ -9014,254 +7190,6 @@
       ],
       "categories": [
         "bath-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-joop-shower-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-shower-mixer-black/",
-      "name": "Aquavit Joop Shower Mixer Black",
-      "code": "B03341",
-      "price": {
-        "current": 1199.99,
-        "regular": 1199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 15 × 14 × 12 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03341.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "15 × 14 × 12 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-joop-shower-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-shower-mixer-chrome/",
-      "name": "Aquavit Joop Shower Mixer Chrome",
-      "code": "B01944",
-      "price": {
-        "current": 1099.99,
-        "regular": 1099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 15 × 14 × 12 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01944.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "15 × 14 × 12 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-joop-sink-mixer-deck-type-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-deck-type-chrome/",
-      "name": "Aquavit Joop Sink Mixer Deck Type Chrome",
-      "code": "B01946",
-      "price": {
-        "current": 899.99,
-        "regular": 899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 11 × 23 × 11 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/B01946.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "11 × 23 × 11 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-joop-sink-mixer-wall-type-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-wall-type-black/",
-      "name": "Aquavit Joop Sink Mixer Wall Type Black",
-      "code": "B03340",
-      "price": {
-        "current": 1099.99,
-        "regular": 1099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 15 × 23 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03340.jpg",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "15 × 23 × 8 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-joop-sink-mixer-wall-type-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-joop-sink-mixer-wall-type-chrome/",
-      "name": "Aquavit Joop Sink Mixer Wall Type Chrome",
-      "code": "B01943",
-      "price": {
-        "current": 999.99,
-        "regular": 999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 15 × 23 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01943.jpg",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "15 × 23 × 8 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-kitchen-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-black/",
-      "name": "Aquavit Kitchen Sink Mixer â Black",
-      "code": "B04389",
-      "price": {
-        "current": 3999.99,
-        "regular": 3999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B03989.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-kitchen-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-chrome/",
-      "name": "Aquavit Kitchen Sink Mixer â Chrome",
-      "code": "B04387",
-      "price": {
-        "current": 4999.99,
-        "regular": 4999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B03787.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-kitchen-sink-mixer-chrome-2",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-kitchen-sink-mixer-chrome-2/",
-      "name": "Aquavit Kitchen Sink Mixer â Chrome",
-      "code": "B04388",
-      "price": {
-        "current": 4699.99,
-        "regular": 4699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04388.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
       ],
       "bathroom_groups": [
         "taps"
@@ -10725,347 +8653,6 @@
       ]
     },
     {
-      "id": "aquavit-lenoro-concealed-shower-mixer-35mm-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-35mm-black/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer 35mm Black",
-      "code": "B04532",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04532-04-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-35mm-brush-gold",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-35mm-brush-gold/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer 35mm Brush Gold",
-      "code": "B04533",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04533-07-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-35mm-chrome/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer 35mm Chrome",
-      "code": "B04530",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04530-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-35mm-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-35mm-gun-grey/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer 35mm Gun Grey",
-      "code": "B04531",
-      "price": {
-        "current": 2299.99,
-        "regular": 2299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04531-03-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-with-diverter-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-with-diverter-black/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer with Diverter Black",
-      "code": "B04535",
-      "price": {
-        "current": 3999.99,
-        "regular": 3999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04535-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-with-diverter-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-with-diverter-chrome/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer with Diverter Chrome",
-      "code": "B04534",
-      "price": {
-        "current": 3499.99,
-        "regular": 3499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04534-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-concealed-shower-mixer-with-diverter-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-concealed-shower-mixer-with-diverter-gun-grey/",
-      "name": "Aquavit Lenoro Concealed Shower Mixer with Diverter Gun Grey",
-      "code": "B04536",
-      "price": {
-        "current": 3699.99,
-        "regular": 3699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04536-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-sink-mixer-35mm-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-black/",
-      "name": "Aquavit Lenoro Sink Mixer 35mm Black",
-      "code": "B04528",
-      "price": {
-        "current": 2699.99,
-        "regular": 2699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 39 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04528-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "39 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-sink-mixer-35mm-brush-gold",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-brush-gold/",
-      "name": "Aquavit Lenoro Sink Mixer 35mm Brush Gold",
-      "code": "B04529",
-      "price": {
-        "current": 3299.99,
-        "regular": 3299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04529-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-sink-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-chrome/",
-      "name": "Aquavit Lenoro Sink Mixer 35mm Chrome",
-      "code": "B04526",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04526-2-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-lenoro-sink-mixer-35mm-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-lenoro-sink-mixer-35mm-gun-grey/",
-      "name": "Aquavit Lenoro Sink Mixer 35mm Gun Grey",
-      "code": "B04527",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04527-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "aquavit-marina-basin-mixer-long-body-chrome",
       "source_url": "https://pulsetiles.co.za/product/aquavit-marina-basin-mixer-long-body-chrome/",
       "name": "Aquavit Marina Basin Mixer Long Body Chrome",
@@ -11184,99 +8771,6 @@
       ],
       "categories": [
         "bath-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-oceana-concealed-shower-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-oceana-concealed-shower-mixer-35mm-chrome/",
-      "name": "Aquavit Oceana Concealed Shower Mixer 35mm Chrome",
-      "code": "B04549",
-      "price": {
-        "current": 1614.99,
-        "regular": 1614.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04549-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-oceana-concealed-shower-mixer-with-diverter-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-oceana-concealed-shower-mixer-with-diverter-35mm-chrome/",
-      "name": "Aquavit Oceana Concealed Shower Mixer with Diverter 35mm Chrome",
-      "code": "B04550",
-      "price": {
-        "current": 2849.99,
-        "regular": 2849.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/05/B04550-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-oceana-sink-mixer-35mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-oceana-sink-mixer-35mm-chrome/",
-      "name": "Aquavit Oceana Sink Mixer 35mm Chrome",
-      "code": "B04548",
-      "price": {
-        "current": 2184.99,
-        "regular": 2184.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 32 × 16 × 10 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04548.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "32 × 16 × 10 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
       ],
       "bathroom_groups": [
         "taps"
@@ -11841,37 +9335,6 @@
       ]
     },
     {
-      "id": "aquavit-round-bracket-extendable-cosmetic-mirror",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-round-bracket-extendable-cosmetic-mirror/",
-      "name": "Aquavit Round Bracket Extendable Cosmetic Mirror",
-      "code": "B04168",
-      "price": {
-        "current": 899.99,
-        "regular": 899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 29 × 4 × 36 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04168.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "29 × 4 × 36 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "aquavit-round-brass-bottle-trap-chrome-32mm",
       "source_url": "https://pulsetiles.co.za/product/aquavit-round-brass-bottle-trap-chrome-32mm/",
       "name": "Aquavit Round Brass Bottle Trap Chrome 32mm",
@@ -12303,130 +9766,6 @@
       ],
       "bathroom_groups": [
         "showers"
-      ]
-    },
-    {
-      "id": "aquavit-shower-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-shower-mixer-black/",
-      "name": "Aquavit Shower Mixer Black",
-      "code": "B04649",
-      "price": {
-        "current": 2199.99,
-        "regular": 2199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 17 × 23 × 14 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04649.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "17 × 23 × 14 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-shower-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-shower-mixer-chrome/",
-      "name": "Aquavit Shower Mixer Chrome",
-      "code": "B04648",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 17 × 23 × 14 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04648.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "17 × 23 × 14 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-shower-mixer-with-diverter-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-shower-mixer-with-diverter-black/",
-      "name": "Aquavit Shower Mixer with Diverter Black",
-      "code": "B04651",
-      "price": {
-        "current": 3799.99,
-        "regular": 3799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 17 × 23 × 14 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04651.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "17 × 23 × 14 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-shower-mixer-with-diverter-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-shower-mixer-with-diverter-chrome/",
-      "name": "Aquavit Shower Mixer with Diverter Chrome",
-      "code": "B04650",
-      "price": {
-        "current": 3599.99,
-        "regular": 3599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 17 × 23 × 14 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04650.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "17 × 23 × 14 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
       ]
     },
     {
@@ -12957,161 +10296,6 @@
       ]
     },
     {
-      "id": "aquavit-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-black/",
-      "name": "Aquavit Sink Mixer Black",
-      "code": "B04637",
-      "price": {
-        "current": 6099.99,
-        "regular": 6099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04637-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-sink-mixer-brushed-gold",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-brushed-gold/",
-      "name": "Aquavit Sink Mixer Brushed Gold",
-      "code": "B04639",
-      "price": {
-        "current": 6499.99,
-        "regular": 6499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04639.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-chrome/",
-      "name": "Aquavit Sink Mixer Chrome",
-      "code": "B04636",
-      "price": {
-        "current": 5999.99,
-        "regular": 5999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04636.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-sink-mixer-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-sink-mixer-gun-grey/",
-      "name": "Aquavit Sink Mixer Gun Grey",
-      "code": "B04638",
-      "price": {
-        "current": 6299.99,
-        "regular": 6299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04638.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-square-bracket-extendable-cosmetic-mirror",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-square-bracket-extendable-cosmetic-mirror/",
-      "name": "Aquavit Square Bracket Extendable Cosmetic Mirror",
-      "code": "B04169",
-      "price": {
-        "current": 999.99,
-        "regular": 999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 29 × 4 × 36 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04169.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "29 × 4 × 36 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "aquavit-square-brass-bottle-trap-brushed-gold-32mm",
       "source_url": "https://pulsetiles.co.za/product/aquavit-square-brass-bottle-trap-brushed-gold-32mm/",
       "name": "Aquavit Square Brass Bottle Trap Brushed Gold 32mm",
@@ -13422,161 +10606,6 @@
       ]
     },
     {
-      "id": "aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-concealed-shower-mixer-40mm-chrome-brass/",
-      "name": "Aquavit Trinity Concealed Shower Mixer 40mm Chrome Brass",
-      "code": "B04544",
-      "price": {
-        "current": 1999.99,
-        "regular": 1999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 13.5 × 13 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04544-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "13.5 × 13 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-concealed-shower-mixer-with-diverter-40mm-chrome/",
-      "name": "Aquavit Trinity Concealed Shower Mixer with Diverter 40mm Chrome",
-      "code": "B04545",
-      "price": {
-        "current": 3599.99,
-        "regular": 3599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 19 × 8.5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04545-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 19 × 8.5 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-trinity-sink-mixer-deck-type",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-deck-type/",
-      "name": "Aquavit Trinity Sink Mixer Deck Type",
-      "code": "B04543",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 38 × 22 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/b04543-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "38 × 22 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-wall-type-high-rise-swivel-spout-chrome/",
-      "name": "Aquavit Trinity Sink Mixer Wall Type High Rise Swivel Spout Chrome",
-      "code": "B04541",
-      "price": {
-        "current": 2299.99,
-        "regular": 2299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 32 × 16 × 10 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04541-3-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "32 × 16 × 10 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome",
-      "source_url": "https://pulsetiles.co.za/product/aquavit-trinity-sink-mixer-wall-type-swivel-spout-chrome/",
-      "name": "Aquavit Trinity Sink Mixer Wall Type Swivel Spout Chrome",
-      "code": "B04542",
-      "price": {
-        "current": 2199.99,
-        "regular": 2199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 32 × 16 × 10 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/B04542-2-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "32 × 16 × 10 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "aura-horizon-led-mirror-620x665-5mm",
       "source_url": "https://pulsetiles.co.za/product/aura-horizon-led-mirror-620x665-5mm/",
       "name": "Aura Horizon LED Mirror 620Ã665.5mm",
@@ -13731,97 +10760,6 @@
       "bathroom_groups": [
         "baths",
         "furniture"
-      ]
-    },
-    {
-      "id": "basin-and-mirror-combo",
-      "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo/",
-      "name": "Basin and Mirror Combo",
-      "code": "Q01418",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Basin and Mirror Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q1418-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "10 kg"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "basin-and-mirror-combo-2",
-      "source_url": "https://pulsetiles.co.za/product/basin-and-mirror-combo-2/",
-      "name": "Basin and Mirror Combo",
-      "code": "Q01574",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 52 × 33 × 25 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01574.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "10 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "52 × 33 × 25 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos",
-        "mirror-combo"
-      ],
-      "bathroom_groups": [
-        "furniture",
-        "taps"
-      ]
-    },
-    {
-      "id": "basin-and-mixer-combo",
-      "source_url": "https://pulsetiles.co.za/product/basin-and-mixer-combo/",
-      "name": "Basin and Mixer Combo",
-      "code": "Q01672",
-      "price": {
-        "current": 799.99,
-        "regular": 999.99,
-        "sale": 799.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 32 × 24 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01672.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "14 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 32 × 24 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
       ]
     },
     {
@@ -14438,37 +11376,6 @@
       ]
     },
     {
-      "id": "buffer-basin-combo",
-      "source_url": "https://pulsetiles.co.za/product/buffer-basin-combo/",
-      "name": "Buffer Basin Combo",
-      "code": "Q01536",
-      "price": {
-        "current": 699.99,
-        "regular": 999.99,
-        "sale": 699.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 44 × 44 × 18 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01536.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "9.20 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "44 × 44 × 18 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "buffer-wash-basin-table-top",
       "source_url": "https://pulsetiles.co.za/product/buffer-wash-basin-table-top/",
       "name": "Buffer Wash Basin Table Top",
@@ -14717,68 +11624,6 @@
       ]
     },
     {
-      "id": "chrome-tivona-combo-2",
-      "source_url": "https://pulsetiles.co.za/product/chrome-tivona-combo-2/",
-      "name": "Chrome Tivona Basin and Mixer Combo",
-      "code": "Q01416",
-      "price": {
-        "current": 2599.99,
-        "regular": 2599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 42 × 16 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01416-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "12 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 42 × 16 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo",
-      "source_url": "https://pulsetiles.co.za/product/classy-riva-shower-mixer-plus-shower-rail-and-outlet-combo/",
-      "name": "Classy Riva Shower Mixer Plus Shower Rail and Outlet Combo",
-      "code": "Q01645",
-      "price": {
-        "current": 799.99,
-        "regular": 999.99,
-        "sale": 799.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 70 × 25 × 22 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01645.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "70 × 25 × 22 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "clear-vista-shower-screen-clear-glass-900x2000x6mm",
       "source_url": "https://pulsetiles.co.za/product/clear-vista-shower-screen-clear-glass-900x2000x6mm/",
       "name": "Clear Vista Shower Screen Clear Glass 900X2000X6mm",
@@ -14900,126 +11745,6 @@
       ],
       "bathroom_groups": [
         "toilets"
-      ]
-    },
-    {
-      "id": "cobra-nile-shower-mixer-concealed",
-      "source_url": "https://pulsetiles.co.za/product/cobra-nile-shower-mixer-concealed/",
-      "name": "Cobra Nile Shower Mixer Concealed",
-      "code": "B03522",
-      "price": {
-        "current": 1399.99,
-        "regular": 1399.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 16 × 17 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03522.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "16 × 17 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "cobra-seine-bath-shower-mixer-concealed-chrome",
-      "source_url": "https://pulsetiles.co.za/product/cobra-seine-bath-shower-mixer-concealed-chrome/",
-      "name": "Cobra Seine Bath/Shower Mixer Concealed Chrome",
-      "code": "B03444",
-      "price": {
-        "current": 1899.99,
-        "regular": 1899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 16 × 18 × 8 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03444.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "16 × 18 × 8 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "complete-bathroom-solution-combo",
-      "source_url": "https://pulsetiles.co.za/product/complete-bathroom-solution-combo/",
-      "name": "Complete Bathroom Solution Combo",
-      "code": "Q01506",
-      "price": {
-        "current": 5499.99,
-        "regular": 5499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Complete Bathroom Solution Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01506.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "34 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "complete-shower-solution-combo-2",
-      "source_url": "https://pulsetiles.co.za/product/complete-shower-solution-combo-2/",
-      "name": "Complete Shower Solution Combo",
-      "code": "Q01541",
-      "price": {
-        "current": 3999.99,
-        "regular": 3999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 203 × 101 × 27 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01541.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "50 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "203 × 101 × 27 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
       ]
     },
     {
@@ -15208,64 +11933,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "toilet-and-basin-with-pedestal",
-      "source_url": "https://pulsetiles.co.za/product/toilet-and-basin-with-pedestal/",
-      "name": "Deluxe Toilet and Basin with Pedestal",
-      "code": "Q01423",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Deluxe Toilet and Basin with Pedestal. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET2-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "60 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "designer-screen-combo-2",
-      "source_url": "https://pulsetiles.co.za/product/designer-screen-combo-2/",
-      "name": "Designer Screen Combo",
-      "code": "Q01537",
-      "price": {
-        "current": 3499.99,
-        "regular": 4499.99,
-        "sale": 3499.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 204 × 92 × 22 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01537.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "46.60 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "204 × 92 × 22 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
       ]
     },
     {
@@ -16207,99 +12874,6 @@
       ]
     },
     {
-      "id": "erin-mirror-600x600mm",
-      "source_url": "https://pulsetiles.co.za/product/erin-mirror-600x600mm/",
-      "name": "Erin Mirror 600X600mm",
-      "code": "B03955",
-      "price": {
-        "current": 599.99,
-        "regular": 599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 61 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03955.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "61 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "flexi-hose-sink-mixer-deck-type-black",
-      "source_url": "https://pulsetiles.co.za/product/flexi-hose-sink-mixer-deck-type-black/",
-      "name": "Flexi Hose Sink Mixer Deck Type Black",
-      "code": "B03395",
-      "price": {
-        "current": 999.99,
-        "regular": 1299.99,
-        "sale": 999.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B03395-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "flexi-hose-sink-mixer-deck-type-grey",
-      "source_url": "https://pulsetiles.co.za/product/flexi-hose-sink-mixer-deck-type-grey/",
-      "name": "Flexi Hose Sink Mixer Deck Type Grey",
-      "code": "B03396",
-      "price": {
-        "current": 999.99,
-        "regular": 1299.99,
-        "sale": 999.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 20 × 31 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B03396-1-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "20 × 31 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "flexi-pan-connector-extendable-short",
       "source_url": "https://pulsetiles.co.za/product/flexi-pan-connector-extendable-short/",
       "name": "Flexi Pan Connector Extendable Short",
@@ -16560,37 +13134,6 @@
       ]
     },
     {
-      "id": "grey-shower-panel-combo",
-      "source_url": "https://pulsetiles.co.za/product/grey-shower-panel-combo/",
-      "name": "Grey Shower Panel Combo",
-      "code": "Q01425",
-      "price": {
-        "current": 2799.99,
-        "regular": 2799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 132 × 30 × 51 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01425-SPA-CIAL-COMBO-01.RWbTfHhc-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "5.5 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "132 × 30 × 51 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "haven-900-floor-combo-j00296-b04258",
       "source_url": "https://pulsetiles.co.za/product/haven-900-floor-combo-j00296-b04258/",
       "name": "Haven 900 Floor Combo",
@@ -16642,37 +13185,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "hazel-basin-mixer-combo",
-      "source_url": "https://pulsetiles.co.za/product/hazel-basin-mixer-combo/",
-      "name": "Hazel Basin and Mixer Combo",
-      "code": "Q00690",
-      "price": {
-        "current": 1499.99,
-        "regular": 2399.99,
-        "sale": 1499.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 46 × 44 × 27 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q00690.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "12 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "46 × 44 × 27 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
       ]
     },
     {
@@ -16832,122 +13344,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "jaunty-alco-wall-hung-toilet-combo",
-      "source_url": "https://pulsetiles.co.za/product/jaunty-alco-wall-hung-toilet-combo/",
-      "name": "Jaunty Alco Wall Hung Toilet Combo",
-      "code": "Q01062",
-      "price": {
-        "current": 6199.99,
-        "regular": 6199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Jaunty Alco Wall Hung Toilet Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01062.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "jaunty-wall-hung-combo",
-      "source_url": "https://pulsetiles.co.za/product/jaunty-wall-hung-combo/",
-      "name": "Jaunty Wall Hung Combo",
-      "code": "Q00682",
-      "price": {
-        "current": 6599.99,
-        "regular": 6599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Jaunty Wall Hung Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00682.png",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "32 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "jazz-shower-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/jazz-shower-mixer-chrome/",
-      "name": "Jazz Shower Mixer Chrome",
-      "code": "B01940",
-      "price": {
-        "current": 899.99,
-        "regular": 899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 19 × 22 × 9 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01940.jpg",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "19 × 22 × 9 cm"
-        }
-      ],
-      "categories": [
-        "shower-taps-outlets"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "jazz-sink-mixer-deck-type-chrome",
-      "source_url": "https://pulsetiles.co.za/product/jazz-sink-mixer-deck-type-chrome/",
-      "name": "Jazz Sink Mixer Deck Type Chrome",
-      "code": "B01939",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 11 × 28 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B01939.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "11 × 28 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
       ]
     },
     {
@@ -17114,68 +13510,6 @@
       ]
     },
     {
-      "id": "jupiter-belt-mirror-black-600x600mm",
-      "source_url": "https://pulsetiles.co.za/product/jupiter-belt-mirror-black-600x600mm/",
-      "name": "Jupiter Belt Mirror Black 600X600mm",
-      "code": "B04238",
-      "price": {
-        "current": 2099.99,
-        "regular": 2099.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 9 × 67 × 67 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04238-1.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "9 × 67 × 67 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "jupiter-frame-mirror-gold-600x600mm",
-      "source_url": "https://pulsetiles.co.za/product/jupiter-frame-mirror-gold-600x600mm/",
-      "name": "Jupiter Frame Mirror Gold 600X600mm",
-      "code": "B04239",
-      "price": {
-        "current": 2599.99,
-        "regular": 2599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 9 × 67 × 67 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B04239-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "9 × 67 × 67 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "kalapana-550-floor-combo",
       "source_url": "https://pulsetiles.co.za/product/kalapana-550-floor-combo/",
       "name": "Kalapana 550 Floor Combo",
@@ -17254,99 +13588,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "lapana-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/lapana-mirror-800x600mm/",
-      "name": "Lapana Mirror 800X600mm",
-      "code": "B03962",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03962.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "lara-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/lara-mirror-800x600mm/",
-      "name": "Lara Mirror 800X600mm",
-      "code": "B03963",
-      "price": {
-        "current": 699.99,
-        "regular": 799.99,
-        "sale": 699.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 62 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03963.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 62 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "led-mirror-and-accessory-set-combo",
-      "source_url": "https://pulsetiles.co.za/product/led-mirror-and-accessory-set-combo/",
-      "name": "Led Mirror and Accessory Set Combo",
-      "code": "Q01455",
-      "price": {
-        "current": 1799.99,
-        "regular": 1799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 64 × 63 × 12 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Untitled-1-04-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "64 × 63 × 12 cm"
-        }
-      ],
-      "categories": [
-        "mirror-combo"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -17432,68 +13673,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "liro-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/liro-mirror-800x600mm/",
-      "name": "Liro Mirror 800X600mm",
-      "code": "B03960",
-      "price": {
-        "current": 699.99,
-        "regular": 699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03960.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.8 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "luna-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/luna-mirror-800x600mm/",
-      "name": "Luna Mirror 800X600mm",
-      "code": "B03957",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 82 × 61 × 3 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03957.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "82 × 61 × 3 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -17846,68 +14025,6 @@
       ]
     },
     {
-      "id": "mecury-frame-mirror-black-400x400mm",
-      "source_url": "https://pulsetiles.co.za/product/mecury-frame-mirror-black-400x400mm/",
-      "name": "Mecury Frame Mirror Black 400X400mm",
-      "code": "B04236",
-      "price": {
-        "current": 499.99,
-        "regular": 499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 41 × 2 × 41 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04236-1-2.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "41 × 2 × 41 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "miami-mirror-600x450mm",
-      "source_url": "https://pulsetiles.co.za/product/miami-mirror-600x450mm/",
-      "name": "Miami Mirror 600X450mm",
-      "code": "B03954",
-      "price": {
-        "current": 499.99,
-        "regular": 499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 61 × 46 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03954.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "61 × 46 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "irani-close-couple-toilet-set-top-flush-white-2",
       "source_url": "https://pulsetiles.co.za/product/irani-close-couple-toilet-set-top-flush-white-2/",
       "name": "Miami Top Flush Toilet",
@@ -18041,33 +14158,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "modern-toilet-combo",
-      "source_url": "https://pulsetiles.co.za/product/modern-toilet-combo/",
-      "name": "Modern Toilet Combo",
-      "code": "Q01274",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Modern Toilet Combo including an Alco top-flush close-coupled toilet and a white wash basin with Belonia pedestal",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01274.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "51.5 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
       ]
     },
     {
@@ -18304,68 +14394,6 @@
       ]
     },
     {
-      "id": "neptune-frame-mirror-gold-500x400mm",
-      "source_url": "https://pulsetiles.co.za/product/neptune-frame-mirror-gold-500x400mm/",
-      "name": "Neptune Frame Mirror Gold 500X400mm",
-      "code": "B04237",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 47 × 3 × 50 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/11/B04237-.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "47 × 3 × 50 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "nina-wall-mirror-600x450mm",
-      "source_url": "https://pulsetiles.co.za/product/nina-wall-mirror-600x450mm/",
-      "name": "Nina Wall Mirror 600Ã450mm",
-      "code": "B03966",
-      "price": {
-        "current": 199.99,
-        "regular": 299.99,
-        "sale": 199.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 68 × 48 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/b03966.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "68 × 48 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "nkosi-farasan-550-floor-combo-j00295-b04386",
       "source_url": "https://pulsetiles.co.za/product/nkosi-farasan-550-floor-combo-j00295-b04386/",
       "name": "Nkosi Farasan 550 Floor Combo",
@@ -18390,37 +14418,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "nova-mirror-600x600mm",
-      "source_url": "https://pulsetiles.co.za/product/nova-mirror-600x600mm/",
-      "name": "Nova Mirror 600X600mm",
-      "code": "B03965",
-      "price": {
-        "current": 599.99,
-        "regular": 599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 61 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03965.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "2.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "61 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -18680,37 +14677,6 @@
       ]
     },
     {
-      "id": "pan-connector-combo",
-      "source_url": "https://pulsetiles.co.za/product/pan-connector-combo/",
-      "name": "Pan Connector Combo",
-      "code": "Q01183",
-      "price": {
-        "current": 499.99,
-        "regular": 499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 30 × 20 × 15 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01072.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "30 × 20 × 15 cm"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
       "id": "pandora-two-tone-floor-combo",
       "source_url": "https://pulsetiles.co.za/product/pandora-two-tone-floor-combo/",
       "name": "Pandora Two Tone Floor Combo",
@@ -18762,37 +14728,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "pescara-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/pescara-mirror-800x600mm/",
-      "name": "Pescara Mirror 800X600mm",
-      "code": "B03959",
-      "price": {
-        "current": 699.99,
-        "regular": 699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03959.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -18886,37 +14821,6 @@
       ],
       "bathroom_groups": [
         "toilets"
-      ]
-    },
-    {
-      "id": "polio-basin-mixer-combo",
-      "source_url": "https://pulsetiles.co.za/product/polio-basin-mixer-combo/",
-      "name": "Polio Basin & Mixer Combo",
-      "code": "Q01417",
-      "price": {
-        "current": 3699.99,
-        "regular": 3999.99,
-        "sale": 3699.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 42 × 44 × 17 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/03/Q01417-01-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "8.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "42 × 44 × 17 cm"
-        }
-      ],
-      "categories": [
-        "basin-mixer-combos"
-      ],
-      "bathroom_groups": [
-        "taps"
       ]
     },
     {
@@ -19054,41 +14958,6 @@
       ],
       "categories": [
         "shower-cubicles"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "pure-view-shower-door-combo",
-      "source_url": "https://pulsetiles.co.za/product/pure-view-shower-door-combo/",
-      "name": "Pure View Shower Door Combo",
-      "code": "Q01477",
-      "price": {
-        "current": 2799.99,
-        "regular": 2799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 94 × 185 × 55 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01477.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "68 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "94 × 185 × 55 cm"
-        },
-        {
-          "name": "Shipping Zone",
-          "value": "KZN"
-        }
-      ],
-      "categories": [
-        "shower-combos"
       ],
       "bathroom_groups": [
         "showers"
@@ -19382,37 +15251,6 @@
       ]
     },
     {
-      "id": "round-mirror-30cm-31",
-      "source_url": "https://pulsetiles.co.za/product/round-mirror-30cm-31/",
-      "name": "Round Mirror – 30cm",
-      "code": "B04728",
-      "price": {
-        "current": 39.99,
-        "regular": 59.99,
-        "sale": 39.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 32 × 32 × 3 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/B04728.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.40 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "32 × 32 × 3 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "round-pear-frosted-tempered-glass-900mmx900mmx1800mm-4mm",
       "source_url": "https://pulsetiles.co.za/product/round-pear-frosted-tempered-glass-900mmx900mmx1800mm-4mm/",
       "name": "Round Pear Frosted Tempered Glass 900x900x1800mm 4mm",
@@ -19607,68 +15445,6 @@
       ]
     },
     {
-      "id": "samba-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/samba-mirror-800x600mm/",
-      "name": "Samba Mirror 800X600mm",
-      "code": "B03961",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03961.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
-      "id": "savio-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/savio-mirror-800x600mm/",
-      "name": "Savio Mirror 800X600mm",
-      "code": "B03964",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 81 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03964.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "81 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "sere-nosara-610-floor-combo",
       "source_url": "https://pulsetiles.co.za/product/sere-nosara-610-floor-combo/",
       "name": "Sere Nosara Floor Combo",
@@ -19727,502 +15503,6 @@
       ]
     },
     {
-      "id": "shd-sink-mixer-black",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black/",
-      "name": "SHD Sink Mixer Black",
-      "code": "B04633",
-      "price": {
-        "current": 4586.99,
-        "regular": 5095.99,
-        "sale": 4586.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04633.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-black-2",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-2/",
-      "name": "SHD Sink Mixer Black",
-      "code": "B04641",
-      "price": {
-        "current": 3689.99,
-        "regular": 4099.99,
-        "sale": 3689.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04641.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-black-3",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-3/",
-      "name": "SHD Sink Mixer Black",
-      "code": "B04621",
-      "price": {
-        "current": 4136.99,
-        "regular": 4595.99,
-        "sale": 4136.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 26 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04621.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 26 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-black-4",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-black-4/",
-      "name": "SHD Sink Mixer Black",
-      "code": "B04645",
-      "price": {
-        "current": 3689.99,
-        "regular": 4099.99,
-        "sale": 3689.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 25 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04645.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 25 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-brushed-gold",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold/",
-      "name": "SHD Sink Mixer Brushed Gold",
-      "code": "B04635",
-      "price": {
-        "current": 4946.99,
-        "regular": 5495.99,
-        "sale": 4946.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04635.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-brushed-gold-2",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-2/",
-      "name": "SHD Sink Mixer Brushed Gold",
-      "code": "B04643",
-      "price": {
-        "current": 4049.99,
-        "regular": 4499.99,
-        "sale": 4049.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04643.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-brushed-gold-3",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-3/",
-      "name": "SHD Sink Mixer Brushed Gold",
-      "code": "B04623",
-      "price": {
-        "current": 4995.99,
-        "regular": 4995.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 26 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04623.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 26 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-brushed-gold-4",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-brushed-gold-4/",
-      "name": "SHD Sink Mixer Brushed Gold",
-      "code": "B04647",
-      "price": {
-        "current": 4049.99,
-        "regular": 4499.99,
-        "sale": 4049.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 26 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04647.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 26 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-chrome",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome/",
-      "name": "SHD Sink Mixer Chrome",
-      "code": "B04685",
-      "price": {
-        "current": 4496.99,
-        "regular": 4995.99,
-        "sale": 4496.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04685.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-chrome-2",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-2/",
-      "name": "SHD Sink Mixer Chrome",
-      "code": "B04640",
-      "price": {
-        "current": 3599.99,
-        "regular": 3999.99,
-        "sale": 3599.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04640.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-chrome-3",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-3/",
-      "name": "SHD Sink Mixer Chrome",
-      "code": "B04632",
-      "price": {
-        "current": 4046.99,
-        "regular": 4495.99,
-        "sale": 4046.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04632.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-chrome-4",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-chrome-4/",
-      "name": "SHD Sink Mixer Chrome",
-      "code": "B04644",
-      "price": {
-        "current": 3599.99,
-        "regular": 3999.99,
-        "sale": 3599.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 25 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04644.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 25 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-gun-grey",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey/",
-      "name": "SHD Sink Mixer Gun Grey",
-      "code": "B04634",
-      "price": {
-        "current": 4766.99,
-        "regular": 5295.99,
-        "sale": 4766.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04634.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-gun-grey-2",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-2/",
-      "name": "SHD Sink Mixer Gun Grey",
-      "code": "B04642",
-      "price": {
-        "current": 3869.99,
-        "regular": 4299.99,
-        "sale": 3869.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 56 × 31 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04642.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "56 × 31 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-gun-grey-3",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-3/",
-      "name": "SHD Sink Mixer Gun Grey",
-      "code": "B04622",
-      "price": {
-        "current": 4316.99,
-        "regular": 4795.99,
-        "sale": 4316.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 26 × 6 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04622.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.4 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 26 × 6 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
-      "id": "shd-sink-mixer-gun-grey-4",
-      "source_url": "https://pulsetiles.co.za/product/shd-sink-mixer-gun-grey-4/",
-      "name": "SHD Sink Mixer Gun Grey",
-      "code": "B04646",
-      "price": {
-        "current": 3869.99,
-        "regular": 4299.99,
-        "sale": 3869.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 50 × 25 × 7 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/02/B04646.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "50 × 25 × 7 cm"
-        }
-      ],
-      "categories": [
-        "kitchen-sink-taps"
-      ],
-      "bathroom_groups": [
-        "taps"
-      ]
-    },
-    {
       "id": "shelf-3-tier",
       "source_url": "https://pulsetiles.co.za/product/shelf-3-tier/",
       "name": "Shelf â 3 Tier",
@@ -20251,37 +15531,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "shower-arm-head",
-      "source_url": "https://pulsetiles.co.za/product/shower-arm-head/",
-      "name": "Shower Arm and Head Combo",
-      "code": "Q01011",
-      "price": {
-        "current": 699.99,
-        "regular": 899.99,
-        "sale": 699.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 42 × 38 × 5 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01011.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "1 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "42 × 38 × 5 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
       ]
     },
     {
@@ -20533,68 +15782,6 @@
       ]
     },
     {
-      "id": "shower-combo-3",
-      "source_url": "https://pulsetiles.co.za/product/shower-combo-3/",
-      "name": "Shower Combo",
-      "code": "Q01561",
-      "price": {
-        "current": 3499.99,
-        "regular": 3499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 194 × 52 × 23 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01561.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "45 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "194 × 52 × 23 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-cubicle-plus-free-silicone-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-cubicle-plus-free-silicone-combo/",
-      "name": "Shower Cubicle Plus Free Silicone Combo",
-      "code": "Q01671",
-      "price": {
-        "current": 999.99,
-        "regular": 1299.99,
-        "sale": 999.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 193 × 52 × 23 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/11/Q01671.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "45 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "193 × 52 × 23 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "shower-curtain-hook-black",
       "source_url": "https://pulsetiles.co.za/product/shower-curtain-hook-black/",
       "name": "Shower Curtain Hook Black",
@@ -20727,238 +15914,6 @@
       ]
     },
     {
-      "id": "shower-panel-with-5pc-accessory-set-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-panel-with-5pc-accessory-set-combo/",
-      "name": "Shower Panel With 5pc Accessory Set Combo",
-      "code": "Q01467",
-      "price": {
-        "current": 1699.99,
-        "regular": 2499.99,
-        "sale": 1699.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 130 × 25 × 52 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/06/Q01467.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "5.6 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "130 × 25 × 52 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-rail-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-rail-combo/",
-      "name": "Shower Rail Combo",
-      "code": "Q01495",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Rail Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01495.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "5 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-accessories-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-accessories-combo/",
-      "name": "Shower Screen & Accessories Combo",
-      "code": "Q01126",
-      "price": {
-        "current": 2499.99,
-        "regular": 2499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Screen & Accessories Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/12/SHOWER-SCREEN-COMBO-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "24 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-black-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-black-combo/",
-      "name": "Shower Screen Black Combo",
-      "code": "Q01484",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Screen Black Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01484.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "27 kg"
-        },
-        {
-          "name": "Shipping Zone",
-          "value": "KZN"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1000x2000x6mm/",
-      "name": "Shower Screen Plus Shower Head and Arm Combo 1000x2000x6mm",
-      "code": "Q01501",
-      "price": {
-        "current": 3299.99,
-        "regular": 3299.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Screen Plus Shower Head and Arm Combo 1000x2000x6mm. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q1501.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "32 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo-1200x1950x6mm/",
-      "name": "Shower Screen Plus Shower Head and Arm Combo 1200x1950x6mm",
-      "code": "Q01500",
-      "price": {
-        "current": 3499.99,
-        "regular": 3499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Screen Plus Shower Head and Arm Combo 1200x1950x6mm. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01500_combo.png",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "36 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-plus-shower-head-and-arm-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-plus-shower-head-and-arm-combo/",
-      "name": "Shower Screen Plus Shower Head and Arm Combo 900x2000x6mm",
-      "code": "Q01502",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Screen Plus Shower Head and Arm Combo 900x2000x6mm. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q01502.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "26 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-screen-with-shower-head-and-arm-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-screen-with-shower-head-and-arm-combo/",
-      "name": "Shower Screen With Shower Head and Arm Combo",
-      "code": "Q01480",
-      "price": {
-        "current": 2699.99,
-        "regular": 2699.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 202 × 122 × 18 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01480.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "56 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "202 × 122 × 18 cm"
-        },
-        {
-          "name": "Shipping Zone",
-          "value": "KZN"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "shower-screen-white-strip-with-black-frame-1000x2000x6mm",
       "source_url": "https://pulsetiles.co.za/product/shower-screen-white-strip-with-black-frame-1000x2000x6mm/",
       "name": "Shower Screen – White Strip With Black Frame 1000x2000x6mm",
@@ -21015,33 +15970,6 @@
       ],
       "categories": [
         "shower-screens"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "shower-square-and-rail-set-combo",
-      "source_url": "https://pulsetiles.co.za/product/shower-square-and-rail-set-combo/",
-      "name": "Shower Square and Rail Set Combo",
-      "code": "Q01478",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Shower Square and Rail Set Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/07/Q01478.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
       ],
       "bathroom_groups": [
         "showers"
@@ -21211,37 +16139,6 @@
       ]
     },
     {
-      "id": "sofia-mirror-800x600mm",
-      "source_url": "https://pulsetiles.co.za/product/sofia-mirror-800x600mm/",
-      "name": "Sofia Mirror 800X600mm",
-      "code": "B03956",
-      "price": {
-        "current": 799.99,
-        "regular": 799.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 82 × 61 × 2 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/B03956.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "4.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "82 × 61 × 2 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "spa-bath-2-seater-corner-white-odette",
       "source_url": "https://pulsetiles.co.za/product/spa-bath-2-seater-corner-white-odette/",
       "name": "Spa Bath 2 Seater Corner White Odette",
@@ -21304,37 +16201,6 @@
       ]
     },
     {
-      "id": "square-shower-combo-4",
-      "source_url": "https://pulsetiles.co.za/product/square-shower-combo-4/",
-      "name": "Square Shower Combo",
-      "code": "Q01568",
-      "price": {
-        "current": 1799.99,
-        "regular": 1899.99,
-        "sale": 1799.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 191 × 54 × 17 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/Q01568.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "42 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "191 × 54 × 17 cm"
-        }
-      ],
-      "categories": [
-        "shower-combos"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
       "id": "square-shower-head-gold-10-25cm",
       "source_url": "https://pulsetiles.co.za/product/square-shower-head-gold-10-25cm/",
       "name": "Square Shower Head Gold 10” (25cm)",
@@ -21363,37 +16229,6 @@
       ],
       "bathroom_groups": [
         "showers"
-      ]
-    },
-    {
-      "id": "stand-up-mirror-360x1460mm",
-      "source_url": "https://pulsetiles.co.za/product/stand-up-mirror-360x1460mm/",
-      "name": "Stand Up Mirror 360x1460mm",
-      "code": "B04707",
-      "price": {
-        "current": 499.99,
-        "regular": 499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 16 × 2 × 59 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/10/B04707.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "16 × 2 × 59 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
       ]
     },
     {
@@ -21506,37 +16341,6 @@
       ]
     },
     {
-      "id": "tear-drop-mirror-29x33cm",
-      "source_url": "https://pulsetiles.co.za/product/tear-drop-mirror-29x33cm/",
-      "name": "Tear Drop Mirror 29x33cm",
-      "code": "B04727",
-      "price": {
-        "current": 59.99,
-        "regular": 59.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 33 × 29 × 3 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/B04727.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "0.40 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "33 × 29 × 3 cm"
-        }
-      ],
-      "categories": [
-        "mirrors"
-      ],
-      "bathroom_groups": [
-        "furniture"
-      ]
-    },
-    {
       "id": "tefira-luca-polenta-610-floor-combo-j00185-j00113-2",
       "source_url": "https://pulsetiles.co.za/product/tefira-luca-polenta-610-floor-combo-j00185-j00113-2/",
       "name": "Tefira Luca Polenta 610 Floor Combo",
@@ -21588,60 +16392,6 @@
       ],
       "bathroom_groups": [
         "basins"
-      ]
-    },
-    {
-      "id": "terra-alco-wall-hung-toilet-combo",
-      "source_url": "https://pulsetiles.co.za/product/terra-alco-wall-hung-toilet-combo/",
-      "name": "Terra Alco Wall Hung Toilet Combo",
-      "code": "Q01061",
-      "price": {
-        "current": 6599.99,
-        "regular": 6599.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Terra Alco Combo â wall-hung toilet with concealed cistern and square chrome actuator for a premium finish.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2025/10/Q01061.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "39 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "terra-wall-hung-combo-2",
-      "source_url": "https://pulsetiles.co.za/product/terra-wall-hung-combo-2/",
-      "name": "Terra Wall Hung Combo",
-      "code": "Q00680",
-      "price": {
-        "current": 6899.99,
-        "regular": 6899.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Terra Wall Hung Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/08/Q00680.png",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "38 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
       ]
     },
     {
@@ -21864,33 +16614,6 @@
       ]
     },
     {
-      "id": "toilet-basin-pedestal-caddy",
-      "source_url": "https://pulsetiles.co.za/product/toilet-basin-pedestal-caddy/",
-      "name": "Toilet + Basin and Pedestal + Caddy Combo",
-      "code": "Q01172",
-      "price": {
-        "current": 1199.99,
-        "regular": 1199.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Toilet + Basin and Pedestal + Caddy Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01172.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "52 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
       "id": "toilet-close-couple-aqua-white-with-seat",
       "source_url": "https://pulsetiles.co.za/product/toilet-close-couple-aqua-white-with-seat/",
       "name": "Toilet Close Couple – Aqua White With Seat",
@@ -21916,37 +16639,6 @@
       ],
       "categories": [
         "close-couple-toilets"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "toilet-combo-3",
-      "source_url": "https://pulsetiles.co.za/product/toilet-combo-3/",
-      "name": "Toilet Combo",
-      "code": "Q01534",
-      "price": {
-        "current": 899.99,
-        "regular": 999.99,
-        "sale": 899.99,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 110 × 94 × 57 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/09/Q01534.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "49.2 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "110 × 94 × 57 cm"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
       ],
       "bathroom_groups": [
         "toilets"
@@ -22009,45 +16701,6 @@
       ],
       "categories": [
         "squat-pans-urinals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "top-flush-toilet-basin-pedestal-cleaner-combo",
-      "source_url": "https://pulsetiles.co.za/product/top-flush-toilet-basin-pedestal-cleaner-combo/",
-      "name": "Top Flush Toilet + Basin & Pedestal + Cleaner combo",
-      "code": "Q01438",
-      "price": {
-        "current": 1099.99,
-        "regular": 1099.99,
-        "sale": null,
-        "from": true,
-        "currency": "ZAR"
-      },
-      "description": "Dimensions: 126 × 95 × 55 cm. Dimensions: 30 × 20 × 15 cm.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/TOILET-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "75 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "126 × 95 × 55 cm"
-        },
-        {
-          "name": "Weight",
-          "value": "3 kg"
-        },
-        {
-          "name": "Dimensions",
-          "value": "30 × 20 × 15 cm"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
       ],
       "bathroom_groups": [
         "toilets"
@@ -22372,60 +17025,6 @@
       ]
     },
     {
-      "id": "wal-hung-black-elegance-combo",
-      "source_url": "https://pulsetiles.co.za/product/wal-hung-black-elegance-combo/",
-      "name": "Wal Hung Black Elegance Combo",
-      "code": "Q01414",
-      "price": {
-        "current": 6999.99,
-        "regular": 6999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Wal Hung Black Elegance Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01414-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
-      "id": "wall-hung-pool-black-combo",
-      "source_url": "https://pulsetiles.co.za/product/wall-hung-pool-black-combo/",
-      "name": "Wall Hung Pool Black Combo",
-      "code": "Q01415",
-      "price": {
-        "current": 7499.99,
-        "regular": 7499.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Wall Hung Pool Black Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/04/Q01415-scaled.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "33 kg"
-        }
-      ],
-      "categories": [
-        "toilet-combo-deals"
-      ],
-      "bathroom_groups": [
-        "toilets"
-      ]
-    },
-    {
       "id": "wall-hung-toilet-electroplated-gold-2",
       "source_url": "https://pulsetiles.co.za/product/wall-hung-toilet-electroplated-gold-2/",
       "name": "Wall Hung Toilet (Electroplated Gold)",
@@ -22588,33 +17187,6 @@
       ],
       "categories": [
         "shower-cubicles"
-      ],
-      "bathroom_groups": [
-        "showers"
-      ]
-    },
-    {
-      "id": "zen-shower-combo",
-      "source_url": "https://pulsetiles.co.za/product/zen-shower-combo/",
-      "name": "Zen Shower Combo",
-      "code": "Q01311",
-      "price": {
-        "current": 2999.99,
-        "regular": 2999.99,
-        "sale": null,
-        "from": false,
-        "currency": "ZAR"
-      },
-      "description": "Zen Shower Combo. See available product specifications.",
-      "image": "https://pulsetiles.co.za/wp-content/uploads/2026/01/Q01311.webp",
-      "attributes": [
-        {
-          "name": "Weight",
-          "value": "30.2 kg"
-        }
-      ],
-      "categories": [
-        "shower-combos"
       ],
       "bathroom_groups": [
         "showers"
